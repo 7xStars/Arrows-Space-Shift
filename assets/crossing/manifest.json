@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "id": "crossing-v1",
+  "palette": {
+    "O": "#1B1626",
+    "L": "#D8C9A8",
+    "M": "#9C8B6E",
+    "H": "#5A4E40",
+    "D": "#2E2740",
+    "G": "#FFE9A0",
+    "F": "#E4572E",
+    "U": "#3E7CB1",
+    "a": "#E8E4DC",
+    "b": "#F2A541",
+    "c": "#E8D44D",
+    "d": "#7BC043",
+    "e": "#2FA4A0",
+    "f": "#7E5BC2",
+    "g": "#C45AA8"
+  },
+  "atlas": "atlas.png",
+  "width": 320,
+  "height": 240,
+  "filter": "nearest",
+  "alpha": "binary",
+  "source": "art/source/crossing.mjs",
+  "sourceSha256": "26512fb4a4753ac5bfe386cf32dd5b1387bdc809f87a8e845b90df29e7d5d79d",
+  "atlasSha256": "55cb565be418011efee0e0f4d6d08c4c130f247603a2ff750f3695d2784280af",
+  "frames": {
+    "player.arrow": {
+      "x": 4,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "player.arrow.png"
+    },
+    "enemy.scout": {
+      "x": 44,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.scout.png"
+    },
+    "enemy.gunner": {
+      "x": 84,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.gunner.png"
+    },
+    "enemy.heavy": {
+      "x": 124,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.heavy.png"
+    },
+    "enemy.klein": {
+      "x": 164,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.klein.png"
+    },
+    "player.arrow-down": {
+      "x": 204,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "player.arrow-down.png"
+    },
+    "enemy.scout-up": {
+      "x": 244,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.scout-up.png"
+    },
+    "enemy.gunner-up": {
+      "x": 284,
+      "y": 4,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.gunner-up.png"
+    },
+    "enemy.heavy-up": {
+      "x": 4,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.heavy-up.png"
+    },
+    "enemy.klein-up": {
+      "x": 44,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.klein-up.png"
+    },
+    "icon.klein": {
+      "x": 84,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "icon.klein.png"
+    },
+    "enemy.heavy-damaged": {
+      "x": 124,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.heavy-damaged.png"
+    },
+    "enemy.heavy-damaged-up": {
+      "x": 164,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "enemy.heavy-damaged-up.png"
+    },
+    "health.1": {
+      "x": 204,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.1.png"
+    },
+    "health.2": {
+      "x": 244,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.2.png"
+    },
+    "health.3": {
+      "x": 284,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.3.png"
+    },
+    "health.4": {
+      "x": 4,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.4.png"
+    },
+    "return.exit": {
+      "x": 44,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "return.exit.png"
+    },
+    "return.entry": {
+      "x": 84,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "return.entry.png"
+    },
+    "asteroid.medium": {
+      "x": 124,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.medium.png"
+    },
+    "asteroid.large": {
+      "x": 164,
+      "y": 84,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "asteroid.large.png"
+    },
+    "asteroid.small": {
+      "x": 204,
+      "y": 84,
+      "width": 8,
+      "height": 8,
+      "pivot": [
+        4,
+        4
+      ],
+      "file": "asteroid.small.png"
+    },
+    "asteroid.break-0": {
+      "x": 244,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-0.png"
+    },
+    "asteroid.break-1": {
+      "x": 284,
+      "y": 84,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-1.png"
+    },
+    "asteroid.break-2": {
+      "x": 4,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-2.png"
+    },
+    "effect.glint": {
+      "x": 44,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint.png"
+    },
+    "effect.absorb": {
+      "x": 84,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.absorb.png"
+    },
+    "edge.left": {
+      "x": 124,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.left.png"
+    },
+    "edge.right": {
+      "x": 164,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.right.png"
+    },
+    "edge.top": {
+      "x": 204,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.top.png"
+    },
+    "edge.bottom": {
+      "x": 244,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.bottom.png"
+    },
+    "edge.twist": {
+      "x": 284,
+      "y": 124,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.twist.png"
+    },
+    "stage.0": {
+      "x": 4,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.0.png"
+    },
+    "stage.1": {
+      "x": 44,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.1.png"
+    },
+    "stage.2": {
+      "x": 84,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.2.png"
+    },
+    "stage.3": {
+      "x": 124,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.3.png"
+    },
+    "stage.4": {
+      "x": 164,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.4.png"
+    },
+    "stage.5": {
+      "x": 204,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.5.png"
+    },
+    "stage.6": {
+      "x": 244,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.6.png"
+    },
+    "stage.7": {
+      "x": 284,
+      "y": 164,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.7.png"
+    },
+    "shot.player": {
+      "x": 4,
+      "y": 204,
+      "width": 4,
+      "height": 8,
+      "pivot": [
+        2,
+        4
+      ],
+      "file": "shot.player.png"
+    },
+    "shot.enemy": {
+      "x": 44,
+      "y": 204,
+      "width": 4,
+      "height": 8,
+      "pivot": [
+        2,
+        4
+      ],
+      "file": "shot.enemy.png"
+    }
+  },
+  "animations": {
+    "asteroid.break": {
+      "frames": [
+        "asteroid.break-0",
+        "asteroid.break-1",
+        "asteroid.break-2"
+      ],
+      "durationsMs": [
+        90,
+        90,
+        120
+      ],
+      "loop": false
+    }
+  }
+}

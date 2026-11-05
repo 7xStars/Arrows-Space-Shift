@@ -1,0 +1,12 @@
+Arrow Space Shift
+
+AI assistance was used for game design, programming, interface text, documentation, and tests.
+The game uses AI-assisted pixel art, procedural fallback graphics, and browser-generated tones.
+Pixel sources were authored for this project from a user-supplied visual brief.
+The user reference sheet and generated concept sheet are not included in the browser package.
+No third-party fonts, samples, music recordings, or runtime libraries are included.
+System fonts are supplied by the player's device.
+No Lamirys source or assets are included.
+
+No source-code license has been selected for this candidate.
+This notice does not grant a source-code license.

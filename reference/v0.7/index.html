@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c35">
+  <title>Arrow Space Shift — Game Off 2026</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Arrow Space Shift home"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 6h30L22 18l11 12H3l11-12Z"/><path d="M14 18h8"/></svg>Arrow Space Shift</a>
+    <p>A space-folding flight experiment</p>
+    <span class="build">Game Off 2026 / v0.7</span>
+  </header>
+  <main>
+    <aside class="mission">
+      <h1>Change the distance.</h1>
+      <p class="intro">Same ship. Same thrust.<br> A shorter way through.</p>
+      <p id="tradeoff-intro">Fold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time.</p>
+      <div class="setup"><label for="mode">Flight mode</label><select id="mode"><option value="upgrades">Progression · 1 → 3 → 7</option><option value="warp-lab">Position warp lab</option><option value="trio">Start at 3-Paley</option><option value="paley">Start at 7-Paley</option><option value="timing">Timing course</option><option value="flight">Reference route</option><option value="space">Space-only test</option></select><label class="check"><input id="bonus-enabled" type="checkbox" checked> Fold score bonus</label><p class="small">The switch changes points only. Restart to change the setup.</p><a href="reference/v0.3/" target="_blank" rel="noopener">Open the v0.3 reference</a></div>
+      <div class="route-readout"><span>Route progress</span><strong id="progress-label">0 / 8,400</strong><progress id="route" max="8400" value="0" aria-label="Route progress"></progress></div>
+      <h2>Flight controls</h2>
+      <dl class="controls">
+        <div><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Steer</dd></div>
+        <div><dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd>Change thrust</dd></div>
+        <div><dt><kbd>Space</kbd></dt><dd>Fire</dd></div>
+        <div><dt><kbd>Left Shift</kbd></dt><dd>Fold</dd></div>
+        <div><dt><kbd>Right Shift</kbd></dt><dd>Unfold</dd></div>
+        <div><dt><kbd>P</kbd></dt><dd>Pause</dd></div>
+      </dl>
+      <p class="small">Only the arrow keys control the ship. Only Left Shift and Right Shift change space. Hold Space to fire straight ahead. Align with a visible enemy.</p>
+      <details><summary>What changes?</summary><p>A fold halves distance inside one field. It also doubles the visible speed of both sides’ shots. Overlapping folds multiply these effects.</p><p>The clock keeps its normal rate. Unfolding does not reverse the flight.</p></details>
+    </aside>
+    <section class="flight" aria-label="Flight area">
+      <div class="flight-bar"><span id="flight-state">Ready for flight</span><div><button id="sound" type="button" aria-pressed="false">Sound off</button><button id="pause" type="button" disabled>Pause</button><button id="restart" type="button">Restart</button></div></div>
+      <div class="encounter-panel" id="encounter-panel"><div><strong id="encounter-name">1 / 3 · Hit the opening</strong><span id="target-clock">Target opens at 0.55 s</span></div><p id="encounter-goal">Hit the target while its shield is open.</p><progress id="window-progress" max="1" value="0" aria-label="Target timing window"></progress></div>
+      <div class="encounter-panel" id="upgrade-panel"><div><strong id="upgrade-title">Introduction · one operation</strong><span id="warp-state">No upgrade</span></div><p id="upgrade-binding">Collect a seed.</p><p id="upgrade-side">Shift changes the accepted side.</p><p id="stage-guide">Introduction: Position Warp.</p><p id="drop-preview">Defeated carriers drop their seeds.</p><strong id="debt">Stored damage due: 0</strong><p id="interaction">Counter results appear here during combat.</p></div>
+      <div class="viewport">
+        <canvas id="space" width="900" height="740" tabindex="0" aria-label="Flight view. Use the arrow keys to control the ship. Use Left Shift to fold and Right Shift to unfold."></canvas>
+        <div class="hud"><div><span>Hull</span><strong id="hull">5 / 5</strong></div><div><span>Flight time</span><strong id="time">0.0 s</strong></div><div><span>Score</span><strong id="score">0</strong></div></div>
+        <div class="overlay" id="overlay">
+          <div class="brief">
+            <span class="brief-mark" aria-hidden="true">⌁</span>
+            <h2 id="overlay-title">Hit the opening.</h2>
+            <p id="overlay-text">Fold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time, but lose shot speed and the field’s bonus.</p>
+            <button class="primary" id="primary" type="button">Start encounter 1</button>
+            <button class="secondary" id="practice" type="button">Test space only</button>
+            <p class="small" id="overlay-note">Use a keyboard. The space-only test has no enemies. Use combat flight to test the risk and reward.</p>
+          </div>
+        </div>
+        <div class="field-caption" id="field-caption">Space is open</div>
+      </div>
+      <div class="action-bar">
+        <div class="fold key-display" id="fold"><span>Fold space</span><kbd>Left Shift</kbd></div>
+        <div class="unfold key-display" id="unfold"><span>Unfold space</span><kbd>Right Shift</kbd></div>
+        <button class="fire" id="fire" type="button" aria-pressed="false"><span>Fire off</span><small>Touch: toggle fire</small></button>
+      </div>
+      <p class="event" id="event" role="status" aria-live="polite">Start a flight or test space without enemies.</p>
+      <details class="playtest" open><summary>Equipment and collected seeds</summary><p id="inventory-note">Collect seeds during flight.</p><div class="equipment-slots"><button id="slot-one" type="button" aria-pressed="true">Slot 1: empty</button><button id="slot-two" type="button" aria-pressed="false" disabled>Slot 2: opens at 7-Paley</button></div><div id="inventory" class="inventory"></div><p class="small">Slot 1 acts before Slot 2. Equip each operation once. R means right seed. L means left seed. One fold accepts the named side. Zero or two folds accept the opposite side. Three folds accept the named side again.</p></details>
+      <details class="playtest"><summary>Playtest notes and results</summary><label for="prediction">What do you expect to arrive first?</label><textarea id="prediction" rows="2" placeholder="Record a prediction before an attempt."></textarea><label for="explanation">What caused the result?</label><textarea id="explanation" rows="2" placeholder="Record an explanation after an attempt."></textarea><button id="save-results" type="button">Save test results</button><p class="small">This saves a JSON file on your computer. Nothing is sent to a server.</p><ol id="attempts" aria-label="Attempt results"></ol></details>
+      <details class="playtest" id="counter-graphs"><summary>Upgrade counters · 3-Paley and 7-Paley</summary>
+        <p>All seven operations are playable. Enemies use the same rules. A counter shot passes the opposing operation. It keeps its normal damage. Other shots still need the correct incoming side.</p>
+        <label for="graph-stage">Tournament</label><select id="graph-stage"><option value="1">1-paradoxical · three operations</option><option value="2">2-paradoxical · seven operations</option></select>
+        <label for="graph-a">First operation</label><select id="graph-a"></select>
+        <div id="graph-second"><label for="graph-b">Second operation</label><select id="graph-b"></select></div>
+        <p id="counter-result" role="status"></p><p class="small" id="graph-status"></p>
+        <div class="matrix-scroll"><table id="counter-matrix"><caption>Row counters column. These are proposed relationships.</caption></table></div>
+        <h3 id="operation-name">Position Warp</h3><p id="operation-status"></p><dl id="operation-effects"></dl>
+      </details>
+    </section>
+    <aside class="instruments">
+      <h2>Space at the ship</h2>
+      <div class="factor"><strong id="factor">1×</strong><span>Route speed factor</span></div>
+      <p id="factor-note">The ship is outside a fold field.</p>
+      <dl class="readings"><div><dt>Thrust</dt><dd id="thrust">90</dd></div><div><dt>Route speed</dt><dd id="speed">90</dd></div><div><dt>Distance factor</dt><dd id="metric">1.000</dd></div></dl>
+      <div class="fold-heading"><h2>Fold stack</h2><span id="fold-count">0 / 3</span></div>
+      <ol id="fold-stack" class="fold-stack"><li class="empty">No active fields.</li></ol>
+      <p class="small">Unfold removes the latest field. Fields stay where you made them.</p>
+      <div class="tradeoff"><h2>Risk and reward</h2><p>Fold: faster outgoing shots, faster incoming fire.</p><p id="bonus-rule">Each fold at the target adds 50 points to a kill.</p><p id="unfold-rule">Unfold: more reaction time, slower outgoing shots, lower kill reward.</p><strong id="bonus">Fold bonus earned: 0</strong></div>
+      <div class="legend"><span><i class="key-ship"></i>Your ship</span><span><i class="key-fold"></i>Fold boundary</span><span><i class="key-threat"></i>Threat</span><span><i class="key-gate"></i>Gate opening</span></div>
+      <details><summary>About this prototype</summary><p>Original vector graphics and procedural sound. AI-assisted design and code. No external game assets.</p><p>This is an early Game Off experiment. A public source repository and the final AI disclosure are still required before submission.</p></details>
+    </aside>
+  </main>
+  <footer><span>Arrow Space Shift</span><span>Compress the route. Keep the clock.</span></footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

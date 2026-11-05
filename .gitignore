@@ -1,0 +1,9 @@
+node_modules/
+.local/
+reports/*.png
+dist/
+art/references/
+.env
+.env.*
+!.env.example
+

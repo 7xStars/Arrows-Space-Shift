@@ -1,0 +1,38 @@
+[
+  {
+    "id": "campaign-goal",
+    "foreground": "rgb(194, 208, 226)",
+    "background": "rgb(20, 47, 59)",
+    "ratio": 8.94590132998776
+  },
+  {
+    "id": "combat-loadout",
+    "foreground": "rgb(209, 195, 246)",
+    "background": "rgb(11, 21, 40)",
+    "ratio": 11.151348619966493
+  },
+  {
+    "id": "live-debt",
+    "foreground": "rgb(168, 187, 210)",
+    "background": "rgb(11, 21, 40)",
+    "ratio": 9.290331657988228
+  },
+  {
+    "id": "hull",
+    "foreground": "rgb(234, 242, 255)",
+    "background": "rgb(11, 21, 40)",
+    "ratio": 16.18154395152986
+  },
+  {
+    "id": "open-guide",
+    "foreground": "rgb(234, 242, 255)",
+    "background": "rgb(32, 53, 80)",
+    "ratio": 11.054494678145137
+  },
+  {
+    "id": "event",
+    "foreground": "rgb(168, 187, 210)",
+    "background": "rgb(11, 21, 40)",
+    "ratio": 9.290331657988228
+  }
+]

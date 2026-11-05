@@ -1,0 +1,29 @@
+{
+  "checks": 19,
+  "results": [
+    "The tested ZIP matches its SHA-256 record",
+    "The extracted ZIP contains only runtime files, assets, and the notice",
+    "The release preserves UTF-8 status labels",
+    "Release query parameters cannot enable fixture controls",
+    "The packaged pixel atlas loads and draws the player",
+    "Release mode hides prototype selection and research tools",
+    "Canvas fills the 960 x 720 iframe",
+    "Release tutorial accepts left and right steering",
+    "The extracted release completes Level 0 with real fire",
+    "Vertical keys do not move the ship relative to the route",
+    "Left Shift folds in the release",
+    "Right Shift unfolds in the release",
+    "Release equipment pauses the game",
+    "No page scrolling is needed inside the iframe",
+    "Combat excludes the in-viewport status area",
+    "Release viewport fits a 640 x 480 iframe",
+    "Release viewport fits a 320 x 568 iframe",
+    "All requested release resources loaded",
+    "No release runtime error occurred"
+  ],
+  "errors": [],
+  "requests": [],
+  "archive": "D:\\Projects\\games\\game-off-2026\\dist\\itch\\0.14.0\\arrow-space-shift-0.14.0-itch.zip",
+  "sha256": "75d566c71190ff544af2645b438cc540369018f991cc15dc19f12361c8aed924",
+  "limits": "Local cross-origin iframe serving the extracted ZIP. Not an upload to itch.io. No hosted fullscreen, audio, full campaign, or human playtest."
+}

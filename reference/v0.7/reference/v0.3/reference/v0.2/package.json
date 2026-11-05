@@ -1,0 +1,10 @@
+{
+  "name": "foldspace-game-off-2026",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

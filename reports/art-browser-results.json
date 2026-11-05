@@ -1,0 +1,18 @@
+{
+  "checks": 11,
+  "results": [
+    "The pixel atlas loads without error",
+    "The player uses a pixel sprite",
+    "The first route draws a Heavy or Gunner",
+    "The quiet route draws a Scout",
+    "Asteroids use the pixel atlas",
+    "Stage 7 draws Klein Runner art",
+    "Klein edges draw the twist tile",
+    "An authoritative asteroid break draws its authored frame",
+    "Pixel assets retain the compact viewport",
+    "No art integration runtime error occurred",
+    "A missing atlas manifest leaves the procedural fallback playable"
+  ],
+  "errors": [],
+  "limits": "Rendered fixtures and asset-use records. Mask differences do not establish human recognition. Visual contact alignment and artistic acceptance still need human review."
+}

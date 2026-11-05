@@ -1,0 +1,28 @@
+{
+  "checks": 21,
+  "results": [
+    "Level 1 returns a bottom-edge enemy with retained health",
+    "Level 1 gives the returned enemy a new entry period",
+    "Level 2 returns a bottom-edge enemy with retained health",
+    "Level 2 gives the returned enemy a new entry period",
+    "Level 3 returns a bottom-edge enemy with retained health",
+    "Level 3 gives the returned enemy a new entry period",
+    "Level 4 returns a bottom-edge enemy with retained health",
+    "Level 4 gives the returned enemy a new entry period",
+    "Level 5 returns a bottom-edge enemy with retained health",
+    "Level 5 gives the returned enemy a new entry period",
+    "Level 6 returns a bottom-edge enemy with retained health",
+    "Level 6 gives the returned enemy a new entry period",
+    "Level 7 returns a bottom-edge enemy with retained health",
+    "Level 7 gives the returned enemy a new entry period",
+    "Level 8 returns a bottom-edge enemy with retained health",
+    "Level 8 gives the returned enemy a new entry period",
+    "Stage 7 visibly returns a side-crossing carrier at the opposite side",
+    "The side return is drawn before combat becomes active",
+    "Stage 7 top crossing returns at the bottom with the same horizontal position",
+    "A returned carrier becomes active after visible entry",
+    "No runtime error occurred"
+  ],
+  "errors": [],
+  "limits": "Prepared edge fixtures verify returns and visible entry. They do not establish full-level balance or player recognition."
+}

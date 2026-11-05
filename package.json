@@ -1,0 +1,12 @@
+{
+  "name": "arrow-space-shift-game-off-2026",
+  "version": "0.14.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "package:itch": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/package-itch.ps1",
+    "art:export": "node tools/export-pixel-assets.mjs"
+  }
+}
