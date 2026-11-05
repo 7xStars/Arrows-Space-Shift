@@ -32,7 +32,7 @@ The [official HTML5 upload guide](https://itch.io/docs/creators/html5) explains 
 
 The [Game Off 2026 page](https://itch.io/jam/game-off-2026) requires a public GitHub source repository and an itch.io submission.
 It gives the source deadline as December 1, 2026, at 13:37 PST.
-The source repository is [7xStars/arrow-space-shift](https://github.com/7xStars/arrow-space-shift).
+The source repository is [7xStars/arrow-space-shift](https://github.com/7xStars/Arrows-Space-Shift).
 Use that URL in the jam's GitHub repository field.
 No itch.io upload or jam submission has been performed.
 The source license remains undecided.

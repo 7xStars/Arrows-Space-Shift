@@ -3,7 +3,9 @@
 A space-folding action game for Game Off 2026.
 The game is named Arrow Space Shift.
 
-Source repository: [7xStars/arrow-space-shift](https://github.com/7xStars/arrow-space-shift).
+Left Shift folds space. Right Shift unfolds it. Folding shortens distances and speeds up both sides’ shots. Unfolding restores distance and gives the player more reaction time.
+
+Source repository: [7xStars/arrow-space-shift](https://github.com/7xStars/Arrows-Space-Shift).
 
 Fold space to shorten the route ahead of a spaceship.
 Unfold space to restore distance before a threat reaches the ship.
@@ -288,7 +290,7 @@ Deadline: December 1, 2026, at 13:37 Pacific / 16:37 Eastern.
 AI-assisted code and assets are permitted with disclosure.
 The host requires source code in a public GitHub repository.
 The playable game must also be submitted on itch.io.
-Public source: [7xStars/arrow-space-shift](https://github.com/7xStars/arrow-space-shift).
+Public source: [7xStars/arrow-space-shift](https://github.com/7xStars/Arrows-Space-Shift).
 The itch.io upload and jam submission remain open.
 
 Sources: [event page](https://itch.io/jam/game-off-2026), [host FAQ](https://itch.io/jam/game-off-2026/topic/7290154/frequently-asked-questions-faq).

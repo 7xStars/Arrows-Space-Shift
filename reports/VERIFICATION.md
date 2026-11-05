@@ -1,5 +1,8 @@
 # Game verification
 
+These checks were recorded before source publication.
+Current repository: [7xStars/Arrows-Space-Shift](https://github.com/7xStars/Arrows-Space-Shift).
+
 Date: November 4, 2026.
 Candidate: Arrow Space Shift 0.14.0.
 Project: `D:\Projects\games\game-off-2026`.
