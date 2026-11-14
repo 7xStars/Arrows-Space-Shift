@@ -1,0 +1,141 @@
+{
+  "study": "stc-study-r4",
+  "musicRevision": "identified-return-r4",
+  "audioScoreId": "identified-return-r4",
+  "condition": "mismatched",
+  "probe": true,
+  "records": [],
+  "previousRuns": [
+    {
+      "condition": "combined",
+      "probe": false,
+      "records": [
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 0,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.5667000000000003,
+          "assisted": false,
+          "retry": 0,
+          "correct": true,
+          "actualSide": 0,
+          "priorGuideCount": 1,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        },
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 1,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.03319999999999982,
+          "assisted": true,
+          "retry": 1,
+          "correct": true,
+          "actualSide": 1,
+          "priorGuideCount": 1,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 0.7833999999999998
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    },
+    {
+      "condition": "audio",
+      "probe": true,
+      "records": [
+        {
+          "taskKind": "listen-only",
+          "condition": "audio",
+          "probe": true,
+          "notScored": true,
+          "firstChoice": null,
+          "correct": null
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 0
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "combined",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "audio",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    }
+  ],
+  "guideHistory": [
+    {
+      "phase": "establishment",
+      "condition": "audio",
+      "time": 0
+    },
+    {
+      "phase": "establishment",
+      "condition": "mismatched",
+      "time": 0.28339999999999965
+    }
+  ],
+  "conditionHistory": [
+    {
+      "condition": "audio",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    },
+    {
+      "condition": "mismatched",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    }
+  ],
+  "contacts": 0,
+  "targetsHit": 0,
+  "limits": "Local study records. No human understanding or causal music effect is established."
+}

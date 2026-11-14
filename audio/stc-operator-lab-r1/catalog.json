@@ -1,0 +1,113 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "seconds": 12,
+  "sampleRate": 48000,
+  "commonGain": 6.975415158483572,
+  "clips": [
+    {
+      "id": "dry",
+      "title": "Original input",
+      "file": "dry.wav",
+      "pair": "reference",
+      "order": [],
+      "transfer": false,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "gate-room",
+      "title": "Gate then room",
+      "file": "gate-room.wav",
+      "pair": "gate-room",
+      "order": [
+        "gate",
+        "room"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "room-gate",
+      "title": "Room then gate",
+      "file": "room-gate.wav",
+      "pair": "gate-room",
+      "order": [
+        "room",
+        "gate"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "transfer-gate-room",
+      "title": "Shifted gate then room",
+      "file": "transfer-gate-room.wav",
+      "pair": "transfer-gate-room",
+      "order": [
+        "gate",
+        "room"
+      ],
+      "transfer": true,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "transfer-room-gate",
+      "title": "Room then shifted gate",
+      "file": "transfer-room-gate.wav",
+      "pair": "transfer-gate-room",
+      "order": [
+        "room",
+        "gate"
+      ],
+      "transfer": true,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "filter-drive",
+      "title": "Filter then saturation",
+      "file": "filter-drive.wav",
+      "pair": "filter-drive",
+      "order": [
+        "filter",
+        "saturation"
+      ],
+      "transfer": false,
+      "familyTrim": 0.08
+    },
+    {
+      "id": "drive-filter",
+      "title": "Saturation then filter",
+      "file": "drive-filter.wav",
+      "pair": "filter-drive",
+      "order": [
+        "saturation",
+        "filter"
+      ],
+      "transfer": false,
+      "familyTrim": 0.08
+    },
+    {
+      "id": "constant-gate-room",
+      "title": "Constant gain then room",
+      "file": "constant-gate-room.wav",
+      "pair": "constant-gate-room",
+      "order": [
+        "constant-gain",
+        "room"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0
+    },
+    {
+      "id": "room-constant-gate",
+      "title": "Room then constant gain",
+      "file": "room-constant-gate.wav",
+      "pair": "constant-gate-room",
+      "order": [
+        "room",
+        "constant-gain"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0
+    }
+  ]
+}

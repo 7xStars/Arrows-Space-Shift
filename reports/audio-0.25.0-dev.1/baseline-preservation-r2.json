@@ -1,0 +1,41 @@
+{
+  "comparison": "Previously packaged source ZIP before music-r2",
+  "records": [
+    {
+      "file": "ass-bolza-mix-fixture.wav",
+      "sha256": "a81d3b01a925be48a9323d98f34152b678bbe56b886585a66d6f71ca32d83286",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "ass-ending-mix-fixture.wav",
+      "sha256": "3a162adf39e3c12648e1a8e4575ff83d24ba3c5c371eb7381a5298f76bf95c18",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "ass-klein-mix-fixture.wav",
+      "sha256": "0b23205a474b15024cc44c404396c49b96e85878f11f44ecb4b85944c718d3fb",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "ass-projective-mix-fixture.wav",
+      "sha256": "4010d7668e600c330b83a3bd9194a08eff8eb2ba23fbfed65e1a8dfdbafd777e",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "ass-recovery-mix-fixture.wav",
+      "sha256": "0bf694d1f8ad5527935e7a9e0e44bb0f413a0901b4b5f292cc92e6854c0d06d1",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "ass-traditional-mix-fixture.wav",
+      "sha256": "4d0e5df0bd539bd0e6116c2bf62ab885a127fa903801181a3ad802e69728ab62",
+      "matches_packaged_baseline": true
+    },
+    {
+      "file": "results.json",
+      "sha256": "9fb93b8743e664aff9f5191cd73fd4c4bfcd90cc956d7f92a0ae58f792169cb9",
+      "matches_packaged_baseline": true
+    }
+  ],
+  "sourceArchiveSha256": "b6f48dbdec500596fdfbe925fe0ebdf678e2b7e0b7ea78d3203973d88a909d97"
+}

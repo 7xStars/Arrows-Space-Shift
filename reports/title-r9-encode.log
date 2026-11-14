@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 00000230cdbcf800] Guessed Channel Layout: stereo
+Input #0, wav, from 'audio/stc-study/foxdot-percussion-r9/ass-identified-return-r9-music.wav':
+  Duration: 00:01:16.64, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'assets/audio/stc-title-r9.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+size=     256KiB time=00:00:22.21 bitrate=  94.4kbits/s speed=  43x elapsed=0:00:00.51    
+size=    1024KiB time=00:01:09.52 bitrate= 120.7kbits/s speed=67.3x elapsed=0:00:01.03    
+[out#0/ogg @ 00000230cdb7f040] video:0KiB audio:1141KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 1.574720%
+size=    1159KiB time=00:01:16.64 bitrate= 123.9kbits/s speed=69.8x elapsed=0:00:01.09    

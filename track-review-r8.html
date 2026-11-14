@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Identified Return r8 · Arrow Space Shift</title>
+<style>
+:root{color-scheme:dark;background:#030709;color:#eee5ce;font:17px/1.55 system-ui,sans-serif}*{box-sizing:border-box}body{max-width:940px;margin:auto;padding:clamp(16px,4vw,40px)}h1{font-size:clamp(30px,6vw,50px);line-height:1.1;margin:12px 0 18px}h2{font-size:23px;margin:0 0 12px}p{max-width:72ch;margin:0 0 16px}a{color:#efce87;text-underline-offset:4px}a,button,select{overflow-wrap:anywhere}button,select{font:inherit;min-height:44px;padding:10px 14px;color:inherit;background:#14242a;border:1px solid #8da89b;border-radius:3px}select{max-width:100%;width:100%}button{cursor:pointer}button:disabled{opacity:.55;cursor:default}:focus-visible{outline:2px solid #efce87;outline-offset:4px}.skip{position:absolute;top:-80px;padding:10px;background:#14242a}.skip:focus{top:8px}.player{margin:28px 0;padding:clamp(16px,4vw,28px);background:#0b1418;border:1px solid #49625c}label{display:block;margin-bottom:10px}audio{display:block;width:100%;margin:18px 0}.controls{display:flex;flex-wrap:wrap;gap:10px}#status{min-height:3.1em;color:#c1cdc4;margin-top:16px}.downloads{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 32px}.downloads a{display:inline-flex;align-items:center;min-height:44px}.table{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:12px 0 24px}th,td{text-align:start;vertical-align:top;padding:12px;border-bottom:1px solid #49625c}th{font-weight:600}.time{font:15px ui-monospace,monospace;white-space:nowrap}.small,footer{font-size:15px;color:#c1cdc4}details{margin:26px 0}summary{cursor:pointer;padding:8px 0}footer{border-top:1px solid #49625c;padding-top:18px}@media(max-width:560px){th,td{padding:9px}.controls button{flex:1 1 100px}h1{font-size:34px}}@media(forced-colors:active){:focus-visible{outline-color:Highlight}}
+@media(max-width:560px){table,tbody,tr,td{display:block}.table{overflow:visible}thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}tr{padding:12px 0;border-bottom:1px solid #49625c}td{border:0;padding:5px 0}.time{color:#c1cdc4}}
+</style>
+<script defer src="src/track-review-r8.js"></script>
+</head>
+<body>
+<a href="#listening" class="skip">Skip to player</a>
+<header><p>Arrow Space Shift / music review r8</p><h1>Identified Return</h1><p>Compare the new mix with the r7 foundation. Use the same listening volume for both.</p></header>
+<main id="listening" tabindex="-1">
+<section class="player" aria-labelledby="player-heading">
+<h2 id="player-heading">Listen and compare</h2>
+<label for="track">Track</label>
+<select id="track">
+<optgroup label="Full tracks">
+<option value="ass-identified-return-r8-music.wav" data-full="true">r8 new mix</option>
+<option value="foundation-control.wav" data-full="true">r7 foundation with the same output gain</option>
+</optgroup>
+<optgroup label="Short comparisons">
+<option value="harmony-r8.wav">Harmony / r8</option><option value="harmony-control.wav">Harmony / foundation</option>
+<option value="break-return-r8.wav">Break and return / r8</option><option value="break-return-control.wav">Break and return / foundation</option>
+</optgroup>
+<optgroup label="Added layers and operation order">
+<option value="new-layer.wav" data-full="true" data-start="21.5325373134">Added layers alone</option>
+<option value="gate-room-proof.wav" data-full="true" data-start="21.5325373134">Harmony / gate then room</option>
+<option value="room-gate-proof.wav" data-full="true" data-start="21.5325373134">Harmony / room then gate</option>
+</optgroup>
+</select>
+<audio id="player" controls preload="metadata" aria-label="Selected music track"></audio>
+<div class="controls" aria-label="Full-track positions"><button type="button" data-time="21.5325373134">Harmony</button><button type="button" data-time="50.1892537313">Break</button><button type="button" data-time="57.3534328358">Return</button></div>
+<p id="status" role="status">Select Play in the audio controls.</p>
+<p class="small">Selecting a track stops playback. The position buttons keep the selected track paused.</p>
+</section>
+<nav class="downloads" aria-label="WAV downloads"><a href="audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav" download>Download r8 WAV</a><a href="audio/stc-study/foxdot-operator-r8/foundation-control.wav" download>Download foundation WAV</a><a href="audio/stc-study/foxdot-operator-r8/break-return-r8.wav" download>Download short r8 comparison</a></nav>
+<section aria-labelledby="changes-heading"><h2 id="changes-heading">Three changes to compare</h2><div class="table"><table><thead><tr><th>Time</th><th>Change</th><th>Listening question</th></tr></thead><tbody>
+<tr><td class="time">0:21–0:36</td><td>A quiet Fm7 chord enters. Later, its voicing changes while its pitch classes stay the same.</td><td>Does the harmony add depth while the acid phrase stays clear?</td></tr>
+<tr><td class="time">0:07–0:50</td><td>Sparse percussion answers rise briefly and decay. The original drum timing stays fixed.</td><td>Does the added response support the groove?</td></tr>
+<tr><td class="time">0:50–1:12</td><td>The added harmony changes from gate then room to room then gate after the break.</td><td>Can you hear a different tail when the pulse returns?</td></tr>
+</tbody></table></div></section>
+<details><summary>Comparison limits</summary><p>Both full tracks use the same final output gain. The foundation control contains the retained r7 mix. The new-layer file contains only the additions.</p><p>The two room examples use the same harmony input and gain. Their processing order differs. The new mix uses a restrained room return.</p><p>The isolated examples retain their mix level. They are quieter than the full track. Their initial position selects the harmony entry.</p><p>The full track includes its ending. It is not a seamless loop. These music changes do not predict attacks or change campaign rules.</p><p>Technical measurements do not establish musical quality or listening comfort. Human listening remains necessary.</p></details>
+</main>
+<footer><p>No automatic playback. No animation. No campaign save writes.</p><p id="file-note">Keep the complete folder when you extract the review archive.</p></footer>
+</body>
+</html>

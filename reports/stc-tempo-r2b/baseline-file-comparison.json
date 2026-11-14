@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tempo-act1-01",
+    "baseline_definition_sha256": "06e3b273e95ec232c8c5deff6653eb320b1d9093a8f9301603dd5a52590788ff",
+    "current_definition_sha256": "06e3b273e95ec232c8c5deff6653eb320b1d9093a8f9301603dd5a52590788ff",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act1-02",
+    "baseline_definition_sha256": "df817b57db8ca452400f9dc79e7533abe35f0a9b8b9d3d35f13964b37d16834e",
+    "current_definition_sha256": "df817b57db8ca452400f9dc79e7533abe35f0a9b8b9d3d35f13964b37d16834e",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act1-03",
+    "baseline_definition_sha256": "7f76917240d750b57c80cbd45149e90c0a3d672877ae0bd5fd9ffaf12ff9ff1a",
+    "current_definition_sha256": "7f76917240d750b57c80cbd45149e90c0a3d672877ae0bd5fd9ffaf12ff9ff1a",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act2-01",
+    "baseline_definition_sha256": "add2ffe1f13f166308c677c694fb91b0d41c24b2b6aa4c1e2abd325bfe0b8ff9",
+    "current_definition_sha256": "add2ffe1f13f166308c677c694fb91b0d41c24b2b6aa4c1e2abd325bfe0b8ff9",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act2-02",
+    "baseline_definition_sha256": "bb05982aadb97f7f2f9c55e64d78ba3874daf0caef01e3d72a218866e7d73a87",
+    "current_definition_sha256": "bb05982aadb97f7f2f9c55e64d78ba3874daf0caef01e3d72a218866e7d73a87",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act3-01",
+    "baseline_definition_sha256": "ddfc07bfa728682fb892ae1b6182eb312aab7376cb15b351d039f1932062261c",
+    "current_definition_sha256": "ddfc07bfa728682fb892ae1b6182eb312aab7376cb15b351d039f1932062261c",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act3-02",
+    "baseline_definition_sha256": "c346eb29fd2c8f64e2ed97e2f72d9f46d924c856d86bb2466660f6c8232bbe89",
+    "current_definition_sha256": "cfe645eee38a6f83b3853f61df32255a7e061fd4f0d0b24034ef9799f33f6132",
+    "definition_equal": false,
+    "master_equal": false,
+    "kept_oggs": 0
+  },
+  {
+    "id": "tempo-act4-01",
+    "baseline_definition_sha256": "39b344ac3007b5ae8de7beb0058edf16b7a3fbd08e71ca2cf1b6e0792aa9d7b3",
+    "current_definition_sha256": "39b344ac3007b5ae8de7beb0058edf16b7a3fbd08e71ca2cf1b6e0792aa9d7b3",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  },
+  {
+    "id": "tempo-act4-02",
+    "baseline_definition_sha256": "f6d31b78c8e831b0ca84195037b91c6ef220394d6a697752ee6e9301af317cb0",
+    "current_definition_sha256": "f6d31b78c8e831b0ca84195037b91c6ef220394d6a697752ee6e9301af317cb0",
+    "definition_equal": true,
+    "master_equal": true,
+    "kept_oggs": 3
+  }
+]

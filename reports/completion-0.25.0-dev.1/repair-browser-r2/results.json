@@ -1,0 +1,24 @@
+{
+  "checks": 14,
+  "results": [
+    "A clean profile cannot assemble an unearned drive",
+    "Assembly alone does not activate or complete the campaign",
+    "A real folded charge reaches the first receiver",
+    "A real Klein return reaches the second receiver",
+    "Capture stores a physical incoming charge",
+    "Only the delivered echo activates the drive",
+    "Reload retains activation but requires the visible ending",
+    "The visible ending saves campaign completion",
+    "Completion survives another page reload",
+    "Dock fits 390 by 844",
+    "Dock fits 320 by 568",
+    "The main title recognizes saved campaign completion",
+    "No page exception occurred",
+    "All requested resources loaded"
+  ],
+  "errors": [],
+  "badRequests": [],
+  "failure": null,
+  "fixture": "Existing valid four-part saved profile. No final boss combat is claimed by this repair-only test. All repair delivery and ending interactions use real keyboard input.",
+  "limits": "Local headless Edge. No human comprehension, listening, physical touch, or complete new-campaign acceptance."
+}

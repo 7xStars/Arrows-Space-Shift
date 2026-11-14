@@ -1,0 +1,71 @@
+Arrow Space Shift 0.25.1-dev.5
+Local development build. Not published or submitted.
+
+START ON WINDOWS
+
+1. Extract the entire PLAY ZIP to a folder.
+2. Open START-GAME-WINDOWS.bat.
+3. Keep the server window open during play.
+4. If the browser does not open, use the URL from the server window.
+
+The launcher requires Node.js or Python 3.
+The normal address is http://127.0.0.1:4177/.
+If port 4177 is in use, close the previous game server first.
+Use the same address and browser to retain browser saves.
+Do not open index.html directly from the ZIP or file system.
+
+OTHER LOCAL START OPTIONS
+
+With Node.js, run: npm start
+With Python 3, run: python3 tools/launch-local.py
+
+ITCH.IO PACKAGE
+
+The PLAY ZIP has index.html at its root.
+Upload it as an HTML game after the release checks and publication decision.
+No upload or jam submission was made for this candidate.
+
+PLAY
+
+Space fires manually.
+Left and Right steer in the scrolling campaign.
+Left Shift folds. Right Shift unfolds.
+C captures and E releases when those actions are available.
+P pauses play. Guide and Options also pause play.
+The in-game Guide describes movement for the current Act.
+The jam edition contains Acts I, II, and III.
+Defeat the Curvature Gate at the end of Act III.
+Collect its Curvature Seed physically. Reach extraction to finish this edition.
+The finish screen offers replay.
+Act IV and the later repair sequence are reserved for post-jam work.
+The full source keeps those systems and their saved records.
+
+AUDIO AND ACCESSIBILITY
+
+Master, music, effects, and ambience levels save independently.
+Music uses original produced FoxDot and SuperCollider recordings.
+The title requests automatic playback. Browser policy can require a first click or key press.
+Saved mute settings still apply. No external music tool is required for play.
+Title music also starts on the restored-checkpoint entry menu when sound is permitted.
+If music cannot load, select Retry music in Options. SFX remain available.
+Reduced motion and decorative-effect controls remain available.
+Critical warnings remain visual when sound is off.
+
+SAVES
+
+Use full progress export before changing browser or address.
+The export includes fleet, campaign checkpoints, repair, and settings.
+If a save fails, keep the page open and use the save-retry control.
+A copied source folder does not transfer browser storage.
+
+CURRENT LIMITS
+
+The hybrid geometry remains experimental.
+Complete human play, listening acceptance, and physical-device checks remain open.
+The 4.5/5 category target is not a verified result.
+
+DETAILS
+
+Read RELEASE-NOTES-v0.25.1-dev.5.md.
+The SOURCE ZIP includes the tests, reports, design records, credits, and preserved earlier files.
+No GitHub push, ChatGPT Sites update, itch.io publication, or source-license selection was made.

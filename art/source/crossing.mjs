@@ -1,95 +1,4972 @@
-export const PALETTE={O:'#1B1626',L:'#D8C9A8',M:'#9C8B6E',H:'#5A4E40',D:'#2E2740',G:'#FFE9A0',F:'#E4572E',U:'#3E7CB1',a:'#E8E4DC',b:'#F2A541',c:'#E8D44D',d:'#7BC043',e:'#2FA4A0',f:'#7E5BC2',g:'#C45AA8'};
-export const STAGES=['a','b','c','d','e','f','g','split'];
-const centered=rows=>rows.map(row=>'.'.repeat(Math.floor((16-row.length)/2))+row+'.'.repeat(Math.ceil((16-row.length)/2)));
-const masks={
-  player:centered(['##','##','####','####','######','######','########','##########','############','##############','################','################','#####..##..#####','###....##....###','##.....##.....##','......####......']),
-  scout:centered(['..##..##..','..######..','########','########','########','########','########','########','######','######','####','####','##','##','','']),
-  gunner:centered(['##....##','##....##','########','##########','############','##############','################','################','##############','##############','##..######..##','##..######..##','##...####...##','##....##....##','......##......','']),
-  heavy:centered(['..####..####..','##############','################','################','################','################','################','################','################','##############','############','##########','########','######','####','##']),
-  klein:centered(['##','####','####','##','####','######','######','########','##########','##########','########','######','####','####','##','##']),
-  rock:centered(['','######','##########','############','#############','##############','################','################','################','################','###############','##############','############','##########','######','']),
-};
-function shaded(mask){
-  return mask.map((row,y)=>[...row].map((v,x)=>{
-    if(v!== '#')return '.';
-    if([[x-1,y],[x+1,y],[x,y-1],[x,y+1]].some(([a,b])=>mask[b]?.[a]!=='#'))return 'O';
-    return y<5&&x<10?'L':x<8?'M':'H';
-  }));
-}
-const paint=(p,x,y,color)=>{if(p[y]?.[x]&&p[y][x]!=='.')p[y][x]=color;};
-const copy=p=>p.map(row=>[...row]);
-const ship=name=>{
-  const p=shaded(masks[name]);
-  if(name==='player')for(const [x,y,c] of [[7,3,'G'],[8,3,'G'],[7,4,'G'],[8,4,'G'],[7,13,'U'],[8,13,'U'],[7,14,'G'],[8,14,'G'],[3,10,'L'],[12,10,'M']])paint(p,x,y,c);
-  else if(name==='klein'){
-    for(const [x,y,c] of [[7,0,'F'],[8,1,'F'],[7,2,'U'],[6,2,'U'],[7,3,'F'],[8,3,'F'],[8,4,'U'],[7,5,'G'],[7,7,'L'],[8,9,'F']])paint(p,x,y,c);
-  }else{
-    paint(p,7,7,'F');paint(p,8,7,'G');
-    if(name==='gunner')for(const x of [2,3,12,13])for(let y=7;y<13;y++)paint(p,x,y,y%3===0?'O':'M');
-    if(name==='heavy'){
-      for(let x=3;x<13;x++)paint(p,x,4,x<7?'L':'M');
-      for(let y=6;y<11;y++){paint(p,4,y,'O');paint(p,11,y,'O');}
-      for(let x=5;x<11;x++)paint(p,x,11,'O');
+// Reconstructed from retained PNG exports. This is not the lost original master.
+export const PALETTE={"O":"#1B1626","L":"#D8C9A8","M":"#9C8B6E","H":"#5A4E40","D":"#2E2740","G":"#FFE9A0","F":"#E4572E","U":"#3E7CB1","a":"#E8E4DC","b":"#F2A541","c":"#E8D44D","d":"#7BC043","e":"#2FA4A0","f":"#7E5BC2","g":"#C45AA8","h":"#383E40","i":"#F0E4BD","j":"#B4A170","k":"#60C0BE","l":"#C2EEDB","m":"#96907C"};
+export const MANIFEST={
+  "version": 2,
+  "id": "crossing-v3",
+  "palette": {
+    "O": "#1B1626",
+    "L": "#D8C9A8",
+    "M": "#9C8B6E",
+    "H": "#5A4E40",
+    "D": "#2E2740",
+    "G": "#FFE9A0",
+    "F": "#E4572E",
+    "U": "#3E7CB1",
+    "a": "#E8E4DC",
+    "b": "#F2A541",
+    "c": "#E8D44D",
+    "d": "#7BC043",
+    "e": "#2FA4A0",
+    "f": "#7E5BC2",
+    "g": "#C45AA8",
+    "h": "#383E40",
+    "i": "#F0E4BD",
+    "j": "#B4A170",
+    "k": "#60C0BE",
+    "l": "#C2EEDB",
+    "m": "#96907C"
+  },
+  "atlas": "atlas.png",
+  "width": 512,
+  "height": 344,
+  "filter": "nearest",
+  "alpha": "binary",
+  "packing": {
+    "kind": "shelf",
+    "padding": 4
+  },
+  "source": "art/source/crossing.mjs",
+  "atlasSha256": "e58bc945c988b12cfdd0e935a296718cdd392a33da74e2cc3b6702a0ec3b2824",
+  "frames": {
+    "player.arrow": {
+      "x": 4,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.arrow.png"
+    },
+    "player.arrow-down": {
+      "x": 44,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.arrow-down.png"
+    },
+    "player.skater": {
+      "x": 84,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.skater.png"
+    },
+    "player.skater-down": {
+      "x": 124,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.skater-down.png"
+    },
+    "player.needle": {
+      "x": 164,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.needle.png"
+    },
+    "player.needle-down": {
+      "x": 204,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.needle-down.png"
+    },
+    "enemy.scout": {
+      "x": 244,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.scout.png"
+    },
+    "enemy.scout-up": {
+      "x": 284,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.scout-up.png"
+    },
+    "enemy.gunner": {
+      "x": 324,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.gunner.png"
+    },
+    "enemy.gunner-up": {
+      "x": 364,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.gunner-up.png"
+    },
+    "enemy.heavy": {
+      "x": 404,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy.png"
+    },
+    "enemy.heavy-up": {
+      "x": 444,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy-up.png"
+    },
+    "enemy.klein": {
+      "x": 4,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.klein.png"
+    },
+    "enemy.klein-up": {
+      "x": 44,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.klein-up.png"
+    },
+    "enemy.heavy-damaged": {
+      "x": 84,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy-damaged.png"
+    },
+    "enemy.heavy-damaged-up": {
+      "x": 124,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy-damaged-up.png"
+    },
+    "icon.klein": {
+      "x": 164,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "icon.klein.png"
+    },
+    "boss.core": {
+      "x": 204,
+      "y": 44,
+      "width": 64,
+      "height": 64,
+      "pivot": [
+        32,
+        32
+      ],
+      "file": "boss.core.png"
+    },
+    "boss.core-up": {
+      "x": 276,
+      "y": 44,
+      "width": 64,
+      "height": 64,
+      "pivot": [
+        32,
+        32
+      ],
+      "file": "boss.core-up.png"
+    },
+    "boss.escort": {
+      "x": 348,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "boss.escort.png"
+    },
+    "boss.escort-up": {
+      "x": 388,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "boss.escort-up.png"
+    },
+    "health.1": {
+      "x": 428,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.1.png"
+    },
+    "health.2": {
+      "x": 452,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.2.png"
+    },
+    "health.3": {
+      "x": 476,
+      "y": 44,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.3.png"
+    },
+    "health.4": {
+      "x": 4,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "health.4.png"
+    },
+    "return.exit": {
+      "x": 28,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "return.exit.png"
+    },
+    "return.entry": {
+      "x": 52,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "return.entry.png"
+    },
+    "asteroid.small": {
+      "x": 76,
+      "y": 116,
+      "width": 8,
+      "height": 8,
+      "pivot": [
+        4,
+        4
+      ],
+      "file": "asteroid.small.png"
+    },
+    "asteroid.medium": {
+      "x": 92,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.medium.png"
+    },
+    "asteroid.large": {
+      "x": 116,
+      "y": 116,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "asteroid.large.png"
+    },
+    "asteroid.break-0": {
+      "x": 156,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-0.png"
+    },
+    "asteroid.break-1": {
+      "x": 180,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-1.png"
+    },
+    "asteroid.break-2": {
+      "x": 204,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "asteroid.break-2.png"
+    },
+    "effect.glint": {
+      "x": 228,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint.png"
+    },
+    "effect.absorb": {
+      "x": 252,
+      "y": 116,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb.png"
+    },
+    "edge.left": {
+      "x": 284,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.left.png"
+    },
+    "edge.right": {
+      "x": 308,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.right.png"
+    },
+    "edge.top": {
+      "x": 332,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.top.png"
+    },
+    "edge.bottom": {
+      "x": 356,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.bottom.png"
+    },
+    "edge.twist": {
+      "x": 380,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "edge.twist.png"
+    },
+    "stage.0": {
+      "x": 404,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.0.png"
+    },
+    "stage.1": {
+      "x": 428,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.1.png"
+    },
+    "stage.2": {
+      "x": 452,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.2.png"
+    },
+    "stage.3": {
+      "x": 476,
+      "y": 116,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.3.png"
+    },
+    "stage.4": {
+      "x": 4,
+      "y": 156,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.4.png"
+    },
+    "stage.5": {
+      "x": 28,
+      "y": 156,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.5.png"
+    },
+    "stage.6": {
+      "x": 52,
+      "y": 156,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.6.png"
+    },
+    "stage.7": {
+      "x": 76,
+      "y": 156,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "stage.7.png"
+    },
+    "shot.player": {
+      "x": 100,
+      "y": 156,
+      "width": 4,
+      "height": 8,
+      "pivot": [
+        2,
+        4
+      ],
+      "file": "shot.player.png"
+    },
+    "shot.enemy": {
+      "x": 112,
+      "y": 156,
+      "width": 4,
+      "height": 8,
+      "pivot": [
+        2,
+        4
+      ],
+      "file": "shot.enemy.png"
+    },
+    "engine.player-down-0": {
+      "x": 124,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-0.png"
+    },
+    "engine.player-down-1": {
+      "x": 148,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-1.png"
+    },
+    "engine.player-down-2": {
+      "x": 172,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-2.png"
+    },
+    "engine.player-down-3": {
+      "x": 196,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-3.png"
+    },
+    "engine.player-up-0": {
+      "x": 220,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-0.png"
+    },
+    "engine.player-up-1": {
+      "x": 244,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-1.png"
+    },
+    "engine.player-up-2": {
+      "x": 268,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-2.png"
+    },
+    "engine.player-up-3": {
+      "x": 292,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-3.png"
+    },
+    "engine.enemy-down-0": {
+      "x": 316,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-0.png"
+    },
+    "engine.enemy-down-1": {
+      "x": 340,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-1.png"
+    },
+    "engine.enemy-down-2": {
+      "x": 364,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-2.png"
+    },
+    "engine.enemy-down-3": {
+      "x": 388,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-3.png"
+    },
+    "engine.enemy-up-0": {
+      "x": 412,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-0.png"
+    },
+    "engine.enemy-up-1": {
+      "x": 436,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-1.png"
+    },
+    "engine.enemy-up-2": {
+      "x": 460,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-2.png"
+    },
+    "engine.enemy-up-3": {
+      "x": 484,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-3.png"
+    },
+    "effect.muzzle-0": {
+      "x": 4,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-0.png"
+    },
+    "effect.muzzle-1": {
+      "x": 28,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-1.png"
+    },
+    "effect.muzzle-2": {
+      "x": 52,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-2.png"
+    },
+    "effect.glint-0": {
+      "x": 76,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-0.png"
+    },
+    "effect.glint-1": {
+      "x": 100,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-1.png"
+    },
+    "effect.glint-2": {
+      "x": 124,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-2.png"
+    },
+    "effect.glint-3": {
+      "x": 148,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-3.png"
+    },
+    "effect.hit-0": {
+      "x": 172,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-0.png"
+    },
+    "effect.hit-1": {
+      "x": 204,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-1.png"
+    },
+    "effect.hit-2": {
+      "x": 236,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-2.png"
+    },
+    "effect.hit-3": {
+      "x": 268,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-3.png"
+    },
+    "effect.explosion-0": {
+      "x": 300,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-0.png"
+    },
+    "effect.explosion-1": {
+      "x": 340,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-1.png"
+    },
+    "effect.explosion-2": {
+      "x": 380,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-2.png"
+    },
+    "effect.explosion-3": {
+      "x": 420,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-3.png"
+    },
+    "effect.explosion-4": {
+      "x": 460,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-4.png"
+    },
+    "effect.explosion-5": {
+      "x": 4,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-5.png"
+    },
+    "effect.absorb-0": {
+      "x": 44,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-0.png"
+    },
+    "effect.absorb-1": {
+      "x": 76,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-1.png"
+    },
+    "effect.absorb-2": {
+      "x": 108,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-2.png"
+    },
+    "effect.absorb-3": {
+      "x": 140,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-3.png"
+    },
+    "effect.fold-0": {
+      "x": 172,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-0.png"
+    },
+    "effect.fold-1": {
+      "x": 212,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-1.png"
+    },
+    "effect.fold-2": {
+      "x": 252,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-2.png"
+    },
+    "effect.fold-3": {
+      "x": 292,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-3.png"
+    },
+    "effect.fold-4": {
+      "x": 332,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-4.png"
+    },
+    "effect.unfold-0": {
+      "x": 372,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-0.png"
+    },
+    "effect.unfold-1": {
+      "x": 412,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-1.png"
+    },
+    "effect.unfold-2": {
+      "x": 452,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-2.png"
+    },
+    "effect.unfold-3": {
+      "x": 4,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-3.png"
+    },
+    "effect.unfold-4": {
+      "x": 44,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-4.png"
+    },
+    "effect.warp-0": {
+      "x": 84,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-0.png"
+    },
+    "effect.warp-1": {
+      "x": 124,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-1.png"
+    },
+    "effect.warp-2": {
+      "x": 164,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-2.png"
+    },
+    "effect.warp-3": {
+      "x": 204,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-3.png"
+    },
+    "effect.warp-4": {
+      "x": 244,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-4.png"
+    },
+    "effect.shield-0": {
+      "x": 284,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-0.png"
+    },
+    "effect.shield-1": {
+      "x": 324,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-1.png"
+    },
+    "effect.shield-2": {
+      "x": 364,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-2.png"
+    },
+    "effect.shield-3": {
+      "x": 404,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-3.png"
+    },
+    "player.aftwing": {
+      "x": 4,
+      "y": 308,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.aftwing.png"
+    },
+    "player.aftwing-down": {
+      "x": 44,
+      "y": 308,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.aftwing-down.png"
+    }
+  },
+  "animations": {
+    "engine.player-down": {
+      "frames": [
+        "engine.player-down-0",
+        "engine.player-down-1",
+        "engine.player-down-2",
+        "engine.player-down-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.player-up": {
+      "frames": [
+        "engine.player-up-0",
+        "engine.player-up-1",
+        "engine.player-up-2",
+        "engine.player-up-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.enemy-down": {
+      "frames": [
+        "engine.enemy-down-0",
+        "engine.enemy-down-1",
+        "engine.enemy-down-2",
+        "engine.enemy-down-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.enemy-up": {
+      "frames": [
+        "engine.enemy-up-0",
+        "engine.enemy-up-1",
+        "engine.enemy-up-2",
+        "engine.enemy-up-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "effect.muzzle": {
+      "frames": [
+        "effect.muzzle-0",
+        "effect.muzzle-1",
+        "effect.muzzle-2"
+      ],
+      "durationsMs": [
+        25,
+        35,
+        45
+      ],
+      "loop": false
+    },
+    "effect.glint": {
+      "frames": [
+        "effect.glint-0",
+        "effect.glint-1",
+        "effect.glint-2",
+        "effect.glint-3"
+      ],
+      "durationsMs": [
+        50,
+        70,
+        80,
+        100
+      ],
+      "loop": false
+    },
+    "effect.hit": {
+      "frames": [
+        "effect.hit-0",
+        "effect.hit-1",
+        "effect.hit-2",
+        "effect.hit-3"
+      ],
+      "durationsMs": [
+        35,
+        50,
+        65,
+        90
+      ],
+      "loop": false
+    },
+    "effect.explosion": {
+      "frames": [
+        "effect.explosion-0",
+        "effect.explosion-1",
+        "effect.explosion-2",
+        "effect.explosion-3",
+        "effect.explosion-4",
+        "effect.explosion-5"
+      ],
+      "durationsMs": [
+        35,
+        50,
+        65,
+        80,
+        95,
+        115
+      ],
+      "loop": false
+    },
+    "effect.absorb": {
+      "frames": [
+        "effect.absorb-0",
+        "effect.absorb-1",
+        "effect.absorb-2",
+        "effect.absorb-3"
+      ],
+      "durationsMs": [
+        40,
+        55,
+        75,
+        110
+      ],
+      "loop": false
+    },
+    "effect.fold": {
+      "frames": [
+        "effect.fold-0",
+        "effect.fold-1",
+        "effect.fold-2",
+        "effect.fold-3",
+        "effect.fold-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.unfold": {
+      "frames": [
+        "effect.unfold-0",
+        "effect.unfold-1",
+        "effect.unfold-2",
+        "effect.unfold-3",
+        "effect.unfold-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.warp": {
+      "frames": [
+        "effect.warp-0",
+        "effect.warp-1",
+        "effect.warp-2",
+        "effect.warp-3",
+        "effect.warp-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.shield": {
+      "frames": [
+        "effect.shield-0",
+        "effect.shield-1",
+        "effect.shield-2",
+        "effect.shield-3"
+      ],
+      "durationsMs": [
+        90,
+        100,
+        110,
+        100
+      ],
+      "loop": true
+    },
+    "asteroid.break": {
+      "frames": [
+        "asteroid.break-0",
+        "asteroid.break-1",
+        "asteroid.break-2"
+      ],
+      "durationsMs": [
+        90,
+        90,
+        120
+      ],
+      "loop": false
+    }
+  },
+  "sourceProvenance": {
+    "method": "Reconstructed from retained PNG exports. The original active master was not found.",
+    "date": "2026-11-13",
+    "originalManifestSha256": "b223b1183b8161dec9e988c5ad13a339ff2bd0af6de481ac21af44860176d12e",
+    "unavailableOriginalSourceSha256": "44669d3690efe2bb403467e8b15981f1888159ba11d1f8a5c43716b1222802b7",
+    "addedPaletteTokensForExistingColors": {
+      "h": "#383E40",
+      "i": "#F0E4BD",
+      "j": "#B4A170",
+      "k": "#60C0BE",
+      "l": "#C2EEDB",
+      "m": "#96907C"
     }
   }
-  return p;
 };
-const scale=(p,n)=>p.flatMap(row=>Array.from({length:n},()=>row.flatMap(c=>Array(n).fill(c))));
-const blank=(w=16,h=w)=>Array.from({length:h},()=>Array(w).fill('.'));
-const asteroid=()=>{
-  const p=shaded(masks.rock);
-  for(const [x,y,c] of [[5,3,'L'],[6,3,'L'],[4,4,'L'],[9,5,'O'],[10,5,'H'],[9,6,'H'],[6,9,'O'],[5,10,'H'],[4,9,'M'],[11,11,'M'],[9,12,'M']])paint(p,x,y,c);
-  return p;
-};
-const arrow=(direction,color)=>{
-  const p=blank();
-  for(let y=3;y<=10;y++)for(let x=6;x<=9;x++)p[y][x]=x===6||x===9?'O':color;
-  for(let y=8;y<14;y++)for(let x=2+y-8;x<=13-(y-8);x++)p[y][x]=(x===2+y-8||x===13-(y-8)||y===13)?'O':color;
-  if(direction==='up')return p.toReversed();
-  if(direction==='right')return p[0].map((_,x)=>p.map(row=>row[p[0].length-1-x]));
-  return p;
-};
-const twist=()=>{const p=blank();for(let y=1;y<15;y++){const x=[6,7,8,9,9,8,7][y%7];p[y][x-1]='O';p[y][x]=y<8?'F':'U';p[y][x+1]=y<8?'U':'F';p[y][x+2]='O';}return p;};
-const edgeTile=kind=>{
-  const p=arrow(kind==='left'?'up':kind==='right'?'down':'right',kind==='left'?'F':kind==='right'?'U':'M');
-  for(let i=0;i<16;i++){
-    if(kind==='left'){p[i][0]='O';p[i][1]='F';}
-    if(kind==='right'){p[i][15]='O';p[i][14]='U';}
-    if(kind==='top'){p[0][i]='O';p[1][i]='M';}
-    if(kind==='bottom'){p[15][i]='O';p[14][i]='M';}
-  }return p;
-};
-const marker=accent=>{
-  const p=blank();for(let y=1;y<15;y++)for(let x=1;x<15;x++){
-    const d=Math.max(Math.abs(x-7.5),Math.abs(y-7.5));if(Math.abs(x-7.5)+Math.abs(y-7.5)>10)continue;
-    p[y][x]=d>=6?'O':d>=4?(accent==='split'?(x+y<15?'F':'U'):accent):d>=3?'O':d>=1.5?'H':'G';
-  }return p;
-};
-const sprites=[];
-function add(id,p,purpose){sprites.push({id,width:p[0].length,height:p.length,pixels:p.map(row=>row.join('')),purpose});return p;}
-add('player.arrow',ship('player'),'Player ship. Faces up.');
-for(const name of ['scout','gunner','heavy','klein'])add(`enemy.${name}`,ship(name),'Enemy form. Faces down.');
-const turned=p=>p.toReversed().map((row,y)=>row.map((c,x)=>['L','M','H'].includes(c)?y<5&&x<10?'L':x<8?'M':'H':c));
-add('player.arrow-down',turned(ship('player')),'Player after a Klein side crossing. Faces down.');
-for(const name of ['scout','gunner','heavy','klein'])add(`enemy.${name}-up`,turned(ship(name)),'Enemy after changing facing. Faces up.');
-add('icon.klein',scale(ship('klein'),2),'Klein Runner inspection icon.');
-const damaged=ship('heavy');for(const [x,y] of [[6,3],[7,4],[7,5],[8,6],[7,8],[8,9],[9,10]])paint(damaged,x,y,'O');add('enemy.heavy-damaged',damaged,'Damaged Heavy.');
-add('enemy.heavy-damaged-up',turned(damaged),'Damaged Heavy facing up.');
-for(let count=1;count<=4;count++){const p=blank();for(let i=0;i<count;i++)p[1][7-(count-1)+i*2]='G';add(`health.${count}`,p,'One-pixel health pips.');}
-add('return.exit',arrow('down','F'),'Bottom exit.');add('return.entry',arrow('down','U'),'Top entry.');
-const rock=asteroid();add('asteroid.medium',rock,'16-pixel asteroid.');
-const large=scale(rock,2);for(const [x,y] of [[4,8],[5,8],[25,21],[26,21],[9,27],[10,27]])large[y][x]='.';add('asteroid.large',large,'32-pixel asteroid.');
-add('asteroid.small',shaded(['..####..','.######.','########','########','########','.######.','..####..','...##...']),'8-pixel asteroid.');
-for(let frame=0;frame<3;frame++){
-  const p=blank();for(let y=0;y<16;y++)for(let x=0;x<16;x++){
-    if(rock[y][x]==='.'||x===7||y===8||(frame===2&&((x+y)%3===0)))continue;
-    const nx=x+(x<7?-frame:frame),ny=y+(y<8?-frame:frame);if(p[ny]?.[nx]!==undefined)p[ny][nx]=rock[y][x];
-  }add(`asteroid.break-${frame}`,p,'Asteroid break frame.');
-}
-const glint=blank();for(let d=-4;d<=4;d++){glint[7][7+d]='G';glint[7+d][7]='G';}glint[6][6]='L';add('effect.glint',glint,'Points glint.');
-const flash=blank();flash[7][7]='F';add('effect.absorb',flash,'Single-pixel absorbed-shot flash.');
-add('edge.left',edgeTile('left'),'Left side direction.');add('edge.right',edgeTile('right'),'Right side direction.');
-add('edge.top',edgeTile('top'),'Top edge without twist.');add('edge.bottom',edgeTile('bottom'),'Bottom edge without twist.');add('edge.twist',twist(),'Side-edge half twist.');
-for(let i=0;i<8;i++)add(`stage.${i}`,marker(STAGES[i]),`Route marker S${i}.`);
-for(const [id,c] of [['shot.player','G'],['shot.enemy','F']]){const p=blank(4,8);for(let y=1;y<7;y++){p[y][1]=y===1?'L':c;p[y][2]=c;}add(id,p,'Projectile glint.');}
-export {sprites};
+export const sprites=[
+  {
+    "id": "player.arrow",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............O................",
+      "...............O................",
+      "...............OO...............",
+      "..............OGO...............",
+      "..............OGO...............",
+      "..............OGMO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      ".............OLGLHO.............",
+      ".............aLMLHa.............",
+      ".............OLMMHO.............",
+      "............OLMMMHO.............",
+      "...........OLMLGDHHO............",
+      "...........OLMLeUMMHO...........",
+      "..........OLLLLeUMHMO...........",
+      ".........OLLMLLeUMHLHO..........",
+      "........OLMLLLLODMHHLHO.........",
+      "........OLLMLOLODMOHMLHO........",
+      ".......OLLMLLOLODMOHHLHO........",
+      "......OLLLaLLOMODMOHHaLHO.......",
+      "......OLLMLLMOMODMOMHHMLLO......",
+      ".....OLLLMLMMOMODMOMHHHMLLO.....",
+      ".....OLMGLMMOMOOOOHOHHHGLHO.....",
+      "....OLLLeMMO.OLMMMO.OLHeMLHO....",
+      "....OLMMMMO..OLGGO...OLHHHLO....",
+      "...OLMMOOO....OUHO....OOOOHHO...",
+      "...OOOO.......OLUO........OOO...",
+      "..............OOOO..............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.arrow-down",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "..............OOOO..............",
+      "...OOOO.......OLUO........OOO...",
+      "...OLLLOOO....OUMO....OOOOLLO...",
+      "....OLMLLLO..OLGGO...OLLLLLO....",
+      "....OLLLeMLO.OLMMMO.OLHeMLHO....",
+      ".....OLMGLMLOMOOOOLOLHHGLHO.....",
+      ".....OLLLMLMLOMODMOLHHHMLHO.....",
+      "......OLLMLLMOMODMOMHHMLHO......",
+      "......OLLLaLLOMODMOHHaLHO.......",
+      ".......OLLMLLOLODMOHHLHO........",
+      "........OLLMLOLODMOHMLHO........",
+      "........OLMLLLLODMHHLHO.........",
+      ".........OLLMLLeUMHLHO..........",
+      "..........OLLLLeUMHMO...........",
+      "...........OLMLeUMMHO...........",
+      "...........OLMLGDHHO............",
+      "............OLMMMHO.............",
+      ".............OLMMHO.............",
+      ".............aLMLHa.............",
+      ".............OLGLHO.............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGHO..............",
+      "..............OGO...............",
+      "..............OGO...............",
+      "...............OO...............",
+      "...............O................",
+      "...............O................",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.skater",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............O................",
+      "...............OO...............",
+      "...............GO...............",
+      "..............OGMO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      ".............OLGLHO.............",
+      "........O....OLLLHO....O........",
+      ".......OLO...OLLMHO...OLO.......",
+      ".......OLLO..OLLMMHO.OLHO.......",
+      "......OLLMO.OLLLMMHO.OLHHO......",
+      "......OLMMMOaMLLMHMaO.OLHO......",
+      ".....OLLMMLLLLLOMHMHLOHMHHO.....",
+      ".....OLMLLMMLLMOOHHHHLLHMHO.....",
+      "....OLLMMMMMLLOGOOHHHHHLMHHO....",
+      "....OLMMMMOMLMOOUOOHHOOHHMHO....",
+      "...OLLeMOO.OLOOOUOHHO..OLeHHO...",
+      "...OLLOO...OLMOOOOHHO...OOHHO...",
+      "..OLLMMO...OLMMOOHHHO...OHMHHO..",
+      "..OLLMMO.OLMMMMMOHHMLLO.OHMHHO..",
+      "..OLMMMMLaLMMMMLMHHMHLaLHHHMHO..",
+      "..OLMMMMLMOOOOMHMHHOOOHLHHHMHO..",
+      "..OLHMMMMO....OLMHO...OLHHHMHO..",
+      "..OLHOOMO......OLO.....OLOOMHO..",
+      "..OLHGGO........O.......OGGMHO..",
+      "..OLMUUO................OUUHHO..",
+      "...OLMOO................OOHHO...",
+      "...OOO....................OOO...",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.skater-down",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...OOO....................OOO...",
+      "...OLLOO................OOLLO...",
+      "..OLMUUO................OUUHHO..",
+      "..OLHGGO........O.......OGGMHO..",
+      "..OLHOOMO......OLO.....OLOOMHO..",
+      "..OLHMMMLO....OLMLO...OLHHHMHO..",
+      "..OLMMMMMLOOOOLMMHLOOOLHHHHMHO..",
+      "..OLMMMMMaLLLLMLMHHLLLaLHHHMHO..",
+      "..OLLMMO.OLMMMMMOHHMLLO.OHMHHO..",
+      "..OLLMMO...OLMMOOHHHO...OHMHHO..",
+      "...OLLOO...OLMOOOOHHO...OOHHO...",
+      "...OLLeMOO.OLOOOUOHHO..OLeHHO...",
+      "....OLMMLLOMLMOOUOOHHOOLHMHO....",
+      "....OLLMMMLMLLOGOOHHHLLLMHHO....",
+      ".....OLMLLMMLLMOOHHHHLLHMHO.....",
+      ".....OLLMMLLLLLOMHMHLOHMHHO.....",
+      "......OLMMMOaMLLMHMaO.OLHO......",
+      "......OLLMO.OLLLMMHO.OLHHO......",
+      ".......OLMO..OLLMMHO.OLHO.......",
+      ".......OLO...OLLMHO...OLO.......",
+      "........O....OLLLHO....O........",
+      ".............OLGLHO.............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGLO..............",
+      "..............OGHO..............",
+      "...............GO...............",
+      "...............OO...............",
+      "...............O................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.needle",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............OO...............",
+      "...............OO...............",
+      "...............GO...............",
+      "...............LO...............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMHO.............",
+      ".............OLGMHO.............",
+      ".............OLGMHO.............",
+      ".............OLGMHHO............",
+      "............OLLGMHHO............",
+      "............OaLGMHLHO...........",
+      "...........OLLLOMHHHO...........",
+      "...........OLLOGOOHHO...........",
+      "...........OLLOeUOOHO...........",
+      "...........OLOOeUOHMO...........",
+      "...........OLMOOOOHHO...........",
+      "............OLMMOHMO............",
+      "............OLMLHHMO............",
+      ".............OLMHMO.............",
+      ".............OLMHMO.............",
+      "..........OO.OLMHMO.OO..........",
+      "..........LLOMMMHHHOLL..........",
+      ".........OLMLMOOOOHLHMO.........",
+      ".........OOOOMMGGHOOOOO.........",
+      ".............OLUUO..............",
+      "..............OOOO..............",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.needle-down",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "..............OOOO..............",
+      ".............OLUUO..............",
+      ".........OOOOLMGGMOOOOO.........",
+      ".........OLLLMOOOOLLHLO.........",
+      "..........LLOMMMHMMOHM..........",
+      "..........OO.OLMHMO.OO..........",
+      ".............OLMHMO.............",
+      ".............OLMHMO.............",
+      "............OLMLHHMO............",
+      "............OLMMOHMO............",
+      "...........OLMOOOOHHO...........",
+      "...........OLOOeUOHMO...........",
+      "...........OLLOeUOOHO...........",
+      "...........OLLOGOOHHO...........",
+      "...........OLLLOMHHHO...........",
+      "............OaLGMHLHO...........",
+      "............OLLGMHHO............",
+      ".............OLGMHHO............",
+      ".............OLGMHO.............",
+      ".............OLGMHO.............",
+      "..............OLMHO.............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "...............LO...............",
+      "...............GO...............",
+      "...............OO...............",
+      "...............OO...............",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.scout",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................O...............",
+      "....OOO.........O........OOO....",
+      ".....OLOOO.....OO.....OOOLO.....",
+      ".....OLLLFO....OLO...OFLLHO.....",
+      "......OLMbO...OLLO...ObHHO......",
+      "......OLHMMO..OLMO..OLHMHO......",
+      ".......OHLMLO.OLMO.OLHMHO.......",
+      ".......OHMLMLOMMMHOLHHMHO.......",
+      ".......OLHLMMLMMMHLMHMHHO.......",
+      ".......OLHMLMMMLOHHMHMHHO.......",
+      "........OHMLMMLLOHHMMHHO........",
+      "........OLMMLLLFOHHHMHHO........",
+      "........OLMMLLLOFHHMHHHO........",
+      "........OLMMLLLGMHHHHHHO........",
+      ".........OLMLLLLMMHHHHO.........",
+      "..........OLLLLMMMHHHO..........",
+      "..........OLLLLMMMHHHO..........",
+      "...........OLLLMMMHHO...........",
+      "............OLLMMMHO............",
+      "............OLLMMMHO............",
+      ".............OLMMMHO............",
+      ".............OLMMMO.............",
+      ".............OLMHHO.............",
+      "..............OLHHO.............",
+      "..............OLHHO.............",
+      "..............OLHO..............",
+      "...............OLO..............",
+      "...............OOO..............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.scout-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............OOO..............",
+      "...............OLO..............",
+      "..............OLMO..............",
+      "..............OLMMO.............",
+      "..............OLMMO.............",
+      ".............OLMMMO.............",
+      ".............OLMMMO.............",
+      ".............OLMMMHO............",
+      "............OLLMMMHO............",
+      "............OLLMMMHO............",
+      "...........OLLLMMMHHO...........",
+      "..........OLLLLMMMHHLO..........",
+      "..........OLLLLMMMHHHO..........",
+      ".........OLMLLLLMMHHHHO.........",
+      "........OLMMLLLGMHHHHHLO........",
+      "........OLMMLLLOFHHMHHHO........",
+      "........OLMMLLLFOHHHMHHO........",
+      "........OHMLMMLLOHHMMHHO........",
+      ".......OLHMLMMMLOHHMHMHHO.......",
+      ".......OLHLMMMMMMHMMHMHHO.......",
+      ".......OHMLMMOMMMHOMHHMHO.......",
+      ".......OHLMMO.OLMO.OLHMHO.......",
+      "......OLHMMO..OLHO..OLHMHO......",
+      "......OLMbO...OLLO...ObHHO......",
+      ".....OLMMFO....OLO...OFHHHO.....",
+      ".....OLOOO.....OO.....OOOHO.....",
+      "....OOO.........O........OOO....",
+      "................O...............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.gunner",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      ".......O................O.......",
+      "......OLO..............OLO......",
+      ".....OLMLO....OOOO....OLHLO.....",
+      "....OLMMMLO.OOLLLLOO.OLHHHLO....",
+      ".....OLMLMLOLLMMMMLLOLHLHHHO....",
+      ".....OLMMMMLMMMFFMMMLHHHHHO.....",
+      "....OLMMMMMMMMOOOOMMHHHHHHHOO...",
+      "..OOLMMMMMMMLLMMMMMHHHHHHHHLLO..",
+      "..OLMMMMMMMMLLLLMMHHHHHHHHHHHO..",
+      "..OLLFMMMMMOOOOODOOOOHHHHHMFHO..",
+      "..OLLMMMMMMMMMMMDMMMMMHHHHMHHO..",
+      "..OLLOMMMMMMLLLLDHHHHHHHHHMOHO..",
+      "..OLLOMMMOOMLLLLDHHHHOOHHHMOHO..",
+      "..OLLOMMO..OLLLLDHHHO..OLHMOHO..",
+      "..OLLOMMO..OLLLDGHHHO..OLHMOHO..",
+      "...OLOMMO..OLLLFMHHHO..OLHMOHO..",
+      "...OLOMMO..OLLLDMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLDMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLLMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLLMHHHO...OLMOO...",
+      "...OLOMO...OLLLLMHHHO...OLMOO...",
+      "...OLOMO....OLLLMHHMO...OLMOO...",
+      "...OLGMO....OLLLHHHO....OLHGO...",
+      "...OOOOO.....OLLHHHO....OOOOO...",
+      ".............OLLHHO.............",
+      "..............OLHHO.............",
+      "..............OLHO..............",
+      "...............OOO..............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.gunner-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............OOO..............",
+      "..............OLLO..............",
+      "..............OLMMO.............",
+      ".............OLLMHO.............",
+      "...OOOOO.....OLLMHMO....OOOOO...",
+      "...OLGLO....OLLLMHHO....OLLGO...",
+      "...OLOMO....OLLLMHHMO...OLMOO...",
+      "...OLOMO...OLLLLMHHHO...OLMOO...",
+      "...OLOMMO..OLLLLMHHHO...OLMOO...",
+      "...OLOMMO..OLLLLMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLDMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLDMHHHO..OLHMOO...",
+      "...OLOMMO..OLLLFMHHHO..OLHMOHO..",
+      "..OLLOMMO..OLLLDGHHHO..OLHMOHO..",
+      "..OLLOMMO..OLLLLDHHHO..OLHMOHO..",
+      "..OLLOMMMOOMLLLLDHHHHOOHHHMOHO..",
+      "..OLLOMMMLLMLLLLDHHHHLLHHHMOHO..",
+      "..OLLMMMMMMMMMMMDMMMMMHHHHMHHO..",
+      "..OLLFMMMMMOOOOODOOOOHHHHHMFHO..",
+      "..OLMMMMMMMMLLLLMMHHHHHHHHHHHO..",
+      "..OOMMMMMMMMLLMMMMMHHHHHHHHHHO..",
+      "....OLMMMMMMMMOOOOMMHHHHHHHOO...",
+      ".....OLMMMMMMMMFFHHHHHHHHHO.....",
+      ".....OLMLMMOMMMHHHHHOHHLHHHO....",
+      "....OLMMMMO.OOMHHHOO.OLHHHHO....",
+      ".....OLMMO....OOOO....OLHHO.....",
+      "......OLO..............OLO......",
+      ".......O................O.......",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.heavy",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      ".....OOOO..............OOOO.....",
+      "....OLLLLOOOO......OOOOLLLLO....",
+      "....OLMMMLOLLOO...OLLOLHHHHO....",
+      "...OLMMMMMFMMLLO.OLMHFHHHHHHO...",
+      "..OLMMMMMMOMMMMLOLMMHOHHHHHHLO..",
+      "..OLMMOMMMMMMMMMLMMMHHLHHOHHHO..",
+      ".OLMLLGOMMMMMMLLLLMMHLHHOGHHHHO.",
+      ".OLMLLLLOMMMMMMMOMMMLHHOHHHHHHO.",
+      ".OLMLLLLOMMMMMMOOMMLHHHOHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      "..OLLLLLLLOMMOOOOOOMHOHHHHHMHHO.",
+      "..OLMLLLLLOMOOOOOOOMHOHHHHMHHO..",
+      "..OLLMLLLLLOMOOObOOOOHHHHMHHHO..",
+      "..OLLLMLLLLOMOOGOOOMOHHHHOHHHO..",
+      "..OLMLLMLLLLOMOOOOMOHHHHMGHHHO..",
+      "..OLMMOLMLLLMMOOOMMMHHHMHHHHHO..",
+      "...OLMGLLMLLLMMOMMMMHHMHHHHHO...",
+      "....OLMMLLOLLMMLMMMHHOHHHHHO....",
+      ".....OLMMLGLLLMLMMMHHGHHHHHO....",
+      "......OLMMLLLLMLMMMHHHHHHHO.....",
+      ".......OLMMLMMMLMMMMHHHHOO......",
+      "........OOMMMMMLMHHHHHOO........",
+      "..........OOMMMLHHHHOO..........",
+      "............OLMLHHOO............",
+      ".............OLHHO..............",
+      "..............OLHO..............",
+      "..............OLO...............",
+      "...............O................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.heavy-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............O................",
+      "..............OLO...............",
+      "..............OLLO..............",
+      ".............OLMMO..............",
+      "............OLMLMMOO............",
+      "..........OOLMMLMMLLOO..........",
+      "........OOLLMMMLMMMMLLOO........",
+      ".......OLLMLMMMLMMMMHHLLOO......",
+      "......OLMMLLLLMLMMMHHHHHLLO.....",
+      ".....OLMMLGLLLMLMMMHHGHHHHLO....",
+      "....OLMMLLOLLMMLMMMHHOHHHHHO....",
+      "...OLMGLLMLLLMMOMMMMHHMHHHHHO...",
+      "..OLMMOLMLLLMMOOOMMMHHHMHHHHLO..",
+      "..OLMLLMLLLLOMOOOOMOHHHHMGHHHO..",
+      "..OLLLMLLLLOMOOGOOOMOHHHHOHHHO..",
+      "..OLLMLLLLLOMOOObOOOOHHHHMHHHO..",
+      "..OLMLLLLLOMOOOOOOOMHOHHHHMHHO..",
+      "..OLLLLLLLOMMOOOOOOMHOHHHHHMHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLOMMMMMMOOMMLHHHOHHHHHHO.",
+      ".OLMLLLLOMMMMMMMOMMMLHHOHHHHHHO.",
+      ".OLMLLGOMMMMMMLLLLMMHLHHOGHHHHO.",
+      "..OLMMOMMMMMMMMHHHHHHHLHHOHHHO..",
+      "..OLMMMMMMOMMMMHOHHHHOHHHHHHHO..",
+      "...OLMMMMMFMMMMO.OLHHFHHHHHHO...",
+      "....OLMMMMOMMOO...OLHOHHHHHO....",
+      "....OLMMMOOOO......OOOOHHHHO....",
+      ".....OOOO..............OOOO.....",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.klein",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      ".................O..............",
+      "...............OOO..............",
+      "..............OLLO..............",
+      "..............OLMO..............",
+      "..............OLUO..............",
+      ".............OLGMMO......O......",
+      ".............OLMMMO....OOO......",
+      ".............OLMMFO...OLLHO.....",
+      ".............OUMFMO...OLHHO.....",
+      ".......O...OOMMUMMO...OLHUHO....",
+      "......OLOOOLLMMFUMMO...OLUHO....",
+      "......OLLLLMMMFMMUMO...OLUHHO...",
+      ".....OLMMMMFMFMMMMUMO..OLeHHO...",
+      ".....OLFMMMFFMMMaMMULOOHHHUHO...",
+      "....OLMFMMMMFMMGGMMMULLHHHUHO...",
+      "....OLFMMMMMFMMMMMMMUHHHHHUHO...",
+      "....OLFMMMOMMFMMMMMUHHHHHHUHO...",
+      "....OFMbMO.OLFMMMMMUHHHOHHHO....",
+      "....OFMMMO..OLFLMMUMHHO.OLHO....",
+      ".....OLMO...OLMLMMMMHOO..OLO....",
+      ".....OLMO...OLMLMMMOO.....OO....",
+      ".....OLO.....OLLMMO........O....",
+      ".....OO......OLLMMO.............",
+      ".....O.......OLLMHO.............",
+      "..............OLMHO.............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "...............OO...............",
+      "...............O................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.klein-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............O................",
+      "...............OO...............",
+      "..............OLLO..............",
+      "..............OLMO..............",
+      "..............OLMO..............",
+      "..............OLMMO.............",
+      ".....O.......OLLMMO.............",
+      ".....OO......OLLMMO.............",
+      ".....OLO.....OLLMMO........O....",
+      ".....OLLO...OLMLMMMOO.....OO....",
+      ".....OLMO...OLMLMMMLLOO..OLO....",
+      "....OFMMMO..OLFLMMUMHLO.OLHO....",
+      "....OFMbMO.OLFMMMMMUHHHOLHHO....",
+      "....OLFMMMOLMFMMMMMUHHHLHHUHO...",
+      "....OLFMMMLMFMMMMMMMUHHHHHUHO...",
+      "....OLMFMMMMFMMGGMMMUHHHHHUHO...",
+      ".....OLFMMMFFMMMaMMUHOOHHHUHO...",
+      ".....OLMMMMFMFMMMMUMO..OLeHHO...",
+      "......OLMMMMMMFMMUMO...OLUHHO...",
+      "......OLOOOMMMMFUMMO...OLUHO....",
+      ".......O...OOMMUMMO...OLHUHO....",
+      ".............OUMFMO...OLHHO.....",
+      ".............OLMMFO...OLHHO.....",
+      ".............OLHHHO....OOO......",
+      ".............OLGHHO......O......",
+      "..............OLUO..............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "...............OOO..............",
+      ".................O..............",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.heavy-damaged",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      ".....OOOO..............OOOO.....",
+      "....OLLLLOOOO......OOOOLLLLO....",
+      "....OLMMMLOLLOO...OLLOLHHHHO....",
+      "...OLMMMMMFMMLLO.OLMHFHHHHHHO...",
+      "..OLMMMMMMOMMMMLOLMMHOHHHHHHLO..",
+      "..OLMMOMMMMMMMMMLMMMHHLHHOHHHO..",
+      ".OLMLLGOMMMMMMLLLLMMHLHHOGHHHHO.",
+      ".OLMLLLLOMMMMMMMOMMMLHHOHHHHHHO.",
+      ".OLMLLLLOMMMMMMOOMMLHHHOHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      "..OLLLLLLLOMOHOOOOOMHOHHHHHMHHO.",
+      "..OLMLLLLLObHOOOOOOMHOHHHHMHHO..",
+      "..OLLMLLLLLOOHOObOOOOHHHHMHHHO..",
+      "..OLLLMLLLLOOHOGOOOMOHHHHOHHHO..",
+      "..OLMLLMLLLLOOHOOOMOHHHHMGHHHO..",
+      "..OLMMOLMLLLMMOHOMMMHHHMHHHHHO..",
+      "...OLMGLLMLLFOHOMMMMHHMHHHHHO...",
+      "....OLMMLLOLOHMLMMMHHOHHHHHO....",
+      ".....OLMMLGLLOHLMMMHHGHHHHHO....",
+      "......OLMMLLOHMLMMMHHHHHHHO.....",
+      ".......OLMMOHMMLMMMMHHHHOO......",
+      "........OOMMMMMLMHHHHHOO........",
+      "..........OOMMMLHHHHOO..........",
+      "............OLMLHHOO............",
+      ".............OLHHO..............",
+      "..............OLHO..............",
+      "..............OLO...............",
+      "...............O................",
+      "................................"
+    ]
+  },
+  {
+    "id": "enemy.heavy-damaged-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............O................",
+      "..............OLO...............",
+      "..............OLLO..............",
+      ".............OLMMO..............",
+      "............OLMLMMOO............",
+      "..........OOLMMLMMLLOO..........",
+      "........OOLLMMMLMMMMLLOO........",
+      ".......OLLMOHMMLMMMMHHLLOO......",
+      "......OLMMLLOHMLMMMHHHHHLLO.....",
+      ".....OLMMLGLLOHLMMMHHGHHHHLO....",
+      "....OLMMLLOLOHMLMMMHHOHHHHHO....",
+      "...OLMGLLMLLFOHOMMMMHHMHHHHHO...",
+      "..OLMMOLMLLLMMOHOMMMHHHMHHHHLO..",
+      "..OLMLLMLLLLOOHOOOMOHHHHMGHHHO..",
+      "..OLLLMLLLLOOHOGOOOMOHHHHOHHHO..",
+      "..OLLMLLLLLOOHOObOOOOHHHHMHHHO..",
+      "..OLMLLLLLObHOOOOOOMHOHHHHMHHO..",
+      "..OLLLLLLLOMOHOOOOOMHOHHHHHMHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLLOMMMMOOOOMMHHOHHHHHHHO.",
+      ".OLMLLLLOMMMMMMOOMMLHHHOHHHHHHO.",
+      ".OLMLLLLOMMMMMMMOMMMLHHOHHHHHHO.",
+      ".OLMLLGOMMMMMMLLLLMMHLHHOGHHHHO.",
+      "..OLMMOMMMMMMMMHHHHHHHLHHOHHHO..",
+      "..OLMMMMMMOMMMMHOHHHHOHHHHHHHO..",
+      "...OLMMMMMFMMMMO.OLHHFHHHHHHO...",
+      "....OLMMMMOMMOO...OLHOHHHHHO....",
+      "....OLMMMOOOO......OOOOHHHHO....",
+      ".....OOOO..............OOOO.....",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "icon.klein",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      ".................O..............",
+      "...............OOO..............",
+      "..............OLLO..............",
+      "..............OLMO..............",
+      "..............OLUO..............",
+      ".............OLGMMO......O......",
+      ".............OLMMMO....OOO......",
+      ".............OLMMFO...OLLHO.....",
+      ".............OUMFMO...OLHHO.....",
+      ".......O...OOMMUMMO...OLHUHO....",
+      "......OLOOOLLMMFUMMO...OLUHO....",
+      "......OLLLLMMMFMMUMO...OLUHHO...",
+      ".....OLMMMMFMFMMMMUMO..OLeHHO...",
+      ".....OLFMMMFFMMMaMMULOOHHHUHO...",
+      "....OLMFMMMMFMMGGMMMULLHHHUHO...",
+      "....OLFMMMMMFMMMMMMMUHHHHHUHO...",
+      "....OLFMMMOMMFMMMMMUHHHHHHUHO...",
+      "....OFMbMO.OLFMMMMMUHHHOHHHO....",
+      "....OFMMMO..OLFLMMUMHHO.OLHO....",
+      ".....OLMO...OLMLMMMMHOO..OLO....",
+      ".....OLMO...OLMLMMMOO.....OO....",
+      ".....OLO.....OLLMMO........O....",
+      ".....OO......OLLMMO.............",
+      ".....O.......OLLMHO.............",
+      "..............OLMHO.............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "..............OLHO..............",
+      "...............OO...............",
+      "...............O................",
+      "................................"
+    ]
+  },
+  {
+    "id": "boss.core",
+    "width": 64,
+    "height": 64,
+    "pixels": [
+      "................................................................",
+      ".................................O..............................",
+      "................................OO..............................",
+      "...............................OLMO.............................",
+      "..............................OLMMO.............................",
+      ".............................OLMMMMO............................",
+      "............................OLMMMMMO............................",
+      "............................OLMMMMMMO...........................",
+      "...........................OLMMMMMMMO...........................",
+      "..........................OLMMMMMMMMMO..........................",
+      "..........................OLMMMMMMMMMLO.........................",
+      ".........................OLMMMLMMMMMMMLO........................",
+      ".........................OLMMMLMMMMMMMMLOO......................",
+      ".......................OOMMMMMLMMMMMMMMMLLO.....................",
+      "...................OOOOLLMMMMFLMMMUMMMMMHHLO....................",
+      ".................OOLLLLMMMMMMFLMMMUMMMMMHHHLOO..................",
+      "................OLOMMMMMMMMMFMLMMMMUMMMMHHHHLOOO................",
+      "...............OLMOMMMMMMMMMFMLMOMMUMMMMHHHHHOLLOO..............",
+      ".............OOLMMFMMMMMMMMFMMMOOOMMUMMMHHHHHFHHLLOO............",
+      "............OLLMMMOMMMMMMMMFMMOOOOMMUMMMHHHHHOHHHHLLO...........",
+      "...........OLMMMMMMMMMOMMMMMMOOOOOOMMMMMHOHHHHHHHHHHLO..........",
+      ".........OOLMMMMMMMMMOGOMOMMOOOOMOOOMMOMOGOHHHHHHHHHHLOO........",
+      ".......OOLLMMMMMMMMMOMMOMOMOOOOMMMOOOMOMOHHOHHHHHHHHHHLLO.......",
+      ".....OOLLMMMMMMMMMMMOMOMOMOOOOMMOMOOOMMOHOHOHHHHHHHHHHHHLO......",
+      "....OLLMMMMMMMMMMMMOMMOMOMOOOMMOOOMOOOMOHOHHOHHHHHHHHHHHHLO.....",
+      "....OLMMMMLMMOMMMMMOMOMMOOOOMMOFUOMMOOOOHHOHOHHHHOHHHHHHHHO.....",
+      "....OLMMMMLMMGMMMMOMMOMMOOOMMOFFUOOMOOOOHHOHHOHHHGHHHLHHHHO.....",
+      "....OLMMMMLMMMMMMMOMOMMOOOMMOFFFUUOMMOOOOHHOHOHHHHHHHLHHHHO.....",
+      "....OLMMMLMMMMMMMOMMOMOOOMMOOFFFUUOOMMOOOHHOHHOHHHHHHLHHHHO.....",
+      "....OLMMMLMMMMMMMMMMMOOOMMOOFFFGUeUOOMMOOOHHHHHHHHHHHLHHHHHO....",
+      "....OLMMMLMMMMMMMMMMOOOMMOOFFFbGaeUOOMMOOOHHHHHHHHHHHHLHHHHO....",
+      "....OLMMMLMMMMMMMMMMMOOOMMOOFFbGaeUUOOMMOOOHHHHHHHMHHHLHHHHO....",
+      "...OLMMMLMMMMMLMMMMMMMOOOMMOFFbGaeUOOMMOOOHHHHHHHMHHHHLHHHHO....",
+      "...OLMMMLMMMMMMLMMMMMMMOOMMOOFbGUeUOMMOOOHHHHHHHMHHHHHLHHHHO....",
+      "...OLMMMMMMMMMMMLMMMMMMOOOMMOObFUUOMMOOOHHHHHHHMHHHHHHHHHHHO....",
+      "...OLMMMMMMMMMMMMLMMMMMMOOOMMOFFUUOMOOOMHHHHHHMHHHHHHHHHHHHO....",
+      "...OLMMMMMMOOMMMMMLMMMMMMOOOMMOFUOMMOOMMHHHHHMHHHHHHHHHHHHHO....",
+      "...OLMMMMOO..OLMMMLMMMMMMMOOOMOOOMMOOOMMHHHHMHHHHHHOHHHHHHHHO...",
+      "...OLMMOO....OLMMMMLMMMMMMMOOMMOMMOOOMMMHHHMOHHHHHO.OOOHHHHHO...",
+      "...OLOO.......OLMMOMLMMMMMMMOOMMMOOOMMMMHHMHGHHHHO.....OOOOHO...",
+      "...OO..........OLMGMMLMMMMMMOOOMOOOMMMMMHHHHHHHHHO.........OO...",
+      "...............OLMMMMMMMMMMMMOOOOOMMMMMHHHHHHHHHO...............",
+      "................OLMMMMMMMMMMMMOOOMMMMMMHHHHHHHHHO...............",
+      "................OLMMMMMMMMMMMMMOMMMMMMMMHHHHHHHO................",
+      ".................OLMMMMMMMMMMMMLMMMMMMMMHHHHHHHO................",
+      "..................OOMMMMMMMMOMGLMMMOMMMMHHHHHOO.................",
+      "....................OOMMMMMMGMGLMMMGMMMMHHHOO...................",
+      "......................OOMMMMMHGLMHHHHHHHHOO.....................",
+      "........................OLMMMHGLMHHHHHHOO.......................",
+      ".........................OLMMHGLMHHHHHO.........................",
+      ".........................OLMMHGLMHHHHHO.........................",
+      "..........................OLMHGLMHHHHO..........................",
+      "..........................OLMHHLMHHHHO..........................",
+      "...........................OLHHLMHHHO...........................",
+      "...........................OLHHLMHHO............................",
+      "............................OLHLHHHO............................",
+      "............................OLHLHHO.............................",
+      ".............................OLHHO..............................",
+      ".............................OLHHO..............................",
+      "..............................OLO...............................",
+      "..............................OLO...............................",
+      "...............................O................................",
+      "................................................................",
+      "................................................................"
+    ]
+  },
+  {
+    "id": "boss.core-up",
+    "width": 64,
+    "height": 64,
+    "pixels": [
+      "................................................................",
+      "................................................................",
+      "...............................O................................",
+      "..............................OLO...............................",
+      "..............................OLO...............................",
+      ".............................OLMMO..............................",
+      ".............................OLMMO..............................",
+      "............................OLMLMMO.............................",
+      "............................OLMLMMLO............................",
+      "...........................OLMMLMMMO............................",
+      "...........................OLMMLMMMMO...........................",
+      "..........................OLMMMLMMMMLO..........................",
+      "..........................OLMMGLMMMMMO..........................",
+      ".........................OLMMMGLMMMMMMO.........................",
+      ".........................OLMMMGLMMMMMMO.........................",
+      "........................OLMMMMGLMMMMMMMOO.......................",
+      "......................OOLMMMMMGLMMMMMMMLLOO.....................",
+      "....................OOLLMMMMGMGLMMMGMMMMHLLOO...................",
+      "..................OOLLMMMMMMOMGLMMMOMMMMHHHLLOO.................",
+      ".................OLLMMMMMMMMMMMLMMMMMMMMHHHHHLLO................",
+      "................OLMMMMMMMMMMMMMOMMMMMMMMHHHHHHHO................",
+      "................OLMMMMMMMMMMMMOOOMMMMMMHHHHHHHHHO...............",
+      "...............OLMMMMMMMMMMMMOOOOOMMMMMHHHHHHHHHO...............",
+      "...OO..........OLMGMMLMMMMMMOOOMOOOMMMMMHHHHHHHHHO.........OO...",
+      "...OLOO.......OLMMOMLMMMMMMMOOMMMOOOMMMMHHMHGHHHHO.....OOOOLO...",
+      "...OLLLOO....OLMMMMLMMMMMMMOOMMOMMOOOMMMHHHMOHHHHHO.OOOLLLLHO...",
+      "...OLMMLLOO..OLMMMLMMMMMMMOOOMOOOMMOOOMMHHHHMHHHHHLOLLLHHHHHO...",
+      "...OLMMMMLLOOMMMMMLMMMMMMOOOMMOFUOMMOOMMHHHHHMHHHHHLHHHHHHHO....",
+      "...OLMMMMMMLLMMMMLMMMMMMOOOMMOFFUUOMOOOMHHHHHHMHHHHHHHHHHHHO....",
+      "...OLMMMMMMMMMMMLMMMMMMOOOMMOObFUUOMMOOOHHHHHHHMHHHHHHHHHHHO....",
+      "...OLMMMLMMMMMMLMMMMMMMOOMMOOFbGUeUOMMOOOHHHHHHHMHHHHHLHHHHO....",
+      "...OLMMMLMMMMMLMMMMMMMOOOMMOFFbGaeUOOMMOOOHHHHHHHMHHHHLHHHHO....",
+      "....OLMMMLMMMMMMMMMMMOOOMMOOFFbGaeUUOOMMOOOHHHHHHHMHHHLHHHHO....",
+      "....OLMMMLMMMMMMMMMMOOOMMOOFFFbGaeUOOMMOOOHHHHHHHHHHHHLHHHHO....",
+      "....OLMMMLMMMMMMMMMMMOOOMMOOFFFGUeUOOMMOOOHHHHHHHHHHHLHHHHHO....",
+      "....OLMMMLMMMMMMMOMMOMOOOMMOOFFFUUOOMMOOOHHOHHOHHHHHHLHHHHO.....",
+      "....OLMMMMLMMMMMMMOMOMMOOOMMOFFFUUOMMOOOOHHOHOHHHHHHHLHHHHO.....",
+      "....OLMMMMLMMGMMMMOMMOMMOOOMMOFFUOOMOOOOHHOHHOHHHGHHHLHHHHO.....",
+      "....OLMMMMLMMOMMMMMOMOMMOOOOMMOFUOMMOOOOHHOHOHHHHOHHHHHHHHO.....",
+      "....OLMMMMMMMMMMMMMOMMOMOMOOOMMOOOMOOOMOHOHHOHHHHHHHHHHHHHO.....",
+      ".....OOMMMMMMMMMMMMMOMOMOMOOOOMMOMOOOMMOHOHOHHHHHHHHHHHHHO......",
+      ".......OOMMMMMMMMMMMOMMOMOMOOOOMMMOOOMOMOHHOHHHHHHHHHHHHO.......",
+      ".........OOMMMMMMMMMMOGOMOMMOOOOMOOOMMOMOGOHHHHHHHHHHHOO........",
+      "...........OLMMMMMMMMMOMMMMMMOOOOOOMMMMMHOHHHHHHHHHHHO..........",
+      "............OLMMMMOMMMMMMMMFMMOOOOMMUMMMHHHHHOHHHHHHO...........",
+      ".............OOMMMFMMMMMMMMFMMMOOOMMUMMMHHHHHFHHHHOO............",
+      "...............OLMOMMMMMMMMMFMLMOMMUMMMMHHHHHOHHOO..............",
+      "................OLOMMMMMMMMMFHLHHMHUHHHHHHHHHOOO................",
+      ".................OOMMMMMMMMMMFLHHMUHHHHHHHHHOO..................",
+      "...................OOOOMMMMMMFLHHMUHHHHHHHHO....................",
+      ".......................OOMMMMHLHHMHHHHHHHHO.....................",
+      ".........................OLMMHLHHMHHHHHHOO......................",
+      ".........................OLMMHLHHMHHHHHO........................",
+      "..........................OLMHHHHHHHHHO.........................",
+      "..........................OLMHHHHHHHHO..........................",
+      "...........................OLHHHHHHHO...........................",
+      "............................OLHHHHHHO...........................",
+      "............................OLHHHHHO............................",
+      ".............................OLHHHHO............................",
+      "..............................OLHHO.............................",
+      "...............................OLHO.............................",
+      "................................OO..............................",
+      ".................................O..............................",
+      "................................................................"
+    ]
+  },
+  {
+    "id": "boss.escort",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      ".......O...............OO.......",
+      ".....OOLO.............OLLOO.....",
+      "...OOLLMLO....OOOO...OLHHLLO....",
+      "...OLMLMFO...OLLLLO..OLFHHHO....",
+      "..OLMMLLbMO.OLMMMMO.OLHbHHHO....",
+      "..OLMLLLLLLOLMMMMMMOLHHHHHHHO...",
+      "..OLMLLMLLLLMMMMMMMLHHHHMHHHO...",
+      "..OLMLMLLLLLMMMMMMMMHHHHHMHHO...",
+      ".OLMMLMLLLLLMMFMMUMMHHHHHMHHO...",
+      ".OLMLMLLLLLLMMFMMUMMHHHHHHMHHO..",
+      ".OLMLLLMMLLLLMFMMUMMHHHHHHHHHO..",
+      ".OLMLMMMMMLLLMFMGUMMHHHHHHHHHO..",
+      "..OLMMMMMMMMLMFGMUMMHHHHHHHHO...",
+      "..OLMMMOOMMMMMFMMUMMHHHOHHHHO...",
+      "...OLOO..OLMMMFMMUMMHHO.OOHO....",
+      "...OO.....OLMMMMMMMMHO....OO....",
+      "...........OLMMMMMMMO...........",
+      "...........OLMMMLMMMO...........",
+      "............OLMGLMMMO...........",
+      "............OLMGLMMO............",
+      "............OLMGLMMO............",
+      ".............OLGLMMO............",
+      ".............OLGLHHO............",
+      ".............OLGLHO.............",
+      "..............OGLHO.............",
+      "..............OGHHO.............",
+      "..............OLHHO.............",
+      "...............OLO..............",
+      "...............OOO..............",
+      "................................"
+    ]
+  },
+  {
+    "id": "boss.escort-up",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "...............OOO..............",
+      "...............OLO..............",
+      "..............OLMMO.............",
+      "..............OGMMO.............",
+      "..............OGLMO.............",
+      ".............OLGLMO.............",
+      ".............OLGLMMO............",
+      ".............OLGLMMO............",
+      "............OLMGLMMO............",
+      "............OLMGLMMO............",
+      "............OLMGLMMMO...........",
+      "...........OLMMMLMMMO...........",
+      "...........OLMMMMMMMO...........",
+      "...OO.....OLMMMMMMMMHO....OO....",
+      "...OLOO..OLMMMFMMUMMHLO.OOLO....",
+      "..OLMLLOOLMMMMFMMUMMHHLOLLHHO...",
+      "..OLMMMLLMMMLMFGMUMMHHHLHHHHO...",
+      ".OLMLMMMMMLLLMFMGUMMHHHHHHHHHO..",
+      ".OLMLLLMMLLLLMFMMUMMHHHHHHHHHO..",
+      ".OLMLMLLLLLLMMFMMUMMHHHHHHMHHO..",
+      ".OLMMLMLLLLLMMFMMUMMHHHHHMHHO...",
+      "..OLMLMLLLLLMMMMMMMMHHHHHMHHO...",
+      "..OLMLLMLLLMMMMMMMMMHHHHMHHHO...",
+      "..OLMLLLLLMOMMMHHHHOHHHHHHHHO...",
+      "..OLMMLLbMO.OLMHHHO.OLHbHHHO....",
+      "...OLMLMFO...OLHHHO..OLFHHHO....",
+      "...OOMMMMO....OOOO...OLHHHHO....",
+      ".....OOMO.............OLHOO.....",
+      ".......O...............OO.......",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "health.1",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".......G........",
+      ".......M........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "health.2",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....G...G......",
+      ".....M...M......",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "health.3",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "...G...G...G....",
+      "...M...M...M....",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "health.4",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".G...G...G...G..",
+      ".M...M...M...M..",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "return.exit",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "......OOOO......",
+      "......OFFO......",
+      "......OGFO......",
+      "......OFFO......",
+      "......OFFO......",
+      "...OO.OFFO.OOO..",
+      "....OFOFFOOFO...",
+      "....OOFFFFFOO...",
+      ".....OFFFFOO....",
+      "......OFFFO.....",
+      ".......OFO......",
+      ".......OOO......",
+      "........O.......",
+      "................"
+    ]
+  },
+  {
+    "id": "return.entry",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "......OOOO......",
+      "......OUUO......",
+      "......OGUO......",
+      "......OUUO......",
+      "......OUUO......",
+      "...OO.OUUO.OOO..",
+      "....OUOUUOOUO...",
+      "....OOUUUUUOO...",
+      ".....OUUUUOO....",
+      "......OUUUO.....",
+      ".......OUO......",
+      ".......OOO......",
+      "........O.......",
+      "................"
+    ]
+  },
+  {
+    "id": "asteroid.small",
+    "width": 8,
+    "height": 8,
+    "pixels": [
+      "....OO..",
+      ".OOOMHO.",
+      "OLLLMHLO",
+      "OMMMMHHO",
+      "OMMMHOHO",
+      ".OLMMHHO",
+      "..OOHHO.",
+      "....OO.."
+    ]
+  },
+  {
+    "id": "asteroid.medium",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      ".......OOO......",
+      "....OOOMMMO.....",
+      "...OLLLMMMLOO...",
+      "..OLLLHHMMHMLO..",
+      ".OLLHHHHHMHHMLO.",
+      ".OLMOOMMMMHHHMO.",
+      "OMMMOOMMMMHHHHHO",
+      "OMMMMOMMMHHHHHHO",
+      "OMMMMMMMHHHHHHHO",
+      ".OLMMMMMOOMMMHO.",
+      ".OLMHHHMOOMMMHO.",
+      ".OLMOMMMMOMMHO..",
+      "..OLOMMMHHHHHO..",
+      "...OLMMMHHHHO...",
+      "....OOOMHHOO....",
+      ".......OOO......"
+    ]
+  },
+  {
+    "id": "asteroid.large",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "..............OOO...............",
+      "..........OOOOMMMOO.............",
+      "........OOLLLLMMMLLOO...........",
+      "......OOLLMMMMMMMMMLLOOOOOO.....",
+      "....OOLLMMMMMMMMMMMMHLLLLLLO....",
+      "...OLLMMMMMMMMMMMMMMHHHHHHHO....",
+      "...OLMMMMLLHHHMMMMMMHHMHHHHHO...",
+      "...OLMMLLMHHHHHMMMMMHHHMHHHHO...",
+      "...OLMLMMHHHHHHHMMMMHHHHMHHHHO..",
+      "...OLMMMHHHHHHHHHMMMHHHHHMHHHO..",
+      "..OLMMMMOOOOMMMMMMMMHHHHHHMHHO..",
+      "..OLMMMMOOOOMMMMMMMMHHHHHHHHHHO.",
+      ".OLMMMMMMOOOMMMMMMMMHHHHHHHHHHO.",
+      "OLMMMMMMMMOOMMMMMMMMHHHHHHHHHHO.",
+      "OMMMMMMMMMMOMMMMMMMHHHHHHHHHHHO.",
+      "OMMMMMMMMMMMMMMMMMHHHHHHHHHHHHHO",
+      "OMMMMMMMMMMMMMMMMHHHHHHHHHHHHHHO",
+      "OMMMMMMMMMMMMMMMHHHHHHHHHHHHHHHO",
+      ".OLMMMMMMMMMMMMMOOOOMMMLMHHHHHO.",
+      ".OLMMMMMMMMMMMMMOOOOMMMHMHHHHHO.",
+      ".OLMMMMMMOHHMMMMMOOOMMMMHHHHHO..",
+      ".OLMMMMGOHHHHMMMMMOOMMMHHHHHHO..",
+      ".OLMMMMMMOMMMMMMMMMOMMHHHHHHO...",
+      "..OLMMMOOOMMMMMMMMMMHHHHHHHHO...",
+      "..OLMMMMMOMMMMMHHHHHHHHHHHHO....",
+      "...OLMMMMMMMMMMHHHHHHHHHHHHO....",
+      "...OLMMMMMMMMMMHHHHHHHHHHHHO....",
+      "....OLMMMMMMMMMHHHHHHHHHHHO.....",
+      ".....OLMMMMMMMMHHHHHHHHHHOO.....",
+      ".....OLMMOOOOMMHHHHHHHHOO.......",
+      "......OOO....OOOOHHHOOO.........",
+      ".................OOO............"
+    ]
+  },
+  {
+    "id": "asteroid.break-0",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "........OO......",
+      "....OOO.MMO.....",
+      "...OLLL.MMLOO...",
+      "..OLLLH.MMHMLO..",
+      ".OLLHHH.HMHHMLO.",
+      ".OLMOOM.MMHHHMO.",
+      "OMMMOOM.MMHHHHHO",
+      "OMMMMOMGMHHHHHHO",
+      "........b.......",
+      ".OLMMMM.OOMMMHO.",
+      ".OLMHHH.OOMMMHO.",
+      ".OLMOMM.MOMMHO..",
+      "..OLOMM.HHHHHO..",
+      "...OLMM.HHHHO...",
+      "....OOO.HHOO....",
+      "........OO......"
+    ]
+  },
+  {
+    "id": "asteroid.break-1",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "...OOO...MMO....",
+      "..OLLL...MMLOO..",
+      ".OLLLH...MMHMLO.",
+      "OLLHHH...HMHHMLO",
+      "OLMOOM...MMHHHMO",
+      "MMMOOM...MMHHHHH",
+      "MMMMOM...MHHHHHH",
+      "................",
+      "................",
+      "................",
+      "OLMMMM...OOMMMHO",
+      "OLMHHH...OOMMMHO",
+      "OLMOMM...MOMMHO.",
+      ".OLOMM...HHHHHO.",
+      "..OLMM...HHHHO..",
+      "...OOO...HHOO..."
+    ]
+  },
+  {
+    "id": "asteroid.break-2",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      ".O.LL.....MM.OO.",
+      "O.LL......M.HM.O",
+      ".LH.H......MH.ML",
+      "LM.OM.....MM.HH.",
+      "M.OO......M.HH.H",
+      ".MM.M......HH.HH",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "L.MM......O.MM.H",
+      ".MH.H......OM.MH",
+      "LM.MM.....MO.MH.",
+      "O.OM......H.HH.O",
+      ".OL.M......HH.O."
+    ]
+  },
+  {
+    "id": "effect.glint",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      ".......b........",
+      ".......b........",
+      ".......G........",
+      ".......GG.......",
+      ".......aG.......",
+      "..bbGGaaaGGbb...",
+      ".....GGaGG......",
+      ".......GG.......",
+      ".......G........",
+      ".......b........",
+      ".......b........",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.absorb",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...........UU...........",
+      "........UUUUUUUU........",
+      ".......UUUU..UUUU.......",
+      "......UU...U....UU......",
+      "......UU...Ue...UU......",
+      "......UU...ae...UU......",
+      ".....UU.UUaaaUU..UU.....",
+      ".....UU..eeaee...UU.....",
+      "......UU...Ue...UU......",
+      "......UU...U....UU......",
+      "......UU........UU......",
+      ".......UUUU..UUUU.......",
+      "........UUUUUUUU........",
+      "...........UU...........",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "edge.left",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "OF..............",
+      "OF......O.......",
+      "OF.....OOO......",
+      "OF.....OFO......",
+      "OF....OFFFO.....",
+      "OF...OFFFFOO....",
+      "OF..OOFFFFFOO...",
+      "OF..OFOFFOOFO...",
+      "OF.OO.OFFO.OOO..",
+      "OF....OFFO......",
+      "OF....OFFO......",
+      "OF....OGFO......",
+      "OF....OFFO......",
+      "OF....OOOO......",
+      "OF..............",
+      "OF.............."
+    ]
+  },
+  {
+    "id": "edge.right",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "..............UO",
+      "..............UO",
+      "......OOOO....UO",
+      "......OUUO....UO",
+      "......OGUO....UO",
+      "......OUUO....UO",
+      "......OUUO....UO",
+      "...OO.OUUO.OOOUO",
+      "....OUOUUOOUO.UO",
+      "....OOUUUUUOO.UO",
+      ".....OUUUUOO..UO",
+      "......OUUUO...UO",
+      ".......OUO....UO",
+      ".......OOO....UO",
+      "........O.....UO",
+      "..............UO"
+    ]
+  },
+  {
+    "id": "edge.top",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "OOOOOOOOOOOOOOOO",
+      "MMMMMMMMMMMMMMMM",
+      ".......O........",
+      ".......OOO......",
+      ".......OMOO.....",
+      "........OMOO....",
+      "..OOOOOOOMMMOO..",
+      "..OMMMMMMMMMMOO.",
+      "..OMGMMMMMMMOO..",
+      "..OOOOOOOMMO....",
+      "........MOO.....",
+      ".......OOO......",
+      ".......O........",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "edge.bottom",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      ".......O........",
+      ".......OOO......",
+      ".......OMOO.....",
+      "........OMOO....",
+      "..OOOOOOOMMMOO..",
+      "..OMMMMMMMMMMOO.",
+      "..OMGMMMMMMMOO..",
+      "..OOOOOOOMMO....",
+      "........MOO.....",
+      ".......OOO......",
+      ".......O........",
+      "................",
+      "MMMMMMMMMMMMMMMM",
+      "OOOOOOOOOOOOOOOO"
+    ]
+  },
+  {
+    "id": "edge.twist",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "......OFUO......",
+      ".......OFUO.....",
+      "........OFUO....",
+      "........OFUO....",
+      ".......OFUO.....",
+      "......OFUO......",
+      ".....OFUO.......",
+      "......OUFO......",
+      ".......OUFO.....",
+      "........OUFO....",
+      "........OUFO....",
+      ".......OUFO.....",
+      "......OUFO......",
+      ".....OUFO.......",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.0",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....aaaaaaaa....",
+      "...aaaaHHaaaa...",
+      "..aaHHHHHHHHaa..",
+      ".OaaHHaaOHHHaaO.",
+      ".OaaHHOGGOHHaaO.",
+      ".OaHHOGGGGOHHaO.",
+      ".OaHHOGGGGOHHaO.",
+      ".OaaHHOGGOHHaaO.",
+      ".OaaHHHOOHHHaaO.",
+      "..aaHHHHHHHHaa..",
+      "...aaaaHHaaaa...",
+      "....aaaaaaaa....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.1",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....bbbbbbbb....",
+      "...bbbbHHbbbb...",
+      "..bbHHHHHHHHbb..",
+      ".ObbHHaaOHHHbbO.",
+      ".ObbHHOGGOHHbbO.",
+      ".ObHHOGGGGOHHbO.",
+      ".ObHHOGGGGOHHbO.",
+      ".ObbHHOGGOHHbbO.",
+      ".ObbHHHOOHHHbbO.",
+      "..bbHHHHHHHHbb..",
+      "...bbbbHHbbbb...",
+      "....bbbbbbbb....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.2",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....cccccccc....",
+      "...ccccHHcccc...",
+      "..ccHHHHHHHHcc..",
+      ".OccHHaaOHHHccO.",
+      ".OccHHOGGOHHccO.",
+      ".OcHHOGGGGOHHcO.",
+      ".OcHHOGGGGOHHcO.",
+      ".OccHHOGGOHHccO.",
+      ".OccHHHOOHHHccO.",
+      "..ccHHHHHHHHcc..",
+      "...ccccHHcccc...",
+      "....cccccccc....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.3",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....dddddddd....",
+      "...ddddHHdddd...",
+      "..ddHHHHHHHHdd..",
+      ".OddHHaaOHHHddO.",
+      ".OddHHOGGOHHddO.",
+      ".OdHHOGGGGOHHdO.",
+      ".OdHHOGGGGOHHdO.",
+      ".OddHHOGGOHHddO.",
+      ".OddHHHOOHHHddO.",
+      "..ddHHHHHHHHdd..",
+      "...ddddHHdddd...",
+      "....dddddddd....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.4",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....eeeeeeee....",
+      "...eeeeHHeeee...",
+      "..eeHHHHHHHHee..",
+      ".OeeHHaaOHHHeeO.",
+      ".OeeHHOGGOHHeeO.",
+      ".OeHHOGGGGOHHeO.",
+      ".OeHHOGGGGOHHeO.",
+      ".OeeHHOGGOHHeeO.",
+      ".OeeHHHOOHHHeeO.",
+      "..eeHHHHHHHHee..",
+      "...eeeeHHeeee...",
+      "....eeeeeeee....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.5",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....ffffffff....",
+      "...ffffHHffff...",
+      "..ffHHHHHHHHff..",
+      ".OffHHaaOHHHffO.",
+      ".OffHHOGGOHHffO.",
+      ".OfHHOGGGGOHHfO.",
+      ".OfHHOGGGGOHHfO.",
+      ".OffHHOGGOHHffO.",
+      ".OffHHHOOHHHffO.",
+      "..ffHHHHHHHHff..",
+      "...ffffHHffff...",
+      "....ffffffff....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.6",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....gggggggg....",
+      "...ggggHHgggg...",
+      "..ggHHHHHHHHgg..",
+      ".OggHHaaOHHHggO.",
+      ".OggHHOGGOHHggO.",
+      ".OgHHOGGGGOHHgO.",
+      ".OgHHOGGGGOHHgO.",
+      ".OggHHOGGOHHggO.",
+      ".OggHHHOOHHHggO.",
+      "..ggHHHHHHHHgg..",
+      "...ggggHHgggg...",
+      "....gggggggg....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "stage.7",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".....OOOOOO.....",
+      "....FFFFUUUU....",
+      "...FFFFHHUUUU...",
+      "..FFHHHHHHHHUU..",
+      ".OFFHHaaOHHHUUO.",
+      ".OFFHHOGGOHHUUO.",
+      ".OFHHOGGGGOHHUO.",
+      ".OFHHOGGGGOHHUO.",
+      ".OFFHHOGGOHHUUO.",
+      ".OFFHHHOOHHHUUO.",
+      "..FFHHHHHHHHUU..",
+      "...FFFFHHUUUU...",
+      "....FFFFUUUU....",
+      ".....OOOOOO.....",
+      "................"
+    ]
+  },
+  {
+    "id": "shot.player",
+    "width": 4,
+    "height": 8,
+    "pixels": [
+      ".aL.",
+      ".aL.",
+      ".aG.",
+      "GGGG",
+      ".GG.",
+      ".GG.",
+      ".GG.",
+      "...."
+    ]
+  },
+  {
+    "id": "shot.enemy",
+    "width": 4,
+    "height": 8,
+    "pixels": [
+      ".aL.",
+      ".aL.",
+      ".aF.",
+      "FFFF",
+      ".FF.",
+      ".FF.",
+      ".FF.",
+      "...."
+    ]
+  },
+  {
+    "id": "engine.player-down-0",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      ".....UeeeeU.....",
+      ".....UeeeUU.....",
+      ".....UeeeUU.....",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUUUU......",
+      "....eUUUUU......",
+      "......UUU.......",
+      "......UUU.......",
+      ".......U........",
+      ".......U........",
+      ".......e........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.player-down-1",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      ".....UeeeUU.....",
+      ".....UUeeU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUUUU......",
+      "....eUUUUU......",
+      "......UUU.......",
+      "......UUU.......",
+      ".......U........",
+      ".......U........",
+      ".......e........",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.player-down-2",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      ".....UeGeUU.....",
+      ".....UeeeUU.....",
+      ".....UeeeUU.....",
+      ".....UUeeU......",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUUUU......",
+      "....eUUUUU......",
+      "......UUU.......",
+      "......UUU.......",
+      ".......U........",
+      ".......U........",
+      ".......e........",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.player-down-3",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeUU.....",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      ".....UUeeU......",
+      ".....UUeeU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUUUU......",
+      "....eUUUUU......",
+      "......UUU.......",
+      "......UUU.......",
+      ".......U........",
+      ".......U........",
+      ".......e........"
+    ]
+  },
+  {
+    "id": "engine.player-up-0",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......e........",
+      ".......U........",
+      ".......U........",
+      "......UUU.......",
+      "......UUU.......",
+      "....eUUUUU......",
+      ".....UUUUU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UeeeUU.....",
+      ".....UeeeUU.....",
+      ".....UeeeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU...."
+    ]
+  },
+  {
+    "id": "engine.player-up-1",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      ".......e........",
+      ".......U........",
+      ".......U........",
+      "......UUU.......",
+      "......UUU.......",
+      "....eUUUUU......",
+      ".....UUUUU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUeeU......",
+      ".....UeeeUU.....",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU...."
+    ]
+  },
+  {
+    "id": "engine.player-up-2",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......e........",
+      ".......U........",
+      ".......U........",
+      "......UUU.......",
+      "......UUU.......",
+      "....eUUUUU......",
+      ".....UUUUU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UUeeU......",
+      ".....UeeeUU.....",
+      ".....UeeeUU.....",
+      ".....UeGeUU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU...."
+    ]
+  },
+  {
+    "id": "engine.player-up-3",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      ".......e........",
+      ".......U........",
+      ".......U........",
+      "......UUU.......",
+      "......UUU.......",
+      "....eUUUUU......",
+      ".....UUUUU......",
+      ".....UUeUU......",
+      ".....UUeUU.e....",
+      ".....UUeUU......",
+      ".....UUeeU......",
+      ".....UUeeU......",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      ".....UeGeUU.....",
+      "....UUeGeUU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeU.....",
+      "....UUeGeeUU....",
+      "....UUeGaeUU....",
+      "....UUeGeeUU...."
+    ]
+  },
+  {
+    "id": "engine.enemy-down-0",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      ".....FbbbbF.....",
+      ".....FbbbFF.....",
+      ".....FbbbFF.....",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFFFF......",
+      "....bFFFFF......",
+      "......FFF.......",
+      "......FFF.......",
+      ".......F........",
+      ".......F........",
+      ".......b........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.enemy-down-1",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      ".....FbbbFF.....",
+      ".....FFbbF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFFFF......",
+      "....bFFFFF......",
+      "......FFF.......",
+      "......FFF.......",
+      ".......F........",
+      ".......F........",
+      ".......b........",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.enemy-down-2",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      ".....FbGbFF.....",
+      ".....FbbbFF.....",
+      ".....FbbbFF.....",
+      ".....FFbbF......",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFFFF......",
+      "....bFFFFF......",
+      "......FFF.......",
+      "......FFF.......",
+      ".......F........",
+      ".......F........",
+      ".......b........",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "engine.enemy-down-3",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbFF.....",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      ".....FFbbF......",
+      ".....FFbbF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFFFF......",
+      "....bFFFFF......",
+      "......FFF.......",
+      "......FFF.......",
+      ".......F........",
+      ".......F........",
+      ".......b........"
+    ]
+  },
+  {
+    "id": "engine.enemy-up-0",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......b........",
+      ".......F........",
+      ".......F........",
+      "......FFF.......",
+      "......FFF.......",
+      "....bFFFFF......",
+      ".....FFFFF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FbbbFF.....",
+      ".....FbbbFF.....",
+      ".....FbbbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF...."
+    ]
+  },
+  {
+    "id": "engine.enemy-up-1",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      ".......b........",
+      ".......F........",
+      ".......F........",
+      "......FFF.......",
+      "......FFF.......",
+      "....bFFFFF......",
+      ".....FFFFF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFbbF......",
+      ".....FbbbFF.....",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF...."
+    ]
+  },
+  {
+    "id": "engine.enemy-up-2",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......b........",
+      ".......F........",
+      ".......F........",
+      "......FFF.......",
+      "......FFF.......",
+      "....bFFFFF......",
+      ".....FFFFF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FFbbF......",
+      ".....FbbbFF.....",
+      ".....FbbbFF.....",
+      ".....FbGbFF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF...."
+    ]
+  },
+  {
+    "id": "engine.enemy-up-3",
+    "width": 16,
+    "height": 24,
+    "pixels": [
+      ".......b........",
+      ".......F........",
+      ".......F........",
+      "......FFF.......",
+      "......FFF.......",
+      "....bFFFFF......",
+      ".....FFFFF......",
+      ".....FFbFF......",
+      ".....FFbFF.b....",
+      ".....FFbFF......",
+      ".....FFbbF......",
+      ".....FFbbF......",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      ".....FbGbFF.....",
+      "....FFbGbFF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbF.....",
+      "....FFbGbbFF....",
+      "....FFbGabFF....",
+      "....FFbGbbFF...."
+    ]
+  },
+  {
+    "id": "effect.muzzle-0",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......b........",
+      ".......bG.......",
+      ".......aG.......",
+      "....bbaaabb.....",
+      ".....GGaGG......",
+      ".......bG.......",
+      ".......b........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.muzzle-1",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".......b........",
+      ".......b........",
+      ".......G........",
+      ".......G........",
+      ".......GG.......",
+      ".......aG.......",
+      ".bbGGGaaaGGGbb..",
+      ".....GGaGG......",
+      ".......GG.......",
+      ".......G........",
+      ".......G........",
+      ".......b........",
+      ".......b........",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.muzzle-2",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......F........",
+      ".......Fb.......",
+      ".......ab.......",
+      "....FFaaaFF.....",
+      ".....bbabb......",
+      ".......Fb.......",
+      ".......F........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.glint-0",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......a........",
+      ".......aG.......",
+      "......aaa.......",
+      "....aaaaaaa.....",
+      ".....GaaaG......",
+      ".......aG.......",
+      ".......a........",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.glint-1",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      ".......a........",
+      ".......a........",
+      ".......G........",
+      "....a..G..a.....",
+      ".....a.GGa......",
+      "......aaa.......",
+      ".aaGGGaaaGGGaa..",
+      ".....GaaaG......",
+      ".....a.GGa......",
+      "....a..G..a.....",
+      ".......G........",
+      ".......a........",
+      ".......a........",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.glint-2",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      ".......M........",
+      ".......M........",
+      ".....M.GGM......",
+      "......MaM.......",
+      "...MMGaMaGMM....",
+      ".....GMaMG......",
+      ".....M.GGM......",
+      ".......M........",
+      ".......M........",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.glint-3",
+    "width": 16,
+    "height": 16,
+    "pixels": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      ".......MG.......",
+      "......MaM.......",
+      ".....MaMaM......",
+      ".....GMaMG......",
+      ".......MG.......",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ]
+  },
+  {
+    "id": "effect.hit-0",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...........b............",
+      "...........bG...........",
+      "..........bab...........",
+      "........bbababb.........",
+      ".........GbabG..........",
+      "...........bG...........",
+      "...........b............",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.hit-1",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...........b............",
+      "...........b............",
+      "...........FF...........",
+      "........FFFG.FFF........",
+      ".......Fb..G..b.F.......",
+      ".......F.b.GGb..F.......",
+      ".......F..bab...F.......",
+      "....bbFGGGabaGGGGFb.....",
+      "......F..GbabG...F......",
+      ".......F.b.GGb..F.......",
+      ".......Fb..G..b.F.......",
+      ".......F...G....F.......",
+      "........FFFG.FFF........",
+      "...........FF...........",
+      "...........b............",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.hit-2",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "...........b............",
+      "...........b............",
+      "...........FF...........",
+      "........FFFF.FFF........",
+      "......FF...F....FF......",
+      "......Fb...F...b.F......",
+      ".....F..b..F..b...F.....",
+      ".....F...b.FFb....F.....",
+      ".....F....bab.....F.....",
+      "..bbFFFFFFabaFFFFFFFb...",
+      "....F....FbabF.....F....",
+      ".....F...b.FFb....F.....",
+      ".....F..b..F..b...F.....",
+      ".....F.b...F...b..F.....",
+      "......F....F.....F......",
+      "......FF...F....FF......",
+      "........FFFF.FFF........",
+      "...........FF...........",
+      "...........b............",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.hit-3",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "...........FF...........",
+      "........FFF..FFF........",
+      "......FF........FF......",
+      ".....F............F.....",
+      "....F..............F....",
+      "....F......b.......F....",
+      "...F.......b........F...",
+      "...F.....b.FFb......F...",
+      "...F......bab.......F...",
+      "..F....bbFabaFbb.....F..",
+      "..F......FbabF.......F..",
+      "...F.....b.FFb......F...",
+      "...F.......b........F...",
+      "...F.......b........F...",
+      "....F..............F....",
+      "....F..............F....",
+      ".....F............F.....",
+      "......FF........FF......",
+      "........FFF..FFF........",
+      "...........FF...........",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.explosion-0",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............b.Ga.............",
+      "..............Ga................",
+      "............Ga.GGb..............",
+      "..............GGGGGa............",
+      "...........bGaGbaGGb............",
+      ".............GGabGGa............",
+      ".............bGGGG..............",
+      "............Ga.GaGa.............",
+      "...............b................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.explosion-1",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............b................",
+      "...............b................",
+      "...............G................",
+      ".............GaG..Ga............",
+      "...............GG...............",
+      ".........GabGGGGGGGG............",
+      "...........GGGGG.GGGGa..........",
+      "...........GGb.GGb.GG...........",
+      "...........GG.bab..GG...........",
+      "......bbGGGGGGabaGGGGGGbb.......",
+      ".........GaG.GbabG..GGa.........",
+      "...........GGb.GGb.GG...........",
+      "...........GG..G..bGG...........",
+      "...........GGGGG.GGGG...........",
+      "..........GaGGGGGGGG............",
+      "...............Ga..Ga...........",
+      "...............G................",
+      "...............b................",
+      "...............b................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.explosion-2",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "...............b................",
+      "...............b................",
+      "...............G................",
+      "............GF.G...GF...........",
+      "...............FF...............",
+      "............FFFFFFFF............",
+      ".........bFFFFFG.FFFFF..........",
+      ".......GFFFF...G....FFF.........",
+      ".........FFb...G...b.FFGF.......",
+      "........FF..b..G..b...FF........",
+      "........FF...b.GGb....FF........",
+      "........FF....bab.....FF........",
+      "...bbGGFFGGGGGabaGGGGGGFFGbb....",
+      "......GFF....GbabG.....FF.......",
+      "........FF...b.GGb....FFGF......",
+      "........FF..b..G..b...FF........",
+      "........FF.b...G...b..FF........",
+      ".........FF....G....bFF.........",
+      ".........FFF...G....FFF.........",
+      "........GFFFFFFG.FFFFF..........",
+      "............FFFFFFFF.GF.........",
+      "...............GF...............",
+      "...............G................",
+      "...............b................",
+      "...............b................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.explosion-3",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "....................bF..........",
+      "............bF.FF...............",
+      "............FFFFFFFF............",
+      "..........FFFFF..FFFFF..........",
+      "........FFFF........FFFF........",
+      ".....bF.FF............FF........",
+      ".......FF..............FFbF.....",
+      ".......FF..............FF.......",
+      "......FF................FF......",
+      "......FF................FF......",
+      "......FF................FF......",
+      ".....FF..................FF.....",
+      ".....FF..................FF.....",
+      "....bFFF................FFbF....",
+      "......FF................FF......",
+      "......FF................FF......",
+      ".......FF..............FF.......",
+      ".......FF..............FF.......",
+      "........FF............FF........",
+      "........FFFF........FFFF........",
+      ".......bF.FFFFF..FFFFFbF........",
+      "............FFFFFFFF............",
+      "...............bF...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.explosion-4",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "....................b...........",
+      "...........b...HH...............",
+      "............HHH..HHH............",
+      "..........HH........HH..........",
+      ".......HHH............HHH.......",
+      "....b..H................H.......",
+      ".......H................H.b.....",
+      "......H..................H......",
+      "......H..................H......",
+      ".....H....................H.....",
+      ".....H....................H.....",
+      ".....H....................H.....",
+      "....H......................H....",
+      "....H......................H....",
+      "...b.H....................H.....",
+      ".....H....................Hb....",
+      ".....H....................H.....",
+      "......H..................H......",
+      "......H..................H......",
+      ".......H................H.......",
+      ".......H................H.......",
+      ".......HHH............HHH.......",
+      "......b...HH........HH.b........",
+      "............HHH..HHH............",
+      "...............bH...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.explosion-5",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      ".....................M..........",
+      "...........M...HH...............",
+      "............HHH..HHH............",
+      "..........HH........HH..........",
+      ".......HHH............HHH.......",
+      "......H..................H......",
+      "..M..H....................H.....",
+      ".....H....................HM....",
+      ".....H....................H.....",
+      "....H......................H....",
+      "....H......................H....",
+      "...H........................H...",
+      "...H........................H...",
+      "...H........................H...",
+      "..H..........................H..",
+      "..H..........................H..",
+      ".M.H........................H...",
+      "...H........................HM..",
+      "...H........................H...",
+      "....H......................H....",
+      "....H......................H....",
+      ".....H....................H.....",
+      ".....H....................H.....",
+      ".....H....................H.....",
+      "......H..................H......",
+      ".....M.HHH............HHH.......",
+      "..........HH........HH..M.......",
+      "............HHH..HHH............",
+      "...............MH...............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.absorb-0",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...........e............",
+      "...........ee...........",
+      ".........eeGGee.........",
+      ".........eeaGee.........",
+      ".......eeGaaaGee........",
+      "........eGGaGGee........",
+      ".........eeGGee.........",
+      ".........eeeeee.........",
+      "...........ee...........",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.absorb-1",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...........ee...........",
+      "........eeeeeeee........",
+      ".......eeee..eeee.......",
+      "......ee...e....ee......",
+      "......ee...eG...ee......",
+      "......ee...aG...ee......",
+      ".....ee.eeaaaee..ee.....",
+      ".....ee..GGaGG...ee.....",
+      "......ee...eG...ee......",
+      "......ee...e....ee......",
+      "......ee........ee......",
+      ".......eeee..eeee.......",
+      "........eeeeeeee........",
+      "...........ee...........",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.absorb-2",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "........................",
+      "...........UU...........",
+      "........UUU..UUU........",
+      "......UU........UU......",
+      ".....U............U.....",
+      ".....U............U.....",
+      "....U..............U....",
+      "....U..............U....",
+      "....U..............U....",
+      "...U................U...",
+      "...U................U...",
+      "....U..............U....",
+      "....U..............U....",
+      "....U..............U....",
+      ".....U............U.....",
+      ".....U............U.....",
+      "......UU........UU......",
+      "........UUU..UUU........",
+      "...........UU...........",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.absorb-3",
+    "width": 24,
+    "height": 24,
+    "pixels": [
+      "........................",
+      "........................",
+      "...........UU...........",
+      "........UUU..UUU........",
+      "......UU........UU......",
+      ".....U............U.....",
+      "....U..............U....",
+      "....U..............U....",
+      "...U................U...",
+      "...U................U...",
+      "...U................U...",
+      "..U..................U..",
+      "..U..................U..",
+      "...U................U...",
+      "...U................U...",
+      "...U................U...",
+      "....U..............U....",
+      "....U..............U....",
+      ".....U............U.....",
+      "......UU........UU......",
+      "........UUU..UUU........",
+      "...........UU...........",
+      "........................",
+      "........................"
+    ]
+  },
+  {
+    "id": "effect.fold-0",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FF...............",
+      ".............FFFFFF.............",
+      ".............FFGGFF.............",
+      "...........GFFG..GFG............",
+      "............FFG..GFF............",
+      ".............FFGGFF.............",
+      ".............FFFFFF.............",
+      "...............GF...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.fold-1",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FF...............",
+      "............FFFFFFFF............",
+      "..........FFFFF..FFFFF..........",
+      "..........FF...GG...FF..........",
+      ".........FF.GGG..GGG.FF.........",
+      ".........FF.G......G.FF.........",
+      ".........FF.G......G.FF.........",
+      ".......GFF.G........G.FG........",
+      "........FF.G........G.FF........",
+      ".........FF.G......G.FF.........",
+      ".........FF.G......G.FF.........",
+      ".........FF.GGG..GGG.FF.........",
+      "..........FF...GG...FF..........",
+      "..........FFFFF..FFFFF..........",
+      "............FFFFFFFF............",
+      "...............GF...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.fold-2",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FF...............",
+      "............FFFFFFFF............",
+      "..........FFFFF..FFFFF..........",
+      "........FFFF...GG...FFFF........",
+      "........FF..GGG..GGG..FF........",
+      ".......FF.GG........GG.FF.......",
+      ".......FF.G..........G.FF.......",
+      "......FF.G............G.FF......",
+      "......FF.G............G.FF......",
+      "......FF.G............G.FF......",
+      "....GFF.G..............G.FG.....",
+      ".....FF.G..............G.FF.....",
+      "......FF.G............G.FF......",
+      "......FF.G............G.FF......",
+      "......FF.G............G.FF......",
+      ".......FF.G..........G.FF.......",
+      ".......FF.GG........GG.FF.......",
+      "........FF..GGG..GGG..FF........",
+      "........FFFF...GG...FFFF........",
+      "..........FFFFF..FFFFF..........",
+      "............FFFFFFFF............",
+      "...............GF...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.fold-3",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FF...............",
+      "............FFFFFFFF............",
+      "..........FFFFF..FFFFF..........",
+      ".......FFFFF........FFFFF.......",
+      "......FFFF............FFFF......",
+      "......FF................FF......",
+      "......FF................FF......",
+      ".....FF..................FF.....",
+      ".....FF..................FF.....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "..GFF......................FG...",
+      "...FF......................FF...",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      ".....FF..................FF.....",
+      ".....FF..................FF.....",
+      "......FF................FF......",
+      "......FF................FF......",
+      "......FFFF............FFFF......",
+      ".......FFFFF........FFFFF.......",
+      "..........FFFFF..FFFFF..........",
+      "............FFFFFFFF............",
+      "...............GF...............",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.fold-4",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "...............G................",
+      "...............FF...............",
+      "............FFFFFFFF............",
+      "..........FFFFF..FFFFF..........",
+      ".......FFFFF........FFFFF.......",
+      ".....FFFFF............FFFFF.....",
+      ".....FF..................FF.....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "...FF......................FF...",
+      "...FF......................FF...",
+      "..FF........................FF..",
+      "..FF........................FF..",
+      "..FF........................FF..",
+      "GFF..........................FG.",
+      ".FF..........................FF.",
+      "..FF........................FF..",
+      "..FF........................FF..",
+      "..FF........................FF..",
+      "...FF......................FF...",
+      "...FF......................FF...",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      "....FF....................FF....",
+      ".....FF..................FF.....",
+      ".....FFFFF............FFFFF.....",
+      ".......FFFFF........FFFFF.......",
+      "..........FFFFF..FFFFF..........",
+      "............FFFFFFFF............",
+      "...............GF...............",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.unfold-0",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............UU...............",
+      ".............UUUUUU.............",
+      ".............UUGGUU.............",
+      "...........GUUG..GUG............",
+      "............UUG..GUU............",
+      ".............UUGGUU.............",
+      ".............UUUUUU.............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.unfold-1",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............UU...............",
+      "............UUUUUUUU............",
+      "..........UUUUU..UUUUU..........",
+      "..........UU...GG...UU..........",
+      ".........UU.GGG..GGG.UU.........",
+      ".........UU.G......G.UU.........",
+      ".........UU.G......G.UU.........",
+      ".......GUU.G........G.UG........",
+      "........UU.G........G.UU........",
+      ".........UU.G......G.UU.........",
+      ".........UU.G......G.UU.........",
+      ".........UU.GGG..GGG.UU.........",
+      "..........UU...GG...UU..........",
+      "..........UUUUU..UUUUU..........",
+      "............UUUUUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.unfold-2",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............UU...............",
+      "............UUUUUUUU............",
+      "..........UUUUU..UUUUU..........",
+      "........UUUU...GG...UUUU........",
+      "........UU..GGG..GGG..UU........",
+      ".......UU.GG........GG.UU.......",
+      ".......UU.G..........G.UU.......",
+      "......UU.G............G.UU......",
+      "......UU.G............G.UU......",
+      "......UU.G............G.UU......",
+      "....GUU.G..............G.UG.....",
+      ".....UU.G..............G.UU.....",
+      "......UU.G............G.UU......",
+      "......UU.G............G.UU......",
+      "......UU.G............G.UU......",
+      ".......UU.G..........G.UU.......",
+      ".......UU.GG........GG.UU.......",
+      "........UU..GGG..GGG..UU........",
+      "........UUUU...GG...UUUU........",
+      "..........UUUUU..UUUUU..........",
+      "............UUUUUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.unfold-3",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............G................",
+      "...............UU...............",
+      "............UUUUUUUU............",
+      "..........UUUUU..UUUUU..........",
+      ".......UUUUU........UUUUU.......",
+      "......UUUU............UUUU......",
+      "......UU................UU......",
+      "......UU................UU......",
+      ".....UU..................UU.....",
+      ".....UU..................UU.....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "..GUU......................UG...",
+      "...UU......................UU...",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      ".....UU..................UU.....",
+      ".....UU..................UU.....",
+      "......UU................UU......",
+      "......UU................UU......",
+      "......UUUU............UUUU......",
+      ".......UUUUU........UUUUU.......",
+      "..........UUUUU..UUUUU..........",
+      "............UUUUUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.unfold-4",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "...............G................",
+      "...............UU...............",
+      "............UUUUUUUU............",
+      "..........UUUUU..UUUUU..........",
+      ".......UUUUU........UUUUU.......",
+      ".....UUUUU............UUUUU.....",
+      ".....UU..................UU.....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "...UU......................UU...",
+      "...UU......................UU...",
+      "..UU........................UU..",
+      "..UU........................UU..",
+      "..UU........................UU..",
+      "GUU..........................UG.",
+      ".UU..........................UU.",
+      "..UU........................UU..",
+      "..UU........................UU..",
+      "..UU........................UU..",
+      "...UU......................UU...",
+      "...UU......................UU...",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      "....UU....................UU....",
+      ".....UU..................UU.....",
+      ".....UUUUU............UUUUU.....",
+      ".......UUUUU........UUUUU.......",
+      "..........UUUUU..UUUUU..........",
+      "............UUUUUUUU............",
+      "...............GU...............",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.warp-0",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FU...............",
+      ".............FFFUUU.............",
+      ".............FFGGUU.............",
+      "...........GFFG..GUG............",
+      "............FFG..GUU............",
+      ".............FFGGUU.............",
+      ".............FFFUUU.............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.warp-1",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FU...............",
+      "............FFFFUUUU............",
+      "..........FFFFF..UUUUU..........",
+      "..........FF...GG...UU..........",
+      ".........FF.GGG..GGG.UU.........",
+      ".........FF.G......G.UU.........",
+      ".........FF.G......G.UU.........",
+      ".......GFF.G........G.UG........",
+      "........FF.G........G.UU........",
+      ".........FF.G......G.UU.........",
+      ".........FF.G......G.UU.........",
+      ".........FF.GGG..GGG.UU.........",
+      "..........FF...GG...UU..........",
+      "..........FFFFF..UUUUU..........",
+      "............FFFFUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.warp-2",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FU...............",
+      "............FFFFUUUU............",
+      "..........FFFFF..UUUUU..........",
+      "........FFFF...GG...UUUU........",
+      "........FF..GGG..GGG..UU........",
+      ".......FF.GG........GG.UU.......",
+      ".......FF.G..........G.UU.......",
+      "......FF.G............G.UU......",
+      "......FF.G............G.UU......",
+      "......FF.G............G.UU......",
+      "....GFF.G..............G.UG.....",
+      ".....FF.G..............G.UU.....",
+      "......FF.G............G.UU......",
+      "......FF.G............G.UU......",
+      "......FF.G............G.UU......",
+      ".......FF.G..........G.UU.......",
+      ".......FF.GG........GG.UU.......",
+      "........FF..GGG..GGG..UU........",
+      "........FFFF...GG...UUUU........",
+      "..........FFFFF..UUUUU..........",
+      "............FFFFUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.warp-3",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............G................",
+      "...............FU...............",
+      "............FFFFUUUU............",
+      "..........FFFFF..UUUUU..........",
+      ".......FFFFF........UUUUU.......",
+      "......FFFF............UUUU......",
+      "......FF................UU......",
+      "......FF................UU......",
+      ".....FF..................UU.....",
+      ".....FF..................UU.....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "..GFF......................UG...",
+      "...FF......................UU...",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      ".....FF..................UU.....",
+      ".....FF..................UU.....",
+      "......FF................UU......",
+      "......FF................UU......",
+      "......FFFF............UUUU......",
+      ".......FFFFF........UUUUU.......",
+      "..........FFFFF..UUUUU..........",
+      "............FFFFUUUU............",
+      "...............GU...............",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.warp-4",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "...............G................",
+      "...............FU...............",
+      "............FFFFUUUU............",
+      "..........FFFFF..UUUUU..........",
+      ".......FFFFF........UUUUU.......",
+      ".....FFFFF............UUUUU.....",
+      ".....FF..................UU.....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "...FF......................UU...",
+      "...FF......................UU...",
+      "..FF........................UU..",
+      "..FF........................UU..",
+      "..FF........................UU..",
+      "GFF..........................UG.",
+      ".FF..........................UU.",
+      "..FF........................UU..",
+      "..FF........................UU..",
+      "..FF........................UU..",
+      "...FF......................UU...",
+      "...FF......................UU...",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      "....FF....................UU....",
+      ".....FF..................UU.....",
+      ".....FFFFF............UUUUU.....",
+      ".......FFFFF........UUUUU.......",
+      "..........FFFFF..UUUUU..........",
+      "............FFFFUUUU............",
+      "...............GU...............",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.shield-0",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "...............ee...............",
+      "............eee..eee............",
+      "..........ee........ee..........",
+      ".......eee............eee.......",
+      ".......e................e.......",
+      ".......e................e.......",
+      "......e..................e......",
+      "......e..................e......",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      "....e......................e....",
+      "....e......................e....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      "......e..................e......",
+      "......e..................e......",
+      ".......e................e.......",
+      ".......e................e.......",
+      ".......eee............eee.......",
+      "..........ee........ee..........",
+      "............eee..eee............",
+      "...............ee...............",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.shield-1",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "...............UU...............",
+      "............UUU..UUU............",
+      "..........UU........UU..........",
+      ".......UUU............UUU.......",
+      "......U..................U......",
+      "......U..................U......",
+      "......U..................U......",
+      ".....U....................U.....",
+      ".....U....................U.....",
+      "....U......................U....",
+      "....U......................U....",
+      "....U......................U....",
+      "...U........................U...",
+      "...U........................U...",
+      "....U......................U....",
+      "....U......................U....",
+      "....U......................U....",
+      ".....U....................U.....",
+      ".....U....................U.....",
+      "......U..................U......",
+      "......U..................U......",
+      "......U..................U......",
+      ".......UUU............UUU.......",
+      "..........UU........UU..........",
+      "............UUU..UUU............",
+      "...............UU...............",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.shield-2",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "...............ee...............",
+      "............eee..eee............",
+      "..........ee........ee..........",
+      ".......eee............eee.......",
+      "......e..................e......",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      "....e......................e....",
+      "....e......................e....",
+      "...e........................e...",
+      "...e........................e...",
+      "...e........................e...",
+      "..e..........................e..",
+      "..e..........................e..",
+      "...e........................e...",
+      "...e........................e...",
+      "...e........................e...",
+      "....e......................e....",
+      "....e......................e....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      ".....e....................e.....",
+      "......e..................e......",
+      ".......eee............eee.......",
+      "..........ee........ee..........",
+      "............eee..eee............",
+      "...............ee...............",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "effect.shield-3",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "................................",
+      "................................",
+      "................................",
+      "...............UU...............",
+      "............UUU..UUU............",
+      "..........UU........UU..........",
+      ".......UUU............UUU.......",
+      "......U..................U......",
+      "......U..................U......",
+      "......U..................U......",
+      ".....U....................U.....",
+      ".....U....................U.....",
+      "....U......................U....",
+      "....U......................U....",
+      "....U......................U....",
+      "...U........................U...",
+      "...U........................U...",
+      "....U......................U....",
+      "....U......................U....",
+      "....U......................U....",
+      ".....U....................U.....",
+      ".....U....................U.....",
+      "......U..................U......",
+      "......U..................U......",
+      "......U..................U......",
+      ".......UUU............UUU.......",
+      "..........UU........UU..........",
+      "............UUU..UUU............",
+      "...............UU...............",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  {
+    "id": "player.aftwing",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "...............hhh..............",
+      "...............hhh..............",
+      "..............hiiih.............",
+      "..............hijih.............",
+      ".............hjiiijh............",
+      ".............hiiiiih............",
+      "............hhiiiiihh...........",
+      "............hiikkkiih...........",
+      "...........hhiikkkiihh..........",
+      "...........hhiklllkihh..........",
+      "..........hhiiklllkiihh.........",
+      "..........hhiiklllkiihh.........",
+      "..........hhiklllllkihh.........",
+      "..........hhiklllllkihh.........",
+      "..........hjikkkkkkkijh.........",
+      ".........hjjikkkkkkkijjh........",
+      "........hhjjjikkkkkijjjhh.......",
+      ".......hhjjjjikkkkkijjjjhh......",
+      ".....hhhjjjjjikkkkkijjjjjhhh....",
+      "....hhhhjjjjjimmmmmijjjjjhhhh...",
+      "...hhhhjjjjjjjmmmmmjjjjjjjhhhh..",
+      "..hhhhjjjjjjjjmmmmmjjjjjjjjhhhh.",
+      "..hhhhjjjjjjhimmmmmihjjjjjjhhhh.",
+      "..hhhjjjjjjjhimmmmmihjjjjjjjhhh.",
+      "..hhhhjjjjjjhimmmmmihjjjjjjhhhh.",
+      "...hhhjhhjjjhhmmmmmhhjjjhhjhhh..",
+      "...hhhhhhjjjhhiiiiihhjjjhhhhhh..",
+      "...hhhh..jjjhhiiiiihhjjj..hhhh..",
+      "...h.....jjj.hhhhhhh.jjj.....h..",
+      "..........kk.hhhhhhh.kk.........",
+      "..........kk.........kk.........",
+      "..........kk.........kk........."
+    ]
+  },
+  {
+    "id": "player.aftwing-down",
+    "width": 32,
+    "height": 32,
+    "pixels": [
+      "..........kk.........kk.........",
+      "..........kk.........kk.........",
+      "..........kk.hhhhhhh.kk.........",
+      "...h.....jjj.hhhhhhh.jjj.....h..",
+      "...hhhh..jjjhhiiiiihhjjj..hhhh..",
+      "...hhhhhhjjjhhiiiiihhjjjhhhhhh..",
+      "...hhhjhhjjjhhmmmmmhhjjjhhjhhh..",
+      "..hhhhjjjjjjhimmmmmihjjjjjjhhhh.",
+      "..hhhjjjjjjjhimmmmmihjjjjjjjhhh.",
+      "..hhhhjjjjjjhimmmmmihjjjjjjhhhh.",
+      "..hhhhjjjjjjjjmmmmmjjjjjjjjhhhh.",
+      "...hhhhjjjjjjjmmmmmjjjjjjjhhhh..",
+      "....hhhhjjjjjimmmmmijjjjjhhhh...",
+      ".....hhhjjjjjikkkkkijjjjjhhh....",
+      ".......hhjjjjikkkkkijjjjhh......",
+      "........hhjjjikkkkkijjjhh.......",
+      ".........hjjikkkkkkkijjh........",
+      "..........hjikkkkkkkijh.........",
+      "..........hhiklllllkihh.........",
+      "..........hhiklllllkihh.........",
+      "..........hhiiklllkiihh.........",
+      "..........hhiiklllkiihh.........",
+      "...........hhiklllkihh..........",
+      "...........hhiikkkiihh..........",
+      "............hiikkkiih...........",
+      "............hhiiiiihh...........",
+      ".............hiiiiih............",
+      ".............hjiiijh............",
+      "..............hijih.............",
+      "..............hiiih.............",
+      "...............hhh..............",
+      "...............hhh.............."
+    ]
+  }
+];

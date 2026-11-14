@@ -1,12 +1,17 @@
 {
-  "name": "arrow-space-shift-game-off-2026",
-  "version": "0.14.0",
+  "name": "arrow-space-shift",
+  "version": "0.25.1-dev.6",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node tools/serve.mjs",
+    "syntax": "node tools/check-syntax.mjs",
     "test": "node --test tests/*.test.mjs",
-    "package:itch": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/package-itch.ps1",
-    "art:export": "node tools/export-pixel-assets.mjs"
+    "check": "npm run syntax && npm test",
+    "start": "node tools/local-server.mjs --open",
+    "serve": "node tools/local-server.mjs",
+    "art:export": "node tools/export-pixel-assets.mjs",
+    "package:release": "python tools/package-release.py",
+    "package:study": "python tools/package-stc-study.py",
+    "package:music": "python tools/package-act-library.py"
   }
 }

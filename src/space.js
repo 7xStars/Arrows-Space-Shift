@@ -1,3 +1,6 @@
+import {isBoss,isScrollingLevel,isKleinSurfaceRoute} from './campaign.js';
+import {KLEIN_BOUNDS,kleinY} from './klein.js';
+
 export const FIELD_LENGTH = 1200;
 export const FIELD_LEAD = 120;
 export const MAX_FOLDS = 3;
@@ -48,10 +51,33 @@ export function foldDepthAt(z, fields) {
 }
 
 export function addFold(state) {
+  if(state.mode==='campaign'&&state.campaign?.index===-1&&!['fold','unfold','engage'].includes(state.campaign.lesson))return false;
   if (state.fields.length >= (state.maxFolds ?? MAX_FOLDS)) return false;
   const backward=state.mode==='campaign'&&state.facing===-1;
-  state.fields.push({ id: ++state.foldSerial, start: backward?state.z-FIELD_LEAD-FIELD_LENGTH:state.z+FIELD_LEAD,
-    end: backward?state.z-FIELD_LEAD:state.z+FIELD_LEAD+FIELD_LENGTH, factor: 0.5 });
+  const boss=isBoss(state);
+  // Ordinary scrolling levels keep the ship screen-anchored. Their route
+  // coordinate is the camera, not the ship's stale world z. Place new folds
+  // ahead of the current action so late-stage speedrunning remains possible.
+  const routeOrigin=isScrollingLevel(state)&&!isKleinSurfaceRoute(state)?state.cameraZ:state.z;
+  let entry=routeOrigin+FIELD_LEAD;
+  if(boss){
+    let y=kleinY(spaceDistance(0,entry,state.fields));
+    // Enter the connected surface before placing the interval. A backward
+    // entry at the bottom uses the top representative so it has real length.
+    if(backward&&Math.abs(y-KLEIN_BOUNDS.bottom)<1e-9)y=KLEIN_BOUNDS.top;
+    entry=advanceThroughSpace(0,y,state.fields);
+  }
+  const field={id:++state.foldSerial,start:backward?entry-FIELD_LENGTH:entry,
+    end:backward?entry:entry+FIELD_LENGTH,factor:.5};
+  state.fields.push(field);
+  if(boss){
+    // Finale folds end at the canonical seam when their interval is longer
+    // than the available surface. Clip after compression so both boundary
+    // markers describe actual support, without altering the metric helpers.
+    const bottom=advanceThroughSpace(0,KLEIN_BOUNDS.bottom,state.fields);
+    const top=advanceThroughSpace(0,KLEIN_BOUNDS.top,state.fields);
+    field.start=Math.max(field.start,bottom);field.end=Math.min(field.end,top);
+  }
   state.foldsUsed++;
   return true;
 }

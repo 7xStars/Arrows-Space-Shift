@@ -1,0 +1,42 @@
+[
+  {
+    "file": "bass-pan-review.wav",
+    "source": "room_mix.wav",
+    "start_frame": 689681,
+    "frames": 687761,
+    "edge_fade_seconds": 0.02,
+    "metrics": {
+      "file": "bass-pan-review.wav",
+      "frames": 687761,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 14.328354166666667,
+      "peak": 0.7069091796875,
+      "peak_dbfs": -3.012727573967631,
+      "rms": 0.18860192264853234,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "63ef6e4941f8a4217c121f176001324c8b4f6695d6cee7fdf9d03f0c3b7a96d8"
+    }
+  },
+  {
+    "file": "quiet-break-review.wav",
+    "source": "room_mix.wav",
+    "start_frame": 2352000,
+    "frames": 528000,
+    "edge_fade_seconds": 0.02,
+    "metrics": {
+      "file": "quiet-break-review.wav",
+      "frames": 528000,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 11.0,
+      "peak": 0.68878173828125,
+      "peak_dbfs": -3.238367517639118,
+      "rms": 0.16960591087334817,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "c439e2a0c96720799da66de4b0b4cf2a5fee3021f50e2f08c2da264a29bd1a48"
+    }
+  }
+]

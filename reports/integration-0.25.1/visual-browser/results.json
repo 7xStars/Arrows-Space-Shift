@@ -1,0 +1,12 @@
+{
+  "results": [
+    "Manual keyboard fire produces bounded recoil in the actual renderer",
+    "Actual combat damage produces the coupled response",
+    "Presentation retains a fixed collision core",
+    "Reduced motion removes recoil during actual fire",
+    "No presentation page exception occurred"
+  ],
+  "checks": 5,
+  "errors": [],
+  "limits": "An isolated QA combat fixture with actual keyboard fire and actual incoming damage. A wrapper records presentation return values. It does not change those values or simulation state. This is not a fresh campaign, human observation, or device performance test."
+}

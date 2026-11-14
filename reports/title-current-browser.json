@@ -1,0 +1,13 @@
+{
+  "observed": {
+    "url": "http://127.0.0.1:4177/",
+    "phase": "running",
+    "context": "running",
+    "recording": "act3-03",
+    "state": "playing",
+    "starts": 5,
+    "resumes": 0
+  },
+  "method": "Read-only inspection after opening the current normal launch page. No click or key was sent to start the title.",
+  "limits": "Native scheduling state only. No physical-output or listening result."
+}

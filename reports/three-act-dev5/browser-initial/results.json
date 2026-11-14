@@ -1,0 +1,49 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "candidate": "0.25.1-dev.5",
+  "method": "Isolated headless Edge. A supplied old-profile fixture checks hidden entries and storage retention. A separate local post-defeat fixture exposes the Curvature Seed; ordinary keyboard input must collect it and complete extraction. No claim about defeating the boss or a fresh campaign is made.",
+  "checks": [
+    "hyperbolic-act.html shows the edition boundary",
+    "hyperbolic-act.html retains all supplied old records",
+    "hyperbolic-act.html performs no storage write",
+    "hyperbolic-act.html starts no later runtime or audio context",
+    "hyperbolic-act.html notice fits a narrow viewport",
+    "repair-dock.html shows the edition boundary",
+    "repair-dock.html retains all supplied old records",
+    "repair-dock.html performs no storage write",
+    "repair-dock.html starts no later runtime or audio context",
+    "repair-dock.html notice fits a narrow viewport",
+    "A profile with later progress still has no Act IV start",
+    "The title recognizes the completed three Acts",
+    "Later completion does not expose the repaired-drive banner",
+    "The main view has no visible later-page link",
+    "Guide has no visible post-jam prompt",
+    "Equipment has no visible post-jam prompt"
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "cases": {
+    "hyperbolic-act.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "repair-dock.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Options has no visible post-jam prompt\n    at check (file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:35:35)\n    at file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:90:5",
+  "sourceHashes": {
+    "src/build.js": "dc9962cd69e62ed01edba3714b6cecc7abd8a1c382ced301771eb83a2bc89bb3",
+    "src/app.js": "e5e913d03f65fe514d7e40886ef172df183027ac32ff233ed3a4ff8a945924a8",
+    "src/interface.js": "ef054801e4b9c79b9fc93a7e3e3f9c3537cfe1dd239984c34a6c6db97d893604",
+    "src/later-content-entry.js": "833248788b454bc1a855b5aafbdee51bb721d59fe0f4bf6eb3bc82e3496e35db"
+  },
+  "url": "http://127.0.0.1:29722/",
+  "browser": "157.0.4341.46",
+  "limits": "Old-profile injection is a compatibility fixture. The final-boss fixture starts after defeat and does not verify boss combat, fairness, a fresh-game completion, human play, or physical devices. The real pickup and extraction use ordinary keyboard input. The user browser and storage are not changed."
+}

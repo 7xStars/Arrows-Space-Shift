@@ -1,0 +1,44 @@
+{
+  "source": "assets/realm-title.png",
+  "source_sha256": "6bae6dc9ba489c532d3b66901d8013541ae7ed6a42020743e19e8b84f40af20c",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "output_dimensions": [
+    630,
+    500
+  ],
+  "mode": "RGB",
+  "resize": "Pillow ImageOps.fit, centered, Lanczos",
+  "typography": {
+    "text": [
+      "Arrow",
+      "Space Shift"
+    ],
+    "font": "Segoe UI Bold",
+    "font_file": "C:\\Windows\\Fonts\\segoeuib.ttf",
+    "font_sha256": "b169e636719880976a97e94e3b1cb3dbe5f4a38eabc037bf9f2a9165154c3ad2",
+    "font_pixels": 70,
+    "color": "#f3e5c8",
+    "line_top_y": [
+      164,
+      238
+    ]
+  },
+  "limits": "Existing project art and the existing game title only. No generative image tool or new illustration was used.",
+  "files": {
+    "cover-630x500.png": {
+      "bytes": 241825,
+      "sha256": "07cdcbc230c8a16cbfd6f89515527f2fa002dd7cc3c2569846ad6f995cb4510a"
+    },
+    "cover-art-only-630x500.png": {
+      "bytes": 234718,
+      "sha256": "7e8e9b9d4227061764f1ede2111324f826b5f6fd6ef6df2369c425fe5e1ac771"
+    },
+    "cover-review-315x250.png": {
+      "bytes": 75886,
+      "sha256": "877f8fb542743d48888fbddc1c59e46c03372fbf8383e2f051cbc9cc80e87eed"
+    }
+  }
+}

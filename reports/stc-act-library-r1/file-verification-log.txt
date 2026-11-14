@@ -1,0 +1,10 @@
+{
+  "tracks": 16,
+  "seconds": 3120,
+  "decoded_files": 64,
+  "lufs_range": [
+    -19.4,
+    -17.6
+  ],
+  "highest_master_true_peak_dbfs": -1.4
+}

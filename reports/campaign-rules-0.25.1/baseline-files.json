@@ -1,0 +1,31 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "copy": "G:\\Music Projects\\Arrow Space Shift\\scratch\\campaign-rules-baseline-20261113",
+  "files": [
+    {
+      "file": "src/simulation.js",
+      "sha256": "0ed3496fc1e30dfb8f94accac4316ed1b22295b0cd3aa62fcfc1f345485aca3b"
+    },
+    {
+      "file": "src/campaign.js",
+      "sha256": "26854d09278190fc4a95e23f1185790df47dafd94aa178d2afee254b17ce1e11"
+    },
+    {
+      "file": "src/hyperbolic-campaign.js",
+      "sha256": "9dadae63ad3c4e36490447219f0f9b3a681b63173a2698e0b4ab6badcca1e665"
+    },
+    {
+      "file": "tests/klein-relay-traversal.test.mjs",
+      "sha256": "31d4b72a08f7ae46d9618f5f6336ed737536f7fe3a644440f67b982db225e2ab"
+    },
+    {
+      "file": "tests/act3-ecology.test.mjs",
+      "sha256": "df34936343f7108813be127d31f33c4b9955998b87724f0c9fa9288b7e660276"
+    },
+    {
+      "file": "tests/foundry.test.mjs",
+      "sha256": "ddc3499156c8217563b8bed81ca5e623d96338d05065b632aba2fbfb0bd13846"
+    }
+  ],
+  "baseline_tests": 41
+}

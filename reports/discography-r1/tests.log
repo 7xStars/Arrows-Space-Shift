@@ -1,0 +1,12 @@
+test_archive_preserves_source_bytes_and_metadata (test_discography.DiscographyTests.test_archive_preserves_source_bytes_and_metadata) ... ok
+test_archive_rejects_changed_audio_with_the_same_member_names (test_discography.DiscographyTests.test_archive_rejects_changed_audio_with_the_same_member_names) ... ok
+test_archive_rejects_unlisted_members (test_discography.DiscographyTests.test_archive_rejects_unlisted_members) ... ok
+test_offline_player_has_one_explicit_audio_element_and_escaped_titles (test_discography.DiscographyTests.test_offline_player_has_one_explicit_audio_element_and_escaped_titles) ... ok
+test_paths_and_total_frames_are_checked (test_discography.DiscographyTests.test_paths_and_total_frames_are_checked) ... ok
+test_selected_compositions_exclude_duplicate_audio_or_identity (test_discography.DiscographyTests.test_selected_compositions_exclude_duplicate_audio_or_identity) ... ok
+test_wav_format_duration_and_complete_payload_are_checked (test_discography.DiscographyTests.test_wav_format_duration_and_complete_payload_are_checked) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.060s
+
+OK

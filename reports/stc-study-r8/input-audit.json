@@ -1,0 +1,164 @@
+{
+  "revision": "stc-study-r8-input-audit",
+  "role": "Independent QA. Input-only measurements. No render or source edit.",
+  "tools": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Andr\u00e9\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "numpy": "2.3.5",
+    "ffmpeg": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffmpeg_path": "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+    "filter_help_inspected": "ffmpeg -hide_banner -h filter=ebur128"
+  },
+  "inputs": {
+    "r5": {
+      "path": "D:\\Projects\\games\\game-off-2026\\reports\\stc-study-r5\\ass-identified-return-r5-stereo-music.wav",
+      "sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841",
+      "bytes": 14139268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3534806,
+        "sample_width_bytes": 2,
+        "compression": "NONE"
+      },
+      "seconds": 73.64179166666666,
+      "sample_peak": 0.700439453125,
+      "sample_peak_dbfs": -3.092587994435519,
+      "full_scale_samples": 0,
+      "nonfinite_samples": 0,
+      "rms": 0.1843934701088324,
+      "rms_dbfs": -14.685089251972567,
+      "channel_correlation": 0.981676705289775,
+      "mono_fold_rms_dbfs": -14.726600513140998,
+      "side_rms_dbfs": -34.9020121828146,
+      "mono_fold_power_delta_db": -0.04151126116842926,
+      "dc_per_channel": [
+        0.0007421873452885391,
+        0.0007290670709335339
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "first_nonzero_frame": 339,
+      "loudness": {
+        "integrated_lufs": -14.6,
+        "range_lu": 2.3,
+        "true_peak_dbfs": -3.1,
+        "tool": "FFmpeg ebur128 true-peak scanner",
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\reports\\stc-study-r5\\ass-identified-return-r5-stereo-music.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r8\\qa\\r5-ebur128.txt",
+        "process_exit": 0
+      },
+      "unchanged_after_measurement": true
+    },
+    "r7": {
+      "path": "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-bass-r7\\room_mix.wav",
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2,
+        "compression": "NONE"
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak": 0.717010498046875,
+      "sample_peak_dbfs": -2.8894897120149454,
+      "full_scale_samples": 0,
+      "nonfinite_samples": 0,
+      "rms": 0.18070213357008116,
+      "rms_dbfs": -14.860734392916088,
+      "channel_correlation": 0.9756071695907432,
+      "mono_fold_rms_dbfs": -14.91515434870514,
+      "side_rms_dbfs": -33.90817722439308,
+      "mono_fold_power_delta_db": -0.05441995578905159,
+      "dc_per_channel": [
+        0.0007215813086379326,
+        0.0007041035282708108
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "first_nonzero_frame": 57,
+      "loudness": {
+        "integrated_lufs": -14.6,
+        "range_lu": 2.4,
+        "true_peak_dbfs": -2.9,
+        "tool": "FFmpeg ebur128 true-peak scanner",
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-bass-r7\\room_mix.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r8\\qa\\r7-ebur128.txt",
+        "process_exit": 0
+      },
+      "unchanged_after_measurement": true
+    }
+  },
+  "comparison": {
+    "common_frames": 3534806,
+    "common_seconds": 73.64179166666666,
+    "r7_extra_tail_frames": 144000,
+    "r7_extra_tail_seconds": 3.0,
+    "same_pcm": false,
+    "raw_difference_rms_dbfs": -10.328663818395075,
+    "sample_correlation_flattened": -0.3637385507837413,
+    "least_squares_r7_gain_to_r5": -0.3638101373411116,
+    "fitted_difference_rms_dbfs": -15.301342252402833,
+    "envelope_alignment": {
+      "block_seconds": 0.01,
+      "search_seconds": [
+        -0.2,
+        0.2
+      ],
+      "best": {
+        "r7_lag_seconds": -0.01,
+        "correlation": 0.929634259203346
+      },
+      "at_zero": {
+        "r7_lag_seconds": 0.0,
+        "correlation": 0.8797240993364405
+      },
+      "limit": "Whole-track mono RMS-envelope correlation is an alignment clue. It does not prove per-instrument or sample alignment."
+    },
+    "interpretation": "The files share a rhythmic score, but these rendered masters are not sample-aligned. The r7 file has a three-second added room tail and different capture and shared safety processing. Do not sum the two masters as synchronized layers.",
+    "least_squares_limit": "This unconstrained sample fit can be negative because the signals differ in phase and processing. It is not a recommended gain or polarity change. Use loudness measurements for level comparison.",
+    "onset_difference_r7_minus_r5_frames": -282,
+    "onset_difference_r7_minus_r5_seconds": -0.005875
+  },
+  "limits": [
+    "No listening or preference result.",
+    "No physical audio-device, headphone-comfort, or game masking result.",
+    "Mono metrics do not prove perceptual mono compatibility.",
+    "True peak is the scanner estimate for these original PCM files.",
+    "No seamless-loop claim."
+  ]
+}

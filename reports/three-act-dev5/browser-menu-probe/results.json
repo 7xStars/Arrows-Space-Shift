@@ -1,0 +1,68 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "candidate": "0.25.1-dev.5",
+  "method": "Isolated headless Edge. A supplied old-profile fixture checks hidden entries and storage retention. A separate local post-defeat fixture exposes the Curvature Seed; ordinary keyboard input must collect it and complete extraction. No claim about defeating the boss or a fresh campaign is made.",
+  "checks": [
+    "hyperbolic-act.html shows the edition boundary",
+    "hyperbolic-act.html retains all supplied old records",
+    "hyperbolic-act.html performs no storage write",
+    "hyperbolic-act.html starts no later runtime or audio context",
+    "hyperbolic-act.html notice fits a narrow viewport",
+    "repair-dock.html shows the edition boundary",
+    "repair-dock.html retains all supplied old records",
+    "repair-dock.html performs no storage write",
+    "repair-dock.html starts no later runtime or audio context",
+    "repair-dock.html notice fits a narrow viewport",
+    "A profile with later progress still has no Act IV start",
+    "The title recognizes the completed three Acts",
+    "Later completion does not expose the repaired-drive banner",
+    "The main view has no visible later-page link",
+    "Guide has no visible post-jam prompt",
+    "Equipment has no visible post-jam prompt"
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "cases": {
+    "hyperbolic-act.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "repair-dock.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "menus": {
+      "Guide": {
+        "text": "Flight guide\nClose flight guide\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nSection guide and campaign route\n\nCANONICAL GRAMMAR\n\nBullet-pattern glossary\n\nThe vocabulary stays stable while the geometry changes.\n\nFAN\nSeveral angles radiate from one source.\nSWEEP\nThe firing direction changes over committed beats.\nGAP\nA dense field leaves a readable opening.\nAIMED\nA shot commits to the player position during the warning.\nBURST\nSeveral rapid volleys separated by recovery.\nWALL\nA broad obstruction pressures route choice.\nSPIRAL\nA rotating emission develops over time.\nCROSSFIRE\nMultiple origins constrain different routes.\nRETURN\nA familiar attack deliberately exploits a surface join.\nCONVERGENCE\nIndependent trajectories meet later.\n\nMANIFOLD VISUAL LANGUAGE\n\nReal threats and chart previews\n\n● Solid shot and continuous trail = real projectile; normal collisions apply.\n\n◯ Hollow circle and dashed lead-in = a future-position image, not an extra shot or extra hitbox. It does NOT guarantee the identified physical shot is harmless.\n\nPulsing paired-edge mark = projected crossing within a fraction of a second; its arrival can still change with folds or later motion.\n\nK / single slanted notch = Klein twist; P / opposite ticks = projective join; K+P = mixed prototype.\n\nThe Klein bottle and mathematical Dyck surface are connected, nonorientable surfaces. The current K+P boss is a Dyck-inspired gameplay chart, not yet a mathematically verified K#RP² model. There is no global \"other side\" whose projectiles are automatically harmless. The displays distinguish live objects from additional render-only images, not alternate collision rules.\n\nChange the distance.\n\nDamaged Warp Drive.\nFind a way through.\n\nFold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time.\n\nFlight controls\n← →\nSteer\nSpace\nFire\nC E\nAct III · capture / release echoes\nLeft Shift\nFold\nRight Shift\nUnfold\nP\nPause\n\nAct I: Left and Right steer while the route scrolls. Act II: the Klein Relay gives you the same twisted surface traversal as the fleet. Side crossings reverse your physical forward direction while the camera follows. Left and Right steer in Acts I–III. Up and Down do not control these Acts. Route scrolling stays forward. Hold Space to fire forward. Left Shift folds and Right Shift unfolds.\n\nWhat changes?\nSpace at the ship\n1×\nRoute speed factor\n\nThe route is outside a fold field.\n\nVertical speed\n0\nRoute speed\n0\nDistance factor\n1.000\nFold stack\n0 / 3\nNo active fields.\n\nUnfold removes the latest field. Fields stay where you made them.\n\nRisk and reward\n\nFold: faster outgoing shots, faster incoming fire.\n\nEach fold at the target adds 50 points to a kill.\n\nUnfold: more reaction time, slower outgoing shots, lower kill reward.\n\nFold bonus earned: 0\nYour ship\nFold boundary\nThreat\nGate opening\nAbout this build\nUpgrade counters · 3-Paley and 7-Paley\nLevel 0 / 8 · Flight controls\n1 / 4 · Move\n\nMove → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "links": []
+      },
+      "Equipment": {
+        "text": "Equipment\nClose equipment\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nRECOVERED FLEET\n\nChoose your next ship\n\nCurvature Seed secured. Acts I–III are complete. Your ships and recovered parts remain available for replay.\n\nArrow\nResponsive steering\nExcels: Changes direction immediately.\nWatch for: Needs more room than Needle in narrow gaps.\nCovers Skater: sharp reversals\nSkater\nFast crossing\nExcels: Crosses wide patterns faster; brakes sharply.\nWatch for: Has a brief ramp when starting or reversing.\nCovers Needle: long crossings\nNeedle\nSmall collision core\nExcels: Its smaller core fits narrower bullet gaps.\nWatch for: Takes longer to cross a wide pattern.\nCovers Arrow: narrow gaps\n\nNext flight preference: Arrow. Your active ship does not change mid-section. Every hull uses the same forward gun and Paley-7 equipment.\n\nDrive parts, crafting, and ship choice are kept between campaigns.\n\nFleet Foundry\n\nSalvage 8/8 from first-cleared Act II/III lessons · Aftwing blueprint recovered · Cost 5.\n\nConstruct Aftwing · 5 salvage\n\nEquipment and collected seeds\n\nCollect seeds during flight. They remain in your inventory.\n\nSlot 1: empty\nSlot 2: opens at 7-Paley\n\nSlot 1 acts before Slot 2. Equip each operation once. R means right seed. L means left seed. One fold accepts the named side. Zero or two folds accept the opposite side. Three folds accept the named side again.\n\nOne operation · facing front\n0 folds · 0 position warps\n\nCollect a seed to equip an operation.\n\nEach fold or unfold reverses the accepted side. Other shots pass normally. Center shots are not affected.\n\nArrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire.\n\nDefeated carriers drop their equipped seeds.\n\nStored damage due: 0\n\nCounter results appear here during combat.",
+        "links": []
+      },
+      "Options": {
+        "text": "Options\nClose options\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nSound & feel\nSound off\nSound volume\n50%\nMusic level\n55%\nEffects level\n80%\nAmbience level\n25%\nRecorded techno music\nCombat particles & engine trails\nReduced motion\nAlways show the true collision core\nShow pattern names during warnings\nShow manifold projectile images & crossing cues\n\nReduced motion removes decorative movement. Aiming warnings, hits, returns, and damage deadlines stay visible.\n\nHold Space to fire. Release it to stop. Sound and feel settings are saved in this browser.\n\nBest score in this browser: 0\n\nSound is off.\n\nSection checkpoints\n\nProgress is saved at section boundaries in this browser. Reloading returns to the start of your current section with its equipment and score.\n\nRetry sectionNew run\nCampaign records\n\nComplete an Act II or III stage to create a record.\n\nRecent attempts\nNo recorded attempts yet.\nExport progress\nImport progress\n\nProgress stays in this browser unless exported.\n\nRepair dock and campaign completion",
+        "links": [
+          {
+            "text": "Repair dock and campaign completion",
+            "href": "repair-dock.html"
+          }
+        ]
+      }
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Options has no visible post-jam prompt\n    at check (file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:35:35)\n    at file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:92:5",
+  "sourceHashes": {
+    "src/build.js": "dc9962cd69e62ed01edba3714b6cecc7abd8a1c382ced301771eb83a2bc89bb3",
+    "src/app.js": "e5e913d03f65fe514d7e40886ef172df183027ac32ff233ed3a4ff8a945924a8",
+    "src/interface.js": "ef054801e4b9c79b9fc93a7e3e3f9c3537cfe1dd239984c34a6c6db97d893604",
+    "src/later-content-entry.js": "833248788b454bc1a855b5aafbdee51bb721d59fe0f4bf6eb3bc82e3496e35db"
+  },
+  "url": "http://127.0.0.1:24083/",
+  "browser": "157.0.4341.46",
+  "limits": "Old-profile injection is a compatibility fixture. The final-boss fixture starts after defeat and does not verify boss combat, fairness, a fresh-game completion, human play, or physical devices. The real pickup and extraction use ordinary keyboard input. The user browser and storage are not changed."
+}

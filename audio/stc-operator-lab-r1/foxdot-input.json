@@ -1,0 +1,129 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "seconds": 12,
+  "sampleRate": 48000,
+  "events": [
+    {
+      "index": 0,
+      "time": 0.04,
+      "midi": 41,
+      "amp": 0.17,
+      "duration": 0.31
+    },
+    {
+      "index": 1,
+      "time": 0.54,
+      "midi": 44,
+      "amp": 0.14,
+      "duration": 0.31
+    },
+    {
+      "index": 2,
+      "time": 1.04,
+      "midi": 48,
+      "amp": 0.15,
+      "duration": 0.31
+    },
+    {
+      "index": 3,
+      "time": 1.54,
+      "midi": 51,
+      "amp": 0.13,
+      "duration": 0.31
+    },
+    {
+      "index": 4,
+      "time": 2.04,
+      "midi": 41,
+      "amp": 0.17,
+      "duration": 0.31
+    },
+    {
+      "index": 5,
+      "time": 2.54,
+      "midi": 44,
+      "amp": 0.14,
+      "duration": 0.31
+    },
+    {
+      "index": 6,
+      "time": 3.04,
+      "midi": 48,
+      "amp": 0.15,
+      "duration": 0.31
+    },
+    {
+      "index": 7,
+      "time": 3.54,
+      "midi": 51,
+      "amp": 0.13,
+      "duration": 0.31
+    },
+    {
+      "index": 8,
+      "time": 4.04,
+      "midi": 41,
+      "amp": 0.17,
+      "duration": 0.31
+    },
+    {
+      "index": 9,
+      "time": 4.54,
+      "midi": 44,
+      "amp": 0.14,
+      "duration": 0.31
+    },
+    {
+      "index": 10,
+      "time": 5.04,
+      "midi": 48,
+      "amp": 0.15,
+      "duration": 0.31
+    },
+    {
+      "index": 11,
+      "time": 5.54,
+      "midi": 51,
+      "amp": 0.13,
+      "duration": 0.31
+    },
+    {
+      "index": 12,
+      "time": 6.04,
+      "midi": 41,
+      "amp": 0.17,
+      "duration": 0.31
+    },
+    {
+      "index": 13,
+      "time": 6.54,
+      "midi": 44,
+      "amp": 0.14,
+      "duration": 0.31
+    },
+    {
+      "index": 14,
+      "time": 7.04,
+      "midi": 48,
+      "amp": 0.15,
+      "duration": 0.31
+    },
+    {
+      "index": 15,
+      "time": 7.54,
+      "midi": 51,
+      "amp": 0.13,
+      "duration": 0.31
+    }
+  ],
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Author the original four-note input motif and finite onset sequence."
+  },
+  "limits": "Finite offline pattern evaluation. No live FoxDot Clock or game event clock."
+}

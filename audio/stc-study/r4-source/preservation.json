@@ -1,0 +1,50 @@
+[
+  {
+    "path": "src/stc-audio.js",
+    "sha256": "9ac69929f333afea550cad25bc735107fefe3c6b375ecfe8424ca9fa3a8b5010"
+  },
+  {
+    "path": "src/stc-score.js",
+    "sha256": "a81e57c6af9635fe2d68388a3def1563fad91c8bd5e971240bb0e4e08364257e"
+  },
+  {
+    "path": "src/divergent-pulse-app.js",
+    "sha256": "dfda088f9030251ecfdf7dcb4d753be6558dc5d4ff806ecc86d346093b5c2894"
+  },
+  {
+    "path": "src/divergent-pulse.js",
+    "sha256": "30b3992f292c2fffea73dd521f6335669a792c195e8f2c84a6a2f41988194dab"
+  },
+  {
+    "path": "divergent-pulse.html",
+    "sha256": "1ac0b1a6603465c22e847d06c901952239cf80d2bd1546ce0d69769e11a1811b"
+  },
+  {
+    "path": "tools/render-stc-study.mjs",
+    "sha256": "03556593a0d484089c07c71ae891d1c7cdd8c31b4853cf0bfbb23250d2ce023a"
+  },
+  {
+    "path": "tools/stc-study-browser.mjs",
+    "sha256": "635682dc2417b5f5db0d22df5ba1f2f8da292389093f65c48a34cd89f9e8148d"
+  },
+  {
+    "path": "tests/stc-audio.test.mjs",
+    "sha256": "4d7b60455d578ea8ad498267bbeee80dbe94561b8fc4752f5cedf5064829c26b"
+  },
+  {
+    "path": "tools/package-stc-study.py",
+    "sha256": "90d046380cb6ac6177f831b4934ab07742ae7335ca50f41c656e2a799c93716d"
+  },
+  {
+    "path": "reports/stc-study-r4/ass-identified-return-r4-music.wav",
+    "sha256": "36e3153c1aba18d408f10029b85e577af0403d23e095e21fa115d0ef03052495"
+  },
+  {
+    "path": "reports/stc-study-r4/ass-identified-return-r4-crossing-mix.wav",
+    "sha256": "d469fabc28f5191811d297a5e488c50ef762b24a37934649b78264fd89ff3c00"
+  },
+  {
+    "path": "audio/stc-study/score-r4.json",
+    "sha256": "91705bd5637de3a1856c7450b4560800e51cf4df0df665573c93088b61741ae7"
+  }
+]

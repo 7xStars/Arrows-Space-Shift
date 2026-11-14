@@ -1,0 +1,12 @@
+test_actual_foxdot_provenance_and_repeated_score (test_tempo_library.TempoTests.test_actual_foxdot_provenance_and_repeated_score) ... ok
+test_composition_preserves_definition_and_has_finite_ending (test_tempo_library.TempoTests.test_composition_preserves_definition_and_has_finite_ending) ... ok
+test_envelopes_follow_the_track_instead_of_fixed_old_decay (test_tempo_library.TempoTests.test_envelopes_follow_the_track_instead_of_fixed_old_decay) ... ok
+test_fast_hat_gain_and_atmosphere_are_bounded (test_tempo_library.TempoTests.test_fast_hat_gain_and_atmosphere_are_bounded) ... ok
+test_invalid_production_controls_are_rejected (test_tempo_library.TempoTests.test_invalid_production_controls_are_rejected) ... ok
+test_new_cells_are_not_old_track_speed_changes (test_tempo_library.TempoTests.test_new_cells_are_not_old_track_speed_changes) ... ok
+test_required_tempo_range_and_duration (test_tempo_library.TempoTests.test_required_tempo_range_and_duration) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.496s
+
+OK

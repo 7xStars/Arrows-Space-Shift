@@ -1,0 +1,46 @@
+{
+  "browser": "157.0.4341.46",
+  "method": "Native off-center impulse render in headless Edge OfflineAudioContext. Same input and position in both modes.",
+  "results": [
+    {
+      "model": "equalpower",
+      "channels": [
+        {
+          "peak": 0.2034192681312561,
+          "peakIndex": 960,
+          "nonzero": 1,
+          "energy": 0.041379398647055865,
+          "nonFinite": 0
+        },
+        {
+          "peak": 0.4567500352859497,
+          "peakIndex": 960,
+          "nonzero": 1,
+          "energy": 0.2086205947337163,
+          "nonFinite": 0
+        }
+      ]
+    },
+    {
+      "model": "HRTF",
+      "channels": [
+        {
+          "peak": 0.048656903207302094,
+          "peakIndex": 1274,
+          "nonzero": 257,
+          "energy": 0.014098776348296576,
+          "nonFinite": 0
+        },
+        {
+          "peak": 0.24971988797187805,
+          "peakIndex": 1255,
+          "nonzero": 259,
+          "energy": 0.12742554199607942,
+          "nonFinite": 0
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "limits": "Verifies native filter and channel timing behavior. It does not establish human localization, physical output, or musical acceptance."
+}

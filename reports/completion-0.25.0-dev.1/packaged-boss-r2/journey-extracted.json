@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "parts": {
+    "klein-relay": {
+      "id": "klein-relay",
+      "source": "legacy-banked",
+      "chapter": 8,
+      "stage": null,
+      "exposed": true,
+      "collected": true,
+      "extracted": true,
+      "legacy": true,
+      "seed": null,
+      "shipId": null,
+      "score": null
+    },
+    "projective-module": {
+      "id": "projective-module",
+      "source": "legacy-banked",
+      "chapter": 17,
+      "stage": null,
+      "exposed": true,
+      "collected": true,
+      "extracted": true,
+      "legacy": true,
+      "seed": null,
+      "shipId": null,
+      "score": null
+    },
+    "curvature-seed": {
+      "id": "curvature-seed",
+      "source": "legacy-banked",
+      "chapter": 26,
+      "stage": null,
+      "exposed": true,
+      "collected": true,
+      "extracted": true,
+      "legacy": true,
+      "seed": null,
+      "shipId": null,
+      "score": null
+    },
+    "hyperbolic-core": {
+      "id": "hyperbolic-core",
+      "source": "double-torus",
+      "chapter": null,
+      "stage": 8,
+      "exposed": true,
+      "collected": true,
+      "extracted": true,
+      "legacy": false,
+      "seed": 71,
+      "shipId": 0,
+      "score": 2170
+    }
+  },
+  "actFourBridge": null,
+  "assembled": false,
+  "activated": false,
+  "completed": false,
+  "endingSeen": false
+}

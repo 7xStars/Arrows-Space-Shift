@@ -1,0 +1,25 @@
+{
+  "revision": "identified-return-r9",
+  "archives": {
+    "review": {
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-study-r9\\Arrow-Space-Shift-Identified-Return-r9-REVIEW.zip",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-identified-return-r9\\review-c34b6a99066b",
+      "sha256": "c34b6a99066b626c800bc1149e6204d1c2edec84c5913b1ec94ffd29ff9ec873",
+      "bytes": 36340959,
+      "entries": 19,
+      "integrity": "passed",
+      "file_hashes": "passed",
+      "reference_pdfs": 0
+    },
+    "source": {
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-study-r9\\Arrow-Space-Shift-Identified-Return-r9-SOURCE.zip",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-identified-return-r9\\source-e99e5ce6bebd",
+      "sha256": "e99e5ce6bebd969797f13c0675b34b05b42ceab6a652ff3ba5d97175e97c5764",
+      "bytes": 173757623,
+      "entries": 98,
+      "integrity": "passed",
+      "file_hashes": "passed",
+      "reference_pdfs": 0
+    }
+  }
+}

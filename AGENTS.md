@@ -1,6 +1,27 @@
 # Project instructions
 
 Apply the user's ASD-STE100 writing requirements.
+
+## Agent workflow
+
+Use the role instructions in `D:\Projects\games\agents` for game work.
+Read `../agents/README.md` and `../agents/shared-workflow.md` before assigning work.
+Read the applicable role file before starting that task.
+For browser implementation, also read `../agents/engines/javascript.md` and `../agents/runtime-contracts.md`.
+Keep task records and verification reports in this project.
+The coordinator owns integration and the current scope.
+Keep technical checks separate from human playtest observations.
+
+The current jam release scope is Acts I–III of the existing browser campaign.
+Keep Act IV and the later repair sequence hidden behind the edition gate.
+Preserve their source and saved progress for post-jam work.
+Prioritize campaign continuity, required rewards, the Act III finish, fairness, and submission preparation.
+Keep 3D conversion, extra ships, new branches, expedition expansion, and a full audiovisual system rewrite outside the jam work.
+Record proposals separately from implemented behavior.
+Do not use a rubric score as proof of release readiness.
+
+## Game constraints
+
 Keep this game separate from Lamirys and `D:\Projects\game_jam`.
 Read `DESIGN.md` before you change a rule.
 Keep flight rules in `src/simulation.js`.

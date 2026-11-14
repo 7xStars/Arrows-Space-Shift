@@ -1,0 +1,48 @@
+{
+  "stems": [
+    {
+      "frames": 3678806,
+      "sampleRate": 48000,
+      "channels": 2,
+      "duration": 76.64179166666666,
+      "peak": 0.7092618346214294,
+      "rms": 0.1821107333260077,
+      "nonFinite": 0,
+      "fullScale": 0
+    },
+    {
+      "frames": 3678806,
+      "sampleRate": 48000,
+      "channels": 2,
+      "duration": 76.64179166666666,
+      "peak": 0.23515863716602325,
+      "rms": 0.040572128345372,
+      "nonFinite": 0,
+      "fullScale": 0
+    }
+  ],
+  "mixes": [
+    {
+      "room": 0,
+      "peak": 0.7092618346214294,
+      "nonFinite": 0,
+      "fullScale": 0
+    },
+    {
+      "room": 0.3,
+      "peak": 0.7134979883208871,
+      "nonFinite": 0,
+      "fullScale": 0
+    },
+    {
+      "room": 1,
+      "peak": 0.7722301110625267,
+      "nonFinite": 0,
+      "fullScale": 0
+    }
+  ],
+  "loads": 2,
+  "decodes": 2,
+  "method": "Native Edge decode of the shipped Vorbis files. Mix arithmetic is measured before playback gain or limiter.",
+  "limits": "Technical decoding and peak checks only. No listening or physical-device acceptance."
+}

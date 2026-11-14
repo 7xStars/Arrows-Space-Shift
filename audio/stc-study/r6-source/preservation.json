@@ -1,0 +1,53 @@
+{
+  "revision": "stc-study-r6",
+  "files": [
+    {
+      "source": "src/stc-track-player.js",
+      "sha256": "6d38d83bd7db9ff5f428986c7b38dde0b743379e01c0c38a1e846ba3326ccce9"
+    },
+    {
+      "source": "src/divergent-pulse-app.js",
+      "sha256": "95464cfaa7a4cc82d3cd64ea8677ce3b649b2e2567fb912b0782ea990e7c30e9"
+    },
+    {
+      "source": "src/divergent-pulse.js",
+      "sha256": "a5e80ddd1b95e8bc72d0e1e5f65ffb394b92fe144e45fa1b8a463717284aaea6"
+    },
+    {
+      "source": "divergent-pulse.html",
+      "sha256": "99a979a59d354a05d1f16144446e08557d83801766e3afe4400b28e41fea9942"
+    },
+    {
+      "source": "tools/stc-study-browser.mjs",
+      "sha256": "f9dbbd6c2c5e68edf803a2752a7035210a60ad660eea88bf39056154d8d250d0"
+    },
+    {
+      "source": "tools/package-stc-study.py",
+      "sha256": "711db8a1221b8945829f064e72d1ace4f4158e6a3ecefaad5288852dcb971ba8"
+    },
+    {
+      "source": "tools/verify-recorded-stems.mjs",
+      "sha256": "b7561b88bfd4addf9d5224c8683f428965bc5dfb39ea47411c0857d2e7ad50cc"
+    },
+    {
+      "source": "tests/stc-track-player.test.mjs",
+      "sha256": "9bfecdefc333f81c1e57f61e9c00a5ef6397261a183a0c671f76075fe1728a3e"
+    },
+    {
+      "source": "README.md",
+      "sha256": "7f583708322b48262ed4ca8b4805b97bd6f1c13368826711a798d343a4a83a53"
+    },
+    {
+      "source": "audio/stc-study/README.md",
+      "sha256": "9d6ae21296604eb155ad260454dca5f5fe16e456e906de4fe996fb8e72caf91b"
+    },
+    {
+      "source": "releases/stc-study-r6/Arrow-Space-Shift-STC-study-r6-PLAY.zip",
+      "sha256": "29c5f592c8b116913c9d18ea98c163001f74e8c06f48a70bffcb759b51971092"
+    },
+    {
+      "source": "releases/stc-study-r6/Arrow-Space-Shift-STC-study-r6-SOURCE.zip",
+      "sha256": "5272fe929edd4cb3758ad86c5e5b64149206448223fef807f08d02f9d145e975"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "results": [
+    "Startup is muted and creates no automatic audio playback",
+    "The laboratory retains ten explicitly scoped grammar families",
+    "Response, Sound, and Reduced motion have native accessible names",
+    "Elastic response exposes its distinct measured overshoot",
+    "Settled response retains zero overshoot and a shorter measured settling interval",
+    "Keyboard input starts the response",
+    "The visible pause control retains the response time",
+    "Reduced motion shows the static result and retains the response samples",
+    "The coupled response states its measured transient peak and eventual decay",
+    "Matrix outputs stay hidden before the first prediction",
+    "A repeated matrix answer cannot replace the first answer",
+    "The unfamiliar matrix input restores the prediction prompt",
+    "The matrix transfer uses a new input and retains its answer",
+    "Equal zero-input outputs do not imply that the operators commute",
+    "Section navigation moves focus to the selected heading",
+    "A muted Play request leaves the media stopped",
+    "The Sound control updates both native mute and visible status",
+    "The gate case hides its order labels before prediction"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "input": "Ordinary native controls and keyboard input, with read-only model records.",
+  "limits": "Local headless Microsoft Edge. No human recognition, listening approval, screen-reader, physical-device, physical audio latency, or performance result.",
+  "sourceIdentity": {
+    "operator-lab.html": "347571e513b0c680091ee4ab0933d772f3c0988af56ec859eb1ce38501d260d2",
+    "src/operator-lab-app.js": "2b0d2163a2b6a44f674b362d719f5f9c01f93ac58a07f614deb404970ecbe3e5",
+    "src/operator-models.js": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2",
+    "src/operator-registry.js": "7d4a66a3e1660defaad43a00c882d17693e258cf70373beb213d0dd95c3287ed"
+  },
+  "browserVersion": "157.0.4341.46",
+  "matrixRecords": [
+    {
+      "key": "matrix:a",
+      "choice": "same",
+      "expected": "different",
+      "correct": false,
+      "context": {
+        "input": [
+          1,
+          0.5
+        ],
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0.5,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:b",
+      "choice": "different",
+      "expected": "different",
+      "correct": true,
+      "context": {
+        "input": [
+          -0.25,
+          0.9
+        ],
+        "first": [
+          0,
+          -0.25
+        ],
+        "second": [
+          0.9,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:c",
+      "choice": "same",
+      "expected": "same",
+      "correct": true,
+      "context": {
+        "input": [
+          0,
+          0
+        ],
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    }
+  ],
+  "currentAudioProbe": {
+    "case": "gate",
+    "id": "gate-room",
+    "src": "http://127.0.0.1:7739/assets/audio/stc-operator-lab-r1/gate-room.wav",
+    "duration": null,
+    "currentTime": 0.046917,
+    "paused": false,
+    "muted": false,
+    "readyState": 4,
+    "networkState": 1,
+    "error": null
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Number.isFinite(native.duration)&&native.duration>1&&!native.muted)\n\n    at file:///D:/Projects/games/game-off-2026/tools/operator-lab-browser.mjs:116:64",
+  "url": "http://127.0.0.1:7739/",
+  "checks": 18
+}

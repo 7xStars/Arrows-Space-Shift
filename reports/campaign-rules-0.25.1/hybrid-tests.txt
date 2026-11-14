@@ -1,0 +1,37 @@
+✔ result rendering defines the pace value in the result function, not just in HUD update (0.9059ms)
+✔ clear clock is independent from gameplay simulation and can move an already-bankable level forward (1.5647ms)
+✔ projective player join arms only after 2.2-second hybrid transition break (0.8458ms)
+✔ hybrid player topology in phase two remains Klein while the Antipodal Anchor demonstrates the change (0.2964ms)
+✔ Act II duplicate seeds repair one lost hull after two pickups, only once per stage (0.6539ms)
+✔ Act II duplicate repair stays available if collected at full hull, without granting a sixth point (0.3517ms)
+✔ Act I duplicate pickups do not award hull repairs or extra score (0.2445ms)
+✔ Klein side warning identifies reflected landing and orientation (0.7968ms)
+✔ projective upper-edge warning predicts antipodal lateral destination (0.6714ms)
+✔ no approach or invalid velocity has no warning (0.0862ms)
+✔ player cue uses Klein until the hybrid stage actually changes the player rule (1.2495ms)
+✔ hostile projectile forecasts do not invent a return for bullets not approaching an edge (0.3559ms)
+✔ hybrid quotient retains Klein side transport and adds projective top transport (0.5837ms)
+✔ hybrid boss progresses through Klein, intrusion, hybrid, and mastery phases (3.1053ms)
+✔ Projective Module must be physically collected and extracted, then persists beside the relay (2.3889ms)
+✔ a later hybrid recovery never disarms an already active player join (2.1264ms)
+✔ rapid damage preserves the first arming deadline through the next recovery (0.2999ms)
+✔ skipping directly to the last hybrid phase still requires the initial warning (0.4042ms)
+✔ real bullets stay live: opposite edge image is physically collidable across a Klein join (1.8526ms)
+✔ Klein preview is a future image, not a second projectile or collision mask (0.5652ms)
+✔ future images only appear when an actual join is forecast (0.7394ms)
+✔ hybrid boss phase two assigns projective imagery only to the projective-source shot (0.3107ms)
+✔ projective prediction uses the same antipodal mapping as the combat trace (1.0946ms)
+✔ renderer with previews draws without modifying enemy shots or the collision state (4.0411ms)
+✔ manifold cues default enabled and persist without changing save format (0.262ms)
+✔ in hybrid phase 2 a projective source previews a P join while a Klein source previews a K join (0.2883ms)
+✔ hybrid after arming visually encodes both the chart and the specific crossed join (0.2105ms)
+✔ dense visual preview path remains bounded and does not cull gameplay shots (4.189ms)
+✔ optionally hiding extra previews does not suppress the real solid projectile (0.6021ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 115.9349

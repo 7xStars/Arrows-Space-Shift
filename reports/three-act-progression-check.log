@@ -1,0 +1,25 @@
+✔ Klein Fleet transitions to Act II in the SAME run with the banked relay (2.0374ms)
+✔ Projective Intrusion transitions to Act III, retaining the relay and module (1.0901ms)
+✔ already owning Projective Module does not cause replayed Act I boss to restart at Level 0 (0.3648ms)
+✔ post-Klein checkpoint survives reload and resumes at Act II with the same loadout (1.3347ms)
+✔ post-projective checkpoint survives reload, preserving accumulated geometry modules (0.5296ms)
+✔ bosses cannot skip an Act before the physical reward is banked (0.1319ms)
+✔ Act III Curvature Gate is a deliberate stopping point: no silent Act IV or Level 0 reset (0.2578ms)
+✔ legacy checkpoints keep restoring and malformed cross-act transitions are rejected (0.6197ms)
+✔ campaign victory UI uses explicit next-Act actions, not the generic Fly Again fallback (0.6039ms)
+✔ the jam release exposes only the first three Acts (0.4491ms)
+✔ the jam end requires physical collection and successful Curvature Seed extraction (2.9191ms)
+✔ the release gate preserves a saved Act III checkpoint and the earned replay entry (2.3328ms)
+✔ hiding later Acts does not erase their saved receipt or award Warp Drive completion (0.7905ms)
+✔ fresh and previously unlocked campaigns always default to Level 0 (1.0816ms)
+✔ Act II and Act III are skipped to only after an explicit unlocked-Act choice (1.4698ms)
+✔ previous section checkpoints still resume at their exact saved stage (1.273ms)
+✔ start menu exposes explicit replay and continuation actions (0.702ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.2347

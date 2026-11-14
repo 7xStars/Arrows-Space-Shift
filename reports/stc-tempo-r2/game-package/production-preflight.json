@@ -1,0 +1,14 @@
+{
+  "files": 45,
+  "groups": {
+    "masters": 9,
+    "stems": 18,
+    "previews": 9,
+    "sessions": 9
+  },
+  "bytes": 656650971,
+  "allHashesPassed": true,
+  "portableArchivePaths": true,
+  "largeCopiesOnD": false,
+  "manifestSha256": "ef5d3f056e50ed96c067195c1ce04bd0fc84ec09a95dda1a15dae15b8b221323"
+}

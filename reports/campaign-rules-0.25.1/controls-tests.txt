@@ -1,0 +1,35 @@
+✔ Act I is retained and Act III supplies exactly eight lessons followed by one boss (0.878ms)
+✔ Projective Module opens Act III without consuming the Klein Relay (1.4942ms)
+✔ every Act III lesson has recovery opportunities, old wave grammar and a culminating encounter (0.1265ms)
+✔ top and side crossings use their declared orientation changes (0.195ms)
+✔ Act III keeps its lower-half route position and forward scroll under Up and Down (3.6034ms)
+✔ capture is bounded and costs proximity; release consumes echoes and shoots forward manually (0.8016ms)
+✔ Echo Forge pauses on a recovery and rejects invalid or duplicate choices (0.3906ms)
+✔ Echo Orbit requires captured energy; Echo Ward spends two echoes to stop a hit (0.8496ms)
+✔ Checkpoint retains earlier chosen build and remains recoverable (2.0304ms)
+✔ Curvature Seed is additive and final boss is flagged as experimental (0.5763ms)
+✔ main campaign throttle cannot change state in tutorial, three Acts, or bosses (86.5604ms)
+✔ restored surface-route bounds remain safe without axial movement authority (1.1676ms)
+✔ noncampaign flight retains its independent thrust control (0.3033ms)
+✔ Act I and the three starter hulls remain unchanged in the foundry release (0.852ms)
+✔ blueprint remains locked until Projective Module and salvage has been earned (0.6301ms)
+✔ Projective Module unlocks Aftwing recipe, unique clears fund it, crafting cannot charge twice (0.3148ms)
+✔ the recovered ship cannot be conjured by an unearned ID or invalid checkpoint (0.084ms)
+✔ created ship survives persistence and checkpoint restore, even when old checkpoints lack it (3.1474ms)
+✔ Aftwing retains its stats without adding main-campaign throttle authority (2.8598ms)
+✔ new sprite is present in the atlas and separate PNG; geometry issue remains deferred (0.7863ms)
+✔ Klein Relay transport reflects longitudinal position and heading at side seams without violating lower-half viewport (4.2879ms)
+✔ left join and return join both preserve lower-half presentation and toggle physical orientation (0.4713ms)
+✔ Up and Down retain the route position while the camera scrolls forward (1.3645ms)
+✔ existing enemy and projectile are reflected in transported frame without replacing physical identities (0.9592ms)
+✔ later authored enemy waves remain ahead on the new surface after player turns (0.7374ms)
+✔ post-relay manual shots still travel forward on screen after side reversal (0.518ms)
+✔ Act I retains its original bounded lateral movement, forward camera and fixed controls (0.4058ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 162.3855

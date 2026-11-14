@@ -1,0 +1,51 @@
+{
+  "revision": "identified-return-r8-review",
+  "excerpts": [
+    {
+      "file": "harmony-r8.wav",
+      "source": "ass-identified-return-r8-music.wav",
+      "frames": 1031642,
+      "source_first_frame_inclusive": 1033562,
+      "source_last_frame_exclusive": 2065204,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "8a59436bc90796ea37ca72cf70ed9221ae585a63c9250476a28a250b6a77aae8"
+    },
+    {
+      "file": "harmony-control.wav",
+      "source": "foundation-control.wav",
+      "frames": 1031642,
+      "source_first_frame_inclusive": 1033562,
+      "source_last_frame_exclusive": 2065204,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "72bd18d4277558304186aad19f87d72dbd7a18fdff5d87851c1dca4620ceea75"
+    },
+    {
+      "file": "break-return-r8.wav",
+      "source": "ass-identified-return-r8-music.wav",
+      "frames": 859701,
+      "source_first_frame_inclusive": 2237144,
+      "source_last_frame_exclusive": 3096845,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "d638f525f373c967285f43923c1b37b487b838d3c0ae17e4629adf592d649236"
+    },
+    {
+      "file": "break-return-control.wav",
+      "source": "foundation-control.wav",
+      "frames": 859701,
+      "source_first_frame_inclusive": 2237144,
+      "source_last_frame_exclusive": 3096845,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "dff72af53f321e13bc5ba0ef2276bf520a2d79805fe356a928a5a6e4a8d01eb4"
+    }
+  ],
+  "comparison": "Same frame intervals and 20 ms edge fades. No independent gain change.",
+  "limits": "Finite takes with endings. No seamless-loop or human listening claim."
+}

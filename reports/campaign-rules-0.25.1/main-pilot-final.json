@@ -1,0 +1,1472 @@
+{
+  "version": "0.25.0-dev.1",
+  "seed": 2026,
+  "method": "Normal-health deterministic simulation. Uses launch/continue/retry, legal movement, held manual fire, equipment API, authored fold/unfold, and capture/release. Real FlightRenderer runs against a no-output canvas proxy to preserve its visibility acknowledgement. No enemies or projectiles are removed by the controller. No position, health, invulnerability, or damage is edited.",
+  "limits": "This is not browser input, human play, or a fairness proof. Threat forecasts are approximate and do not solve the geometry globally. A loss or timeout can be a controller limitation. Each retry is recorded.",
+  "result": "Fresh-profile complete simulation chain",
+  "completedSections": 28,
+  "sections": [
+    {
+      "chapter": -1,
+      "name": "Flight controls",
+      "result": "automatic tutorial clear",
+      "hull": 5
+    },
+    {
+      "chapter": 0,
+      "name": "Two Sides",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 40,
+      "score": 1300,
+      "kills": 13,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 1,
+      "name": "Quiet Belt",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 26.67,
+      "score": 1630,
+      "kills": 16,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 2,
+      "name": "Counter Cycle",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.67,
+      "score": 3130,
+      "kills": 31,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 3,
+      "name": "Loose Stones",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 31.12,
+      "score": 3540,
+      "kills": 34,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 4,
+      "name": "Seven Operations",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 53.33,
+      "score": 5340,
+      "kills": 52,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 5,
+      "name": "Drift Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 35.56,
+      "score": 5830,
+      "kills": 56,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 6,
+      "name": "Front and Back",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 3,
+      "seconds": 60,
+      "score": 7945,
+      "kills": 77,
+      "damage": [
+        {
+          "time": 254.61666666659943,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        },
+        {
+          "time": 276.07499999991325,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 3
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 7,
+      "name": "Last Approach",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 40,
+      "score": 8375,
+      "kills": 80,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [
+        {
+          "hp": 1
+        }
+      ],
+      "cause": null
+    },
+    {
+      "chapter": 8,
+      "name": "The Klein Fleet",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 54.72,
+      "score": 8685,
+      "kills": 83,
+      "damage": [],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 9,
+      "name": "Return Flight",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.33,
+      "score": 9525,
+      "kills": 90,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 10,
+      "name": "Intentional Crossing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 3,
+      "seconds": 46.61,
+      "score": 10580,
+      "kills": 99,
+      "damage": [
+        {
+          "time": 460.54999999974547,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        },
+        {
+          "time": 464.8333333330749,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 3
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 11,
+      "name": "Returning Fire",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 48.89,
+      "score": 11850,
+      "kills": 110,
+      "damage": [
+        {
+          "time": 527.841666666351,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 12,
+      "name": "Seam Gap",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 49.92,
+      "score": 13490,
+      "kills": 125,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 13,
+      "name": "Cross Current",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 53.33,
+      "score": 15480,
+      "kills": 143,
+      "damage": [
+        {
+          "time": 592.0499999996259,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 14,
+      "name": "Fold Timing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.22,
+      "score": 16355,
+      "kills": 150,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 15,
+      "name": "Pressure Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 57.76,
+      "score": 18840,
+      "kills": 173,
+      "damage": [
+        {
+          "time": 741.1333333328237,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 16,
+      "name": "Klein Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 62.22,
+      "score": 20915,
+      "kills": 192,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 17,
+      "name": "The Projective Intrusion",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 60.5,
+      "score": 21425,
+      "kills": 195,
+      "damage": [],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 18,
+      "name": "Projective Chart",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.32,
+      "score": 22460,
+      "kills": 205,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 19,
+      "name": "Echo Capture",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.67,
+      "score": 23360,
+      "kills": 214,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 20,
+      "name": "Echo Release",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.89,
+      "score": 24465,
+      "kills": 224,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 21,
+      "name": "Ordered Synthesis",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 51.12,
+      "score": 25625,
+      "kills": 234,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 22,
+      "name": "Stellar Harvest",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 55.56,
+      "score": 27940,
+      "kills": 252,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 23,
+      "name": "Antipodal Storm",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 56.67,
+      "score": 29405,
+      "kills": 263,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 24,
+      "name": "Power Without Passivity",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 58.89,
+      "score": 30750,
+      "kills": 274,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 25,
+      "name": "Projective Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 62.23,
+      "score": 32530,
+      "kills": 287,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 26,
+      "name": "The Curvature Gate",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 4,
+      "seconds": 55.81,
+      "score": 34100,
+      "kills": 290,
+      "damage": [
+        {
+          "time": 1309.0833333361963,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    }
+  ],
+  "attempts": [
+    {
+      "chapter": 0,
+      "name": "Two Sides",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 40,
+      "score": 1300,
+      "kills": 13,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 1,
+      "name": "Quiet Belt",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 26.67,
+      "score": 1630,
+      "kills": 16,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 2,
+      "name": "Counter Cycle",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.67,
+      "score": 3130,
+      "kills": 31,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 3,
+      "name": "Loose Stones",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 31.12,
+      "score": 3540,
+      "kills": 34,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 4,
+      "name": "Seven Operations",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 53.33,
+      "score": 5340,
+      "kills": 52,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 5,
+      "name": "Drift Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 35.56,
+      "score": 5830,
+      "kills": 56,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 6,
+      "name": "Front and Back",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 3,
+      "seconds": 60,
+      "score": 7945,
+      "kills": 77,
+      "damage": [
+        {
+          "time": 254.61666666659943,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        },
+        {
+          "time": 276.07499999991325,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 3
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 7,
+      "name": "Last Approach",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 40,
+      "score": 8375,
+      "kills": 80,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [
+        {
+          "hp": 1
+        }
+      ],
+      "cause": null
+    },
+    {
+      "chapter": 8,
+      "name": "The Klein Fleet",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 54.72,
+      "score": 8685,
+      "kills": 83,
+      "damage": [],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 9,
+      "name": "Return Flight",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.33,
+      "score": 9525,
+      "kills": 90,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 10,
+      "name": "Intentional Crossing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 3,
+      "seconds": 46.61,
+      "score": 10580,
+      "kills": 99,
+      "damage": [
+        {
+          "time": 460.54999999974547,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        },
+        {
+          "time": 464.8333333330749,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 3
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 11,
+      "name": "Returning Fire",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 48.89,
+      "score": 11850,
+      "kills": 110,
+      "damage": [
+        {
+          "time": 527.841666666351,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 12,
+      "name": "Seam Gap",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 49.92,
+      "score": 13490,
+      "kills": 125,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 13,
+      "name": "Cross Current",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 53.33,
+      "score": 15480,
+      "kills": 143,
+      "damage": [
+        {
+          "time": 592.0499999996259,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 14,
+      "name": "Fold Timing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.22,
+      "score": 16355,
+      "kills": 150,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 15,
+      "name": "Pressure Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 57.76,
+      "score": 18840,
+      "kills": 173,
+      "damage": [
+        {
+          "time": 741.1333333328237,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 16,
+      "name": "Klein Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 62.22,
+      "score": 20915,
+      "kills": 192,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 17,
+      "name": "The Projective Intrusion",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 60.5,
+      "score": 21425,
+      "kills": 195,
+      "damage": [],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 18,
+      "name": "Projective Chart",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.32,
+      "score": 22460,
+      "kills": 205,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 19,
+      "name": "Echo Capture",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.67,
+      "score": 23360,
+      "kills": 214,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 20,
+      "name": "Echo Release",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.89,
+      "score": 24465,
+      "kills": 224,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 21,
+      "name": "Ordered Synthesis",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 51.12,
+      "score": 25625,
+      "kills": 234,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 22,
+      "name": "Stellar Harvest",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 55.56,
+      "score": 27940,
+      "kills": 252,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 23,
+      "name": "Antipodal Storm",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 56.67,
+      "score": 29405,
+      "kills": 263,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 24,
+      "name": "Power Without Passivity",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 58.89,
+      "score": 30750,
+      "kills": 274,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 25,
+      "name": "Projective Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 62.23,
+      "score": 32530,
+      "kills": 287,
+      "damage": [],
+      "boss": null,
+      "remainingEnemies": [],
+      "cause": null
+    },
+    {
+      "chapter": 26,
+      "name": "The Curvature Gate",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 4,
+      "seconds": 55.81,
+      "score": 34100,
+      "kills": 290,
+      "damage": [
+        {
+          "time": 1309.0833333361963,
+          "source": "projectile",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4
+        }
+      ],
+      "boss": "exit",
+      "remainingEnemies": [],
+      "cause": null
+    }
+  ],
+  "inputCounts": {
+    "fireTicks": 157835,
+    "captureTicks": 157754,
+    "releaseTicks": 101805,
+    "folds": 1,
+    "unfolds": 62,
+    "equipmentChanges": 48,
+    "evolutionChoices": 8
+  },
+  "journey": {
+    "version": 1,
+    "parts": {
+      "klein-relay": {
+        "id": "klein-relay",
+        "source": "campaign-extraction",
+        "chapter": 8,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 2026,
+        "shipId": 0,
+        "score": 8685
+      },
+      "projective-module": {
+        "id": "projective-module",
+        "source": "campaign-extraction",
+        "chapter": 17,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 2026,
+        "shipId": 0,
+        "score": 21425
+      },
+      "curvature-seed": {
+        "id": "curvature-seed",
+        "source": "campaign-extraction",
+        "chapter": 26,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 2026,
+        "shipId": 0,
+        "score": 34100
+      },
+      "hyperbolic-core": {
+        "id": "hyperbolic-core",
+        "source": "double-torus",
+        "chapter": null,
+        "stage": 8,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 2026,
+        "shipId": 0,
+        "score": 38985
+      }
+    },
+    "actFourBridge": {
+      "shipId": 0,
+      "seed": 2026,
+      "score": 34100,
+      "echoes": 1,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 2
+        },
+        {
+          "key": "1:1",
+          "type": 1,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 3
+        },
+        {
+          "key": "1:-1",
+          "type": 1,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 4
+        },
+        {
+          "key": "3:1",
+          "type": 3,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 5
+        },
+        {
+          "key": "3:-1",
+          "type": 3,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 6
+        },
+        {
+          "key": "2:1",
+          "type": 2,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 7
+        },
+        {
+          "key": "2:-1",
+          "type": 2,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 8
+        },
+        {
+          "key": "4:1",
+          "type": 4,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 9
+        },
+        {
+          "key": "4:-1",
+          "type": 4,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 10
+        },
+        {
+          "key": "5:1",
+          "type": 5,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 11
+        },
+        {
+          "key": "5:-1",
+          "type": 5,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 12
+        },
+        {
+          "key": "6:1",
+          "type": 6,
+          "polarity": 1,
+          "source": "training-kit",
+          "instance": 13
+        },
+        {
+          "key": "6:-1",
+          "type": 6,
+          "polarity": -1,
+          "source": "training-kit",
+          "instance": 14
+        }
+      ],
+      "equipped": [
+        "1:1",
+        "5:-1"
+      ]
+    },
+    "assembled": true,
+    "activated": true,
+    "completed": true,
+    "endingSeen": true
+  },
+  "actFourEntry": {
+    "stageIndex": 0,
+    "score": 34100,
+    "echoes": 1,
+    "shipId": 0,
+    "seed": 2026,
+    "inventory": [
+      {
+        "key": "0:1",
+        "type": 0,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 1
+      },
+      {
+        "key": "0:-1",
+        "type": 0,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 2
+      },
+      {
+        "key": "1:1",
+        "type": 1,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 3
+      },
+      {
+        "key": "1:-1",
+        "type": 1,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 4
+      },
+      {
+        "key": "3:1",
+        "type": 3,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 5
+      },
+      {
+        "key": "3:-1",
+        "type": 3,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 6
+      },
+      {
+        "key": "2:1",
+        "type": 2,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 7
+      },
+      {
+        "key": "2:-1",
+        "type": 2,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 8
+      },
+      {
+        "key": "4:1",
+        "type": 4,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 9
+      },
+      {
+        "key": "4:-1",
+        "type": 4,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 10
+      },
+      {
+        "key": "5:1",
+        "type": 5,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 11
+      },
+      {
+        "key": "5:-1",
+        "type": 5,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 12
+      },
+      {
+        "key": "6:1",
+        "type": 6,
+        "polarity": 1,
+        "source": "training-kit",
+        "instance": 13
+      },
+      {
+        "key": "6:-1",
+        "type": 6,
+        "polarity": -1,
+        "source": "training-kit",
+        "instance": 14
+      }
+    ],
+    "equipped": [
+      "1:1",
+      "5:-1"
+    ]
+  },
+  "final": {
+    "chapter": 26,
+    "name": "The Curvature Gate",
+    "phase": "won",
+    "hull": 4,
+    "time": 1344.0583333366417,
+    "score": 34100,
+    "parts": [
+      "klein-relay",
+      "projective-module",
+      "curvature-seed"
+    ],
+    "deathRecap": null
+  },
+  "fullChain": {
+    "actFour": [
+      {
+        "stage": 1,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 7.249999999999976,
+        "score": 34355,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 2,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 8.544444444444444,
+        "score": 34730,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 3,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 9.700000000000058,
+        "score": 35155,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 4,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 15.29444444444478,
+        "score": 35530,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 5,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 8.677777777777784,
+        "score": 35905,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 6,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 10.761111111111221,
+        "score": 36520,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 7,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 16.266666666667078,
+        "score": 37440,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 8,
+        "phase": "cleared",
+        "hull": 5,
+        "time": 17.650000000000627,
+        "score": 38550,
+        "echoes": 0,
+        "reward": null
+      },
+      {
+        "stage": 9,
+        "phase": "won",
+        "hull": 5,
+        "time": 15.061111111111435,
+        "score": 38985,
+        "echoes": 0,
+        "reward": "extracted"
+      }
+    ],
+    "assembled": true,
+    "activated": true,
+    "completed": true,
+    "persisted": true,
+    "activationReload": {
+      "activated": true,
+      "completed": false
+    },
+    "repair": {
+      "phase": "complete",
+      "seconds": 17.224999999999664,
+      "endingSeconds": 8.000000000000187,
+      "charged": {
+        "compression": true,
+        "klein": true,
+        "echo": true
+      },
+      "actualKleinCrossings": 2,
+      "captures": 1,
+      "releases": 1
+    },
+    "savedJourney": {
+      "version": 1,
+      "parts": {
+        "klein-relay": {
+          "id": "klein-relay",
+          "source": "campaign-extraction",
+          "chapter": 8,
+          "stage": null,
+          "exposed": true,
+          "collected": true,
+          "extracted": true,
+          "legacy": false,
+          "seed": 2026,
+          "shipId": 0,
+          "score": 8685
+        },
+        "projective-module": {
+          "id": "projective-module",
+          "source": "campaign-extraction",
+          "chapter": 17,
+          "stage": null,
+          "exposed": true,
+          "collected": true,
+          "extracted": true,
+          "legacy": false,
+          "seed": 2026,
+          "shipId": 0,
+          "score": 21425
+        },
+        "curvature-seed": {
+          "id": "curvature-seed",
+          "source": "campaign-extraction",
+          "chapter": 26,
+          "stage": null,
+          "exposed": true,
+          "collected": true,
+          "extracted": true,
+          "legacy": false,
+          "seed": 2026,
+          "shipId": 0,
+          "score": 34100
+        },
+        "hyperbolic-core": {
+          "id": "hyperbolic-core",
+          "source": "double-torus",
+          "chapter": null,
+          "stage": 8,
+          "exposed": true,
+          "collected": true,
+          "extracted": true,
+          "legacy": false,
+          "seed": 2026,
+          "shipId": 0,
+          "score": 38985
+        }
+      },
+      "actFourBridge": {
+        "shipId": 0,
+        "seed": 2026,
+        "score": 34100,
+        "echoes": 1,
+        "inventory": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 1
+          },
+          {
+            "key": "0:-1",
+            "type": 0,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 2
+          },
+          {
+            "key": "1:1",
+            "type": 1,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 3
+          },
+          {
+            "key": "1:-1",
+            "type": 1,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 4
+          },
+          {
+            "key": "3:1",
+            "type": 3,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 5
+          },
+          {
+            "key": "3:-1",
+            "type": 3,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 6
+          },
+          {
+            "key": "2:1",
+            "type": 2,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 7
+          },
+          {
+            "key": "2:-1",
+            "type": 2,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 8
+          },
+          {
+            "key": "4:1",
+            "type": 4,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 9
+          },
+          {
+            "key": "4:-1",
+            "type": 4,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 10
+          },
+          {
+            "key": "5:1",
+            "type": 5,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 11
+          },
+          {
+            "key": "5:-1",
+            "type": 5,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 12
+          },
+          {
+            "key": "6:1",
+            "type": 6,
+            "polarity": 1,
+            "source": "training-kit",
+            "instance": 13
+          },
+          {
+            "key": "6:-1",
+            "type": 6,
+            "polarity": -1,
+            "source": "training-kit",
+            "instance": 14
+          }
+        ],
+        "equipped": [
+          "1:1",
+          "5:-1"
+        ]
+      },
+      "assembled": true,
+      "activated": true,
+      "completed": true,
+      "endingSeen": true
+    }
+  }
+}

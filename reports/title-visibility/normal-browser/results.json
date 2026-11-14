@@ -1,0 +1,263 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "checks": 18,
+  "results": [
+    "The automatic title request plays r9 after browser permission or the first permitted gesture",
+    "The title stop action stops its recorded source",
+    "The title can restart after Stop without another context",
+    "Campaign launch replaces the title and does not restore its pending request",
+    "An actual recording load failure leaves music silent without a procedural score",
+    "Manual fire still schedules effects while the recording has failed",
+    "Options report the real recording error and show Retry music",
+    "Retry loads the recording while Options keep play paused",
+    "Act IV starts the actual aligned recorded core and atmosphere after Retry",
+    "The live soundtrack schedules no procedural music oscillator",
+    "Manual fire recovers an interrupted context without restarting play",
+    "All independent volume levels survive page reload",
+    "Music mute stops its sources while manual effects remain active",
+    "Sound mute stops audio scheduling while Act IV runs with visible status",
+    "index.html preserves storage when import recovery is unresolved",
+    "hyperbolic-act.html preserves storage when import recovery is unresolved",
+    "repair-dock.html preserves storage when import recovery is unresolved",
+    "No audio page exception, missing asset, or visible research link occurred"
+  ],
+  "errors": [],
+  "missingAssets": [],
+  "publicLinks": [
+    {
+      "entry": "index.html",
+      "visibleResearchLinks": []
+    },
+    {
+      "entry": "hyperbolic-act.html",
+      "visibleResearchLinks": []
+    },
+    {
+      "entry": "index.html",
+      "visibleResearchLinks": []
+    },
+    {
+      "entry": "hyperbolic-act.html",
+      "visibleResearchLinks": []
+    },
+    {
+      "entry": "repair-dock.html",
+      "visibleResearchLinks": []
+    }
+  ],
+  "states": {
+    "titleAutomaticAttempt": {
+      "contextState": "suspended",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "title",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "suspended",
+        "error": "",
+        "offset": 0,
+        "duration": 76.64179166666666,
+        "loadedSegments": 0,
+        "pendingSegments": 0,
+        "decodedBytes": 0,
+        "activeSources": 0,
+        "layers": {
+          "core": 0,
+          "atmosphere": 0
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 0,
+        "decodes": 0,
+        "peakDecodedSegments": 0,
+        "starts": 0,
+        "underruns": 0,
+        "repeats": 0,
+        "history": []
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 0
+    },
+    "title": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "title",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "playing",
+        "error": "",
+        "offset": 0,
+        "duration": 76.64179166666666,
+        "loadedSegments": 1,
+        "pendingSegments": 0,
+        "decodedBytes": 29430448,
+        "activeSources": 1,
+        "layers": {
+          "core": 0.89,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 1,
+        "decodes": 1,
+        "peakDecodedSegments": 1,
+        "starts": 1,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "identified-return-r9",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.197,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 2
+    },
+    "loadFailure": {
+      "contextState": "running",
+      "voices": 1,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "bolza",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "act4-03",
+        "title": "Order Leaves a Trace",
+        "mode": "bolza",
+        "state": "error",
+        "error": "Music load failed (503).",
+        "offset": 0,
+        "duration": 240,
+        "loadedSegments": 0,
+        "pendingSegments": 0,
+        "decodedBytes": 0,
+        "activeSources": 0,
+        "layers": {
+          "core": 0.8044444444444445,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 0,
+        "decodes": 0,
+        "peakDecodedSegments": 0,
+        "starts": 0,
+        "underruns": 0,
+        "repeats": 0,
+        "history": []
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 1,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 1,
+      "resumes": 0
+    },
+    "recovered": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "bolza",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "act4-03",
+        "title": "Order Leaves a Trace",
+        "mode": "bolza",
+        "state": "playing",
+        "error": "",
+        "offset": 0,
+        "duration": 240,
+        "loadedSegments": 1,
+        "pendingSegments": 1,
+        "decodedBytes": 18493440,
+        "activeSources": 2,
+        "layers": {
+          "core": 0.8044444444444445,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 3,
+        "decodes": 2,
+        "peakDecodedSegments": 1,
+        "starts": 2,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "act4-03",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.437,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 2,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 2,
+      "resumes": 0
+    }
+  },
+  "limits": "Actual headless Edge page actions, native recording sources, forced load failure and retry, effects routing, context recovery, settings, and muted play. No audible listening review, physical latency result, or complete campaign playthrough."
+}

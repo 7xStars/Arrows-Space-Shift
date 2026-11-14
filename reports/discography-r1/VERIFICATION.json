@@ -1,0 +1,23 @@
+{
+  "revision": "stc-discography-r1",
+  "archive": "G:\\Music Projects\\Arrow Space Shift\\discography\\stc-discography-r1\\Arrow-Space-Shift-Discography-r1-WAV.zip",
+  "compositions": 26,
+  "seconds": 4276.641791666667,
+  "duration": "71:16.64",
+  "checks": [
+    "26 unique composition IDs",
+    "26 unique source master hashes",
+    "source production hashes match",
+    "all source WAV payloads complete",
+    "stereo 48 kHz PCM16",
+    "exact expected frame total",
+    "all archived masters match sources",
+    "all archive metadata matches",
+    "no extra archive members"
+  ],
+  "member_count": 34,
+  "master_hashes_checked": 26,
+  "bytes": 674097742,
+  "sha256": "03b2c319b2faab4cba9619d539b2607ae04c0c6a1262c05d7914c437859cea91",
+  "limits": "File and archive checks do not establish musical acceptance, human comprehension, device performance, or public-release clearance."
+}

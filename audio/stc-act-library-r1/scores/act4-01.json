@@ -1,0 +1,7341 @@
+{
+  "track": {
+    "id": "act4-01",
+    "act": 4,
+    "slot": 1,
+    "title": "Paired Horizon",
+    "seconds": 60,
+    "bpm": 128,
+    "seed": 4401,
+    "root_midi": 29,
+    "bass_motif": [
+      0,
+      null,
+      7,
+      0,
+      12,
+      null,
+      0,
+      7,
+      null,
+      3,
+      0,
+      null,
+      10,
+      null,
+      7,
+      0
+    ],
+    "kick_steps": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "snare_steps": [
+      12
+    ],
+    "hat_steps": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "metal_steps": [
+      3,
+      10,
+      15
+    ],
+    "chords": [
+      [
+        53,
+        56,
+        60,
+        63
+      ],
+      [
+        51,
+        56,
+        60,
+        65
+      ]
+    ],
+    "harmony_roots": [
+      0,
+      0
+    ],
+    "bass_gain": 0.255,
+    "pad_gain": 0.035,
+    "metal_gain": 0.055,
+    "drive": 1.8,
+    "cutoff_low": 230,
+    "cutoff_high": 1650,
+    "pan_depth": 0.85,
+    "atmosphere_gap": [
+      5.7,
+      8.7
+    ],
+    "purpose": "Keep a bass identity while its upper range changes stereo position.",
+    "hypothesis": "A stable low anchor can support clear upper-bass motion without a new pitch sequence.",
+    "invariant": "The bass phrase and central low-frequency anchor remain unchanged during the first return.",
+    "operations": [
+      "repeat",
+      "move",
+      "withhold",
+      "return"
+    ],
+    "form": [
+      {
+        "at": 0,
+        "label": "State the horizon",
+        "energy": 0.62,
+        "bass": 1,
+        "drums": 0.75,
+        "pads": 0.1,
+        "texture": 0.1,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.23,
+        "label": "Open the upper line",
+        "energy": 0.8,
+        "bass": 1,
+        "drums": 0.9,
+        "pads": 0.35,
+        "texture": 0.35,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.48,
+        "label": "Keep the low anchor",
+        "energy": 0.4,
+        "bass": 0.75,
+        "drums": 0.45,
+        "pads": 0.65,
+        "texture": 0.15,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.66,
+        "label": "Return the phrase",
+        "energy": 0.88,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.45,
+        "texture": 0.55,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.91,
+        "label": "Retain the horizon",
+        "energy": 0.42,
+        "bass": 0.75,
+        "drums": 0.55,
+        "pads": 0.4,
+        "texture": 0.1,
+        "mutation": "identity"
+      }
+    ]
+  },
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Compose note, rhythm, transformation, and irregular atmosphere events with installed FoxDot Pattern classes."
+  },
+  "time_unit": "seconds",
+  "note_unit": "MIDI semitones",
+  "events": [
+    {
+      "time": 0.04,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4401,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 940.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.04,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4418
+    },
+    {
+      "time": 0.274375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4435,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 974.838,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.274375,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 4452,
+      "dur": 0.045,
+      "pan": 0.15821779516223233
+    },
+    {
+      "time": 0.3915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4469,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 992.231,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.3915625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 4486,
+      "midi": 62,
+      "pan": -0.36169365359865124,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 0.50875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4503,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1009.592,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.50875,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4520
+    },
+    {
+      "time": 0.743125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4537,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1044.179,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.743125,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 4554,
+      "dur": 0.045,
+      "pan": -0.36169365359865124
+    },
+    {
+      "time": 0.8603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4571,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1061.383,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 0.9775,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4588
+    },
+    {
+      "time": 1.0946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4605,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1095.562,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.211875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4622,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1112.516,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.211875,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 4639,
+      "dur": 0.045,
+      "pan": -0.4120978568082191
+    },
+    {
+      "time": 1.211875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 4656,
+      "midi": 67,
+      "pan": 0.2763169542343506,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 1.44625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4673,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1146.102,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.44625,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4690
+    },
+    {
+      "time": 1.44625,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 4707
+    },
+    {
+      "time": 1.680625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4724,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1179.192,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.680625,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 4741,
+      "dur": 0.13,
+      "pan": 0.2886618285811607
+    },
+    {
+      "time": 1.7978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4758,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1195.525,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.7978125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 4775,
+      "midi": 62,
+      "pan": 0.21489734736620336,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 1.915,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4792,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1211.705,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 1.915,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4809
+    },
+    {
+      "time": 2.149375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4826,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1243.564,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 2.149375,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 4843,
+      "dur": 0.045,
+      "pan": 0.21489734736620336
+    },
+    {
+      "time": 2.2665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4860,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1259.224,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 2.2665625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 4877,
+      "midi": 62,
+      "pan": -0.236834297839651,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 2.38375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4894,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1274.692,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 2.38375,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4911
+    },
+    {
+      "time": 2.618125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 4928,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1305.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 2.618125,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 4945,
+      "dur": 0.045,
+      "pan": -0.236834297839651
+    },
+    {
+      "time": 2.7353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4962,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1319.848,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 2.8525,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 4979
+    },
+    {
+      "time": 2.9696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 4996,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1348.824,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.086875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5013,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1362.947,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.086875,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 5030,
+      "dur": 0.045,
+      "pan": 0.14530672567712116
+    },
+    {
+      "time": 3.086875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5047,
+      "midi": 67,
+      "pan": 0.4688559391946645,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 3.15,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16369,
+      "midi": 53,
+      "dur": 6.2,
+      "pan": -0.4308971851001261,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 3.185,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16386,
+      "midi": 56,
+      "dur": 6.2,
+      "pan": 0.007497313020866869,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 3.22,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16403,
+      "midi": 60,
+      "dur": 6.2,
+      "pan": -0.31546495529546753,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 3.255,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16420,
+      "midi": 63,
+      "dur": 6.2,
+      "pan": -0.11669838156781781,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 3.32125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5064,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1390.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.32125,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5081
+    },
+    {
+      "time": 3.32125,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 5098
+    },
+    {
+      "time": 3.555625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5115,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1416.807,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.555625,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 5132,
+      "dur": 0.13,
+      "pan": 0.1361639462776198
+    },
+    {
+      "time": 3.6728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5149,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1429.574,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.6728125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5166,
+      "midi": 62,
+      "pan": -0.06427908495931539,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 3.79,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5183,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1442.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 3.79,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5200
+    },
+    {
+      "time": 3.88,
+      "kind": "Noise",
+      "amp": 0.0032,
+      "seed": 16437,
+      "dur": 3.4,
+      "pan": 0.4308971851001261
+    },
+    {
+      "time": 4.024375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5217,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1466.075,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.024375,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 5234,
+      "dur": 0.045,
+      "pan": -0.06427908495931539
+    },
+    {
+      "time": 4.1415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5251,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1477.618,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.1415625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5268,
+      "midi": 62,
+      "pan": -0.2584621072267029,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 4.25875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5285,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1488.837,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.25875,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5302
+    },
+    {
+      "time": 4.493125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5319,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1510.277,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.493125,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 5336,
+      "dur": 0.045,
+      "pan": -0.2584621072267029
+    },
+    {
+      "time": 4.6103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5353,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1520.485,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.7275,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5370
+    },
+    {
+      "time": 4.8446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5387,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1539.846,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.961875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5404,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1548.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 4.961875,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 5421,
+      "dur": 0.045,
+      "pan": 0.4149728548578219
+    },
+    {
+      "time": 4.961875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5438,
+      "midi": 67,
+      "pan": -0.20041459696546104,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 5.19625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5455,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1566.164,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 5.19625,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5472
+    },
+    {
+      "time": 5.19625,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 5489
+    },
+    {
+      "time": 5.430625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5506,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1581.832,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 5.430625,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 5523,
+      "dur": 0.13,
+      "pan": -0.26182620554787644
+    },
+    {
+      "time": 5.5478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5540,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1589.089,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 5.5478125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5557,
+      "midi": 62,
+      "pan": -0.28278487200277946,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 5.665,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5574,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1595.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 5.665,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5591
+    },
+    {
+      "time": 5.899375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5608,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1608.496,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 5.899375,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 5625,
+      "dur": 0.045,
+      "pan": -0.28278487200277946
+    },
+    {
+      "time": 6.0165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5642,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1614.165,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.0165625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5659,
+      "midi": 62,
+      "pan": 0.1954806633203502,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 6.13375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5676,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1619.428,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.13375,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5693
+    },
+    {
+      "time": 6.368125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5710,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1628.722,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.368125,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 5727,
+      "dur": 0.045,
+      "pan": 0.1954806633203502
+    },
+    {
+      "time": 6.4853125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5744,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1632.749,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.6025,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5761
+    },
+    {
+      "time": 6.7196875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5778,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1639.547,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.836875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5795,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1642.315,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 6.836875,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 5812,
+      "dur": 0.045,
+      "pan": 0.38701464443197303
+    },
+    {
+      "time": 6.836875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5829,
+      "midi": 67,
+      "pan": 0.217233709281416,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 7.07125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5846,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1646.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.07125,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5863
+    },
+    {
+      "time": 7.07125,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 5880
+    },
+    {
+      "time": 7.305625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5897,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1649.145,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.305625,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 5914,
+      "dur": 0.13,
+      "pan": -0.20824945024300867
+    },
+    {
+      "time": 7.4228125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5931,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1649.786,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.4228125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 5948,
+      "midi": 62,
+      "pan": 0.3951370766172012,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 7.54,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 5965,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1650.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.54,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 5982
+    },
+    {
+      "time": 7.774375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 5999,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1649.145,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.774375,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 6016,
+      "dur": 0.045,
+      "pan": 0.3951370766172012
+    },
+    {
+      "time": 7.8915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6033,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1648.076,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 7.8915625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6050,
+      "midi": 62,
+      "pan": 0.020924007348842255,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 8.00875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6067,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1646.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.00875,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6084
+    },
+    {
+      "time": 8.243125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6101,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1642.315,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.243125,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6118,
+      "dur": 0.045,
+      "pan": 0.020924007348842255
+    },
+    {
+      "time": 8.3603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6135,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1639.547,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.4775,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6152
+    },
+    {
+      "time": 8.5946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6169,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1632.749,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.711875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6186,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1628.722,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.711875,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6203,
+      "dur": 0.045,
+      "pan": 0.14600351784022458
+    },
+    {
+      "time": 8.711875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6220,
+      "midi": 67,
+      "pan": 0.15716734636873242,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 8.94625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6237,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1619.428,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 8.94625,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6254
+    },
+    {
+      "time": 8.94625,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 6271
+    },
+    {
+      "time": 9.180625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6288,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1608.496,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.180625,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6305,
+      "dur": 0.13,
+      "pan": -0.1478724472917884
+    },
+    {
+      "time": 9.2978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6322,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1602.425,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.2978125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6339,
+      "midi": 62,
+      "pan": -0.3070591243504276,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 9.415,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6356,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1595.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.415,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6373
+    },
+    {
+      "time": 9.649375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6390,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1581.832,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.649375,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 6407,
+      "dur": 0.045,
+      "pan": -0.3070591243504276
+    },
+    {
+      "time": 9.7665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6424,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1574.189,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.7665625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6441,
+      "midi": 62,
+      "pan": 0.22076787486515614,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 9.88375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6458,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1566.164,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 9.88375,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6475
+    },
+    {
+      "time": 10.118125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6492,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1548.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 10.118125,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6509,
+      "dur": 0.045,
+      "pan": 0.22076787486515614
+    },
+    {
+      "time": 10.2353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6526,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1539.846,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 10.3525,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6543
+    },
+    {
+      "time": 10.41668928,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16454,
+      "midi": 51,
+      "dur": 6.6000000000000005,
+      "pan": 0.007497313020866869,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 10.45168928,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16471,
+      "midi": 56,
+      "dur": 6.6000000000000005,
+      "pan": -0.31546495529546753,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 10.4696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6560,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1520.485,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 10.48668928,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16488,
+      "midi": 60,
+      "dur": 6.6000000000000005,
+      "pan": -0.11669838156781781,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 10.52168928,
+      "kind": "Pad",
+      "amp": 0.00147,
+      "seed": 16505,
+      "midi": 65,
+      "dur": 6.6000000000000005,
+      "pan": 0.05224509196283217,
+      "cutoff": 1498.0
+    },
+    {
+      "time": 10.586875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6577,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1510.277,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 10.586875,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 6594,
+      "dur": 0.045,
+      "pan": -0.3419708926036204
+    },
+    {
+      "time": 10.586875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6611,
+      "midi": 67,
+      "pan": 0.50659526074802,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 10.82125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6628,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1488.837,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 10.82125,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6645
+    },
+    {
+      "time": 10.82125,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 6662
+    },
+    {
+      "time": 11.055625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6679,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1466.075,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.055625,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6696,
+      "dur": 0.13,
+      "pan": 0.1469876227722458
+    },
+    {
+      "time": 11.14668928,
+      "kind": "Noise",
+      "amp": 0.0032,
+      "seed": 16522,
+      "dur": 3.6999999999999997,
+      "pan": -0.007497313020866869
+    },
+    {
+      "time": 11.1728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6713,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1454.215,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.1728125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6730,
+      "midi": 62,
+      "pan": 0.36858305443334555,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 11.29,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6747,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1442.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.29,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6764
+    },
+    {
+      "time": 11.524375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6781,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1416.807,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.524375,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 6798,
+      "dur": 0.045,
+      "pan": 0.36858305443334555
+    },
+    {
+      "time": 11.6415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6815,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1403.753,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.6415625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 6832,
+      "midi": 62,
+      "pan": 0.15316437286799833,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 11.75875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6849,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1390.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.75875,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6866
+    },
+    {
+      "time": 11.993125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6883,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1362.947,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 11.993125,
+      "kind": "Hat",
+      "amp": 0.0371943,
+      "seed": 6900,
+      "dur": 0.045,
+      "pan": 0.15316437286799833
+    },
+    {
+      "time": 12.1103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6917,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1348.824,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 12.2275,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 6934
+    },
+    {
+      "time": 12.3446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 6951,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1319.848,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 12.461875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 6968,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1305.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 12.461875,
+      "kind": "Hat",
+      "amp": 0.0357637,
+      "seed": 6985,
+      "dur": 0.045,
+      "pan": -0.4320176853424689
+    },
+    {
+      "time": 12.461875,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 7002,
+      "midi": 67,
+      "pan": -0.01323682341297927,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 12.69625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7019,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1274.692,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 12.69625,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 7036
+    },
+    {
+      "time": 12.69625,
+      "kind": "Snare",
+      "amp": 0.1105425,
+      "seed": 7053
+    },
+    {
+      "time": 12.930625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7070,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1243.564,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 12.930625,
+      "kind": "Hat",
+      "amp": 0.0300415,
+      "seed": 7087,
+      "dur": 0.13,
+      "pan": -0.0868656971415176
+    },
+    {
+      "time": 13.0478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7104,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1227.721,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.0478125,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 7121,
+      "midi": 62,
+      "pan": -0.3317584667843553,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 13.165,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7138,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1211.705,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.165,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 7155
+    },
+    {
+      "time": 13.399375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7172,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1179.192,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.399375,
+      "kind": "Hat",
+      "amp": 0.0329026,
+      "seed": 7189,
+      "dur": 0.045,
+      "pan": -0.3317584667843553
+    },
+    {
+      "time": 13.5165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7206,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1162.714,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.5165625,
+      "kind": "Metal",
+      "amp": 0.0357637,
+      "seed": 7223,
+      "midi": 62,
+      "pan": -0.2757409172117655,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 13.63375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7240,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1146.102,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.63375,
+      "kind": "Kick",
+      "amp": 0.31212,
+      "seed": 7257
+    },
+    {
+      "time": 13.868125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7274,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1112.516,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 13.868125,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 7291,
+      "dur": 0.045,
+      "pan": -0.2757409172117655
+    },
+    {
+      "time": 13.9853125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7308,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1095.562,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.1025,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7325
+    },
+    {
+      "time": 14.2196875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7342,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1061.383,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.336875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7359,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1044.179,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.336875,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 7376,
+      "dur": 0.045,
+      "pan": 0.5054697757968012
+    },
+    {
+      "time": 14.336875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 7393,
+      "midi": 67,
+      "pan": -0.45534930047471156,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 14.57125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7410,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1009.592,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.57125,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7427
+    },
+    {
+      "time": 14.57125,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 7444
+    },
+    {
+      "time": 14.6884375,
+      "kind": "Hat",
+      "amp": 0.031806,
+      "seed": 7461,
+      "dur": 0.035,
+      "pan": -0.3
+    },
+    {
+      "time": 14.805625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7478,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 974.838,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.805625,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 7495,
+      "dur": 0.13,
+      "pan": 0.2486946228330031
+    },
+    {
+      "time": 14.9228125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7512,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 957.424,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 14.9228125,
+      "kind": "Hat",
+      "amp": 0.031806,
+      "seed": 7546,
+      "dur": 0.035,
+      "pan": 0.3
+    },
+    {
+      "time": 14.9228125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 7529,
+      "midi": 62,
+      "pan": -0.19001585433647294,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 15.04,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7563,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 940.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.04,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7580
+    },
+    {
+      "time": 15.274375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7597,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 905.162,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.274375,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 7614,
+      "dur": 0.045,
+      "pan": -0.19001585433647294
+    },
+    {
+      "time": 15.3915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7631,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 887.769,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.3915625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 7648,
+      "midi": 62,
+      "pan": -0.12702143956346518,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 15.50875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7665,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 870.408,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.50875,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7682
+    },
+    {
+      "time": 15.743125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7699,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 835.821,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.743125,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 7716,
+      "dur": 0.045,
+      "pan": -0.12702143956346518
+    },
+    {
+      "time": 15.8603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7733,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 818.617,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 15.9775,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7750
+    },
+    {
+      "time": 16.0946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7767,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 784.438,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.211875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7784,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 767.484,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.211875,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 7801,
+      "dur": 0.045,
+      "pan": -0.034906390347489435
+    },
+    {
+      "time": 16.211875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 7818,
+      "midi": 67,
+      "pan": -0.3307188971524305,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 16.44625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7835,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 733.898,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.44625,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7852
+    },
+    {
+      "time": 16.44625,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 7869
+    },
+    {
+      "time": 16.680625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7886,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 700.808,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.680625,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 7903,
+      "dur": 0.13,
+      "pan": -0.11985432966036191
+    },
+    {
+      "time": 16.7978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7920,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 684.475,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.7978125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 7937,
+      "midi": 62,
+      "pan": 0.17403603281202684,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 16.915,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 7954,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 668.295,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 16.915,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 7971
+    },
+    {
+      "time": 17.149375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 7988,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 636.436,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 17.149375,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 8005,
+      "dur": 0.045,
+      "pan": 0.17403603281202684
+    },
+    {
+      "time": 17.2665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8022,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 620.776,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 17.2665625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8039,
+      "midi": 62,
+      "pan": -0.27350635104415133,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 17.38375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8056,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 605.308,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 17.38375,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8073
+    },
+    {
+      "time": 17.618125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8090,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 574.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 17.618125,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 8107,
+      "dur": 0.045,
+      "pan": -0.27350635104415133
+    },
+    {
+      "time": 17.7353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8124,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 560.152,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 17.75514557,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16539,
+      "midi": 53,
+      "dur": 6.6000000000000005,
+      "pan": -0.31546495529546753,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 17.79014557,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16556,
+      "midi": 56,
+      "dur": 6.6000000000000005,
+      "pan": -0.11669838156781781,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 17.82514557,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16573,
+      "midi": 60,
+      "dur": 6.6000000000000005,
+      "pan": 0.05224509196283217,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 17.8525,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8141
+    },
+    {
+      "time": 17.86014557,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16590,
+      "midi": 63,
+      "dur": 6.6000000000000005,
+      "pan": -0.3859400744243982,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 17.9696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8158,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 531.176,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.086875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8175,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 517.053,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.086875,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 8192,
+      "dur": 0.045,
+      "pan": 0.1791589051319113
+    },
+    {
+      "time": 18.086875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8209,
+      "midi": 67,
+      "pan": -0.2503862947959823,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 18.32125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8226,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 489.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.32125,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8243
+    },
+    {
+      "time": 18.32125,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 8260
+    },
+    {
+      "time": 18.48514557,
+      "kind": "Noise",
+      "amp": 0.0112,
+      "seed": 16607,
+      "dur": 3.6999999999999997,
+      "pan": 0.31546495529546753
+    },
+    {
+      "time": 18.555625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8277,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 463.193,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.555625,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 8294,
+      "dur": 0.13,
+      "pan": 0.5339046816425841
+    },
+    {
+      "time": 18.6728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8311,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 450.426,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.6728125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8328,
+      "midi": 62,
+      "pan": 0.1886636035612581,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 18.79,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8345,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 437.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 18.79,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8362
+    },
+    {
+      "time": 19.024375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8379,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 413.925,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.024375,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 8396,
+      "dur": 0.045,
+      "pan": 0.1886636035612581
+    },
+    {
+      "time": 19.1415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8413,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 402.382,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.1415625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8430,
+      "midi": 62,
+      "pan": -0.04200303715126619,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 19.25875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8447,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 391.163,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.25875,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8464
+    },
+    {
+      "time": 19.493125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8481,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 369.723,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.493125,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 8498,
+      "dur": 0.045,
+      "pan": -0.04200303715126619
+    },
+    {
+      "time": 19.6103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8515,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 359.515,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.7275,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8532
+    },
+    {
+      "time": 19.8446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8549,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 340.154,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.961875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8566,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 331.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 19.961875,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 8583,
+      "dur": 0.045,
+      "pan": 0.1014682067545587
+    },
+    {
+      "time": 19.961875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8600,
+      "midi": 67,
+      "pan": -0.31593077473604186,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 20.19625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8617,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 313.836,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 20.19625,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8634
+    },
+    {
+      "time": 20.19625,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 8651
+    },
+    {
+      "time": 20.430625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8668,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 298.168,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 20.430625,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 8685,
+      "dur": 0.13,
+      "pan": -0.25231767568258656
+    },
+    {
+      "time": 20.5478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8702,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 290.911,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 20.5478125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8719,
+      "midi": 62,
+      "pan": 0.13690586716329428,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 20.665,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8736,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 284.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 20.665,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8753
+    },
+    {
+      "time": 20.899375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8770,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 271.504,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 20.899375,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 8787,
+      "dur": 0.045,
+      "pan": 0.13690586716329428
+    },
+    {
+      "time": 21.0165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8804,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 265.835,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.0165625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8821,
+      "midi": 62,
+      "pan": 0.06068710552908141,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 21.13375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8838,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 260.572,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.13375,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8855
+    },
+    {
+      "time": 21.368125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8872,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 251.278,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.368125,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 8889,
+      "dur": 0.045,
+      "pan": 0.06068710552908141
+    },
+    {
+      "time": 21.4853125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8906,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 247.251,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.6025,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 8923
+    },
+    {
+      "time": 21.7196875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 8940,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 240.453,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.836875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 8957,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 237.685,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 21.836875,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 8974,
+      "dur": 0.045,
+      "pan": 0.1023739967793964
+    },
+    {
+      "time": 21.836875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 8991,
+      "midi": 67,
+      "pan": -0.30830041061793123,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 22.07125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9008,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 233.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.07125,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9025
+    },
+    {
+      "time": 22.07125,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 9042
+    },
+    {
+      "time": 22.305625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9059,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 230.855,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.305625,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 9076,
+      "dur": 0.13,
+      "pan": 0.016251614978549656
+    },
+    {
+      "time": 22.4228125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9093,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 230.214,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.4228125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9110,
+      "midi": 62,
+      "pan": 0.44166487769754875,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 22.54,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9127,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 230.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.54,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9144
+    },
+    {
+      "time": 22.774375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9161,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 230.855,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.774375,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 9178,
+      "dur": 0.045,
+      "pan": 0.44166487769754875
+    },
+    {
+      "time": 22.8915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9195,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 231.924,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 22.8915625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9212,
+      "midi": 62,
+      "pan": -0.27711802534893504,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 23.00875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9229,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 233.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.00875,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9246
+    },
+    {
+      "time": 23.243125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9263,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 237.685,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.243125,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 9280,
+      "dur": 0.045,
+      "pan": -0.27711802534893504
+    },
+    {
+      "time": 23.3603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9297,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 240.453,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.4775,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9314
+    },
+    {
+      "time": 23.5946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9331,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 247.251,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.711875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9348,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 251.278,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.711875,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 9365,
+      "dur": 0.045,
+      "pan": 0.32999325887903075
+    },
+    {
+      "time": 23.711875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9382,
+      "midi": 67,
+      "pan": -0.05980900627553881,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 23.94625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9399,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 260.572,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 23.94625,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9416
+    },
+    {
+      "time": 23.94625,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 9433
+    },
+    {
+      "time": 24.08564509,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16624,
+      "midi": 51,
+      "dur": 6.2,
+      "pan": -0.11669838156781781,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 24.12064509,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16641,
+      "midi": 56,
+      "dur": 6.2,
+      "pan": 0.05224509196283217,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 24.15564509,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16658,
+      "midi": 60,
+      "dur": 6.2,
+      "pan": -0.3859400744243982,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 24.180625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9450,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 271.504,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.180625,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 9467,
+      "dur": 0.13,
+      "pan": 0.04451772785622943
+    },
+    {
+      "time": 24.19064509,
+      "kind": "Pad",
+      "amp": 0.005145,
+      "seed": 16675,
+      "midi": 65,
+      "dur": 6.2,
+      "pan": -0.17192943187791998,
+      "cutoff": 1570.0
+    },
+    {
+      "time": 24.2978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9484,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 277.575,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.2978125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9501,
+      "midi": 62,
+      "pan": 0.2513472356321428,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 24.415,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9518,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 284.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.415,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9535
+    },
+    {
+      "time": 24.649375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9552,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 298.168,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.649375,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 9569,
+      "dur": 0.045,
+      "pan": 0.2513472356321428
+    },
+    {
+      "time": 24.7665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9586,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 305.811,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.7665625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9603,
+      "midi": 62,
+      "pan": 0.06343184207509012,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 24.81564509,
+      "kind": "Noise",
+      "amp": 0.0112,
+      "seed": 16692,
+      "dur": 3.4,
+      "pan": 0.11669838156781781
+    },
+    {
+      "time": 24.88375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9620,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 313.836,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 24.88375,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9637
+    },
+    {
+      "time": 25.118125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9654,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 331.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 25.118125,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 9671,
+      "dur": 0.045,
+      "pan": 0.06343184207509012
+    },
+    {
+      "time": 25.2353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9688,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 340.154,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 25.3525,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9705
+    },
+    {
+      "time": 25.4696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9722,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 359.515,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 25.586875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9739,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 369.723,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 25.586875,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 9756,
+      "dur": 0.045,
+      "pan": 0.07932760091087537
+    },
+    {
+      "time": 25.586875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9773,
+      "midi": 67,
+      "pan": -0.1789515236994837,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 25.82125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9790,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 391.163,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 25.82125,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9807
+    },
+    {
+      "time": 25.82125,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 9824
+    },
+    {
+      "time": 26.055625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9841,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 413.925,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.055625,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 9858,
+      "dur": 0.13,
+      "pan": -0.0672780915870686
+    },
+    {
+      "time": 26.1728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9875,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 425.785,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.1728125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9892,
+      "midi": 62,
+      "pan": 0.12115899079981124,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 26.29,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9909,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 437.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.29,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 9926
+    },
+    {
+      "time": 26.524375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 9943,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 463.193,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.524375,
+      "kind": "Hat",
+      "amp": 0.0423522,
+      "seed": 9960,
+      "dur": 0.045,
+      "pan": 0.12115899079981124
+    },
+    {
+      "time": 26.6415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 9977,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 476.247,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.6415625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 9994,
+      "midi": 62,
+      "pan": -0.021259254728200117,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 26.75875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10011,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 489.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.75875,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 10028
+    },
+    {
+      "time": 26.993125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 10045,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 517.053,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 26.993125,
+      "kind": "Hat",
+      "amp": 0.0478764,
+      "seed": 10062,
+      "dur": 0.045,
+      "pan": -0.021259254728200117
+    },
+    {
+      "time": 27.1103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10079,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 531.176,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 27.2275,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 10096
+    },
+    {
+      "time": 27.3446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10113,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 560.152,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 27.461875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 10130,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 574.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 27.461875,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 10147,
+      "dur": 0.045,
+      "pan": 0.3048607522605694
+    },
+    {
+      "time": 27.461875,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 10164,
+      "midi": 67,
+      "pan": 0.041222177532278304,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 27.69625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10181,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 605.308,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 27.69625,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 10198
+    },
+    {
+      "time": 27.69625,
+      "kind": "Snare",
+      "amp": 0.14229,
+      "seed": 10215
+    },
+    {
+      "time": 27.930625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 10232,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 636.436,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 27.930625,
+      "kind": "Hat",
+      "amp": 0.0386694,
+      "seed": 10249,
+      "dur": 0.13,
+      "pan": -0.15352961970681456
+    },
+    {
+      "time": 28.0478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10266,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 652.279,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.0478125,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 10283,
+      "midi": 62,
+      "pan": 0.13445382052515814,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 28.165,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 10300,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 668.295,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.165,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 10317
+    },
+    {
+      "time": 28.399375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10334,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 700.808,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.399375,
+      "kind": "Hat",
+      "amp": 0.046035,
+      "seed": 10351,
+      "dur": 0.045,
+      "pan": 0.13445382052515814
+    },
+    {
+      "time": 28.5165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 10368,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 717.286,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.5165625,
+      "kind": "Metal",
+      "amp": 0.046035,
+      "seed": 10385,
+      "midi": 62,
+      "pan": -0.19747632647190072,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 28.63375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 10402,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 733.898,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.63375,
+      "kind": "Kick",
+      "amp": 0.40176,
+      "seed": 10419
+    },
+    {
+      "time": 28.868125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10436,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 767.484,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 28.868125,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 10453,
+      "dur": 0.045,
+      "pan": -0.19747632647190072
+    },
+    {
+      "time": 28.9853125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10470,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 784.438,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.1025,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10487
+    },
+    {
+      "time": 29.2196875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10504,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 818.617,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.336875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10521,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 835.821,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.336875,
+      "kind": "Hat",
+      "amp": 0.0164241,
+      "seed": 10538,
+      "dur": 0.045,
+      "pan": 0.015003701764541688
+    },
+    {
+      "time": 29.336875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 10555,
+      "midi": 67,
+      "pan": 0.013782581474521827,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 29.57125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10572,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 870.408,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.57125,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10589
+    },
+    {
+      "time": 29.57125,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 10606
+    },
+    {
+      "time": 29.805625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10623,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 905.162,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.805625,
+      "kind": "Hat",
+      "amp": 0.0195525,
+      "seed": 10640,
+      "dur": 0.13,
+      "pan": 0.035348518338702783
+    },
+    {
+      "time": 29.9228125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10657,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 922.576,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 29.9228125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 10674,
+      "midi": 62,
+      "pan": 0.16508782251521809,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 30.04,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10691,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 940.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.04,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10708
+    },
+    {
+      "time": 30.274375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10725,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 974.838,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.274375,
+      "kind": "Hat",
+      "amp": 0.0195525,
+      "seed": 10742,
+      "dur": 0.045,
+      "pan": 0.16508782251521809
+    },
+    {
+      "time": 30.3915625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10759,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 992.231,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.3915625,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 10776,
+      "midi": 62,
+      "pan": 0.29696218837402194,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 30.50875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10793,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1009.592,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.50875,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10810
+    },
+    {
+      "time": 30.743125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10827,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1044.179,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.743125,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 10844,
+      "dur": 0.045,
+      "pan": 0.29696218837402194
+    },
+    {
+      "time": 30.8603125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10861,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1061.383,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 30.9775,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10878
+    },
+    {
+      "time": 31.0946875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10895,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1095.562,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.211875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 10912,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1112.516,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.211875,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 10929,
+      "dur": 0.045,
+      "pan": 0.06545968627820353
+    },
+    {
+      "time": 31.211875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 10946,
+      "midi": 67,
+      "pan": 0.15243532699079382,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 31.39519778,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16709,
+      "midi": 53,
+      "dur": 6.2,
+      "pan": 0.05224509196283217,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 31.43019778,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16726,
+      "midi": 56,
+      "dur": 6.2,
+      "pan": -0.3859400744243982,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 31.44625,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 10963,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1146.102,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.44625,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 10980
+    },
+    {
+      "time": 31.44625,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 10997
+    },
+    {
+      "time": 31.46519778,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16743,
+      "midi": 60,
+      "dur": 6.2,
+      "pan": -0.17192943187791998,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 31.50019778,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16760,
+      "midi": 63,
+      "dur": 6.2,
+      "pan": -0.18941879232777553,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 31.680625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11014,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1179.192,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.680625,
+      "kind": "Hat",
+      "amp": 0.0164241,
+      "seed": 11031,
+      "dur": 0.13,
+      "pan": 0.33030364972112947
+    },
+    {
+      "time": 31.7978125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11048,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1195.525,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.7978125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11065,
+      "midi": 62,
+      "pan": -0.40655881702640384,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 31.915,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11082,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1211.705,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 31.915,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11099
+    },
+    {
+      "time": 32.12519778,
+      "kind": "Noise",
+      "amp": 0.0048,
+      "seed": 16777,
+      "dur": 3.4,
+      "pan": -0.05224509196283217
+    },
+    {
+      "time": 32.149375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11116,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1243.564,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 32.149375,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 11133,
+      "dur": 0.045,
+      "pan": -0.40655881702640384
+    },
+    {
+      "time": 32.2665625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11150,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1259.224,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 32.2665625,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11167,
+      "midi": 62,
+      "pan": -0.08726641401892915,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 32.38375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11184,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1274.692,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 32.38375,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11201
+    },
+    {
+      "time": 32.618125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11218,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1305.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 32.618125,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 11235,
+      "dur": 0.045,
+      "pan": -0.08726641401892915
+    },
+    {
+      "time": 32.7353125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11252,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1319.848,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 32.8525,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11269
+    },
+    {
+      "time": 32.9696875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11286,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1348.824,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.086875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11303,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1362.947,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.086875,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 11320,
+      "dur": 0.045,
+      "pan": -0.13652954159165503
+    },
+    {
+      "time": 33.086875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11337,
+      "midi": 67,
+      "pan": -0.24710172175668643,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 33.32125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11354,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1390.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.32125,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11371
+    },
+    {
+      "time": 33.32125,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 11388
+    },
+    {
+      "time": 33.555625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11405,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1416.807,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.555625,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 11422,
+      "dur": 0.13,
+      "pan": -0.03168442034042396
+    },
+    {
+      "time": 33.6728125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11439,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1429.574,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.6728125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11456,
+      "midi": 62,
+      "pan": -0.33643764436986523,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 33.79,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11473,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1442.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 33.79,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11490
+    },
+    {
+      "time": 34.024375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11507,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1466.075,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.024375,
+      "kind": "Hat",
+      "amp": 0.0164241,
+      "seed": 11524,
+      "dur": 0.045,
+      "pan": -0.33643764436986523
+    },
+    {
+      "time": 34.1415625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11541,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1477.618,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.1415625,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11558,
+      "midi": 62,
+      "pan": 0.053592602571461534,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 34.25875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11575,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1488.837,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.25875,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11592
+    },
+    {
+      "time": 34.493125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11609,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1510.277,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.493125,
+      "kind": "Hat",
+      "amp": 0.0203346,
+      "seed": 11626,
+      "dur": 0.045,
+      "pan": 0.053592602571461534
+    },
+    {
+      "time": 34.6103125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11643,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1520.485,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.7275,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11660
+    },
+    {
+      "time": 34.8446875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11677,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1539.846,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.961875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11694,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1548.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 34.961875,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 11711,
+      "dur": 0.045,
+      "pan": -0.20177059544476245
+    },
+    {
+      "time": 34.961875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11728,
+      "midi": 67,
+      "pan": 0.3444983376367412,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 35.19625,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11745,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1566.164,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 35.19625,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11762
+    },
+    {
+      "time": 35.19625,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 11779
+    },
+    {
+      "time": 35.430625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11796,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1581.832,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 35.430625,
+      "kind": "Hat",
+      "amp": 0.0195525,
+      "seed": 11813,
+      "dur": 0.13,
+      "pan": 0.42757527017397423
+    },
+    {
+      "time": 35.5478125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11830,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1589.089,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 35.5478125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11847,
+      "midi": 62,
+      "pan": -0.270859472839703,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 35.665,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11864,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1595.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 35.665,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11881
+    },
+    {
+      "time": 35.899375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11898,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1608.496,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 35.899375,
+      "kind": "Hat",
+      "amp": 0.0195525,
+      "seed": 11915,
+      "dur": 0.045,
+      "pan": -0.270859472839703
+    },
+    {
+      "time": 36.0165625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 11932,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1614.165,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.0165625,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 11949,
+      "midi": 62,
+      "pan": 0.04599011625087657,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 36.13375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 11966,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1619.428,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.13375,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 11983
+    },
+    {
+      "time": 36.368125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12000,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1628.722,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.368125,
+      "kind": "Hat",
+      "amp": 0.0195525,
+      "seed": 12017,
+      "dur": 0.045,
+      "pan": 0.04599011625087657
+    },
+    {
+      "time": 36.4853125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12034,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1632.749,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.6025,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12051
+    },
+    {
+      "time": 36.7196875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12068,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1639.547,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.836875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12085,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1642.315,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 36.836875,
+      "kind": "Hat",
+      "amp": 0.0164241,
+      "seed": 12102,
+      "dur": 0.045,
+      "pan": 0.3245978302737656
+    },
+    {
+      "time": 36.836875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 12119,
+      "midi": 67,
+      "pan": -0.259544623056284,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 37.07125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12136,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1646.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.07125,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12153
+    },
+    {
+      "time": 37.07125,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 12170
+    },
+    {
+      "time": 37.305625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12187,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1649.145,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.305625,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 12204,
+      "dur": 0.13,
+      "pan": 0.2305350953851814
+    },
+    {
+      "time": 37.4228125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12221,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1649.786,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.4228125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 12238,
+      "midi": 62,
+      "pan": -0.042961981068944666,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 37.54,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12255,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1650.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.54,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12272
+    },
+    {
+      "time": 37.774375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12289,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1649.145,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.774375,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 12306,
+      "dur": 0.045,
+      "pan": -0.042961981068944666
+    },
+    {
+      "time": 37.8915625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12323,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1648.076,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 37.8915625,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 12340,
+      "midi": 62,
+      "pan": -0.2946283803256328,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 38.00875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12357,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1646.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.00875,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12374
+    },
+    {
+      "time": 38.06546177,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16794,
+      "midi": 51,
+      "dur": 7.0,
+      "pan": -0.3859400744243982,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 38.10046177,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16811,
+      "midi": 56,
+      "dur": 7.0,
+      "pan": -0.17192943187791998,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 38.13546177,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16828,
+      "midi": 60,
+      "dur": 7.0,
+      "pan": -0.18941879232777553,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 38.17046177,
+      "kind": "Pad",
+      "amp": 0.009555,
+      "seed": 16845,
+      "midi": 65,
+      "dur": 7.0,
+      "pan": 0.11645693311757904,
+      "cutoff": 1410.0
+    },
+    {
+      "time": 38.243125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12391,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1642.315,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.243125,
+      "kind": "Hat",
+      "amp": 0.0164241,
+      "seed": 12408,
+      "dur": 0.045,
+      "pan": -0.2946283803256328
+    },
+    {
+      "time": 38.3603125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12425,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1639.547,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.4775,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12442
+    },
+    {
+      "time": 38.5946875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12459,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1632.749,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.711875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12476,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1628.722,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.711875,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 12493,
+      "dur": 0.045,
+      "pan": 0.1267861942013132
+    },
+    {
+      "time": 38.711875,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 12510,
+      "midi": 67,
+      "pan": 0.33393128355932694,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 38.79546177,
+      "kind": "Noise",
+      "amp": 0.0048,
+      "seed": 16862,
+      "dur": 4.0,
+      "pan": 0.3859400744243982
+    },
+    {
+      "time": 38.94625,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12527,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1619.428,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 38.94625,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12544
+    },
+    {
+      "time": 38.94625,
+      "kind": "Snare",
+      "amp": 0.060435,
+      "seed": 12561
+    },
+    {
+      "time": 39.180625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12578,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1608.496,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.180625,
+      "kind": "Hat",
+      "amp": 0.0179883,
+      "seed": 12595,
+      "dur": 0.13,
+      "pan": 0.11985121133025001
+    },
+    {
+      "time": 39.2978125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 12612,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1602.425,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.2978125,
+      "kind": "Metal",
+      "amp": 0.0195525,
+      "seed": 12629,
+      "midi": 62,
+      "pan": -0.05588172874956654,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 39.415,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 12646,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1595.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.415,
+      "kind": "Kick",
+      "amp": 0.17064,
+      "seed": 12663
+    },
+    {
+      "time": 39.649375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 12680,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1581.832,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.649375,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 12697,
+      "dur": 0.045,
+      "pan": -0.05588172874956654
+    },
+    {
+      "time": 39.7665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 12714,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1574.189,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.7665625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 12731,
+      "midi": 62,
+      "pan": 0.18519715052516478,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 39.88375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 12748,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1566.164,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 39.88375,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 12765
+    },
+    {
+      "time": 40.118125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 12782,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1548.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 40.118125,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 12799,
+      "dur": 0.045,
+      "pan": 0.18519715052516478
+    },
+    {
+      "time": 40.2353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 12816,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1539.846,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 40.3525,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 12833
+    },
+    {
+      "time": 40.4696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 12850,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1520.485,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 40.586875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 12867,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1510.277,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 40.586875,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 12884,
+      "dur": 0.045,
+      "pan": 0.07230604116275557
+    },
+    {
+      "time": 40.586875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 12901,
+      "midi": 67,
+      "pan": -0.45949184221858175,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 40.82125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 12918,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1488.837,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 40.82125,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 12935
+    },
+    {
+      "time": 40.82125,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 12952
+    },
+    {
+      "time": 41.055625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 12969,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1466.075,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.055625,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 12986,
+      "dur": 0.13,
+      "pan": -0.13325565991774024
+    },
+    {
+      "time": 41.1728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13003,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1454.215,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.1728125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13020,
+      "midi": 62,
+      "pan": -0.11572084958516454,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 41.29,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13037,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1442.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.29,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13054
+    },
+    {
+      "time": 41.524375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13071,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1416.807,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.524375,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 13088,
+      "dur": 0.045,
+      "pan": -0.11572084958516454
+    },
+    {
+      "time": 41.6415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13105,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1403.753,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.6415625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13122,
+      "midi": 62,
+      "pan": 0.14177444340274076,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 41.75875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13139,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1390.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.75875,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13156
+    },
+    {
+      "time": 41.993125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13173,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1362.947,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 41.993125,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 13190,
+      "dur": 0.045,
+      "pan": 0.14177444340274076
+    },
+    {
+      "time": 42.1103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13207,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1348.824,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 42.2275,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13224
+    },
+    {
+      "time": 42.3446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13241,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1319.848,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 42.461875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13258,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1305.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 42.461875,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 13275,
+      "dur": 0.045,
+      "pan": 0.15661017606975208
+    },
+    {
+      "time": 42.461875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13292,
+      "midi": 67,
+      "pan": 0.017679226253578983,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 42.69625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13309,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1274.692,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 42.69625,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13326
+    },
+    {
+      "time": 42.69625,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 13343
+    },
+    {
+      "time": 42.930625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13360,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 1243.564,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 42.930625,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 13377,
+      "dur": 0.13,
+      "pan": 0.2844191498737062
+    },
+    {
+      "time": 43.0478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13394,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1227.721,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.0478125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13411,
+      "midi": 62,
+      "pan": 0.18007906094771842,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 43.165,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13428,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1211.705,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.165,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13445
+    },
+    {
+      "time": 43.399375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13462,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1179.192,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.399375,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 13479,
+      "dur": 0.045,
+      "pan": 0.18007906094771842
+    },
+    {
+      "time": 43.5165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13496,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1162.714,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.5165625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13513,
+      "midi": 62,
+      "pan": -0.3430536063589206,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 43.63375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13530,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 1146.102,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.63375,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13547
+    },
+    {
+      "time": 43.868125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13564,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 1112.516,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 43.868125,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 13581,
+      "dur": 0.045,
+      "pan": -0.3430536063589206
+    },
+    {
+      "time": 43.9853125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13598,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 1095.562,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.1025,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13615
+    },
+    {
+      "time": 44.2196875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13632,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 1061.383,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.336875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13649,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 1044.179,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.336875,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 13666,
+      "dur": 0.045,
+      "pan": 0.0025578169695169573
+    },
+    {
+      "time": 44.336875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13683,
+      "midi": 67,
+      "pan": 0.14877258377150748,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 44.57125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13700,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 1009.592,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.57125,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13717
+    },
+    {
+      "time": 44.57125,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 13734
+    },
+    {
+      "time": 44.6884375,
+      "kind": "Hat",
+      "amp": 0.036404,
+      "seed": 13751,
+      "dur": 0.035,
+      "pan": -0.3
+    },
+    {
+      "time": 44.805625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13768,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 974.838,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.805625,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 13785,
+      "dur": 0.13,
+      "pan": 0.3263457744284076
+    },
+    {
+      "time": 44.9228125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13802,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 957.424,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 44.9228125,
+      "kind": "Hat",
+      "amp": 0.036404,
+      "seed": 13836,
+      "dur": 0.035,
+      "pan": 0.3
+    },
+    {
+      "time": 44.9228125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13819,
+      "midi": 62,
+      "pan": 0.23249096602129132,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 45.04,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13853,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 940.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.04,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13870
+    },
+    {
+      "time": 45.24274214,
+      "kind": "Pad",
+      "amp": 0.006615,
+      "seed": 16879,
+      "midi": 53,
+      "dur": 6.2,
+      "pan": -0.17192943187791998,
+      "cutoff": 1602.0
+    },
+    {
+      "time": 45.274375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13887,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 905.162,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.274375,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 13904,
+      "dur": 0.045,
+      "pan": 0.23249096602129132
+    },
+    {
+      "time": 45.27774214,
+      "kind": "Pad",
+      "amp": 0.006615,
+      "seed": 16896,
+      "midi": 56,
+      "dur": 6.2,
+      "pan": -0.18941879232777553,
+      "cutoff": 1602.0
+    },
+    {
+      "time": 45.31274214,
+      "kind": "Pad",
+      "amp": 0.006615,
+      "seed": 16913,
+      "midi": 60,
+      "dur": 6.2,
+      "pan": 0.11645693311757904,
+      "cutoff": 1602.0
+    },
+    {
+      "time": 45.34774214,
+      "kind": "Pad",
+      "amp": 0.006615,
+      "seed": 16930,
+      "midi": 63,
+      "dur": 6.2,
+      "pan": 0.28607018036113624,
+      "cutoff": 1602.0
+    },
+    {
+      "time": 45.3915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13921,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 887.769,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.3915625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 13938,
+      "midi": 62,
+      "pan": 0.15408278555791427,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 45.50875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 13955,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 870.408,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.50875,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 13972
+    },
+    {
+      "time": 45.743125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 13989,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 835.821,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.743125,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 14006,
+      "dur": 0.045,
+      "pan": 0.15408278555791427
+    },
+    {
+      "time": 45.8603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14023,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 818.617,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 45.97274214,
+      "kind": "Noise",
+      "amp": 0.0176,
+      "seed": 16947,
+      "dur": 3.4,
+      "pan": 0.17192943187791998
+    },
+    {
+      "time": 45.9775,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14040
+    },
+    {
+      "time": 46.0946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14057,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 784.438,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.211875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14074,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 767.484,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.211875,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 14091,
+      "dur": 0.045,
+      "pan": 0.01119736245895242
+    },
+    {
+      "time": 46.211875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14108,
+      "midi": 67,
+      "pan": 0.19329977096644574,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 46.44625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14125,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 733.898,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.44625,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14142
+    },
+    {
+      "time": 46.44625,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 14159
+    },
+    {
+      "time": 46.680625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14176,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 700.808,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.680625,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 14193,
+      "dur": 0.13,
+      "pan": -0.30470303470881366
+    },
+    {
+      "time": 46.7978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14210,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 684.475,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.7978125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14227,
+      "midi": 62,
+      "pan": -0.017802750545079404,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 46.915,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14244,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 668.295,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 46.915,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14261
+    },
+    {
+      "time": 47.149375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14278,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 636.436,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 47.149375,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 14295,
+      "dur": 0.045,
+      "pan": -0.017802750545079404
+    },
+    {
+      "time": 47.2665625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14312,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 620.776,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 47.2665625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14329,
+      "midi": 62,
+      "pan": -0.13117692722284297,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 47.38375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14346,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 605.308,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 47.38375,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14363
+    },
+    {
+      "time": 47.618125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14380,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 574.987,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 47.618125,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 14397,
+      "dur": 0.045,
+      "pan": -0.13117692722284297
+    },
+    {
+      "time": 47.7353125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14414,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 560.152,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 47.8525,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14431
+    },
+    {
+      "time": 47.9696875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14448,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 531.176,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.086875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14465,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 517.053,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.086875,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 14482,
+      "dur": 0.045,
+      "pan": 0.1610086176386719
+    },
+    {
+      "time": 48.086875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14499,
+      "midi": 67,
+      "pan": 0.11432391493689231,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 48.32125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14516,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 489.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.32125,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14533
+    },
+    {
+      "time": 48.32125,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 14550
+    },
+    {
+      "time": 48.555625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14567,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 463.193,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.555625,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 14584,
+      "dur": 0.13,
+      "pan": 0.03185479619756959
+    },
+    {
+      "time": 48.6728125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14601,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 450.426,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.6728125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14618,
+      "midi": 62,
+      "pan": 0.05685554688965022,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 48.79,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14635,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 437.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 48.79,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14652
+    },
+    {
+      "time": 49.024375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14669,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 413.925,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.024375,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 14686,
+      "dur": 0.045,
+      "pan": 0.05685554688965022
+    },
+    {
+      "time": 49.1415625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14703,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 402.382,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.1415625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14720,
+      "midi": 62,
+      "pan": 0.1396455325594803,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 49.25875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14737,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 391.163,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.25875,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14754
+    },
+    {
+      "time": 49.493125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14771,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 369.723,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.493125,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 14788,
+      "dur": 0.045,
+      "pan": 0.1396455325594803
+    },
+    {
+      "time": 49.6103125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14805,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 359.515,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.7275,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14822
+    },
+    {
+      "time": 49.8446875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14839,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 340.154,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.961875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14856,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 331.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 49.961875,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 14873,
+      "dur": 0.045,
+      "pan": 0.12153482487738498
+    },
+    {
+      "time": 49.961875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 14890,
+      "midi": 67,
+      "pan": -0.12045584786192676,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 50.19625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14907,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 313.836,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 50.19625,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 14924
+    },
+    {
+      "time": 50.19625,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 14941
+    },
+    {
+      "time": 50.430625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 14958,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 298.168,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 50.430625,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 14975,
+      "dur": 0.13,
+      "pan": -0.16835354046232465
+    },
+    {
+      "time": 50.5478125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 14992,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 290.911,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 50.5478125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15009,
+      "midi": 62,
+      "pan": 0.037621945524193845,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 50.665,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15026,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 284.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 50.665,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15043
+    },
+    {
+      "time": 50.899375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15060,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 271.504,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 50.899375,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 15077,
+      "dur": 0.045,
+      "pan": 0.037621945524193845
+    },
+    {
+      "time": 51.0165625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15094,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 265.835,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.0165625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15111,
+      "midi": 62,
+      "pan": -0.20708365725764694,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 51.13375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15128,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 260.572,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.13375,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15145
+    },
+    {
+      "time": 51.368125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15162,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 251.278,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.368125,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 15179,
+      "dur": 0.045,
+      "pan": -0.20708365725764694
+    },
+    {
+      "time": 51.4853125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15196,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 247.251,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.6025,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15213
+    },
+    {
+      "time": 51.7196875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15230,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 240.453,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.836875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15247,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 237.685,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 51.836875,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 15264,
+      "dur": 0.045,
+      "pan": 0.12175127266870434
+    },
+    {
+      "time": 51.836875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15281,
+      "midi": 67,
+      "pan": -0.26347834490928324,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 52.07125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15298,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 233.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.07125,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15315
+    },
+    {
+      "time": 52.07125,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 15332
+    },
+    {
+      "time": 52.305625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15349,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 230.855,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.305625,
+      "kind": "Hat",
+      "amp": 0.0442596,
+      "seed": 15366,
+      "dur": 0.13,
+      "pan": -0.0075744462517594036
+    },
+    {
+      "time": 52.4228125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15383,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 230.214,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.4228125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15400,
+      "midi": 62,
+      "pan": 0.16415864704489153,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 52.54,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15417,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 230.0,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.54,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15434
+    },
+    {
+      "time": 52.774375,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15451,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 230.855,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.774375,
+      "kind": "Hat",
+      "amp": 0.0484748,
+      "seed": 15468,
+      "dur": 0.045,
+      "pan": 0.16415864704489153
+    },
+    {
+      "time": 52.8915625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15485,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 231.924,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 52.8915625,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15502,
+      "midi": 62,
+      "pan": 0.2642160505242798,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 53.00875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15519,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 233.419,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.00875,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15536
+    },
+    {
+      "time": 53.243125,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15553,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 237.685,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.243125,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 15570,
+      "dur": 0.045,
+      "pan": 0.2642160505242798
+    },
+    {
+      "time": 53.3603125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15587,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 240.453,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.4775,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15604
+    },
+    {
+      "time": 53.5946875,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15621,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 247.251,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.711875,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15638,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 251.278,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.711875,
+      "kind": "Hat",
+      "amp": 0.05269,
+      "seed": 15655,
+      "dur": 0.045,
+      "pan": -0.23342829637420415
+    },
+    {
+      "time": 53.711875,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15672,
+      "midi": 67,
+      "pan": 0.25803612813502746,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 53.94625,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15689,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 260.572,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 53.94625,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15706
+    },
+    {
+      "time": 53.94625,
+      "kind": "Snare",
+      "amp": 0.16286,
+      "seed": 15723
+    },
+    {
+      "time": 54.180625,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15740,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 271.504,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.180625,
+      "kind": "Hat",
+      "amp": 0.0547976,
+      "seed": 15757,
+      "dur": 0.13,
+      "pan": 0.23900005447150208
+    },
+    {
+      "time": 54.2978125,
+      "kind": "Bass",
+      "amp": 0.1989,
+      "seed": 15774,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 277.575,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.2978125,
+      "kind": "Metal",
+      "amp": 0.05269,
+      "seed": 15791,
+      "midi": 62,
+      "pan": -0.2820154567286579,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 54.415,
+      "kind": "Bass",
+      "amp": 0.255,
+      "seed": 15808,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 284.046,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.415,
+      "kind": "Kick",
+      "amp": 0.45984,
+      "seed": 15825
+    },
+    {
+      "time": 54.649375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 15842,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 298.168,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.649375,
+      "kind": "Hat",
+      "amp": 0.0241093,
+      "seed": 15859,
+      "dur": 0.045,
+      "pan": -0.2820154567286579
+    },
+    {
+      "time": 54.7665625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 15876,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 305.811,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.7665625,
+      "kind": "Metal",
+      "amp": 0.0241093,
+      "seed": 15893,
+      "midi": 62,
+      "pan": -0.25849792965251855,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 54.88375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 15910,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 313.836,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 54.88375,
+      "kind": "Kick",
+      "amp": 0.210408,
+      "seed": 15927
+    },
+    {
+      "time": 55.118125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 15944,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 331.013,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 55.118125,
+      "kind": "Hat",
+      "amp": 0.0221805,
+      "seed": 15961,
+      "dur": 0.045,
+      "pan": -0.25849792965251855
+    },
+    {
+      "time": 55.2353125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 15978,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 340.154,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 55.3525,
+      "kind": "Kick",
+      "amp": 0.210408,
+      "seed": 15995
+    },
+    {
+      "time": 55.4696875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 16012,
+      "midi": 44,
+      "dur": 0.111328125,
+      "cutoff": 359.515,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 55.586875,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 16029,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 369.723,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 55.586875,
+      "kind": "Hat",
+      "amp": 0.0241093,
+      "seed": 16046,
+      "dur": 0.045,
+      "pan": 0.3421002798126564
+    },
+    {
+      "time": 55.586875,
+      "kind": "Metal",
+      "amp": 0.0241093,
+      "seed": 16063,
+      "midi": 67,
+      "pan": 0.025310081334074752,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 55.82125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 16080,
+      "midi": 51,
+      "dur": 0.111328125,
+      "cutoff": 391.163,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 55.82125,
+      "kind": "Kick",
+      "amp": 0.210408,
+      "seed": 16097
+    },
+    {
+      "time": 55.82125,
+      "kind": "Snare",
+      "amp": 0.0745195,
+      "seed": 16114
+    },
+    {
+      "time": 56.055625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 16131,
+      "midi": 48,
+      "dur": 0.193359375,
+      "cutoff": 413.925,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.055625,
+      "kind": "Hat",
+      "amp": 0.0202518,
+      "seed": 16148,
+      "dur": 0.13,
+      "pan": 0.2628157050998453
+    },
+    {
+      "time": 56.1728125,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 16165,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 425.785,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.1728125,
+      "kind": "Metal",
+      "amp": 0.0241093,
+      "seed": 16182,
+      "midi": 62,
+      "pan": 0.10428451033690733,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 56.29,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 16199,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 437.954,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.29,
+      "kind": "Kick",
+      "amp": 0.210408,
+      "seed": 16216
+    },
+    {
+      "time": 56.524375,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 16233,
+      "midi": 48,
+      "dur": 0.111328125,
+      "cutoff": 463.193,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.524375,
+      "kind": "Hat",
+      "amp": 0.0221805,
+      "seed": 16250,
+      "dur": 0.045,
+      "pan": 0.10428451033690733
+    },
+    {
+      "time": 56.6415625,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 16267,
+      "midi": 41,
+      "dur": 0.111328125,
+      "cutoff": 476.247,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.6415625,
+      "kind": "Metal",
+      "amp": 0.0241093,
+      "seed": 16284,
+      "midi": 62,
+      "pan": -0.06942004300470789,
+      "drive": 1.8,
+      "dur": 0.13
+    },
+    {
+      "time": 56.75875,
+      "kind": "Bass",
+      "amp": 0.149175,
+      "seed": 16301,
+      "midi": 53,
+      "dur": 0.111328125,
+      "cutoff": 489.581,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.75875,
+      "kind": "Kick",
+      "amp": 0.210408,
+      "seed": 16318
+    },
+    {
+      "time": 56.993125,
+      "kind": "Bass",
+      "amp": 0.19125,
+      "seed": 16335,
+      "midi": 41,
+      "dur": 0.193359375,
+      "cutoff": 517.053,
+      "drive": 1.8,
+      "act": 4,
+      "mutation": "identity"
+    },
+    {
+      "time": 56.993125,
+      "kind": "Hat",
+      "amp": 0.0250736,
+      "seed": 16352,
+      "dur": 0.045,
+      "pan": -0.06942004300470789
+    }
+  ],
+  "tail_policy": "Exact full duration includes a three-second fade and tail. This is not a seamless loop.",
+  "clock": "Finite offline score. Gameplay does not use this clock."
+}

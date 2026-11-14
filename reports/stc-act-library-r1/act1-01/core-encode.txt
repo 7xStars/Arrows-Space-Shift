@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 0000020373e04e40] Guessed Channel Layout: stereo
+Input #0, wav, from 'G:\Music Projects\Arrow Space Shift\scratch\stc-act-library-r1\act1-01-core.wav':
+  Duration: 00:01:00.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'D:\Projects\games\game-off-2026\assets\audio\stc-act-library-r1\act1-01-core.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+size=    1024KiB time=00:00:49.59 bitrate= 169.1kbits/s speed=94.1x elapsed=0:00:00.52    [out#0/ogg @ 00000203721382c0] video:0KiB audio:1201KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 1.229577%
+size=    1215KiB time=00:01:00.00 bitrate= 166.0kbits/s speed=96.3x elapsed=0:00:00.62    

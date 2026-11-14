@@ -1,0 +1,852 @@
+{
+  "revision": "campaign-music-v1",
+  "sample_rate": 48000,
+  "segment_seconds": 24,
+  "overlap_seconds": 0.08,
+  "tracks": {
+    "traditional": {
+      "id": "act1-03",
+      "title": "Off Axis",
+      "bpm": 134,
+      "seconds": 240,
+      "segments": [
+        {
+          "index": 0,
+          "source_first_frame": 0,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-00-core.ogg",
+          "atmosphere": "act1-03-00-atmosphere.ogg"
+        },
+        {
+          "index": 1,
+          "source_first_frame": 1152000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-01-core.ogg",
+          "atmosphere": "act1-03-01-atmosphere.ogg"
+        },
+        {
+          "index": 2,
+          "source_first_frame": 2304000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-02-core.ogg",
+          "atmosphere": "act1-03-02-atmosphere.ogg"
+        },
+        {
+          "index": 3,
+          "source_first_frame": 3456000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-03-core.ogg",
+          "atmosphere": "act1-03-03-atmosphere.ogg"
+        },
+        {
+          "index": 4,
+          "source_first_frame": 4608000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-04-core.ogg",
+          "atmosphere": "act1-03-04-atmosphere.ogg"
+        },
+        {
+          "index": 5,
+          "source_first_frame": 5760000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-05-core.ogg",
+          "atmosphere": "act1-03-05-atmosphere.ogg"
+        },
+        {
+          "index": 6,
+          "source_first_frame": 6912000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-06-core.ogg",
+          "atmosphere": "act1-03-06-atmosphere.ogg"
+        },
+        {
+          "index": 7,
+          "source_first_frame": 8064000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-07-core.ogg",
+          "atmosphere": "act1-03-07-atmosphere.ogg"
+        },
+        {
+          "index": 8,
+          "source_first_frame": 9216000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act1-03-08-core.ogg",
+          "atmosphere": "act1-03-08-atmosphere.ogg"
+        },
+        {
+          "index": 9,
+          "source_first_frame": 10368000,
+          "frames": 1152000,
+          "span_seconds": 24,
+          "seconds": 24.0,
+          "core": "act1-03-09-core.ogg",
+          "atmosphere": "act1-03-09-atmosphere.ogg"
+        }
+      ],
+      "source_stems": [
+        {
+          "stem": "core",
+          "file": "assets/audio/stc-act-library-r1/act1-03-core.ogg",
+          "sha256": "34409161d4eb85dc268b77447036d3ca06241b6fec9a9e7e99855be0ae45ef4b"
+        },
+        {
+          "stem": "atmosphere",
+          "file": "assets/audio/stc-act-library-r1/act1-03-atmosphere.ogg",
+          "sha256": "bf61e47f4fb1d18c7a016948280e610cbffe23434b5b2599b4b5c304bf5d4a3e"
+        }
+      ]
+    },
+    "klein": {
+      "id": "act2-03",
+      "title": "Order of Returns",
+      "bpm": 134,
+      "seconds": 240,
+      "segments": [
+        {
+          "index": 0,
+          "source_first_frame": 0,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-00-core.ogg",
+          "atmosphere": "act2-03-00-atmosphere.ogg"
+        },
+        {
+          "index": 1,
+          "source_first_frame": 1152000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-01-core.ogg",
+          "atmosphere": "act2-03-01-atmosphere.ogg"
+        },
+        {
+          "index": 2,
+          "source_first_frame": 2304000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-02-core.ogg",
+          "atmosphere": "act2-03-02-atmosphere.ogg"
+        },
+        {
+          "index": 3,
+          "source_first_frame": 3456000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-03-core.ogg",
+          "atmosphere": "act2-03-03-atmosphere.ogg"
+        },
+        {
+          "index": 4,
+          "source_first_frame": 4608000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-04-core.ogg",
+          "atmosphere": "act2-03-04-atmosphere.ogg"
+        },
+        {
+          "index": 5,
+          "source_first_frame": 5760000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-05-core.ogg",
+          "atmosphere": "act2-03-05-atmosphere.ogg"
+        },
+        {
+          "index": 6,
+          "source_first_frame": 6912000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-06-core.ogg",
+          "atmosphere": "act2-03-06-atmosphere.ogg"
+        },
+        {
+          "index": 7,
+          "source_first_frame": 8064000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-07-core.ogg",
+          "atmosphere": "act2-03-07-atmosphere.ogg"
+        },
+        {
+          "index": 8,
+          "source_first_frame": 9216000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act2-03-08-core.ogg",
+          "atmosphere": "act2-03-08-atmosphere.ogg"
+        },
+        {
+          "index": 9,
+          "source_first_frame": 10368000,
+          "frames": 1152000,
+          "span_seconds": 24,
+          "seconds": 24.0,
+          "core": "act2-03-09-core.ogg",
+          "atmosphere": "act2-03-09-atmosphere.ogg"
+        }
+      ],
+      "source_stems": [
+        {
+          "stem": "core",
+          "file": "assets/audio/stc-act-library-r1/act2-03-core.ogg",
+          "sha256": "c378c16f5133886ba9385f0a9ba3a0676102fdc95b52158f40df42298f9b2040"
+        },
+        {
+          "stem": "atmosphere",
+          "file": "assets/audio/stc-act-library-r1/act2-03-atmosphere.ogg",
+          "sha256": "b11490285584ce5ce16ab004051892b36d5c2e96d15907ce8e92d674ef2dd8a4"
+        }
+      ]
+    },
+    "projective": {
+      "id": "act3-03",
+      "title": "Order of Force",
+      "bpm": 132,
+      "seconds": 240,
+      "segments": [
+        {
+          "index": 0,
+          "source_first_frame": 0,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-00-core.ogg",
+          "atmosphere": "act3-03-00-atmosphere.ogg"
+        },
+        {
+          "index": 1,
+          "source_first_frame": 1152000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-01-core.ogg",
+          "atmosphere": "act3-03-01-atmosphere.ogg"
+        },
+        {
+          "index": 2,
+          "source_first_frame": 2304000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-02-core.ogg",
+          "atmosphere": "act3-03-02-atmosphere.ogg"
+        },
+        {
+          "index": 3,
+          "source_first_frame": 3456000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-03-core.ogg",
+          "atmosphere": "act3-03-03-atmosphere.ogg"
+        },
+        {
+          "index": 4,
+          "source_first_frame": 4608000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-04-core.ogg",
+          "atmosphere": "act3-03-04-atmosphere.ogg"
+        },
+        {
+          "index": 5,
+          "source_first_frame": 5760000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-05-core.ogg",
+          "atmosphere": "act3-03-05-atmosphere.ogg"
+        },
+        {
+          "index": 6,
+          "source_first_frame": 6912000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-06-core.ogg",
+          "atmosphere": "act3-03-06-atmosphere.ogg"
+        },
+        {
+          "index": 7,
+          "source_first_frame": 8064000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-07-core.ogg",
+          "atmosphere": "act3-03-07-atmosphere.ogg"
+        },
+        {
+          "index": 8,
+          "source_first_frame": 9216000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act3-03-08-core.ogg",
+          "atmosphere": "act3-03-08-atmosphere.ogg"
+        },
+        {
+          "index": 9,
+          "source_first_frame": 10368000,
+          "frames": 1152000,
+          "span_seconds": 24,
+          "seconds": 24.0,
+          "core": "act3-03-09-core.ogg",
+          "atmosphere": "act3-03-09-atmosphere.ogg"
+        }
+      ],
+      "source_stems": [
+        {
+          "stem": "core",
+          "file": "assets/audio/stc-act-library-r1/act3-03-core.ogg",
+          "sha256": "618b12af163650da60e1541a3fb97d915024ae05cf37c3a26b2aba028aa85470"
+        },
+        {
+          "stem": "atmosphere",
+          "file": "assets/audio/stc-act-library-r1/act3-03-atmosphere.ogg",
+          "sha256": "5d06bfc7ad00695eccc21102a2a8347c41769553bfb3f290bf7657a195bf2185"
+        }
+      ]
+    },
+    "bolza": {
+      "id": "act4-03",
+      "title": "Order Leaves a Trace",
+      "bpm": 128,
+      "seconds": 240,
+      "segments": [
+        {
+          "index": 0,
+          "source_first_frame": 0,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-00-core.ogg",
+          "atmosphere": "act4-03-00-atmosphere.ogg"
+        },
+        {
+          "index": 1,
+          "source_first_frame": 1152000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-01-core.ogg",
+          "atmosphere": "act4-03-01-atmosphere.ogg"
+        },
+        {
+          "index": 2,
+          "source_first_frame": 2304000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-02-core.ogg",
+          "atmosphere": "act4-03-02-atmosphere.ogg"
+        },
+        {
+          "index": 3,
+          "source_first_frame": 3456000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-03-core.ogg",
+          "atmosphere": "act4-03-03-atmosphere.ogg"
+        },
+        {
+          "index": 4,
+          "source_first_frame": 4608000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-04-core.ogg",
+          "atmosphere": "act4-03-04-atmosphere.ogg"
+        },
+        {
+          "index": 5,
+          "source_first_frame": 5760000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-05-core.ogg",
+          "atmosphere": "act4-03-05-atmosphere.ogg"
+        },
+        {
+          "index": 6,
+          "source_first_frame": 6912000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-06-core.ogg",
+          "atmosphere": "act4-03-06-atmosphere.ogg"
+        },
+        {
+          "index": 7,
+          "source_first_frame": 8064000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-07-core.ogg",
+          "atmosphere": "act4-03-07-atmosphere.ogg"
+        },
+        {
+          "index": 8,
+          "source_first_frame": 9216000,
+          "frames": 1155840,
+          "span_seconds": 24,
+          "seconds": 24.08,
+          "core": "act4-03-08-core.ogg",
+          "atmosphere": "act4-03-08-atmosphere.ogg"
+        },
+        {
+          "index": 9,
+          "source_first_frame": 10368000,
+          "frames": 1152000,
+          "span_seconds": 24,
+          "seconds": 24.0,
+          "core": "act4-03-09-core.ogg",
+          "atmosphere": "act4-03-09-atmosphere.ogg"
+        }
+      ],
+      "source_stems": [
+        {
+          "stem": "core",
+          "file": "assets/audio/stc-act-library-r1/act4-03-core.ogg",
+          "sha256": "05bb9d55ca1a0ce7d867e4eb91d927fe84bb3da21652de6fa6c7aa7d8f455539"
+        },
+        {
+          "stem": "atmosphere",
+          "file": "assets/audio/stc-act-library-r1/act4-03-atmosphere.ogg",
+          "sha256": "c723d8e2980a45ad952eb549a25522b5317197ee6c5ab4f15d70de0fe427be59"
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "file": "act1-03-00-core.ogg",
+      "bytes": 739215,
+      "sha256": "d15c073e3b8b3314088365fe045aa1b9f3eaf9dd4d562694553b6d1cf968911b"
+    },
+    {
+      "file": "act1-03-01-core.ogg",
+      "bytes": 739303,
+      "sha256": "1e6411995924fe06016eab5321ca8b66ed8974ae81a936aebc90607980c38447"
+    },
+    {
+      "file": "act1-03-02-core.ogg",
+      "bytes": 732816,
+      "sha256": "d295f550378d5a3de9af5ba6a60b9307c827aa36d09bf4f653ccf1a547f29e9e"
+    },
+    {
+      "file": "act1-03-03-core.ogg",
+      "bytes": 697244,
+      "sha256": "14facbb8bc106c451c926163ac24194d88d11cefad53da394c604e219856bc52"
+    },
+    {
+      "file": "act1-03-04-core.ogg",
+      "bytes": 705387,
+      "sha256": "a150a801e265786be79126413573b85b3f2df83a43e8012dddea4ee59b4e7a78"
+    },
+    {
+      "file": "act1-03-05-core.ogg",
+      "bytes": 749140,
+      "sha256": "0ed3ce81ad1534743a43706b7e4a157994dc07d42a37ef1cc2fb3cc0e1ddc96d"
+    },
+    {
+      "file": "act1-03-06-core.ogg",
+      "bytes": 728633,
+      "sha256": "661a1885bdc61db4853d60ca80113292200c885c88e6868ff7bbc8ce8ed14fa8"
+    },
+    {
+      "file": "act1-03-07-core.ogg",
+      "bytes": 732752,
+      "sha256": "ab5d179e11b4ab092d14d75bff994cb24ad7ec326ae940d6225dde06d2a402b3"
+    },
+    {
+      "file": "act1-03-08-core.ogg",
+      "bytes": 716514,
+      "sha256": "323638350d482050edd31a076388abbe054e0310a1d11fd085898c60d9dca325"
+    },
+    {
+      "file": "act1-03-09-core.ogg",
+      "bytes": 640566,
+      "sha256": "1abadfa1efd9ed39192b777cb1fca43dd736955800e4388b0ff8eba6fc799263"
+    },
+    {
+      "file": "act1-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "63b418b319a7e78ab90c749a4723422fd59e85c78480e448df6bddd38b6c9494"
+    },
+    {
+      "file": "act1-03-01-atmosphere.ogg",
+      "bytes": 331026,
+      "sha256": "af180369c01272c5261c6505a01c31f36486d3c61010371fcde7dd5133dff5da"
+    },
+    {
+      "file": "act1-03-02-atmosphere.ogg",
+      "bytes": 414148,
+      "sha256": "31e02c246080fed7fc3ce50f4db24672632aa317caffa3281c37e57008369630"
+    },
+    {
+      "file": "act1-03-03-atmosphere.ogg",
+      "bytes": 416214,
+      "sha256": "8cd50c55e42c82bcab49ccd725be6b6f0aee27443c90c67f5faf094ce9c0e818"
+    },
+    {
+      "file": "act1-03-04-atmosphere.ogg",
+      "bytes": 433335,
+      "sha256": "2a647899605b5ed7b2c5af3d8f78a08ebed8c2df56580b2ca41aad65a4f207a7"
+    },
+    {
+      "file": "act1-03-05-atmosphere.ogg",
+      "bytes": 423999,
+      "sha256": "2b699f945eae6c595b56707d0477ef14c5788bd7c2c72900b3be7274c064a618"
+    },
+    {
+      "file": "act1-03-06-atmosphere.ogg",
+      "bytes": 429287,
+      "sha256": "d4ad6cf5709f2f0683627800e816aeb84d45f15b4ccdf97c3a25a62eb9dd0f0a"
+    },
+    {
+      "file": "act1-03-07-atmosphere.ogg",
+      "bytes": 423966,
+      "sha256": "9810535aa48ebd1881464b4d8e943feac2cc1d7a68c16f59c3bf3eaac6225059"
+    },
+    {
+      "file": "act1-03-08-atmosphere.ogg",
+      "bytes": 427841,
+      "sha256": "879706220833b22dfd65baff8066736e33cdbda465a39a5772e0f4612e939d64"
+    },
+    {
+      "file": "act1-03-09-atmosphere.ogg",
+      "bytes": 343366,
+      "sha256": "4bacc6cf442234721c2758ed69bbe34a10514e47411ef8923dac445123890bda"
+    },
+    {
+      "file": "act2-03-00-core.ogg",
+      "bytes": 773651,
+      "sha256": "e9524b6b198c324e1117dc67fcab856aa849251b1a32e53ab6678400f7aa1a7e"
+    },
+    {
+      "file": "act2-03-01-core.ogg",
+      "bytes": 788556,
+      "sha256": "eeb17e857f1479410c1cf2df35cf14b3e81a0db8d520f032105ac9f6f30f3e0a"
+    },
+    {
+      "file": "act2-03-02-core.ogg",
+      "bytes": 785626,
+      "sha256": "ff7e9529ed71f9f0bfc134ca5bba1151b461c6bedf4f24a4ad553860acfb0001"
+    },
+    {
+      "file": "act2-03-03-core.ogg",
+      "bytes": 751602,
+      "sha256": "baa526c00bac21f33dd303d267521006817716586282ba2afc62d96ba57c3141"
+    },
+    {
+      "file": "act2-03-04-core.ogg",
+      "bytes": 766282,
+      "sha256": "00b1bfb1fc7052bc4f92658493d6c84e87b4fae11e8d086f09cc3c6b4c83c70c"
+    },
+    {
+      "file": "act2-03-05-core.ogg",
+      "bytes": 728273,
+      "sha256": "1c184c4bc49b0b43987832b54071a036c3c2003f31c1d3c47a78dfa38b90d1d2"
+    },
+    {
+      "file": "act2-03-06-core.ogg",
+      "bytes": 760131,
+      "sha256": "e0edb7117c98dd44df3d62e7e7f596aceea895380bc7e08fd1a10eaabf8b2cd0"
+    },
+    {
+      "file": "act2-03-07-core.ogg",
+      "bytes": 797879,
+      "sha256": "7d559a42a9a6ee4c7f75d841f7140b19d486579f4c1d3abf55cf7c8a35c5b827"
+    },
+    {
+      "file": "act2-03-08-core.ogg",
+      "bytes": 770398,
+      "sha256": "1b06273996e036117ca78344d598b91ae8dd3baf12c2d474175ec6f59fb637c0"
+    },
+    {
+      "file": "act2-03-09-core.ogg",
+      "bytes": 663390,
+      "sha256": "bbe5097902b649c7877a7619c71bd1bd313d935aa0b3613d474018c348b63f01"
+    },
+    {
+      "file": "act2-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "74c437549872db71dc40c269a2184d531d66483892dc47f95a95a923bf8cea3a"
+    },
+    {
+      "file": "act2-03-01-atmosphere.ogg",
+      "bytes": 331257,
+      "sha256": "7693ff12456d487d5360eec391212e07ffd31ff3258b8d16f0fcde654b915afe"
+    },
+    {
+      "file": "act2-03-02-atmosphere.ogg",
+      "bytes": 450260,
+      "sha256": "3388d75bc6cc6e27cbfb737cf5f52de5526b262238460936334af364a50f2f9d"
+    },
+    {
+      "file": "act2-03-03-atmosphere.ogg",
+      "bytes": 469356,
+      "sha256": "9df077a6d588a11e4b0b40dac04c7e2adf56136fc6b0886b401ece7baf2a7c5f"
+    },
+    {
+      "file": "act2-03-04-atmosphere.ogg",
+      "bytes": 459167,
+      "sha256": "6156180a0e851131a1c47284343d66eb572b8b42d33812e1a2c63e852cbbbc17"
+    },
+    {
+      "file": "act2-03-05-atmosphere.ogg",
+      "bytes": 446598,
+      "sha256": "df87a695588b9da7d2cd6e811d974905c5c430c5318544f7ff57c58fe3e8773a"
+    },
+    {
+      "file": "act2-03-06-atmosphere.ogg",
+      "bytes": 477431,
+      "sha256": "41506e762b73bcc0dc961d9eda9a43caf2e1f82b40f6ff5e45d673b136f4bbf5"
+    },
+    {
+      "file": "act2-03-07-atmosphere.ogg",
+      "bytes": 425637,
+      "sha256": "08cf49f850aedbbc9e27b4261118856611d70250d01b4029079548c60890793f"
+    },
+    {
+      "file": "act2-03-08-atmosphere.ogg",
+      "bytes": 457638,
+      "sha256": "6f6439fc4a450b471ecea2a77bcb6b27692d163f8fce1c63b0d5baa153114695"
+    },
+    {
+      "file": "act2-03-09-atmosphere.ogg",
+      "bytes": 380908,
+      "sha256": "a8582e70ffb27220f29ef99d781e4499ad1b2f4a4a1ce5cd0bd84d9f6c71d500"
+    },
+    {
+      "file": "act3-03-00-core.ogg",
+      "bytes": 791432,
+      "sha256": "94e1f81fe12ddcbfa8349f9d30b0f6ead98023c2c5b1c82de498d78396715b9f"
+    },
+    {
+      "file": "act3-03-01-core.ogg",
+      "bytes": 776056,
+      "sha256": "fe1e1ec82d4666c27139f4c944c5d348c5b434d0e0b83c8e10704c450808f8f2"
+    },
+    {
+      "file": "act3-03-02-core.ogg",
+      "bytes": 756901,
+      "sha256": "3f02a9fd592e289adc5bcdd62120cf7bc7ffcd2c9df4270cdd4a590a492b46b8"
+    },
+    {
+      "file": "act3-03-03-core.ogg",
+      "bytes": 758319,
+      "sha256": "00e2d5ebcd09a389f3b623c091e867ff76d627dcd7b18913bde7bf963e63d6af"
+    },
+    {
+      "file": "act3-03-04-core.ogg",
+      "bytes": 744898,
+      "sha256": "befc304acd0027dc6667d4e770d8fc597aabb238be0f80a547107c3dfb4249e9"
+    },
+    {
+      "file": "act3-03-05-core.ogg",
+      "bytes": 769867,
+      "sha256": "49b260dc1c9ead8369477c1d48e814756d83739441216a9e8c60e4df715ca5cf"
+    },
+    {
+      "file": "act3-03-06-core.ogg",
+      "bytes": 779379,
+      "sha256": "877d327bcce291db7be426620c7781999c38da707c42eda17988fdf533099df6"
+    },
+    {
+      "file": "act3-03-07-core.ogg",
+      "bytes": 777292,
+      "sha256": "872016bcb18a204d0eb2c064e69441bb647d1a89b9bc5a87e63823ec0b1f5221"
+    },
+    {
+      "file": "act3-03-08-core.ogg",
+      "bytes": 748997,
+      "sha256": "a458132982b706ed98149441cf3e917b3d81c1047d53540f021ccde31168707e"
+    },
+    {
+      "file": "act3-03-09-core.ogg",
+      "bytes": 674292,
+      "sha256": "8512a9c5206d2881e800df9bead7d9caecfc7be262cf4146cafa7640c4e653ac"
+    },
+    {
+      "file": "act3-03-00-atmosphere.ogg",
+      "bytes": 422129,
+      "sha256": "6f6cb5c5c0b871ede801a29bca41e5620b8e28e7aa373343c24dfa6d6de3c084"
+    },
+    {
+      "file": "act3-03-01-atmosphere.ogg",
+      "bytes": 481599,
+      "sha256": "9c3e6155b070689ab12acfcb423a9de575ad0a742a60d8506aee14223ad35cfc"
+    },
+    {
+      "file": "act3-03-02-atmosphere.ogg",
+      "bytes": 462272,
+      "sha256": "2af8c86f641d469213379d6ac8d1d19bf74ff4684d2358f2e11b636f4c28bc33"
+    },
+    {
+      "file": "act3-03-03-atmosphere.ogg",
+      "bytes": 476781,
+      "sha256": "8a3b31fdb5357088733d0f9219ea6cfe6fa0d991246cc05abb312e3727cca131"
+    },
+    {
+      "file": "act3-03-04-atmosphere.ogg",
+      "bytes": 472198,
+      "sha256": "fca860e92ab711d8ac1f280ba279602b02bc75fddd2fce1ad6e2404bfc0b35bb"
+    },
+    {
+      "file": "act3-03-05-atmosphere.ogg",
+      "bytes": 480340,
+      "sha256": "35b7df5ba638163c90fb286a5fa7f25b5c5e7d1b8b822625f86363788718a27c"
+    },
+    {
+      "file": "act3-03-06-atmosphere.ogg",
+      "bytes": 472842,
+      "sha256": "c48e5a9ec59ecd7a3c41e9270cee0a7b7c789f405277a7cc4885b131f208771c"
+    },
+    {
+      "file": "act3-03-07-atmosphere.ogg",
+      "bytes": 460401,
+      "sha256": "21876b5ff351c233d9f3030abc8beaab8fdd591a8f310aa1e600c8c0b2ad71ec"
+    },
+    {
+      "file": "act3-03-08-atmosphere.ogg",
+      "bytes": 466050,
+      "sha256": "4c222c352c50e3ce4749567a765c3023a44cf386f9e7668374f1061636150fa2"
+    },
+    {
+      "file": "act3-03-09-atmosphere.ogg",
+      "bytes": 347710,
+      "sha256": "5f34eb602bc82532f21f23785af3a6329bfa7b90e3344a607356e219ed058da7"
+    },
+    {
+      "file": "act4-03-00-core.ogg",
+      "bytes": 725787,
+      "sha256": "e1abb7534c6e8b84f4b7b02df725a637874379a1016fdffa3921299045d2782f"
+    },
+    {
+      "file": "act4-03-01-core.ogg",
+      "bytes": 733870,
+      "sha256": "001cead98fa2e9a7eed46d8b1662a173dfb6fd4a795d87ad5da1ba0b26e517da"
+    },
+    {
+      "file": "act4-03-02-core.ogg",
+      "bytes": 700036,
+      "sha256": "7fc084cfbac43d0299b896220aef265e1ad9a0d6edf1bae255715d06b12b7c1c"
+    },
+    {
+      "file": "act4-03-03-core.ogg",
+      "bytes": 687752,
+      "sha256": "ba7f7f3f058df60b6b1f4e095bd8126881eb06bf45b294022b0e1d2cb24a75ad"
+    },
+    {
+      "file": "act4-03-04-core.ogg",
+      "bytes": 693213,
+      "sha256": "0f0aa4de388b7a424a78ac4cb11e9ad47cba96ab297e57d1ea3d5100341c8b19"
+    },
+    {
+      "file": "act4-03-05-core.ogg",
+      "bytes": 747805,
+      "sha256": "add617a5793366e44f87ecb394a7b7eaa0aadbb1903e05dbadb7169358b91162"
+    },
+    {
+      "file": "act4-03-06-core.ogg",
+      "bytes": 764884,
+      "sha256": "ac944232e740563e5d5f658e4344411ba374bfa8e9f2efa19c1e4221900fb024"
+    },
+    {
+      "file": "act4-03-07-core.ogg",
+      "bytes": 715118,
+      "sha256": "adc6c00aea0e196800e4cb69bb0de046473010e55ccac8bd9c5389410d6f185c"
+    },
+    {
+      "file": "act4-03-08-core.ogg",
+      "bytes": 708370,
+      "sha256": "297deee86f2a554d2970f19c6e57452375e47082ba5296d794441263b34087e2"
+    },
+    {
+      "file": "act4-03-09-core.ogg",
+      "bytes": 641619,
+      "sha256": "ecd13df99fe6fb8d6c1a4f6017a8ea37642e095a7edf042b8a8f3081a6c0d34e"
+    },
+    {
+      "file": "act4-03-00-atmosphere.ogg",
+      "bytes": 444872,
+      "sha256": "0b9100face00f87318baf9fb01ec2714c325ddcae0698211952986ef91adb45a"
+    },
+    {
+      "file": "act4-03-01-atmosphere.ogg",
+      "bytes": 474393,
+      "sha256": "b9302e15b985f22b27f8f67ae7a42d05de3e4945f1d202fecb01d2f6cd0ecf13"
+    },
+    {
+      "file": "act4-03-02-atmosphere.ogg",
+      "bytes": 466772,
+      "sha256": "d67679aac2a001dcbe25b572e11952acf092bc6df0b9a2fec7f7a4b4d8ac51fb"
+    },
+    {
+      "file": "act4-03-03-atmosphere.ogg",
+      "bytes": 467593,
+      "sha256": "b8fedcc0630b1e30766571fdc4fbfff69806bd378bc812d09dca2328cd6991bc"
+    },
+    {
+      "file": "act4-03-04-atmosphere.ogg",
+      "bytes": 459528,
+      "sha256": "fdcbb53acb7e1b888947c7fe346fb4a35977ee4b01f78ba0b262f79dff202090"
+    },
+    {
+      "file": "act4-03-05-atmosphere.ogg",
+      "bytes": 465441,
+      "sha256": "f157702a5081cf5160bbed6cfcde3069258a8fd10ce42f5de1cd7fdc3fbe254f"
+    },
+    {
+      "file": "act4-03-06-atmosphere.ogg",
+      "bytes": 470781,
+      "sha256": "23823f6742af111d65038d889e2e3bafb550e147d0d78b20ff52567656c44c13"
+    },
+    {
+      "file": "act4-03-07-atmosphere.ogg",
+      "bytes": 463095,
+      "sha256": "334b549efa28d94ce9811c2970379809dba1e6ce94a6a61653614fcff5850333"
+    },
+    {
+      "file": "act4-03-08-atmosphere.ogg",
+      "bytes": 470233,
+      "sha256": "c503828f3d4e6ff0d39f69ff412a85467a931fc30e129f605413d748cc0f6e3d"
+    },
+    {
+      "file": "act4-03-09-atmosphere.ogg",
+      "bytes": 362667,
+      "sha256": "294d15026913ec1e8f9672a1a0393dfd48a870d55d61a999975e5096aacbb471"
+    }
+  ],
+  "routing": "Current and next aligned stereo stem pairs. Linear 80 ms overlap. Repeat the finite composition after its ending.",
+  "limits": "Vorbis derivatives of the retained production stems. No new composition or seamless-loop claim. No human listening or physical-device result."
+}

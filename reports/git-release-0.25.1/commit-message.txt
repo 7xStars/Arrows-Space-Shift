@@ -1,0 +1,18 @@
+Integrate the four-Act campaign, repair ending, and produced techno
+
+Replace the old active source with the retained v0.24.1-based 0.25.1-dev.1
+candidate. Preserve the earlier repository history.
+
+Use produced FoxDot and SuperCollider recordings in all four Acts. Retain
+manual fire, actual topology, physical part extraction, and saved completion.
+Add bounded mechanical feedback and repair the hybrid join deadline, main
+control authority, and local Bolza sweep. Preserve the stated numerical and
+Act IV equipment limits.
+
+Include editable pixel data, authoring scores, tests, AI-use notices, and the
+linked earned-progress browser acceptance. Keep raw authoring WAV files in
+the complete SOURCE and separate master artifacts. Add no source license.
+
+Validation: 299 Node tests and 76 syntax checks passed in this Git candidate.
+Human comprehension, listening approval, device checks, and the earlier
+development-history review remain open. This is a development candidate.

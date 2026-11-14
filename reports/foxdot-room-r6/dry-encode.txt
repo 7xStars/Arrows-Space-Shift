@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 000002018d376600] Guessed Channel Layout: stereo
+Input #0, wav, from 'audio/stc-study/foxdot-room-r6/dry_take.wav':
+  Duration: 00:01:16.64, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'assets/audio/stc-title-r6-dry.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+[out#0/ogg @ 000002018d374ac0] video:0KiB audio:1929KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 1.017775%
+size=    1948KiB time=00:01:16.64 bitrate= 208.2kbits/s speed=76.4x elapsed=0:00:01.00    

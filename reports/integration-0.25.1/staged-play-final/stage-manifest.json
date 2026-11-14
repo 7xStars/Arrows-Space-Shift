@@ -1,0 +1,1211 @@
+{
+  "stage": "G:\\Music Projects\\Arrow Space Shift\\scratch\\play-0.25.1-dev.1-final",
+  "version": "0.25.1-dev.1",
+  "files": [
+    {
+      "path": "NOTICE.txt",
+      "bytes": 7181,
+      "sha256": "0ffbd58895f73669331ff37900f12f27ceecde44beaa461bcf88ac3f014a0735"
+    },
+    {
+      "path": "READ-ME-FIRST.txt",
+      "bytes": 3045,
+      "sha256": "914a9cd956e51903a073c9690c822519d419178aac26d1bd64b09674f7497da2"
+    },
+    {
+      "path": "RELEASE-NOTES-v0.25.1-dev.1.md",
+      "bytes": 2692,
+      "sha256": "93e764aa531e324ba88bc0320aedf6d0d2b95d8e4667d72a43a21e2a3dd31c74"
+    },
+    {
+      "path": "START-GAME-WINDOWS.bat",
+      "bytes": 572,
+      "sha256": "5af578106ca881a402a47b29c8fc750b5445ac43cbe46a8fab2c6e0a8dd8310f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "63b418b319a7e78ab90c749a4723422fd59e85c78480e448df6bddd38b6c9494"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-00-core.ogg",
+      "bytes": 739215,
+      "sha256": "d15c073e3b8b3314088365fe045aa1b9f3eaf9dd4d562694553b6d1cf968911b"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-01-atmosphere.ogg",
+      "bytes": 331026,
+      "sha256": "af180369c01272c5261c6505a01c31f36486d3c61010371fcde7dd5133dff5da"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-01-core.ogg",
+      "bytes": 739303,
+      "sha256": "1e6411995924fe06016eab5321ca8b66ed8974ae81a936aebc90607980c38447"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-02-atmosphere.ogg",
+      "bytes": 414148,
+      "sha256": "31e02c246080fed7fc3ce50f4db24672632aa317caffa3281c37e57008369630"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-02-core.ogg",
+      "bytes": 732816,
+      "sha256": "d295f550378d5a3de9af5ba6a60b9307c827aa36d09bf4f653ccf1a547f29e9e"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-03-atmosphere.ogg",
+      "bytes": 416214,
+      "sha256": "8cd50c55e42c82bcab49ccd725be6b6f0aee27443c90c67f5faf094ce9c0e818"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-03-core.ogg",
+      "bytes": 697244,
+      "sha256": "14facbb8bc106c451c926163ac24194d88d11cefad53da394c604e219856bc52"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-04-atmosphere.ogg",
+      "bytes": 433335,
+      "sha256": "2a647899605b5ed7b2c5af3d8f78a08ebed8c2df56580b2ca41aad65a4f207a7"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-04-core.ogg",
+      "bytes": 705387,
+      "sha256": "a150a801e265786be79126413573b85b3f2df83a43e8012dddea4ee59b4e7a78"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-05-atmosphere.ogg",
+      "bytes": 423999,
+      "sha256": "2b699f945eae6c595b56707d0477ef14c5788bd7c2c72900b3be7274c064a618"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-05-core.ogg",
+      "bytes": 749140,
+      "sha256": "0ed3ce81ad1534743a43706b7e4a157994dc07d42a37ef1cc2fb3cc0e1ddc96d"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-06-atmosphere.ogg",
+      "bytes": 429287,
+      "sha256": "d4ad6cf5709f2f0683627800e816aeb84d45f15b4ccdf97c3a25a62eb9dd0f0a"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-06-core.ogg",
+      "bytes": 728633,
+      "sha256": "661a1885bdc61db4853d60ca80113292200c885c88e6868ff7bbc8ce8ed14fa8"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-07-atmosphere.ogg",
+      "bytes": 423966,
+      "sha256": "9810535aa48ebd1881464b4d8e943feac2cc1d7a68c16f59c3bf3eaac6225059"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-07-core.ogg",
+      "bytes": 732752,
+      "sha256": "ab5d179e11b4ab092d14d75bff994cb24ad7ec326ae940d6225dde06d2a402b3"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-08-atmosphere.ogg",
+      "bytes": 427841,
+      "sha256": "879706220833b22dfd65baff8066736e33cdbda465a39a5772e0f4612e939d64"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-08-core.ogg",
+      "bytes": 716514,
+      "sha256": "323638350d482050edd31a076388abbe054e0310a1d11fd085898c60d9dca325"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-09-atmosphere.ogg",
+      "bytes": 343366,
+      "sha256": "4bacc6cf442234721c2758ed69bbe34a10514e47411ef8923dac445123890bda"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act1-03-09-core.ogg",
+      "bytes": 640566,
+      "sha256": "1abadfa1efd9ed39192b777cb1fca43dd736955800e4388b0ff8eba6fc799263"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "74c437549872db71dc40c269a2184d531d66483892dc47f95a95a923bf8cea3a"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-00-core.ogg",
+      "bytes": 773651,
+      "sha256": "e9524b6b198c324e1117dc67fcab856aa849251b1a32e53ab6678400f7aa1a7e"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-01-atmosphere.ogg",
+      "bytes": 331257,
+      "sha256": "7693ff12456d487d5360eec391212e07ffd31ff3258b8d16f0fcde654b915afe"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-01-core.ogg",
+      "bytes": 788556,
+      "sha256": "eeb17e857f1479410c1cf2df35cf14b3e81a0db8d520f032105ac9f6f30f3e0a"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-02-atmosphere.ogg",
+      "bytes": 450260,
+      "sha256": "3388d75bc6cc6e27cbfb737cf5f52de5526b262238460936334af364a50f2f9d"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-02-core.ogg",
+      "bytes": 785626,
+      "sha256": "ff7e9529ed71f9f0bfc134ca5bba1151b461c6bedf4f24a4ad553860acfb0001"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-03-atmosphere.ogg",
+      "bytes": 469356,
+      "sha256": "9df077a6d588a11e4b0b40dac04c7e2adf56136fc6b0886b401ece7baf2a7c5f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-03-core.ogg",
+      "bytes": 751602,
+      "sha256": "baa526c00bac21f33dd303d267521006817716586282ba2afc62d96ba57c3141"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-04-atmosphere.ogg",
+      "bytes": 459167,
+      "sha256": "6156180a0e851131a1c47284343d66eb572b8b42d33812e1a2c63e852cbbbc17"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-04-core.ogg",
+      "bytes": 766282,
+      "sha256": "00b1bfb1fc7052bc4f92658493d6c84e87b4fae11e8d086f09cc3c6b4c83c70c"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-05-atmosphere.ogg",
+      "bytes": 446598,
+      "sha256": "df87a695588b9da7d2cd6e811d974905c5c430c5318544f7ff57c58fe3e8773a"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-05-core.ogg",
+      "bytes": 728273,
+      "sha256": "1c184c4bc49b0b43987832b54071a036c3c2003f31c1d3c47a78dfa38b90d1d2"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-06-atmosphere.ogg",
+      "bytes": 477431,
+      "sha256": "41506e762b73bcc0dc961d9eda9a43caf2e1f82b40f6ff5e45d673b136f4bbf5"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-06-core.ogg",
+      "bytes": 760131,
+      "sha256": "e0edb7117c98dd44df3d62e7e7f596aceea895380bc7e08fd1a10eaabf8b2cd0"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-07-atmosphere.ogg",
+      "bytes": 425637,
+      "sha256": "08cf49f850aedbbc9e27b4261118856611d70250d01b4029079548c60890793f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-07-core.ogg",
+      "bytes": 797879,
+      "sha256": "7d559a42a9a6ee4c7f75d841f7140b19d486579f4c1d3abf55cf7c8a35c5b827"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-08-atmosphere.ogg",
+      "bytes": 457638,
+      "sha256": "6f6439fc4a450b471ecea2a77bcb6b27692d163f8fce1c63b0d5baa153114695"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-08-core.ogg",
+      "bytes": 770398,
+      "sha256": "1b06273996e036117ca78344d598b91ae8dd3baf12c2d474175ec6f59fb637c0"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-09-atmosphere.ogg",
+      "bytes": 380908,
+      "sha256": "a8582e70ffb27220f29ef99d781e4499ad1b2f4a4a1ce5cd0bd84d9f6c71d500"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act2-03-09-core.ogg",
+      "bytes": 663390,
+      "sha256": "bbe5097902b649c7877a7619c71bd1bd313d935aa0b3613d474018c348b63f01"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-00-atmosphere.ogg",
+      "bytes": 422129,
+      "sha256": "6f6cb5c5c0b871ede801a29bca41e5620b8e28e7aa373343c24dfa6d6de3c084"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-00-core.ogg",
+      "bytes": 791432,
+      "sha256": "94e1f81fe12ddcbfa8349f9d30b0f6ead98023c2c5b1c82de498d78396715b9f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-01-atmosphere.ogg",
+      "bytes": 481599,
+      "sha256": "9c3e6155b070689ab12acfcb423a9de575ad0a742a60d8506aee14223ad35cfc"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-01-core.ogg",
+      "bytes": 776056,
+      "sha256": "fe1e1ec82d4666c27139f4c944c5d348c5b434d0e0b83c8e10704c450808f8f2"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-02-atmosphere.ogg",
+      "bytes": 462272,
+      "sha256": "2af8c86f641d469213379d6ac8d1d19bf74ff4684d2358f2e11b636f4c28bc33"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-02-core.ogg",
+      "bytes": 756901,
+      "sha256": "3f02a9fd592e289adc5bcdd62120cf7bc7ffcd2c9df4270cdd4a590a492b46b8"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-03-atmosphere.ogg",
+      "bytes": 476781,
+      "sha256": "8a3b31fdb5357088733d0f9219ea6cfe6fa0d991246cc05abb312e3727cca131"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-03-core.ogg",
+      "bytes": 758319,
+      "sha256": "00e2d5ebcd09a389f3b623c091e867ff76d627dcd7b18913bde7bf963e63d6af"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-04-atmosphere.ogg",
+      "bytes": 472198,
+      "sha256": "fca860e92ab711d8ac1f280ba279602b02bc75fddd2fce1ad6e2404bfc0b35bb"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-04-core.ogg",
+      "bytes": 744898,
+      "sha256": "befc304acd0027dc6667d4e770d8fc597aabb238be0f80a547107c3dfb4249e9"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-05-atmosphere.ogg",
+      "bytes": 480340,
+      "sha256": "35b7df5ba638163c90fb286a5fa7f25b5c5e7d1b8b822625f86363788718a27c"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-05-core.ogg",
+      "bytes": 769867,
+      "sha256": "49b260dc1c9ead8369477c1d48e814756d83739441216a9e8c60e4df715ca5cf"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-06-atmosphere.ogg",
+      "bytes": 472842,
+      "sha256": "c48e5a9ec59ecd7a3c41e9270cee0a7b7c789f405277a7cc4885b131f208771c"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-06-core.ogg",
+      "bytes": 779379,
+      "sha256": "877d327bcce291db7be426620c7781999c38da707c42eda17988fdf533099df6"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-07-atmosphere.ogg",
+      "bytes": 460401,
+      "sha256": "21876b5ff351c233d9f3030abc8beaab8fdd591a8f310aa1e600c8c0b2ad71ec"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-07-core.ogg",
+      "bytes": 777292,
+      "sha256": "872016bcb18a204d0eb2c064e69441bb647d1a89b9bc5a87e63823ec0b1f5221"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-08-atmosphere.ogg",
+      "bytes": 466050,
+      "sha256": "4c222c352c50e3ce4749567a765c3023a44cf386f9e7668374f1061636150fa2"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-08-core.ogg",
+      "bytes": 748997,
+      "sha256": "a458132982b706ed98149441cf3e917b3d81c1047d53540f021ccde31168707e"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-09-atmosphere.ogg",
+      "bytes": 347710,
+      "sha256": "5f34eb602bc82532f21f23785af3a6329bfa7b90e3344a607356e219ed058da7"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act3-03-09-core.ogg",
+      "bytes": 674292,
+      "sha256": "8512a9c5206d2881e800df9bead7d9caecfc7be262cf4146cafa7640c4e653ac"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-00-atmosphere.ogg",
+      "bytes": 444872,
+      "sha256": "0b9100face00f87318baf9fb01ec2714c325ddcae0698211952986ef91adb45a"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-00-core.ogg",
+      "bytes": 725787,
+      "sha256": "e1abb7534c6e8b84f4b7b02df725a637874379a1016fdffa3921299045d2782f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-01-atmosphere.ogg",
+      "bytes": 474393,
+      "sha256": "b9302e15b985f22b27f8f67ae7a42d05de3e4945f1d202fecb01d2f6cd0ecf13"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-01-core.ogg",
+      "bytes": 733870,
+      "sha256": "001cead98fa2e9a7eed46d8b1662a173dfb6fd4a795d87ad5da1ba0b26e517da"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-02-atmosphere.ogg",
+      "bytes": 466772,
+      "sha256": "d67679aac2a001dcbe25b572e11952acf092bc6df0b9a2fec7f7a4b4d8ac51fb"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-02-core.ogg",
+      "bytes": 700036,
+      "sha256": "7fc084cfbac43d0299b896220aef265e1ad9a0d6edf1bae255715d06b12b7c1c"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-03-atmosphere.ogg",
+      "bytes": 467593,
+      "sha256": "b8fedcc0630b1e30766571fdc4fbfff69806bd378bc812d09dca2328cd6991bc"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-03-core.ogg",
+      "bytes": 687752,
+      "sha256": "ba7f7f3f058df60b6b1f4e095bd8126881eb06bf45b294022b0e1d2cb24a75ad"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-04-atmosphere.ogg",
+      "bytes": 459528,
+      "sha256": "fdcbb53acb7e1b888947c7fe346fb4a35977ee4b01f78ba0b262f79dff202090"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-04-core.ogg",
+      "bytes": 693213,
+      "sha256": "0f0aa4de388b7a424a78ac4cb11e9ad47cba96ab297e57d1ea3d5100341c8b19"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-05-atmosphere.ogg",
+      "bytes": 465441,
+      "sha256": "f157702a5081cf5160bbed6cfcde3069258a8fd10ce42f5de1cd7fdc3fbe254f"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-05-core.ogg",
+      "bytes": 747805,
+      "sha256": "add617a5793366e44f87ecb394a7b7eaa0aadbb1903e05dbadb7169358b91162"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-06-atmosphere.ogg",
+      "bytes": 470781,
+      "sha256": "23823f6742af111d65038d889e2e3bafb550e147d0d78b20ff52567656c44c13"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-06-core.ogg",
+      "bytes": 764884,
+      "sha256": "ac944232e740563e5d5f658e4344411ba374bfa8e9f2efa19c1e4221900fb024"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-07-atmosphere.ogg",
+      "bytes": 463095,
+      "sha256": "334b549efa28d94ce9811c2970379809dba1e6ce94a6a61653614fcff5850333"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-07-core.ogg",
+      "bytes": 715118,
+      "sha256": "adc6c00aea0e196800e4cb69bb0de046473010e55ccac8bd9c5389410d6f185c"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-08-atmosphere.ogg",
+      "bytes": 470233,
+      "sha256": "c503828f3d4e6ff0d39f69ff412a85467a931fc30e129f605413d748cc0f6e3d"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-08-core.ogg",
+      "bytes": 708370,
+      "sha256": "297deee86f2a554d2970f19c6e57452375e47082ba5296d794441263b34087e2"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-09-atmosphere.ogg",
+      "bytes": 362667,
+      "sha256": "294d15026913ec1e8f9672a1a0393dfd48a870d55d61a999975e5096aacbb471"
+    },
+    {
+      "path": "assets/audio/campaign-music-v1/act4-03-09-core.ogg",
+      "bytes": 641619,
+      "sha256": "ecd13df99fe6fb8d6c1a4f6017a8ea37642e095a7edf042b8a8f3081a6c0d34e"
+    },
+    {
+      "path": "assets/audio/stc-title-r9.ogg",
+      "bytes": 1187120,
+      "sha256": "2f2c03664a8c623ef5d6217612725ff62ebde6e67c33a1340174e5b5412db30a"
+    },
+    {
+      "path": "assets/crossing/asteroid.break-0.png",
+      "bytes": 227,
+      "sha256": "7c0bcd28af96c51b783af09fb734cc77b62245eb36c396045ca8290c1a7e9e48"
+    },
+    {
+      "path": "assets/crossing/asteroid.break-1.png",
+      "bytes": 208,
+      "sha256": "e69a05301ed79322ebb979d37e55ae360b9f529ef18d360cd25917cf7043029c"
+    },
+    {
+      "path": "assets/crossing/asteroid.break-2.png",
+      "bytes": 207,
+      "sha256": "16027eefc0108f8623f754feb9747a30ef94e604c868d087382cd56db4b67827"
+    },
+    {
+      "path": "assets/crossing/asteroid.large.png",
+      "bytes": 338,
+      "sha256": "a6eb537e4582ff67e8c226449a0a6e8bc09d683c0341eae3f3e913e3890493c7"
+    },
+    {
+      "path": "assets/crossing/asteroid.medium.png",
+      "bytes": 202,
+      "sha256": "d0f3cc3a54559c0b7b565b3fa14e37a859fd2a90bc991ca3d82b6229024465b6"
+    },
+    {
+      "path": "assets/crossing/asteroid.small.png",
+      "bytes": 123,
+      "sha256": "0ef5916c6b77c4428fecf25cd83699c76ff0850d82927b072b9e0a3a001ed000"
+    },
+    {
+      "path": "assets/crossing/atlas.png",
+      "bytes": 19005,
+      "sha256": "e58bc945c988b12cfdd0e935a296718cdd392a33da74e2cc3b6702a0ec3b2824"
+    },
+    {
+      "path": "assets/crossing/boss.core-up.png",
+      "bytes": 794,
+      "sha256": "20ac713209977e604f04791464a70e48e86d1d332a8cb1e119a1b4548ccec9d0"
+    },
+    {
+      "path": "assets/crossing/boss.core.png",
+      "bytes": 795,
+      "sha256": "475d428f31d42b39b4180753ee2907ee4785b4ed4ae281878834f90fba7ca870"
+    },
+    {
+      "path": "assets/crossing/boss.escort-up.png",
+      "bytes": 368,
+      "sha256": "470a9525111c5b81ff7590ef424b20547d46e59439dc5972842fc69aaacc4f0e"
+    },
+    {
+      "path": "assets/crossing/boss.escort.png",
+      "bytes": 374,
+      "sha256": "b0c59f65ea6d6c0fc8c0555e9b3233dbe3a9e81900cb5574abc19d3ef484f7f2"
+    },
+    {
+      "path": "assets/crossing/edge.bottom.png",
+      "bytes": 134,
+      "sha256": "be81f284d1cc1a4318c6b9e3727e70edb960a49ba3829c5eb688680ae2a2313a"
+    },
+    {
+      "path": "assets/crossing/edge.left.png",
+      "bytes": 158,
+      "sha256": "f1a608dda742004c2d8d9621d98f0c8253686baccde1d6ca5face806e438c597"
+    },
+    {
+      "path": "assets/crossing/edge.right.png",
+      "bytes": 161,
+      "sha256": "39b4f2dd39dec18306d0a76611c80f2bea2d7c7598272d7b26e77697565132b3"
+    },
+    {
+      "path": "assets/crossing/edge.top.png",
+      "bytes": 133,
+      "sha256": "04d03dce70b6e80d502fc8d1938694ca95b9fe1c0ea3bc63a4e258f3aa8aaf39"
+    },
+    {
+      "path": "assets/crossing/edge.twist.png",
+      "bytes": 108,
+      "sha256": "cd17c7c386143b1e75dcecc66731961f11aff2c48e0f556f4df451beae065df0"
+    },
+    {
+      "path": "assets/crossing/effect.absorb-0.png",
+      "bytes": 132,
+      "sha256": "fcb2a427a9861388a36843426f138569c9afe37f2c24ecf607d577276bdb8cf4"
+    },
+    {
+      "path": "assets/crossing/effect.absorb-1.png",
+      "bytes": 160,
+      "sha256": "b685bc21892ffdf282e62d263f23c02eae3f7eeaeb13b5e0cf75a03fab39887c"
+    },
+    {
+      "path": "assets/crossing/effect.absorb-2.png",
+      "bytes": 143,
+      "sha256": "ca3e46f504214836349b977a35c74a85a4440ebdd01e1fb7c96dfec83da23d0f"
+    },
+    {
+      "path": "assets/crossing/effect.absorb-3.png",
+      "bytes": 148,
+      "sha256": "f0c04ce057f4b2361229683ec90cd5506dfa7d59df8a5fbbe983807ef26358fc"
+    },
+    {
+      "path": "assets/crossing/effect.absorb.png",
+      "bytes": 161,
+      "sha256": "a3e876e6e9d5da53d14c03bb13f2a56b2b85757a07441cdaf300f2083c7b173b"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-0.png",
+      "bytes": 160,
+      "sha256": "c240a2d0684ffd676f98b969de09497c130cee0e99d462842607ff40eb261c87"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-1.png",
+      "bytes": 216,
+      "sha256": "f5108668632d15de7fe48a4498d4fe9f32a549b4d3812c302d29cbb3d99a2922"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-2.png",
+      "bytes": 275,
+      "sha256": "cb08ef7fe24c10c93fad47ef9fb84063497484412d6973ec89ff42ecfcd3ef15"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-3.png",
+      "bytes": 190,
+      "sha256": "8fa0d7e9d83951aca23d71f2dd1ca3b012fcf53346ed0705eab6a3d012bf6a74"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-4.png",
+      "bytes": 199,
+      "sha256": "7df820e578a517faefa8584dfc26e9d648a966ecd50b2d7473967e7bc42b2927"
+    },
+    {
+      "path": "assets/crossing/effect.explosion-5.png",
+      "bytes": 211,
+      "sha256": "118b7f72a6fccc5ce5305f0b1df847b00ad29acdcd78b1d4068f545ef17edf49"
+    },
+    {
+      "path": "assets/crossing/effect.fold-0.png",
+      "bytes": 143,
+      "sha256": "c45dc7eda9f0b46db3df74abb33bd1740951fc87d5d9a6fb2e8f9f722686a39b"
+    },
+    {
+      "path": "assets/crossing/effect.fold-1.png",
+      "bytes": 181,
+      "sha256": "2477e39cd90d73dc6323fbd982126cead7dd00bdf3bce9fc8eaccaae165b806e"
+    },
+    {
+      "path": "assets/crossing/effect.fold-2.png",
+      "bytes": 207,
+      "sha256": "30ea2622ad8f92f848ae278b6071a3e7bc20f00140cff28237dea8a8afc346ea"
+    },
+    {
+      "path": "assets/crossing/effect.fold-3.png",
+      "bytes": 190,
+      "sha256": "021caecab0afbf3b8bd7bd62a5b3d7c353a626a82071e854d52523cb548b12c0"
+    },
+    {
+      "path": "assets/crossing/effect.fold-4.png",
+      "bytes": 203,
+      "sha256": "bac8c8cea00e2ca90a72dcd22c79bb72cb5310f9cae4627b2e572d42af71e2d2"
+    },
+    {
+      "path": "assets/crossing/effect.glint-0.png",
+      "bytes": 110,
+      "sha256": "8fb296351b406ce884f8cf5ac5c179f43c76398339d489c14b73d3336779c9f8"
+    },
+    {
+      "path": "assets/crossing/effect.glint-1.png",
+      "bytes": 133,
+      "sha256": "0280e29f071318ac12c4032c06de54478550f4c3e49d1b379d33ab0381698a6d"
+    },
+    {
+      "path": "assets/crossing/effect.glint-2.png",
+      "bytes": 127,
+      "sha256": "21031422401c21fbd35f708e27c153feea06569fae140277add8164c019fb884"
+    },
+    {
+      "path": "assets/crossing/effect.glint-3.png",
+      "bytes": 105,
+      "sha256": "2ce91423536b482a666694419c0f9c67edf6c87fcb2c416820cfd6a812469871"
+    },
+    {
+      "path": "assets/crossing/effect.glint.png",
+      "bytes": 122,
+      "sha256": "d396f6a3937d97ae663ab1bbf1877b1c27a4de61009a66c43c28034f40c058ba"
+    },
+    {
+      "path": "assets/crossing/effect.hit-0.png",
+      "bytes": 125,
+      "sha256": "a983bac502c071b089737cb22077fd5efaa8f2fc0fd27c52e0a9652279314043"
+    },
+    {
+      "path": "assets/crossing/effect.hit-1.png",
+      "bytes": 193,
+      "sha256": "ab5afe32824c3e2c43476805182137acbd1818516d9c77479d92c464446d7035"
+    },
+    {
+      "path": "assets/crossing/effect.hit-2.png",
+      "bytes": 201,
+      "sha256": "221ec2416ed36fae00b048b7f082623005daeb6898447d2e40fca1248d260dd4"
+    },
+    {
+      "path": "assets/crossing/effect.hit-3.png",
+      "bytes": 205,
+      "sha256": "519f4302d528a65544b1b5e5a3ab2c6a760fd6934b4d72ff6f9056af2cc1afb2"
+    },
+    {
+      "path": "assets/crossing/effect.muzzle-0.png",
+      "bytes": 118,
+      "sha256": "4c86489bd09f168be4c3a7471ac865eedc47f137e56a97dbdb4d896a6175bfd4"
+    },
+    {
+      "path": "assets/crossing/effect.muzzle-1.png",
+      "bytes": 124,
+      "sha256": "0f769e0ce75dad511866deaffa12af9dfe7b0f6d100a99e6c6d2069e7655f99d"
+    },
+    {
+      "path": "assets/crossing/effect.muzzle-2.png",
+      "bytes": 117,
+      "sha256": "f609da6ee3bc7a364ba0b64e101988a90daac8cdbf80f345790e623bf494f472"
+    },
+    {
+      "path": "assets/crossing/effect.shield-0.png",
+      "bytes": 175,
+      "sha256": "1a0425e4b4a2dbb8537842d1554e556bac85866f498ebecbccd6e5652b5c7dd9"
+    },
+    {
+      "path": "assets/crossing/effect.shield-1.png",
+      "bytes": 179,
+      "sha256": "e0bfa3b4486f69e2c7e003bdaeefbf907d307a23f78cf38725ef45d4c0c9fdf1"
+    },
+    {
+      "path": "assets/crossing/effect.shield-2.png",
+      "bytes": 187,
+      "sha256": "cbac1a9509a96dc25540bcfd01fff27c0e3ae4241ea12fe21d3c699f855aecad"
+    },
+    {
+      "path": "assets/crossing/effect.shield-3.png",
+      "bytes": 179,
+      "sha256": "e0bfa3b4486f69e2c7e003bdaeefbf907d307a23f78cf38725ef45d4c0c9fdf1"
+    },
+    {
+      "path": "assets/crossing/effect.unfold-0.png",
+      "bytes": 144,
+      "sha256": "f311c27b9aae2847e7c0d10e175283660fa501e6af1012263c7e6f3225bba125"
+    },
+    {
+      "path": "assets/crossing/effect.unfold-1.png",
+      "bytes": 181,
+      "sha256": "c653e4a89e1bb5f848c93d395362e33464b2b1d3c86a2fba663d01cae460f45e"
+    },
+    {
+      "path": "assets/crossing/effect.unfold-2.png",
+      "bytes": 207,
+      "sha256": "29d3bce75e7b3765fe171e0dbf9469c12a576d4d532ddcbe37b36abf9d74d7cf"
+    },
+    {
+      "path": "assets/crossing/effect.unfold-3.png",
+      "bytes": 190,
+      "sha256": "b9aaa58d4d638bac1391399c64f2dc724e69b7b11410397f6638a9b468416fab"
+    },
+    {
+      "path": "assets/crossing/effect.unfold-4.png",
+      "bytes": 203,
+      "sha256": "c4d629293f5e3e2441d7dd6af95ce8f985ba817dee5b812fe4ba1ba49aff8896"
+    },
+    {
+      "path": "assets/crossing/effect.warp-0.png",
+      "bytes": 154,
+      "sha256": "697a16c586afe61b7d5a5e08ed66925e3cd41a095f470177001e130779c9cf51"
+    },
+    {
+      "path": "assets/crossing/effect.warp-1.png",
+      "bytes": 197,
+      "sha256": "c3b8b143fa0269b5ea3aca582ed33415a76b707c58dc17174638a4359764faa3"
+    },
+    {
+      "path": "assets/crossing/effect.warp-2.png",
+      "bytes": 220,
+      "sha256": "8d0ab44b72bf649fcdba8890018eb449f0fc50e7be2c66798c03f99fcb996375"
+    },
+    {
+      "path": "assets/crossing/effect.warp-3.png",
+      "bytes": 211,
+      "sha256": "4a79427232ee20f7dfe3952c52df604c61e574dfb8ae84023b4e0d033970c3a5"
+    },
+    {
+      "path": "assets/crossing/effect.warp-4.png",
+      "bytes": 216,
+      "sha256": "50e9aa384d1f742f0b1c1f31a58b875ac2e6ed3f69e385ad924df23b51b8e8e3"
+    },
+    {
+      "path": "assets/crossing/enemy.gunner-up.png",
+      "bytes": 361,
+      "sha256": "bb30f3d09578935389546a796b92a2df0a7db7f8ff442d96e8049f9c608ea12f"
+    },
+    {
+      "path": "assets/crossing/enemy.gunner.png",
+      "bytes": 359,
+      "sha256": "604eb7cc1e8563f513414a1dc47ca084ebb4dc3bd0695367f8614c0964ba8cce"
+    },
+    {
+      "path": "assets/crossing/enemy.heavy-damaged-up.png",
+      "bytes": 399,
+      "sha256": "071885cd96d62e0397f91b2021f863846251a13d1c989c2107de81bb646168bc"
+    },
+    {
+      "path": "assets/crossing/enemy.heavy-damaged.png",
+      "bytes": 412,
+      "sha256": "acbcfd513704f13b8f873d2745d6fdaba5e1504ae618c01dd9b668138de6609d"
+    },
+    {
+      "path": "assets/crossing/enemy.heavy-up.png",
+      "bytes": 386,
+      "sha256": "c1b67271ca5693160b9b41663024ed12f5ada499520ff87cc98c6d5e87ece733"
+    },
+    {
+      "path": "assets/crossing/enemy.heavy.png",
+      "bytes": 399,
+      "sha256": "cea286034797eea03d694c56dea08906ee9440fec7ff6a692d4115937bd8b1b0"
+    },
+    {
+      "path": "assets/crossing/enemy.klein-up.png",
+      "bytes": 364,
+      "sha256": "0f3d2798f578a3806da2556fdb299f6166a000839851c2135bc40bdcf40f0ec9"
+    },
+    {
+      "path": "assets/crossing/enemy.klein.png",
+      "bytes": 374,
+      "sha256": "6d91dd4890793b194695945ff9d6be0e6f23b30f53d35d0894a0cd8dcd73c8f4"
+    },
+    {
+      "path": "assets/crossing/enemy.scout-up.png",
+      "bytes": 318,
+      "sha256": "da57978c7f914fcd512e342d6b37b1a3ed8a2095c0695aea1d14b909bcdc74f9"
+    },
+    {
+      "path": "assets/crossing/enemy.scout.png",
+      "bytes": 321,
+      "sha256": "eea850438a81215f706604b4eb1a0949b9b176878a8b6930c7c008e0c29f6629"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-down-0.png",
+      "bytes": 162,
+      "sha256": "a0c22248786ceb71013d17fe61fb6c0f4b8feb9522a235fef8cec59eb2a665c9"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-down-1.png",
+      "bytes": 168,
+      "sha256": "81e45f57d98cc1c0ae5fa30468f6d0d4350dc4781242303c32b251722e5758ff"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-down-2.png",
+      "bytes": 168,
+      "sha256": "498f30b738cf71cfa745e4d50460e9f5b53b09b8bd504088e8476a9a89ae2f4d"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-down-3.png",
+      "bytes": 161,
+      "sha256": "69ce17db6293b09de485d8ce023d3a8584c1424fc32befef6395608da4056552"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-up-0.png",
+      "bytes": 142,
+      "sha256": "77271b9a0a2a3eeb3e5bb8a0b61020ec080a212890f27720d8447f27b6a121c6"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-up-1.png",
+      "bytes": 151,
+      "sha256": "6212787792116396e4ebe68efee355bcec80475116f919ea26f3921ecea33382"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-up-2.png",
+      "bytes": 150,
+      "sha256": "9c7b021e9a0cb1189a3b50c21c17c6aeb1e2a76fc55f2e7284a04c8af164ad63"
+    },
+    {
+      "path": "assets/crossing/engine.enemy-up-3.png",
+      "bytes": 150,
+      "sha256": "109bc4bdd257b9501a171725d02af88d3a5ef06899d5531718eeac64769e88fb"
+    },
+    {
+      "path": "assets/crossing/engine.player-down-0.png",
+      "bytes": 162,
+      "sha256": "d9d1e739066075186ad9f0f432ebddad498729dab326225d0ba6701264c7b8e7"
+    },
+    {
+      "path": "assets/crossing/engine.player-down-1.png",
+      "bytes": 168,
+      "sha256": "1c611d44f86f62ceca6b3c5e0edbbdf3c1ca18d63fe4300ea2c1434acdcd9e6e"
+    },
+    {
+      "path": "assets/crossing/engine.player-down-2.png",
+      "bytes": 168,
+      "sha256": "16b54132909dca5931496b7a2f1b9ae91da83fbfcf09aeccee6884adfacac7ff"
+    },
+    {
+      "path": "assets/crossing/engine.player-down-3.png",
+      "bytes": 161,
+      "sha256": "b1c01f6e7818eb377b8b55c4f266409aae952ee9dd1bfa92f7a83ddadc81f098"
+    },
+    {
+      "path": "assets/crossing/engine.player-up-0.png",
+      "bytes": 141,
+      "sha256": "b2fed0b9102921f2d8d860902c152c0ed04355211f728b1f7f432f717fb9520c"
+    },
+    {
+      "path": "assets/crossing/engine.player-up-1.png",
+      "bytes": 149,
+      "sha256": "d80dbfbd39cae1a32035fe5215b48f63aa9be920f8c8b373f6184124671eeef5"
+    },
+    {
+      "path": "assets/crossing/engine.player-up-2.png",
+      "bytes": 149,
+      "sha256": "d25b48a3b4ed5ff0be2a300fd68957cfa924d9fe389c456f0725b6b702d30d4f"
+    },
+    {
+      "path": "assets/crossing/engine.player-up-3.png",
+      "bytes": 150,
+      "sha256": "2520b811db4b0e6ff8b317cd972954dcf2abcf8ea70fe0f87e3e27afea1d9e45"
+    },
+    {
+      "path": "assets/crossing/health.1.png",
+      "bytes": 88,
+      "sha256": "ae4feef91bd18cd7224666d1295fbca95b79bed0a680030b7108d0aaa6fd0691"
+    },
+    {
+      "path": "assets/crossing/health.2.png",
+      "bytes": 90,
+      "sha256": "e035bcdd809b5bde27d932ce5b7cc7910f34c31f0bba31b983a96ee4b36ef6e0"
+    },
+    {
+      "path": "assets/crossing/health.3.png",
+      "bytes": 90,
+      "sha256": "84f35b985159b36844f7848b2c5c0210962d0cc72cfd19850e4edf6ae73ea8af"
+    },
+    {
+      "path": "assets/crossing/health.4.png",
+      "bytes": 90,
+      "sha256": "eace4693b59f99f52e35cbf989a7a24fb5c75a79bc83e4f3f927c0829eb8af8b"
+    },
+    {
+      "path": "assets/crossing/icon.klein.png",
+      "bytes": 374,
+      "sha256": "6d91dd4890793b194695945ff9d6be0e6f23b30f53d35d0894a0cd8dcd73c8f4"
+    },
+    {
+      "path": "assets/crossing/manifest.json",
+      "bytes": 25184,
+      "sha256": "d02654756f8530db259336f4c0165ae3f38fbf55b7e2c69ee39be3e64ae8c461"
+    },
+    {
+      "path": "assets/crossing/player.aftwing-down.png",
+      "bytes": 499,
+      "sha256": "fa6bc896d80974778c43143c9c40f736ce1725f3a1ab7178f28185c3b6f55d15"
+    },
+    {
+      "path": "assets/crossing/player.aftwing.png",
+      "bytes": 508,
+      "sha256": "78549995cfda43f428a8e1ba671d78372cddcc4247ac70c55431c06951e9775b"
+    },
+    {
+      "path": "assets/crossing/player.arrow-down.png",
+      "bytes": 359,
+      "sha256": "bdccc3f69847ed84b7039dcd77c45ef5f284febb7b67e35df31143e3f64ae63f"
+    },
+    {
+      "path": "assets/crossing/player.arrow.png",
+      "bytes": 349,
+      "sha256": "aa5c5a7c4f4ea1619ee2c098983412ee7acc49634e7d16a7745a40b704cc5f2a"
+    },
+    {
+      "path": "assets/crossing/player.needle-down.png",
+      "bytes": 299,
+      "sha256": "db60a321862b2ae586d4abb9f99b6eb71c16b06ddcf1c56d5ab8ec93c69f16a4"
+    },
+    {
+      "path": "assets/crossing/player.needle.png",
+      "bytes": 279,
+      "sha256": "eb31a507ce9d6848ca45745449d55827b3a7fc1238b19d892c6bd67c3b168b1b"
+    },
+    {
+      "path": "assets/crossing/player.skater-down.png",
+      "bytes": 428,
+      "sha256": "b404b3b0334c7c99fd3ff3f21e3c2adde58bb2d57d3033d08584a23f12f99605"
+    },
+    {
+      "path": "assets/crossing/player.skater.png",
+      "bytes": 415,
+      "sha256": "1b7e9590b9ccefbf7904e59bbd861861ed223e268924c95b7bb25194f34a0c36"
+    },
+    {
+      "path": "assets/crossing/return.entry.png",
+      "bytes": 141,
+      "sha256": "a9a9a2dadece1284e2c14ea6b0e65b08fda38e251ed8d670650a688753a4ce13"
+    },
+    {
+      "path": "assets/crossing/return.exit.png",
+      "bytes": 141,
+      "sha256": "7186b900fd6ac4094dc379d0aeadacf83f813364dc887ef9ccfddbbe83a3f304"
+    },
+    {
+      "path": "assets/crossing/shot.enemy.png",
+      "bytes": 99,
+      "sha256": "1d629b1b1ec22a5953a1d3f1e9ee7b27cf323914f6ace685e5030b4a3518b6cf"
+    },
+    {
+      "path": "assets/crossing/shot.player.png",
+      "bytes": 100,
+      "sha256": "68572d35c041974285d5bca2e9e690db1baf3d68d50bb621de1ffc8936a645f3"
+    },
+    {
+      "path": "assets/crossing/stage.0.png",
+      "bytes": 159,
+      "sha256": "69aebfd689166e1e9ab3fafb091f0d8d177545ffbd4764d9be42c988411eedfe"
+    },
+    {
+      "path": "assets/crossing/stage.1.png",
+      "bytes": 164,
+      "sha256": "ab36394295fdb00faeb80225474fb41aed416c28baff600feb7d80f7c85a6cf1"
+    },
+    {
+      "path": "assets/crossing/stage.2.png",
+      "bytes": 163,
+      "sha256": "080e6bb092677fdbdd46c07e21fd4e7b048853adbb36e2a9e92a51f27c7efd7c"
+    },
+    {
+      "path": "assets/crossing/stage.3.png",
+      "bytes": 164,
+      "sha256": "a26a33b9c14d2fb7b86f100d81ab1fe56ed2be874698338bcf252d5d64e0f3ed"
+    },
+    {
+      "path": "assets/crossing/stage.4.png",
+      "bytes": 164,
+      "sha256": "3a41ef9a38e5178e1a825fcb7a46a352b8c35cd65a96c19c3e2aecbac6bdeff8"
+    },
+    {
+      "path": "assets/crossing/stage.5.png",
+      "bytes": 164,
+      "sha256": "04a6aacb5874ae8b0d5e5378201571e094640ebb6a7d9c5355bed5054f1a747c"
+    },
+    {
+      "path": "assets/crossing/stage.6.png",
+      "bytes": 164,
+      "sha256": "0e9afbca597d8fb463a3fa021bf899c802293da00ff21a21bcc1d2059805f4ec"
+    },
+    {
+      "path": "assets/crossing/stage.7.png",
+      "bytes": 168,
+      "sha256": "6b9a992d94dc81b1b3e838fdbadd8dacfabb57d80de834f3b92dcdb147e924a6"
+    },
+    {
+      "path": "hyperbolic-act.html",
+      "bytes": 10180,
+      "sha256": "fff027fdef9a0dac5198d2d3e9715072bd439f75772092255a6898f512cca6f2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 15402,
+      "sha256": "2e5d43a1a2b0de6da9824966407fbc4c17dd760483475e8f7714af78c333f78c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 580,
+      "sha256": "d02e7cd82e9d0ed4bf0929dd00888272da894d97acb0ba5fa1f050b3df6dbb9d"
+    },
+    {
+      "path": "repair-dock.html",
+      "bytes": 6835,
+      "sha256": "2a4b8f2495bfd5fbbe8a9798a322376cda30b7732f5cb41394dff9e876dad228"
+    },
+    {
+      "path": "src/act3-waves.js",
+      "bytes": 6882,
+      "sha256": "9936b2ffbee45597d233e1b404d485cca27873ad31f8a765bad255102ff55d69"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 81456,
+      "sha256": "bcaa38137685d563a61e2916f1bd06cbfcbc01f4d4db92b5f4c5f74750bf1a27"
+    },
+    {
+      "path": "src/asteroids.js",
+      "bytes": 2315,
+      "sha256": "9b964e1d29b94ce1d6c7a7915c0fb2bc3be5fecc6e553e903d01c36d8dceed22"
+    },
+    {
+      "path": "src/audio-interface.js",
+      "bytes": 1126,
+      "sha256": "493c570cc9b620ddce473516b9e7f6b255d04b912d01d3a4f873cf8771612bbd"
+    },
+    {
+      "path": "src/audio.js",
+      "bytes": 22096,
+      "sha256": "0c76531004831e6d1437d8d555f16038b0bd41ad7cf65d00379c4ff070684e5e"
+    },
+    {
+      "path": "src/av-events.js",
+      "bytes": 8655,
+      "sha256": "71ec172ffdc1d3bfcf32fc4893ece7a3a04f04df4cf3a3263eb3724d3e7e3e26"
+    },
+    {
+      "path": "src/boss.js",
+      "bytes": 21254,
+      "sha256": "7327dae3fbd22d046e803ffbf61e239f8fc4a91b522b567a44d6a1d8b7c8cbf6"
+    },
+    {
+      "path": "src/build.js",
+      "bytes": 285,
+      "sha256": "11750bac89e4d21565609667fb83d63239cdaea0ef33e8ed0668f2d2f8212ceb"
+    },
+    {
+      "path": "src/campaign-recorded-audio.js",
+      "bytes": 13446,
+      "sha256": "91c552befd69bd0bc14d2757c5029b180b99c67b77aab000ed58a325ff7bb350"
+    },
+    {
+      "path": "src/campaign.js",
+      "bytes": 41317,
+      "sha256": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd"
+    },
+    {
+      "path": "src/combat-view.js",
+      "bytes": 5910,
+      "sha256": "2cf4573b48b4bd9e2a269f53697a92b4dd57d94ec53618591f95931d7ce8872f"
+    },
+    {
+      "path": "src/ecology.js",
+      "bytes": 7287,
+      "sha256": "1fb6f25b758ce8c98fc10e127cf55bea14da16c84cd21626d1f9377cc52759f3"
+    },
+    {
+      "path": "src/fleet.js",
+      "bytes": 12568,
+      "sha256": "dcdb192d1cfd9db5413dc99753a478da556b23c9e264144c77bbd5da9027cf02"
+    },
+    {
+      "path": "src/fold-wake.js",
+      "bytes": 3547,
+      "sha256": "f33a2efc2764665bb8da1fca34a10a434db85e5e75931f0b34f4f5d02271cbc5"
+    },
+    {
+      "path": "src/geometry-cues.js",
+      "bytes": 3469,
+      "sha256": "552edbbae912a8a225e834ca73330f86534f1ed7067580fbf72744e3441db071"
+    },
+    {
+      "path": "src/hyperbolic-act.js",
+      "bytes": 21048,
+      "sha256": "af1ce0ee12ac447be72f6c5c56181aa4fc1347c2f45aa936718044a323f0fcaf"
+    },
+    {
+      "path": "src/hyperbolic-campaign.js",
+      "bytes": 24415,
+      "sha256": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432"
+    },
+    {
+      "path": "src/hyperbolic-visuals.js",
+      "bytes": 1935,
+      "sha256": "203014b395d6f8a71ecb96ab5370e2b763626a529970098cac0940b87f35ec6c"
+    },
+    {
+      "path": "src/hyperbolic.js",
+      "bytes": 5993,
+      "sha256": "cf15e8e05f6211e193c3155684150d0eddd2485f32f16faa60bbff538bd33fec"
+    },
+    {
+      "path": "src/interface.js",
+      "bytes": 19389,
+      "sha256": "6f995fe4721810aed2cd07b15ef46375f321f768a0d691cb9e7811a99292de37"
+    },
+    {
+      "path": "src/journey.js",
+      "bytes": 5537,
+      "sha256": "894ecd0eb3ce38c12c50e4f847c534927ab354a8c09f3abb6c81ab7ce04a5d31"
+    },
+    {
+      "path": "src/klein.js",
+      "bytes": 5364,
+      "sha256": "43f51da4bd51755de981a59d79d3b641da50796e28fa26200ddc87d7d5bcfab8"
+    },
+    {
+      "path": "src/manifold-visuals.js",
+      "bytes": 4872,
+      "sha256": "fc7bbf95f45bd910cb741667704627820acc95406e4fc01b337bcbd6615220a5"
+    },
+    {
+      "path": "src/music.js",
+      "bytes": 6670,
+      "sha256": "149cdd05fe68c1cd93ac614816ce23e278383f23b9c5b142d71388cc057fcba9"
+    },
+    {
+      "path": "src/operator-models.js",
+      "bytes": 10633,
+      "sha256": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2"
+    },
+    {
+      "path": "src/pixel-art.js",
+      "bytes": 2173,
+      "sha256": "1bc92e9307be773d1956d46e6097ed54ad57cd1c8e90cd70055eac884b65d73b"
+    },
+    {
+      "path": "src/progress-transfer.js",
+      "bytes": 3977,
+      "sha256": "6f80f24a96d3f7e23e2d7bc2cecd767ab003557c5c247165610fe7a4feb9de81"
+    },
+    {
+      "path": "src/projectile-id.js",
+      "bytes": 293,
+      "sha256": "6a722f82cac18b98a4c7d31830c0d63671b1df710e32fe0ea720831cc209c481"
+    },
+    {
+      "path": "src/random.js",
+      "bytes": 523,
+      "sha256": "9e58688ee9944d46c86b1b07ff3c9f905bf6d2dce4f3674fd99b5323ce3f1123"
+    },
+    {
+      "path": "src/renderer.js",
+      "bytes": 59817,
+      "sha256": "93ea451c5b47dc359407b57d9edb51938d4934605e7f0ddb1ed391019bc0d571"
+    },
+    {
+      "path": "src/repair-app.js",
+      "bytes": 12441,
+      "sha256": "9d1e74fc6fc700ce741374de36c20b335b54156d402fba497cc8a164a50d1bfb"
+    },
+    {
+      "path": "src/repair.js",
+      "bytes": 6626,
+      "sha256": "8f25a2bf20468b4975e718031a99cbe59308beaff8715ed6ebda37353b4cc03f"
+    },
+    {
+      "path": "src/simulation.js",
+      "bytes": 40845,
+      "sha256": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63"
+    },
+    {
+      "path": "src/space.js",
+      "bytes": 3515,
+      "sha256": "289c212b36b1c6a3329895cf126b73bcc6e478c049d9d3339b2179ade4b3e3c5"
+    },
+    {
+      "path": "src/stage-flow.js",
+      "bytes": 1720,
+      "sha256": "0a12dc5376ca71a360ebf4a1e46796c820a7a45b34e127020a51df503760cfc5"
+    },
+    {
+      "path": "src/storage.js",
+      "bytes": 7592,
+      "sha256": "638b2e0ce209cbd56f9e6ee024b90623b8e2e2d95de484ee7c27d6afcd36b66a"
+    },
+    {
+      "path": "src/structural-feedback.js",
+      "bytes": 2453,
+      "sha256": "ada0f4d71518bf86e1a43dc437356551146c242111d00e2d3dbd8b41030b9e9f"
+    },
+    {
+      "path": "src/upgrades.js",
+      "bytes": 9958,
+      "sha256": "86b2d3c2b0150c329944dbacfce687944366e2cec71ffaf4d443438749dfa239"
+    },
+    {
+      "path": "src/waves.js",
+      "bytes": 15349,
+      "sha256": "52d08fb10d9c4e9170b302d56ccdaf0a6036f7b69706c7a5166a69a106d23730"
+    },
+    {
+      "path": "style.css",
+      "bytes": 27272,
+      "sha256": "73f4b1d53089bb83903bfd50596a9cd4804f34835fcb510b6ab0f34b956d19d1"
+    },
+    {
+      "path": "tools/launch-local.py",
+      "bytes": 1502,
+      "sha256": "5494483bf74392e7c7bfdda0727fa47995c08041a3d14bbdcb24d4a94eb7562e"
+    },
+    {
+      "path": "tools/local-server.mjs",
+      "bytes": 3567,
+      "sha256": "ffc1251ccc83c53c0fcc51aa20b4a8775e8cb4ee1a12ba2e02054f489d0f05a1"
+    }
+  ]
+}

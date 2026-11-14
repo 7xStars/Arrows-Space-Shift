@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/7xStars/Arrows-Space-Shift",
+  "branch": "candidate/0.25.1-dev.1",
+  "commit": "97c52a599e3653f1dcc97b60bc97d267dd9aa325",
+  "parent": "4a1d77e255db437602de68871d9a57c6f47ecc4d",
+  "trackedFiles": 1662,
+  "selectedWorkingBytes": 335019182,
+  "bundle": "Arrow-Space-Shift-v0.25.1-dev.1-GIT.bundle",
+  "bundleBytes": 280898982,
+  "bundleSha256": "3c3be8b76b6ed9d5c4413a657a8e4b85bb9849ede0c3c4333f86a645c6c86648",
+  "bundleVerification": "passed",
+  "freshTests": 299,
+  "freshSyntaxFiles": 76,
+  "artExports": 109,
+  "runtimeComparisonFiles": 242,
+  "remoteUpdated": false,
+  "accessLimit": "The GitHub connection has no push permission. The local Git dry-run could not obtain a noninteractive login."
+}

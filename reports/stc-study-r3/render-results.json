@@ -1,0 +1,131 @@
+{
+  "revision": "stc-study-r3",
+  "score": {
+    "id": "identified-return-r3",
+    "title": "Identified Return",
+    "bpm": 134,
+    "bars": 40,
+    "stepsPerBar": 16,
+    "root": 29,
+    "description": "Hypnotic pulse, interlocking electro percussion, acid transformation, and sparse recovery."
+  },
+  "method": "Original synthesis in headless Edge OfflineAudioContext. No external recordings, normalization, playback-device observation, or listening acceptance.",
+  "mix": "Master1; music0.55, effects0.8, ambience0.25. Native safety compressor. Same synthesis as live study. Final fade only.",
+  "limits": "Crossing mix contains illustrative actual-shaped event fixtures. It is not a gameplay recording. The full study is not a seamless loop. Audio-only listening and physical output remain unverified.",
+  "results": [
+    {
+      "file": "ass-identified-return-r3-music.wav",
+      "id": "music",
+      "duration": 73.64179166666666,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.6369523406028748,
+      "peakDbfs": -3.9178612430112265,
+      "rms": 0.17271878620695305,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "voices": 0,
+        "sources": 4,
+        "identities": 0,
+        "seenEvents": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 9,
+        "peakSources": 18,
+        "dropped": 0,
+        "crossings": 0,
+        "steps": 640,
+        "crossingHistory": []
+      }
+    },
+    {
+      "file": "ass-identified-return-r3-crossing-mix.wav",
+      "id": "crossing-mix",
+      "duration": 26,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.6410617232322693,
+      "peakDbfs": -3.8620030673878687,
+      "rms": 0.16666210445950996,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "voices": 0,
+        "sources": 4,
+        "identities": 2,
+        "seenEvents": 5,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 9,
+        "peakSources": 18,
+        "dropped": 0,
+        "crossings": 5,
+        "steps": 223,
+        "crossingHistory": [
+          {
+            "eventId": "0",
+            "objectId": "probe-0",
+            "from": 0,
+            "to": 4,
+            "motif": 0,
+            "pan": 0.55,
+            "mode": "combined"
+          },
+          {
+            "eventId": "1",
+            "objectId": "probe-1",
+            "from": 1,
+            "to": 5,
+            "motif": 3,
+            "pan": -0.55,
+            "mode": "combined"
+          },
+          {
+            "eventId": "2",
+            "objectId": "probe-0",
+            "from": 2,
+            "to": 6,
+            "motif": 0,
+            "pan": 0.55,
+            "mode": "combined"
+          },
+          {
+            "eventId": "3",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 3,
+            "pan": -0.55,
+            "mode": "combined"
+          },
+          {
+            "eventId": "4",
+            "objectId": "probe-0",
+            "from": 4,
+            "to": 0,
+            "motif": 0,
+            "pan": 0.55,
+            "mode": "combined"
+          }
+        ]
+      }
+    }
+  ]
+}

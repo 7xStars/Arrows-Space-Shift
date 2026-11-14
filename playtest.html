@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Arrow Space Shift — Blind playtest</title>
+ <style>
+ :root{color-scheme:dark;font:16px system-ui,sans-serif;background:#080c10;color:#f0e4bd}
+ *{box-sizing:border-box}body{max-width:760px;padding:20px;margin:auto}h1{line-height:1.1;font-weight:550}h2{margin-top:30px}p{line-height:1.6;color:#bdc8d0}
+ fieldset{padding:15px;margin:18px 0;border:1px solid #626f79}legend{font-weight:600;color:#e7cb8d;padding:0 8px}
+ label{display:block;margin:10px 0;line-height:1.45}label.inline{display:inline-block;margin-right:18px}
+ textarea,input[type=text],select{background:#151d25;color:#f0e4bd;border:1px solid #6e8190;border-radius:4px;padding:9px;width:100%;font:inherit}
+ textarea{min-height:75px;resize:vertical}button,a.action{background:#263741;color:#fff;border:1px solid #98aec0;padding:10px 15px;margin:6px 8px 8px 0;cursor:pointer;text-decoration:none;display:inline-block;font:inherit}
+ button:focus-visible,a:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #d1aeea;outline-offset:3px}
+ .note{border-left:3px solid #9a7c55;padding:8px 14px;background:#11191f}.sub{font-size:13px;color:#aab9c6}
+ </style>
+</head>
+<body>
+<h1>Arrow Space Shift — Five-minute blind playtest</h1>
+<p class="note"><strong>No coaching during the run.</strong> Play the normal campaign for approximately five minutes and answer these questions afterward. Do not read guides or look up the intended SHIFT rule before playing. Use a keyboard and headphones if available.</p>
+<p>This page collects responses <strong>only in this browser</strong>. Nothing is submitted to a server. Download the JSON result and share it voluntarily with the developer.</p>
+<a class="action" href="./index.html" target="_blank" rel="noopener">Open game in another tab</a>
+<button type="button" id="start">Start five-minute timer</button><button type="button" id="end">End timer</button>
+<p id="clock" role="status">Timer not started. Start before launching the game.</p>
+<form id="survey">
+ <fieldset><legend>About this run</legend>
+ <label>Prior experience with scrolling shoot-'em-ups
+ <select name="experience" required><option value="">Choose</option><option value="new">New</option><option value="occasional">Occasional</option><option value="experienced">Experienced</option></select></label>
+ <label>How far did you get?<select name="stage"><option value="opening">Opening/tutorial</option><option value="early">Early Act I</option><option value="stage7">Stage 7 or later</option><option value="klein">Klein Fleet</option><option value="relay">Recovered Klein Relay</option><option value="act2">Act II</option></select></label>
+ <label>Device/input notes (optional)<input type="text" name="device" placeholder="e.g. desktop keyboard, 1080p"></label>
+ </fieldset>
+ <fieldset><legend>Observed behaviors — check only if demonstrated</legend>
+ <label><input type="checkbox" name="controls"> I could move and fire without outside help</label>
+ <label><input type="checkbox" name="fold"> I could explain a concrete effect of folding</label>
+ <label><input type="checkbox" name="damage"> I understood a hit/death and a different response worth trying</label>
+ <label><input type="checkbox" name="transfer"> I used a SHIFT idea in an unfamiliar situation without another prompt</label>
+ <label><input type="checkbox" name="continue"> I voluntarily wanted to keep playing after Act I</label>
+ </fieldset>
+ <fieldset><legend>Explain in your own words — no suggested answers</legend>
+ <label>What happened when you folded or unfolded space?<textarea name="foldExplanation" required></textarea></label>
+ <label>What changed when you recovered the Klein Relay? If you didn't reach it, say that.<textarea name="relayExplanation" required></textarea></label>
+ <label>What caused the most recent hit you remember? Could you tell what was about to happen?<textarea name="damageExplanation" required></textarea></label>
+ <label>What moment was most enjoyable or surprising?<textarea name="memorable" required></textarea></label>
+ <label>What was confusing, unfair, or unpleasant?<textarea name="confusing" required></textarea></label>
+ </fieldset>
+ <fieldset><legend>Jam-style ratings (1 = weak; 5 = exceptional)</legend>
+ <label>Overall<select name="overall" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ <label>Gameplay<select name="gameplay" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ <label>Graphics<select name="graphics" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ <label>Audio<select name="audio" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ <label>Innovation<select name="innovation" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ <label>Theme interpretation<select name="theme" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+ </fieldset>
+ <button type="submit">Download local JSON result</button>
+ <p id="status" role="status" class="sub">No responses have been recorded or transmitted.</p>
+</form>
+<script type="module">
+ import {FIRST_TIME_CHECKS} from './src/playtest-protocol.js';
+ const $=id=>document.getElementById(id);let started=0,elapsed=null;
+ $('start').onclick=()=>{started=performance.now();elapsed=null;$('clock').textContent='Timer started. Play the game in the other tab.';};
+ $('end').onclick=()=>{if(started){elapsed=Math.round((performance.now()-started)/1000);started=0;$('clock').textContent=`Elapsed: ${Math.floor(elapsed/60)}m ${elapsed%60}s. Complete the questions below.`;}};
+ $('survey').onsubmit=event=>{event.preventDefault();if(started){elapsed=Math.round((performance.now()-started)/1000);started=0;}
+   const form=new FormData(event.target),result={format:'ass-jam-playtest-v1',build:'0.23.2',elapsedSeconds:elapsed,recordedAt:new Date().toISOString(),responses:{}};
+   for(const [key,value] of form.entries())result.responses[key]=value;
+   for(const key of FIRST_TIME_CHECKS.map(t=>t.id))result.responses[key]=form.get(key)==='on';
+   const blob=new Blob([JSON.stringify(result,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');
+   link.href=url;link.download='arrow-space-shift-blind-playtest.json';link.click();URL.revokeObjectURL(url);
+   $('status').textContent='Downloaded locally. No data sent. Share the file only if you want the developer to review it.';
+ };
+</script>
+</body></html>

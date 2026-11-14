@@ -1,0 +1,44 @@
+✔ master and the three mix buses have independent gains (3.8258ms)
+✔ a critical warning replaces a lower priority voice at capacity (1.5206ms)
+✔ the semantic event priority reaches actual voice allocation (0.7136ms)
+✔ repeated procedural noise reuses bounded buffers and releases its nodes (1.8356ms)
+✔ gesture recovery resumes one existing context without duplicate construction (0.3749ms)
+✔ the six original arrangements are finite, distinct, and sparse during recovery (2.1716ms)
+✔ the retained offline score adapts without changing simulation state (0.875ms)
+✔ the retained offline ending plays its confirmed activation and arrangement (0.5344ms)
+✔ Act IV boss phase and recovery drive their actual score context (0.2243ms)
+✔ musical envelopes hold a sustain level while short effects keep their decay (0.2399ms)
+✔ an eight-bar melody and bass cadence continue independently of combat density (0.7784ms)
+✔ soft distortion curves are bounded, cached, and do not add gain (1.1146ms)
+✔ recorded selections use the existing four Act compositions and produced ending atmosphere (0.9268ms)
+✔ aligned core and atmosphere start on one audio clock with no repeating AudioBufferSource (2.532ms)
+✔ the next segment is scheduled before the boundary with complementary linear fades (0.9764ms)
+✔ pause and resume retain the position and do not decode the same segment again (0.7727ms)
+✔ flight recovery keeps a quiet rhythmic reference without restarting its sources (0.6508ms)
+✔ repair and ending retain the atmosphere-only mix (1.2877ms)
+✔ repeated critical warnings have a fixed attenuation floor and retain the music clock (1.578ms)
+✔ cache and node counts stay bounded through a whole finite arrangement and its repeat (1.8341ms)
+✔ a late request cannot restart a former Act after a selection change (0.3007ms)
+✔ a changed Act cancels its previous fetch before the next native decode job (0.4461ms)
+✔ a failed live recording leaves music silent and supports an explicit retry (0.3435ms)
+✔ live FlightAudio uses recorded music while action sounds retain the effects bus (1.4478ms)
+✔ a gesture without a new state retains the current Act and music position (0.3284ms)
+✔ real fold and unfold operations retain music sources and position in Acts I to III (8.3445ms)
+✔ an actual Echo Forge offer keeps the recovery rhythm and the source clock (1.2008ms)
+✔ Echo Forge music still obeys mute, manual pause, and page hiding (1.2099ms)
+✔ a live recording failure never invokes the rejected procedural score (0.2091ms)
+✔ the title request API uses the produced r9 asset and one context (0.2767ms)
+✔ a late title resume cannot override Stop, music mute, or a campaign launch (0.3845ms)
+✔ sound and music preferences block the title before audio initialization (0.1003ms)
+✔ a hidden page stops title sources, holds their position, and respects Stop on return (0.2401ms)
+✔ a title resume that finishes while hidden cannot start a source; offline rendering stays independent (0.1413ms)
+✔ hostile attack motifs retain identity across real topology changes and reject forecasts (1.1106ms)
+✔ the runtime recording manifest agrees with the exported aligned asset intervals (6.6727ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.7417

@@ -1,0 +1,256 @@
+{
+  "revision": "identified-return-r9-independent-output-audit",
+  "status": "passed",
+  "manifest_sha256": "35822dc4037281796c05426a0927403e478e6f819e0b6eedc09c27c47da936cd",
+  "renderer_sha256": "569864a6105318f2c2be3b97b610d6e1f1d49869a620b2893e946d2b2a98dd9f",
+  "files": {
+    "r8_music": {
+      "path": "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\ass-identified-return-r8-music.wav",
+      "sha256": "f9dec019ac909847619e18fd51f57e1dda99f4703b3ae60f5d75a12ba4c0d818",
+      "channels": 2,
+      "rate": 48000,
+      "frames": 3678806,
+      "sample_width_bytes": 2,
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -2.6567724413245593,
+      "rms_dbfs": -14.802069567695433,
+      "full_scale_samples": 0,
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "loudness": {
+        "integrated_lufs": -14.5,
+        "range_lu": 2.4,
+        "estimated_true_peak_dbfs": -2.7,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\ass-identified-return-r8-music.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r9\\qa\\r8_music-ebur128.txt",
+        "exit_code": 0
+      },
+      "channel_correlation": 0.9756289996897997,
+      "mono_fold_power_delta_db": -0.05435924827156459
+    },
+    "r9_music": {
+      "path": "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-percussion-r9\\ass-identified-return-r9-music.wav",
+      "sha256": "ef73e3bae4f7a991a6be08f65e1135524d48c596c38c79639b61b6dff60145c9",
+      "channels": 2,
+      "rate": 48000,
+      "frames": 3678806,
+      "sample_width_bytes": 2,
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -2.6567724413245593,
+      "rms_dbfs": -14.801326650611827,
+      "full_scale_samples": 0,
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "loudness": {
+        "integrated_lufs": -14.5,
+        "range_lu": 2.4,
+        "estimated_true_peak_dbfs": -2.7,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-percussion-r9\\ass-identified-return-r9-music.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r9\\qa\\r9_music-ebur128.txt",
+        "exit_code": 0
+      },
+      "channel_correlation": 0.9756296652688958,
+      "mono_fold_power_delta_db": -0.05435833972730498
+    },
+    "r8_percussion": {
+      "path": "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\mechanical-response.wav",
+      "sha256": "f1f05841aa439e57480d6d34e99d3cfa72ea470a7e41338433bb6d1b50884599",
+      "channels": 2,
+      "rate": 48000,
+      "frames": 3678806,
+      "sample_width_bytes": 2,
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -28.13093614584809,
+      "rms_dbfs": -62.455063678254064,
+      "full_scale_samples": 0,
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "loudness": {
+        "integrated_lufs": -50.7,
+        "range_lu": 10.2,
+        "estimated_true_peak_dbfs": -28.1,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\mechanical-response.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r9\\qa\\r8_percussion-ebur128.txt",
+        "exit_code": 0
+      },
+      "channel_correlation": 0.9798894371518975,
+      "mono_fold_power_delta_db": -0.04628234145414433
+    },
+    "r9_percussion": {
+      "path": "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-percussion-r9\\mechanical-response.wav",
+      "sha256": "e98ab5c36db6e6fd68709d05b5d31e37a289345510c1fe96e4d67a941d5acf2b",
+      "channels": 2,
+      "rate": 48000,
+      "frames": 3678806,
+      "sample_width_bytes": 2,
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -18.132062252666124,
+      "rms_dbfs": -52.45505109478496,
+      "full_scale_samples": 0,
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "loudness": {
+        "integrated_lufs": -40.7,
+        "range_lu": 10.2,
+        "estimated_true_peak_dbfs": -18.1,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-percussion-r9\\mechanical-response.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r9\\qa\\r9_percussion-ebur128.txt",
+        "exit_code": 0
+      },
+      "channel_correlation": 0.9798923838916438,
+      "mono_fold_power_delta_db": -0.046276049338967534
+    }
+  },
+  "comparison": {
+    "measured_percussion_rms_gain_db": 10.000012583469102,
+    "percussion_scaled_max_sample_error_lsb": 2.0747286907391356,
+    "full_mix_delta_minus_percussion_delta_max_lsb": 1.0,
+    "full_mix_sample_correlation": 0.9999598739272956,
+    "full_mix_loudness_change_lu": 0.0,
+    "percussion_sample_peak_change_db": 9.998873893181965
+  },
+  "sections": [
+    {
+      "id": "percussion-introduction",
+      "start_seconds": 7.204179104477612,
+      "end_seconds": 21.532537313432837,
+      "r8_percussion_rms_dbfs": -61.19566676565056,
+      "r9_percussion_rms_dbfs": -51.19563795017805,
+      "r9_percussion_peak_dbfs": -18.132062252666124,
+      "r9_percussion_to_r9_music_rms_db": -36.697455648682556,
+      "r9_music_rms_dbfs": -14.498182301495499,
+      "r9_percussion_nonzero_samples": 62420
+    },
+    {
+      "id": "first-voicing",
+      "start_seconds": 21.532537313432837,
+      "end_seconds": 35.86089552238806,
+      "r8_percussion_rms_dbfs": -61.41636122805056,
+      "r9_percussion_rms_dbfs": -51.41635960810675,
+      "r9_percussion_peak_dbfs": -18.132062252666124,
+      "r9_percussion_to_r9_music_rms_db": -37.249858876378966,
+      "r9_music_rms_dbfs": -14.16650073172779,
+      "r9_percussion_nonzero_samples": 62374
+    },
+    {
+      "id": "changed-voicing",
+      "start_seconds": 35.86089552238806,
+      "end_seconds": 50.189253731343285,
+      "r8_percussion_rms_dbfs": -60.95040231595117,
+      "r9_percussion_rms_dbfs": -50.95040250626067,
+      "r9_percussion_peak_dbfs": -18.132062252666124,
+      "r9_percussion_to_r9_music_rms_db": -36.81140379535503,
+      "r9_music_rms_dbfs": -14.138998710905653,
+      "r9_percussion_nonzero_samples": 62563
+    },
+    {
+      "id": "percussion-gap",
+      "start_seconds": 50.189253731343285,
+      "end_seconds": 57.3534328358209,
+      "r8_percussion_rms_dbfs": null,
+      "r9_percussion_rms_dbfs": null,
+      "r9_percussion_peak_dbfs": null,
+      "r9_percussion_to_r9_music_rms_db": null,
+      "r9_music_rms_dbfs": -16.45450976045373,
+      "r9_percussion_nonzero_samples": 0
+    },
+    {
+      "id": "return",
+      "start_seconds": 57.3534328358209,
+      "end_seconds": 71.68179104477613,
+      "r8_percussion_rms_dbfs": -61.2220801299861,
+      "r9_percussion_rms_dbfs": -51.22205979533203,
+      "r9_percussion_peak_dbfs": -18.132062252666124,
+      "r9_percussion_to_r9_music_rms_db": -37.40329976047497,
+      "r9_music_rms_dbfs": -13.818760034857062,
+      "r9_percussion_nonzero_samples": 62427
+    }
+  ],
+  "unrelated_components": {
+    "foundation-control.wav": {
+      "r8_sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "r9_sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "equal": true
+    },
+    "harmony-direct.wav": {
+      "r8_sha256": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078",
+      "r9_sha256": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078",
+      "equal": true
+    },
+    "gate-room-proof.wav": {
+      "r8_sha256": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29",
+      "r9_sha256": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29",
+      "equal": true
+    },
+    "room-gate-proof.wav": {
+      "r8_sha256": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f",
+      "r9_sha256": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f",
+      "equal": true
+    }
+  },
+  "technical_result": "Only the added percussion changes. The score, voices, foundation, harmony, and ordered room outputs retain their identities.",
+  "listening_risks": [
+    "Percussion is sparse. Its peak and overall gain rose, but its recognition against the original drums still needs a listener.",
+    "The original foundation remains audible through the added-layer gap.",
+    "This is a preference-directed comparison. It is not approval of the complete mix."
+  ],
+  "tools": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Andr\u00e9\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "numpy": "2.3.5",
+    "ffmpeg": "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe"
+  },
+  "limits": [
+    "No human listening, recognition, comfort, game masking, or physical-device result.",
+    "Mono power is a measurement, not perceptual approval.",
+    "True peak is the scanner estimate for the lossless PCM files."
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "zip": "releases\\0.24.2-dev.1\\Arrow-Space-Shift-v0.24.2-dev.1-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\0.25.0-dev.1\\Arrow-Space-Shift-v0.25.0-dev.1-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\stc-act-library-r1\\Arrow-Space-Shift-STC-Act-Library-r1-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\stc-study-r4\\Arrow-Space-Shift-STC-study-r4-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\stc-study-r5\\Arrow-Space-Shift-STC-study-r5-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\stc-study-r6\\Arrow-Space-Shift-STC-study-r6-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  },
+  {
+    "zip": "releases\\stc-study-r7\\Arrow-Space-Shift-STC-study-r7-SOURCE.zip",
+    "entry": "archive/workspace-v0.15.0-20261112/art/source/crossing.mjs",
+    "sha256": "4f3281485d30e4f24c02264e58c2e071d3aa26259f71a5fef3d67afd0de82a11",
+    "matches": false
+  }
+]

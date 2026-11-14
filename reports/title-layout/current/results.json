@@ -1,0 +1,2876 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "browser": "Microsoft Edge headless",
+  "cases": [
+    {
+      "width": 320,
+      "height": 568,
+      "title": [
+        {
+          "id": "title-music",
+          "tag": "BUTTON",
+          "text": "Stop title music",
+          "x": 90.59375,
+          "y": 495.03125,
+          "width": 138.8125,
+          "height": 39,
+          "inside": true,
+          "centerReceivesInput": false,
+          "disabled": false
+        },
+        {
+          "id": "primary",
+          "tag": "BUTTON",
+          "text": "Begin at Level 0",
+          "x": 81.984375,
+          "y": 542.03125,
+          "width": 156.03125,
+          "height": 46,
+          "inside": false,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-guide",
+          "tag": "BUTTON",
+          "text": "Guide",
+          "x": 200.75,
+          "y": 28,
+          "width": 46.671875,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-options",
+          "tag": "BUTTON",
+          "text": "Options",
+          "x": 253.5,
+          "y": 28,
+          "width": 56.5,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        }
+      ],
+      "dialogs": [
+        {
+          "name": "options",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close options",
+              "x": 195,
+              "y": 28,
+              "width": 86,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "text": "Sound on",
+              "x": 39,
+              "y": 167.640625,
+              "width": 89.703125,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 256.640625,
+              "width": 238,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 333.640625,
+              "width": 238,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 410.640625,
+              "width": 238,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 487.640625,
+              "width": 238,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 531.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 565.640625,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 599.640625,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 633.640625,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 667.640625,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 709.640625,
+              "width": 13.96875,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "text": "Retry section",
+              "x": 39,
+              "y": 1157.125,
+              "width": 109.5,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "text": "New run",
+              "x": 156.5,
+              "y": 1157.125,
+              "width": 82.46875,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "text": "Export progress",
+              "x": 39,
+              "y": 1406.765625,
+              "width": 127.015625,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "text": "Import progress",
+              "x": 39,
+              "y": 1452.765625,
+              "width": 129.28125,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Repair dock and campaign completion",
+              "x": 39,
+              "y": 1547.359375,
+              "width": 220.90625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close options",
+              "bounds": {
+                "x": 195,
+                "y": 28,
+                "width": 86,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "label": "Sound on",
+              "bounds": {
+                "x": 39,
+                "y": 167.640625,
+                "width": 89.703125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 256.640625,
+                "width": 238,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 333.640625,
+                "width": 238,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 410.640625,
+                "width": 238,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 487.640625,
+                "width": 238,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 520.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 520.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 520.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 520.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 520.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 274.640625,
+                "width": 13.96875,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "label": "Retry section",
+              "bounds": {
+                "x": 39,
+                "y": 265.125,
+                "width": 109.5,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "label": "New run",
+              "bounds": {
+                "x": 156.5,
+                "y": 265.125,
+                "width": 82.46875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "label": "Export progress",
+              "bounds": {
+                "x": 39,
+                "y": 500.765625,
+                "width": 127.015625,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "label": "Import progress",
+              "bounds": {
+                "x": 39,
+                "y": 500.765625,
+                "width": 129.28125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "A",
+              "label": "Repair dock and campaign completion",
+              "bounds": {
+                "x": 39,
+                "y": 506.359375,
+                "width": 220.90625,
+                "height": 17
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 280,
+            "clientWidth": 280,
+            "scrollHeight": 1591,
+            "clientHeight": 550,
+            "overflowY": "auto"
+          }
+        },
+        {
+          "name": "guide",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close flight guide",
+              "x": 175.828125,
+              "y": 28,
+              "width": 105.171875,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Section guide and campaign route",
+              "x": 39,
+              "y": 151.09375,
+              "width": 242,
+              "height": 36,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Open Act IV",
+              "x": 39,
+              "y": 2357.28125,
+              "width": 69.0625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "What changes?",
+              "x": 39,
+              "y": 2492.578125,
+              "width": 242,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "About this build",
+              "x": 39,
+              "y": 3269.15625,
+              "width": 242,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Upgrade counters · 3-Paley and 7-Paley",
+              "x": 39,
+              "y": 3346.15625,
+              "width": 242,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-stage",
+              "tag": "SELECT",
+              "text": "1-paradoxical · three operations2-paradoxical · seven operations",
+              "x": 39,
+              "y": 3531.859375,
+              "width": 242,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-a",
+              "tag": "SELECT",
+              "text": "Position WarpVector LensImpact Buffer",
+              "x": 39,
+              "y": 3631.859375,
+              "width": 242,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close flight guide",
+              "bounds": {
+                "x": 175.828125,
+                "y": 28,
+                "width": 105.171875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Section guide and campaign route",
+              "bounds": {
+                "x": 39,
+                "y": 151.09375,
+                "width": 242,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "What changes?",
+              "bounds": {
+                "x": 39,
+                "y": 265.578125,
+                "width": 242,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "About this build",
+              "bounds": {
+                "x": 39,
+                "y": 280.15625,
+                "width": 242,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Upgrade counters · 3-Paley and 7-Paley",
+              "bounds": {
+                "x": 39,
+                "y": 357.15625,
+                "width": 242,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 280,
+            "clientWidth": 280,
+            "scrollHeight": 3539,
+            "clientHeight": 550,
+            "overflowY": "auto"
+          }
+        }
+      ],
+      "failures": [],
+      "titleStructure": {
+        "body": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "scrollHeight": 568,
+          "clientHeight": 568,
+          "overflowY": "hidden"
+        },
+        "overlay": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "scrollHeight": 749,
+          "clientHeight": 568,
+          "overflowY": "auto"
+        },
+        "brief": {
+          "x": 14,
+          "y": 246.34375,
+          "width": 292,
+          "height": 395.6875,
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "scrollHeight": 396,
+          "clientHeight": 396,
+          "overflowY": "visible"
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 170.59375,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "scrollHeight": 170,
+          "clientHeight": 170,
+          "overflowY": "visible"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "title": [
+        {
+          "id": "title-music",
+          "tag": "BUTTON",
+          "text": "Stop title music",
+          "x": 47.578125,
+          "y": 441.40625,
+          "width": 138.8125,
+          "height": 39,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "primary",
+          "tag": "BUTTON",
+          "text": "Begin at Level 0",
+          "x": 186.390625,
+          "y": 438.90625,
+          "width": 156.03125,
+          "height": 46,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-guide",
+          "tag": "BUTTON",
+          "text": "Guide",
+          "x": 253.25,
+          "y": 28,
+          "width": 46.671875,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-options",
+          "tag": "BUTTON",
+          "text": "Options",
+          "x": 323.5,
+          "y": 28,
+          "width": 56.5,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        }
+      ],
+      "dialogs": [
+        {
+          "name": "options",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close options",
+              "x": 265,
+              "y": 28,
+              "width": 86,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "text": "Sound on",
+              "x": 39,
+              "y": 167.640625,
+              "width": 89.703125,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 256.640625,
+              "width": 308,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 333.640625,
+              "width": 308,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 410.640625,
+              "width": 308,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 487.640625,
+              "width": 308,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 531.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 565.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 599.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 633.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 667.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 701.640625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "text": "Retry section",
+              "x": 39,
+              "y": 1100.1875,
+              "width": 109.5,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "text": "New run",
+              "x": 156.5,
+              "y": 1100.1875,
+              "width": 82.46875,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "text": "Export progress",
+              "x": 39,
+              "y": 1329.03125,
+              "width": 127.015625,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "text": "Import progress",
+              "x": 174.015625,
+              "y": 1329.03125,
+              "width": 129.28125,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Repair dock and campaign completion",
+              "x": 39,
+              "y": 1402.828125,
+              "width": 220.90625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close options",
+              "bounds": {
+                "x": 265,
+                "y": 28,
+                "width": 86,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "label": "Sound on",
+              "bounds": {
+                "x": 39,
+                "y": 167.640625,
+                "width": 89.703125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 256.640625,
+                "width": 308,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 333.640625,
+                "width": 308,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 410.640625,
+                "width": 308,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 487.640625,
+                "width": 308,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 531.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 565.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 599.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 633.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 667.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 701.640625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "label": "Retry section",
+              "bounds": {
+                "x": 39,
+                "y": 480.1875,
+                "width": 109.5,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "label": "New run",
+              "bounds": {
+                "x": 156.5,
+                "y": 480.1875,
+                "width": 82.46875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "label": "Export progress",
+              "bounds": {
+                "x": 39,
+                "y": 709.03125,
+                "width": 127.015625,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "label": "Import progress",
+              "bounds": {
+                "x": 174.015625,
+                "y": 709.03125,
+                "width": 129.28125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "A",
+              "label": "Repair dock and campaign completion",
+              "bounds": {
+                "x": 39,
+                "y": 782.828125,
+                "width": 220.90625,
+                "height": 17
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 350,
+            "clientWidth": 350,
+            "scrollHeight": 1446,
+            "clientHeight": 826,
+            "overflowY": "auto"
+          }
+        },
+        {
+          "name": "guide",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close flight guide",
+              "x": 245.828125,
+              "y": 28,
+              "width": 105.171875,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Section guide and campaign route",
+              "x": 39,
+              "y": 151.09375,
+              "width": 312,
+              "height": 36,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Open Act IV",
+              "x": 79.28125,
+              "y": 1913.53125,
+              "width": 69.0625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "What changes?",
+              "x": 39,
+              "y": 2209.6875,
+              "width": 312,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "About this build",
+              "x": 39,
+              "y": 2945.984375,
+              "width": 312,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Upgrade counters · 3-Paley and 7-Paley",
+              "x": 39,
+              "y": 3022.984375,
+              "width": 312,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-stage",
+              "tag": "SELECT",
+              "text": "1-paradoxical · three operations2-paradoxical · seven operations",
+              "x": 39,
+              "y": 3186.546875,
+              "width": 312,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-a",
+              "tag": "SELECT",
+              "text": "Position WarpVector LensImpact Buffer",
+              "x": 39,
+              "y": 3286.546875,
+              "width": 312,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close flight guide",
+              "bounds": {
+                "x": 245.828125,
+                "y": 28,
+                "width": 105.171875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Section guide and campaign route",
+              "bounds": {
+                "x": 39,
+                "y": 151.09375,
+                "width": 312,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "What changes?",
+              "bounds": {
+                "x": 39,
+                "y": 403.6875,
+                "width": 312,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "About this build",
+              "bounds": {
+                "x": 39,
+                "y": 583.984375,
+                "width": 312,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Upgrade counters · 3-Paley and 7-Paley",
+              "bounds": {
+                "x": 39,
+                "y": 660.984375,
+                "width": 312,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 350,
+            "clientWidth": 350,
+            "scrollHeight": 3188,
+            "clientHeight": 826,
+            "overflowY": "auto"
+          }
+        }
+      ],
+      "failures": [],
+      "titleStructure": {
+        "body": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "scrollHeight": 844,
+          "clientHeight": 844,
+          "overflowY": "hidden"
+        },
+        "overlay": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "scrollHeight": 844,
+          "clientHeight": 844,
+          "overflowY": "auto"
+        },
+        "brief": {
+          "x": 14,
+          "y": 249.671875,
+          "width": 362,
+          "height": 289.234375,
+          "scrollWidth": 362,
+          "clientWidth": 362,
+          "scrollHeight": 289,
+          "clientHeight": 289,
+          "overflowY": "visible"
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 154.59375,
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "scrollHeight": 154,
+          "clientHeight": 154,
+          "overflowY": "visible"
+        }
+      }
+    },
+    {
+      "width": 640,
+      "height": 450,
+      "title": [
+        {
+          "id": "title-music",
+          "tag": "BUTTON",
+          "text": "Stop title music",
+          "x": 172.578125,
+          "y": 401.234375,
+          "width": 138.8125,
+          "height": 39,
+          "inside": true,
+          "centerReceivesInput": false,
+          "disabled": false
+        },
+        {
+          "id": "primary",
+          "tag": "BUTTON",
+          "text": "Begin at Level 0",
+          "x": 311.390625,
+          "y": 398.734375,
+          "width": 156.03125,
+          "height": 46,
+          "inside": true,
+          "centerReceivesInput": false,
+          "disabled": false
+        },
+        {
+          "id": "open-guide",
+          "tag": "BUTTON",
+          "text": "Guide",
+          "x": 522.828125,
+          "y": 11,
+          "width": 46.671875,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-options",
+          "tag": "BUTTON",
+          "text": "Options",
+          "x": 573.5,
+          "y": 11,
+          "width": 56.5,
+          "height": 30,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        }
+      ],
+      "dialogs": [
+        {
+          "name": "options",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close options",
+              "x": 515,
+              "y": 28,
+              "width": 86,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "text": "Sound on",
+              "x": 39,
+              "y": 150.59375,
+              "width": 89.703125,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 239.59375,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 316.59375,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 393.59375,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 41,
+              "y": 470.59375,
+              "width": 436,
+              "height": 24,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 514.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 548.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 582.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 616.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 650.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 39,
+              "y": 684.59375,
+              "width": 18,
+              "height": 18,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "text": "Retry section",
+              "x": 39,
+              "y": 1021.40625,
+              "width": 109.5,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "text": "New run",
+              "x": 156.5,
+              "y": 1021.40625,
+              "width": 82.46875,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "text": "Export progress",
+              "x": 39,
+              "y": 1250.25,
+              "width": 127.015625,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "text": "Import progress",
+              "x": 174.015625,
+              "y": 1250.25,
+              "width": 129.28125,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Repair dock and campaign completion",
+              "x": 39,
+              "y": 1324.046875,
+              "width": 220.90625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close options",
+              "bounds": {
+                "x": 515,
+                "y": 28,
+                "width": 86,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "label": "Sound on",
+              "bounds": {
+                "x": 39,
+                "y": 150.59375,
+                "width": 89.703125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 239.59375,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 316.59375,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 393.59375,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 41,
+                "y": 212.59375,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 256.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 290.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 324.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 358.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 392.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 39,
+                "y": 402.59375,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "label": "Retry section",
+              "bounds": {
+                "x": 39,
+                "y": 206.40625,
+                "width": 109.5,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "label": "New run",
+              "bounds": {
+                "x": 156.5,
+                "y": 206.40625,
+                "width": 82.46875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "label": "Export progress",
+              "bounds": {
+                "x": 39,
+                "y": 383.25,
+                "width": 127.015625,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "label": "Import progress",
+              "bounds": {
+                "x": 174.015625,
+                "y": 383.25,
+                "width": 129.28125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "A",
+              "label": "Repair dock and campaign completion",
+              "bounds": {
+                "x": 39,
+                "y": 389.046875,
+                "width": 220.90625,
+                "height": 17
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 600,
+            "clientWidth": 600,
+            "scrollHeight": 1367,
+            "clientHeight": 432,
+            "overflowY": "auto"
+          }
+        },
+        {
+          "name": "guide",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close flight guide",
+              "x": 495.828125,
+              "y": 28,
+              "width": 105.171875,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Section guide and campaign route",
+              "x": 39,
+              "y": 134.046875,
+              "width": 562,
+              "height": 36,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Open Act IV",
+              "x": 140.609375,
+              "y": 1372.828125,
+              "width": 69.0625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "What changes?",
+              "x": 39,
+              "y": 1854.90625,
+              "width": 562,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "About this build",
+              "x": 39,
+              "y": 2521.265625,
+              "width": 562,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Upgrade counters · 3-Paley and 7-Paley",
+              "x": 39,
+              "y": 2598.265625,
+              "width": 562,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-stage",
+              "tag": "SELECT",
+              "text": "1-paradoxical · three operations2-paradoxical · seven operations",
+              "x": 39,
+              "y": 2721.546875,
+              "width": 562,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-a",
+              "tag": "SELECT",
+              "text": "Position WarpVector LensImpact Buffer",
+              "x": 39,
+              "y": 2821.546875,
+              "width": 562,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close flight guide",
+              "bounds": {
+                "x": 495.828125,
+                "y": 28,
+                "width": 105.171875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Section guide and campaign route",
+              "bounds": {
+                "x": 39,
+                "y": 134.046875,
+                "width": 562,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "What changes?",
+              "bounds": {
+                "x": 39,
+                "y": 206.90625,
+                "width": 562,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "About this build",
+              "bounds": {
+                "x": 39,
+                "y": 210.265625,
+                "width": 562,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Upgrade counters · 3-Paley and 7-Paley",
+              "bounds": {
+                "x": 39,
+                "y": 287.265625,
+                "width": 562,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 600,
+            "clientWidth": 600,
+            "scrollHeight": 2743,
+            "clientHeight": 432,
+            "overflowY": "auto"
+          }
+        }
+      ],
+      "failures": [],
+      "titleStructure": {
+        "body": {
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 450,
+          "scrollWidth": 640,
+          "clientWidth": 640,
+          "scrollHeight": 450,
+          "clientHeight": 450,
+          "overflowY": "hidden"
+        },
+        "overlay": {
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 450,
+          "scrollWidth": 640,
+          "clientWidth": 640,
+          "scrollHeight": 590,
+          "clientHeight": 450,
+          "overflowY": "auto"
+        },
+        "brief": {
+          "x": 40,
+          "y": 209.5,
+          "width": 560,
+          "height": 273.234375,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "scrollHeight": 273,
+          "clientHeight": 273,
+          "overflowY": "visible"
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 142,
+          "scrollWidth": 640,
+          "clientWidth": 640,
+          "scrollHeight": 141,
+          "clientHeight": 141,
+          "overflowY": "visible"
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "title": [
+        {
+          "id": "title-music",
+          "tag": "BUTTON",
+          "text": "Stop title music",
+          "x": 492.578125,
+          "y": 525.65625,
+          "width": 138.8125,
+          "height": 39,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "primary",
+          "tag": "BUTTON",
+          "text": "Begin at Level 0",
+          "x": 631.390625,
+          "y": 523.15625,
+          "width": 156.03125,
+          "height": 46,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-guide",
+          "tag": "BUTTON",
+          "text": "Guide",
+          "x": 717.375,
+          "y": 13,
+          "width": 55.28125,
+          "height": 34,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        },
+        {
+          "id": "open-options",
+          "tag": "BUTTON",
+          "text": "Options",
+          "x": 778.65625,
+          "y": 13,
+          "width": 66,
+          "height": 34,
+          "inside": true,
+          "centerReceivesInput": true,
+          "disabled": false
+        }
+      ],
+      "dialogs": [
+        {
+          "name": "options",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close options",
+              "x": 891,
+              "y": 39,
+              "width": 102,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "text": "Sound on",
+              "x": 287,
+              "y": 163.140625,
+              "width": 89.703125,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 289,
+              "y": 252.140625,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 289,
+              "y": 329.140625,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 289,
+              "y": 406.140625,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "text": "range",
+              "x": 289,
+              "y": 483.140625,
+              "width": 436,
+              "height": 24,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 527.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 561.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 595.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 629.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 663.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "text": "checkbox",
+              "x": 287,
+              "y": 697.140625,
+              "width": 18,
+              "height": 18,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "text": "Retry section",
+              "x": 287,
+              "y": 1013.15625,
+              "width": 109.5,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "text": "New run",
+              "x": 404.5,
+              "y": 1013.15625,
+              "width": 82.46875,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "text": "Export progress",
+              "x": 287,
+              "y": 1242,
+              "width": 127.015625,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "text": "Import progress",
+              "x": 422.015625,
+              "y": 1242,
+              "width": 129.28125,
+              "height": 38,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Repair dock and campaign completion",
+              "x": 287,
+              "y": 1315.796875,
+              "width": 220.90625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close options",
+              "bounds": {
+                "x": 891,
+                "y": 39,
+                "width": 102,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "sound",
+              "tag": "BUTTON",
+              "label": "Sound on",
+              "bounds": {
+                "x": 287,
+                "y": 163.140625,
+                "width": 89.703125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 289,
+                "y": 252.140625,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 289,
+                "y": 329.140625,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "effects-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 289,
+                "y": 406.140625,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "ambience-volume",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 289,
+                "y": 483.140625,
+                "width": 436,
+                "height": 24
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "music",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 527.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "juice",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 561.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "reduced-motion",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 595.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "collision-core",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 629.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "pattern-labels",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 663.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "manifold-cues",
+              "tag": "INPUT",
+              "label": "",
+              "bounds": {
+                "x": 287,
+                "y": 697.140625,
+                "width": 18,
+                "height": 18
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "restart",
+              "tag": "BUTTON",
+              "label": "Retry section",
+              "bounds": {
+                "x": 287,
+                "y": 525.15625,
+                "width": 109.5,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "new-run",
+              "tag": "BUTTON",
+              "label": "New run",
+              "bounds": {
+                "x": 404.5,
+                "y": 525.15625,
+                "width": 82.46875,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "export-progress",
+              "tag": "BUTTON",
+              "label": "Export progress",
+              "bounds": {
+                "x": 287,
+                "y": 754,
+                "width": 127.015625,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": "import-progress-button",
+              "tag": "BUTTON",
+              "label": "Import progress",
+              "bounds": {
+                "x": 422.015625,
+                "y": 754,
+                "width": 129.28125,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "A",
+              "label": "Repair dock and campaign completion",
+              "bounds": {
+                "x": 287,
+                "y": 827.796875,
+                "width": 220.90625,
+                "height": 17
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 758,
+            "clientWidth": 758,
+            "scrollHeight": 1362,
+            "clientHeight": 874,
+            "overflowY": "auto"
+          }
+        },
+        {
+          "name": "guide",
+          "initial": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Close flight guide",
+              "x": 870.09375,
+              "y": 39,
+              "width": 122.90625,
+              "height": 38,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Section guide and campaign route",
+              "x": 287,
+              "y": 146.59375,
+              "width": 706,
+              "height": 36,
+              "inside": true,
+              "centerReceivesInput": true,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Open Act IV",
+              "x": 891.90625,
+              "y": 1284.671875,
+              "width": 69.0625,
+              "height": 17,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "What changes?",
+              "x": 287,
+              "y": 1497.3125,
+              "width": 706,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "About this build",
+              "x": 287,
+              "y": 2163.671875,
+              "width": 706,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "",
+              "tag": "SUMMARY",
+              "text": "Upgrade counters · 3-Paley and 7-Paley",
+              "x": 287,
+              "y": 2240.671875,
+              "width": 706,
+              "height": 36,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-stage",
+              "tag": "SELECT",
+              "text": "1-paradoxical · three operations2-paradoxical · seven operations",
+              "x": 287,
+              "y": 2363.953125,
+              "width": 706,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            },
+            {
+              "id": "graph-a",
+              "tag": "SELECT",
+              "text": "Position WarpVector LensImpact Buffer",
+              "x": 287,
+              "y": 2463.953125,
+              "width": 706,
+              "height": 43,
+              "inside": false,
+              "centerReceivesInput": false,
+              "disabled": false
+            }
+          ],
+          "controls": [
+            {
+              "id": null,
+              "tag": "BUTTON",
+              "label": "Close flight guide",
+              "bounds": {
+                "x": 870.09375,
+                "y": 39,
+                "width": 122.90625,
+                "height": 38
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Section guide and campaign route",
+              "bounds": {
+                "x": 287,
+                "y": 146.59375,
+                "width": 706,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "What changes?",
+              "bounds": {
+                "x": 287,
+                "y": 432.3125,
+                "width": 706,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "About this build",
+              "bounds": {
+                "x": 287,
+                "y": 648.671875,
+                "width": 706,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            },
+            {
+              "id": null,
+              "tag": "SUMMARY",
+              "label": "Upgrade counters · 3-Paley and 7-Paley",
+              "bounds": {
+                "x": 287,
+                "y": 725.671875,
+                "width": 706,
+                "height": 36
+              },
+              "inside": true,
+              "reachable": true
+            }
+          ],
+          "structure": {
+            "scrollWidth": 758,
+            "clientWidth": 758,
+            "scrollHeight": 2389,
+            "clientHeight": 874,
+            "overflowY": "auto"
+          }
+        }
+      ],
+      "failures": [],
+      "titleStructure": {
+        "body": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scrollWidth": 1280,
+          "clientWidth": 1280,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "overflowY": "hidden"
+        },
+        "overlay": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "scrollWidth": 1280,
+          "clientWidth": 1280,
+          "scrollHeight": 900,
+          "clientHeight": 900,
+          "overflowY": "auto"
+        },
+        "brief": {
+          "x": 360,
+          "y": 210.78125,
+          "width": 560,
+          "height": 423.5625,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "scrollHeight": 424,
+          "clientHeight": 424,
+          "overflowY": "visible"
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 111.78125,
+          "scrollWidth": 1280,
+          "clientWidth": 1280,
+          "scrollHeight": 111,
+          "clientHeight": 111,
+          "overflowY": "visible"
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "limits": "Four CSS viewport sizes. Actual layout, control bounds, trial click access, and dialog scrolling. No physical mobile, touch hardware, keyboard overlay, 200 percent zoom, translation, or RTL result."
+}

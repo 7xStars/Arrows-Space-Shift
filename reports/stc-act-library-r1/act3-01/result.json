@@ -1,0 +1,80 @@
+{
+  "id": "act3-01",
+  "source_fingerprint": "454de9facf8e441ca1b7f319fb66ae5c93f3f58e900f346cc9f9185c4ed90b38",
+  "native": {
+    "exit_code": 0,
+    "seconds": 0.406
+  },
+  "events": 904,
+  "metrics": {
+    "frames": 2880000,
+    "sampleRate": 48000,
+    "channels": 2,
+    "seconds": 60,
+    "nonFinite": 0,
+    "fullScale": 0,
+    "commonGain": 1.5336376518148667,
+    "peaks": [
+      0.8199998096665261,
+      0.82,
+      0.004766060783023422
+    ],
+    "rms": [
+      0.1256724620081441,
+      0.12567339061611885,
+      0.0003761740994210672
+    ],
+    "regionRms": [
+      0.11691890468625207,
+      0.11709015942248546,
+      0.1476762576972577,
+      0.14772418386956573,
+      0.10253350010900628,
+      0.11769642244464373,
+      0.14907617254388736,
+      0.09353300295772873
+    ],
+    "mix": "One common linear gain for full, core, and atmosphere. No independent normalization or shared nonlinear processor.",
+    "tail": "Exact track duration includes the final three-second fade. No seamless-loop claim."
+  },
+  "master": {
+    "file": "audio/stc-act-library-r1/masters/act3-01.wav",
+    "sha256": "d0a5a77d42422d3a95ec3bc5d2239bba0988e370d04ee876c357f51536bc1c04",
+    "bytes": 11520044
+  },
+  "outputs": [
+    {
+      "kind": "full",
+      "file": "act3-01.ogg",
+      "bytes": 1286138,
+      "sha256": "a06de510d6ea7f1c2a743bf55eab010a345d3e5e9afa4f8f12d451e1e9f32daf"
+    },
+    {
+      "kind": "core",
+      "file": "act3-01-core.ogg",
+      "bytes": 1286776,
+      "sha256": "c8b14df2a134a44979a2214957a8bd49636e3d3e56c60271c66ebd24a51f8e33"
+    },
+    {
+      "kind": "atmosphere",
+      "file": "act3-01-atmosphere.ogg",
+      "bytes": 393453,
+      "sha256": "b28041f8a3f0bc5472ca0402c9da46a1351b267f4d09a9790b7c79abe4ec5d93"
+    }
+  ],
+  "preview": {
+    "file": "act3-01-preview.ogg",
+    "start": 16.200000000000003,
+    "seconds": 20,
+    "sha256": "88cc4c0e62cabc2e9119403ad70d99342a045db2426525171be081e62bf1bad6"
+  },
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Compose note, rhythm, transformation, and irregular atmosphere events with installed FoxDot Pattern classes."
+  }
+}

@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 0000020c8c0382c0] Guessed Channel Layout: stereo
+Input #0, wav, from 'G:\Music Projects\Arrow Space Shift\stc-tempo-r2\masters\tempo-act1-01.wav':
+  Duration: 00:02:00.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'D:\Projects\games\game-off-2026\assets\audio\stc-tempo-r2\tempo-act1-01.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+size=     512KiB time=00:00:34.89 bitrate= 120.2kbits/s speed=68.3x elapsed=0:00:00.51    size=    1536KiB time=00:01:19.30 bitrate= 158.7kbits/s speed=77.4x elapsed=0:00:01.02    [out#0/ogg @ 0000020c8c034600] video:0KiB audio:2443KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 1.068508%
+size=    2469KiB time=00:02:00.00 bitrate= 168.6kbits/s speed=80.3x elapsed=0:00:01.49    

@@ -1,0 +1,42 @@
+compiling class library...
+	Found 873 primitives.
+	Compiling directory 'G:\Music Tools\SuperCollider\App\SuperCollider\SCClassLibrary'
+	numentries = 847497 / 12574458 = 0.067
+	5559 method selectors, 2262 classes
+	method table size 13449384 bytes, big table size 100595664
+	Number of Symbols 12491
+	Byte Code Size 384706
+	compiled 331 files in 0.39 seconds
+
+Info: 2 methods are currently overwritten by extensions. To see which, execute:
+MethodOverride.printAll
+
+compile done
+localhost : setting clientID to 0.
+internal : setting clientID to 0.
+Class tree inited in 0.18 seconds
+
+
+*** Welcome to SuperCollider 3.14.1. *** For help press F1.
+ASS_TEMPO_LIBRARY_SYNTHDEFS_WRITTEN
+cleaning up OSC
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoKick.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoKick.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoBass.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoBass.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoHat.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoHat.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoSnare.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoSnare.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoMetal.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoMetal.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoStab.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoStab.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoPad.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoPad.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoNoise.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoNoise.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoPan.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoPan.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoMix.*meta
+Could Not Find G:\Music Projects\Arrow Space Shift\stc-tempo-r2\synthdefs\assTempoMix.*meta

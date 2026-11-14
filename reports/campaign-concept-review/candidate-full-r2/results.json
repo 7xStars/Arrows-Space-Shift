@@ -1,0 +1,2336 @@
+{
+  "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\campaign-candidate-20261113",
+  "started": "2026-11-13T17:21:04.956Z",
+  "method": "Fresh isolated browser storage. Keyboard steering, held manual fire, capture, release, fold, and ordinary page controls. State APIs and localStorage are read only. No QA route, profile seed, position, hull, invulnerability, spawn, damage, or simulation setter is used.",
+  "clock": "Playwright browser virtual clock. Each step runs scheduled browser frames. Audio remains a separate clock.",
+  "limits": "State-informed automated input is not human play or a perception test. Threat forecasts use local approximations. A loss or timeout can be a controller limit. Virtual time does not establish physical reaction time, audio synchronization, listening quality, or device frame rate.",
+  "result": "incomplete",
+  "sections": [
+    {
+      "chapter": -1,
+      "name": "Flight controls",
+      "attempt": 1,
+      "result": "automatic tutorial clear",
+      "hull": 5,
+      "seconds": 2.12,
+      "wallSeconds": 0.37,
+      "score": 100,
+      "kills": 1,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 0,
+      "name": "Two Sides",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 39.95,
+      "wallSeconds": 11.6,
+      "score": 1300,
+      "kills": 13,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 1,
+      "name": "Quiet Belt",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 26.3,
+      "wallSeconds": 12.43,
+      "score": 1650,
+      "kills": 16,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 2,
+      "name": "Counter Cycle",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.27,
+      "wallSeconds": 32.73,
+      "score": 3150,
+      "kills": 31,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 3,
+      "name": "Loose Stones",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 30.73,
+      "wallSeconds": 25.55,
+      "score": 3590,
+      "kills": 34,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 4,
+      "name": "Seven Operations",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.97,
+      "wallSeconds": 70.21,
+      "score": 5390,
+      "kills": 52,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 5,
+      "name": "Drift Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 35.17,
+      "wallSeconds": 57.07,
+      "score": 5910,
+      "kills": 56,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 6,
+      "name": "Front and Back",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 59.68,
+      "wallSeconds": 111.8,
+      "score": 8010,
+      "kills": 77,
+      "boss": null,
+      "part": null,
+      "damage": [
+        {
+          "time": 274.6999999999145,
+          "type": "damage",
+          "reason": "Ship contact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 320,
+          "z": 3518.25,
+          "source": "ship",
+          "target": 70
+        }
+      ],
+      "deathRecap": null
+    },
+    {
+      "chapter": 7,
+      "name": "Last Approach",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 39.67,
+      "wallSeconds": 89.38,
+      "score": 8440,
+      "kills": 80,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 8,
+      "name": "The Klein Fleet",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 52.09,
+      "wallSeconds": 175.53,
+      "score": 8740,
+      "kills": 83,
+      "boss": "exit",
+      "part": {
+        "id": "klein-relay",
+        "x": -219.125,
+        "z": 765.4999999999999,
+        "collected": true,
+        "readyAt": 375.81666666648954
+      },
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 9,
+      "name": "Return Flight",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.24,
+      "wallSeconds": 23.91,
+      "score": 9580,
+      "kills": 90,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 10,
+      "name": "Intentional Crossing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.35,
+      "wallSeconds": 16.98,
+      "score": 10655,
+      "kills": 99,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 11,
+      "name": "Returning Fire",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.54,
+      "wallSeconds": 18.81,
+      "score": 11970,
+      "kills": 110,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 12,
+      "name": "Seam Gap",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 49.54,
+      "wallSeconds": 21.11,
+      "score": 13575,
+      "kills": 125,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 13,
+      "name": "Cross Current",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.89,
+      "wallSeconds": 24.17,
+      "score": 15740,
+      "kills": 143,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 14,
+      "name": "Fold Timing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 51.91,
+      "wallSeconds": 22.2,
+      "score": 16475,
+      "kills": 150,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 15,
+      "name": "Pressure Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 57.38,
+      "wallSeconds": 31.81,
+      "score": 19240,
+      "kills": 173,
+      "boss": null,
+      "part": null,
+      "damage": [
+        {
+          "time": 739.2333333328254,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": -362,
+          "z": 1448.75,
+          "source": "projectile",
+          "sourceId": 90,
+          "sourceName": "Field Overseer",
+          "pattern": "fan",
+          "patternName": "FAN",
+          "geometryRule": "klein",
+          "surfaceCrossings": 4,
+          "lastEdge": "bottom",
+          "damageMultiplier": 1
+        }
+      ],
+      "deathRecap": null
+    },
+    {
+      "chapter": 16,
+      "name": "Klein Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 61.87,
+      "wallSeconds": 33.56,
+      "score": 21640,
+      "kills": 192,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 17,
+      "name": "The Projective Intrusion",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 75.99,
+      "wallSeconds": 45.68,
+      "score": 22150,
+      "kills": 195,
+      "boss": "exit",
+      "part": {
+        "id": "projective-module",
+        "x": 182.74999999996848,
+        "z": 6.333333333175759,
+        "collected": true,
+        "readyAt": 864.258333332712
+      },
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 18,
+      "name": "Projective Chart",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.12,
+      "wallSeconds": 23.61,
+      "score": 23220,
+      "kills": 205,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 19,
+      "name": "Echo Capture",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.32,
+      "wallSeconds": 36.16,
+      "score": 24270,
+      "kills": 214,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 20,
+      "name": "Echo Release",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.56,
+      "wallSeconds": 48.87,
+      "score": 25485,
+      "kills": 224,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 21,
+      "name": "Ordered Synthesis",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 50.72,
+      "wallSeconds": 36.02,
+      "score": 26735,
+      "kills": 234,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 22,
+      "name": "Stellar Harvest",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 55.19,
+      "wallSeconds": 40.5,
+      "score": 28930,
+      "kills": 252,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 23,
+      "name": "Antipodal Storm",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 56.35,
+      "wallSeconds": 45.3,
+      "score": 30465,
+      "kills": 263,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 24,
+      "name": "Power Without Passivity",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 58.53,
+      "wallSeconds": 47.34,
+      "score": 31755,
+      "kills": 274,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 25,
+      "name": "Projective Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 61.84,
+      "wallSeconds": 54.76,
+      "score": 33715,
+      "kills": 287,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 26,
+      "name": "The Curvature Gate",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 45.4,
+      "wallSeconds": 43.8,
+      "score": 34805,
+      "kills": 290,
+      "boss": "exit",
+      "part": {
+        "id": "curvature-seed",
+        "x": -107.1249999999854,
+        "z": 153.7500000000001,
+        "collected": true,
+        "readyAt": 1329.833333336456
+      },
+      "damage": [],
+      "deathRecap": null
+    }
+  ],
+  "attempts": [
+    {
+      "chapter": -1,
+      "name": "Flight controls",
+      "attempt": 1,
+      "result": "automatic tutorial clear",
+      "hull": 5,
+      "seconds": 2.12,
+      "wallSeconds": 0.37,
+      "score": 100,
+      "kills": 1,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 0,
+      "name": "Two Sides",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 39.95,
+      "wallSeconds": 11.6,
+      "score": 1300,
+      "kills": 13,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 1,
+      "name": "Quiet Belt",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 26.3,
+      "wallSeconds": 12.43,
+      "score": 1650,
+      "kills": 16,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 2,
+      "name": "Counter Cycle",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.27,
+      "wallSeconds": 32.73,
+      "score": 3150,
+      "kills": 31,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 3,
+      "name": "Loose Stones",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 30.73,
+      "wallSeconds": 25.55,
+      "score": 3590,
+      "kills": 34,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 4,
+      "name": "Seven Operations",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.97,
+      "wallSeconds": 70.21,
+      "score": 5390,
+      "kills": 52,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 5,
+      "name": "Drift Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 35.17,
+      "wallSeconds": 57.07,
+      "score": 5910,
+      "kills": 56,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 6,
+      "name": "Front and Back",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 59.68,
+      "wallSeconds": 111.8,
+      "score": 8010,
+      "kills": 77,
+      "boss": null,
+      "part": null,
+      "damage": [
+        {
+          "time": 274.6999999999145,
+          "type": "damage",
+          "reason": "Ship contact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 320,
+          "z": 3518.25,
+          "source": "ship",
+          "target": 70
+        }
+      ],
+      "deathRecap": null
+    },
+    {
+      "chapter": 7,
+      "name": "Last Approach",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 39.67,
+      "wallSeconds": 89.38,
+      "score": 8440,
+      "kills": 80,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 8,
+      "name": "The Klein Fleet",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 52.09,
+      "wallSeconds": 175.53,
+      "score": 8740,
+      "kills": 83,
+      "boss": "exit",
+      "part": {
+        "id": "klein-relay",
+        "x": -219.125,
+        "z": 765.4999999999999,
+        "collected": true,
+        "readyAt": 375.81666666648954
+      },
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 9,
+      "name": "Return Flight",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.24,
+      "wallSeconds": 23.91,
+      "score": 9580,
+      "kills": 90,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 10,
+      "name": "Intentional Crossing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.35,
+      "wallSeconds": 16.98,
+      "score": 10655,
+      "kills": 99,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 11,
+      "name": "Returning Fire",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.54,
+      "wallSeconds": 18.81,
+      "score": 11970,
+      "kills": 110,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 12,
+      "name": "Seam Gap",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 49.54,
+      "wallSeconds": 21.11,
+      "score": 13575,
+      "kills": 125,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 13,
+      "name": "Cross Current",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 52.89,
+      "wallSeconds": 24.17,
+      "score": 15740,
+      "kills": 143,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 14,
+      "name": "Fold Timing",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 51.91,
+      "wallSeconds": 22.2,
+      "score": 16475,
+      "kills": 150,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 15,
+      "name": "Pressure Field",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 57.38,
+      "wallSeconds": 31.81,
+      "score": 19240,
+      "kills": 173,
+      "boss": null,
+      "part": null,
+      "damage": [
+        {
+          "time": 739.2333333328254,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": -362,
+          "z": 1448.75,
+          "source": "projectile",
+          "sourceId": 90,
+          "sourceName": "Field Overseer",
+          "pattern": "fan",
+          "patternName": "FAN",
+          "geometryRule": "klein",
+          "surfaceCrossings": 4,
+          "lastEdge": "bottom",
+          "damageMultiplier": 1
+        }
+      ],
+      "deathRecap": null
+    },
+    {
+      "chapter": 16,
+      "name": "Klein Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 61.87,
+      "wallSeconds": 33.56,
+      "score": 21640,
+      "kills": 192,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 17,
+      "name": "The Projective Intrusion",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 75.99,
+      "wallSeconds": 45.68,
+      "score": 22150,
+      "kills": 195,
+      "boss": "exit",
+      "part": {
+        "id": "projective-module",
+        "x": 182.74999999996848,
+        "z": 6.333333333175759,
+        "collected": true,
+        "readyAt": 864.258333332712
+      },
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 18,
+      "name": "Projective Chart",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 43.12,
+      "wallSeconds": 23.61,
+      "score": 23220,
+      "kills": 205,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 19,
+      "name": "Echo Capture",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 46.32,
+      "wallSeconds": 36.16,
+      "score": 24270,
+      "kills": 214,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 20,
+      "name": "Echo Release",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 48.56,
+      "wallSeconds": 48.87,
+      "score": 25485,
+      "kills": 224,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 21,
+      "name": "Ordered Synthesis",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 50.72,
+      "wallSeconds": 36.02,
+      "score": 26735,
+      "kills": 234,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 22,
+      "name": "Stellar Harvest",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 55.19,
+      "wallSeconds": 40.5,
+      "score": 28930,
+      "kills": 252,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 23,
+      "name": "Antipodal Storm",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 56.35,
+      "wallSeconds": 45.3,
+      "score": 30465,
+      "kills": 263,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 24,
+      "name": "Power Without Passivity",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 5,
+      "seconds": 58.53,
+      "wallSeconds": 47.34,
+      "score": 31755,
+      "kills": 274,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 25,
+      "name": "Projective Mastery",
+      "attempt": 1,
+      "result": "cleared",
+      "hull": 4,
+      "seconds": 61.84,
+      "wallSeconds": 54.76,
+      "score": 33715,
+      "kills": 287,
+      "boss": null,
+      "part": null,
+      "damage": [],
+      "deathRecap": null
+    },
+    {
+      "chapter": 26,
+      "name": "The Curvature Gate",
+      "attempt": 1,
+      "result": "extracted",
+      "hull": 5,
+      "seconds": 45.4,
+      "wallSeconds": 43.8,
+      "score": 34805,
+      "kills": 290,
+      "boss": "exit",
+      "part": {
+        "id": "curvature-seed",
+        "x": -107.1249999999854,
+        "z": 153.7500000000001,
+        "collected": true,
+        "readyAt": 1329.833333336456
+      },
+      "damage": [],
+      "deathRecap": null
+    }
+  ],
+  "checks": [
+    "Fresh isolated context has no earned journey",
+    "No QA mutation API is exposed",
+    "Visible enabled control: #primary",
+    "Visible enabled control: #open-equipment",
+    "Visible enabled control: #slot-one",
+    "Visible enabled control: #inventory button[data-seed=\"1:1\"]",
+    "Visible enabled control: #equipment-dialog [data-close]",
+    "Visible enabled control: #primary",
+    "Visible enabled control: #open-equipment",
+    "Visible enabled control: #slot-two",
+    "Visible enabled control: #inventory button[data-seed=\"5:-1\"]",
+    "Visible enabled control: #equipment-dialog [data-close]",
+    "Visible enabled control: #primary",
+    "Boss 8 rewards require physical pickup",
+    "Visible enabled control: #fleet-ships button[data-ship=\"0\"]",
+    "Visible enabled control: #primary",
+    "Earned Act II checkpoint survives reload",
+    "Visible enabled control: #primary",
+    "Boss 17 rewards require physical pickup",
+    "Visible enabled control: #primary",
+    "Visible enabled control: [data-evolution=\"quick-return\"]",
+    "Visible enabled control: [data-evolution=\"wide-net\"]",
+    "Visible enabled control: [data-evolution=\"split-echo\"]",
+    "Visible enabled control: [data-evolution=\"echo-ward\"]",
+    "Visible enabled control: [data-evolution=\"deep-chamber\"]",
+    "Visible enabled control: [data-evolution=\"echo-focus\"]",
+    "Visible enabled control: [data-evolution=\"projective-twin\"]",
+    "Visible enabled control: [data-evolution=\"echo-orbit\"]",
+    "Boss 26 rewards require physical pickup",
+    "Visible enabled control: #primary",
+    "Earned campaign transition opens Act IV",
+    "Visible enabled control: #launch"
+  ],
+  "errors": [],
+  "badRequests": [],
+  "inputCounts": {
+    "ArrowLeft": 931,
+    "ArrowRight": 915,
+    "Space": 101,
+    "ShiftLeft": 1,
+    "ShiftRight": 63,
+    "c": 184,
+    "e": 538,
+    "p": 1,
+    "ArrowUp": 1
+  },
+  "damageObservations": [
+    {
+      "scope": "main",
+      "index": 6,
+      "attempt": 1,
+      "time": 274.7249999999145,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 274.6999999999145,
+          "type": "damage",
+          "reason": "Ship contact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 320,
+          "z": 3518.25,
+          "source": "ship",
+          "target": 70
+        }
+      ]
+    },
+    {
+      "scope": "main",
+      "index": 11,
+      "attempt": 1,
+      "time": 517.5499999996937,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 517.533333333027,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 227,
+          "z": 3850.5,
+          "source": "projectile",
+          "sourceId": 25,
+          "sourceName": "Carrier 25",
+          "pattern": "gap",
+          "patternName": "GAP",
+          "geometryRule": "klein",
+          "surfaceCrossings": 5,
+          "lastEdge": "top",
+          "damageMultiplier": 1
+        }
+      ]
+    },
+    {
+      "scope": "main",
+      "index": 13,
+      "attempt": 1,
+      "time": 587.3749999996302,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 587.2833333329636,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": -396,
+          "z": 994,
+          "source": "projectile",
+          "sourceId": 43,
+          "sourceName": "Scout 1",
+          "pattern": "aimed",
+          "patternName": "AIMED",
+          "geometryRule": "klein",
+          "surfaceCrossings": 2,
+          "lastEdge": "left",
+          "damageMultiplier": 1
+        }
+      ]
+    },
+    {
+      "scope": "main",
+      "index": 15,
+      "attempt": 1,
+      "time": 739.274999999492,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 739.2333333328254,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": -362,
+          "z": 1448.75,
+          "source": "projectile",
+          "sourceId": 90,
+          "sourceName": "Field Overseer",
+          "pattern": "fan",
+          "patternName": "FAN",
+          "geometryRule": "klein",
+          "surfaceCrossings": 4,
+          "lastEdge": "bottom",
+          "damageMultiplier": 1
+        }
+      ]
+    },
+    {
+      "scope": "main",
+      "index": 16,
+      "attempt": 1,
+      "time": 754.3833333328116,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 754.341666666145,
+          "type": "damage",
+          "reason": "Shot impact. Hull damage received.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": -380,
+          "z": 1638.75,
+          "source": "projectile",
+          "sourceId": 95,
+          "sourceName": "Carrier 5",
+          "pattern": "wall",
+          "patternName": "WALL",
+          "geometryRule": "klein",
+          "surfaceCrossings": 5,
+          "lastEdge": "top",
+          "damageMultiplier": 1
+        }
+      ]
+    },
+    {
+      "scope": "main",
+      "index": 25,
+      "attempt": 1,
+      "time": 1254.0166666688285,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "time": 1253.950000002161,
+          "type": "damage",
+          "reason": "Ship contact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 317,
+          "z": -253.75,
+          "source": "ship",
+          "target": 198
+        }
+      ]
+    },
+    {
+      "scope": "act-four",
+      "index": 0,
+      "attempt": 1,
+      "time": 125.03999999996445,
+      "from": 5,
+      "to": 4,
+      "events": [
+        {
+          "t": 124.987,
+          "type": "hit",
+          "hull": 4,
+          "shotId": 37
+        }
+      ]
+    }
+  ],
+  "observedSeconds": 1669.1749999995902,
+  "decisionMs": 100,
+  "sourceHashes": {
+    "src/build.js": "0cf9bd789e87ff8aabc903ccb1ccb4ccd28e7e9e5c2fc7b80ebc83236c7cf664",
+    "src/app.js": "c72d02a4f3635fda47e9909482a1e77e57107757122bfc7344513e8fec1dc15e",
+    "src/simulation.js": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63",
+    "src/campaign.js": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd",
+    "src/hyperbolic-act.js": "af1ce0ee12ac447be72f6c5c56181aa4fc1347c2f45aa936718044a323f0fcaf",
+    "src/hyperbolic-campaign.js": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432",
+    "src/repair-app.js": "9d1e74fc6fc700ce741374de36c20b335b54156d402fba497cc8a164a50d1bfb",
+    "src/repair.js": "8f25a2bf20468b4975e718031a99cbe59308beaff8715ed6ebda37353b4cc03f",
+    "src/audio.js": "92f17910cf06620a014c2147adf95f132737095998c07528b9c5c1d7c708b890"
+  },
+  "browserVersion": "157.0.4341.46",
+  "progress": {
+    "scope": "act-four",
+    "index": 0,
+    "attempt": 1,
+    "phase": "running",
+    "time": 238.03200000009727,
+    "hull": 4
+  },
+  "checkpointReload": {
+    "before": {
+      "chapter": 9,
+      "phase": "paused",
+      "seed": 4181845467,
+      "hull": 5
+    },
+    "after": {
+      "chapter": 9,
+      "phase": "paused",
+      "seed": 4181845467,
+      "hull": 5
+    }
+  },
+  "runtimeReadbackTrim": {
+    "at": "2026-11-13T17:31:30.446Z",
+    "eventLimit": 200,
+    "scope": "Only the cloned readback sent to the Node controller. The simulation log and all physical objects remain unchanged.",
+    "damageRecord": "damageObservations"
+  },
+  "failure": "Error: Act IV stage 1 controller timeout.\n    at file:///D:/Projects/games/game-off-2026/tools/campaign-full-browser.mjs:186:35",
+  "finalUrl": "http://127.0.0.1:13456/hyperbolic-act.html",
+  "finalState": {
+    "stageIndex": 0,
+    "phase": "running",
+    "paused": false,
+    "time": 240.0320000000997,
+    "shipId": 0,
+    "score": 35100,
+    "echoes": 6,
+    "player": {
+      "position": {
+        "x": -0.14195514218733105,
+        "y": 0.42838801455037356
+      },
+      "heading": {
+        "x": -0.8720819465404879,
+        "y": 0.48935986606806425
+      },
+      "hull": 4,
+      "invuln": 0,
+      "fireClock": 0,
+      "driveVelocity": 1,
+      "motion": [
+        {
+          "from": {
+            "x": -0.13926774187360258,
+            "y": 0.42688416046457883
+          },
+          "to": {
+            "x": -0.14195514218733105,
+            "y": 0.42838801455037356
+          },
+          "jump": false,
+          "t0": 0,
+          "t1": 1
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "position": {
+          "x": -0.32,
+          "y": 0.35
+        },
+        "heading": {
+          "x": 0.7380288120022733,
+          "y": 0.6747691995449356
+        },
+        "hp": 1,
+        "maxHp": 1,
+        "pattern": "aim",
+        "interval": 3.5,
+        "gunClock": 2.9991111111111106,
+        "warning": false,
+        "entryWave": 0,
+        "shotCycle": 69,
+        "motion": [
+          {
+            "from": {
+              "x": -0.32,
+              "y": 0.35
+            },
+            "to": {
+              "x": -0.32,
+              "y": 0.35
+            },
+            "jump": false
+          }
+        ]
+      }
+    ],
+    "shots": [
+      {
+        "id": 70,
+        "team": "enemy",
+        "position": {
+          "x": 0.4114773028032037,
+          "y": 0.10223417405013766
+        },
+        "heading": {
+          "x": -0.7994771871593622,
+          "y": -0.6006964518055304
+        },
+        "age": 4.016000000000003,
+        "life": 5,
+        "speed": 1.04,
+        "power": 1,
+        "joins": 4,
+        "arrival": 0,
+        "motion": [
+          {
+            "from": {
+              "x": 0.4131432566001145,
+              "y": 0.10348481294961606
+            },
+            "to": {
+              "x": 0.4114773028032037,
+              "y": 0.10223417405013766
+            },
+            "jump": false,
+            "t0": 0,
+            "t1": 1
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "team": "enemy",
+        "position": {
+          "x": -0.13569883758230808,
+          "y": 0.2132859011262395
+        },
+        "heading": {
+          "x": 0.8169469931260588,
+          "y": -0.5767127624929862
+        },
+        "age": 0.5120000000000001,
+        "life": 5,
+        "speed": 1.04,
+        "power": 1,
+        "joins": 0,
+        "arrival": 0,
+        "motion": [
+          {
+            "from": {
+              "x": -0.13764148252929329,
+              "y": 0.2146579952070046
+            },
+            "to": {
+              "x": -0.13569883758230808,
+              "y": 0.2132859011262395
+            },
+            "jump": false,
+            "t0": 0,
+            "t1": 1
+          }
+        ]
+      }
+    ],
+    "finalReward": null,
+    "bossPhase": 0,
+    "events": [
+      {
+        "t": 151.931,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          46
+        ]
+      },
+      {
+        "t": 153.84,
+        "type": "shot-crossing",
+        "shotId": 46,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 154.635,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 155.43111111110645
+      },
+      {
+        "t": 155.435,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          47
+        ]
+      },
+      {
+        "t": 156.171,
+        "type": "shot-crossing",
+        "shotId": 46,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 157.947,
+        "type": "shot-crossing",
+        "shotId": 47,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 158.139,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 158.93511111111073
+      },
+      {
+        "t": 158.448,
+        "type": "shot-crossing",
+        "shotId": 47,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 158.939,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          48
+        ]
+      },
+      {
+        "t": 159.419,
+        "type": "shot-crossing",
+        "shotId": 48,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 161.643,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 162.439111111115
+      },
+      {
+        "t": 161.947,
+        "type": "shot-crossing",
+        "shotId": 48,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 162.443,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          49
+        ]
+      },
+      {
+        "t": 162.843,
+        "type": "shot-crossing",
+        "shotId": 48,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 163.691,
+        "type": "shot-crossing",
+        "shotId": 49,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 165.147,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 165.9431111111193
+      },
+      {
+        "t": 165.947,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          50
+        ]
+      },
+      {
+        "t": 165.995,
+        "type": "shot-crossing",
+        "shotId": 49,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 168.651,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 169.44711111112358
+      },
+      {
+        "t": 169.211,
+        "type": "shot-crossing",
+        "shotId": 50,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 169.248,
+        "type": "shot-crossing",
+        "shotId": 50,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 169.275,
+        "type": "shot-crossing",
+        "shotId": 50,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 169.328,
+        "type": "shot-crossing",
+        "shotId": 50,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 169.451,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          51
+        ]
+      },
+      {
+        "t": 170.555,
+        "type": "shot-crossing",
+        "shotId": 51,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 172.155,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 172.95111111112786
+      },
+      {
+        "t": 172.955,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          52
+        ]
+      },
+      {
+        "t": 173.515,
+        "type": "shot-crossing",
+        "shotId": 51,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 173.979,
+        "type": "shot-crossing",
+        "shotId": 51,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 174.283,
+        "type": "shot-crossing",
+        "shotId": 52,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 174.299,
+        "type": "shot-crossing",
+        "shotId": 51,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 174.587,
+        "type": "shot-crossing",
+        "shotId": 52,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 175.051,
+        "type": "shot-crossing",
+        "shotId": 52,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 175.659,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 176.45511111113214
+      },
+      {
+        "t": 176.459,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          53
+        ]
+      },
+      {
+        "t": 178.411,
+        "type": "shot-crossing",
+        "shotId": 53,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 179.163,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 179.95911111113642
+      },
+      {
+        "t": 179.963,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          54
+        ]
+      },
+      {
+        "t": 182.176,
+        "type": "shot-crossing",
+        "shotId": 54,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 182.667,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 183.4631111111407
+      },
+      {
+        "t": 182.875,
+        "type": "shot-crossing",
+        "shotId": 54,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 183.467,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          55
+        ]
+      },
+      {
+        "t": 183.947,
+        "type": "shot-crossing",
+        "shotId": 55,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 186.171,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 186.967111111145
+      },
+      {
+        "t": 186.763,
+        "type": "shot-crossing",
+        "shotId": 55,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 186.971,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          56
+        ]
+      },
+      {
+        "t": 188.347,
+        "type": "shot-crossing",
+        "shotId": 56,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 189.531,
+        "type": "shot-crossing",
+        "shotId": 56,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 189.675,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 190.47111111114927
+      },
+      {
+        "t": 190.475,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          57
+        ]
+      },
+      {
+        "t": 191.936,
+        "type": "shot-crossing",
+        "shotId": 56,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 192.971,
+        "type": "shot-crossing",
+        "shotId": 57,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 193.179,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 193.97511111115355
+      },
+      {
+        "t": 193.979,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          58
+        ]
+      },
+      {
+        "t": 195.003,
+        "type": "shot-crossing",
+        "shotId": 58,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 195.291,
+        "type": "shot-crossing",
+        "shotId": 57,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 196.683,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 197.47911111115783
+      },
+      {
+        "t": 197.28,
+        "type": "shot-crossing",
+        "shotId": 58,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 197.483,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          59
+        ]
+      },
+      {
+        "t": 198.683,
+        "type": "shot-crossing",
+        "shotId": 59,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 199.259,
+        "type": "shot-crossing",
+        "shotId": 59,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 200.187,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 200.98311111116212
+      },
+      {
+        "t": 200.987,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          60
+        ]
+      },
+      {
+        "t": 202.203,
+        "type": "shot-crossing",
+        "shotId": 59,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 203.147,
+        "type": "shot-crossing",
+        "shotId": 60,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 203.691,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 204.4871111111664
+      },
+      {
+        "t": 204.059,
+        "type": "shot-crossing",
+        "shotId": 60,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 204.491,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          61
+        ]
+      },
+      {
+        "t": 206.379,
+        "type": "shot-crossing",
+        "shotId": 61,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 207.195,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 207.99111111117068
+      },
+      {
+        "t": 207.995,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          62
+        ]
+      },
+      {
+        "t": 208.512,
+        "type": "shot-crossing",
+        "shotId": 62,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 210.699,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 211.49511111117496
+      },
+      {
+        "t": 211.019,
+        "type": "shot-crossing",
+        "shotId": 62,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 211.227,
+        "type": "shot-crossing",
+        "shotId": 62,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 211.472,
+        "type": "shot-crossing",
+        "shotId": 62,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 211.499,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          63
+        ]
+      },
+      {
+        "t": 213.104,
+        "type": "shot-crossing",
+        "shotId": 63,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 213.84,
+        "type": "shot-crossing",
+        "shotId": 63,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 214.203,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 214.99911111117925
+      },
+      {
+        "t": 214.736,
+        "type": "shot-crossing",
+        "shotId": 63,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 215.003,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          64
+        ]
+      },
+      {
+        "t": 216.288,
+        "type": "shot-crossing",
+        "shotId": 63,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 217.515,
+        "type": "shot-crossing",
+        "shotId": 64,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 217.707,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 218.50311111118353
+      },
+      {
+        "t": 218.507,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          65
+        ]
+      },
+      {
+        "t": 219.259,
+        "type": "shot-crossing",
+        "shotId": 64,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 219.595,
+        "type": "shot-crossing",
+        "shotId": 65,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 220.192,
+        "type": "shot-crossing",
+        "shotId": 65,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 221.211,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 222.0071111111878
+      },
+      {
+        "t": 222.011,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          66
+        ]
+      },
+      {
+        "t": 223.152,
+        "type": "shot-crossing",
+        "shotId": 66,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 223.424,
+        "type": "shot-crossing",
+        "shotId": 65,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 224.288,
+        "type": "shot-crossing",
+        "shotId": 66,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 224.715,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 225.5111111111921
+      },
+      {
+        "t": 225.515,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          67
+        ]
+      },
+      {
+        "t": 225.552,
+        "type": "shot-crossing",
+        "shotId": 66,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 228.219,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 229.01511111119638
+      },
+      {
+        "t": 228.523,
+        "type": "shot-crossing",
+        "shotId": 67,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 228.571,
+        "type": "shot-crossing",
+        "shotId": 67,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 228.592,
+        "type": "shot-crossing",
+        "shotId": 67,
+        "team": "enemy",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "t": 228.683,
+        "type": "shot-crossing",
+        "shotId": 67,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 229.019,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          68
+        ]
+      },
+      {
+        "t": 230.875,
+        "type": "shot-crossing",
+        "shotId": 68,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 231.723,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 232.51911111120066
+      },
+      {
+        "t": 232.523,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          69
+        ]
+      },
+      {
+        "t": 233.131,
+        "type": "shot-crossing",
+        "shotId": 69,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 233.344,
+        "type": "shot-crossing",
+        "shotId": 68,
+        "team": "enemy",
+        "from": 2,
+        "to": 6
+      },
+      {
+        "t": 233.483,
+        "type": "shot-crossing",
+        "shotId": 68,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 233.643,
+        "type": "shot-crossing",
+        "shotId": 68,
+        "team": "enemy",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "t": 234.128,
+        "type": "shot-crossing",
+        "shotId": 69,
+        "team": "enemy",
+        "from": 5,
+        "to": 1
+      },
+      {
+        "t": 235.227,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 236.02311111120494
+      },
+      {
+        "t": 236.027,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          70
+        ]
+      },
+      {
+        "t": 237.195,
+        "type": "shot-crossing",
+        "shotId": 69,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 238.352,
+        "type": "shot-crossing",
+        "shotId": 70,
+        "team": "enemy",
+        "from": 3,
+        "to": 7
+      },
+      {
+        "t": 238.496,
+        "type": "shot-crossing",
+        "shotId": 70,
+        "team": "enemy",
+        "from": 6,
+        "to": 2
+      },
+      {
+        "t": 238.539,
+        "type": "shot-crossing",
+        "shotId": 70,
+        "team": "enemy",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "t": 238.608,
+        "type": "shot-crossing",
+        "shotId": 70,
+        "team": "enemy",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "t": 238.731,
+        "type": "pattern-warning",
+        "enemy": 1,
+        "patternKey": "aimed",
+        "fireAt": 239.52711111120922
+      },
+      {
+        "t": 239.531,
+        "type": "enemy-volley",
+        "pattern": "aim",
+        "enemy": 1,
+        "shotIds": [
+          71
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "arrow-space-shift:best-score:v1": "34805",
+    "arrow-space-shift:preferences:v1": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}",
+    "arrow-space-shift:journey:v1": "{\"version\":1,\"parts\":{\"klein-relay\":{\"id\":\"klein-relay\",\"source\":\"campaign-extraction\",\"chapter\":8,\"stage\":null,\"exposed\":true,\"collected\":true,\"extracted\":true,\"legacy\":false,\"seed\":4181845467,\"shipId\":0,\"score\":8740},\"projective-module\":{\"id\":\"projective-module\",\"source\":\"campaign-extraction\",\"chapter\":17,\"stage\":null,\"exposed\":true,\"collected\":true,\"extracted\":true,\"legacy\":false,\"seed\":4181845467,\"shipId\":0,\"score\":22150},\"curvature-seed\":{\"id\":\"curvature-seed\",\"source\":\"campaign-extraction\",\"chapter\":26,\"stage\":null,\"exposed\":true,\"collected\":true,\"extracted\":true,\"legacy\":false,\"seed\":4181845467,\"shipId\":0,\"score\":34805}},\"actFourBridge\":{\"shipId\":0,\"seed\":4181845467,\"score\":34805,\"echoes\":0,\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":2},{\"key\":\"1:1\",\"type\":1,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":3},{\"key\":\"1:-1\",\"type\":1,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":4},{\"key\":\"3:1\",\"type\":3,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":5},{\"key\":\"3:-1\",\"type\":3,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":6},{\"key\":\"2:1\",\"type\":2,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":7},{\"key\":\"2:-1\",\"type\":2,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":8},{\"key\":\"4:1\",\"type\":4,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":9},{\"key\":\"4:-1\",\"type\":4,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":10},{\"key\":\"5:1\",\"type\":5,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":11},{\"key\":\"5:-1\",\"type\":5,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":12},{\"key\":\"6:1\",\"type\":6,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":13},{\"key\":\"6:-1\",\"type\":6,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":14}],\"equipped\":[\"1:1\",\"5:-1\"]},\"assembled\":false,\"activated\":false,\"completed\":false,\"endingSeen\":false}",
+    "arrow-space-shift:act4:v1": "{\"version\":3,\"unlocked\":0,\"score\":34805,\"completed\":false,\"resumeStage\":0,\"entries\":{\"0\":{\"score\":34805,\"echoes\":0,\"seed\":4181845467,\"shipId\":0,\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":2},{\"key\":\"1:1\",\"type\":1,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":3},{\"key\":\"1:-1\",\"type\":1,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":4},{\"key\":\"3:1\",\"type\":3,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":5},{\"key\":\"3:-1\",\"type\":3,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":6},{\"key\":\"2:1\",\"type\":2,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":7},{\"key\":\"2:-1\",\"type\":2,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":8},{\"key\":\"4:1\",\"type\":4,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":9},{\"key\":\"4:-1\",\"type\":4,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":10},{\"key\":\"5:1\",\"type\":5,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":11},{\"key\":\"5:-1\",\"type\":5,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":12},{\"key\":\"6:1\",\"type\":6,\"polarity\":1,\"source\":\"checkpoint\",\"instance\":13},{\"key\":\"6:-1\",\"type\":6,\"polarity\":-1,\"source\":\"checkpoint\",\"instance\":14}],\"equipped\":[\"1:1\",\"5:-1\"]}}}",
+    "arrow-space-shift:fleet:v1": "{\"version\":5,\"fleetUnlocked\":true,\"driveParts\":[\"klein-relay\",\"projective-module\",\"curvature-seed\"],\"projectiveModule\":true,\"curvatureSeed\":true,\"unlockedShips\":[0,1,8],\"craftedShipIds\":[],\"fabricationSpent\":0,\"selectedShip\":0,\"reachedChapters\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],\"completedChapters\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],\"stageRecords\":{\"0\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":1300,\"bestClearTime\":40,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"1\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":1650,\"bestClearTime\":26.67,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"2\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":3150,\"bestClearTime\":46.67,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"3\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":3590,\"bestClearTime\":31.12,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"4\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":5390,\"bestClearTime\":53.33,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"5\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":5910,\"bestClearTime\":35.56,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"6\":{\"bestGrade\":\"B\",\"bestGradeScore\":77,\"bestScore\":8010,\"bestClearTime\":60,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"7\":{\"bestGrade\":\"B\",\"bestGradeScore\":80,\"bestScore\":8440,\"bestClearTime\":40,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"8\":{\"bestGrade\":\"—\",\"bestGradeScore\":0,\"bestScore\":8740,\"bestClearTime\":52.09,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"won\"},\"9\":{\"bestGrade\":\"B\",\"bestGradeScore\":70,\"bestScore\":9580,\"bestClearTime\":43.33,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"10\":{\"bestGrade\":\"B\",\"bestGradeScore\":70,\"bestScore\":10655,\"bestClearTime\":46.67,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"11\":{\"bestGrade\":\"B\",\"bestGradeScore\":78,\"bestScore\":11970,\"bestClearTime\":48.89,\"bestGrazes\":1,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"12\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":13575,\"bestClearTime\":49.92,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"13\":{\"bestGrade\":\"S\",\"bestGradeScore\":93,\"bestScore\":15740,\"bestClearTime\":53.24,\"bestGrazes\":3,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"14\":{\"bestGrade\":\"B\",\"bestGradeScore\":80,\"bestScore\":16475,\"bestClearTime\":52.22,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"15\":{\"bestGrade\":\"A\",\"bestGradeScore\":82,\"bestScore\":19240,\"bestClearTime\":57.78,\"bestGrazes\":2,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"16\":{\"bestGrade\":\"C\",\"bestGradeScore\":69,\"bestScore\":21640,\"bestClearTime\":62.19,\"bestGrazes\":2,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"17\":{\"bestGrade\":\"—\",\"bestGradeScore\":0,\"bestScore\":22150,\"bestClearTime\":75.99,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"won\"},\"18\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":23220,\"bestClearTime\":43.19,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"19\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":24270,\"bestClearTime\":46.67,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"20\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":25485,\"bestClearTime\":48.89,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"21\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":26735,\"bestClearTime\":51.12,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"22\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":28930,\"bestClearTime\":55.56,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"23\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":30465,\"bestClearTime\":56.67,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"24\":{\"bestGrade\":\"A\",\"bestGradeScore\":85,\"bestScore\":31755,\"bestClearTime\":58.89,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"25\":{\"bestGrade\":\"C\",\"bestGradeScore\":60,\"bestScore\":33715,\"bestClearTime\":62.23,\"bestGrazes\":0,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"cleared\"},\"26\":{\"bestGrade\":\"—\",\"bestGradeScore\":0,\"bestScore\":34805,\"bestClearTime\":45.4,\"bestGrazes\":2,\"completions\":1,\"attempts\":1,\"lastShip\":0,\"lastResult\":\"won\"}},\"runHistory\":[{\"chapter\":26,\"name\":\"The Curvature Gate\",\"result\":\"won\",\"score\":34805,\"grazes\":2,\"shipId\":0,\"grade\":\"—\",\"gradeScore\":0,\"time\":45.4,\"cause\":\"\",\"receipt\":\"4181845467:26:won:1346558\"},{\"chapter\":25,\"name\":\"Projective Mastery\",\"result\":\"cleared\",\"score\":33715,\"grazes\":0,\"shipId\":0,\"grade\":\"C\",\"gradeScore\":60,\"time\":62.23,\"cause\":\"\",\"receipt\":\"4181845467:25:cleared:1301158\"},{\"chapter\":24,\"name\":\"Power Without Passivity\",\"result\":\"cleared\",\"score\":31755,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":58.89,\"cause\":\"\",\"receipt\":\"4181845467:24:cleared:1238933\"},{\"chapter\":23,\"name\":\"Antipodal Storm\",\"result\":\"cleared\",\"score\":30465,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":56.67,\"cause\":\"\",\"receipt\":\"4181845467:23:cleared:1180042\"},{\"chapter\":22,\"name\":\"Stellar Harvest\",\"result\":\"cleared\",\"score\":28930,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":55.56,\"cause\":\"\",\"receipt\":\"4181845467:22:cleared:1123375\"},{\"chapter\":21,\"name\":\"Ordered Synthesis\",\"result\":\"cleared\",\"score\":26735,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":51.12,\"cause\":\"\",\"receipt\":\"4181845467:21:cleared:1067817\"},{\"chapter\":20,\"name\":\"Echo Release\",\"result\":\"cleared\",\"score\":25485,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":48.89,\"cause\":\"\",\"receipt\":\"4181845467:20:cleared:1016700\"},{\"chapter\":19,\"name\":\"Echo Capture\",\"result\":\"cleared\",\"score\":24270,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":46.67,\"cause\":\"\",\"receipt\":\"4181845467:19:cleared:967808\"},{\"chapter\":18,\"name\":\"Projective Chart\",\"result\":\"cleared\",\"score\":23220,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":43.19,\"cause\":\"\",\"receipt\":\"4181845467:18:cleared:921142\"},{\"chapter\":17,\"name\":\"The Projective Intrusion\",\"result\":\"won\",\"score\":22150,\"grazes\":0,\"shipId\":0,\"grade\":\"—\",\"gradeScore\":0,\"time\":75.99,\"cause\":\"\",\"receipt\":\"4181845467:17:won:877950\"},{\"chapter\":16,\"name\":\"Klein Mastery\",\"result\":\"cleared\",\"score\":21640,\"grazes\":2,\"shipId\":0,\"grade\":\"C\",\"gradeScore\":69,\"time\":62.19,\"cause\":\"\",\"receipt\":\"4181845467:16:cleared:801958\"},{\"chapter\":15,\"name\":\"Pressure Field\",\"result\":\"cleared\",\"score\":19240,\"grazes\":2,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":82,\"time\":57.78,\"cause\":\"\",\"receipt\":\"4181845467:15:cleared:739767\"},{\"chapter\":14,\"name\":\"Fold Timing\",\"result\":\"cleared\",\"score\":16475,\"grazes\":0,\"shipId\":0,\"grade\":\"B\",\"gradeScore\":80,\"time\":52.22,\"cause\":\"\",\"receipt\":\"4181845467:14:cleared:681983\"},{\"chapter\":13,\"name\":\"Cross Current\",\"result\":\"cleared\",\"score\":15740,\"grazes\":3,\"shipId\":0,\"grade\":\"S\",\"gradeScore\":93,\"time\":53.24,\"cause\":\"\",\"receipt\":\"4181845467:13:cleared:629758\"},{\"chapter\":12,\"name\":\"Seam Gap\",\"result\":\"cleared\",\"score\":13575,\"grazes\":0,\"shipId\":0,\"grade\":\"A\",\"gradeScore\":85,\"time\":49.92,\"cause\":\"\",\"receipt\":\"4181845467:12:cleared:576517\"},{\"chapter\":11,\"name\":\"Returning Fire\",\"result\":\"cleared\",\"score\":11970,\"grazes\":1,\"shipId\":0,\"grade\":\"B\",\"gradeScore\":78,\"time\":48.89,\"cause\":\"\",\"receipt\":\"4181845467:11:cleared:526592\"},{\"chapter\":10,\"name\":\"Intentional Crossing\",\"result\":\"cleared\",\"score\":10655,\"grazes\":0,\"shipId\":0,\"grade\":\"B\",\"gradeScore\":70,\"time\":46.67,\"cause\":\"\",\"receipt\":\"4181845467:10:cleared:477700\"},{\"chapter\":9,\"name\":\"Return Flight\",\"result\":\"cleared\",\"score\":9580,\"grazes\":0,\"shipId\":0,\"grade\":\"B\",\"gradeScore\":70,\"time\":43.33,\"cause\":\"\",\"receipt\":\"4181845467:9:cleared:431033\"},{\"chapter\":8,\"name\":\"The Klein Fleet\",\"result\":\"won\",\"score\":8740,\"grazes\":0,\"shipId\":0,\"grade\":\"—\",\"gradeScore\":0,\"time\":52.09,\"cause\":\"\",\"receipt\":\"4181845467:8:won:387700\"},{\"chapter\":7,\"name\":\"Last Approach\",\"result\":\"cleared\",\"score\":8440,\"grazes\":0,\"shipId\":0,\"grade\":\"B\",\"gradeScore\":80,\"time\":40,\"cause\":\"\",\"receipt\":\"4181845467:7:cleared:335608\"}]}"
+  },
+  "wallSeconds": 1284.86
+}

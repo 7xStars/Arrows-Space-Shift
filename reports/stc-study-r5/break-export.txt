@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 000001a6b9253680] Guessed Channel Layout: stereo
+Input #0, wav, from 'reports/stc-study-r5/ass-identified-return-r5-binaural-music.wav':
+  Duration: 00:01:13.64, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'reports/stc-study-r5/ass-identified-return-r5-binaural-break.wav':
+  Metadata:
+    ISFT            : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[out#0/wav @ 000001a6b92005c0] video:0KiB audio:2062KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.003693%
+size=    2063KiB time=00:00:11.00 bitrate=1536.1kbits/s speed= 483x elapsed=0:00:00.02    

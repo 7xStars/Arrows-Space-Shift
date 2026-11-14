@@ -1,0 +1,322 @@
+{
+  "revision": "stc-tempo-r2",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "results": [
+    "The collection control has a native accessible name",
+    "The default collection still contains the original sixteen tracks",
+    "Switching from the playing original collection stops its native pair before navigation",
+    "The selector opens the nine-track tempo collection",
+    "The tempo collection contains three Act I tracks and two for each later Act",
+    "All nine metadata tempos include the added 144 BPM piece",
+    "The actual catalog identifies the r2b mix revision",
+    "The 240 BPM entry selects all four revised encoded files"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "trackChecks": [],
+  "collectionDepartures": [
+    {
+      "trigger": "collection-change-after-player-handler",
+      "state": {
+        "revision": "stc-act-library-r1",
+        "state": "ready",
+        "trackId": "act1-01",
+        "position": 0,
+        "duration": 60,
+        "volume": 0.6,
+        "atmosphere": true,
+        "contextCreations": 1,
+        "contextState": "running",
+        "buffers": 2,
+        "activeSources": 0,
+        "fetches": 2,
+        "decodes": 2,
+        "error": "",
+        "history": [
+          {
+            "trackId": "act1-01",
+            "index": 0,
+            "at": 0.21066666666666667,
+            "offset": 0
+          },
+          {
+            "trackId": "act1-01",
+            "index": 1,
+            "at": 0.21066666666666667,
+            "offset": 0
+          }
+        ],
+        "mixRevision": "",
+        "selectedAct": 1,
+        "trackCount": 16,
+        "tracks": [
+          {
+            "id": "act1-01",
+            "act": 1,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Vector Engine",
+            "bpm": 132
+          },
+          {
+            "id": "act1-02",
+            "act": 1,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Vacuum Bearings",
+            "bpm": 132
+          },
+          {
+            "id": "act1-03",
+            "act": 1,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Off Axis",
+            "bpm": 134
+          },
+          {
+            "id": "act1-04",
+            "act": 1,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Transfer Engine",
+            "bpm": 132
+          },
+          {
+            "id": "act2-01",
+            "act": 2,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Identified Pulse",
+            "bpm": 134
+          },
+          {
+            "id": "act2-02",
+            "act": 2,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Second Horizon",
+            "bpm": 134
+          },
+          {
+            "id": "act2-03",
+            "act": 2,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order of Returns",
+            "bpm": 134
+          },
+          {
+            "id": "act2-04",
+            "act": 2,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Seam Memory",
+            "bpm": 134
+          },
+          {
+            "id": "act3-01",
+            "act": 3,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Iron Intake",
+            "bpm": 130
+          },
+          {
+            "id": "act3-02",
+            "act": 3,
+            "slot": 2,
+            "seconds": 120,
+            "title": "After the Release",
+            "bpm": 128
+          },
+          {
+            "id": "act3-03",
+            "act": 3,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order of Force",
+            "bpm": 132
+          },
+          {
+            "id": "act3-04",
+            "act": 3,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Machinery of Return",
+            "bpm": 130
+          },
+          {
+            "id": "act4-01",
+            "act": 4,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Paired Horizon",
+            "bpm": 128
+          },
+          {
+            "id": "act4-02",
+            "act": 4,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Quiet Curvature",
+            "bpm": 126
+          },
+          {
+            "id": "act4-03",
+            "act": 4,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order Leaves a Trace",
+            "bpm": 128
+          },
+          {
+            "id": "act4-04",
+            "act": 4,
+            "slot": 4,
+            "seconds": 360,
+            "title": "The Surface Remembers",
+            "bpm": 128
+          }
+        ]
+      },
+      "active": []
+    }
+  ],
+  "audioContexts": [
+    {
+      "type": "created",
+      "contextId": "474b4f43-3bdb-4baa-bb7f-3c63250e9903",
+      "contextType": "realtime",
+      "contextState": "suspended",
+      "callbackBufferSize": 480,
+      "maxOutputChannelCount": 2,
+      "sampleRate": 48000,
+      "renderQuantumSize": 128
+    }
+  ],
+  "input": "Ordinary keyboard and native controls, with read-only runtime inspection.",
+  "limits": "Local headless Microsoft Edge. No listening approval, screen-reader, physical-device, physical audio latency, automatic page-visibility, or heap-retention result.",
+  "mixRevision": "r2b",
+  "sourceIdentity": {
+    "music-library.html": "73a9e27ff0d939c4eccf0c20768fe4044a1a7788746265ee9936a648a0a7a643",
+    "src/music-library-app.js": "64abbea6d233deffc121800c8403bf0208089bb456a9ac0fc2f1686d4330dcf5",
+    "assets/audio/stc-tempo-r2/catalog.json": "09aadb7aaade0c54733047ab931886e199e5fb4c914bb40aa378b0964b673eb1",
+    "assets/audio/stc-tempo-r2/tempo-act1-01-core.ogg": "e177306365ee0b30e943bec4785c2f1beb6cf46d85844b5fabf0656855b324f7",
+    "assets/audio/stc-tempo-r2/tempo-act1-01-atmosphere.ogg": "160505f04c08159376a94831b7058927bd842b5384ae7c6e7581ba5a4f41f4d3",
+    "assets/audio/stc-tempo-r2/tempo-act1-02-core.ogg": "7fdb290e737174b75ab5a6d1e68d26b19cf035e4a44cdab9cd10299dcd419232",
+    "assets/audio/stc-tempo-r2/tempo-act1-02-atmosphere.ogg": "0a9d38f70d52e0dae34b8eb1443e25b26043b00dc50706bdb87cbc15e7479115",
+    "assets/audio/stc-tempo-r2/tempo-act1-03-core.ogg": "b2114090c1dbdab2280a884f5a857b62a261d36cbcbe2df7f4c970c512dc89fe",
+    "assets/audio/stc-tempo-r2/tempo-act1-03-atmosphere.ogg": "ba6d1f5c7b6745c17ab41620d4ad2b8fc95c4516544930afec7b68a3ccaaf965",
+    "assets/audio/stc-tempo-r2/tempo-act2-01-core.ogg": "e7650b69437410e32430448abda6381d58fbb0f442f44188c59113e103c57b49",
+    "assets/audio/stc-tempo-r2/tempo-act2-01-atmosphere.ogg": "adee794a23c54d886a1af749d08a9f2d7fed2a7eae108673bb6e0141e5c1c954",
+    "assets/audio/stc-tempo-r2/tempo-act2-02-core.ogg": "72a5ead55482e962273d04f27995153b43a394526ab1f0699ef8daa977ea7a78",
+    "assets/audio/stc-tempo-r2/tempo-act2-02-atmosphere.ogg": "413a880640b2c5ddec5e3fcdbc99693a5f249224aded9fc247b8e87818cc7771",
+    "assets/audio/stc-tempo-r2/tempo-act3-01-core.ogg": "073ee90d1f294d0e3b9d581ddfb6011e610f1a1a25840b1c21d4c55e1b327629",
+    "assets/audio/stc-tempo-r2/tempo-act3-01-atmosphere.ogg": "75e4e2e6471002d6b2f7ce2fe9edc0be926c8e2fd65ed9cfe9fb1d36e76e8c1a",
+    "assets/audio/stc-tempo-r2/tempo-act3-02-r2b-core.ogg": "f7a977c8cce874a021cc24d11fc7ad34c226461ca79e2e5b9f84a4db1b6901ea",
+    "assets/audio/stc-tempo-r2/tempo-act3-02-r2b-atmosphere.ogg": "4c88a5bf077c947e8d7a775b430761f7804036dec94aaa12008572f55f666456",
+    "assets/audio/stc-tempo-r2/tempo-act4-01-core.ogg": "67355eb14a5a42eacbc07a9559b9a75342beb61982a40ba76734f512487331a4",
+    "assets/audio/stc-tempo-r2/tempo-act4-01-atmosphere.ogg": "37a1e1dc3acef3cb9123fca36291008b20a6e0c2a663f0ab3ae3a9237254134a",
+    "assets/audio/stc-tempo-r2/tempo-act4-02-core.ogg": "f68189200ca40b9becd0ee36dfad19bf6efae7670f11f33a57358ea8a207c389",
+    "assets/audio/stc-tempo-r2/tempo-act4-02-atmosphere.ogg": "efe6c721e4b80007b95d9c91e6650debd8c9290d9d4a7bc7f4579374cd5bc557"
+  },
+  "browserVersion": "157.0.4341.46",
+  "tempoEntry": {
+    "revision": "stc-tempo-r2",
+    "state": "ready",
+    "trackId": "tempo-act1-01",
+    "position": 0,
+    "duration": 120,
+    "volume": 0.6,
+    "atmosphere": true,
+    "contextCreations": 0,
+    "contextState": "uninitialized",
+    "buffers": 0,
+    "activeSources": 0,
+    "fetches": 0,
+    "decodes": 0,
+    "error": "",
+    "history": [],
+    "mixRevision": "r2b",
+    "selectedAct": 1,
+    "trackCount": 9,
+    "tracks": [
+      {
+        "id": "tempo-act1-01",
+        "act": 1,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Offset Bearing",
+        "bpm": 120
+      },
+      {
+        "id": "tempo-act1-02",
+        "act": 1,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Bearing Drift",
+        "bpm": 136
+      },
+      {
+        "id": "tempo-act1-03",
+        "act": 1,
+        "slot": 3,
+        "seconds": 120,
+        "title": "Phase Alloy",
+        "bpm": 144
+      },
+      {
+        "id": "tempo-act2-01",
+        "act": 2,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Return Grammar",
+        "bpm": 152
+      },
+      {
+        "id": "tempo-act2-02",
+        "act": 2,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Edges Remember",
+        "bpm": 168
+      },
+      {
+        "id": "tempo-act3-01",
+        "act": 3,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Ratchet Memory",
+        "bpm": 200
+      },
+      {
+        "id": "tempo-act3-02",
+        "act": 3,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Pressure Has an Order",
+        "bpm": 240
+      },
+      {
+        "id": "tempo-act4-01",
+        "act": 4,
+        "slot": 1,
+        "seconds": 120,
+        "title": "A Measure of Elsewhere",
+        "bpm": 184
+      },
+      {
+        "id": "tempo-act4-02",
+        "act": 4,
+        "slot": 2,
+        "seconds": 120,
+        "title": "The Same Light Returns",
+        "bpm": 220
+      }
+    ]
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The player reports r2b and displays the revision in its header\n    at check (file:///D:/Projects/games/game-off-2026/tools/tempo-library-browser.mjs:25:35)\n    at file:///D:/Projects/games/game-off-2026/tools/tempo-library-browser.mjs:92:5",
+  "url": "http://127.0.0.1:2378/",
+  "checks": 8
+}

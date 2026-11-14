@@ -1,0 +1,515 @@
+{
+  "revision": "stc-tempo-r2",
+  "tracks": [
+    {
+      "id": "tempo-act1-01",
+      "bpm": 120,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act1-01.wav",
+        "sha256": "6d2ffce7da8fdcdc151d0b67d37d1805b5f3168ee45aca704c157af0ac85f4be",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -18.3,
+      "master_true_peak_dbfs": -1.5
+    },
+    {
+      "id": "tempo-act1-02",
+      "bpm": 136,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act1-02.wav",
+        "sha256": "ec04cc1795debe752146d7c1697a6a59d10b1f04ca837d9a067ea1764f39fa8c",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -18.6,
+      "master_true_peak_dbfs": -1.7
+    },
+    {
+      "id": "tempo-act1-03",
+      "bpm": 144,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act1-03.wav",
+        "sha256": "e1e1a2c99ab7d00bd41e6950c94720bb38105dc8ff92c698eb4b17e9e1562a5a",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -18.2,
+      "master_true_peak_dbfs": -1.7
+    },
+    {
+      "id": "tempo-act2-01",
+      "bpm": 152,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act2-01.wav",
+        "sha256": "d6975a57f1b1d1f59939ccf7d925b102cf8dfe787dabd314368a8bb2ded8f4ff",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -18.6,
+      "master_true_peak_dbfs": -1.5
+    },
+    {
+      "id": "tempo-act2-02",
+      "bpm": 168,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act2-02.wav",
+        "sha256": "d9886f50b0e56c03968ef04ea0aea42cbbd641c8d114a40f8f725c57a17b170d",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -19.2,
+      "master_true_peak_dbfs": -1.7
+    },
+    {
+      "id": "tempo-act3-01",
+      "bpm": 200,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act3-01.wav",
+        "sha256": "23fc013ead470dab02bff86f59f837b7d8974738431b8db746a5d30f36a5596b",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -19.2,
+      "master_true_peak_dbfs": -1.7
+    },
+    {
+      "id": "tempo-act3-02",
+      "bpm": 240,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act3-02.wav",
+        "sha256": "7677f5df4d78f9bb1068da9e75cf39e699fbe97c2287c4a93d8b8cee2d74dfd9",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -18.7,
+      "master_true_peak_dbfs": -1.6
+    },
+    {
+      "id": "tempo-act4-01",
+      "bpm": 184,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act4-01.wav",
+        "sha256": "51bf4781a5c477430f207c6256b857b17fba2d77c46354435666f7a77713e90f",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -19.2,
+      "master_true_peak_dbfs": -1.7
+    },
+    {
+      "id": "tempo-act4-02",
+      "bpm": 220,
+      "seconds": 120,
+      "master": {
+        "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act4-02.wav",
+        "sha256": "d609838c46683f2e07edfd490a5c09addfdaffde877b6a064876e9cd2aea6de8",
+        "bytes": 23040044
+      },
+      "wav_reconstruction": {
+        "samples": 11520000,
+        "maximumResidualPcm16Units": 1
+      },
+      "integrated_lufs": -19.4,
+      "master_true_peak_dbfs": -1.8
+    }
+  ],
+  "decoded": [
+    {
+      "file": "tempo-act1-01.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.601466,
+      "measured_true_peak_dbfs": -1.4,
+      "integrated_lufs": -18.3,
+      "sha256": "e1cb5f595991d7c127879ba445182b600011d2d30e73d215086d59c2bc078a2a"
+    },
+    {
+      "file": "tempo-act1-01-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.578837,
+      "measured_true_peak_dbfs": -1.4,
+      "integrated_lufs": -18.3,
+      "sha256": "e177306365ee0b30e943bec4785c2f1beb6cf46d85844b5fabf0656855b324f7"
+    },
+    {
+      "file": "tempo-act1-01-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -32.784568,
+      "measured_true_peak_dbfs": -32.8,
+      "integrated_lufs": -47.4,
+      "sha256": "160505f04c08159376a94831b7058927bd842b5384ae7c6e7581ba5a4f41f4d3"
+    },
+    {
+      "file": "tempo-act1-01-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.950554,
+      "measured_true_peak_dbfs": -2.0,
+      "integrated_lufs": -18.2,
+      "sha256": "d94c7b88d83d8fc31ade116849337603838aab0aa171b9ae1362887629b632ac"
+    },
+    {
+      "file": "tempo-act1-02.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.61452,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.5,
+      "sha256": "8bdc0296072390043e9b618b121c21978892db5b1138e0cb42a127d523653da7"
+    },
+    {
+      "file": "tempo-act1-02-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.612656,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.5,
+      "sha256": "7fdb290e737174b75ab5a6d1e68d26b19cf035e4a44cdab9cd10299dcd419232"
+    },
+    {
+      "file": "tempo-act1-02-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -34.813271,
+      "measured_true_peak_dbfs": -34.8,
+      "integrated_lufs": -49.9,
+      "sha256": "0a9d38f70d52e0dae34b8eb1443e25b26043b00dc50706bdb87cbc15e7479115"
+    },
+    {
+      "file": "tempo-act1-02-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.011328,
+      "measured_true_peak_dbfs": -2.0,
+      "integrated_lufs": -18.8,
+      "sha256": "8661be6f6382b8f448a172d77479172f46091df9b16884a18687a24444660d52"
+    },
+    {
+      "file": "tempo-act1-03.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.651,
+      "measured_true_peak_dbfs": -1.7,
+      "integrated_lufs": -18.1,
+      "sha256": "7d41b4bd1f6f48b2b62eddd7d994cebeda48e6b25fbc67e6259ff1eeac14c35c"
+    },
+    {
+      "file": "tempo-act1-03-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.659873,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.1,
+      "sha256": "b2114090c1dbdab2280a884f5a857b62a261d36cbcbe2df7f4c970c512dc89fe"
+    },
+    {
+      "file": "tempo-act1-03-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -36.096428,
+      "measured_true_peak_dbfs": -36.1,
+      "integrated_lufs": -51.0,
+      "sha256": "ba6d1f5c7b6745c17ab41620d4ad2b8fc95c4516544930afec7b68a3ccaaf965"
+    },
+    {
+      "file": "tempo-act1-03-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.327609,
+      "measured_true_peak_dbfs": -2.3,
+      "integrated_lufs": -19.0,
+      "sha256": "f6ac044c7295b77047197ba8cec34bb128244594c69fd741006ec7511347412e"
+    },
+    {
+      "file": "tempo-act2-01.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.754063,
+      "measured_true_peak_dbfs": -1.4,
+      "integrated_lufs": -18.5,
+      "sha256": "7b92e6104783d15465751acc579eebbb5f6023071a5c1e7d873e44e08b765e3b"
+    },
+    {
+      "file": "tempo-act2-01-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.812725,
+      "measured_true_peak_dbfs": -1.5,
+      "integrated_lufs": -18.5,
+      "sha256": "e7650b69437410e32430448abda6381d58fbb0f442f44188c59113e103c57b49"
+    },
+    {
+      "file": "tempo-act2-01-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -34.579858,
+      "measured_true_peak_dbfs": -34.6,
+      "integrated_lufs": -49.5,
+      "sha256": "adee794a23c54d886a1af749d08a9f2d7fed2a7eae108673bb6e0141e5c1c954"
+    },
+    {
+      "file": "tempo-act2-01-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.119103,
+      "measured_true_peak_dbfs": -1.8,
+      "integrated_lufs": -17.6,
+      "sha256": "6f0e5c5fd9a71cc94efca7923af3c5400e1a93127b3a3f9eef13190cabf6df21"
+    },
+    {
+      "file": "tempo-act2-02.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.833529,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -19.2,
+      "sha256": "5f4f0e2bb38efddc6f5a3c8caec3b17e4a052849bebba391a36e386ee1080bec"
+    },
+    {
+      "file": "tempo-act2-02-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.769873,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -19.2,
+      "sha256": "72a5ead55482e962273d04f27995153b43a394526ab1f0699ef8daa977ea7a78"
+    },
+    {
+      "file": "tempo-act2-02-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -34.139314,
+      "measured_true_peak_dbfs": -34.1,
+      "integrated_lufs": -51.5,
+      "sha256": "413a880640b2c5ddec5e3fcdbc99693a5f249224aded9fc247b8e87818cc7771"
+    },
+    {
+      "file": "tempo-act2-02-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.097217,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.7,
+      "sha256": "7b6804c622f9e05de115f705e4bcd8f6b6cee9cb8aaa8171b3578e0d808d186a"
+    },
+    {
+      "file": "tempo-act3-01.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.514757,
+      "measured_true_peak_dbfs": -1.5,
+      "integrated_lufs": -19.1,
+      "sha256": "f88cfcfa5eaa4d1736415d566b730e7121f699e3f7b1b2539c4a40c284829c53"
+    },
+    {
+      "file": "tempo-act3-01-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.51095,
+      "measured_true_peak_dbfs": -1.5,
+      "integrated_lufs": -19.1,
+      "sha256": "073ee90d1f294d0e3b9d581ddfb6011e610f1a1a25840b1c21d4c55e1b327629"
+    },
+    {
+      "file": "tempo-act3-01-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -28.367246,
+      "measured_true_peak_dbfs": -28.4,
+      "integrated_lufs": -42.4,
+      "sha256": "75e4e2e6471002d6b2f7ce2fe9edc0be926c8e2fd65ed9cfe9fb1d36e76e8c1a"
+    },
+    {
+      "file": "tempo-act3-01-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.514757,
+      "measured_true_peak_dbfs": -1.5,
+      "integrated_lufs": -18.9,
+      "sha256": "c265d2585712961c242913656254d5b50a7a192c38e9322a5d6d401b892abd4e"
+    },
+    {
+      "file": "tempo-act3-02.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.672787,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.6,
+      "sha256": "100c371506a42d9ddcd6f1640ee0ca640a3c00916cd14b7dce69be6a266d2803"
+    },
+    {
+      "file": "tempo-act3-02-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.671602,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -18.6,
+      "sha256": "a475567f09bb6bab1d787167c15efc9fdc5b7e384612bd1c705292ba1f75d053"
+    },
+    {
+      "file": "tempo-act3-02-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -29.041496,
+      "measured_true_peak_dbfs": -29.0,
+      "integrated_lufs": -45.5,
+      "sha256": "82d7b9ad546257d162a28bcaceebff0c35177aa6f938de4830dada41d1de6d95"
+    },
+    {
+      "file": "tempo-act3-02-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.106614,
+      "measured_true_peak_dbfs": -1.6,
+      "integrated_lufs": -19.2,
+      "sha256": "f25b6adb3e52fe8fb7230a73a174c86498e2e8e218f1f6c6f627e5b52d2a9ade"
+    },
+    {
+      "file": "tempo-act4-01.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.5567,
+      "measured_true_peak_dbfs": -1.5,
+      "integrated_lufs": -19.2,
+      "sha256": "7f4981e2bc3095e0717227412ff06cd8b4847194b70453c507133ab52ebf646d"
+    },
+    {
+      "file": "tempo-act4-01-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.924009,
+      "measured_true_peak_dbfs": -1.9,
+      "integrated_lufs": -19.0,
+      "sha256": "67355eb14a5a42eacbc07a9559b9a75342beb61982a40ba76734f512487331a4"
+    },
+    {
+      "file": "tempo-act4-01-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -22.134171,
+      "measured_true_peak_dbfs": -22.1,
+      "integrated_lufs": -34.6,
+      "sha256": "37a1e1dc3acef3cb9123fca36291008b20a6e0c2a663f0ab3ae3a9237254134a"
+    },
+    {
+      "file": "tempo-act4-01-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.863887,
+      "measured_true_peak_dbfs": -2.5,
+      "integrated_lufs": -18.7,
+      "sha256": "2b458576a3f44f401f53aa1c1ed5c09f37489573302adacca86b4aad5fba8ce4"
+    },
+    {
+      "file": "tempo-act4-02.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.805137,
+      "measured_true_peak_dbfs": -1.8,
+      "integrated_lufs": -19.4,
+      "sha256": "2d1d80bc5af49f57b6d6d26fe6f90876822933c52c8ea8399ed03d0c8bc5b84f"
+    },
+    {
+      "file": "tempo-act4-02-core.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -1.693443,
+      "measured_true_peak_dbfs": -1.7,
+      "integrated_lufs": -19.3,
+      "sha256": "f68189200ca40b9becd0ee36dfad19bf6efae7670f11f33a57358ea8a207c389"
+    },
+    {
+      "file": "tempo-act4-02-atmosphere.ogg",
+      "frames": 5760000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -23.427033,
+      "measured_true_peak_dbfs": -23.4,
+      "integrated_lufs": -35.4,
+      "sha256": "efe6c721e4b80007b95d9c91e6650debd8c9290d9d4a7bc7f4579374cd5bc557"
+    },
+    {
+      "file": "tempo-act4-02-preview.ogg",
+      "frames": 960000,
+      "nan": 0,
+      "infinite": 0,
+      "sample_peak_dbfs": -2.582822,
+      "measured_true_peak_dbfs": -2.0,
+      "integrated_lufs": -19.3,
+      "sha256": "bbd13a73aa684f1f0813e692f916ef9c9de163a8e4cc3e4153b38550178df0e5"
+    }
+  ],
+  "track_count": 9,
+  "seconds": 1080,
+  "decoded_file_count": 36,
+  "limits": "Offline file and decoded-sample checks. No human listening, game integration, physical device, or latency result."
+}

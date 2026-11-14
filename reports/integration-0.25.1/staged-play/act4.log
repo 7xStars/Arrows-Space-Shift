@@ -1,0 +1,34 @@
+{
+  "candidate": "0.25.1-dev.1",
+  "fixture": "Existing profile with all earlier parts and Act IV stages1–8 cleared. No QA parameter. Player state is observed through a read-only API. All boss, pickup and extraction actions use real keyboard input.",
+  "checks": [
+    "Boss defeat exposes a real core without banking it",
+    "Reload after exposure restores the boss entry without banking a core",
+    "Physical pickup does not bank the core",
+    "Reload after pickup restores the boss entry without banking a core",
+    "Normal-health keyboard play defeats the boss and reaches extraction",
+    "Extraction banks provenance without assembling or completing the campaign",
+    "Reload retains the banked core and repair dock link",
+    "No page exception"
+  ],
+  "errors": [],
+  "final": {
+    "phase": "won",
+    "hull": 5,
+    "time": 13.199999999999967,
+    "score": 2135,
+    "receipt": {
+      "id": "hyperbolic-core",
+      "source": "double-torus",
+      "chapter": null,
+      "stage": 8,
+      "exposed": true,
+      "collected": true,
+      "extracted": true,
+      "legacy": false,
+      "seed": 71,
+      "shipId": 0,
+      "score": 2135
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "revision": "stereo-room-r6",
+  "source": "D:\\Projects\\games\\game-off-2026\\reports\\stc-study-r5\\ass-identified-return-r5-stereo-music.wav",
+  "source_sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841",
+  "source_frames": 3534806,
+  "source_rate": 48000,
+  "common_frames": 3678806,
+  "tail_seconds": 3,
+  "tail_policy": "Dry is padded with zeros. The wet return has a final 0.25-second boundary fade. This is not a seamless loop.",
+  "room_gain": 0.3,
+  "room": {
+    "predelay_seconds": 0.03,
+    "comb_decay_seconds": 2.2,
+    "highpass_hz": 220,
+    "lowpass_hz": 4800,
+    "original_early_reflections": true
+  },
+  "source_alignment_offset_frames": 0,
+  "max_dry_pcm_difference": 0,
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": false,
+    "role": "Author and evaluate a finite sample-entry sequence for the selected existing take."
+  },
+  "events": [
+    {
+      "index": 0,
+      "synth": "assStereoRoomR6",
+      "beat": 0.0,
+      "seconds": 0.0,
+      "gain": 1.0,
+      "rate": 1.0,
+      "source_start_frame": 0,
+      "source_frames": 3534806,
+      "duration_beats": 164.46666805555554
+    }
+  ],
+  "supercollider": {
+    "sclang_version": "sclang 3.14.1 (Built from tag 'Version-3.14.1' [426edf6])",
+    "scsynth_version": "scsynth 3.14.1 (Built from tag 'Version-3.14.1' [426edf6])",
+    "mode": "NRT",
+    "compile_command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\sclang.exe",
+      "-a",
+      "--include-path",
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\SCClassLibrary",
+      "-D",
+      "-u",
+      "57139",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-room-r6\\stereo_room.scd",
+      "D:/Projects/games/game-off-2026/audio/stc-study/foxdot-room-r6"
+    ],
+    "render_command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\scsynth.exe",
+      "-N",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-room-r6\\room-score.osc",
+      "_",
+      "D:\\Projects\\games\\game-off-2026\\.local\\foxdot-room-r6\\room-render-4ch-float.wav",
+      "48000",
+      "WAV",
+      "float",
+      "-o",
+      "4",
+      "-i",
+      "0",
+      "-z",
+      "64"
+    ],
+    "compile_exit_code": 0,
+    "render_exit_code": 0,
+    "cleanup": "Free synth and buffer before the final /c_set marker. Do not send /quit.",
+    "render_elapsed_seconds": 10.75
+  },
+  "python": {
+    "version": "3.11.9",
+    "executable": "G:\\Music Tools\\FoxDot\\venv\\Scripts\\python.exe"
+  },
+  "outputs": [
+    {
+      "file": "dry_take.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.700439453125,
+      "peak_dbfs": -3.092587994435519,
+      "rms": 0.18074857667669825,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "0fb3bcde2e130d582f75089170df25de15e1a2d2e7d602f93400fecac0330980"
+    },
+    {
+      "file": "room_return.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.2377130687236786,
+      "peak_dbfs": -12.47893882916708,
+      "rms": 0.040605730071245745,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "79f56a9ddc795a63d626c9fc9d2707335f4edc19a2fb857aeb0be9327ad5c6e6"
+    },
+    {
+      "file": "room_mix.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.705170676484704,
+      "peak_dbfs": -3.034115110258158,
+      "rms": 0.1808768152681734,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "f2631bd6ce2e6fa6cd2afce5f52138a32072ee5b97c2a486a8e2c73ccc3dfb05"
+    }
+  ],
+  "reaper": {
+    "file": "Stereo Room r6.rpp",
+    "opened_or_rendered": false
+  },
+  "provenance": "FoxDot Pattern APIs sequence one existing take. SuperCollider sample-plays it and creates the room return. The original composition was not authored in FoxDot.",
+  "limits": "Offline adapter. No live FoxDot scheduler, workstation capture, physical room model, listening acceptance, or diegetic-source implementation is claimed."
+}

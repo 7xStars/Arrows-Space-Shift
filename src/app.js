@@ -1,95 +1,354 @@
 import { addFold, removeFold, metricAt, spaceDistance, advanceThroughSpace } from './space.js';
 import {OPERATIONS,EFFECT_AXES,roster,commonCounters,auditTournament,activeSourceSide,seedLabel,loadout,equipSeed,upgradeModes,collectDrop,makeDrop,WARP_RADIUS} from './upgrades.js';
 import { createFlight, tick, readFlight, recordEvent, targetOpen, ENCOUNTERS, STEP, ROUTE_LENGTH } from './simulation.js';
-import {projectInView,usesVisibleCombat,inCombatView,combatReady,presentEnemy,ENTRY_TIME,campaignScale} from './combat-view.js';
-import {CHAPTERS,isCampaign,isBoss,isKleinRoute,isTutorial,isScrollingLevel,chapter,continueCampaign,retryCampaign,enterChapter,arenaY,arenaZ} from './campaign.js';
-import {mountInterface} from './interface.js';
-import {PixelArt,enemyArt} from './pixel-art.js';
+import {combatViewLayout,usesVisibleCombat,inCombatView,presentEnemy,ENTRY_TIME,screenFacing} from './combat-view.js';
+import {CHAPTERS,isCampaign,isBoss,isKleinRoute,isTutorial,isScrollingLevel,isKleinSurfaceRoute,hybridProjectiveActive,SCROLL_SPEED,chapter,continueCampaign,retryCampaign,enterChapter,arenaY,arenaZ,bossContinuationIndex,continueAfterBoss} from './campaign.js';
+import {mountInterface,mountSoundToggle,campaignNotice,isCampaignEntryMenu} from './interface.js';
+import {PixelArt} from './pixel-art.js';
+import {FlightRenderer} from './renderer.js';
+import {FlightAudio} from './audio.js';
+import {loadPreferences,savePreferences,readCheckpoint,writeCheckpoint,clearCheckpoint,checkpointFromFlight,bestScore,updateBestScore,loadFleetProfile,saveFleetProfile} from './storage.js';
 import {KLEIN_BOUNDS} from './klein.js';
+import {STARTER_SHIPS,SHIPS,createFleetProfile,selectShip,activeShip,markChapterReached,recordStageResult,practiceChapters,unlockKleinFleet,unlockProjectiveModule,fabricationStatus,craftAftwing} from './fleet.js';
+import {PATTERN_DEFINITIONS} from './boss.js';
+import {EVOLUTION_BY_ID,chooseEvolution,captureEchoes,releaseEchoes} from './ecology.js';
+import {BUILD,isActAvailable,isJamCampaignComplete,isJamCompletionEntry} from './build.js';
+import {createStageClearClock,autoAdvanceEligible} from './stage-flow.js';
+import {playerJoinForecast} from './geometry-cues.js';
+import {revealFoldWake,foldRoutePace} from './fold-wake.js';
+import {loadJourney,saveJourney,syncLegacyParts,setActFourBridge,recordBankedPart} from './journey.js';
+import {exportProgress,importProgress,recoverProgressTransfer} from './progress-transfer.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('space'), ctx = canvas.getContext('2d');
-const testing = new URLSearchParams(location.search).get('test') === '1';
-const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const testing = /^(127\.0\.0\.1|localhost)$/.test(location.hostname)&&new URLSearchParams(location.search).has('qa');
+const progressStorageReady=testing||recoverProgressTransfer();
+const preferences=loadPreferences(undefined,matchMedia('(prefers-reduced-motion: reduce)').matches);
+let campaignJourney=loadJourney();
+const audioBus=new FlightAudio(preferences);
 const keys = new Set();
-let flight = createFlight('campaign'), fireToggle = false;
+let suppressSpaceUntilRelease=false;
+let fleetProfile=testing?createFleetProfile():loadFleetProfile();
+let fleetProfileSignature=JSON.stringify(fleetProfile),fleetProfileSaved=progressStorageReady,hangarSignature='';
+let launchShipConfirmed=false;
+let newCampaignChosen=false;
+let flight = (!testing&&readCheckpoint())||createFlight('campaign',{fleetProfile});
+flight.fleetProfile ||= createFleetProfile(fleetProfile);
+if(!progressStorageReady)flight.lastEvent='Saved progress needs recovery. Browser writes are blocked. Keep the existing records before continuing.';
 const attempts=[];
 let attemptRecorded=false;
 let attemptPrediction='';
 let width = 900, height = 740, lastFrame = 0, accumulator = 0;
-let oldPhase = '', oldStack = null, oldEvent = '', sound = false, audio;
+let qaPlayback=false;
+let oldPhase = '', oldStack = null, oldEvent = '';
+let progressReceipt='',practiceSignature='',recordsSignature='';
+let highScore=bestScore(),checkpointAvailable=Boolean(flight.restoredCheckpoint);
 let flash = 0, hudClock = 0;
 let inventorySignature='';
-const shell=mountInterface({pause,phase:()=>flight.phase,development:testing||new URLSearchParams(location.search).has('lab')});
-const pixelArt=new PixelArt();pixelArt.load().then(()=>{updateUI(true);render();});
-function viewState(){return {width,height,topInset:document.querySelector('.viewport-dock').getBoundingClientRect().height+16};}
-
-function tone(frequency, duration = 0.08) {
-  if (!sound) return;
-  try {
-    audio ||= new AudioContext();
-    if (audio.state !== 'running') return;
-    const oscillator = audio.createOscillator(), gain = audio.createGain();
-    oscillator.type = 'sine'; oscillator.frequency.setValueAtTime(frequency, audio.currentTime);
-    oscillator.frequency.exponentialRampToValueAtTime(frequency * 0.6, audio.currentTime + duration);
-    gain.gain.setValueAtTime(0.04, audio.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + duration);
-    oscillator.connect(gain).connect(audio.destination);
-    oscillator.start(); oscillator.stop(audio.currentTime + duration);
-  } catch { sound = false; $('sound').textContent = 'Sound unavailable'; }
+const stageClearClock=createStageClearClock();
+const shell=mountInterface({pause,phase:()=>flight.phase,development:false,patternDefinitions:PATTERN_DEFINITIONS,audio:audioBus});
+function requestTitleMusic(gesture=false){
+  if(!isCampaignEntryMenu(flight)||document.hidden||!preferences.sound||!preferences.music||document.querySelector('dialog[open]'))return;
+  if(!audioBus.titleRequested||gesture)void audioBus.startTitle();
 }
+const soundToggle=mountSoundToggle({container:document.querySelector('.viewport'),onToggle:setSoundEnabled});
+function updateSoundToggle(){
+  const enabled=preferences.sound&&audioBus.context?.state==='running',recorded=audioBus.recorded?.read();
+  const state=!preferences.sound?'muted':!audioBus.context||audioBus.context.state!=='running'?'blocked':recorded?.error?'unavailable':
+    recorded?.state==='loading'?'loading':recorded?.state==='playing'?'playing':flight.phase==='paused'?'paused':'ready';
+  const description=state==='muted'?'Sound is off.':state==='blocked'?'Select to start sound.':state==='loading'?'Sound is on. Music is loading.':
+    state==='paused'?'Sound is on. Play is paused.':state==='unavailable'?'Music could not load. Action sounds remain on.':'Sound is on.';
+  soundToggle.update({enabled:Boolean(enabled),state,description});
+}
+async function setSoundEnabled(enabled){
+  preferences.sound=enabled;
+  if(!enabled)audioBus.stopTitle();
+  updateOptions();updateSoundToggle();
+  if(enabled){
+    if(isCampaignEntryMenu(flight)&&preferences.music)await audioBus.startTitle();
+    else if(await audioBus.unlock())audioBus.process(flight);
+  }
+  updateSoundToggle();shell.audioStatus?.update();
+}
+$('primary').addEventListener('click',()=>audioBus.stopTitle(),{capture:true});
+for(const eventName of ['pointerdown','keydown'])document.addEventListener(eventName,event=>{
+  if(!event.isTrusted||event.target.closest?.('#sound-toggle')||event.ctrlKey||event.altKey||event.metaKey||event.repeat||eventName==='keydown'&&['Tab','Escape'].includes(event.key))return;
+  requestTitleMusic(true);
+},{capture:true});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestTitleMusic(true);});
+const pixelArt=new PixelArt();
+const renderer=new FlightRenderer(ctx,pixelArt,preferences);
+requestTitleMusic();
+pixelArt.load().then(()=>{updateUI(true);render();requestTitleMusic();});
+function viewState(){return {width,height,topInset:document.querySelector('.viewport-dock').getBoundingClientRect().height+16,bottomInset:106};}
+function saveSection(){
+  if(testing||flight.practice||!isCampaign(flight))return;
+  if(!progressStorageReady){$('checkpoint-status').textContent='Saved progress needs recovery. This session will not overwrite it.';return;}
+  checkpointAvailable=writeCheckpoint(flight);
+  $('checkpoint-status').textContent=checkpointAvailable?'Section checkpoint saved in this browser. Reloading restarts the current section with its saved equipment, score, and route layout.':'This browser cannot save the checkpoint. Section retry still works while the page stays open.';
+}
+function syncFleetProgress(){
+  if(flight.practice||!isCampaign(flight)||!flight.fleetProfile)return;
+  const next=createFleetProfile(flight.fleetProfile),signature=JSON.stringify(next);
+  if(signature===fleetProfileSignature)return;
+  fleetProfile=next;fleetProfileSignature=signature;
+  if(!testing)fleetProfileSaved=progressStorageReady&&saveFleetProfile(fleetProfile);
+}
+function finishFleetCheckpoint(){
+  if(flight.practice||!isCampaign(flight)||flight.phase!=='won')return;
+  const destination=bossContinuationIndex(flight);
+  const name=chapter(flight).hybrid?'Projective Module':chapter(flight).projectiveBoss?'Curvature Seed':'Klein Relay';
+  if(!testing){
+    const journey=loadJourney();syncLegacyParts(journey,fleetProfile);
+    const extraction=flight.events.findLast(event=>event.type==='boss-extracted'&&event.chapter===flight.campaign.index);
+    if(extraction)recordBankedPart(journey,{id:extraction.part,source:'campaign-extraction',chapter:flight.campaign.index,
+      seed:flight.runSeed,shipId:flight.shipId,score:flight.score,extracted:true});
+    if(fleetProfile.curvatureSeed&&chapter(flight).projectiveBoss&&(isActAvailable(4)||!journey.actFourBridge))setActFourBridge(journey,actFourBridge());
+    campaignJourney=journey;
+    if(!progressStorageReady||!saveJourney(journey)){$('checkpoint-status').textContent='The browser could not save the campaign transfer. Keep this page open and export progress before leaving.';return;}
+  }
+  if(fleetProfileSaved){
+    if(destination!==null){
+      // Checkpoint the *next Act*, using the already banked part and this run's
+      // score, seed, equipment and current ship. Never erase the bridge on win.
+      checkpointAvailable=testing?true:writeCheckpoint(flight);
+      $('checkpoint-status').textContent=checkpointAvailable?
+        `${name} banked. The next Act is ready; reloading resumes at Level ${CHAPTERS[destination].number}, not Level 0.`:
+        `${name} banked. Your part is saved, but the browser could not save the next-Act checkpoint.`;
+    }else{
+      // Act IV uses a separate page. Keep the banked Curvature Seed.
+      if(!testing)clearCheckpoint();checkpointAvailable=false;
+      $('checkpoint-status').textContent=isActAvailable(4)?`${name} banked. Act III is complete. The separate hyperbolic Act IV campaign is unlocked.`:
+        `${name} banked. Acts I–III are complete. Your recovered parts and records are saved.`;
+    }
+  }else{
+    $('checkpoint-status').textContent=`${name} secured for this session. This browser cannot save the progression. `+
+      (checkpointAvailable?'Your previous section checkpoint is kept for reload.':'No previous checkpoint is available.');
+  }
+}
+function actFourBridge(){
+  return {shipId:flight.shipId??fleetProfile.selectedShip,seed:flight.runSeed,score:flight.score,
+    echoes:flight.projective?.echoes||0,inventory:structuredClone(flight.inventory||[]),
+    equipped:flight.equipped.map(seed=>seed?.key||null)};
+}
+function launchActFour(){
+  if(!isActAvailable(4)||!fleetProfile.curvatureSeed||flight.practice)return;
+  if(!testing){
+    const journey=loadJourney();syncLegacyParts(journey,fleetProfile);
+    if(flight.phase==='won'&&chapter(flight).projectiveBoss)setActFourBridge(journey,actFourBridge());
+    else if(!journey.actFourBridge)setActFourBridge(journey,{shipId:fleetProfile.selectedShip,seed:flight.runSeed,score:0,echoes:0,inventory:[],equipped:[null,null]});
+    campaignJourney=journey;
+    if(!progressStorageReady||!saveJourney(journey)){$('checkpoint-status').textContent='The browser could not save the Act IV transfer. Export progress before leaving.';return;}
+  }
+  window.location.assign('hyperbolic-act.html');
+}
+function persistFleetProfile(nextProfile=fleetProfile){
+  fleetProfile=createFleetProfile(nextProfile);fleetProfileSignature=JSON.stringify(fleetProfile);
+  if(!testing)fleetProfileSaved=progressStorageReady&&saveFleetProfile(fleetProfile);
+  if(isCampaign(flight)&&!flight.practice)flight.fleetProfile=createFleetProfile(fleetProfile);
+  recordsSignature='';practiceSignature='';
+  return fleetProfileSaved;
+}
+function noteChapterReached(s=flight){
+  if(!isCampaign(s)||s.practice||s.campaign.index<0)return;
+  if(markChapterReached(s.fleetProfile,s.campaign.index))persistFleetProfile(s.fleetProfile);
+}
+function recordCampaignProgress(s=flight){
+  if(!isCampaign(s)||s.practice||!['cleared','lost','won'].includes(s.phase))return false;
+  const receipt=`${s.runSeed}:${s.campaign.index}:${s.phase}:${Math.round(s.time*1000)}`;
+  if(progressReceipt===receipt)return false;progressReceipt=receipt;
+  recordStageResult(s.fleetProfile,{chapter:s.campaign.index,name:chapter(s).name,result:s.phase,score:s.score,
+    grazes:s.campaign.metrics?.grazes||0,shipId:s.shipId,grade:s.campaign.grade,time:s.time-s.campaign.startedAt,
+    cause:s.deathRecap?`${s.deathRecap.title}: ${s.deathRecap.detail}`:'',receipt,runSeed:s.runSeed});
+  persistFleetProfile(s.fleetProfile);return true;
+}
+function chooseForge(id){
+  if(!chooseEvolution(flight,id))return;
+  clearInput();oldPhase='';accumulator=0;updateUI(true);canvas.focus({preventScroll:true});
+}
+function needsShipChoice(){
+  if(!isCampaign(flight)||flight.practice||!fleetProfile.fleetUnlocked)return false;
+  return flight.phase==='won'&&flight.campaign.index===8 ||
+    flight.phase==='paused'&&flight.restoredTransitionFrom===8;
+}
+function describeShipForRelease(ship){
+  return ship.id===3&&!isActAvailable(4)?{...ship,role:'Small collision core',strength:'Its collision core is smaller than Arrow\'s core.',handles:'Trades lateral speed for a smaller collision core.'}:ship;
+}
+function updateHangar(){
+  const unlocked=Boolean(fleetProfile.fleetUnlocked);
+  const preflight=needsShipChoice();
+  shell.placeHangar(preflight);
+  $('fleet-hangar').hidden=!unlocked;
+  if(!unlocked)return;
+  const selected=preflight&&!launchShipConfirmed?null:SHIPS.find(ship=>ship.id===fleetProfile.selectedShip)||STARTER_SHIPS[0];
+  $('fleet-status').textContent=fleetProfile.curvatureSeed?(isActAvailable(4)?'Curvature Seed secured. The next research goal is the Hyperbolic Drive. The foundry can prepare a fourth movement hull.':'Curvature Seed secured. Acts I–III are complete. Your ships and recovered parts remain available for replay.'):fleetProfile.projectiveModule?'Klein Relay and Projective Module recovered. Projective Ecology and the Aftwing blueprint are available.':'Klein Relay recovered. The Warp Drive still needs other repair parts. Three movement hulls are ready for your next flight.';
+  const signature=JSON.stringify([fleetProfile.selectedShip,fleetProfile.unlockedShips,preflight,launchShipConfirmed,fleetProfile.fabricationSpent]);
+  if(signature!==hangarSignature){
+    hangarSignature=signature;
+    $('fleet-ships').replaceChildren(...SHIPS.filter(ship=>fleetProfile.unlockedShips.includes(ship.id)).map(ship=>{
+      const description=describeShipForRelease(ship);
+      const button=document.createElement('button'),preview=document.createElement('img'),name=document.createElement('strong'),role=document.createElement('span'),strength=document.createElement('small'),weakness=document.createElement('small'),coverage=document.createElement('small');
+      button.type='button';button.className='fleet-ship-card';button.dataset.ship=String(ship.id);button.setAttribute('aria-pressed',String(ship.id===selected?.id));
+      preview.className='fleet-ship-preview';preview.src=new URL(`../assets/crossing/${ship.sprite}.png`,import.meta.url).href;preview.alt='';preview.width=96;preview.height=96;preview.draggable=false;
+      name.textContent=ship.name;role.textContent=description.role||description.description||'Movement hull';
+      strength.textContent=description.strength?`Excels: ${description.strength}`:'';weakness.textContent=ship.weakness?`Watch for: ${ship.weakness}`:'';coverage.textContent=description.handles||'';coverage.className='fleet-coverage';
+      button.append(preview,name,role);if(strength.textContent)button.append(strength);if(weakness.textContent)button.append(weakness);if(coverage.textContent)button.append(coverage);return button;
+    }));
+  }
+  $('fleet-note').textContent=preflight?
+    `${selected?`${selected.name} selected. Launch when you are ready.`:'Select a ship, then use the launch button.'} All ships use the same forward gun and Paley-7 equipment.`:
+    `Next flight preference: ${selected.name}. Your active ship does not change mid-section. Every hull uses the same forward gun and Paley-7 equipment.`;
+  $('fleet-save-note').textContent=fleetProfileSaved?'Drive parts, crafting, and ship choice are kept between campaigns.':'Browser storage is unavailable. Your parts and ship choice remain available while this page stays open.';
+  const foundry=fabricationStatus(fleetProfile),button=$('craft-aftwing');
+  $('fleet-foundry').hidden=false;
+  $('fabrication-summary').textContent=`Salvage ${foundry.available}/${foundry.earned} from first-cleared Act II/III lessons · ${foundry.blueprint?'Aftwing blueprint recovered':'Aftwing blueprint awaits Projective Module'} · ${foundry.crafted?'Hull constructed':'Cost 5'}.`;
+  button.disabled=!foundry.blueprint||foundry.crafted||foundry.available<foundry.cost;
+  button.textContent=foundry.crafted?'Aftwing constructed':`Construct Aftwing · ${foundry.cost} salvage`;
+}
+function updatePracticeMenu(){
+  const chapters=practiceChapters(fleetProfile),signature=JSON.stringify([chapters,fleetProfile.selectedShip,flight.practice,flight.campaign?.index]);
+  $('open-practice').disabled=!chapters.length;
+  if(signature===practiceSignature)return;practiceSignature=signature;$('practice-stages').replaceChildren();
+  if(!chapters.length){$('practice-status').textContent='Recover the Klein Relay to unlock Act II practice.';return;}
+  $('practice-status').textContent=`Practice uses ${(SHIPS.find(ship=>ship.id===fleetProfile.selectedShip)||STARTER_SHIPS[0]).name}. No parts or records are awarded.`;
+  for(const index of chapters){
+    const c=CHAPTERS[index],button=document.createElement('button');button.type='button';button.dataset.practiceChapter=String(index);
+    const name=document.createElement('strong'),lesson=document.createElement('span');name.textContent=`Act ${c.act||2}-${c.actStage} · ${c.name}`;lesson.textContent=c.goal;
+    button.append(name,lesson);$('practice-stages').append(button);
+  }
+}
+function updateProgressRecords(){
+  const signature=JSON.stringify([fleetProfile.stageRecords,fleetProfile.runHistory]);if(signature===recordsSignature)return;recordsSignature=signature;
+  const records=$('stage-records');records.replaceChildren();
+  const entries=Object.entries(fleetProfile.stageRecords||{}).map(([index,record])=>[Number(index),record])
+    .filter(([index])=>[2,3].includes(CHAPTERS[index]?.act)).sort((a,b)=>a[0]-b[0]);
+  if(!entries.length){const p=document.createElement('p');p.className='small';p.textContent='Complete an Act II or III stage to create a record.';records.append(p);}
+  for(const [index,record] of entries){const c=CHAPTERS[index];
+    const row=document.createElement('article'),title=document.createElement('strong'),details=document.createElement('span');title.textContent=c.name;
+    details.textContent=`Best ${record.bestGrade} · ${record.bestGradeScore}/100 · Score ${record.bestScore.toLocaleString('en-US')}${record.bestClearTime?` · Fastest ${record.bestClearTime.toFixed(2)}s`:''} · ${record.completions} clear${record.completions===1?'':'s'}`;row.append(title,details);records.append(row);}
+  const history=$('run-history');history.replaceChildren();
+  for(const entry of (fleetProfile.runHistory||[]).slice(0,8)){const li=document.createElement('li'),ship=SHIPS.find(s=>s.id===entry.shipId)?.name||'Arrow';
+    li.textContent=`${entry.name} · ${entry.result} · ${ship} · ${entry.grade} · ${entry.score.toLocaleString('en-US')}${entry.cause?` · ${entry.cause}`:''}`;history.append(li);}
+  if(!history.children.length){const li=document.createElement('li');li.textContent='No recorded attempts yet.';history.append(li);}
+}
+function startPracticeChapter(index){
+  if(!practiceChapters(fleetProfile).includes(index))return;
+  retainExplanation();clearInput();launchShipConfirmed=false;
+  flight=createFlight('campaign',{bonusEnabled:$('bonus-enabled').checked,fleetProfile,shipId:fleetProfile.selectedShip});enterChapter(flight,index);
+  flight.practice=true;flight.phase='running';flight.view=viewState();attemptRecorded=false;progressReceipt='';oldPhase='';oldStack=null;oldEvent='';accumulator=0;
+  shell.dialogs.practice.close();unlockSound();updateUI(true);canvas.focus({preventScroll:true});
+}
+function updateOptions(){
+  $('sound').textContent=preferences.sound?'Sound on':'Sound off';$('sound').setAttribute('aria-pressed',String(preferences.sound));
+  $('volume').value=Math.round(preferences.volume*100);$('volume-value').textContent=`${Math.round(preferences.volume*100)}%`;
+  for(const [id,key] of [['music-volume','musicVolume'],['effects-volume','effectsVolume'],['ambience-volume','ambienceVolume']]){
+    $(id).value=Math.round(preferences[key]*100);$(`${id}-value`).textContent=`${Math.round(preferences[key]*100)}%`;
+  }
+  $('music').checked=preferences.music;$('juice').checked=preferences.juice;$('reduced-motion').checked=preferences.reducedMotion;$('collision-core').checked=preferences.showCore;$('pattern-labels').checked=preferences.patternLabels;$('manifold-cues').checked=preferences.manifoldCues;
+  $('best-score').textContent=`Best score in this browser: ${highScore.toLocaleString('en-US')}`;
+  audioBus.setOptions(preferences);renderer.setOptions(preferences);if(progressStorageReady)savePreferences(preferences);
+  updateSoundToggle();
+}
+function unlockSound(){audioBus.unlock().then(ok=>{if(ok)audioBus.setPlaying(flight.phase==='running',flight);});}
+const effectSummary=['Moves an incoming shot across your ship.','Deflects an incoming shot outward.','Bends an incoming shot outward.','Stores a hit for 0.8 seconds; damage still lands.','Holds an incoming shot for 0.65 seconds.','Slows an incoming shot to half speed.','Slows a shot, doubles its damage; fires sooner.'];
 
 function notify(message) { flight.lastEvent = message; updateUI(true); }
 function fold() {
   if (flight.phase !== 'running') return;
-  if(isTutorial(flight)){notify('Level 0 teaches movement and firing. Folding starts in Level 1.');return;}
-  if (addFold(flight)) { recordEvent(flight,'fold',{fields:flight.fields.length,countdown:flight.countdown});flash = 0.32; tone(340, 0.2); notify('Fold added. Both sides’ shots accelerate inside it.'); }
+  if(isTutorial(flight)&&!['fold','unfold','engage'].includes(flight.campaign.lesson)){notify('First move and shoot. Folding is the next lesson.');return;}
+  if (addFold(flight)) { recordEvent(flight,'fold',{fields:flight.fields.length,countdown:flight.countdown});const wake=revealFoldWake(flight);flash = 0.32; notify(isTutorial(flight)?'Keep firing. Right Shift unfolds.':wake?'Fold wake: new silhouettes approaching from compressed space.':'Space folded. Reach the exit faster.'); }
   else notify(`${flight.maxFolds} field${flight.maxFolds===1?' is':'s are'} active. Unfold before you add another.`);
 }
 function unfold() {
   if (flight.phase !== 'running') return;
-  if (removeFold(flight)) { recordEvent(flight,'unfold',{fields:flight.fields.length,countdown:flight.countdown});flash = 0.22; tone(190, 0.2); notify('Latest fold removed. Both sides’ shots slow there.'); }
+  if (removeFold(flight)) { recordEvent(flight,'unfold',{fields:flight.fields.length,countdown:flight.countdown});flash = 0.22; notify(isTutorial(flight)?flight.campaign.lesson==='engage'?'Space unfolded. Destroy the training enemy with Space.':'Keep unfolding to restore open space.':'Latest fold removed. Both sides’ shots slow there.'); }
   else notify('Space is already open.');
 }
-function clearInput() { keys.clear(); fireToggle = false; }
+function clearInput() { suppressSpaceUntilRelease ||= keys.has('Space');keys.clear(); }
 function retainExplanation(){if(attemptRecorded && attempts.length)attempts.at(-1).explanation=$('explanation').value;}
-function start(mode = flight.mode, encounterIndex=0) {
+function start(mode = flight.mode, encounterIndex=0, continueAt=null) {
   retainExplanation();attemptPrediction=$('prediction').value;$('explanation').value='';
-  clearInput(); flight = createFlight(mode,{bonusEnabled:$('bonus-enabled').checked,encounterIndex}); flight.phase = 'running';
+  clearInput(); launchShipConfirmed=false;flight = createFlight(mode,{bonusEnabled:$('bonus-enabled').checked,encounterIndex,fleetProfile,continueAt}); flight.phase = 'running';
   flight.view=viewState();
-  attemptRecorded=false;
+  attemptRecorded=false;progressReceipt='';
   $('mode').value=mode;
   flight.lastEvent = flight.encounter ? flight.encounter.goal : upgradeModes.includes(mode)?'Collect a seed. Check its accepted side before the shot arrives.':mode === 'space' ? 'Space-only test. Compare the grid before and after a fold.' : 'Reference route started. Fly through the openings.';
   if(isCampaign(flight))flight.lastEvent=chapter(flight).goal;
+  noteChapterReached(flight);
   recordEvent(flight,'start',{mode,encounterIndex:flight.encounterIndex,bonusEnabled:flight.bonusEnabled});
-  accumulator = 0; oldPhase = ''; oldStack = null; updateUI(true); canvas.focus({preventScroll:true});
+  accumulator = 0; oldPhase = ''; oldStack = null; saveSection();unlockSound();updateUI(true); canvas.focus({preventScroll:true});
 }
 function pause(reason = 'Flight paused.') {
   if (flight.phase !== 'running') return;
-  flight.phase = 'paused'; clearInput(); notify(reason); tone(150);
+  flight.phase = 'paused'; clearInput(); audioBus.setPlaying(false);notify(reason);
 }
-function resume() { flight.phase = 'running'; clearInput(); accumulator = 0; notify('Flight resumed.'); canvas.focus({preventScroll:true}); }
+function resume() {
+  const transition=flight.restoredTransitionFrom;
+  if(transition!==null&&transition!==undefined&&fleetProfile.unlockedShips.includes(fleetProfile.selectedShip))
+    flight.shipId=fleetProfile.selectedShip;
+  flight.phase='running';flight.restoredCheckpoint=false;flight.restoredTransitionFrom=null;
+  clearInput();accumulator=0;
+  if(transition!==null&&transition!==undefined){saveSection();noteChapterReached(flight);}
+  unlockSound();notify(transition===8?'Klein Relay active. Welcome to Act II.':
+    transition===17?'Projective Module active. Welcome to Act III.':'Flight resumed.');
+  canvas.focus({preventScroll:true});
+}
 function restart() {
   retainExplanation();
   if($('mode').value==='campaign'&&isCampaign(flight)&&flight.phase!=='ready'){
-    clearInput();retryCampaign(flight);attemptRecorded=false;oldPhase='';oldStack=null;accumulator=0;updateUI(true);canvas.focus({preventScroll:true});return;
+    clearInput();retryCampaign(flight);attemptRecorded=false;progressReceipt='';oldPhase='';oldStack=null;accumulator=0;saveSection();unlockSound();updateUI(true);canvas.focus({preventScroll:true});return;
   }
-  clearInput(); flight = createFlight($('mode').value,{bonusEnabled:$('bonus-enabled').checked}); accumulator = 0; oldPhase = ''; oldStack = null;attemptRecorded=false;
+  clearInput(); flight = createFlight($('mode').value,{bonusEnabled:$('bonus-enabled').checked,fleetProfile}); accumulator = 0; oldPhase = ''; oldStack = null;attemptRecorded=false;
   flight.view=viewState();
   updateUI(true);
 }
 
+function continueUnlockedAct(index){
+  if(!isCampaign(flight)||flight.phase!=='ready'||
+     !(index===9&&fleetProfile.fleetUnlocked||index===18&&fleetProfile.projectiveModule))return;
+  $('mode').value='campaign';
+  start('campaign',0,index);
+}
+$('continue-act2').addEventListener('click',()=>continueUnlockedAct(9));
+$('continue-act3').addEventListener('click',()=>continueUnlockedAct(18));
+$('continue-act4').addEventListener('click',launchActFour);
+// Saved checkpoints are never silently thrown away. Starting over from a
+// restored checkpoint uses the same explicit confirmation as New run.
+$('start-over').addEventListener('click',()=>$('new-run').click());
+$('evolution-choices').addEventListener('click',event=>{const button=event.target.closest('button[data-evolution]');if(button)chooseForge(button.dataset.evolution);});
+$('capture-echo').addEventListener('click',()=>{if(flight.phase==='running'){captureEchoes(flight);updateUI(true);canvas.focus({preventScroll:true});}});
+$('release-echo').addEventListener('click',()=>{if(flight.phase==='running'){releaseEchoes(flight);updateUI(true);canvas.focus({preventScroll:true});}});
 $('primary').addEventListener('click', () => {
+  if(needsShipChoice()&&!launchShipConfirmed){$('fleet-ships').querySelector('button[data-ship]')?.focus({preventScroll:true});return;}
   if(flight.phase==='paused'){resume();return;}
-  if(isCampaign(flight)&&flight.phase==='cleared'){advanceChapter();return;}
+  if(isJamCompletionEntry(flight,fleetProfile)&&!newCampaignChosen){start('campaign',0,18);return;}
+  if(flight.practice&&['cleared','lost','won'].includes(flight.phase)){startPracticeChapter(flight.campaign.index);return;}
+  if(isCampaign(flight)&&flight.phase==='cleared'){if(flight.campaign.index>=BUILD.maxChapterIndex)return;advanceChapter();return;}
   if(isCampaign(flight)&&flight.phase==='lost'){restart();return;}
+  if(isCampaign(flight)&&flight.phase==='won'){
+    if(isJamCampaignComplete(flight,fleetProfile)){start('campaign',0,18);return;}
+    if(chapter(flight).projectiveBoss&&!flight.practice&&fleetProfile.curvatureSeed&&isActAvailable(4)){launchActFour();return;}
+    // Boss victory never falls through to start('campaign'), which would
+    // silently restart the entire game at Level 0.
+    const destination=bossContinuationIndex(flight);
+    if(destination===null)return; // End of currently implemented campaign.
+    clearInput();flight.fleetProfile=createFleetProfile(fleetProfile);
+    const shipId=fleetProfile.unlockedShips.includes(fleetProfile.selectedShip)?fleetProfile.selectedShip:flight.shipId;
+    if(!continueAfterBoss(flight,shipId))return;
+    launchShipConfirmed=false;attemptRecorded=false;progressReceipt='';
+    oldPhase='';oldStack=null;accumulator=0;noteChapterReached(flight);
+    saveSection();unlockSound();updateUI(true);canvas.focus({preventScroll:true});return;
+  }
+  if(isCampaign(flight)&&flight.phase!=='ready')return;
   const index=flight.encounter ? flight.phase==='won' ? (flight.encounterIndex+1)%ENCOUNTERS.length : flight.encounterIndex : 0;
   start(flight.mode,index);
 });
-function advanceChapter(){clearInput();if(continueCampaign(flight)){attemptRecorded=false;oldPhase='';oldStack=null;accumulator=0;updateUI(true);canvas.focus({preventScroll:true});}}
+function advanceChapter(){stageClearClock.reset();clearInput();if(fleetProfile.unlockedShips.includes(fleetProfile.selectedShip))flight.shipId=fleetProfile.selectedShip;if(continueCampaign(flight)){attemptRecorded=false;progressReceipt='';oldPhase='';oldStack=null;accumulator=0;noteChapterReached(flight);saveSection();unlockSound();updateUI(true);canvas.focus({preventScroll:true});}}
 $('new-run').addEventListener('click',()=>shell.confirmReset(()=>{
-  retainExplanation();clearInput();flight=createFlight('campaign',{bonusEnabled:$('bonus-enabled').checked});flight.view=viewState();
-  $('mode').value='campaign';attemptRecorded=false;oldPhase='';oldStack=null;accumulator=0;updateUI(true);
+  newCampaignChosen=true;
+  retainExplanation();clearInput();if(progressStorageReady)clearCheckpoint();checkpointAvailable=false;flight=createFlight('campaign',{bonusEnabled:$('bonus-enabled').checked,fleetProfile,replayActOne:true});flight.view=viewState();
+  $('checkpoint-status').textContent='No active checkpoint. Begin a flight to save your first section. Recovered parts, unlocked ships, your best score, and settings are kept.';
+  $('mode').value='campaign';attemptRecorded=false;progressReceipt='';oldPhase='';oldStack=null;accumulator=0;updateUI(true);
 },true));
 $('practice').addEventListener('click', () => start(flight.mode === 'space' ? 'flight' : 'space'));
 $('restart').addEventListener('click', ()=>shell.confirmReset(restart));
@@ -97,22 +356,54 @@ $('mode').addEventListener('change',restart);
 $('bonus-enabled').addEventListener('change',restart);
 $('save-results').addEventListener('click',()=>{
   retainExplanation();
-  const payload={game:'Arrow Space Shift',version:'0.14.0',recordedAt:new Date().toISOString(),attempts,
+  const payload={game:'Arrow Space Shift',version:BUILD.version,recordedAt:new Date().toISOString(),attempts,
     current:readFlight(flight),prediction:$('prediction').value,explanation:$('explanation').value};
   const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}));
   const a=document.createElement('a');a.href=url;a.download='arrow-space-shift-playtest.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 $('pause').addEventListener('click', () => flight.phase === 'paused' ? resume() : pause());
-$('fire').addEventListener('click', () => { if (flight.phase === 'running') { fireToggle = !fireToggle; updateUI(true); } });
-$('sound').addEventListener('click', async () => {
-  sound = !sound;
-  if (sound) { try { audio ||= new AudioContext(); await audio.resume(); } catch { sound = false; } }
-  $('sound').textContent = sound ? 'Sound on' : 'Sound off';
-  $('sound').setAttribute('aria-pressed', String(sound)); tone(440);
+$('fold').addEventListener('click',()=>{fold();if(flight.phase==='running')canvas.focus({preventScroll:true});});
+$('unfold').addEventListener('click',()=>{unfold();if(flight.phase==='running')canvas.focus({preventScroll:true});});
+$('sound').addEventListener('click',()=>setSoundEnabled(!preferences.sound));
+$('volume').addEventListener('input',()=>{preferences.volume=Number($('volume').value)/100;updateOptions();});
+$('volume').addEventListener('change',async()=>{await audioBus.unlock();audioBus.cue('preview');});
+for(const [id,key] of [['music-volume','musicVolume'],['effects-volume','effectsVolume'],['ambience-volume','ambienceVolume']])$(id).addEventListener('input',()=>{
+  preferences[key]=Math.max(0,Math.min(1,Number($(id).value)/100));updateOptions();
 });
-const actionKeys = new Set(['ShiftLeft','ShiftRight','KeyP','Escape','Space','ArrowLeft','ArrowRight','ArrowUp','ArrowDown']);
+for(const [id,key] of [['music','music'],['juice','juice'],['reduced-motion','reducedMotion'],['collision-core','showCore'],['pattern-labels','patternLabels'],['manifold-cues','manifoldCues']])$(id).addEventListener('change',()=>{preferences[key]=$(id).checked;updateOptions();render();});
+$('practice-stages').addEventListener('click',event=>{const button=event.target.closest('button[data-practice-chapter]');if(button)startPracticeChapter(Number(button.dataset.practiceChapter));});
+$('export-progress').addEventListener('click',()=>{
+  try{
+  const payload={...exportProgress(undefined,{profile:fleetProfile,journey:campaignJourney,checkpoint:checkpointFromFlight(flight),preferences}),build:BUILD.version,exportedAt:new Date().toISOString()};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'})),a=document.createElement('a');
+  a.href=url;a.download=`arrow-space-shift-progress-${BUILD.version}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  $('progress-transfer-status').textContent=BUILD.postJamContent?'Campaign export created. It includes fleet, checkpoints, repair progress, and settings. Import replaces these records.':'Campaign export created. It includes saved progress, ships, checkpoints, and settings. Import replaces these records.';
+  }catch(error){$('progress-transfer-status').textContent=`Export failed. No file was created: ${error.message}`;}
+});
+$('import-progress-button').addEventListener('click',()=>$('import-progress').click());
+$('import-progress').addEventListener('change',async event=>{
+  const file=event.target.files?.[0];if(!file)return;
+  try{
+    const payload=JSON.parse(await file.text()),result=importProgress(payload);
+    if(!result.ok)throw new Error(result.recovered?'The write failed. Previous progress was restored.':'The write failed. A recovery record remains in this browser.');
+    fleetProfile=loadFleetProfile();fleetProfileSignature=JSON.stringify(fleetProfile);
+    campaignJourney=loadJourney();
+    Object.assign(preferences,loadPreferences());updateOptions();
+    flight=readCheckpoint()||createFlight('campaign',{fleetProfile});flight.fleetProfile=createFleetProfile(fleetProfile);
+    clearInput();oldPhase='';oldStack=null;accumulator=0;hangarSignature='';
+    $('progress-transfer-status').textContent=BUILD.postJamContent?'Progress imported. The saved checkpoint and repair state are ready.':'Progress imported. Saved campaign progress and settings are ready.';
+    updateUI(true);
+  }catch(error){$('progress-transfer-status').textContent=`Import rejected: ${error.message}`;}
+  event.target.value='';
+});
+updateOptions();
+const actionKeys = new Set(['ShiftLeft','ShiftRight','KeyP','Escape','Space','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','KeyC','KeyE','Digit1','Digit2','Digit3']);
 window.addEventListener('keydown', event => {
+  if(!event.repeat&&['Space','KeyC','KeyE','ShiftLeft','ShiftRight','KeyP'].includes(event.code))void audioBus.unlock();
+  if(event.code==='Space'&&suppressSpaceUntilRelease){if(event.repeat){event.preventDefault();return;}suppressSpaceUntilRelease=false;}
   if(document.querySelector('dialog[open]'))return;
+  if(flight.phase==='choosing'&&['Digit1','Digit2','Digit3'].includes(event.code)){event.preventDefault();const index=Number(event.code.slice(-1))-1,choice=flight.projective?.offers[index];if(choice)chooseForge(choice);return;}
+  if(needsShipChoice())return;
   if (event.ctrlKey || event.altKey || event.metaKey || !actionKeys.has(event.code)) return;
   if (event.target.closest?.('input,textarea,select') || (event.target.closest?.('button,summary,a') && event.code === 'Space')) return;
   event.preventDefault(); keys.add(event.code);
@@ -123,20 +414,35 @@ window.addEventListener('keydown', event => {
     if (flight.phase === 'paused') resume(); else pause();
   }
 });
-window.addEventListener('keyup', event => keys.delete(event.code));
+window.addEventListener('keyup', event => {keys.delete(event.code);if(event.code==='Space'){if(suppressSpaceUntilRelease)event.preventDefault();suppressSpaceUntilRelease=false;}});
 window.addEventListener('blur', () => { clearInput(); pause('Focus lost. Resume when you are ready.'); });
-document.addEventListener('visibilitychange', () => { if (document.hidden) { clearInput(); pause('Tab hidden. Resume when you are ready.'); } });
-canvas.addEventListener('pointerdown', () => canvas.focus({preventScroll:true}));
+document.addEventListener('visibilitychange', () => { if (document.hidden) { clearInput(); audioBus.stopAmbient();pause('Tab hidden. Resume when you are ready.'); } });
+canvas.addEventListener('pointerdown', () => {void audioBus.unlock();canvas.focus({preventScroll:true});});
 function input() {
   return { horizontal: Number(keys.has('ArrowRight')) - Number(keys.has('ArrowLeft')),
-    throttle: testing||new URLSearchParams(location.search).has('lab')?Number(keys.has('ArrowUp')) - Number(keys.has('ArrowDown')):0,
-    fire: fireToggle || keys.has('Space') };
+    throttle: 0,
+    fire: keys.has('Space'),capture:keys.has('KeyC'),release:keys.has('KeyE') };
 }
 
 for(const [id,slot] of [['slot-one',0],['slot-two',1]])$(id).addEventListener('click',()=>{flight.selectedSlot=slot;updateUI(true);});
 $('inventory').addEventListener('click',event=>{
   const button=event.target.closest('button[data-seed]');if(!button)return;
   equipSeed(flight,button.dataset.seed);updateUI(true);
+});
+$('craft-aftwing').addEventListener('click',()=>{
+  if(!craftAftwing(fleetProfile)){$('fabrication-message').textContent='Aftwing requires the Projective Module blueprint and five first-clear salvage units.';return;}
+  const saved=persistFleetProfile(fleetProfile);
+  $('fabrication-message').textContent=saved?'Aftwing constructed. Choose it for your next flight.':'Aftwing constructed for this session; browser storage could not save it.';
+  hangarSignature='';updateUI(true);
+});
+$('fleet-ships').addEventListener('click',event=>{
+  const button=event.target.closest('button[data-ship]');if(!button)return;
+  if(!selectShip(fleetProfile,Number(button.dataset.ship)))return;
+  if(needsShipChoice())launchShipConfirmed=true;
+  flight.fleetProfile=createFleetProfile(fleetProfile);fleetProfileSignature=JSON.stringify(fleetProfile);
+  if(!testing)fleetProfileSaved=progressStorageReady&&saveFleetProfile(fleetProfile);
+  finishFleetCheckpoint();
+  updateHangar();updateUI(true);$('fleet-ships').querySelector(`button[data-ship="${fleetProfile.selectedShip}"]`)?.focus({preventScroll:true});
 });
 
 function renderCounterGraph(reset=false){
@@ -170,10 +476,16 @@ renderCounterGraph(true);
 function updateUI(force = false) {
   if (!force && hudClock < 0.1) return;
   hudClock = 0;
-  const s = flight, factor = 1 / metricAt(s.z, s.fields);
-  $('progress-label').textContent = s.encounter ? `Encounter ${s.encounterIndex+1} / 3` : `${Math.floor(s.z).toLocaleString('en-US')} / 8,400`;
-  $('route').value = s.encounter ? (s.encounterIndex+(s.phase==='won'?1:0))/3*ROUTE_LENGTH : s.z; $('hull').textContent = `${s.hull} / 5`;
-  $('time').textContent = s.countdown>0 && s.phase!=='ready'?`In ${Math.ceil(s.countdown)} s`:`${s.time.toFixed(2)} s`; $('score').textContent = s.score;
+  shell.audioStatus?.update();
+  updateSoundToggle();
+  syncFleetProgress();
+  const s = flight, factor = 1 / metricAt(isScrollingLevel(s)&&!isKleinSurfaceRoute(s)?s.cameraZ:s.z,s.fields),phaseChanged=s.phase!==oldPhase;
+  const pace=foldRoutePace(s);
+  $('progress-label').textContent=s.encounter?`Encounter ${s.encounterIndex+1} / 3`:pace?`${Math.floor(pace.progress).toLocaleString('en-US')} / ${pace.routeLength.toLocaleString('en-US')} · +${pace.leadSeconds.toFixed(1)}s`:`${Math.floor(s.z).toLocaleString('en-US')} / 8,400`;
+  $('route').max=pace?.routeLength||ROUTE_LENGTH;
+  $('route').value=s.encounter?(s.encounterIndex+(s.phase==='won'?1:0))/3*ROUTE_LENGTH:pace?.progress??s.z; $('hull').textContent = `${s.hull} / 5`;
+  $('time-label').textContent=pace?`+${pace.leadSeconds.toFixed(1)}s saved`:'Flight time';
+  $('time').textContent = s.countdown>0 && s.phase!=='ready'?`In ${Math.ceil(s.countdown)} s`:`${(pace?.elapsed??s.time).toFixed(2)} s`; $('score').textContent = s.score;$('graze-count').textContent=s.campaign?.metrics?.grazes||0;
   $('bonus').textContent = s.bonusEnabled?`Fold bonus earned: ${s.foldBonus}`:'Fold score bonus is off';
   $('bonus-rule').textContent=s.bonusEnabled?'Each fold at the target adds 50 points to a kill.':'A kill gives 100 points in folded or open space.';
   $('unfold-rule').textContent=s.bonusEnabled?'Unfold: more reaction time, slower outgoing shots, lower kill reward.':'Unfold: more reaction time and slower outgoing shots. Kill points stay the same.';
@@ -187,16 +499,34 @@ function updateUI(force = false) {
   const interaction=s.events.findLast(e=>(e.type==='counter-bypass'||e.type==='operation')&&s.time-e.time<2);
   $('interaction').textContent=interaction?interaction.type==='counter-bypass'?`${interaction.actor==='player'?'Enemy':'Your'} ${OPERATIONS[interaction.attack].name} shot passed ${interaction.actor==='player'?'your':'enemy'} ${OPERATIONS[interaction.defense].name}.`:`${interaction.actor==='player'?'Your':'Enemy'} ${OPERATIONS[interaction.typeId].name} acted on a shot.`:'Counter results appear here during combat.';
   $('drop-preview').textContent=s.drops.length?`Seeds ahead: ${s.drops.slice(0,2).map(d=>`${seedLabel(d)} (accepts ${activeSourceSide(s,d)===1?'right':'left'})`).join('; ')}`:'Defeated carriers drop their equipped seeds.';
+  if(s.mode==='campaign'&&(s.campaign?.index??-1)>=9&&(s.campaign?.index??-1)<18){
+    const count=Math.min(2,s.campaign.duplicateRepairSeeds||0);
+    $('drop-preview').textContent+=s.campaign.duplicateRepairUsed?' · Field patch used this stage':` · Duplicate seeds ${count}/2 toward 1 hull field patch (once per stage)`;
+  }
   $('debt').textContent=`Stored damage due: ${s.debts.filter(d=>d.target==='player').reduce((n,d)=>n+d.amount,0)}`;
-  const inventoryState=JSON.stringify([s.inventory.map(seed=>seed.key),s.equipped.map(seed=>seed?.key),s.selectedSlot,s.slotCount]);
+  const inventoryState=JSON.stringify([s.inventory.map(seed=>seed.key),s.equipped.map(seed=>seed?.key),s.selectedSlot,s.slotCount,s.fields.length%2]);
   if(inventoryState!==inventorySignature){
     inventorySignature=inventoryState;
     $('slot-one').textContent=`Slot 1: ${s.equipped[0]?seedLabel(s.equipped[0]):'empty'}`;
     $('slot-two').textContent=s.slotCount===2?`Slot 2: ${s.equipped[1]?seedLabel(s.equipped[1]):'empty'}`:'Slot 2: opens at 7-Paley';
     $('slot-two').disabled=s.slotCount<2;
     $('slot-one').setAttribute('aria-pressed',String(s.selectedSlot===0));$('slot-two').setAttribute('aria-pressed',String(s.selectedSlot===1));
-    $('inventory').replaceChildren(...s.inventory.map(seed=>{const button=document.createElement('button');button.type='button';button.dataset.seed=seed.key;button.textContent=seedLabel(seed);button.setAttribute('aria-pressed',String(s.equipped[s.selectedSlot]?.key===seed.key));return button;}));
-    $('inventory-note').textContent=s.inventory.length?'Select a slot. Then select a collected seed.':'Collect seeds during flight. They remain in your inventory.';
+    $('inventory').replaceChildren(...s.inventory.map(seed=>{
+      const button=document.createElement('button'),heading=document.createElement('strong'),detail=document.createElement('small'),side=document.createElement('small');
+      button.type='button';button.className='seed-card';button.dataset.seed=seed.key;button.style.setProperty('--seed-color',OPERATIONS[seed.type].color);
+      heading.textContent=`${OPERATIONS[seed.type].code} · ${seedLabel(seed)}`;detail.textContent=effectSummary[seed.type];
+      side.textContent=`Now accepts ${activeSourceSide(s,seed)===1?'RIGHT':'LEFT'} shots · ${seed.polarity===1?'right':'left'} seed`;
+      button.append(heading,detail,side);button.setAttribute('aria-pressed',String(s.equipped[s.selectedSlot]?.key===seed.key));return button;
+    }));
+    $('inventory-note').textContent=s.inventory.length?'Select a slot, then a seed. Pickups fill empty slots; they keep your existing choices.':'Collect seeds during flight. They remain in your inventory.';
+  }
+  const activeEcho=Boolean(s.projective&&s.campaign?.index>=18);
+  $('echo-panel').hidden=!activeEcho;$('capture-echo').hidden=!activeEcho;$('release-echo').hidden=!activeEcho;
+  if(activeEcho){
+    const p=s.projective;$('echo-counter').textContent=`Echoes ${p.echoes} / ${p.capacity} · Captured ${p.captured} · Released ${p.released}`;
+    $('echo-build').textContent=p.upgrades.length?`Installed: ${p.upgrades.map(id=>EVOLUTION_BY_ID[id]?.name||id).join(' · ')}`:'No evolutions yet · Capture C · Release E';
+    $('capture-echo').disabled=s.phase!=='running'||p.captureCooldown>0||p.echoes>=p.capacity;
+    $('release-echo').disabled=s.phase!=='running'||p.releaseCooldown>0||p.echoes===0;
   }
   $('mode').disabled=s.phase!=='ready';$('bonus-enabled').disabled=s.phase!=='ready';
   $('encounter-panel').hidden=!s.encounter;
@@ -209,37 +539,63 @@ function updateUI(force = false) {
     $('target-clock').textContent=s.countdown>0 ? s.phase==='ready'?'Two-second countdown at launch':`Launch in ${Math.ceil(s.countdown)} s` : label;
     $('window-progress').value=Math.min(1,s.time/(e.closes||e.limit));
   }
-  $('factor').textContent = `${factor}×`; $('thrust').textContent = s.thrust.toFixed(0);
-  $('speed').textContent = (s.thrust * factor).toFixed(0); $('metric').textContent = (1 / factor).toFixed(3);
-  $('factor-note').textContent = factor === 1 ? 'The ship is outside a fold field.' : `The ship covers ${factor} route units for each thrust unit.`;
+  const displayThrust=isScrollingLevel(s)?SCROLL_SPEED:isBoss(s)?Math.abs(s.thrust):s.thrust;
+  $('factor').textContent = `${factor}×`; $('thrust').textContent = displayThrust.toFixed(0);
+  $('speed').textContent = (displayThrust * factor).toFixed(0); $('metric').textContent = (1 / factor).toFixed(3);
+  $('factor-note').textContent = factor === 1 ? 'The route is outside a fold field.' : `The compressed route advances at ${factor}× its normal pace.`;
   $('fold-count').textContent = `${s.fields.length} / ${s.maxFolds}`;
-  $('field-caption').textContent = factor > 1 ? `Inside compressed space · ${factor}× route speed` : s.fields.length ? 'Fold fields ahead or behind the ship' : 'Space is open';
-  $('fire').setAttribute('aria-pressed', String(fireToggle));
-  $('fire').firstElementChild.textContent = fireToggle ? 'Fire on' : 'Fire off';
-  $('fold').classList.toggle('available', s.phase === 'running' && !isTutorial(s) && s.fields.length < s.maxFolds);
+  $('field-caption').textContent = factor > 1 ? `Compressed corridor · ${factor}× route pace` : s.fields.length ? 'Fold fields ahead or behind the ship' : 'Space is open';
+  const tutorialMayFold=!isTutorial(s)||['fold','unfold','engage'].includes(s.campaign.lesson);
+  $('fold').classList.toggle('available', s.phase === 'running' && tutorialMayFold && s.fields.length < s.maxFolds);
   $('unfold').classList.toggle('available', s.phase === 'running' && s.fields.length > 0);
-  $('fire').disabled = s.phase !== 'running';
+  $('fold').disabled=s.phase!=='running'||!tutorialMayFold||s.fields.length>=s.maxFolds;
+  $('unfold').disabled=s.phase!=='running'||!s.fields.length;
   $('pause').disabled = !['running','paused'].includes(s.phase);
   $('pause').textContent = s.phase === 'paused' ? 'Resume' : 'Pause';
-  const signature = s.fields.map(f => `${f.id}:${s.z < f.start ? 'ahead' : s.z < f.end ? 'inside' : 'passed'}`).join('|');
+  const routeAnchor=isScrollingLevel(s)&&!isKleinSurfaceRoute(s)?s.cameraZ:s.z;
+  const signature = s.fields.map(f => `${f.id}:${routeAnchor < f.start ? 'ahead' : routeAnchor < f.end ? 'inside' : 'passed'}`).join('|');
   if (signature !== oldStack) {
     oldStack = signature;
     $('fold-stack').replaceChildren();
     if (!s.fields.length) { const li = document.createElement('li'); li.className = 'empty'; li.textContent = 'No active fields.'; $('fold-stack').append(li); }
     s.fields.forEach((f, i) => {
       const li = document.createElement('li'); li.textContent = `Field ${f.id}${i === s.fields.length - 1 ? ' · latest' : ''}`;
-      const small = document.createElement('small'); small.textContent = `${Math.round(f.start)}–${Math.round(f.end)} · ${s.z < f.start ? 'Ahead' : s.z < f.end ? 'Inside' : 'Passed'} · Shots ×2`;
+      const small = document.createElement('small'); small.textContent = `${Math.round(f.start)}–${Math.round(f.end)} · ${routeAnchor < f.start ? 'Ahead' : routeAnchor < f.end ? 'Inside' : 'Passed'} · Shots ×2`;
       li.append(small); $('fold-stack').append(li);
     });
   }
-  if (s.lastEvent !== oldEvent) { oldEvent = s.lastEvent; $('event').textContent = s.lastEvent; }
+  const eventText=!isActAvailable(4)&&s.mode==='campaign'&&s.campaign?.index===26&&s.phase==='won'?
+    s.practice?'Curvature Gate practice complete.':'Curvature Seed banked. Act III is complete.':
+    isJamCompletionEntry(s,fleetProfile)&&!newCampaignChosen?'Curvature Seed banked. Act III is complete.':s.lastEvent;
+  if (eventText !== oldEvent) { oldEvent = eventText; $('event').textContent = eventText; }
   if(s.phase==='running' && s.countdown>0)$('flight-state').textContent=`Launch in ${Math.ceil(s.countdown)} s`;
   else if(s.phase==='running')$('flight-state').textContent=s.encounter?'Timing course':upgradeModes.includes(s.mode)?s.mode==='warp-lab'?'Position warp lab':['Introduction · 1','3-Paley','7-Paley'][s.stage]:s.mode==='space'?'Space-only test':'Reference route';
   if (s.phase !== oldPhase) {
+    $('campaign-completion').hidden=!BUILD.postJamContent||!campaignJourney.completed;
     oldPhase = s.phase;
+    if(s.phase==='ready'||s.phase==='won')launchShipConfirmed=false;
+    if(s.phase!=='running'){
+      clearInput();
+      if(s.phase!=='choosing')audioBus.setPlaying(false);
+    }
+    $('overlay').dataset.phase=s.phase;document.querySelector('.viewport').dataset.phase=s.phase;
+    $('evolution-choices').hidden=s.phase!=='choosing';$('primary').hidden=s.phase==='choosing';
+    if(isCampaign(s)&&['cleared','lost','won'].includes(s.phase)){recordCampaignProgress(s);syncFleetProgress();}
+    if(isCampaign(s)&&s.phase==='cleared')saveSection();
+    if(isCampaign(s)&&s.phase==='won')finishFleetCheckpoint();
+    if(!testing&&progressStorageReady&&['cleared','lost','won'].includes(s.phase)){highScore=updateBestScore(s.score);$('best-score').textContent=`Best score in this browser: ${highScore.toLocaleString('en-US')}`;}
     $('overlay').hidden = s.phase === 'running';
     $('flight-state').textContent = ({ready:'Ready for flight',running:s.mode === 'space' ? 'Space-only test' : 'Flight in progress',paused:'Flight paused',won:'Transit complete',lost:'Hull lost'})[s.phase];
-    if (s.phase === 'ready') {
+    if(s.phase==='choosing'){
+      $('overlay-title').textContent='Echo Forge · Choose an evolution';
+      $('overlay-text').textContent='Battle paused. Every evolution changes an action, resource, or positional tradeoff. Press 1–3 or choose a card.';
+      const cards=(s.projective?.offers||[]).map((id,index)=>{
+        const data=EVOLUTION_BY_ID[id],button=document.createElement('button'),title=document.createElement('strong'),detail=document.createElement('span');
+        button.type='button';button.className='evolution-choice';button.dataset.evolution=id;title.textContent=`${index+1} · ${data.name}`;detail.textContent=data.description;button.append(title,detail);return button;});
+      $('evolution-choices').replaceChildren(...cards);$('evolution-choices').hidden=false;
+      $('overlay-note').textContent='Evolutions persist across Act III stages and consume no repair components.';
+      cards[0]?.focus({preventScroll:true});
+    } else if (s.phase === 'ready') {
       $('overlay-title').textContent = s.encounter?s.encounter.name:s.mode==='warp-lab'?'Choose the incoming side.':upgradeModes.includes(s.mode)?['One, then three, then seven.','Test the three-operation cycle.','Test seven operations.'][s.stage]:'Fold the distance.';
       $('overlay-text').textContent = s.encounter?s.encounter.brief:upgradeModes.includes(s.mode)?'A right seed accepts right-side shots with one fold. A left seed accepts left-side shots. Unfold to reverse those sides. Other shots continue normally. Enemies use and drop upgrades.':'Fold for faster shots. Enemy shots accelerate too. Unfold to gain reaction time.';
       $('primary').textContent = s.encounter?'Start encounter 1':s.mode==='warp-lab'?'Start warp lab':upgradeModes.includes(s.mode)?'Start upgrade flight':s.mode === 'space' ? 'Start space test' : 'Start reference route';
@@ -248,7 +604,10 @@ function updateUI(force = false) {
       $('primary').textContent = 'Resume flight';
     } else if (s.phase === 'won' || s.phase === 'lost') {
       $('overlay-title').textContent = s.encounter ? s.phase==='won' ? s.encounterIndex===2?'Timing course complete.':'Encounter cleared.' : 'Try the timing again.' : s.phase === 'won' ? 'Transit complete.' : 'Hull lost.';
+      if(isCampaign(s)&&s.phase==='won'&&s.campaign?.index===8)$('overlay-title').textContent='Klein Relay recovered · the surface is now yours.';
       $('overlay-text').textContent = s.encounter?`${s.lastEvent} Time: ${s.time.toFixed(2)} s. Score: ${s.score}. Bonus ${s.bonusEnabled?'on':'off'}.`:`${s.z.toFixed(0)} route units in ${s.time.toFixed(1)} seconds. ${s.foldsUsed} folds made. Score: ${s.score}.`;
+      if(isCampaign(s)&&s.phase==='won'&&s.campaign?.index===8)
+        $('overlay-text').textContent='You survived the Alice Universe and physically recovered the relay. The next chapter changes the battlefield: YOU can now cross the Klein joins. Choose a ship to launch into that surface.';
       $('primary').textContent = s.encounter ? s.phase==='won' ? s.encounterIndex===2?'Repeat course':`Start encounter ${s.encounterIndex+2}` : 'Retry encounter' : 'Fly again';
       if(!attemptRecorded){
         attemptRecorded=true;
@@ -256,247 +615,263 @@ function updateUI(force = false) {
           events:s.events.map(e=>({...e})),prediction:attemptPrediction,explanation:''});
         const li=document.createElement('li');li.textContent=`${s.encounter?s.encounter.name:s.mode}: ${s.phase==='won'?'cleared':'failed'} · ${s.time.toFixed(2)} s · bonus ${s.bonusEnabled?'on':'off'}`;$('attempts').append(li);
       }
-      if (s.phase === 'won') tone(580, 0.4);
+      if (s.phase === 'won') audioBus.cue('won');
     }
-    $('practice').hidden = s.phase === 'paused' || !!s.encounter || upgradeModes.includes(s.mode);
+    $('practice').hidden = s.phase === 'paused'||s.phase==='choosing'||!!s.encounter||upgradeModes.includes(s.mode);
     $('overlay-note').textContent=s.encounter?'One active fold. A two-second countdown starts each attempt. Use Restart to change the score comparison.':upgradeModes.includes(s.mode)?'Space fires straight ahead. Align the ship with a visible enemy. An entering enemy becomes active after a short delay.':'Use a keyboard. The space-only test has no enemies.';
     $('practice').textContent = s.mode === 'space' ? 'Start reference route' : 'Test space only';
     $('overlay-note').hidden = s.phase === 'paused';
-    if (s.phase !== 'running' && s.phase !== 'ready') $('primary').focus({preventScroll:true});
+    if (s.phase !== 'running' && s.phase !== 'ready'&&s.phase!=='choosing'&&!needsShipChoice()) $('primary').focus({preventScroll:true});
   }
+  const grade=s.campaign?.grade,showGrade=isCampaign(s)&&s.phase==='cleared'&&Boolean(grade);
+  $('stage-scorecard').hidden=!showGrade;
+  if(showGrade){$('grade-letter').textContent=grade.letter;$('grade-score').textContent=`${grade.score} / 100`;
+    for(const key of ['survival','execution','precision','topology','control'])$(`grade-${key}`).textContent=grade[key];}
   updateCampaignUI();
-  $('primary').disabled=!pixelArt.image&&!pixelArt.error;
-  $('space-status').textContent=`Space ${factor}× · Folds ${s.fields.length}/${s.maxFolds}`;
-  const debt=s.debts.filter(d=>d.target==='player').reduce((n,d)=>n+d.amount,0);
-  $('live-debt').textContent=`Stored damage: ${debt}`;$('live-debt').classList.toggle('has-debt',debt>0);
+  updateHangar();
+  updatePracticeMenu();
+  updateProgressRecords();
+  $('primary').disabled=(!pixelArt.image&&!pixelArt.error)||(needsShipChoice()&&!launchShipConfirmed)||(s.phase==='won'&&chapter(s)?.projectiveBoss&&!fleetProfile.curvatureSeed);
+  if(phaseChanged&&needsShipChoice())$('fleet-ships').querySelector('button[data-ship]')?.focus({preventScroll:true});
+  $('space-status').textContent=`${factor>1?'Inside fold':'Open space'} ${factor}× · Folds ${s.fields.length}/${s.maxFolds}`;
+  const debts=s.debts.filter(d=>d.target==='player'),debt=debts.reduce((n,d)=>n+d.amount,0),due=debts.length?Math.max(0,Math.min(...debts.map(d=>d.due))-s.time):0;
+  $('live-debt').textContent=debt?`Stored damage ${debt} · due in ${due.toFixed(1)} s`:'Stored damage 0';$('live-debt').classList.toggle('has-debt',debt>0);
 }
 
 function updateCampaignUI(){
   const s=flight,on=isCampaign(s);$('campaign-panel').hidden=!on;$('new-run').hidden=!on;
   if(!on)$('route-marker').hidden=true;
-  $('tutorial-prompt').hidden=!isTutorial(s);
+  $('axial-control-row').hidden=true;
+  $('tutorial-prompt').hidden=true;$('drive-status').hidden=!on;
+  $('geometry-warning').hidden=true;
   $('campaign-help').hidden=!on;$('combat-loadout').hidden=!on;
   $('restart').textContent=on?'Retry section':'Restart';
   $('thrust-control').textContent=on?'No action':'Change thrust';
-  $('thrust-label').textContent=on?isScrollingLevel(s)?'Ship speed':'Vertical speed':'Thrust';
+  $('thrust-label').textContent=on?(isScrollingLevel(s)||isBoss(s)?'Scroll speed':'Vertical speed'):'Thrust';
   if(!on)return;
   const c=chapter(s),boss=isBoss(s),tutorial=isTutorial(s),scrolling=isScrollingLevel(s);
+  // The route-results view needs its own pace snapshot. The similarly named
+  // value in updateUI() is function-local and unavailable here.
+  const pace=foldRoutePace(s);
+  $('axial-control-row').hidden=true;
+  $('thrust-control').textContent=c.kleinSurface&&!boss?'Advance / reverse':'No action';
+  const ship=activeShip(s),bossPhase=s.campaign.bossPhase||'combat';
+  const recovering=boss&&bossPhase==='salvage',exiting=boss&&bossPhase==='exit';
+  if(s.phase==='choosing')return;
+  const projectivePart=c.hybrid||s.campaign.repairPart?.id==='projective-module';
+  const curvaturePart=c.projectiveBoss||s.campaign.repairPart?.id==='curvature-seed';
+  const partName=curvaturePart?'Curvature Seed':projectivePart?'Projective Module':'Klein relay';
+  const bossGoal=recovering?`Pick up the ${partName}. The surface continues to scroll.`:exiting?`${partName} secured. Cross the extraction line to complete the recovery.`:c.goal;
+  const warning=Number.isFinite(s.drive?.warningUntil)&&s.drive.warningUntil>s.time;
+  $('drive-status').dataset.warning=String(warning);
+  const hasRelay=fleetProfile.driveParts.includes('klein-relay'),hasProjective=fleetProfile.driveParts.includes('projective-module');
+  $('drive-condition').textContent=warning?`Damaged Warp Drive · fold surge in ${(s.drive.warningUntil-s.time).toFixed(1)} s`:s.drive?.status==='repaired'?'Warp Drive repaired':hasProjective?'Damaged Warp Drive · Klein Relay + Projective Module recovered':s.campaign.repairPart?.collected||hasRelay?'Damaged Warp Drive · Klein Relay recovered':'Damaged Warp Drive · find repair parts';
+  $('current-ship').textContent=`${ship.name} · ${describeShipForRelease(ship).role}`;
   $('route-marker').hidden=boss||tutorial;
-  if(!boss&&!tutorial&&$('route-marker').dataset.stage!==String(c.number-1)){$('route-marker').dataset.stage=String(c.number-1);$('route-marker').src=new URL(`../assets/crossing/stage.${c.number-1}.png`,import.meta.url).href;}
-  $('tutorial-prompt').hidden=!tutorial;
-  if(tutorial){
-    const movement=s.campaign.movement;
-    const text=s.campaign.lesson==='move'?`Move left and right: ${[['left','←'],['right','→']].map(([key,label])=>`${label} ${movement[key]>=24?'done':'not yet'}`).join(' · ')}`:s.phase==='cleared'?'Target hit. Movement and firing complete.':'Align with the target. Hold Space to fire.';
-    if($('tutorial-prompt').textContent!==text)$('tutorial-prompt').textContent=text;
+  if(!boss&&!tutorial&&$('route-marker').dataset.stage!==String(Math.min(7,c.number-1))){$('route-marker').dataset.stage=String(Math.min(7,c.number-1));$('route-marker').src=new URL(`../assets/crossing/stage.${Math.min(7,c.number-1)}.png`,import.meta.url).href;}
+  const notice=campaignNotice(s);$('tutorial-prompt').hidden=!notice;
+  if(notice){$('tutorial-prompt').dataset.kind=notice.kind;if($('tutorial-prompt').textContent!==notice.text)$('tutorial-prompt').textContent=notice.text;}
+  const arming=c.hybrid&&(s.campaign?.hybridPhase||1)>=3&&!hybridProjectiveActive(s);
+  const approaching=playerJoinForecast(s,{horizontalVelocity:s.lateralVelocity||0,axialInput:s.lastAxialInput||0,horizon:2});
+  const geometryWarning=$('geometry-warning');geometryWarning.hidden=!(approaching||arming);
+  if(arming){
+    geometryWarning.dataset.rule='arming';
+    geometryWarning.textContent=`HYBRID JOIN ARMING · projective top/bottom activates in ${Math.max(0,s.campaign.phaseBreakUntil-s.time).toFixed(1)} s. The side joins remain Klein.`;
+  } else if(approaching){
+    geometryWarning.dataset.rule=approaching.rule;
+    const description=approaching.rule==='projective'?'PROJECTIVE: x reverses':approaching.rule==='klein'?'KLEIN: forward direction reverses':'TOP/BOTTOM: facing preserved';
+    const lane=approaching.destination.x < -110?'LEFT':approaching.destination.x > 110?'RIGHT':'CENTER';
+    const message=`JOIN IN ~${approaching.timeSeconds.toFixed(1)}s · ${approaching.edge.toUpperCase()} · ${description} · EXIT ${lane}`;
+    if(geometryWarning.textContent!==message)geometryWarning.textContent=message;
   }
-  $('combat-loadout').textContent=`Facing ${s.facing===1?'↑':'↓'} · ${loadout(s).map(seed=>`${seedLabel(seed)} accepts ${activeSourceSide(s,seed)===1?'right':'left'}`).join(' / ')}`;
-  $('campaign-name').textContent=boss?'Final battle · The Klein Fleet':`Level ${c.number} / 8 · ${c.name}`;
-  $('campaign-goal').textContent=tutorial?s.campaign.lesson==='move'?'Use Left and Right to move the ship.':'Align with the training target. Hold Space to hit it.':c.goal;$('campaign-hint').textContent=c.hint;
+  $('combat-loadout').textContent=loadout(s).length?`${boss?'Scrolling · Facing':'Facing'} ${screenFacing(s)===1?'↑':'↓'} · ${loadout(s).map(seed=>`${OPERATIONS[seed.type].code} ${OPERATIONS[seed.type].name} ← accepts ${activeSourceSide(s,seed)===1?'RIGHT':'LEFT'}`).join('   /   ')}`:boss?'Surface scrolling · Left / Right steer · Hold Space to fire':'Flight controls · Left / Right steer · Hold Space to fire';
+  $('side-heading').textContent=tutorial?'First flight':recovering?`Recover the ${partName}`:exiting?'Reach extraction':c.name;$('side-goal').textContent=boss?bossGoal:s.campaign.hint||c.goal;
+  $('side-continuation').textContent=boss?`Destroy the ${c.projectiveBoss?'Curvature Gate':c.hybrid?'hybrid intrusion':'fleet'}, collect its repair part, then cross the exit. The part must reach your ship before it is secured.`:tutorial?'Hold Space. Fold to attack faster. Unfold to slow incoming fire.':'The damaged drive can fold space on its own. Right Shift removes the latest fold. Reach the route exit.';
+  const sideSignature=JSON.stringify([s.equipped.map(seed=>seed?.key),s.fields.length%2,s.facing]);
+  if($('side-loadout').dataset.signature!==sideSignature){
+    $('side-loadout').dataset.signature=sideSignature;
+    $('side-loadout').replaceChildren(...loadout(s).map(seed=>{const div=document.createElement('div'),name=document.createElement('strong'),detail=document.createElement('small'),side=document.createElement('em');div.className='operation-note';name.textContent=`${OPERATIONS[seed.type].code} · ${OPERATIONS[seed.type].name}`;name.style.color=OPERATIONS[seed.type].color;detail.textContent=effectSummary[seed.type];side.textContent=`ACCEPTS ${activeSourceSide(s,seed)===1?'RIGHT':'LEFT'} SHOTS`;div.append(name,detail,side);return div;}));
+    if(!loadout(s).length)$('side-loadout').textContent='Your first operation arrives in Level 1.';
+  }
+  $('campaign-name').textContent=`${s.practice?'PRACTICE · ':''}${boss?`${c.act===3?'Boss 3':c.act===2?'Boss 2':'Boss 1'} · ${c.name}`:c.act===3?`Act III · ${c.actStage} / 8 · ${c.name}`:c.act===2?`Act II · ${c.actStage} / 8 · ${c.name}`:`Level ${c.number} / 8 · ${c.name}`}`;
+  $('campaign-goal').textContent=tutorial?(notice?.text||c.goal):boss?bossGoal:c.goal;$('campaign-hint').textContent=c.hint;
   const alive=s.enemies.filter(e=>e.hp>0&&!e.escaped);
-  $('campaign-objective').textContent=tutorial?s.campaign.lesson==='move'?'1 / 2 · Move':'2 / 2 · Fire':boss?`Fleet hull: ${alive.reduce((n,e)=>n+e.hp,0)} · ${alive.length} ships · ${s.campaign.wraps} edge crossings`:`Route ${Math.min(c.routeLength,Math.floor(s.z))} / ${c.routeLength} · ${alive.filter(e=>inCombatView(s,e)).length} carriers${c.calm?` · ${s.asteroids.filter(a=>inCombatView(s,a)).length} asteroids`:''} in view`;
-  $('campaign-route').textContent=`${tutorial?'●':'✓'} 0  `+CHAPTERS.map((node,i)=>`${i===s.campaign.index?'●':i<s.campaign.index?'✓':'○'} ${node.number||'Boss'}`).join('  ');
-  $('progress-label').textContent=boss?'Final battle':`Level ${c.number} / 8`;
-  $('route').value=scrolling?Math.min(1,s.z/c.routeLength)*ROUTE_LENGTH:(s.campaign.index+(s.phase==='won'?1:0))/CHAPTERS.length*ROUTE_LENGTH;
-  $('upgrade-title').textContent=`${['One operation','Three operations','Seven operations'][s.stage]} · facing ${s.facing===1?'front':'back'}`;
+  const hybridPhase=c.hybrid?` · geometry ${s.campaign.hybridPhase||1} / 4`:'';
+  $('campaign-objective').textContent=tutorial?({move:'1 / 4 · Move',shoot:'2 / 4 · Shoot',fold:'3 / 4 · Fold / Unfold',unfold:'3 / 4 · Fold / Unfold',engage:'4 / 4 · Destroy enemy',complete:'Level 1 starting…'}[s.campaign.lesson]||'Training'):recovering?'Repair part awaiting pickup':exiting?`${Math.ceil(s.campaign.exit?.remaining||0)} distance units to the exit`:boss?`${c.projectiveBoss?'Gate':c.hybrid?'Intrusion':'Fleet'} hull: ${alive.reduce((n,e)=>n+e.hp,0)} · ${alive.length} ships · ${s.campaign.wraps} edge crossings${hybridPhase}`:`Route ${Math.min(c.routeLength,Math.floor(s.z))} / ${c.routeLength} · ${alive.filter(e=>inCombatView(s,e)).length} carriers${c.calm?` · ${s.asteroids.filter(a=>inCombatView(s,a)).length} asteroids`:''} in view`;
+  const routeOffset=c.act===3?18:c.act===2?9:0,routeNodes=c.act===3?CHAPTERS.slice(18,27):c.act===2?CHAPTERS.slice(9,18):CHAPTERS.slice(0,9);
+  $('campaign-route').textContent=c.act>=2?`ACT ${c.act===3?'III':'II'}  `+routeNodes.map((node,j)=>`${routeOffset+j===s.campaign.index?'●':routeOffset+j<s.campaign.index?'✓':'○'} ${node.kind==='boss'?`Boss ${c.act}`:node.actStage}`).join('  '):`${tutorial?'●':'✓'} 0  `+routeNodes.map((node,i)=>`${i===s.campaign.index?'●':i<s.campaign.index?'✓':'○'} ${node.number||'Boss'}`).join('  ');
+  $('progress-label').textContent=recovering?`Collect the ${partName}`:exiting?'Reach the exit':boss?c.name:pace?`${Math.round(100*pace.progress/pace.routeLength)}% · ${pace.leadSeconds.toFixed(1)}s saved`:'Level 0';
+  $('route').value=scrolling?Math.min(1,(c.kleinSurface?s.cameraZ:s.z)/c.routeLength)*ROUTE_LENGTH:(s.campaign.index+(s.phase==='won'?1:0))/CHAPTERS.length*ROUTE_LENGTH;
+  if(boss){
+    const totalHull=s.enemies.reduce((n,e)=>n+(e.maxHp||e.hp),0)||1;
+    $('route').value=(exiting?1-Math.max(0,s.campaign.exit?.remaining||0)/(s.campaign.exit?.total||900):recovering?0:1-alive.reduce((n,e)=>n+e.hp,0)/totalHull)*ROUTE_LENGTH;
+  }
+  $('route').setAttribute('aria-label',recovering?`Collect the ${partName}`:exiting?'Distance to the extraction line':boss?'Boss progress':'Route progress');
+  $('upgrade-title').textContent=`${['One operation','Three operations','Seven operations'][s.stage]} · facing ${screenFacing(s)===1?'front':'back'}`;
   $('stage-guide').textContent=c.hint;
-  $('flight-state').textContent=s.phase==='running'?`${boss?'Boss':`Level ${c.number}`} · ${c.name}`:s.phase==='cleared'?'Level complete':s.phase==='won'?'Campaign complete':s.phase==='lost'?'Retry this section':s.phase==='paused'?'Paused':'Ready for campaign';
-  $('practice').hidden=true;$('overlay-note').textContent='Controls are listed on the game page. Progress lasts until the page is closed or reloaded.';
-  if(tutorial)$('overlay-note').textContent='Folding starts in Level 1. Use a keyboard.';
-  $('overlay').hidden=s.phase==='running';
+  $('flight-state').textContent=s.phase==='running'?recovering?`Recover the ${partName}`:exiting?'Reach extraction':`${boss?c.act===3?'Boss 3':c.act===2?'Boss 2':'Boss 1':`Level ${c.number}`} · ${c.name}`:s.phase==='cleared'?'Level complete':s.phase==='won'?curvaturePart?'Curvature Seed secured':projectivePart?'Projective Module secured':'Relay secured':s.phase==='lost'?'Retry this section':s.phase==='paused'?'Paused':'Ready for campaign';
+  $('practice').hidden=true;$('overlay-note').textContent=c.act===3?'← → steer · Space fire · C capture · E release · Left Shift fold · Right Shift unfold':c.kleinSurface?'← → Seam steer · Space Fire · Left Shift Fold · Right Shift Unfold · P Pause':'← → Steer · Space Fire · Left Shift Fold · Right Shift Unfold · P Pause';
+  if(boss)$('overlay-note').textContent='The surface scrolls. ← → Steer · Hold Space to fire · Left Shift Fold · Right Shift Unfold · P Pause';
+  $('overlay-note').hidden=false;
+  if(tutorial)$('overlay-note').textContent='Stage 0 · ← → Move → Space Fire → Left Shift Fold / Right Shift Unfold → Destroy enemy';
+  $('overlay').hidden=s.phase==='running';$('primary').disabled=false;
+  $('overlay').dataset.titleMenu=String(isCampaignEntryMenu(s));
+  requestTitleMusic();
+  // Unlocked modules remain owned, but choosing to skip an Act is explicit.
+  // A saved section checkpoint takes precedence until resumed or cleared.
+  $('continue-act2').hidden=!(isCampaign(s)&&s.phase==='ready'&&fleetProfile.fleetUnlocked);
+  $('continue-act3').hidden=!(isCampaign(s)&&s.phase==='ready'&&fleetProfile.projectiveModule);
+  $('continue-act4').hidden=!(isActAvailable(4)&&isCampaign(s)&&s.phase==='ready'&&fleetProfile.curvatureSeed);
+  const completedEntry=isJamCompletionEntry(s,fleetProfile)&&!newCampaignChosen;
+  $('start-over').hidden=!(isCampaign(s)&&s.phase==='paused'&&s.restoredCheckpoint||completedEntry);
+  $('start-over').textContent=completedEntry?'New campaign · Level 0':'Start over · Level 0';
   if(s.phase==='ready'){
-    $('overlay-title').textContent='Arrow Space Shift';$('overlay-text').textContent='Start with Level 0. Learn to move and fire before the eight routes and final battle. Use a keyboard. Guide and equipment panels pause play.';$('primary').textContent='Start campaign';
+    $('overlay-title').textContent='Arrow Space Shift';
+    $('overlay-text').textContent=fleetProfile.curvatureSeed?
+      isActAvailable(4)?'Acts I–III completed. Act IV is unlocked as a separate playable Bolza campaign. Replay from Level 0 or choose an unlocked Act; nothing has been reset.':
+      'Acts I–III completed. Thank you for playing Arrow Space Shift. Choose an unlocked Act for replay, or begin a new run. Your saved rewards remain available.':
+      fleetProfile.fleetUnlocked?'Begin at Level 0, or continue an unlocked Act. Your saved modules and ships stay unlocked.':'Begin at Level 0. Learn movement, manual fire, and space folds.';
+    $('primary').textContent='Begin at Level 0';
+    $('overlay-note').textContent=fleetProfile.fleetUnlocked?'Your saved relay, modules, and ships remain unlocked. You can replay Act I or choose an unlocked Act below.':'Keyboard recommended · Learn the controls in Level 0 · Section checkpoints save automatically';
+    if(completedEntry){
+      $('overlay-title').textContent='Act III complete';
+      $('overlay-text').textContent='Your Curvature Seed is banked. Thank you for playing Arrow Space Shift. Your recovered parts, ships, and stage records remain saved.';
+      $('primary').textContent='Replay Act III';
+      $('overlay-note').textContent='Replay Act III, choose another unlocked Act, or select New campaign to begin at Level 0.';
+      $('side-heading').textContent='Act III complete';$('side-goal').textContent='Your Curvature Seed and campaign records are saved.';
+    }
+  }else if(s.phase==='paused'&&s.restoredCheckpoint){
+    if(s.restoredTransitionFrom===8||s.restoredTransitionFrom===17){
+      const nextAct=s.restoredTransitionFrom===8?'II':'III';
+      const part=s.restoredTransitionFrom===8?'Klein Relay':'Projective Module';
+      $('overlay-title').textContent=`Act ${nextAct} is ready`;
+      $('overlay-text').textContent=`${part} already recovered and banked. Your score, equipment, ship, and previous progress are preserved. Begin ${c.name} rather than replaying Act I.`;
+      $('primary').textContent=`Launch Act ${nextAct} · ${c.name}`;
+      $('overlay-note').textContent=s.restoredTransitionFrom===8?'Select your ship below, then launch into Klein traversal.':'You may change your selected ship at the Fleet Hangar, or launch the current choice.';
+    }else{
+      const checkpointName=tutorial?'Level 0':boss?c.name:`Level ${c.number}`;
+      $('overlay-title').textContent='Continue your flight';$('overlay-text').textContent=`Your ${checkpointName} checkpoint is ready. Start this section with full hull, the same route layout, and your saved equipment and score.`;$('primary').textContent=tutorial?'Resume training':boss?`Resume ${c.name}`:`Resume Level ${c.number}`;$('overlay-note').textContent='To start from Level 0 instead, choose Start over below. Saved fleet unlocks and records will remain.';
+    }
   }else if(s.phase==='cleared'){
-    $('overlay-title').textContent=`${c.name} complete.`;$('overlay-text').textContent='Your equipment and score will carry forward. The next section starts with full hull.';$('primary').textContent=CHAPTERS[s.campaign.index+1]?.kind==='boss'?'Enter the final battle':`Start Level ${CHAPTERS[s.campaign.index+1]?.number}`;
+    const releaseComplete=s.campaign.index>=BUILD.maxChapterIndex;
+    $('overlay-title').textContent=releaseComplete?`${BUILD.label} complete.`:`${c.name} complete.`;
+    const best=fleetProfile.stageRecords?.[s.campaign.index]?.bestClearTime;
+    const speed=s.campaign.grade?.speed;
+    const paceText=pace?`Time ${pace.elapsed.toFixed(1)}s · Speed ${speed?.letter||'—'} · +${speed?.bonus||0} points${best?` · Best ${best.toFixed(1)}s`:''}`:'';
+    $('overlay-text').textContent=releaseComplete?`Version ${BUILD.version} complete. Score ${s.score.toLocaleString('en-US')}${s.campaign.grade?` · Stage grade ${s.campaign.grade.letter} (${s.campaign.grade.score})`:''}. Your equipment and recovered drive parts remain saved.`:`Score ${s.score.toLocaleString('en-US')}${s.campaign.grade?` · Stage grade ${s.campaign.grade.letter} (${s.campaign.grade.score})`:''}. ${paceText}. Your equipment carries forward. The next section starts with full hull.${checkpointAvailable?' Checkpoint saved.':''}`;
+    $('primary').textContent=releaseComplete?'Version complete':CHAPTERS[s.campaign.index+1]?.kind==='boss'?'Engage the next geometry':`Start Level ${CHAPTERS[s.campaign.index+1]?.number}`;
+    $('primary').disabled=releaseComplete;
+    if(autoAdvanceEligible(s,BUILD.maxChapterIndex)){
+      const nextLabel=CHAPTERS[s.campaign.index+1]?.kind==='boss'?'Next boss':'Next level';
+      const checkpointText=checkpointAvailable?'Your next-stage checkpoint is saved.':'This session retains progress, but browser checkpoint storage is unavailable.';
+      $('overlay-note').textContent=`${nextLabel} starts automatically in ${Math.max(1,Math.ceil(stageClearClock.remaining()))} s. Press the button to continue now. ${checkpointText}`;
+    }
   }else if(s.phase==='lost'){
-    $('overlay-title').textContent='Try this section again.';$('overlay-text').textContent=`${s.lastEvent} Retry from the section checkpoint. Earlier progress remains available.`;$('primary').textContent='Retry section';
+    const recap=s.deathRecap?`${s.deathRecap.title}. ${s.deathRecap.detail}`:s.lastEvent;
+    $('overlay-title').textContent='Try this section again.';$('overlay-text').textContent=`${recap} Retry from the section checkpoint. Earlier progress remains available.`;$('primary').textContent='Retry section';
   }else if(s.phase==='won'){
-    $('overlay-title').textContent='The fleet is destroyed.';$('overlay-text').textContent=`Campaign complete. Score: ${s.score}. Edge crossings: ${s.campaign.wraps}.`;$('primary').textContent='Start a new campaign';
+    $('overlay-title').textContent=c.projectiveBoss?'Act III complete · Curvature Seed secured.':c.hybrid?'Act II complete · Projective Module secured.':'Act I complete · Klein Relay secured.';$('overlay-text').textContent=c.projectiveBoss?`The Curvature Gate was defeated. Your ship and run are ready for the Bolza field. Score: ${s.score.toLocaleString('en-US')}.`:c.hybrid?`The hybrid geometry has been defeated. The Projective Module is banked. Continue directly into Act III · Projective Chart. Score: ${s.score.toLocaleString('en-US')}.`:`Klein Fleet defeated. Relay recovered and banked. Choose a ship and continue directly into Act II · Return Flight. Score: ${s.score.toLocaleString('en-US')}.`;
+    $('overlay-note').textContent=fleetProfileSaved?(c.projectiveBoss?'Curvature Seed saved. Act IV keeps your ship differences, manual gun, fold, capture, and release. Equipment is stored, but its seven operation effects are inactive there. Recover the final core, then return to the repair dock.':c.hybrid?'The Klein Relay and Projective Module are saved. Act III now unlocks projective traversal.':'Your recovered part and unlocked ships are saved. Choose a hull to continue into Act II.'):`The unlock is held for this session.${checkpointAvailable?' Your previous section checkpoint is kept for reload.':' Browser storage is unavailable.'}`;
+  }
+  if(s.practice&&['cleared','lost','won'].includes(s.phase)){
+    const recap=s.phase==='lost'&&s.deathRecap?` ${s.deathRecap.title}. ${s.deathRecap.detail}`:'';
+    $('overlay-title').textContent=s.phase==='lost'?`${c.name} practice ended.`:`${c.name} practice complete.`;
+    $('overlay-text').textContent=`Practice does not change campaign progress.${recap} Score ${s.score.toLocaleString('en-US')}${s.campaign.grade?` · Grade ${s.campaign.grade.letter}`:''}.`;
+    $('primary').textContent='Retry practice';$('primary').disabled=false;$('overlay-note').textContent='Open Practice to choose another reached lesson.';
+  }
+  if(needsShipChoice())$('primary').textContent=launchShipConfirmed?
+    `Launch Act II · ${(SHIPS.find(ship=>ship.id===fleetProfile.selectedShip)||STARTER_SHIPS[0]).name}`:'Select a ship for Act II';
+  if(s.phase==='won'&&c.hybrid&&!s.practice){$('primary').textContent='Continue to Act III · Projective Chart';$('primary').disabled=false;}
+  if(s.phase==='won'&&c.projectiveBoss&&!s.practice){
+    if(isJamCampaignComplete(s,fleetProfile)){
+      $('overlay-title').textContent='Act III complete';
+      $('overlay-text').textContent=`You defeated the Curvature Gate and extracted the Curvature Seed. Thank you for playing Arrow Space Shift. Score: ${s.score.toLocaleString('en-US')}.`;
+      $('overlay-note').textContent=fleetProfileSaved?'Your recovered parts, ships, and stage records are saved. Use Practice to replay a reached stage, or select Replay Act III for a new Act III run.':'The reward is held for this session. Export progress before leaving if browser storage is unavailable.';
+      $('primary').textContent='Replay Act III';$('primary').disabled=false;
+      $('side-heading').textContent='Act III complete';$('side-goal').textContent='The Curvature Seed is banked.';
+      $('side-continuation').textContent='Replay a reached stage from Practice, or begin another Act III run.';
+    }else if(isActAvailable(4)){
+      $('primary').textContent='Launch Act IV · The Eight Edges';$('primary').disabled=!fleetProfile.curvatureSeed;
+    }else{
+      $('primary').textContent='Complete extraction';$('primary').disabled=true;
+    }
   }
 }
 
 function resize() {
   const r = canvas.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
   width = r.width; height = r.height;
-  flight.view={width,height,topInset:document.querySelector('.viewport-dock').getBoundingClientRect().height+16};
+  flight.view=viewState();
   document.querySelector('.viewport').style.setProperty('--dock-height',`${flight.view.topInset}px`);
+  const layout=combatViewLayout(flight);document.querySelector('.viewport').style.setProperty('--arena-width',`${layout.arenaWidth}px`);
+  document.querySelectorAll('.realm-aside').forEach(node=>{node.hidden=layout.left<215;});
   canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
   ctx.setTransform(dpr,0,0,dpr,0,0);
 }
 const viewObserver=new ResizeObserver(resize);viewObserver.observe(canvas);viewObserver.observe(document.querySelector('.viewport-dock'));
-function project(x,z) {
-  return projectInView(flight,x,z);
-}
-function line(x1,y1,x2,y2,color,lineWidth=1) { ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.strokeStyle = color; ctx.lineWidth = lineWidth; ctx.stroke(); }
-function polygon(points,fill,stroke) {
-  ctx.beginPath(); points.forEach(([x,y],i)=>i ? ctx.lineTo(x,y) : ctx.moveTo(x,y)); ctx.closePath();
-  if(fill){ctx.fillStyle=fill;ctx.fill();} if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1.5;ctx.stroke();}
-}
-function drawShip(x,y,enemy=false,strong=false,facing=enemy?-1:1,artId=null) {
-  const id=artId||(enemy?'enemy.gunner':'player.arrow');
-  const oriented=enemy?(facing===1?`${id}-up`:id):facing===-1?'player.arrow-down':id;
-  if(pixelArt.draw(ctx,oriented,x,y,enemy?typeof strong==='number'?Math.round(strong*3):3:3))return;
-  ctx.save();ctx.translate(x,y);
-  if(facing===-1)ctx.rotate(Math.PI);
-  const color = enemy ? '#ffb8a0' : '#7ae8e0';
-  const size = enemy ? typeof strong==='number'?strong:strong?1.1:0.85 : 1;
-  ctx.scale(size,size);
-  if (!enemy) { const flame = reducedMotion ? 14 : 11 + Math.sin(flight.time * 40) * 5;
-    polygon([[-5,14],[0,14+flame],[5,14]],'#b8a6ed'); }
-  polygon([[0,-23],[-9,-2],[-23,15],[-8,11],[0,18],[8,11],[23,15],[9,-2]],enemy?'#4d3345':'#254657',color);
-  polygon([[0,-13],[-4,3],[0,8],[4,3]],color);
-  line(-10,5,-18,12,color); line(10,5,18,12,color);
-  ctx.restore();
-}
-function render() {
-  ctx.fillStyle = pixelArt.manifest?.palette.D||'#0b1528'; ctx.fillRect(0,0,width,height);
-  const s = flight,origin=isCampaign(s)?s.cameraZ:s.z,topZ = advanceThroughSpace(origin,1300,s.fields);
-  for(let i=0;i<95;i++){
-    const baseZ=i*173.57, z=baseZ + Math.floor(origin / 16500)*16500;
-    const p=project(Math.sin(i*71.19)*390,z < origin-100 ? z+16500 : z);
-    if(p.y<0 || p.y>height)continue;
-    ctx.fillStyle=i%4===0?'#8ca6c5':'#3c5271';ctx.fillRect(p.x,p.y,i%4===0?2:1,2);
-  }
-  for(let x=-320;x<=320;x+=80){const a=project(x,origin-200),b=project(x,topZ);line(a.x,a.y,b.x,b.y,'#283c574f');}
-  for(let z=Math.floor(origin/100)*100;z<topZ;z+=100){const p=project(0,z);line(width*.06,p.y,width*.94,p.y,'#35496766');}
-  if(isBoss(s)||isKleinRoute(s))drawKleinEdges(s);
-  for(const f of s.fields){
-    const a=project(0,f.start),b=project(0,f.end);
-    if(a.y<-100 || b.y>height+100)continue;
-    ctx.fillStyle='#b8a6ed0d';ctx.fillRect(0,b.y,width,a.y-b.y);
-    for(const [p,label] of [[a,`Fold ${f.id} · shots ×2`],[b,`End ${f.id}`]]){
-      if(p.y<65 || p.y>height-40)continue;
-      const shift = reducedMotion ? 0 : Math.sin(s.time*2+f.id)*3;
-      ctx.beginPath();ctx.moveTo(0,p.y);ctx.bezierCurveTo(width*.3,p.y-12-shift,width*.7,p.y+12+shift,width,p.y);
-      ctx.strokeStyle='#b8a6ed';ctx.lineWidth=1.2;ctx.stroke();
-      ctx.fillStyle='#c3b5f0';ctx.font='11px Segoe UI';ctx.fillText(label,16,p.y-9);
-    }
-  }
-  for(const rock of s.asteroids){
-    if(rock.hp<=0||!inCombatView(s,rock)){rock.presented=false;continue;}rock.presented=true;
-    const p=project(rock.x,rock.z),rx=rock.radius*width/800,ry=rock.radius*(isCampaign(s)?campaignScale(s):(height-150)/1050);
-    const rockId=rock.hp<rock.maxHp?'asteroid.break-0':rock.radius>=27?'asteroid.large':rock.radius>=23?'asteroid.medium':'asteroid.small';
-    const rockScale=rockId==='asteroid.large'?2:rockId==='asteroid.small'?5:3;
-    if(pixelArt.draw(ctx,rockId,p.x,p.y,rockScale)){if(rock.hitUntil>s.time)pixelArt.draw(ctx,'effect.absorb',p.x,p.y,3);continue;}
-    const rotation=rock.rotation+(reducedMotion?0:s.time*.12),points=Array.from({length:9},(_,i)=>{
-      const angle=rotation+i/9*Math.PI*2,size=.82+.14*Math.sin(rock.shape+i*8.7);
-      return [p.x+Math.cos(angle)*rx*size,p.y+Math.sin(angle)*ry*size];
-    });
-    polygon(points,'#3c4550',rock.hitUntil>s.time?'#fff3dc':'#c4bdac');
-    line(p.x-rx*.2,p.y-ry*.4,p.x+rx*.25,p.y+ry*.3,'#737b82',1);
-    if(rock.hp<rock.maxHp){line(p.x,p.y-ry*.6,p.x-rx*.2,p.y+ry*.3,'#c4bdac',1);line(p.x-rx*.2,p.y+ry*.3,p.x+rx*.3,p.y+ry*.5,'#c4bdac',1);}
-  }
-  for(const drop of s.drops){
-    if(drop.collected)continue;const p=project(drop.x,drop.z);
-    if(p.y<65 || p.y>height+30)continue;
-    const color=OPERATIONS[drop.type].color;
-    polygon([[p.x,p.y-13],[p.x+13,p.y],[p.x,p.y+13],[p.x-13,p.y]],'#392f54',color);
-    ctx.fillStyle=color;ctx.font='11px Segoe UI';ctx.textAlign='center';ctx.fillText(`${drop.polarity===1?'R':'L'} · ${OPERATIONS[drop.type].name}`,p.x,p.y-23);ctx.textAlign='left';
-  }
-  for(const [index,seed] of loadout(s).entries()){
-    const side=activeSourceSide(s,seed),p=project(s.x+side*90,advanceThroughSpace(s.z,WARP_RADIUS,s.fields));
-    const color=OPERATIONS[seed.type].color;
-    polygon([[p.x-side*9,p.y-7],[p.x,p.y],[p.x-side*9,p.y+7]],null,color);
-    if(width>500){ctx.fillStyle=color;ctx.font='11px Segoe UI';ctx.textAlign='center';ctx.fillText(`${index+1}: ${OPERATIONS[seed.type].code} · ${side===1?'right':'left'}`,p.x,p.y-14-index*14);ctx.textAlign='left';}
-  }
-  for(const e of s.events.slice(-16)){
-    if(e.type!=='operation'||e.typeId!==0||s.time-e.time>.18)continue;
-    const a=project(e.from.x,e.from.z),b=project(e.to.x,e.to.z);ctx.setLineDash([3,5]);line(a.x,a.y,b.x,b.y,'#b8a6ed80');ctx.setLineDash([]);
-  }
-  for(const gate of s.gates){
-    const p=project(0,gate.z);if(p.y<60 || p.y>height+30)continue;
-    const a=project(gate.gap-gate.width/2,gate.z),b=project(gate.gap+gate.width/2,gate.z);
-    ctx.fillStyle='#ecd28312';ctx.fillRect(0,p.y-7,a.x,14);ctx.fillRect(b.x,p.y-7,width-b.x,14);
-    line(0,p.y,a.x,p.y,'#ecd283',3);line(b.x,p.y,width,p.y,'#ecd283',3);
-    line(a.x,p.y-12,a.x,p.y+12,'#ecd283',3);line(b.x,p.y-12,b.x,p.y+12,'#ecd283',3);
-    ctx.fillStyle='#ecd283';ctx.font='10px Segoe UI';ctx.textAlign='center';ctx.fillText('Opening',(a.x+b.x)/2,p.y-12);ctx.textAlign='left';
-  }
-  if(s.encounterIndex===2 && !s.encounter.hit){
-    const a=project(s.x-220,s.z+360),b=project(s.x+220,s.z+360);
-    ctx.setLineDash([5,5]);line(a.x,a.y,b.x,b.y,'#ffb8a080',2);ctx.setLineDash([]);
-    ctx.fillStyle='#ffb8a0';ctx.font='11px Segoe UI';ctx.textAlign='center';ctx.fillText('Guard aims at this lane after the hit',(a.x+b.x)/2,a.y-12);ctx.textAlign='left';
-  }
-  for(const enemy of s.enemies){
-    if(enemy.hp<=0 || enemy.escaped || enemy.stage>s.stage)continue;const p=project(enemy.x,enemy.z);
-    if(usesVisibleCombat(s)?inCombatView(s,enemy):p.y>65 && p.y<height+40){
-      presentEnemy(s,enemy);enemy.maxHp??=enemy.hp;
-      ctx.save();if(usesVisibleCombat(s)&&!combatReady(s,enemy))ctx.globalAlpha=.45;
-      const artId=enemyArt(enemy,isKleinRoute(s));
-      drawShip(p.x,p.y,true,enemy.boss?(enemy.name==='Core'?1.6:1.1):enemy.hp>2,isCampaign(s)?enemy.facing:-1,artId);
-      ctx.restore();
-      if(usesVisibleCombat(s)){
-        const ready=combatReady(s,enemy);ctx.fillStyle='#344760';ctx.fillRect(p.x-20,p.y+25,40,3);
-        ctx.fillStyle=ready?'#ffb8a0':'#b8a6ed';ctx.fillRect(p.x-20,p.y+25,40*(ready?Math.max(0,enemy.hp/enemy.maxHp):Math.min(1,(enemy.visibleFor||0)/ENTRY_TIME)),3);
-        if(!ready){ctx.fillStyle='#b8a6ed';ctx.font='10px Segoe UI';ctx.textAlign='center';ctx.fillText('Entering',p.x,p.y+42);ctx.textAlign='left';}
-        if(!ready&&enemy.loopCount)pixelArt.draw(ctx,'return.entry',p.x,p.y-48,1);
-        if(ready&&!enemy.boss)pixelArt.draw(ctx,`health.${Math.min(4,Math.max(1,Math.ceil(enemy.hp)))}`,p.x,p.y-30,2);
-      }
-      if(enemy.hitUntil>s.time){ctx.beginPath();ctx.arc(p.x,p.y,28,0,Math.PI*2);ctx.strokeStyle='#fff3dc';ctx.stroke();}
-      if(enemy.dropsUpgrade||isTutorial(s)){ctx.fillStyle='#d8c7ff';ctx.font='11px Segoe UI';ctx.textAlign='center';ctx.fillText([enemy.name,loadout(enemy).map(seed=>`${OPERATIONS[seed.type].code}${seed.polarity===1?'R':'L'}`).join(' / ')].filter(Boolean).join(' · '),p.x,p.y-(enemy.boss?48:34));ctx.textAlign='left';}
-      if(enemy.shield){
-        const open=targetOpen(s);ctx.strokeStyle=open?'#7ae8e0':'#ecd283';ctx.lineWidth=3;
-        ctx.setLineDash(open?[3,7]:[]);ctx.beginPath();ctx.arc(p.x,p.y,34,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
-        ctx.fillStyle=open?'#7ae8e0':'#ecd283';ctx.font='12px Segoe UI';ctx.textAlign='center';ctx.fillText(open?'Target open':'Shield closed',p.x,p.y+52);ctx.textAlign='left';
-      }
-    }
-  }
-  for(const effect of s.effects){
-    const p=project(effect.x,effect.z);if(p.y<90||p.y>height-35)continue;
-    const age=(s.time-effect.start)/(effect.until-effect.start),defeat=effect.type==='defeat'||effect.type==='asteroid';
-    if(effect.type==='asteroid'){const frame=pixelArt.animationFrame('asteroid.break',(s.time-effect.start)*1000);if(frame)pixelArt.draw(ctx,frame,p.x,p.y,3);}
-    ctx.save();ctx.globalAlpha=1-age;ctx.strokeStyle=effect.color||(defeat?'#ecd283':'#fff3dc');ctx.lineWidth=2;
-    ctx.beginPath();ctx.arc(p.x,p.y,reducedMotion?22:8+age*(defeat?40:20),0,Math.PI*2);ctx.stroke();
-    if(defeat&&effect.points){ctx.fillStyle='#ecd283';ctx.font='13px Segoe UI';ctx.textAlign='center';ctx.fillText(`+${effect.points}`,p.x,p.y-35);ctx.textAlign='left';}
-    ctx.restore();
-  }
-  for(const shot of s.shots){const p=project(shot.x,shot.z);const boost=1/metricAt(shot.z,s.fields);if(p.y>55 && p.y<height){if(boost>1)line(p.x,p.y,p.x,p.y+Math.min(48,5*boost),'#FFE9A0',2);if(!pixelArt.draw(ctx,'shot.player',p.x,p.y,2))line(p.x,p.y-9,p.x,p.y+Math.min(48,5*boost),'#7ae8e0',boost>1?3:2);}}
-  for(const shot of s.enemyShots){
-    const p=project(shot.x,shot.z);const boost=1/metricAt(shot.z,s.fields);
-    if(p.y>55 && p.y<height){
-      if(shot.salvo){const a=project(shot.x-shot.halfWidth,shot.z),b=project(shot.x+shot.halfWidth,shot.z);ctx.fillStyle='#ffb8a030';ctx.fillRect(a.x,p.y-15,b.x-a.x,30);line(a.x,p.y,b.x,p.y,'#ffb8a0',5);line(a.x,p.y-18,a.x,p.y+18,'#ffb8a0',2);line(b.x,p.y-18,b.x,p.y+18,'#ffb8a0',2);ctx.fillStyle='#ffdfbb';ctx.font='11px Segoe UI';ctx.textAlign='center';ctx.fillText(`Salvo · shots ×${boost}`,p.x,p.y-24);ctx.textAlign='left';}
-      else {const color=shot.payload?.length?OPERATIONS[shot.payload[0]].color:'#ffb8a0';if(boost>1)line(p.x,p.y-Math.min(48,7*boost),p.x,p.y,color,2);ctx.beginPath();ctx.arc(p.x,p.y,shot.damage>1?7:5,0,Math.PI*2);ctx.fillStyle=color;ctx.fill();if(shot.payload?.length){ctx.fillStyle='#0b1528';ctx.font='8px Segoe UI';ctx.textAlign='center';ctx.fillText(OPERATIONS[shot.payload[0]].code,p.x,p.y+3);ctx.textAlign='left';}}
-    }
-  }
-  const exit=project(0,isScrollingLevel(s)?chapter(s).routeLength:ROUTE_LENGTH);
-  if((!isCampaign(s)||isScrollingLevel(s))&&exit.y>60 && exit.y<height){line(0,exit.y,width,exit.y,'#7ae8e0',2);ctx.fillStyle='#7ae8e0';ctx.textAlign='center';ctx.font='16px Bahnschrift';ctx.fillText(isScrollingLevel(s)?'End of level':'Exit',width/2,exit.y-15);ctx.textAlign='left';}
-  const p=project(s.x,s.z);
-  if(s.invulnerable<=0 || reducedMotion || Math.floor(s.time*10)%2===0)drawShip(p.x,p.y,false,false,s.facing);
-  if(s.invulnerable>0){ctx.beginPath();ctx.arc(p.x,p.y,31,0,Math.PI*2);ctx.strokeStyle='#ffb8a080';ctx.stroke();}
-  if(flash>0 && !reducedMotion){ctx.fillStyle=`rgba(184,166,237,${flash*.15})`;ctx.fillRect(0,0,width,height);}
-  if(s.countdown>0 && s.phase==='running'){
-    ctx.textAlign='center';ctx.fillStyle='#eaf2ff';ctx.font='48px Bahnschrift';ctx.fillText(Math.ceil(s.countdown),width/2,height*.5);
-    ctx.font='14px Segoe UI';ctx.fillText('Get ready',width/2,height*.5+30);ctx.textAlign='left';
-  }
-}
-function drawKleinEdges(s){
-  const top=project(0,arenaZ(s,KLEIN_BOUNDS.top)).y,bottom=project(0,arenaZ(s,KLEIN_BOUNDS.bottom)).y;
-  line(3,top,3,bottom,'#b8a6ed',2);line(width-3,top,width-3,bottom,'#b8a6ed',2);
-  line(3,top,width-3,top,'#7ae8e0',2);line(3,bottom,width-3,bottom,'#7ae8e0',2);
-  ctx.fillStyle='#7ae8e0';ctx.font='10px Segoe UI';ctx.textAlign='center';ctx.fillText('TOP ↔ BOTTOM',width/2,top+16);
-  ctx.fillStyle='#b8a6ed';ctx.fillText('LEFT ↔ RIGHT · VERTICAL POSITION REVERSED',width/2,bottom-9);ctx.textAlign='left';
-  pixelArt.draw(ctx,'edge.twist',12,(top+bottom)/2,1);pixelArt.draw(ctx,'edge.twist',width-12,(top+bottom)/2,1);
-  for(const enemy of s.enemies){
-    if(enemy.hp<=0||(isKleinRoute(s)&&!enemy.routeActive))continue;const y=arenaY(s,enemy.z);let destination=null;
-    if(enemy.x>300&&enemy.driftX>0)destination={x:-380,y:KLEIN_BOUNDS.bottom+KLEIN_BOUNDS.top-y};
-    else if(enemy.x< -300&&enemy.driftX<0)destination={x:380,y:KLEIN_BOUNDS.bottom+KLEIN_BOUNDS.top-y};
-    else if(y>850&&enemy.driftY>0)destination={x:enemy.x,y:KLEIN_BOUNDS.bottom+35};
-    else if(y<20&&enemy.driftY<0)destination={x:enemy.x,y:KLEIN_BOUNDS.top-35};
-    if(!destination)continue;const p=project(destination.x,arenaZ(s,destination.y));
-    ctx.strokeStyle='#ecd283';ctx.setLineDash([3,4]);ctx.beginPath();ctx.arc(p.x,p.y,13,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
-    ctx.fillStyle='#ecd283';ctx.font='10px Segoe UI';ctx.textAlign='center';ctx.fillText('Return',Math.max(30,Math.min(width-30,p.x)),p.y+26);ctx.textAlign='left';
-  }
-}
+function render(dt=0){renderer.render(flight,{width,height,dt,flash,debug:false});}
 function frame(now){
   const dt=lastFrame ? Math.min((now-lastFrame)/1000,0.1) : 0;lastFrame=now;
-  if(!testing && flight.phase==='running'){
+  if((!testing||qaPlayback) && flight.phase==='running'){
     accumulator+=dt;
     while(accumulator>=STEP){tick(flight,input(),STEP);accumulator-=STEP;}
   }
-  flash=Math.max(0,flash-dt);hudClock+=dt;updateUI();render();requestAnimationFrame(frame);
+  if(flight.campaign?.autoFromTutorial){
+    delete flight.campaign.autoFromTutorial;
+    noteChapterReached(flight);saveSection();
+  }
+  // Normal route clears used to stop simulation until the player clicked
+  // a potentially off-screen button. The checkpoint already points at the
+  // next route, so an automatic in-page handoff avoids a perceived freeze.
+  // Keep results visible briefly; never skip boss rewards or practice.
+  if(stageClearClock.tick(flight,dt,{
+    blocked:document.hidden||Boolean(document.querySelector('dialog[open]')),
+    maxChapterIndex:BUILD.maxChapterIndex,
+  }))advanceChapter();
+  flash=Math.max(0,flash-dt);hudClock+=dt;updateUI();render(dt);audioBus.process(flight);requestAnimationFrame(frame);
 }
-window.arrowSpaceShift = Object.freeze({read:()=>readFlight(flight),results:()=>structuredClone(attempts),assets:()=>pixelArt.status()});
+window.arrowSpaceShift = Object.freeze({read:()=>readFlight(flight),results:()=>structuredClone(attempts),assets:()=>pixelArt.status(),audio:()=>audioBus.diagnosticState()});
 if(testing)window.arrowSpaceShiftTest=Object.freeze({
   start, restart, read:()=>readFlight(flight),
-  loadChapterTrial(index=0){start('campaign');enterChapter(flight,index);flight.view=viewState();oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);},
+  loadFoundryTrial(constructed=false){
+    // In-memory QA only. No permanent profile writes and no part rewards.
+    const trial=createFleetProfile({fleetUnlocked:true,driveParts:['klein-relay','projective-module'],selectedShip:0});
+    persistFleetProfile(trial);
+    if(constructed){craftAftwing(fleetProfile);selectShip(fleetProfile,3);persistFleetProfile(fleetProfile);}
+    clearInput();flight=createFlight('campaign',{fleetProfile,shipId:constructed?3:0,seed:2300});enterChapter(flight,18);
+    flight.view=viewState();oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);
+  },
+  loadChapterTrial(index=0){start('campaign');if(index>=18)unlockProjectiveModule(flight.fleetProfile);else if(index>=9)unlockKleinFleet(flight.fleetProfile);enterChapter(flight,index);flight.view=viewState();oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);},
+  loadDriveWarningTrial(){
+    start('campaign');enterChapter(flight,0);flight.view=viewState();
+    flight.drive.warningUntil=flight.time+1.4;flight.drive.nextFaultAt=flight.drive.warningUntil;
+    oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);
+  },
+  loadBossRecoveryTrial(index=8){
+    if(![8,17,26].includes(index))index=8;
+    start('campaign');
+    if(index>=9)unlockKleinFleet(flight.fleetProfile);
+    if(index>=18)unlockProjectiveModule(flight.fleetProfile);
+    enterChapter(flight,index);flight.view=viewState();
+    flight.campaign.introRemaining=0;flight.campaign.announcement=null;
+    for(const enemy of flight.enemies)enemy.hp=0;
+    flight.enemyShots=[];flight.shots=[];flight.debts=[];tick(flight,{},STEP);
+    if(flight.campaign.repairPart){flight.campaign.repairPart.x=160;flight.campaign.repairPart.z=arenaZ(flight,180);}
+    oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);
+  },
+  loadManifoldPreviewTrial(index=8,phase=1){
+    // In-memory visual fixtures. Genuine shots remain real/collidable; the
+    // projected hollow positions are drawn by the renderer only.
+    start('campaign');enterChapter(flight,index);flight.view=viewState();
+    flight.phase='running';flight.countdown=0;flight.campaign.introRemaining=0;
+    flight.campaign.phaseBreakUntil=0;
+    if(index===17)flight.campaign.hybridPhase=phase;
+    flight.enemyShots=[
+      {x:370,z:arenaZ(flight,310),vx:160,vz:0,damage:1,owner:'enemy',geometryRule:phase>=3?'hybrid':'klein',projective:phase>=3,bornAt:flight.time},
+      ...(index===17?[{x:130,z:arenaZ(flight,929),vx:0,vz:170,damage:1,owner:'enemy',geometryRule:'projective',projective:true,bornAt:flight.time}]:[]),
+    ];
+    oldPhase='';oldStack=null;updateUI(true);render();return readFlight(flight);
+  },
   loadEnemyReturnTrial(index=0,edge='bottom'){
     start('campaign');enterChapter(flight,index);flight.view=viewState();flight.enemies=flight.enemies.slice(0,1);flight.asteroids=[];
     const enemy=flight.enemies[0];enemy.x=edge==='right'?399:140;enemy.z=arenaZ(flight,edge==='right'?350:edge==='top'?949:index===6?-69:-119);
@@ -548,5 +923,29 @@ if(testing)window.arrowSpaceShiftTest=Object.freeze({
   },
   advance(seconds){for(let i=0;i<Math.round(seconds/STEP);i++){tick(flight,input(),STEP);if(usesVisibleCombat(flight)&&i%4===0)render();}updateUI(true);render();return readFlight(flight);},
 });
-resize();updateUI(true);requestAnimationFrame(frame);
+if(testing){
+  const checks=document.createElement('section');checks.className='reset-actions';checks.id='qa-scenarios';
+  const heading=document.createElement('h3'),note=document.createElement('p');heading.textContent='Scenario checks';note.className='small';note.textContent='Internal preview only. Each scenario starts a live flight. Use Pause to inspect it.';
+  checks.append(heading,note);
+  for(const [label,run] of [
+    ['QA: Klein entry',()=>window.arrowSpaceShiftTest.loadChapterTrial(8)],
+    ['QA: Klein live/preview shots',()=>window.arrowSpaceShiftTest.loadManifoldPreviewTrial(8)],
+    ['QA: K/P projective intrusion',()=>window.arrowSpaceShiftTest.loadManifoldPreviewTrial(17,2)],
+    ['QA: K+P hybrid preview',()=>window.arrowSpaceShiftTest.loadManifoldPreviewTrial(17,3)],
+    ['QA: Drive warning',()=>window.arrowSpaceShiftTest.loadDriveWarningTrial()],
+    ['QA: Relay recovery',()=>window.arrowSpaceShiftTest.loadBossRecoveryTrial()],
+    ['QA: Curvature Seed recovery',()=>window.arrowSpaceShiftTest.loadBossRecoveryTrial(26)],
+    ['QA: Stage 7',()=>window.arrowSpaceShiftTest.loadChapterTrial(6)],
+    ['QA: Projective Ecology',()=>window.arrowSpaceShiftTest.loadChapterTrial(18)],
+    ['QA: Echo Capture',()=>window.arrowSpaceShiftTest.loadChapterTrial(19)],
+    ['QA: Curvature Gate',()=>window.arrowSpaceShiftTest.loadChapterTrial(26)],
+    ['QA: Fleet Foundry',()=>window.arrowSpaceShiftTest.loadFoundryTrial(false)],
+    ['QA: Aftwing flight',()=>window.arrowSpaceShiftTest.loadFoundryTrial(true)],
+  ]){
+    const button=document.createElement('button');button.type='button';button.textContent=label;
+    button.addEventListener('click',()=>{shell.dialogs.options.close();run();qaPlayback=true;canvas.focus({preventScroll:true});});checks.append(button);
+  }
+  shell.dialogs.options.querySelector('.dialog-content').append(checks);
+}
+noteChapterReached(flight);resize();updateUI(true);requestAnimationFrame(frame);
 

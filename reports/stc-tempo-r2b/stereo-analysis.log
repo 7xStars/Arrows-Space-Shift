@@ -1,0 +1,56 @@
+{
+  "full": {
+    "baseline": {
+      "standardDeviation": 0.1789166198005597,
+      "medianAbsoluteBalance": 0.13829789795053254,
+      "minimumBalance": -0.33857151578741596,
+      "maximumBalance": 0.4642397112909999,
+      "rightWindowsAbovePointOne": 30,
+      "leftWindowsBelowMinusPointOne": 28
+    },
+    "revised": {
+      "standardDeviation": 0.2241898786848344,
+      "medianAbsoluteBalance": 0.1678658114842071,
+      "minimumBalance": -0.5766762150471574,
+      "maximumBalance": 0.441264687146209,
+      "rightWindowsAbovePointOne": 35,
+      "leftWindowsBelowMinusPointOne": 35
+    }
+  },
+  "core": {
+    "baseline": {
+      "standardDeviation": 0.17959523966532648,
+      "medianAbsoluteBalance": 0.13799905862532003,
+      "minimumBalance": -0.3356525580746241,
+      "maximumBalance": 0.4688503111587025,
+      "rightWindowsAbovePointOne": 30,
+      "leftWindowsBelowMinusPointOne": 28
+    },
+    "revised": {
+      "standardDeviation": 0.22439829767314035,
+      "medianAbsoluteBalance": 0.16603944534308313,
+      "minimumBalance": -0.5777407852562723,
+      "maximumBalance": 0.4411669123370221,
+      "rightWindowsAbovePointOne": 35,
+      "leftWindowsBelowMinusPointOne": 35
+    }
+  },
+  "atmosphere": {
+    "baseline": {
+      "standardDeviation": 0.14352096576058482,
+      "medianAbsoluteBalance": 0.1342819253061032,
+      "minimumBalance": -0.6184474406556514,
+      "maximumBalance": 0.48125333088835537,
+      "rightWindowsAbovePointOne": 55,
+      "leftWindowsBelowMinusPointOne": 5
+    },
+    "revised": {
+      "standardDeviation": 0.6378356013988051,
+      "medianAbsoluteBalance": 0.6599784559950493,
+      "minimumBalance": -0.9489219231096755,
+      "maximumBalance": 0.9814039881318923,
+      "rightWindowsAbovePointOne": 48,
+      "leftWindowsBelowMinusPointOne": 33
+    }
+  }
+}

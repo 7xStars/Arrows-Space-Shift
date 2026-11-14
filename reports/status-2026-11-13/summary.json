@@ -1,0 +1,49 @@
+{
+  "candidate": "0.25.0-dev.1",
+  "audit": "Current source and release status. No gameplay rule or audio asset changed.",
+  "fresh_checks": {
+    "npm_run_check": {
+      "tests": 261,
+      "syntax_files": 68,
+      "failed": 0
+    },
+    "campaign_audio_browser": {
+      "checks": 8,
+      "errors": 0,
+      "file": "reports/status-2026-11-13/campaign-audio/results.json"
+    }
+  },
+  "active_audio": {
+    "engine": "src/audio.js",
+    "score": "src/music.js",
+    "pages": [
+      "src/app.js",
+      "src/hyperbolic-act.js",
+      "src/repair-app.js"
+    ],
+    "new_r9_and_16_act_tracks_in_campaign": false
+  },
+  "campaign_loop": "Final core collection, extraction, assembly, playable repair, and saved ending are implemented.",
+  "complete_path_evidence": "One fresh-profile simulation path. Full ordinary-input browser and human campaign acceptance remain open.",
+  "remaining_gates": [
+    "Selected recorded soundtrack integration",
+    "Full fresh-profile ordinary-input campaign and human review",
+    "Hybrid and Bolza fairness/collision acceptance",
+    "ASS-022 control-instruction mismatch",
+    "Act IV inactive equipment operation limit",
+    "Dense-combat audio listening and physical devices",
+    "Development provenance, public source, hosted itch acceptance and separate jam submission"
+  ],
+  "official_sources": [
+    "https://itch.io/jam/game-off-2026",
+    "https://itch.io/jam/game-off-2026/topic/7290154/frequently-asked-questions-faq"
+  ],
+  "official_deadline": "December 1, 2026, 13:37 PST",
+  "publication_performed": false,
+  "limits": [
+    "No new human session",
+    "No new listening approval",
+    "No release-readiness percentage or predicted judging score",
+    "No publisher account state verified"
+  ]
+}

@@ -1,0 +1,16 @@
+..F..........
+======================================================================
+FAIL: test_native_processes_keep_explicit_memory_and_no_hidden_allocation_failure (test_foxdot_operator_track.NativeTests.test_native_processes_keep_explicit_memory_and_no_hidden_allocation_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_foxdot_operator_track.py", line 207, in test_native_processes_keep_explicit_memory_and_no_hidden_allocation_failure
+    self.assertEqual(sha(ROOT / 'tools/render-foxdot-operator-track.py'), self.manifest['renderer_sha256'])
+AssertionError: '97ba228a5c245287c726e6b2e916a9be2ae1a3d8531f97aae6bb3ef9677c3df5' != '169a011d381eebdb83cc07478ed6b5ebde15082f47a71e43185fb28a22a35bb1'
+- 97ba228a5c245287c726e6b2e916a9be2ae1a3d8531f97aae6bb3ef9677c3df5
++ 169a011d381eebdb83cc07478ed6b5ebde15082f47a71e43185fb28a22a35bb1
+
+
+----------------------------------------------------------------------
+Ran 13 tests in 2.890s
+
+FAILED (failures=1)

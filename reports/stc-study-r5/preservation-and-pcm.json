@@ -1,0 +1,35 @@
+{
+  "preserved_r4_records": 12,
+  "note_rhythm_articulation_and_section_data": "unchanged",
+  "decoded_pcm_checks": [
+    {
+      "file": "ass-identified-return-r5-binaural-break.wav",
+      "frames": 528000,
+      "duration": 11.0,
+      "peak_pcm16": 22228,
+      "sha256": "77c7c3322352c7bb7a5d529dc935fbf2e6e15d5a79c6ff713730a44c0b02bb1e"
+    },
+    {
+      "file": "ass-identified-return-r5-binaural-crossing-mix.wav",
+      "frames": 1248000,
+      "duration": 26.0,
+      "peak_pcm16": 22746,
+      "sha256": "6c7607becad07fa43a9b7d29d43b35e7687d17cb2b7ad97407208afe3ef5c528"
+    },
+    {
+      "file": "ass-identified-return-r5-binaural-music.wav",
+      "frames": 3534806,
+      "duration": 73.64179166666666,
+      "peak_pcm16": 23086,
+      "sha256": "e14aa9edab9017704e9987dd7b3d00693d77141f554c68f6112de54e488c85d2"
+    },
+    {
+      "file": "ass-identified-return-r5-stereo-music.wav",
+      "frames": 3534806,
+      "duration": 73.64179166666666,
+      "peak_pcm16": 22952,
+      "sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841"
+    }
+  ],
+  "limits": "PCM and data checks only; no listening acceptance."
+}

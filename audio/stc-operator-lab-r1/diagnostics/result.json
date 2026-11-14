@@ -1,0 +1,10 @@
+{
+  "native_exit_code": 0,
+  "rt_memory_kib": 8192,
+  "allocation_failures": 21,
+  "constant_control_difference_rms": 0.002275029137797335,
+  "accepted_render_rt_memory_kib": 65536,
+  "accepted_control_difference_rms": 0.0,
+  "operator_source_sha256": "a1cce86ff887bb81263c64e0b80ad5c0eb003c5b1d090ca8009ad67c69300abb",
+  "interpretation": "Exit zero alone does not establish a valid render. Missing delay allocations caused a false scalar-control difference. This degraded control is not delivered as an accepted audio clip."
+}

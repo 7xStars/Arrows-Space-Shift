@@ -1,0 +1,57 @@
+{
+  "checks": 32,
+  "results": [
+    "Default policy receives one automatic title request before input",
+    "Blocked default policy shows an enabled speaker action",
+    "Default policy plays after at most one speaker click",
+    "Strict policy leaves native audio suspended before input",
+    "Blocked speaker has an accessible Enable sound action",
+    "First blocked speaker click enables sound instead of muting it",
+    "Blocked startup recovers with the same native context",
+    "First ordinary key starts blocked title audio without launching the game",
+    "Title playback does not wait for the sprite atlas",
+    "Mute cancels a title start while its recording loads",
+    "Permitted-policy entry starts the title before a click",
+    "Normal entry has no QA controls",
+    "Tab navigation does not change sound preference",
+    "Desktop title: speaker target is at least 44 pixels",
+    "Desktop title: speaker fits the lower-left corner without covering launch",
+    "Desktop title: native icon control replaces the old title text button",
+    "Enter mutes sound and saves the preference",
+    "Space restores title playback with one context",
+    "Keyboard focus has a visible indicator",
+    "Real training controls earn the Level 1 checkpoint",
+    "Launch replaces the title with one campaign pair",
+    "Permitted-policy saved entry starts title automatically",
+    "Saved entry retains the earned checkpoint",
+    "Title playback does not advance the saved section",
+    "320 by 568 saved entry: speaker target is at least 44 pixels",
+    "320 by 568 saved entry: speaker fits the lower-left corner without covering launch",
+    "320 by 568 saved entry: native icon control replaces the old title text button",
+    "The lower-left speaker does not cover saved-entry instructions",
+    "Saved-entry instructions stay inside the narrow viewport",
+    "Speaker mute keeps the saved entry quiet and preserves its checkpoint",
+    "Resume keeps Level 1 and reuses the context",
+    "320 by 568 Act I flight: visible flight controls stay clear of the speaker"
+  ],
+  "defaultEnableClicks": 1,
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: 320 by 568 Act I flight: control labels fit usable targets\n    at check (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:22:35)\n    at flightControlLayout (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:88:3)\n    at async file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:213:3"
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: 320 by 568 Act I flight: control labels fit usable targets
+    at check (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:22:35)
+    at flightControlLayout (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:88:3)
+    at async file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:213:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

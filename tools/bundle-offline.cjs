@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path');const ts=require('/opt/nvm/versions/node/v22.16.0/lib/node_modules/typescript/lib/typescript.js');
+const root=path.resolve(__dirname,'..'),src=path.join(root,'src');
+const entries=fs.readdirSync(src).filter(f=>f.endsWith('.js'));
+let output=`(function(){const __modules=Object.create(null),__cache=Object.create(null);\nfunction __get(n){if(!n.endsWith('.js'))n+='.js';const entry=__modules[n];if(!entry)throw new Error('Unknown module '+n);if(__cache[n])return __cache[n].exports;const module={exports:{}};__cache[n]=module;const localRequire=(p)=>{const base=n.split('/');base.pop();for(const seg of p.split('/'))if(seg==='..')base.pop();else if(seg!=='.')base.push(seg);return __get(base.join('/'))};entry(localRequire,module.exports,module);return module.exports;}\n`;
+for(const f of entries){let source=fs.readFileSync(path.join(src,f),'utf8');if(process.argv.includes('--qa')&&f==='app.js')source=source.replace(/^const testing\s*=.*$/m,'const testing = true;');source=source.replaceAll('import.meta.url',JSON.stringify('http://game.invalid/src/'+f));const result=ts.transpileModule(source,{fileName:f,compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,removeComments:false}});output+=`__modules['src/${f}']=function(require,exports,module){\n${result.outputText}\n};\n`;}
+output+='__get(\'src/app.js\');\n})();\n';
+fs.writeFileSync(path.join(root,'offline-bundle.js'),output);console.log('Wrote',output.length,'chars with',entries.length,'modules');

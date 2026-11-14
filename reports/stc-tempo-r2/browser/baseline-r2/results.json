@@ -1,0 +1,1130 @@
+{
+  "revision": "stc-tempo-r2",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "results": [
+    "The collection control has a native accessible name",
+    "The default collection still contains the original sixteen tracks",
+    "Switching from the playing original collection stops its native pair before navigation",
+    "The selector opens the nine-track tempo collection",
+    "The tempo collection contains three Act I tracks and two for each later Act",
+    "All nine metadata tempos include the added 144 BPM piece",
+    "The collection introduction names 144 BPM",
+    "Tempo collection startup selects a track without audio autoplay",
+    "The Act control has a native accessible name",
+    "Act II selection exposes its two tempo track cards",
+    "Browsing the tempo catalog does not fetch music",
+    "The added Act I piece displays 144 BPM and two minutes",
+    "Track selection retains keyboard focus on its control",
+    "Playback creates one native context and one decoded pair",
+    "Both native sources start at one time and offset",
+    "Pause retains position and removes both active sources",
+    "Resume reuses both buffers at the retained position",
+    "Atmosphere mute keeps the core and shared timeline active",
+    "The native Volume control can mute the full mix",
+    "Stop returns the selected track to its start",
+    "Natural track end clears the current source pair",
+    "All nine real encoded stem pairs decode and start",
+    "Every native decoded core, atmosphere, and combined mix has finite samples below full scale",
+    "All track changes reuse one native context and retain only the current pair",
+    "Playback history remains bounded",
+    "The library reflows at 320 pixels without horizontal overflow",
+    "All controls have usable compact target bounds",
+    "RTL layout retains its content without horizontal overflow",
+    "Text at 200 percent retains control access and reflow",
+    "The library contains no automatic visual animation",
+    "Controls use native buttons, ranges, and a checkbox",
+    "The library does not write campaign or preference storage",
+    "The normal browser flow has no page exception or missing asset",
+    "Switching back stops the tempo native pair before navigation",
+    "The original collection returns without automatic audio",
+    "A missing layer stops the pair and gives a retry instruction",
+    "Retry recovers the native pair without a second context"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "trackChecks": [
+    {
+      "id": "tempo-act1-01",
+      "bpm": 120,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8337928056716919,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.02294941432774067,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8347514176857658,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act1-01.ogg"
+    },
+    {
+      "id": "tempo-act1-02",
+      "bpm": 136,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8305526971817017,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.018169226124882698,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8321586415404454,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act1-02.ogg"
+    },
+    {
+      "id": "tempo-act1-03",
+      "bpm": 144,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8260500431060791,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.015673957765102386,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8260107906753547,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act1-03.ogg"
+    },
+    {
+      "id": "tempo-act2-01",
+      "bpm": 152,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8116406202316284,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.018664101138710976,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8165570353157818,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act2-01.ogg"
+    },
+    {
+      "id": "tempo-act2-02",
+      "bpm": 168,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8156547546386719,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.01963515393435955,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8130790437571704,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act2-02.ogg"
+    },
+    {
+      "id": "tempo-act3-01",
+      "bpm": 200,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8403352499008179,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.03816257417201996,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8400409093592316,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act3-01.ogg"
+    },
+    {
+      "id": "tempo-act3-02",
+      "bpm": 240,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8249353170394897,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.0353122353553772,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8241444440791383,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act3-02.ogg"
+    },
+    {
+      "id": "tempo-act4-01",
+      "bpm": 184,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8013081550598145,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.07821524888277054,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8355558924376965,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act4-01.ogg"
+    },
+    {
+      "id": "tempo-act4-02",
+      "bpm": 220,
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8228636384010315,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.06739819794893265,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8166463822126389,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      },
+      "download": "http://127.0.0.1:38005/assets/audio/stc-tempo-r2/tempo-act4-02.ogg"
+    }
+  ],
+  "collectionDepartures": [
+    {
+      "trigger": "collection-change-after-player-handler",
+      "state": {
+        "revision": "stc-act-library-r1",
+        "state": "ready",
+        "trackId": "act1-01",
+        "position": 0,
+        "duration": 60,
+        "volume": 0.6,
+        "atmosphere": true,
+        "contextCreations": 1,
+        "contextState": "running",
+        "buffers": 2,
+        "activeSources": 0,
+        "fetches": 2,
+        "decodes": 2,
+        "error": "",
+        "history": [
+          {
+            "trackId": "act1-01",
+            "index": 0,
+            "at": 0.2,
+            "offset": 0
+          },
+          {
+            "trackId": "act1-01",
+            "index": 1,
+            "at": 0.2,
+            "offset": 0
+          }
+        ],
+        "selectedAct": 1,
+        "trackCount": 16,
+        "tracks": [
+          {
+            "id": "act1-01",
+            "act": 1,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Vector Engine",
+            "bpm": 132
+          },
+          {
+            "id": "act1-02",
+            "act": 1,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Vacuum Bearings",
+            "bpm": 132
+          },
+          {
+            "id": "act1-03",
+            "act": 1,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Off Axis",
+            "bpm": 134
+          },
+          {
+            "id": "act1-04",
+            "act": 1,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Transfer Engine",
+            "bpm": 132
+          },
+          {
+            "id": "act2-01",
+            "act": 2,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Identified Pulse",
+            "bpm": 134
+          },
+          {
+            "id": "act2-02",
+            "act": 2,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Second Horizon",
+            "bpm": 134
+          },
+          {
+            "id": "act2-03",
+            "act": 2,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order of Returns",
+            "bpm": 134
+          },
+          {
+            "id": "act2-04",
+            "act": 2,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Seam Memory",
+            "bpm": 134
+          },
+          {
+            "id": "act3-01",
+            "act": 3,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Iron Intake",
+            "bpm": 130
+          },
+          {
+            "id": "act3-02",
+            "act": 3,
+            "slot": 2,
+            "seconds": 120,
+            "title": "After the Release",
+            "bpm": 128
+          },
+          {
+            "id": "act3-03",
+            "act": 3,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order of Force",
+            "bpm": 132
+          },
+          {
+            "id": "act3-04",
+            "act": 3,
+            "slot": 4,
+            "seconds": 360,
+            "title": "Machinery of Return",
+            "bpm": 130
+          },
+          {
+            "id": "act4-01",
+            "act": 4,
+            "slot": 1,
+            "seconds": 60,
+            "title": "Paired Horizon",
+            "bpm": 128
+          },
+          {
+            "id": "act4-02",
+            "act": 4,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Quiet Curvature",
+            "bpm": 126
+          },
+          {
+            "id": "act4-03",
+            "act": 4,
+            "slot": 3,
+            "seconds": 240,
+            "title": "Order Leaves a Trace",
+            "bpm": 128
+          },
+          {
+            "id": "act4-04",
+            "act": 4,
+            "slot": 4,
+            "seconds": 360,
+            "title": "The Surface Remembers",
+            "bpm": 128
+          }
+        ]
+      },
+      "active": []
+    },
+    {
+      "trigger": "collection-change-after-player-handler",
+      "state": {
+        "revision": "stc-tempo-r2",
+        "state": "ready",
+        "trackId": "tempo-act4-02",
+        "position": 0,
+        "duration": 120,
+        "volume": 1,
+        "atmosphere": true,
+        "contextCreations": 1,
+        "contextState": "running",
+        "buffers": 2,
+        "activeSources": 0,
+        "fetches": 20,
+        "decodes": 20,
+        "error": "",
+        "history": [
+          {
+            "trackId": "tempo-act1-01",
+            "index": 0,
+            "at": 0.39999999999999997,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 1,
+            "at": 0.39999999999999997,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 0,
+            "at": 0.6906666666666667,
+            "offset": 0.22133333333333333
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 1,
+            "at": 0.6906666666666667,
+            "offset": 0.22133333333333333
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 0,
+            "at": 1.52,
+            "offset": 119.9
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 1,
+            "at": 1.52,
+            "offset": 119.9
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 0,
+            "at": 2.08,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-01",
+            "index": 1,
+            "at": 2.08,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-02",
+            "index": 0,
+            "at": 2.832,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-02",
+            "index": 1,
+            "at": 2.832,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-03",
+            "index": 0,
+            "at": 3.5813333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act1-03",
+            "index": 1,
+            "at": 3.5813333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act2-01",
+            "index": 0,
+            "at": 4.341333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act2-01",
+            "index": 1,
+            "at": 4.341333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act2-02",
+            "index": 0,
+            "at": 5.12,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act2-02",
+            "index": 1,
+            "at": 5.12,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act3-01",
+            "index": 0,
+            "at": 5.941333333333334,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act3-01",
+            "index": 1,
+            "at": 5.941333333333334,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act3-02",
+            "index": 0,
+            "at": 6.72,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act3-02",
+            "index": 1,
+            "at": 6.72,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-01",
+            "index": 0,
+            "at": 7.5120000000000005,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-01",
+            "index": 1,
+            "at": 7.5120000000000005,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 0,
+            "at": 8.261333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 1,
+            "at": 8.261333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 0,
+            "at": 8.6,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 1,
+            "at": 8.6,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 0,
+            "at": 9.021333333333333,
+            "offset": 0
+          },
+          {
+            "trackId": "tempo-act4-02",
+            "index": 1,
+            "at": 9.021333333333333,
+            "offset": 0
+          }
+        ],
+        "selectedAct": 4,
+        "trackCount": 9,
+        "tracks": [
+          {
+            "id": "tempo-act1-01",
+            "act": 1,
+            "slot": 1,
+            "seconds": 120,
+            "title": "Offset Bearing",
+            "bpm": 120
+          },
+          {
+            "id": "tempo-act1-02",
+            "act": 1,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Bearing Drift",
+            "bpm": 136
+          },
+          {
+            "id": "tempo-act1-03",
+            "act": 1,
+            "slot": 3,
+            "seconds": 120,
+            "title": "Phase Alloy",
+            "bpm": 144
+          },
+          {
+            "id": "tempo-act2-01",
+            "act": 2,
+            "slot": 1,
+            "seconds": 120,
+            "title": "Return Grammar",
+            "bpm": 152
+          },
+          {
+            "id": "tempo-act2-02",
+            "act": 2,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Edges Remember",
+            "bpm": 168
+          },
+          {
+            "id": "tempo-act3-01",
+            "act": 3,
+            "slot": 1,
+            "seconds": 120,
+            "title": "Ratchet Memory",
+            "bpm": 200
+          },
+          {
+            "id": "tempo-act3-02",
+            "act": 3,
+            "slot": 2,
+            "seconds": 120,
+            "title": "Pressure Has an Order",
+            "bpm": 240
+          },
+          {
+            "id": "tempo-act4-01",
+            "act": 4,
+            "slot": 1,
+            "seconds": 120,
+            "title": "A Measure of Elsewhere",
+            "bpm": 184
+          },
+          {
+            "id": "tempo-act4-02",
+            "act": 4,
+            "slot": 2,
+            "seconds": 120,
+            "title": "The Same Light Returns",
+            "bpm": 220
+          }
+        ]
+      },
+      "active": []
+    }
+  ],
+  "audioContexts": [
+    {
+      "type": "created",
+      "contextId": "af1447a3-e4d3-4acb-873b-4b5fde5c82e0",
+      "contextType": "realtime",
+      "contextState": "suspended",
+      "callbackBufferSize": 480,
+      "maxOutputChannelCount": 2,
+      "sampleRate": 48000,
+      "renderQuantumSize": 128
+    },
+    {
+      "type": "created",
+      "contextId": "45920f3d-958d-47be-b159-bb63ab0a5cd2",
+      "contextType": "realtime",
+      "contextState": "suspended",
+      "callbackBufferSize": 480,
+      "maxOutputChannelCount": 2,
+      "sampleRate": 48000,
+      "renderQuantumSize": 128
+    }
+  ],
+  "input": "Ordinary keyboard and native controls, with read-only runtime inspection.",
+  "limits": "Local headless Microsoft Edge. No listening approval, screen-reader, physical-device, physical audio latency, automatic page-visibility, or heap-retention result.",
+  "sourceIdentity": {
+    "music-library.html": "73a9e27ff0d939c4eccf0c20768fe4044a1a7788746265ee9936a648a0a7a643",
+    "src/music-library-app.js": "7e7679f476e422a5d2af2deed99644c6bdb3757bb4e8514b1deffe65d6ec156b",
+    "assets/audio/stc-tempo-r2/catalog.json": "72895ca23cb2af10bfa7cd47f1259fdf7869b107a9651f0a64d27ed98d64a4a4",
+    "assets/audio/stc-tempo-r2/tempo-act1-01-core.ogg": "e177306365ee0b30e943bec4785c2f1beb6cf46d85844b5fabf0656855b324f7",
+    "assets/audio/stc-tempo-r2/tempo-act1-01-atmosphere.ogg": "160505f04c08159376a94831b7058927bd842b5384ae7c6e7581ba5a4f41f4d3",
+    "assets/audio/stc-tempo-r2/tempo-act1-02-core.ogg": "7fdb290e737174b75ab5a6d1e68d26b19cf035e4a44cdab9cd10299dcd419232",
+    "assets/audio/stc-tempo-r2/tempo-act1-02-atmosphere.ogg": "0a9d38f70d52e0dae34b8eb1443e25b26043b00dc50706bdb87cbc15e7479115",
+    "assets/audio/stc-tempo-r2/tempo-act1-03-core.ogg": "b2114090c1dbdab2280a884f5a857b62a261d36cbcbe2df7f4c970c512dc89fe",
+    "assets/audio/stc-tempo-r2/tempo-act1-03-atmosphere.ogg": "ba6d1f5c7b6745c17ab41620d4ad2b8fc95c4516544930afec7b68a3ccaaf965",
+    "assets/audio/stc-tempo-r2/tempo-act2-01-core.ogg": "e7650b69437410e32430448abda6381d58fbb0f442f44188c59113e103c57b49",
+    "assets/audio/stc-tempo-r2/tempo-act2-01-atmosphere.ogg": "adee794a23c54d886a1af749d08a9f2d7fed2a7eae108673bb6e0141e5c1c954",
+    "assets/audio/stc-tempo-r2/tempo-act2-02-core.ogg": "72a5ead55482e962273d04f27995153b43a394526ab1f0699ef8daa977ea7a78",
+    "assets/audio/stc-tempo-r2/tempo-act2-02-atmosphere.ogg": "413a880640b2c5ddec5e3fcdbc99693a5f249224aded9fc247b8e87818cc7771",
+    "assets/audio/stc-tempo-r2/tempo-act3-01-core.ogg": "073ee90d1f294d0e3b9d581ddfb6011e610f1a1a25840b1c21d4c55e1b327629",
+    "assets/audio/stc-tempo-r2/tempo-act3-01-atmosphere.ogg": "75e4e2e6471002d6b2f7ce2fe9edc0be926c8e2fd65ed9cfe9fb1d36e76e8c1a",
+    "assets/audio/stc-tempo-r2/tempo-act3-02-core.ogg": "a475567f09bb6bab1d787167c15efc9fdc5b7e384612bd1c705292ba1f75d053",
+    "assets/audio/stc-tempo-r2/tempo-act3-02-atmosphere.ogg": "82d7b9ad546257d162a28bcaceebff0c35177aa6f938de4830dada41d1de6d95",
+    "assets/audio/stc-tempo-r2/tempo-act4-01-core.ogg": "67355eb14a5a42eacbc07a9559b9a75342beb61982a40ba76734f512487331a4",
+    "assets/audio/stc-tempo-r2/tempo-act4-01-atmosphere.ogg": "37a1e1dc3acef3cb9123fca36291008b20a6e0c2a663f0ab3ae3a9237254134a",
+    "assets/audio/stc-tempo-r2/tempo-act4-02-core.ogg": "f68189200ca40b9becd0ee36dfad19bf6efae7670f11f33a57358ea8a207c389",
+    "assets/audio/stc-tempo-r2/tempo-act4-02-atmosphere.ogg": "efe6c721e4b80007b95d9c91e6650debd8c9290d9d4a7bc7f4579374cd5bc557"
+  },
+  "browserVersion": "157.0.4341.46",
+  "tempoEntry": {
+    "revision": "stc-tempo-r2",
+    "state": "ready",
+    "trackId": "tempo-act1-01",
+    "position": 0,
+    "duration": 120,
+    "volume": 0.6,
+    "atmosphere": true,
+    "contextCreations": 0,
+    "contextState": "uninitialized",
+    "buffers": 0,
+    "activeSources": 0,
+    "fetches": 0,
+    "decodes": 0,
+    "error": "",
+    "history": [],
+    "selectedAct": 1,
+    "trackCount": 9,
+    "tracks": [
+      {
+        "id": "tempo-act1-01",
+        "act": 1,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Offset Bearing",
+        "bpm": 120
+      },
+      {
+        "id": "tempo-act1-02",
+        "act": 1,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Bearing Drift",
+        "bpm": 136
+      },
+      {
+        "id": "tempo-act1-03",
+        "act": 1,
+        "slot": 3,
+        "seconds": 120,
+        "title": "Phase Alloy",
+        "bpm": 144
+      },
+      {
+        "id": "tempo-act2-01",
+        "act": 2,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Return Grammar",
+        "bpm": 152
+      },
+      {
+        "id": "tempo-act2-02",
+        "act": 2,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Edges Remember",
+        "bpm": 168
+      },
+      {
+        "id": "tempo-act3-01",
+        "act": 3,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Ratchet Memory",
+        "bpm": 200
+      },
+      {
+        "id": "tempo-act3-02",
+        "act": 3,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Pressure Has an Order",
+        "bpm": 240
+      },
+      {
+        "id": "tempo-act4-01",
+        "act": 4,
+        "slot": 1,
+        "seconds": 120,
+        "title": "A Measure of Elsewhere",
+        "bpm": 184
+      },
+      {
+        "id": "tempo-act4-02",
+        "act": 4,
+        "slot": 2,
+        "seconds": 120,
+        "title": "The Same Light Returns",
+        "bpm": 220
+      }
+    ]
+  },
+  "firstPlayback": {
+    "revision": "stc-tempo-r2",
+    "state": "playing",
+    "trackId": "tempo-act1-01",
+    "position": 0,
+    "duration": 120,
+    "volume": 0.6,
+    "atmosphere": true,
+    "contextCreations": 1,
+    "contextState": "running",
+    "buffers": 2,
+    "activeSources": 2,
+    "fetches": 2,
+    "decodes": 2,
+    "error": "",
+    "history": [
+      {
+        "trackId": "tempo-act1-01",
+        "index": 0,
+        "at": 0.39999999999999997,
+        "offset": 0
+      },
+      {
+        "trackId": "tempo-act1-01",
+        "index": 1,
+        "at": 0.39999999999999997,
+        "offset": 0
+      }
+    ],
+    "selectedAct": 1,
+    "trackCount": 9,
+    "tracks": [
+      {
+        "id": "tempo-act1-01",
+        "act": 1,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Offset Bearing",
+        "bpm": 120
+      },
+      {
+        "id": "tempo-act1-02",
+        "act": 1,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Bearing Drift",
+        "bpm": 136
+      },
+      {
+        "id": "tempo-act1-03",
+        "act": 1,
+        "slot": 3,
+        "seconds": 120,
+        "title": "Phase Alloy",
+        "bpm": 144
+      },
+      {
+        "id": "tempo-act2-01",
+        "act": 2,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Return Grammar",
+        "bpm": 152
+      },
+      {
+        "id": "tempo-act2-02",
+        "act": 2,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Edges Remember",
+        "bpm": 168
+      },
+      {
+        "id": "tempo-act3-01",
+        "act": 3,
+        "slot": 1,
+        "seconds": 120,
+        "title": "Ratchet Memory",
+        "bpm": 200
+      },
+      {
+        "id": "tempo-act3-02",
+        "act": 3,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Pressure Has an Order",
+        "bpm": 240
+      },
+      {
+        "id": "tempo-act4-01",
+        "act": 4,
+        "slot": 1,
+        "seconds": 120,
+        "title": "A Measure of Elsewhere",
+        "bpm": 184
+      },
+      {
+        "id": "tempo-act4-02",
+        "act": 4,
+        "slot": 2,
+        "seconds": 120,
+        "title": "The Same Light Returns",
+        "bpm": 220
+      }
+    ]
+  },
+  "storage": {
+    "unchanged": true,
+    "writes": []
+  },
+  "originalReturn": {
+    "revision": "stc-act-library-r1",
+    "state": "ready",
+    "trackId": "act1-01",
+    "position": 0,
+    "duration": 60,
+    "volume": 0.6,
+    "atmosphere": true,
+    "contextCreations": 0,
+    "contextState": "uninitialized",
+    "buffers": 0,
+    "activeSources": 0,
+    "fetches": 0,
+    "decodes": 0,
+    "error": "",
+    "history": [],
+    "selectedAct": 1,
+    "trackCount": 16,
+    "tracks": [
+      {
+        "id": "act1-01",
+        "act": 1,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Vector Engine",
+        "bpm": 132
+      },
+      {
+        "id": "act1-02",
+        "act": 1,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Vacuum Bearings",
+        "bpm": 132
+      },
+      {
+        "id": "act1-03",
+        "act": 1,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Off Axis",
+        "bpm": 134
+      },
+      {
+        "id": "act1-04",
+        "act": 1,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Transfer Engine",
+        "bpm": 132
+      },
+      {
+        "id": "act2-01",
+        "act": 2,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Identified Pulse",
+        "bpm": 134
+      },
+      {
+        "id": "act2-02",
+        "act": 2,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Second Horizon",
+        "bpm": 134
+      },
+      {
+        "id": "act2-03",
+        "act": 2,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order of Returns",
+        "bpm": 134
+      },
+      {
+        "id": "act2-04",
+        "act": 2,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Seam Memory",
+        "bpm": 134
+      },
+      {
+        "id": "act3-01",
+        "act": 3,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Iron Intake",
+        "bpm": 130
+      },
+      {
+        "id": "act3-02",
+        "act": 3,
+        "slot": 2,
+        "seconds": 120,
+        "title": "After the Release",
+        "bpm": 128
+      },
+      {
+        "id": "act3-03",
+        "act": 3,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order of Force",
+        "bpm": 132
+      },
+      {
+        "id": "act3-04",
+        "act": 3,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Machinery of Return",
+        "bpm": 130
+      },
+      {
+        "id": "act4-01",
+        "act": 4,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Paired Horizon",
+        "bpm": 128
+      },
+      {
+        "id": "act4-02",
+        "act": 4,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Quiet Curvature",
+        "bpm": 126
+      },
+      {
+        "id": "act4-03",
+        "act": 4,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order Leaves a Trace",
+        "bpm": 128
+      },
+      {
+        "id": "act4-04",
+        "act": 4,
+        "slot": 4,
+        "seconds": 360,
+        "title": "The Surface Remembers",
+        "bpm": 128
+      }
+    ]
+  },
+  "controlledFailure": {
+    "status": 503,
+    "errors": []
+  },
+  "url": "http://127.0.0.1:38005/",
+  "checks": 37
+}

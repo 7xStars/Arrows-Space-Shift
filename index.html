@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101c35">
+  <meta name="theme-color" content="#000000">
   <title>Arrow Space Shift — Game Off 2026</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
@@ -12,41 +12,47 @@
   <header class="masthead">
     <a class="wordmark" href="./" aria-label="Arrow Space Shift home"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 6h30L22 18l11 12H3l11-12Z"/><path d="M14 18h8"/></svg>Arrow Space Shift</a>
     <p>A space-folding flight experiment</p>
-    <span class="build">Game Off 2026 / v0.14</span>
+    <span class="build">Arrow Space Shift · v0.25.1-dev.5</span>
   </header>
   <main>
     <aside class="mission">
       <h1>Change the distance.</h1>
-      <p class="intro">Same ship. Same thrust.<br> A shorter way through.</p>
+      <p class="intro">Damaged Warp Drive.<br> Find a way through.</p>
       <p id="tradeoff-intro">Fold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time.</p>
-      <div class="setup"><label for="mode">Game mode</label><select id="mode"><option value="campaign">Campaign · eight levels and a boss</option><option value="upgrades">Prototype · 1 → 3 → 7</option><option value="warp-lab">Position warp lab</option><option value="trio">Start at 3-Paley</option><option value="paley">Start at 7-Paley</option><option value="timing">Timing course</option><option value="flight">Reference route</option><option value="space">Space-only test</option></select><label class="check"><input id="bonus-enabled" type="checkbox" checked> Fold score bonus</label><p class="small">The switch changes points only. A new campaign uses the selected setting.</p><a href="reference/v0.7/" target="_blank" rel="noopener">Open the v0.7 reference</a></div>
+      <div class="setup"><label for="mode">Game mode</label><select id="mode"><option value="campaign">Campaign · recover the drive parts</option><option value="upgrades">Prototype · 1 → 3 → 7</option><option value="warp-lab">Position warp lab</option><option value="trio">Start at 3-Paley</option><option value="paley">Start at 7-Paley</option><option value="timing">Timing course</option><option value="flight">Reference route</option><option value="space">Space-only test</option></select><label class="check"><input id="bonus-enabled" type="checkbox" checked> Fold score bonus</label><p class="small">The switch changes points only. A new campaign uses the selected setting.</p></div>
       <div class="route-readout"><span>Route progress</span><strong id="progress-label">0 / 8,400</strong><progress id="route" max="8400" value="0" aria-label="Route progress"></progress></div>
       <h2>Flight controls</h2>
       <dl class="controls">
         <div><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Steer</dd></div>
         <div><dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd id="thrust-control">Move and face</dd></div>
         <div><dt><kbd>Space</kbd></dt><dd>Fire</dd></div>
+        <div><dt><kbd>C</kbd> <kbd>E</kbd></dt><dd>Act III · capture / release echoes</dd></div>
         <div><dt><kbd>Left Shift</kbd></dt><dd>Fold</dd></div>
         <div><dt><kbd>Right Shift</kbd></dt><dd>Unfold</dd></div>
         <div><dt><kbd>P</kbd></dt><dd>Pause</dd></div>
       </dl>
-      <p class="small">Left and Right steer the ship. The route controls forward travel. Hold Space to fire. Left Shift folds. Right Shift unfolds. Up and Down have no action.</p>
+      <p class="small">Act I: Left and Right steer while the route scrolls. Act II: the Klein Relay gives you the same twisted surface traversal as the fleet. Side crossings reverse your physical forward direction while the camera follows. Left and Right steer in Acts I–III. Up and Down do not control these Acts. Route scrolling stays forward. Hold Space to fire forward. Left Shift folds and Right Shift unfolds.</p>
       <details><summary>What changes?</summary><p>A fold halves distance inside one field. It also doubles the visible speed of both sides’ shots. Overlapping folds multiply these effects.</p><p>The clock keeps its normal rate. Unfolding does not reverse the flight.</p></details>
     </aside>
     <section class="flight" aria-label="Flight area">
-      <div class="flight-bar"><span id="flight-state">Ready for flight</span><div><button id="sound" type="button" aria-pressed="false">Sound off</button><button id="pause" type="button" disabled>Pause</button><button id="restart" type="button">Retry section</button><button id="new-run" type="button">New run</button></div></div>
+      <div class="flight-bar"><span id="flight-state">Ready for flight</span><div><button id="sound" type="button" aria-pressed="true">Sound on</button><button id="pause" type="button" disabled>Pause</button><button id="restart" type="button">Retry section</button><button id="new-run" type="button">New run</button></div></div>
       <div class="campaign-panel" id="campaign-panel"><div><strong id="campaign-name">Level 1 / 8</strong><span id="campaign-objective"></span></div><p id="campaign-goal"></p></div>
       <p id="combat-loadout" class="combat-loadout"></p>
       <div class="encounter-panel" id="encounter-panel"><div><strong id="encounter-name">1 / 3 · Hit the opening</strong><span id="target-clock">Target opens at 0.55 s</span></div><p id="encounter-goal">Hit the target while its shield is open.</p><progress id="window-progress" max="1" value="0" aria-label="Target timing window"></progress></div>
       <div class="viewport">
         <canvas id="space" width="900" height="740" tabindex="0" aria-label="Flight view. Left and Right steer. Space fires. Left Shift folds. Right Shift unfolds."></canvas>
-        <div class="hud"><div><span>Hull</span><strong id="hull">5 / 5</strong></div><div><span>Flight time</span><strong id="time">0.0 s</strong></div><div><span>Score</span><strong id="score">0</strong></div></div>
+        <div class="hud"><div><span>Hull</span><strong id="hull">5 / 5</strong></div><div><span id="time-label">Flight time</span><strong id="time">0.0 s</strong></div><div><span>Score</span><strong id="score">0</strong></div></div>
         <div class="overlay" id="overlay">
           <div class="brief">
-            <span class="brief-mark" aria-hidden="true">⌁</span>
+            <p class="menu-kicker">Damaged Warp Drive · Find the repair parts</p>
             <h2 id="overlay-title">Hit the opening.</h2>
             <p id="overlay-text">Fold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time, but lose shot speed and the field’s bonus.</p>
+            <div id="evolution-choices" class="evolution-choices" hidden aria-label="Echo Forge choices"></div>
             <button class="primary" id="primary" type="button">Start encounter 1</button>
+            <button class="secondary" id="continue-act2" type="button" hidden>Continue Act II · Return Flight (Level 9)</button>
+            <button class="secondary" id="continue-act3" type="button" hidden>Continue Act III · Projective Chart (Level 17)</button>
+            <button class="secondary" id="continue-act4" type="button" hidden>Continue Act IV · The Eight Edges</button>
+            <button class="secondary" id="start-over" type="button" hidden>Start over · Level 0</button>
             <button class="secondary" id="practice" type="button">Test space only</button>
             <p class="small" id="overlay-note">Use a keyboard. The space-only test has no enemies. Use combat flight to test the risk and reward.</p>
           </div>
@@ -54,11 +60,13 @@
         <div class="field-caption" id="field-caption">Space is open</div>
       </div>
       <div class="action-bar">
-        <div class="fold key-display" id="fold"><span>Fold space</span><kbd>Left Shift</kbd></div>
-        <div class="unfold key-display" id="unfold"><span>Unfold space</span><kbd>Right Shift</kbd></div>
-        <button class="fire" id="fire" type="button" aria-pressed="false"><span>Fire off</span><small>Touch: toggle fire</small></button>
+        <button type="button" class="fold key-display" id="fold"><span>Fold</span><kbd>Left Shift</kbd></button>
+        <button type="button" class="unfold key-display" id="unfold"><span>Unfold</span><kbd>Right Shift</kbd></button>
+        <button type="button" class="key-display" id="capture-echo" hidden><span>Capture</span><kbd>C</kbd></button>
+        <button type="button" class="key-display" id="release-echo" hidden><span>Release</span><kbd>E</kbd></button>
       </div>
-      <details id="campaign-help"><summary>Section guide and campaign route</summary><p id="campaign-hint"></p><p id="campaign-route" class="small"></p></details>
+      <div id="echo-panel" class="echo-panel" hidden role="status"><strong id="echo-counter">Echoes 0 / 6</strong><span id="echo-build">Capture C · Release E</span></div>
+      <details id="campaign-help"><summary>Section guide and campaign route</summary><p id="campaign-hint"></p><p id="campaign-route" class="small"></p><h3>Damaged Warp Drive</h3><p>The damaged drive sometimes folds space on its own. An amber warning appears before the surge. Right Shift removes the latest fold. Left Shift can still add a fold. The clock and firing rate keep their normal pace.</p><h3>Read the firing pattern</h3><p>Level 7 introduces FAN, SWEEP, and GAP. FAN commits a spread. SWEEP sends a timed sequence across several directions. GAP leaves an opening in its launch pattern. Read the charge and launch marks, then steer. Other shots can still cross the opening.</p><h3>The Klein Fleet surface</h3><p>The Klein Fleet demonstrates the edge joins before you can inhabit them. After recovering the Klein Relay, the ship traverses that same twisted surface in Act II: a side crossing reflects the longitudinal position and reverses physical forward direction. The camera carries the viewing frame so the ship still faces up on screen and remains in the lower half of the arena. The level keeps scrolling forward. Left and Right steer; hold Space to fire forward.</p><p>Ships, shots, and seeds return through the joined edges. A side join reverses the surface's vertical direction. Top and bottom join without that twist. Line up with dropped seeds as they scroll toward you. The fleet keeps its damage when it crosses an edge.</p><h3>Recover the relay</h3><p>Destroy the core and both escorts. Fly into the Klein Relay to collect it, then cross the exit line. Defeating the fleet does not collect the part for you. Select a ship, then launch into Act II.</p><h3>Act II · Klein bullet hell</h3><p>Eight stages keep the same Fan, Sweep, Gap, Aimed, Wall and Return grammar while teaching surface travel, intentional seam crossing, returning fire, global gaps, pattern layering, fold timing, density, and Klein mastery. Each lesson is followed by a recovery interval.</p><h3>Projective Intrusion</h3><p>The ninth encounter combines the learned Klein side joins with projective top/bottom identification. Watch the geometry mark on each warning. Destroy the intrusion, physically collect the Projective Module, and extract it. The module is saved beside the Klein Relay.</p><h3>Act III · Projective Ecology</h3><p>Eight stages teach projective chart travel, capture (C), release (E), ordered synthesis, harvesting, pressure, powered agency, and mastery. Each stage contains quiet recovery and up to two Echo Forge choices. The gun remains manually controlled with Space. The projective chart is an experimental edge-identification model, not a verified RP² metric or surface implementation.</p><h3>Curvature Gate</h3><p>The ninth boss previews the next geometry. The Gate is an experimental projectile encounter, not the finished hyperbolic double torus. Collect its Curvature Seed and extract.</p><div id="postjam-guide"></div></details>
       <div class="encounter-panel below-flight" id="upgrade-panel"><div><strong id="upgrade-title">Introduction · one operation</strong><span id="warp-state">No upgrade</span></div><p id="upgrade-binding">Collect a seed.</p><p id="upgrade-side">Shift changes the accepted side.</p><p id="stage-guide">Introduction: Position Warp.</p><p id="drop-preview">Defeated carriers drop their seeds.</p><strong id="debt">Stored damage due: 0</strong><p id="interaction">Counter results appear here during combat.</p></div>
       <p class="event" id="event" role="status" aria-live="polite">Start a flight or test space without enemies.</p>
       <details class="playtest" open><summary>Equipment and collected seeds</summary><p id="inventory-note">Collect seeds during flight.</p><div class="equipment-slots"><button id="slot-one" type="button" aria-pressed="true">Slot 1: empty</button><button id="slot-two" type="button" aria-pressed="false" disabled>Slot 2: opens at 7-Paley</button></div><div id="inventory" class="inventory"></div><p class="small">Slot 1 acts before Slot 2. Equip each operation once. R means right seed. L means left seed. One fold accepts the named side. Zero or two folds accept the opposite side. Three folds accept the named side again.</p></details>
@@ -83,7 +91,7 @@
       <p class="small">Unfold removes the latest field. Fields stay where you made them.</p>
       <div class="tradeoff"><h2>Risk and reward</h2><p>Fold: faster outgoing shots, faster incoming fire.</p><p id="bonus-rule">Each fold at the target adds 50 points to a kill.</p><p id="unfold-rule">Unfold: more reaction time, slower outgoing shots, lower kill reward.</p><strong id="bonus">Fold bonus earned: 0</strong></div>
       <div class="legend"><span><i class="key-ship"></i>Your ship</span><span><i class="key-fold"></i>Fold boundary</span><span><i class="key-threat"></i>Threat</span><span><i class="key-gate"></i>Gate opening</span></div>
-      <details><summary>About this prototype</summary><p>AI-assisted pixel art, design, and code. Sprite sources were made for this project. Sound uses browser tones. Reference sheets are not part of the game package.</p><p>This is an early Game Off experiment. A public source repository and the final AI disclosure are still required before submission.</p></details>
+      <details><summary>About this build</summary><p>Arrow Space Shift v0.25.1-dev.5. AI-assisted pixel art, design, and code. Gameplay sprites use editable pixel masters. OpenAI image generation supplied title art and starter-ship concept studies. Original produced music uses FoxDot and SuperCollider. Action sounds use Web Audio.</p><p>Act II now contains eight Klein-surface bullet-hell lessons and the Klein/projective hybrid boss. Reached lessons can be practiced, stage grades and recent causes of death persist, and the Projective Module is physically recovered after the ninth encounter. See NOTICE.txt and the source art notes for provenance.</p></details>
     </aside>
   </main>
   <footer><span>Arrow Space Shift</span><span>Compress the route. Keep the clock.</span></footer>

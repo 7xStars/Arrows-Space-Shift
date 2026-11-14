@@ -1,0 +1,55 @@
+<REAPER_PROJECT 0.1 7.0 1
+  SAMPLERATE 48000
+  TEMPO 134
+  MASTER_VOLUME 1
+  MARKER 1 0.000000000 "Retained pulse and sparse response" 1
+  MARKER 1 21.532537313 "" 1
+  MARKER 2 21.532537313 "Harmonic persistence" 1
+  MARKER 2 50.189253731 "" 1
+  MARKER 3 50.189253731 "Break and gate then room" 1
+  MARKER 3 57.353432836 "" 1
+  MARKER 4 57.353432836 "Return and room then gate" 1
+  MARKER 4 71.681791045 "" 1
+  <TRACK
+    NAME "r7 foundation: common gain"
+    VOLPAN 1 0 1 -1
+    MUTESOLO 0 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.641791667
+      VOLPAN 1 0 1 -1
+      NAME "foundation-control.wav"
+      <SOURCE WAVE
+        FILE "foundation-control.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "r9 added layers: common gain"
+    VOLPAN 1 0 1 -1
+    MUTESOLO 0 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.641791667
+      VOLPAN 1 0 1 -1
+      NAME "new-layer.wav"
+      <SOURCE WAVE
+        FILE "new-layer.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "r9 full mix reference: muted"
+    VOLPAN 1 0 1 -1
+    MUTESOLO 1 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.641791667
+      VOLPAN 1 0 1 -1
+      NAME "ass-identified-return-r9-music.wav"
+      <SOURCE WAVE
+        FILE "ass-identified-return-r9-music.wav"
+      >
+    >
+  >
+>

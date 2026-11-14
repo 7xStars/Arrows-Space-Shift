@@ -1,0 +1,18 @@
+PASS Title decoded PCM is not silent
+PASS Title produces a music bus signal
+PASS Title produces a post-master signal before the hardware destination
+PASS Campaign produces a music bus signal
+PASS Campaign produces a post-master signal
+PASS Manual fire produces a native effects bus signal
+PASS Manual fire and music reach the post-master node
+PASS Speaker mute reduces the post-master signal to zero
+PASS Speaker mute persists a false sound preference
+PASS Speaker enable restores the post-master campaign signal
+PASS One audio context serves title, campaign, mute, and enable
+PASS Zero master volume can show playing while output is zero
+PASS Restoring master volume restores a post-master signal
+PASS No page exception or failed asset response occurred
+{
+  "checks": 14,
+  "failure": null
+}

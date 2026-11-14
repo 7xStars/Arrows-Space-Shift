@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "selector": {
+        "x": 404.75,
+        "y": 446.8125,
+        "width": 181,
+        "height": 37
+      },
+      "dialog": {
+        "x": 330,
+        "y": 54,
+        "width": 620,
+        "height": 792
+      }
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "selector": {
+        "x": 82.75,
+        "y": 265.890625,
+        "width": 181,
+        "height": 37
+      },
+      "dialog": {
+        "x": 8,
+        "y": 34.078125,
+        "width": 304,
+        "height": 499.828125
+      }
+    }
+  ],
+  "fixtureNote": "At 320px the modal scrolls vertically. An initial unscrolled-selector bounds assertion was inappropriate. The native control is in view after normal modal scrolling.",
+  "limits": "Native browser layout and visual inspection only. No physical touch or player-reading acceptance."
+}

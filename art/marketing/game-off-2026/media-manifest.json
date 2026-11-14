@@ -1,0 +1,202 @@
+{
+  "candidate": "0.25.1-dev.5",
+  "purpose": "itch.io page media for the three-Act jam edition",
+  "screenshots": [
+    {
+      "file": "01-act-i-folded-route.png",
+      "caption": "Fold distance during manual-fire scrolling combat.",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "sha256": "c5915a7e58c3f547a6a18777c830f2b2871c429807c5880df4443e3162149d89",
+      "bytes": 74976,
+      "source_capture": "G:\\Music Projects\\Arrow Space Shift\\scratch\\itch-media-dev5\\01-act-i-folded-route-27.png",
+      "state": {
+        "phase": "running",
+        "time": 16.216666666666388,
+        "chapter": 0,
+        "name": "Two Sides",
+        "hull": 5,
+        "score": 550,
+        "folds": 1,
+        "shots": 10,
+        "enemyShots": 5,
+        "enemies": 5,
+        "captured": 0,
+        "released": 0,
+        "echoes": 0,
+        "notice": "Enemy destroyed. +100 points."
+      },
+      "fixtureChapter": 0,
+      "edits": "None. The native screenshot bytes are unchanged."
+    },
+    {
+      "file": "02-klein-fleet.png",
+      "caption": "Read the Klein Fleet and its returning attacks.",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "sha256": "9ccf907bd9ac04eac5a836d49d82e2edc1d1f66d3b5f2a75bedb5ddfdf690e13",
+      "bytes": 112322,
+      "source_capture": "G:\\Music Projects\\Arrow Space Shift\\scratch\\itch-media-dev5\\02-klein-fleet-17.png",
+      "state": {
+        "phase": "running",
+        "time": 6.31666666666677,
+        "chapter": 8,
+        "name": "The Klein Fleet",
+        "hull": 3,
+        "score": 25,
+        "folds": 0,
+        "shots": 21,
+        "enemyShots": 22,
+        "enemies": 3,
+        "captured": 0,
+        "released": 0,
+        "echoes": 0,
+        "notice": "Impact stored. 2 damage remains due."
+      },
+      "fixtureChapter": 8,
+      "edits": "None. The native screenshot bytes are unchanged."
+    },
+    {
+      "file": "03-act-ii-returning-fire.png",
+      "caption": "Change the timing of attacks on the Klein surface.",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "sha256": "7b736e8728be575e449247ec0e0fda9f548ad08178199e6a124e5401eec94dbc",
+      "bytes": 102650,
+      "source_capture": "G:\\Music Projects\\Arrow Space Shift\\scratch\\itch-media-dev5\\03-act-ii-returning-fire-17.png",
+      "state": {
+        "phase": "running",
+        "time": 10.533333333333376,
+        "chapter": 14,
+        "name": "Fold Timing",
+        "hull": 4,
+        "score": 465,
+        "folds": 2,
+        "shots": 8,
+        "enemyShots": 12,
+        "enemies": 3,
+        "captured": 0,
+        "released": 0,
+        "echoes": 0,
+        "notice": "Latest fold removed. Both sides\u2019 shots slow there."
+      },
+      "fixtureChapter": 14,
+      "edits": "None. The native screenshot bytes are unchanged."
+    },
+    {
+      "file": "04-act-iii-echo-ecology.png",
+      "caption": "Capture hostile shots and release stored echoes.",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "sha256": "e7b5933c0bbdc3bc6e5b47931168214d0c0ac13fd899d905529cbc2d430eef66",
+      "bytes": 104527,
+      "source_capture": "G:\\Music Projects\\Arrow Space Shift\\scratch\\itch-media-dev5-release\\04-act-iii-echo-ecology-12.png",
+      "state": {
+        "phase": "running",
+        "time": 7.558333333333499,
+        "chapter": 19,
+        "name": "Echo Capture",
+        "hull": 4,
+        "score": 265,
+        "folds": 0,
+        "shots": 0,
+        "enemyShots": 22,
+        "enemies": 2,
+        "captured": 2,
+        "released": 2,
+        "echoes": 0,
+        "notice": "Enemy destroyed. +100 points."
+      },
+      "fixtureChapter": 19,
+      "edits": "None. The native screenshot bytes are unchanged."
+    },
+    {
+      "file": "05-curvature-gate.png",
+      "caption": "Face the Curvature Gate at the end of Act III.",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "sha256": "049ecdcc43104449659df1d585dd7cca3f5086106809390fafe96bdd24a6835e",
+      "bytes": 94721,
+      "source_capture": "G:\\Music Projects\\Arrow Space Shift\\scratch\\itch-media-dev5\\05-curvature-gate-22.png",
+      "state": {
+        "phase": "running",
+        "time": 9.425000000000106,
+        "chapter": 26,
+        "name": "The Curvature Gate",
+        "hull": 3,
+        "score": 305,
+        "folds": 0,
+        "shots": 24,
+        "enemyShots": 27,
+        "enemies": 2,
+        "captured": 6,
+        "released": 0,
+        "echoes": 6,
+        "notice": "Enemy destroyed. +100 points."
+      },
+      "fixtureChapter": 26,
+      "edits": "None. The native screenshot bytes are unchanged."
+    }
+  ],
+  "cover": {
+    "source": "assets/realm-title.png",
+    "source_sha256": "6bae6dc9ba489c532d3b66901d8013541ae7ed6a42020743e19e8b84f40af20c",
+    "source_dimensions": [
+      1536,
+      1024
+    ],
+    "output_dimensions": [
+      630,
+      500
+    ],
+    "mode": "RGB",
+    "resize": "Pillow ImageOps.fit, centered, Lanczos",
+    "typography": {
+      "text": [
+        "Arrow",
+        "Space Shift"
+      ],
+      "font": "Segoe UI Bold",
+      "font_file": "C:\\Windows\\Fonts\\segoeuib.ttf",
+      "font_sha256": "b169e636719880976a97e94e3b1cb3dbe5f4a38eabc037bf9f2a9165154c3ad2",
+      "font_pixels": 70,
+      "color": "#f3e5c8",
+      "line_top_y": [
+        164,
+        238
+      ]
+    },
+    "limits": "Existing project art and the existing game title only. No generative image tool or new illustration was used.",
+    "files": {
+      "cover-630x500.png": {
+        "bytes": 241825,
+        "sha256": "07cdcbc230c8a16cbfd6f89515527f2fa002dd7cc3c2569846ad6f995cb4510a"
+      },
+      "cover-art-only-630x500.png": {
+        "bytes": 234718,
+        "sha256": "7e8e9b9d4227061764f1ede2111324f826b5f6fd6ef6df2369c425fe5e1ac771"
+      },
+      "cover-review-315x250.png": {
+        "bytes": 75886,
+        "sha256": "877f8fb542743d48888fbddc1c59e46c03372fbf8383e2f051cbc9cc80e87eed"
+      }
+    }
+  },
+  "capture_method": "Isolated native Edge. Late chapters are entered with existing QA fixtures. All subsequent movement, manual shooting, folds, capture, and release use actual keyboard input. No gameplay object or projectile is added for an image.",
+  "limits": "These are representative captures, not evidence of a complete human playthrough, encounter fairness, or human understanding. Act IV and the later repair sequence are not shown. No generative image tool was used."
+}

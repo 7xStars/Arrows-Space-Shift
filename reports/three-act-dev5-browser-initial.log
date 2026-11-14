@@ -1,0 +1,20 @@
+PASS hyperbolic-act.html shows the edition boundary
+PASS hyperbolic-act.html retains all supplied old records
+PASS hyperbolic-act.html performs no storage write
+PASS hyperbolic-act.html starts no later runtime or audio context
+PASS hyperbolic-act.html notice fits a narrow viewport
+PASS repair-dock.html shows the edition boundary
+PASS repair-dock.html retains all supplied old records
+PASS repair-dock.html performs no storage write
+PASS repair-dock.html starts no later runtime or audio context
+PASS repair-dock.html notice fits a narrow viewport
+PASS A profile with later progress still has no Act IV start
+PASS The title recognizes the completed three Acts
+PASS Later completion does not expose the repaired-drive banner
+PASS The main view has no visible later-page link
+PASS Guide has no visible post-jam prompt
+PASS Equipment has no visible post-jam prompt
+{
+  "checks": 16,
+  "failure": "AssertionError [ERR_ASSERTION]: Options has no visible post-jam prompt\n    at check (file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:35:35)\n    at file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:90:5"
+}

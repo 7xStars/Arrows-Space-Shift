@@ -1,0 +1,934 @@
+{
+  "game": "Arrow Space Shift",
+  "format": "campaign-progress",
+  "version": 1,
+  "profile": {
+    "version": 5,
+    "fleetUnlocked": true,
+    "driveParts": [
+      "klein-relay",
+      "projective-module",
+      "curvature-seed"
+    ],
+    "projectiveModule": true,
+    "curvatureSeed": true,
+    "unlockedShips": [
+      0,
+      1,
+      8
+    ],
+    "craftedShipIds": [],
+    "fabricationSpent": 0,
+    "selectedShip": 0,
+    "reachedChapters": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "completedChapters": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "stageRecords": {
+      "0": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 1300,
+        "bestClearTime": 40,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "1": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 1650,
+        "bestClearTime": 26.67,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "2": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 3150,
+        "bestClearTime": 46.67,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "3": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 3590,
+        "bestClearTime": 31.12,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "4": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 5390,
+        "bestClearTime": 53.33,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "5": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 5910,
+        "bestClearTime": 35.56,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "6": {
+        "bestGrade": "B",
+        "bestGradeScore": 77,
+        "bestScore": 8010,
+        "bestClearTime": 60,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "7": {
+        "bestGrade": "B",
+        "bestGradeScore": 80,
+        "bestScore": 8440,
+        "bestClearTime": 40,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "8": {
+        "bestGrade": "—",
+        "bestGradeScore": 0,
+        "bestScore": 8740,
+        "bestClearTime": 52.09,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "won"
+      },
+      "9": {
+        "bestGrade": "B",
+        "bestGradeScore": 70,
+        "bestScore": 9580,
+        "bestClearTime": 43.33,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "10": {
+        "bestGrade": "B",
+        "bestGradeScore": 70,
+        "bestScore": 10655,
+        "bestClearTime": 46.67,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "11": {
+        "bestGrade": "B",
+        "bestGradeScore": 78,
+        "bestScore": 11970,
+        "bestClearTime": 48.89,
+        "bestGrazes": 1,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "12": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 13575,
+        "bestClearTime": 49.92,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "13": {
+        "bestGrade": "S",
+        "bestGradeScore": 93,
+        "bestScore": 15740,
+        "bestClearTime": 53.24,
+        "bestGrazes": 3,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "14": {
+        "bestGrade": "B",
+        "bestGradeScore": 80,
+        "bestScore": 16475,
+        "bestClearTime": 52.22,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "15": {
+        "bestGrade": "A",
+        "bestGradeScore": 82,
+        "bestScore": 19240,
+        "bestClearTime": 57.78,
+        "bestGrazes": 2,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "16": {
+        "bestGrade": "C",
+        "bestGradeScore": 69,
+        "bestScore": 21640,
+        "bestClearTime": 62.19,
+        "bestGrazes": 2,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "17": {
+        "bestGrade": "—",
+        "bestGradeScore": 0,
+        "bestScore": 22150,
+        "bestClearTime": 75.99,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "won"
+      },
+      "18": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 23220,
+        "bestClearTime": 43.19,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "19": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 24270,
+        "bestClearTime": 46.67,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "20": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 25485,
+        "bestClearTime": 48.89,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "21": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 26735,
+        "bestClearTime": 51.12,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "22": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 28930,
+        "bestClearTime": 55.56,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "23": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 30465,
+        "bestClearTime": 56.67,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "24": {
+        "bestGrade": "A",
+        "bestGradeScore": 85,
+        "bestScore": 31755,
+        "bestClearTime": 58.89,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "25": {
+        "bestGrade": "C",
+        "bestGradeScore": 60,
+        "bestScore": 33715,
+        "bestClearTime": 62.23,
+        "bestGrazes": 0,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "cleared"
+      },
+      "26": {
+        "bestGrade": "—",
+        "bestGradeScore": 0,
+        "bestScore": 34805,
+        "bestClearTime": 45.4,
+        "bestGrazes": 2,
+        "completions": 1,
+        "attempts": 1,
+        "lastShip": 0,
+        "lastResult": "won"
+      }
+    },
+    "runHistory": [
+      {
+        "chapter": 26,
+        "name": "The Curvature Gate",
+        "result": "won",
+        "score": 34805,
+        "grazes": 2,
+        "shipId": 0,
+        "grade": "—",
+        "gradeScore": 0,
+        "time": 45.4,
+        "cause": "",
+        "receipt": "4181845467:26:won:1346558"
+      },
+      {
+        "chapter": 25,
+        "name": "Projective Mastery",
+        "result": "cleared",
+        "score": 33715,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "C",
+        "gradeScore": 60,
+        "time": 62.23,
+        "cause": "",
+        "receipt": "4181845467:25:cleared:1301158"
+      },
+      {
+        "chapter": 24,
+        "name": "Power Without Passivity",
+        "result": "cleared",
+        "score": 31755,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 58.89,
+        "cause": "",
+        "receipt": "4181845467:24:cleared:1238933"
+      },
+      {
+        "chapter": 23,
+        "name": "Antipodal Storm",
+        "result": "cleared",
+        "score": 30465,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 56.67,
+        "cause": "",
+        "receipt": "4181845467:23:cleared:1180042"
+      },
+      {
+        "chapter": 22,
+        "name": "Stellar Harvest",
+        "result": "cleared",
+        "score": 28930,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 55.56,
+        "cause": "",
+        "receipt": "4181845467:22:cleared:1123375"
+      },
+      {
+        "chapter": 21,
+        "name": "Ordered Synthesis",
+        "result": "cleared",
+        "score": 26735,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 51.12,
+        "cause": "",
+        "receipt": "4181845467:21:cleared:1067817"
+      },
+      {
+        "chapter": 20,
+        "name": "Echo Release",
+        "result": "cleared",
+        "score": 25485,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 48.89,
+        "cause": "",
+        "receipt": "4181845467:20:cleared:1016700"
+      },
+      {
+        "chapter": 19,
+        "name": "Echo Capture",
+        "result": "cleared",
+        "score": 24270,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 46.67,
+        "cause": "",
+        "receipt": "4181845467:19:cleared:967808"
+      },
+      {
+        "chapter": 18,
+        "name": "Projective Chart",
+        "result": "cleared",
+        "score": 23220,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 43.19,
+        "cause": "",
+        "receipt": "4181845467:18:cleared:921142"
+      },
+      {
+        "chapter": 17,
+        "name": "The Projective Intrusion",
+        "result": "won",
+        "score": 22150,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "—",
+        "gradeScore": 0,
+        "time": 75.99,
+        "cause": "",
+        "receipt": "4181845467:17:won:877950"
+      },
+      {
+        "chapter": 16,
+        "name": "Klein Mastery",
+        "result": "cleared",
+        "score": 21640,
+        "grazes": 2,
+        "shipId": 0,
+        "grade": "C",
+        "gradeScore": 69,
+        "time": 62.19,
+        "cause": "",
+        "receipt": "4181845467:16:cleared:801958"
+      },
+      {
+        "chapter": 15,
+        "name": "Pressure Field",
+        "result": "cleared",
+        "score": 19240,
+        "grazes": 2,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 82,
+        "time": 57.78,
+        "cause": "",
+        "receipt": "4181845467:15:cleared:739767"
+      },
+      {
+        "chapter": 14,
+        "name": "Fold Timing",
+        "result": "cleared",
+        "score": 16475,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "B",
+        "gradeScore": 80,
+        "time": 52.22,
+        "cause": "",
+        "receipt": "4181845467:14:cleared:681983"
+      },
+      {
+        "chapter": 13,
+        "name": "Cross Current",
+        "result": "cleared",
+        "score": 15740,
+        "grazes": 3,
+        "shipId": 0,
+        "grade": "S",
+        "gradeScore": 93,
+        "time": 53.24,
+        "cause": "",
+        "receipt": "4181845467:13:cleared:629758"
+      },
+      {
+        "chapter": 12,
+        "name": "Seam Gap",
+        "result": "cleared",
+        "score": 13575,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "A",
+        "gradeScore": 85,
+        "time": 49.92,
+        "cause": "",
+        "receipt": "4181845467:12:cleared:576517"
+      },
+      {
+        "chapter": 11,
+        "name": "Returning Fire",
+        "result": "cleared",
+        "score": 11970,
+        "grazes": 1,
+        "shipId": 0,
+        "grade": "B",
+        "gradeScore": 78,
+        "time": 48.89,
+        "cause": "",
+        "receipt": "4181845467:11:cleared:526592"
+      },
+      {
+        "chapter": 10,
+        "name": "Intentional Crossing",
+        "result": "cleared",
+        "score": 10655,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "B",
+        "gradeScore": 70,
+        "time": 46.67,
+        "cause": "",
+        "receipt": "4181845467:10:cleared:477700"
+      },
+      {
+        "chapter": 9,
+        "name": "Return Flight",
+        "result": "cleared",
+        "score": 9580,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "B",
+        "gradeScore": 70,
+        "time": 43.33,
+        "cause": "",
+        "receipt": "4181845467:9:cleared:431033"
+      },
+      {
+        "chapter": 8,
+        "name": "The Klein Fleet",
+        "result": "won",
+        "score": 8740,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "—",
+        "gradeScore": 0,
+        "time": 52.09,
+        "cause": "",
+        "receipt": "4181845467:8:won:387700"
+      },
+      {
+        "chapter": 7,
+        "name": "Last Approach",
+        "result": "cleared",
+        "score": 8440,
+        "grazes": 0,
+        "shipId": 0,
+        "grade": "B",
+        "gradeScore": 80,
+        "time": 40,
+        "cause": "",
+        "receipt": "4181845467:7:cleared:335608"
+      }
+    ]
+  },
+  "checkpoint": null,
+  "actFour": {
+    "version": 3,
+    "unlocked": 0,
+    "score": 34805,
+    "completed": false,
+    "resumeStage": 0,
+    "entries": {
+      "0": {
+        "score": 34805,
+        "echoes": 0,
+        "seed": 4181845467,
+        "shipId": 0,
+        "inventory": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 1
+          },
+          {
+            "key": "0:-1",
+            "type": 0,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 2
+          },
+          {
+            "key": "1:1",
+            "type": 1,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 3
+          },
+          {
+            "key": "1:-1",
+            "type": 1,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 4
+          },
+          {
+            "key": "3:1",
+            "type": 3,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 5
+          },
+          {
+            "key": "3:-1",
+            "type": 3,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 6
+          },
+          {
+            "key": "2:1",
+            "type": 2,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 7
+          },
+          {
+            "key": "2:-1",
+            "type": 2,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 8
+          },
+          {
+            "key": "4:1",
+            "type": 4,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 9
+          },
+          {
+            "key": "4:-1",
+            "type": 4,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 10
+          },
+          {
+            "key": "5:1",
+            "type": 5,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 11
+          },
+          {
+            "key": "5:-1",
+            "type": 5,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 12
+          },
+          {
+            "key": "6:1",
+            "type": 6,
+            "polarity": 1,
+            "source": "checkpoint",
+            "instance": 13
+          },
+          {
+            "key": "6:-1",
+            "type": 6,
+            "polarity": -1,
+            "source": "checkpoint",
+            "instance": 14
+          }
+        ],
+        "equipped": [
+          "1:1",
+          "5:-1"
+        ]
+      }
+    }
+  },
+  "journey": {
+    "version": 1,
+    "parts": {
+      "klein-relay": {
+        "id": "klein-relay",
+        "source": "campaign-extraction",
+        "chapter": 8,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 8740
+      },
+      "projective-module": {
+        "id": "projective-module",
+        "source": "campaign-extraction",
+        "chapter": 17,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 22150
+      },
+      "curvature-seed": {
+        "id": "curvature-seed",
+        "source": "campaign-extraction",
+        "chapter": 26,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 34805
+      }
+    },
+    "actFourBridge": {
+      "shipId": 0,
+      "seed": 4181845467,
+      "score": 34805,
+      "echoes": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 2
+        },
+        {
+          "key": "1:1",
+          "type": 1,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 3
+        },
+        {
+          "key": "1:-1",
+          "type": 1,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 4
+        },
+        {
+          "key": "3:1",
+          "type": 3,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 5
+        },
+        {
+          "key": "3:-1",
+          "type": 3,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 6
+        },
+        {
+          "key": "2:1",
+          "type": 2,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 7
+        },
+        {
+          "key": "2:-1",
+          "type": 2,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 8
+        },
+        {
+          "key": "4:1",
+          "type": 4,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 9
+        },
+        {
+          "key": "4:-1",
+          "type": 4,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 10
+        },
+        {
+          "key": "5:1",
+          "type": 5,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 11
+        },
+        {
+          "key": "5:-1",
+          "type": 5,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 12
+        },
+        {
+          "key": "6:1",
+          "type": 6,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 13
+        },
+        {
+          "key": "6:-1",
+          "type": 6,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 14
+        }
+      ],
+      "equipped": [
+        "1:1",
+        "5:-1"
+      ]
+    },
+    "assembled": false,
+    "activated": false,
+    "completed": false,
+    "endingSeen": false
+  },
+  "preferences": {
+    "sound": true,
+    "volume": 0.5,
+    "music": true,
+    "musicVolume": 0.55,
+    "effectsVolume": 0.8,
+    "ambienceVolume": 0.25,
+    "juice": true,
+    "reducedMotion": false,
+    "showCore": true,
+    "patternLabels": true,
+    "manifoldCues": true
+  }
+}

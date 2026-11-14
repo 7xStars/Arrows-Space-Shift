@@ -1,0 +1,50 @@
+{
+  "revision": "identified-return-r9",
+  "excerpts": [
+    {
+      "file": "percussion-r9.wav",
+      "source": "ass-identified-return-r9-music.wav",
+      "frames": 343881,
+      "source_first_frame_inclusive": 861621,
+      "source_last_frame_exclusive": 1205502,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "fd65b806ad17ae442f4c9e2cc7c99ccf5f935482dfec4d6d52aa0f431a7ce699"
+    },
+    {
+      "file": "percussion-r8.wav",
+      "source": "r8-control.wav",
+      "frames": 343881,
+      "source_first_frame_inclusive": 861621,
+      "source_last_frame_exclusive": 1205502,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "866302d50a84d2e4fef1bc60db64ca64b0f8c0add2719ff0f4cd86a03e5863c7"
+    },
+    {
+      "file": "break-return-r9.wav",
+      "source": "ass-identified-return-r9-music.wav",
+      "frames": 859701,
+      "source_first_frame_inclusive": 2237144,
+      "source_last_frame_exclusive": 3096845,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "65151e6b29e25ac17ea1d3adb8ceeef92baa315b58b40ead5065382df0fef546"
+    },
+    {
+      "file": "break-return-r8.wav",
+      "source": "r8-control.wav",
+      "frames": 859701,
+      "source_first_frame_inclusive": 2237144,
+      "source_last_frame_exclusive": 3096845,
+      "rate": 48000,
+      "channels": 2,
+      "edge_fade_seconds": 0.02,
+      "sha256": "d638f525f373c967285f43923c1b37b487b838d3c0ae17e4629adf592d649236"
+    }
+  ],
+  "comparison": "Equal source-frame intervals and 20 ms edge fades. No separate gain change."
+}

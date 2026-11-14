@@ -1,0 +1,394 @@
+{
+  "revision": "stc-act-library-r1-wav",
+  "method": "Safe ZIP extraction. SHA-256 of all extracted tracks. Native PCM WAV headers read with Python wave. Edge file-page playback is recorded separately.",
+  "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-act-library-r1\\Arrow-Space-Shift-16-Act-WAV-Masters-r1.zip",
+  "archiveBytes": 500284295,
+  "archiveSha256": "867954355a9de3cae1cca5f2867d4aa8efa5d44bc532921e5c59c31ed48746f3",
+  "manifest": "D:\\Projects\\games\\game-off-2026\\releases\\stc-act-library-r1\\WAV-MASTER-MANIFEST.json",
+  "manifestSha256": "9c1711119c0683aaf29d7b3275e7c8528b3d2c7137004b029de2ac82d5d447e8",
+  "extractionRoot": "G:\\Music Projects\\Arrow Space Shift\\scratch\\operator-lab-r1\\wav-delivery\\extracted-867954355a9d",
+  "pathValidation": {
+    "allMembersCheckedBeforeExtraction": true,
+    "memberCount": 19,
+    "pdfMemberCount": 0,
+    "passed": true
+  },
+  "executedCounts": {
+    "trackHeaders": 16,
+    "trackHashes": 16,
+    "passedTracks": 16,
+    "48kHzStereoPCM16Headers": 16
+  },
+  "totalSeconds": 3120,
+  "tracks": [
+    {
+      "id": "act1-01",
+      "file": "Act-I/01-Vector-Engine.wav",
+      "bytes": 11520044,
+      "expectedSeconds": 60,
+      "frames": 2880000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 60,
+      "sha256": "9717a2cf859d9224e32f9292127b6a3fe703077d6da3daa41a530067cbf289a0",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act1-02",
+      "file": "Act-I/02-Vacuum-Bearings.wav",
+      "bytes": 23040044,
+      "expectedSeconds": 120,
+      "frames": 5760000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 120,
+      "sha256": "6be321424c3c67d36258da8fa39b1b6f1d6281dc44a9c5689a25d5e9838beeb1",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act1-03",
+      "file": "Act-I/03-Off-Axis.wav",
+      "bytes": 46080044,
+      "expectedSeconds": 240,
+      "frames": 11520000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 240,
+      "sha256": "1b10994b23da24f05947b24aa694cc22370650cb3b40080ff21ffa966d527656",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act1-04",
+      "file": "Act-I/04-Transfer-Engine.wav",
+      "bytes": 69120044,
+      "expectedSeconds": 360,
+      "frames": 17280000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 360,
+      "sha256": "363913528a682e2eea960d66e4d6385acdf4e17686594162a12f4409fb4fbca2",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act2-01",
+      "file": "Act-II/01-Identified-Pulse.wav",
+      "bytes": 11520044,
+      "expectedSeconds": 60,
+      "frames": 2880000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 60,
+      "sha256": "3a83e1f4a69962982a67ef43fd28e063442c382b4cf5e233d98743f562a2b87c",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act2-02",
+      "file": "Act-II/02-Second-Horizon.wav",
+      "bytes": 23040044,
+      "expectedSeconds": 120,
+      "frames": 5760000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 120,
+      "sha256": "278db948589659e2e06062ca22d5c4e9f2b80f7b7fe0b18d60894bf9b5874d63",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act2-03",
+      "file": "Act-II/03-Order-of-Returns.wav",
+      "bytes": 46080044,
+      "expectedSeconds": 240,
+      "frames": 11520000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 240,
+      "sha256": "8342eadaf02bd4ff879c7bee08e5a2761480f5ad5e961a0c61dc0f6078d338c7",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act2-04",
+      "file": "Act-II/04-Seam-Memory.wav",
+      "bytes": 69120044,
+      "expectedSeconds": 360,
+      "frames": 17280000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 360,
+      "sha256": "a33fda18122bedf50185a862c21287978e2f0e753259a4130ca70c3842e3459f",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act3-01",
+      "file": "Act-III/01-Iron-Intake.wav",
+      "bytes": 11520044,
+      "expectedSeconds": 60,
+      "frames": 2880000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 60,
+      "sha256": "d0a5a77d42422d3a95ec3bc5d2239bba0988e370d04ee876c357f51536bc1c04",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act3-02",
+      "file": "Act-III/02-After-the-Release.wav",
+      "bytes": 23040044,
+      "expectedSeconds": 120,
+      "frames": 5760000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 120,
+      "sha256": "3e0b4cda36cafe86a6a1eeb80d3a3988a4d56045acf4a6eebcc73da144a21825",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act3-03",
+      "file": "Act-III/03-Order-of-Force.wav",
+      "bytes": 46080044,
+      "expectedSeconds": 240,
+      "frames": 11520000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 240,
+      "sha256": "b9a51437a52a1dd64146991c2209983888860d97ff5f36dbd4caffd352d2059c",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act3-04",
+      "file": "Act-III/04-Machinery-of-Return.wav",
+      "bytes": 69120044,
+      "expectedSeconds": 360,
+      "frames": 17280000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 360,
+      "sha256": "5ee16339eb608a8503ab61d31e0c4f75e8ce4798832389cfad7017ed7b0a4179",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act4-01",
+      "file": "Act-IV/01-Paired-Horizon.wav",
+      "bytes": 11520044,
+      "expectedSeconds": 60,
+      "frames": 2880000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 60,
+      "sha256": "17a2e1baff41b7a6626620c905613e7a53adfd7ec5fbbfa4300c3ebce2dfba9b",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act4-02",
+      "file": "Act-IV/02-Quiet-Curvature.wav",
+      "bytes": 23040044,
+      "expectedSeconds": 120,
+      "frames": 5760000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 120,
+      "sha256": "74aa3c1fb9d0d75c351ec5670bd3acdde6bc16ff5aea8092872d19a9ab302e17",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act4-03",
+      "file": "Act-IV/03-Order-Leaves-a-Trace.wav",
+      "bytes": 46080044,
+      "expectedSeconds": 240,
+      "frames": 11520000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 240,
+      "sha256": "dbddb56631e05f9e1d9cc4493ba55dedd5713de9a8596775e97fdc416dd99a79",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    },
+    {
+      "id": "act4-04",
+      "file": "Act-IV/04-The-Surface-Remembers.wav",
+      "bytes": 69120044,
+      "expectedSeconds": 360,
+      "frames": 17280000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "actualSeconds": 360,
+      "sha256": "a1a12032a5e1042bede2792421b80a06bf21393a5aa6c9c14436f3c0de0d3f4f",
+      "hashMatches": true,
+      "durationMatches": true,
+      "passed": true
+    }
+  ],
+  "browser": {
+    "status": "passed",
+    "surface": "Extracted static index.html opened through file URL.",
+    "browser": "Microsoft Edge",
+    "headless": true,
+    "input": "Keyboard Tab and Space. Page evaluation only read native media state.",
+    "checks": [
+      {
+        "name": "The page has sixteen native audio controls.",
+        "passed": true
+      },
+      {
+        "name": "All audio elements use preload none.",
+        "passed": true
+      },
+      {
+        "name": "The static page has no scripts.",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Tab reaches the first native audio control.",
+        "passed": true
+      },
+      {
+        "name": "The first track reports a sixty-second duration.",
+        "passed": true
+      },
+      {
+        "name": "Native playback time advances.",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Space pauses the native audio control.",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Space resumes the native audio control.",
+        "passed": true
+      },
+      {
+        "name": "The first media element has no media error.",
+        "passed": true
+      },
+      {
+        "name": "The native file page reports no page exceptions.",
+        "passed": true
+      }
+    ],
+    "tabStops": [
+      {
+        "tag": "a",
+        "text": "Download WAV",
+        "firstAudio": false
+      },
+      {
+        "tag": "audio",
+        "text": "",
+        "firstAudio": true
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "limitations": [
+      "This automated check does not establish audible output, human listening quality, or physical-device performance."
+    ],
+    "browserVersion": "157.0.4341.46",
+    "url": "file:///G:/Music%20Projects/Arrow%20Space%20Shift/scratch/operator-lab-r1/wav-delivery/extracted-867954355a9d/index.html",
+    "afterStart": {
+      "duration": 60,
+      "currentTime": 0.007637,
+      "paused": false,
+      "readyState": 4,
+      "error": null,
+      "currentSrc": "file:///G:/Music%20Projects/Arrow%20Space%20Shift/scratch/operator-lab-r1/wav-delivery/extracted-867954355a9d/Act-I/01-Vector-Engine.wav"
+    },
+    "afterAdvance": {
+      "duration": 60,
+      "currentTime": 1.783003,
+      "paused": false,
+      "readyState": 4,
+      "error": null,
+      "currentSrc": "file:///G:/Music%20Projects/Arrow%20Space%20Shift/scratch/operator-lab-r1/wav-delivery/extracted-867954355a9d/Act-I/01-Vector-Engine.wav"
+    },
+    "screenshot": "D:/Projects/games/game-off-2026/reports/stc-operator-lab-r1/wav-delivery-native-edge.png",
+    "afterPause": {
+      "duration": 60,
+      "currentTime": 1.82907,
+      "paused": true,
+      "readyState": 4,
+      "error": null,
+      "currentSrc": "file:///G:/Music%20Projects/Arrow%20Space%20Shift/scratch/operator-lab-r1/wav-delivery/extracted-867954355a9d/Act-I/01-Vector-Engine.wav"
+    },
+    "afterResume": {
+      "duration": 60,
+      "currentTime": 2.748745,
+      "paused": false,
+      "readyState": 4,
+      "error": null,
+      "currentSrc": "file:///G:/Music%20Projects/Arrow%20Space%20Shift/scratch/operator-lab-r1/wav-delivery/extracted-867954355a9d/Act-I/01-Vector-Engine.wav"
+    },
+    "executedChecks": 10,
+    "passedChecks": 10,
+    "visualInspection": "The 1280 by 900 screenshot was inspected. Track names, durations, download links, keyboard focus, and the first playing control are readable. No overlap was seen in the inspected area."
+  },
+  "limits": [
+    "This check does not establish human listening quality or game playback."
+  ],
+  "archiveHashAfterBrowser": "867954355a9de3cae1cca5f2867d4aa8efa5d44bc532921e5c59c31ed48746f3",
+  "archiveUnchangedAfterBrowser": true,
+  "verifiedAtUtc": "2026-11-13T10:47:11.458157+00:00",
+  "environmentNotes": [
+    "Python 3.11.9 has no soundfile module in its default environment. The final header checks used the built-in wave module."
+  ]
+}

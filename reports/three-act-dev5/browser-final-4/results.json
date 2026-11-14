@@ -1,0 +1,193 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "candidate": "0.25.1-dev.5",
+  "method": "Isolated headless Edge. A supplied old-profile fixture checks hidden entries and storage retention. A separate local post-defeat fixture exposes the Curvature Seed; ordinary keyboard input must collect it and complete extraction. No claim about defeating the boss or a fresh campaign is made.",
+  "checks": [
+    "hyperbolic-act.html shows the edition boundary",
+    "hyperbolic-act.html retains all supplied old records",
+    "hyperbolic-act.html performs no storage write",
+    "hyperbolic-act.html starts no later runtime or audio context",
+    "hyperbolic-act.html notice fits a narrow viewport",
+    "repair-dock.html shows the edition boundary",
+    "repair-dock.html retains all supplied old records",
+    "repair-dock.html performs no storage write",
+    "repair-dock.html starts no later runtime or audio context",
+    "repair-dock.html notice fits a narrow viewport",
+    "The old-profile fixture retains its fabricated ship",
+    "A profile with later progress still has no Act IV start",
+    "The title recognizes the completed three Acts",
+    "Later completion does not expose the repaired-drive banner",
+    "The main view has no visible later-page link",
+    "The retained hidden control cannot launch a later Act",
+    "Guide has no visible post-jam prompt",
+    "Equipment has no visible post-jam prompt",
+    "Options has no visible post-jam prompt",
+    "Main menus retain old later-Act checkpoint and repair records",
+    "Reload retains the later-Act records without exposing their start",
+    "A completed profile can explicitly replay Act III",
+    "Replay does not erase the stored later progress",
+    "An existing section checkpoint takes priority over the completion entry",
+    "Checkpoint entry does not erase later content records",
+    "New campaign requires an explicit start instead of an automatic Level 0 reset",
+    "The explicit new-campaign entry keeps older later-Act records",
+    "The post-defeat fixture exposes the real Curvature Seed",
+    "Physical collection precedes permanent unlocking",
+    "Ordinary steering and route extraction reach the three-Act ending",
+    "The ending identifies Act III and offers replay",
+    "The ending has no visible later-Act continuation",
+    "The local reward fixture does not award a completed Warp Drive",
+    "The ending replay action starts Act III rather than Level 0",
+    "No browser exception or failed active asset occurred"
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "cases": {
+    "hyperbolic-act.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "repair-dock.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "menus": {
+      "Guide": {
+        "text": "Flight guide\nClose flight guide\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nSection guide and campaign route\n\nCANONICAL GRAMMAR\n\nBullet-pattern glossary\n\nThe vocabulary stays stable while the geometry changes.\n\nFAN\nSeveral angles radiate from one source.\nSWEEP\nThe firing direction changes over committed beats.\nGAP\nA dense field leaves a readable opening.\nAIMED\nA shot commits to the player position during the warning.\nBURST\nSeveral rapid volleys separated by recovery.\nWALL\nA broad obstruction pressures route choice.\nSPIRAL\nA rotating emission develops over time.\nCROSSFIRE\nMultiple origins constrain different routes.\nRETURN\nA familiar attack deliberately exploits a surface join.\nCONVERGENCE\nIndependent trajectories meet later.\n\nMANIFOLD VISUAL LANGUAGE\n\nReal threats and chart previews\n\n● Solid shot and continuous trail = real projectile; normal collisions apply.\n\n◯ Hollow circle and dashed lead-in = a future-position image, not an extra shot or extra hitbox. It does NOT guarantee the identified physical shot is harmless.\n\nPulsing paired-edge mark = projected crossing within a fraction of a second; its arrival can still change with folds or later motion.\n\nK / single slanted notch = Klein twist; P / opposite ticks = projective join; K+P = mixed prototype.\n\nThe Klein bottle and mathematical Dyck surface are connected, nonorientable surfaces. The current K+P boss is a Dyck-inspired gameplay chart, not yet a mathematically verified K#RP² model. There is no global \"other side\" whose projectiles are automatically harmless. The displays distinguish live objects from additional render-only images, not alternate collision rules.\n\nChange the distance.\n\nDamaged Warp Drive.\nFind a way through.\n\nFold for faster shots and bonus points. Enemy shots accelerate too. Unfold to get more reaction time.\n\nFlight controls\n← →\nSteer\nSpace\nFire\nC E\nAct III · capture / release echoes\nLeft Shift\nFold\nRight Shift\nUnfold\nP\nPause\n\nAct I: Left and Right steer while the route scrolls. Act II: the Klein Relay gives you the same twisted surface traversal as the fleet. Side crossings reverse your physical forward direction while the camera follows. Left and Right steer in Acts I–III. Up and Down do not control these Acts. Route scrolling stays forward. Hold Space to fire forward. Left Shift folds and Right Shift unfolds.\n\nWhat changes?\nSpace at the ship\n1×\nRoute speed factor\n\nThe route is outside a fold field.\n\nVertical speed\n0\nRoute speed\n0\nDistance factor\n1.000\nFold stack\n0 / 3\nNo active fields.\n\nUnfold removes the latest field. Fields stay where you made them.\n\nRisk and reward\n\nFold: faster outgoing shots, faster incoming fire.\n\nEach fold at the target adds 50 points to a kill.\n\nUnfold: more reaction time, slower outgoing shots, lower kill reward.\n\nFold bonus earned: 0\nYour ship\nFold boundary\nThreat\nGate opening\nAbout this build\nUpgrade counters · 3-Paley and 7-Paley\nLevel 0 / 8 · Flight controls\n1 / 4 · Move\n\nMove → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "links": []
+      },
+      "Equipment": {
+        "text": "Equipment\nClose equipment\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nRECOVERED FLEET\n\nChoose your next ship\n\nCurvature Seed secured. Acts I–III are complete. Your ships and recovered parts remain available for replay.\n\nArrow\nResponsive steering\nExcels: Changes direction immediately.\nWatch for: Needs more room than Needle in narrow gaps.\nCovers Skater: sharp reversals\nSkater\nFast crossing\nExcels: Crosses wide patterns faster; brakes sharply.\nWatch for: Has a brief ramp when starting or reversing.\nCovers Needle: long crossings\nNeedle\nSmall collision core\nExcels: Its smaller core fits narrower bullet gaps.\nWatch for: Takes longer to cross a wide pattern.\nCovers Arrow: narrow gaps\nAftwing\nSmall collision core\nExcels: Its collision core is smaller than Arrow's core.\nWatch for: Crosses the screen more slowly than the starter ships.\nTrades lateral speed for a smaller collision core.\n\nNext flight preference: Aftwing. Your active ship does not change mid-section. Every hull uses the same forward gun and Paley-7 equipment.\n\nDrive parts, crafting, and ship choice are kept between campaigns.\n\nFleet Foundry\n\nSalvage 3/8 from first-cleared Act II/III lessons · Aftwing blueprint recovered · Hull constructed.\n\nAftwing constructed\n\nEquipment and collected seeds\n\nCollect seeds during flight. They remain in your inventory.\n\nSlot 1: empty\nSlot 2: opens at 7-Paley\n\nSlot 1 acts before Slot 2. Equip each operation once. R means right seed. L means left seed. One fold accepts the named side. Zero or two folds accept the opposite side. Three folds accept the named side again.\n\nOne operation · facing front\n0 folds · 0 position warps\n\nCollect a seed to equip an operation.\n\nEach fold or unfold reverses the accepted side. Other shots pass normally. Center shots are not affected.\n\nArrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire.\n\nDefeated carriers drop their equipped seeds.\n\nStored damage due: 0\n\nCounter results appear here during combat.",
+        "links": []
+      },
+      "Options": {
+        "text": "Options\nClose options\n\nPlay stays paused when you close this panel. Select Resume to continue.\n\nSound & feel\nSound off\nSound volume\n50%\nMusic level\n55%\nEffects level\n80%\nAmbience level\n25%\nRecorded techno music\nCombat particles & engine trails\nReduced motion\nAlways show the true collision core\nShow pattern names during warnings\nShow manifold projectile images & crossing cues\n\nReduced motion removes decorative movement. Aiming warnings, hits, returns, and damage deadlines stay visible.\n\nHold Space to fire. Release it to stop. Sound and feel settings are saved in this browser.\n\nBest score in this browser: 0\n\nSound is off.\n\nSection checkpoints\n\nProgress is saved at section boundaries in this browser. Reloading returns to the start of your current section with its equipment and score.\n\nRetry sectionNew run\nCampaign records\n\nComplete an Act II or III stage to create a record.\n\nRecent attempts\nNo recorded attempts yet.\nExport progress\nImport progress\n\nProgress stays in this browser unless exported.",
+        "links": []
+      }
+    },
+    "recovery": {
+      "exposed": {
+        "time": 0.03333333333333333,
+        "x": 0,
+        "part": {
+          "id": "curvature-seed",
+          "x": 160,
+          "z": 180,
+          "collected": false,
+          "readyAt": 0.35833333333333334
+        }
+      },
+      "collected": {
+        "time": 1.7083333333333297,
+        "part": {
+          "id": "curvature-seed",
+          "x": 160,
+          "z": 180,
+          "collected": true,
+          "readyAt": 0.35833333333333334
+        },
+        "unlocked": false
+      },
+      "extracted": {
+        "time": 11.691666666666643,
+        "phase": "won",
+        "profile": {
+          "version": 5,
+          "fleetUnlocked": true,
+          "driveParts": [
+            "klein-relay",
+            "projective-module",
+            "curvature-seed"
+          ],
+          "projectiveModule": true,
+          "curvatureSeed": true,
+          "unlockedShips": [
+            0,
+            1,
+            8
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "completedChapters": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "events": [
+          {
+            "time": 0.008333333333333333,
+            "type": "boss-defeated",
+            "x": 250,
+            "y": 780,
+            "twists": 0,
+            "projectiveCrossings": 0,
+            "crossings": [],
+            "segments": [
+              {
+                "from": {
+                  "x": 250,
+                  "y": 780
+                },
+                "to": {
+                  "x": 250,
+                  "y": 780
+                },
+                "t0": 0,
+                "t1": 1
+              }
+            ],
+            "chapter": 26
+          },
+          {
+            "time": 1.691666666666663,
+            "type": "drive-part-collected",
+            "part": "curvature-seed",
+            "x": 160,
+            "z": 180
+          },
+          {
+            "time": 11.691666666666643,
+            "type": "boss-extracted",
+            "part": "curvature-seed",
+            "chapter": 26
+          }
+        ]
+      }
+    }
+  },
+  "failure": null,
+  "sourceHashes": {
+    "src/build.js": "ec4f051fbe50cda6606369e0634257915def2773420d6ac8d5125054ffb5d4ec",
+    "src/app.js": "430843bbca8e52b90da47bf50bed188253e0ce92e927260b04a227e991483c0e",
+    "src/interface.js": "0fb92728e7e866f86d143544f174748a1f9180b1c7704b90d73367e9e2d3e324",
+    "src/later-content-entry.js": "f52973aa3d3654971ce50ae28550b299951cd133ee80dbbb35870f422e284ffe"
+  },
+  "url": "http://127.0.0.1:46341/",
+  "browser": "157.0.4341.46",
+  "limits": "Old-profile injection is a compatibility fixture. The final-boss fixture starts after defeat and does not verify boss combat, fairness, a fresh-game completion, human play, or physical devices. The real pickup and extraction use ordinary keyboard input. The user browser and storage are not changed."
+}

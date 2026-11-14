@@ -1,0 +1,249 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "method": "Native tab selection through Page.bringToFront. No visibility property override.",
+  "before": {
+    "hidden": false,
+    "visibility": "visible",
+    "audio": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "title",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "playing",
+        "error": "",
+        "offset": 0,
+        "duration": 76.64179166666666,
+        "loadedSegments": 1,
+        "pendingSegments": 0,
+        "decodedBytes": 29430448,
+        "activeSources": 1,
+        "layers": {
+          "core": 0.89,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 1,
+        "decodes": 1,
+        "peakDecodedSegments": 1,
+        "starts": 1,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "identified-return-r9",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.197,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 2
+    }
+  },
+  "hidden": {
+    "hidden": false,
+    "visibility": "visible",
+    "audio": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "title",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "playing",
+        "error": "",
+        "offset": 0.2643333333333333,
+        "duration": 76.64179166666666,
+        "loadedSegments": 1,
+        "pendingSegments": 0,
+        "decodedBytes": 29430448,
+        "activeSources": 1,
+        "layers": {
+          "core": 0.89,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 1,
+        "decodes": 1,
+        "peakDecodedSegments": 1,
+        "starts": 1,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "identified-return-r9",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.197,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 2
+    }
+  },
+  "later": {
+    "contextState": "running",
+    "voices": 0,
+    "retiringVoices": 0,
+    "noiseBuffers": 0,
+    "distortionCurves": 0,
+    "theme": "title",
+    "scoreStep": 0,
+    "buses": {
+      "music": 0.550000011920929,
+      "effects": 0.800000011920929,
+      "ambience": 0.25
+    },
+    "recorded": {
+      "engine": "recorded-segments",
+      "trackId": "identified-return-r9",
+      "title": "Identified Return r9",
+      "mode": "title",
+      "state": "playing",
+      "error": "",
+      "offset": 0.47500000000000003,
+      "duration": 76.64179166666666,
+      "loadedSegments": 1,
+      "pendingSegments": 0,
+      "decodedBytes": 29430448,
+      "activeSources": 1,
+      "layers": {
+        "core": 0.89,
+        "atmosphere": 0.85
+      },
+      "repeatPolicy": "Repeat the finite composition after its ending.",
+      "fetches": 1,
+      "decodes": 1,
+      "peakDecodedSegments": 1,
+      "starts": 1,
+      "underruns": 0,
+      "repeats": 0,
+      "history": [
+        {
+          "trackId": "identified-return-r9",
+          "segment": 0,
+          "absolute": 0,
+          "start": 0.197,
+          "offset": 0
+        }
+      ]
+    },
+    "motifs": {
+      "tracked": 0,
+      "history": []
+    },
+    "admitted": 0,
+    "dropped": 0,
+    "stolen": 0,
+    "peakVoices": 0,
+    "resumes": 2
+  },
+  "restored": {
+    "hidden": false,
+    "visibility": "visible",
+    "audio": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "title",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "playing",
+        "error": "",
+        "offset": 0.7336666666666667,
+        "duration": 76.64179166666666,
+        "loadedSegments": 1,
+        "pendingSegments": 0,
+        "decodedBytes": 29430448,
+        "activeSources": 1,
+        "layers": {
+          "core": 0.89,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 1,
+        "decodes": 1,
+        "peakDecodedSegments": 1,
+        "starts": 1,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "identified-return-r9",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.197,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 2
+    }
+  },
+  "nativeHiddenObserved": false,
+  "stoppedWhenHidden": false,
+  "offsetHeld": false,
+  "resumedWhenVisible": true,
+  "limits": "Native browser visibility and audio scheduling only. No audible listening or physical-device result."
+}

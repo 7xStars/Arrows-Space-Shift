@@ -1,0 +1,358 @@
+{
+  "mixRevision": "r2b",
+  "files": 45,
+  "groups": {
+    "masters": 9,
+    "stems": 18,
+    "previews": 9,
+    "sessions": 9
+  },
+  "allArchiveAndExtractedHashesPassed": true,
+  "noLargeCopiesOnD": true,
+  "sourcePlayerSha256": "64abbea6d233deffc121800c8403bf0208089bb456a9ac0fc2f1686d4330dcf5",
+  "tempoAssetOggFiles": 40,
+  "records": [
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act1-01.wav",
+      "bytes": 23040044,
+      "sha256": "6d2ffce7da8fdcdc151d0b67d37d1805b5f3168ee45aca704c157af0ac85f4be",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-01-core.wav",
+      "bytes": 23040044,
+      "sha256": "f59b1d99e3694f519bd13482c975555e34d6e0da539aa8a48932826797059e47",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-01-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "e3cf6ff7fd1a20e3af9150b37dcdbafb5e8c6bd754f92288a9bdc2c9f6cda3b8",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act1-01-preview.wav",
+      "bytes": 3840078,
+      "sha256": "4147973d679e6f3eb6d1649fd3ec89676e23b6427b78710f45bd55eacbd024ff",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act1-01.RPP",
+      "bytes": 964,
+      "sha256": "b344227b9bee5df0da5be91e8871f9dc33860a22fa207a86b0c603e7f68e2ed7",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act1-01-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act1-01-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act1-02.wav",
+      "bytes": 23040044,
+      "sha256": "ec04cc1795debe752146d7c1697a6a59d10b1f04ca837d9a067ea1764f39fa8c",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-02-core.wav",
+      "bytes": 23040044,
+      "sha256": "e2f7912281982cd79cbd98707a0f39988dd9a3c327791cdb07c771ce0ba8e5e3",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-02-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "a3f37ac66a068c9e7b4237c3c0f04c8b2671a07b61aec96d00af3b78f9bf8321",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act1-02-preview.wav",
+      "bytes": 3840078,
+      "sha256": "b0d19fcde7d00500bd2bb1969b62bbf8b531fff0e088ebc73d8aeb7e7be7fd7c",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act1-02.RPP",
+      "bytes": 946,
+      "sha256": "52eb95aea7d3949da505d179ac7707410a4af4b00d7fecc566e0166cf2588769",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act1-02-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act1-02-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act1-03.wav",
+      "bytes": 23040044,
+      "sha256": "e1e1a2c99ab7d00bd41e6950c94720bb38105dc8ff92c698eb4b17e9e1562a5a",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-03-core.wav",
+      "bytes": 23040044,
+      "sha256": "8e1beb298f444672abb3c0c7203a355cb5486e19af1efa296f22fd29a319fb96",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act1-03-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "90482630b3c15fe641a53423356f8bfa6b084691a0b099d0ddef3ed914347678",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act1-03-preview.wav",
+      "bytes": 3840078,
+      "sha256": "7662d31281e73da63546207b708d70f250c7400f7f94bba7d942fd9bb0773e4e",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act1-03.RPP",
+      "bytes": 1002,
+      "sha256": "0063a23102c58f9179363e491f00fd07b0b1b33ed846994406f06d6b5621f4fe",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act1-03-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act1-03-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act2-01.wav",
+      "bytes": 23040044,
+      "sha256": "d6975a57f1b1d1f59939ccf7d925b102cf8dfe787dabd314368a8bb2ded8f4ff",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act2-01-core.wav",
+      "bytes": 23040044,
+      "sha256": "05e3934008c0b85e7fe4abee225859247f48f80eabf8f806fc71fdfcbd1abe75",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act2-01-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "0289c1627477f1060177345885ac63deb4c02b298decbdb431a2f0bc4ecb5497",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act2-01-preview.wav",
+      "bytes": 3840078,
+      "sha256": "f687c013567ba8b6d6a4bc4df782a1a2840da6d5170d6f51b4a0435274393694",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act2-01.RPP",
+      "bytes": 972,
+      "sha256": "2def47381b3b5eea4d0068412f4ae8d52fa4e330597cd3602da2d0d18e21ef13",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act2-01-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act2-01-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act2-02.wav",
+      "bytes": 23040044,
+      "sha256": "d9886f50b0e56c03968ef04ea0aea42cbbd641c8d114a40f8f725c57a17b170d",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act2-02-core.wav",
+      "bytes": 23040044,
+      "sha256": "f7dfd225bf6f5dd981dd9c5a5bfa565b455367f497cb2469b3529000e45db56f",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act2-02-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "ded9cc7c16b84b3fa27a40d684581f4a7428040dc0403d7c689d7387b905c178",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act2-02-preview.wav",
+      "bytes": 3840078,
+      "sha256": "28519661e102f8d90fb03cf5c343dee280bc4be798e636ca7a4f18b63a4242e9",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act2-02.RPP",
+      "bytes": 950,
+      "sha256": "71acba23d5a6abaadf968716a9026f5375b9f9aa9fb60b90483229a63b2cbf49",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act2-02-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act2-02-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act3-01.wav",
+      "bytes": 23040044,
+      "sha256": "23fc013ead470dab02bff86f59f837b7d8974738431b8db746a5d30f36a5596b",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act3-01-core.wav",
+      "bytes": 23040044,
+      "sha256": "42194890ced87457cf66da77ddb54d16cf2d393c356451a3f8255d2bbffeaa62",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act3-01-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "58c3bdfffa5758c4173bd0c64d41a237a707a28c32e7f6892631c9aa828d6ad6",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act3-01-preview.wav",
+      "bytes": 3840078,
+      "sha256": "cf8267c198ccf2cb0952b2e85322d6915621ff86e91e838d0caf2076bccc497b",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act3-01.RPP",
+      "bytes": 1035,
+      "sha256": "224d3869773f6d3046d7944eba3e46c9817b15e866c11ad574409bd64026dbb5",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act3-01-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act3-01-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act3-02.wav",
+      "bytes": 23040044,
+      "sha256": "bc9f1fe2e5b1d46755298dd33bb5b63bd252124cb0d35949ba142384c5c7c7b6",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act3-02-core.wav",
+      "bytes": 23040044,
+      "sha256": "380b6d4ad1b6c9496c52b80b64daa8ac4322e0e5f9795c8de08c953c8988618c",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act3-02-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "1decbff71f19835d55a3b42ec026dd0becc0c1c501a58a53b3282ba22c91c31c",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act3-02-preview.wav",
+      "bytes": 3840078,
+      "sha256": "7e1398e9800ca1f459c06c0effdb7fd8c35d9b13718554cd71a57bc30f1cad9b",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act3-02.RPP",
+      "bytes": 1074,
+      "sha256": "cdd89c9030a1dd24db3f00e3bc8e953a477be13d3ffa86959ca02b2b2b557a4d",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act3-02-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act3-02-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act4-01.wav",
+      "bytes": 23040044,
+      "sha256": "51bf4781a5c477430f207c6256b857b17fba2d77c46354435666f7a77713e90f",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act4-01-core.wav",
+      "bytes": 23040044,
+      "sha256": "bc60b778c69732da2952ac3bcee4829c2774a8e1349202c9b4792fb65360a508",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act4-01-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "7e0f8207ed9114d53cd47bf7a2b38d7fc585de67ed730c1b5aa2d01030d1cbd0",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act4-01-preview.wav",
+      "bytes": 3840078,
+      "sha256": "250d6042a8d3221e05476cfc6139c5b93ad4542a0cceb31a32a333bd61f4af2c",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act4-01.RPP",
+      "bytes": 1064,
+      "sha256": "cd1d5b50b23ecec8e276720c946a2428685cab5573942e7b46d5695c1b0b5895",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act4-01-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act4-01-atmosphere.wav"
+      ]
+    },
+    {
+      "path": "audio/stc-tempo-r2/masters/tempo-act4-02.wav",
+      "bytes": 23040044,
+      "sha256": "d609838c46683f2e07edfd490a5c09addfdaffde877b6a064876e9cd2aea6de8",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act4-02-core.wav",
+      "bytes": 23040044,
+      "sha256": "c3c588661977a887c275b508e9a73ac7086923423efeae075c693b5dc5309587",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/stems/tempo-act4-02-atmosphere.wav",
+      "bytes": 23040044,
+      "sha256": "6b12e8126b4de9e48340587e6eb9d076c4baba0d7d4fd18803164d278b2c51c0",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/previews/tempo-act4-02-preview.wav",
+      "bytes": 3840078,
+      "sha256": "c0e6a38a36a9716c7bba26cbb763d679d2f12af404a8f0e2f040ee4fc3761b93",
+      "extractedHashPassed": true,
+      "relativeReferences": []
+    },
+    {
+      "path": "audio/stc-tempo-r2/sessions/tempo-act4-02.RPP",
+      "bytes": 1074,
+      "sha256": "ea33908ffd5a87938367edf539de5246526b2d024d2d3f54fe0113a338d66438",
+      "extractedHashPassed": true,
+      "relativeReferences": [
+        "audio/stc-tempo-r2/stems/tempo-act4-02-core.wav",
+        "audio/stc-tempo-r2/stems/tempo-act4-02-atmosphere.wav"
+      ]
+    }
+  ]
+}

@@ -1,9 +1,14 @@
-node_modules/
+releases/
 .local/
+node_modules/
+archive/
+imports/
 reports/*.png
-dist/
-art/references/
 .env
 .env.*
 !.env.example
-
+__pycache__/
+audio/**/*.wav
+reports/**/*.wav
+# Local device, process, and publication-access diagnostics.
+/reports/mute-investigation/

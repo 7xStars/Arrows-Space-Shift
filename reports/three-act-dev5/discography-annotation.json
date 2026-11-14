@@ -1,0 +1,141 @@
+{
+  "candidate": "0.25.1-dev.5",
+  "compositions": 26,
+  "seconds": 4276.641791666667,
+  "active_recordings": 4,
+  "review_recordings": 16,
+  "post_jam_recordings": 6,
+  "tracks": [
+    {
+      "id": "act1-01",
+      "runtime_use": "review library only",
+      "sha256": "9717a2cf859d9224e32f9292127b6a3fe703077d6da3daa41a530067cbf289a0"
+    },
+    {
+      "id": "act1-02",
+      "runtime_use": "review library only",
+      "sha256": "6be321424c3c67d36258da8fa39b1b6f1d6281dc44a9c5689a25d5e9838beeb1"
+    },
+    {
+      "id": "act1-03",
+      "runtime_use": "Act 1 campaign",
+      "sha256": "1b10994b23da24f05947b24aa694cc22370650cb3b40080ff21ffa966d527656"
+    },
+    {
+      "id": "act1-04",
+      "runtime_use": "review library only",
+      "sha256": "363913528a682e2eea960d66e4d6385acdf4e17686594162a12f4409fb4fbca2"
+    },
+    {
+      "id": "act2-01",
+      "runtime_use": "review library only",
+      "sha256": "3a83e1f4a69962982a67ef43fd28e063442c382b4cf5e233d98743f562a2b87c"
+    },
+    {
+      "id": "act2-02",
+      "runtime_use": "review library only",
+      "sha256": "278db948589659e2e06062ca22d5c4e9f2b80f7b7fe0b18d60894bf9b5874d63"
+    },
+    {
+      "id": "act2-03",
+      "runtime_use": "Act 2 campaign",
+      "sha256": "8342eadaf02bd4ff879c7bee08e5a2761480f5ad5e961a0c61dc0f6078d338c7"
+    },
+    {
+      "id": "act2-04",
+      "runtime_use": "review library only",
+      "sha256": "a33fda18122bedf50185a862c21287978e2f0e753259a4130ca70c3842e3459f"
+    },
+    {
+      "id": "act3-01",
+      "runtime_use": "review library only",
+      "sha256": "d0a5a77d42422d3a95ec3bc5d2239bba0988e370d04ee876c357f51536bc1c04"
+    },
+    {
+      "id": "act3-02",
+      "runtime_use": "review library only",
+      "sha256": "3e0b4cda36cafe86a6a1eeb80d3a3988a4d56045acf4a6eebcc73da144a21825"
+    },
+    {
+      "id": "act3-03",
+      "runtime_use": "Act 3 campaign",
+      "sha256": "b9a51437a52a1dd64146991c2209983888860d97ff5f36dbd4caffd352d2059c"
+    },
+    {
+      "id": "act3-04",
+      "runtime_use": "review library only",
+      "sha256": "5ee16339eb608a8503ab61d31e0c4f75e8ce4798832389cfad7017ed7b0a4179"
+    },
+    {
+      "id": "act4-01",
+      "runtime_use": "post-jam source only",
+      "sha256": "17a2e1baff41b7a6626620c905613e7a53adfd7ec5fbbfa4300c3ebce2dfba9b"
+    },
+    {
+      "id": "act4-02",
+      "runtime_use": "post-jam source only",
+      "sha256": "74aa3c1fb9d0d75c351ec5670bd3acdde6bc16ff5aea8092872d19a9ab302e17"
+    },
+    {
+      "id": "act4-03",
+      "runtime_use": "post-jam source only",
+      "sha256": "dbddb56631e05f9e1d9cc4493ba55dedd5713de9a8596775e97fdc416dd99a79"
+    },
+    {
+      "id": "act4-04",
+      "runtime_use": "post-jam source only",
+      "sha256": "a1a12032a5e1042bede2792421b80a06bf21393a5aa6c9c14436f3c0de0d3f4f"
+    },
+    {
+      "id": "tempo-act1-01",
+      "runtime_use": "review library only",
+      "sha256": "6d2ffce7da8fdcdc151d0b67d37d1805b5f3168ee45aca704c157af0ac85f4be"
+    },
+    {
+      "id": "tempo-act1-02",
+      "runtime_use": "review library only",
+      "sha256": "ec04cc1795debe752146d7c1697a6a59d10b1f04ca837d9a067ea1764f39fa8c"
+    },
+    {
+      "id": "tempo-act1-03",
+      "runtime_use": "review library only",
+      "sha256": "e1e1a2c99ab7d00bd41e6950c94720bb38105dc8ff92c698eb4b17e9e1562a5a"
+    },
+    {
+      "id": "tempo-act2-01",
+      "runtime_use": "review library only",
+      "sha256": "d6975a57f1b1d1f59939ccf7d925b102cf8dfe787dabd314368a8bb2ded8f4ff"
+    },
+    {
+      "id": "tempo-act2-02",
+      "runtime_use": "review library only",
+      "sha256": "d9886f50b0e56c03968ef04ea0aea42cbbd641c8d114a40f8f725c57a17b170d"
+    },
+    {
+      "id": "tempo-act3-01",
+      "runtime_use": "review library only",
+      "sha256": "23fc013ead470dab02bff86f59f837b7d8974738431b8db746a5d30f36a5596b"
+    },
+    {
+      "id": "tempo-act3-02",
+      "runtime_use": "review library only",
+      "sha256": "bc9f1fe2e5b1d46755298dd33bb5b63bd252124cb0d35949ba142384c5c7c7b6"
+    },
+    {
+      "id": "tempo-act4-01",
+      "runtime_use": "post-jam source only",
+      "sha256": "51bf4781a5c477430f207c6256b857b17fba2d77c46354435666f7a77713e90f"
+    },
+    {
+      "id": "tempo-act4-02",
+      "runtime_use": "post-jam source only",
+      "sha256": "d609838c46683f2e07edfd490a5c09addfdaffde877b6a064876e9cd2aea6de8"
+    },
+    {
+      "id": "identified-return-r9",
+      "runtime_use": "title",
+      "sha256": "ef73e3bae4f7a991a6be08f65e1135524d48c596c38c79639b61b6dff60145c9"
+    }
+  ],
+  "limits": "Source metadata check only. No WAV or earlier archive was changed."
+}

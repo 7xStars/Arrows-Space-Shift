@@ -1,0 +1,349 @@
+{
+  "revision": "identified-return-r8-independent-output-audit",
+  "manifest_sha256": "af2ec20253221f4ea49821a22b1dbacc64c7ca9ca4b04c73103fc60e218cb217",
+  "common_gain": 1,
+  "layer_mix": {
+    "layer_gain": 1.25,
+    "harmony_room_gain": 0.11,
+    "gate_smoothing_seconds": 0.02,
+    "order_before_bar32": "gate then room (R after G)",
+    "order_after_bar32": "room then gate (G after R)",
+    "order_crossfade_seconds": 0.02,
+    "foundation_room_gain_retained": 0.12,
+    "common_gain_policy": "Apply one linear final gain to the foundation, new layer, candidate, and all proof stems. No independent normalization."
+  },
+  "files": {
+    "ass-identified-return-r8-music.wav": {
+      "sha256": "f9dec019ac909847619e18fd51f57e1dda99f4703b3ae60f5d75a12ba4c0d818",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -2.6567724413245593,
+      "rms_dbfs": -14.802069567695433,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        0.0007197827919336082,
+        0.0007022228611143636
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": 0.9756289996897997,
+      "mono_fold_power_delta_db": -0.05435924827156459,
+      "loudness": {
+        "integrated_lufs": -14.5,
+        "range_lu": 2.4,
+        "estimated_true_peak_dbfs": -2.7,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\ass-identified-return-r8-music.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r8\\qa\\ass-identified-return-r8-music-independent-ebur128.txt",
+        "exit_code": 0
+      }
+    },
+    "foundation-control.wav": {
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -2.8894897120149454,
+      "rms_dbfs": -14.860734392916088,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        0.0007215813086379326,
+        0.0007041035282708108
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": 0.9756071695907437,
+      "mono_fold_power_delta_db": -0.05441995578905159,
+      "loudness": {
+        "integrated_lufs": -14.6,
+        "range_lu": 2.4,
+        "estimated_true_peak_dbfs": -2.9,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\foundation-control.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r8\\qa\\foundation-control-independent-ebur128.txt",
+        "exit_code": 0
+      }
+    },
+    "new-layer.wav": {
+      "sha256": "d3d59599012a956c5c0a62c1f3a286e3589ae75577f4732777469bd50bfbf561",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -17.050066412541867,
+      "rms_dbfs": -33.63689185038426,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        -1.79845863574265e-06,
+        -1.8805261327486418e-06
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": 0.9774354665784251,
+      "mono_fold_power_delta_db": -0.0497534819395645,
+      "loudness": {
+        "integrated_lufs": -28.1,
+        "range_lu": 6.9,
+        "estimated_true_peak_dbfs": -17.0,
+        "command": [
+          "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+          "-hide_banner",
+          "-i",
+          "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\new-layer.wav",
+          "-filter_complex",
+          "ebur128=peak=true",
+          "-f",
+          "null",
+          "-"
+        ],
+        "log": "G:\\Music Projects\\Arrow Space Shift\\scratch\\stc-study-r8\\qa\\new-layer-independent-ebur128.txt",
+        "exit_code": 0
+      }
+    },
+    "harmony-direct.wav": {
+      "sha256": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -17.048179201314873,
+      "rms_dbfs": -33.700584765944626,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        -9.725409023037978e-07,
+        -9.998248402046072e-07
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": 0.9810189227338768,
+      "mono_fold_power_delta_db": -0.041426422418124206
+    },
+    "mechanical-response.wav": {
+      "sha256": "f1f05841aa439e57480d6d34e99d3cfa72ea470a7e41338433bb6d1b50884599",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -28.13093614584809,
+      "rms_dbfs": -62.455063678254064,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        -8.066555553282778e-07,
+        -8.368429223155217e-07
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": 0.9798894371518975,
+      "mono_fold_power_delta_db": -0.04628234145414433
+    },
+    "gate-room-proof.wav": {
+      "sha256": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -42.110336232568464,
+      "rms_dbfs": -57.76332012927255,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        -5.7487895911404405e-09,
+        6.1386786398902256e-09
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": -0.05218663342482318,
+      "mono_fold_power_delta_db": -3.2363114832890805
+    },
+    "room-gate-proof.wav": {
+      "sha256": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f",
+      "bytes": 14715268,
+      "header": {
+        "channels": 2,
+        "rate": 48000,
+        "frames": 3678806,
+        "sample_width_bytes": 2
+      },
+      "seconds": 76.64179166666666,
+      "sample_peak_dbfs": -41.77877347190285,
+      "rms_dbfs": -57.42617504542218,
+      "full_scale_samples": 0,
+      "dc_per_channel": [
+        3.027861761567476e-09,
+        -6.159417419079044e-08
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "channel_correlation": -0.06473904718341124,
+      "mono_fold_power_delta_db": -3.291357694102187
+    }
+  },
+  "comparison": {
+    "candidate_control_sample_correlation": 0.9934397510542096,
+    "additive_max_absolute_error_lsb": 1.0,
+    "foundation_scaled_source_error_lsb": 0.0,
+    "candidate_minus_control_integrated_lu": 0.09999999999999964,
+    "new_layer_to_foundation_whole_rms_db": -18.776157457468173,
+    "largest_new_layer_frame_step": 0.0050048828125,
+    "sections": [
+      {
+        "id": "opening",
+        "start_seconds": 0,
+        "end_seconds": 7.204179104477612,
+        "candidate_rms_dbfs": -16.74342487544213,
+        "foundation_rms_dbfs": -16.74342487544213,
+        "layer_rms_dbfs": null,
+        "layer_to_foundation_rms_db": null,
+        "new_layer_nonzero_samples": 0,
+        "new_layer_sample_peak_dbfs": null
+      },
+      {
+        "id": "mechanical-answer",
+        "start_seconds": 7.204179104477612,
+        "end_seconds": 21.532537313432837,
+        "candidate_rms_dbfs": -14.498956516042504,
+        "foundation_rms_dbfs": -14.499020811121547,
+        "layer_rms_dbfs": -61.19566668820184,
+        "layer_to_foundation_rms_db": -46.696645877080286,
+        "new_layer_nonzero_samples": 59349,
+        "new_layer_sample_peak_dbfs": -28.13093614584809
+      },
+      {
+        "id": "first-voicing",
+        "start_seconds": 21.532537313432837,
+        "end_seconds": 35.86089552238806,
+        "candidate_rms_dbfs": -14.16741374069529,
+        "foundation_rms_dbfs": -14.235547151485854,
+        "layer_rms_dbfs": -32.38582968605617,
+        "layer_to_foundation_rms_db": -18.150282534570312,
+        "new_layer_nonzero_samples": 1084894,
+        "new_layer_sample_peak_dbfs": -17.987894799662637
+      },
+      {
+        "id": "changed-voicing",
+        "start_seconds": 35.86089552238806,
+        "end_seconds": 50.189253731343285,
+        "candidate_rms_dbfs": -14.140042967483355,
+        "foundation_rms_dbfs": -14.23322665846888,
+        "layer_rms_dbfs": -31.102789446786684,
+        "layer_to_foundation_rms_db": -16.869562788317804,
+        "new_layer_nonzero_samples": 1100454,
+        "new_layer_sample_peak_dbfs": -17.050066412541867
+      },
+      {
+        "id": "quiet-harmony",
+        "start_seconds": 50.189253731343285,
+        "end_seconds": 56.45791044776119,
+        "candidate_rms_dbfs": -16.44968104853318,
+        "foundation_rms_dbfs": -16.536956481749012,
+        "layer_rms_dbfs": -33.47465329424176,
+        "layer_to_foundation_rms_db": -16.937696812492753,
+        "new_layer_nonzero_samples": 524852,
+        "new_layer_sample_peak_dbfs": -20.763678790697305
+      },
+      {
+        "id": "two-beat-gap",
+        "start_seconds": 56.45791044776119,
+        "end_seconds": 57.3534328358209,
+        "candidate_rms_dbfs": -16.488362441993985,
+        "foundation_rms_dbfs": -16.488362441993985,
+        "layer_rms_dbfs": null,
+        "layer_to_foundation_rms_db": null,
+        "new_layer_nonzero_samples": 0,
+        "new_layer_sample_peak_dbfs": null
+      },
+      {
+        "id": "return",
+        "start_seconds": 57.3534328358209,
+        "end_seconds": 71.68179104477613,
+        "candidate_rms_dbfs": -13.819454437961095,
+        "foundation_rms_dbfs": -13.900059994507465,
+        "layer_rms_dbfs": -31.164738273157162,
+        "layer_to_foundation_rms_db": -17.264678278649697,
+        "new_layer_nonzero_samples": 760778,
+        "new_layer_sample_peak_dbfs": -17.127797254375594
+      },
+      {
+        "id": "ending-tail",
+        "start_seconds": 71.68179104477613,
+        "end_seconds": 76.64179166666666,
+        "candidate_rms_dbfs": -24.461982092312407,
+        "foundation_rms_dbfs": -24.461982092312407,
+        "layer_rms_dbfs": null,
+        "layer_to_foundation_rms_db": null,
+        "new_layer_nonzero_samples": 0,
+        "new_layer_sample_peak_dbfs": null
+      }
+    ]
+  },
+  "tools": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Andr\u00e9\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "numpy": "2.3.5",
+    "ffmpeg": "G:\\Music Tools\\FFmpeg\\python\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe"
+  },
+  "limits": [
+    "No human listening, musical improvement, comfort, or recognition claim.",
+    "No physical-device or game-mask result.",
+    "Measured mono power is not perceptual mono acceptance.",
+    "Estimated true peaks apply to the measured lossless PCM files."
+  ]
+}

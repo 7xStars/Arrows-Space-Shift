@@ -1,0 +1,27 @@
+{
+  "pid": 62228,
+  "scope": "Node automation only. Keep all actors and projectiles. Trim only the copied event records returned through Playwright.",
+  "started": "2026-11-13T17:31:30.325Z",
+  "changed": true,
+  "target": {
+    "id": "26cb66e0-2894-41d6-82ea-093b9d6fe0f8",
+    "url": "file://D:_Projects_games_game-off-2026_tools_campaign-full-browser.mjs"
+  },
+  "result": {
+    "changed": true,
+    "progress": {
+      "scope": "main",
+      "index": 9,
+      "attempt": 1,
+      "phase": "running",
+      "time": 429.6333333331069,
+      "hull": 5
+    },
+    "record": {
+      "at": "2026-11-13T17:31:30.446Z",
+      "eventLimit": 200,
+      "scope": "Only the cloned readback sent to the Node controller. The simulation log and all physical objects remain unchanged.",
+      "damageRecord": "damageObservations"
+    }
+  }
+}

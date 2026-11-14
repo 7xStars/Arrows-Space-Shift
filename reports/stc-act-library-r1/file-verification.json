@@ -1,0 +1,651 @@
+{
+  "revision": "stc-act-library-r1",
+  "tracks": [
+    {
+      "id": "act1-01",
+      "seconds": 60,
+      "events": 793,
+      "integrated_lufs": -17.9,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "9717a2cf859d9224e32f9292127b6a3fe703077d6da3daa41a530067cbf289a0"
+    },
+    {
+      "id": "act1-02",
+      "seconds": 120,
+      "events": 1677,
+      "integrated_lufs": -18.2,
+      "master_true_peak_dbfs": -1.7,
+      "master_sha256": "6be321424c3c67d36258da8fa39b1b6f1d6281dc44a9c5689a25d5e9838beeb1"
+    },
+    {
+      "id": "act1-03",
+      "seconds": 240,
+      "events": 3987,
+      "integrated_lufs": -18.5,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "1b10994b23da24f05947b24aa694cc22370650cb3b40080ff21ffa966d527656"
+    },
+    {
+      "id": "act1-04",
+      "seconds": 360,
+      "events": 5915,
+      "integrated_lufs": -19.4,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "363913528a682e2eea960d66e4d6385acdf4e17686594162a12f4409fb4fbca2"
+    },
+    {
+      "id": "act2-01",
+      "seconds": 60,
+      "events": 839,
+      "integrated_lufs": -18.4,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "3a83e1f4a69962982a67ef43fd28e063442c382b4cf5e233d98743f562a2b87c"
+    },
+    {
+      "id": "act2-02",
+      "seconds": 120,
+      "events": 1909,
+      "integrated_lufs": -18.5,
+      "master_true_peak_dbfs": -1.4,
+      "master_sha256": "278db948589659e2e06062ca22d5c4e9f2b80f7b7fe0b18d60894bf9b5874d63"
+    },
+    {
+      "id": "act2-03",
+      "seconds": 240,
+      "events": 3992,
+      "integrated_lufs": -18.3,
+      "master_true_peak_dbfs": -1.7,
+      "master_sha256": "8342eadaf02bd4ff879c7bee08e5a2761480f5ad5e961a0c61dc0f6078d338c7"
+    },
+    {
+      "id": "act2-04",
+      "seconds": 360,
+      "events": 6274,
+      "integrated_lufs": -17.6,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "a33fda18122bedf50185a862c21287978e2f0e753259a4130ca70c3842e3459f"
+    },
+    {
+      "id": "act3-01",
+      "seconds": 60,
+      "events": 904,
+      "integrated_lufs": -18.1,
+      "master_true_peak_dbfs": -1.5,
+      "master_sha256": "d0a5a77d42422d3a95ec3bc5d2239bba0988e370d04ee876c357f51536bc1c04"
+    },
+    {
+      "id": "act3-02",
+      "seconds": 120,
+      "events": 1774,
+      "integrated_lufs": -18.3,
+      "master_true_peak_dbfs": -1.6,
+      "master_sha256": "3e0b4cda36cafe86a6a1eeb80d3a3988a4d56045acf4a6eebcc73da144a21825"
+    },
+    {
+      "id": "act3-03",
+      "seconds": 240,
+      "events": 4510,
+      "integrated_lufs": -18.2,
+      "master_true_peak_dbfs": -1.4,
+      "master_sha256": "b9a51437a52a1dd64146991c2209983888860d97ff5f36dbd4caffd352d2059c"
+    },
+    {
+      "id": "act3-04",
+      "seconds": 360,
+      "events": 6795,
+      "integrated_lufs": -18.7,
+      "master_true_peak_dbfs": -1.5,
+      "master_sha256": "5ee16339eb608a8503ab61d31e0c4f75e8ce4798832389cfad7017ed7b0a4179"
+    },
+    {
+      "id": "act4-01",
+      "seconds": 60,
+      "events": 739,
+      "integrated_lufs": -18.8,
+      "master_true_peak_dbfs": -1.4,
+      "master_sha256": "17a2e1baff41b7a6626620c905613e7a53adfd7ec5fbbfa4300c3ebce2dfba9b"
+    },
+    {
+      "id": "act4-02",
+      "seconds": 120,
+      "events": 1372,
+      "integrated_lufs": -19.3,
+      "master_true_peak_dbfs": -1.7,
+      "master_sha256": "74aa3c1fb9d0d75c351ec5670bd3acdde6bc16ff5aea8092872d19a9ab302e17"
+    },
+    {
+      "id": "act4-03",
+      "seconds": 240,
+      "events": 3741,
+      "integrated_lufs": -18.6,
+      "master_true_peak_dbfs": -1.5,
+      "master_sha256": "dbddb56631e05f9e1d9cc4493ba55dedd5713de9a8596775e97fdc416dd99a79"
+    },
+    {
+      "id": "act4-04",
+      "seconds": 360,
+      "events": 5518,
+      "integrated_lufs": -18.9,
+      "master_true_peak_dbfs": -1.7,
+      "master_sha256": "a1a12032a5e1042bede2792421b80a06bf21393a5aa6c9c14436f3c0de0d3f4f"
+    }
+  ],
+  "decoded": [
+    {
+      "file": "act1-01.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.606106,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "ddc3ec99fe8b48ec8e9ddb23bcd20856e486ab38af194f6ced088c4c6a073c47"
+    },
+    {
+      "file": "act1-01-core.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.606106,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "fc084941f401cd25d340d755c893e222bd12980744123b148a33255199374a2b"
+    },
+    {
+      "file": "act1-01-atmosphere.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -61.72725,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "a3eeff1baff0f468509bfa6674ccf03edf08258dec188170f53fb7cd3464895b"
+    },
+    {
+      "file": "act1-01-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.606106,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "bb621461d08c59347d6e19c66238f0ce40979cc59e3395b775ed7b830f5305f6"
+    },
+    {
+      "file": "act1-02.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.666567,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "df69b0d4c931581161c45ec1babe09564dbbb4845ab5ddc4d2c15cf8d5344be0"
+    },
+    {
+      "file": "act1-02-core.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.68138,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b47fc0ea8070662fa43cb3e700370617bbe8ea375e2186cc45ef56f60e3efdf8"
+    },
+    {
+      "file": "act1-02-atmosphere.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -26.848913,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b27100dbaa9cef20833645dda05b1ee5ce20a8bf541bbd7c6a390db8a0a6aae6"
+    },
+    {
+      "file": "act1-02-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.876713,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "8355a66b2d392a90452796071f41843a1311249f8e595bd7b7178caab2b036e2"
+    },
+    {
+      "file": "act1-03.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.694711,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "0879b65c80f913b5f258ce6c08de732cc2792897a81cde27a68681ca9efb485f"
+    },
+    {
+      "file": "act1-03-core.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.694711,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "34409161d4eb85dc268b77447036d3ca06241b6fec9a9e7e99855be0ae45ef4b"
+    },
+    {
+      "file": "act1-03-atmosphere.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -36.192583,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "bf61e47f4fb1d18c7a016948280e610cbffe23434b5b2599b4b5c304bf5d4a3e"
+    },
+    {
+      "file": "act1-03-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.34046,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "057177846f6e06433582f21eb3b23df01705f13c6e8890718a10679d01099403"
+    },
+    {
+      "file": "act1-04.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.421281,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "f6c61293b8313b6af6389b11127c0effbef3b14b07ab453ba23a3d615adeb957"
+    },
+    {
+      "file": "act1-04-core.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.422723,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "e3b07d35d850873345872027200f304425b6565cdfc8159e5b2516b577932e70"
+    },
+    {
+      "file": "act1-04-atmosphere.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -27.054785,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "2ad0eb01dea9e5c8ed8dca32c9253bf3bd93aeae33fafebbee0748a243aa0ec3"
+    },
+    {
+      "file": "act1-04-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.603471,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "6e716407d267b7a2ba68e06a1c468df645cef04c231d0150cbbaf6c74a0e3326"
+    },
+    {
+      "file": "act2-01.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.678292,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "f90db835f5739ee8764461115ccfe88be3747c312347828bf1c8c46b15908392"
+    },
+    {
+      "file": "act2-01-core.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.680673,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "255532a096a3ad4754ade2a89c52834e23e9d21e744d535dd326344cfa0d9877"
+    },
+    {
+      "file": "act2-01-atmosphere.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -51.524339,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "2f4906202cbacb5c25e98b3a641bab423ba1257c81fad9f12b8cfe4964c53e29"
+    },
+    {
+      "file": "act2-01-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.879767,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "e1c3b70cb5118952fa0675825355ad941b5c022c1db9c847a08070ba9c619f4d"
+    },
+    {
+      "file": "act2-02.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.759708,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "eb7a067fba756765abf035532c18da36c6b92f05d735abc891e577914b1ae0a0"
+    },
+    {
+      "file": "act2-02-core.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.988844,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "6faf7f3c85b3a3a8fd1b0bf065655644d27fd2d654f552a24cb8b3a1f6599a88"
+    },
+    {
+      "file": "act2-02-atmosphere.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -24.030848,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "bbc27f779c1c9ce9ac83ff95b88ba20f5b5af5b384d3f52b8290ee6472843a46"
+    },
+    {
+      "file": "act2-02-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.759708,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "97302354bda8e12a63e36747d2752c0d903c236bda384c44a272572e095d87c0"
+    },
+    {
+      "file": "act2-03.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.873025,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "5a2dc4a58056e15b916662bec6388245bff30afbd3f20d640ad2081db2b1b260"
+    },
+    {
+      "file": "act2-03-core.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.862066,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "c378c16f5133886ba9385f0a9ba3a0676102fdc95b52158f40df42298f9b2040"
+    },
+    {
+      "file": "act2-03-atmosphere.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -29.510459,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b11490285584ce5ce16ab004051892b36d5c2e96d15907ce8e92d674ef2dd8a4"
+    },
+    {
+      "file": "act2-03-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.492964,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "75eff8ce4ab0812379a37348cceeb34322d5790d85956a90368ced20f83b116f"
+    },
+    {
+      "file": "act2-04.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.695739,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "644807b232387e58323a074a505a76ba7f7a6b262c8cf3b643ead16a00871300"
+    },
+    {
+      "file": "act2-04-core.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.763181,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "c0b56ca77a82e31b1196479bfd4110ef4a1cb65f8a74f0bc4a47e86ee61eecba"
+    },
+    {
+      "file": "act2-04-atmosphere.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -22.314652,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "81c6b790e5f40d0a45302e67577e7ad3a10ab42aff0dd1a2d0b6dd3fbec913e1"
+    },
+    {
+      "file": "act2-04-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.42518,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "e653e47e3b450fd50f0b67d114f571c7dcb2146274104b3c9042ee265377cac4"
+    },
+    {
+      "file": "act3-01.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.716147,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "a06de510d6ea7f1c2a743bf55eab010a345d3e5e9afa4f8f12d451e1e9f32daf"
+    },
+    {
+      "file": "act3-01-core.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.727879,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "c8b14df2a134a44979a2214957a8bd49636e3d3e56c60271c66ebd24a51f8e33"
+    },
+    {
+      "file": "act3-01-atmosphere.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -46.752216,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b28041f8a3f0bc5472ca0402c9da46a1351b267f4d09a9790b7c79abe4ec5d93"
+    },
+    {
+      "file": "act3-01-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.716147,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "88cc4c0e62cabc2e9119403ad70d99342a045db2426525171be081e62bf1bad6"
+    },
+    {
+      "file": "act3-02.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.57289,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "23452eb0a930995d809deceb4cf03f7d9f5f13f92df6438473b4f41abc8e97c6"
+    },
+    {
+      "file": "act3-02-core.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.686047,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "080987464108c759ed0ac73cf4fed1dc60466cbc36cb5587863bf99fef64a8b8"
+    },
+    {
+      "file": "act3-02-atmosphere.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -20.182806,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "18f2609105b18824b8b70627254a284be507809fd439ebdbbf22bf78db1d101c"
+    },
+    {
+      "file": "act3-02-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.861634,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "04d3756fdc7fff1971733d74b658277313adb261f71c4ea7896d9cb2ee548fe4"
+    },
+    {
+      "file": "act3-03.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.753581,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "f63ee6d4c6c56d0c6322b3b3f9213104839987304f1f9bd977b1b2439043c8cc"
+    },
+    {
+      "file": "act3-03-core.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.717663,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "618b12af163650da60e1541a3fb97d915024ae05cf37c3a26b2aba028aa85470"
+    },
+    {
+      "file": "act3-03-atmosphere.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -28.381044,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "5d06bfc7ad00695eccc21102a2a8347c41769553bfb3f290bf7657a195bf2185"
+    },
+    {
+      "file": "act3-03-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -3.456836,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "5d6c2f39ef093ce5e0a183479916d840664fc44e78eb5d6672c9750cc72d6342"
+    },
+    {
+      "file": "act3-04.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.563433,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "0d7e19ad48e3a8906c174c4d6187ce6290233e8e26ae191336d42eb691c1d932"
+    },
+    {
+      "file": "act3-04-core.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.60264,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "6acc57f637e3da0c3b72097a59ddb9b95f3f08991272c8cd827e6b63e839af1a"
+    },
+    {
+      "file": "act3-04-atmosphere.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -20.761522,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "19f483790909833cf4eddf1c14e25a4c0a0827e9acc64aec3b94dce36ea5e17f"
+    },
+    {
+      "file": "act3-04-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.794888,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "5dfd9279d98fa100acede4f9218758ede53f0d3f62374fa0235756dbd5115602"
+    },
+    {
+      "file": "act4-01.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.648468,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "76e7bbc963515497a7c7689defea02185b59ac44f046ab80eaafa3dc1623ad97"
+    },
+    {
+      "file": "act4-01-core.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -1.534386,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "349188348ccb80174b4f8e032340d2ca250a2e2530487fe50d0e9234254a16d9"
+    },
+    {
+      "file": "act4-01-atmosphere.ogg",
+      "frames": 2880000,
+      "peak_dbfs": -31.425089,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "f441decff907bf944806f0bb6a5316d4acbc35221bdd8440237164d1a69ac7fe"
+    },
+    {
+      "file": "act4-01-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.294652,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "e461e4b3a884bf9e70e7ab6faddb6bf16ccac224e11f82bc0df877ebb837d30d"
+    },
+    {
+      "file": "act4-02.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.620403,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "f6ccd9a2d457994364da1451bad4b3216c42e80bb79a60c544f1568f85dde76e"
+    },
+    {
+      "file": "act4-02-core.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -1.726664,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b7666db994969b83170fd55d205eb42c228bdae42435db46beb944b217664338"
+    },
+    {
+      "file": "act4-02-atmosphere.ogg",
+      "frames": 5760000,
+      "peak_dbfs": -17.265224,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "93868122e875c782dcb578410e3c4cdd2dbf13452428ce534c64f79628f3a7c8"
+    },
+    {
+      "file": "act4-02-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -2.13193,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "4b8ddfabf4bb4150f20c521828feae1ac244a4ff36c39a789306a073754fb63a"
+    },
+    {
+      "file": "act4-03.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.627707,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "0a273f479c528fb55f483d52c322476270750eade89b7babdc2a347a879dcb1d"
+    },
+    {
+      "file": "act4-03-core.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -1.680055,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "05bb9d55ca1a0ce7d867e4eb91d927fe84bb3da21652de6fa6c7aa7d8f455539"
+    },
+    {
+      "file": "act4-03-atmosphere.ogg",
+      "frames": 11520000,
+      "peak_dbfs": -20.441345,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "c723d8e2980a45ad952eb549a25522b5317197ee6c5ab4f15d70de0fe427be59"
+    },
+    {
+      "file": "act4-03-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.627707,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "908a2de95776d98ecfdc903bbb3605dc13a07994c89c58a304fd71d547533fdf"
+    },
+    {
+      "file": "act4-04.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.644866,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "0171da0bdd49a0ae9e1e962319b1b4f32ace6bc726b02b4b9dfe79f57e93ceec"
+    },
+    {
+      "file": "act4-04-core.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -1.772533,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "30cf8e49bb844ab48654234c0ee5b0a25ba492afe12a97ad9c26fa5c3dd06f2b"
+    },
+    {
+      "file": "act4-04-atmosphere.ogg",
+      "frames": 17280000,
+      "peak_dbfs": -18.637045,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "b3748c139a0b58101b5fb6dbe7bca9a76a0d192680e7ac54998494b7cb6c7e61"
+    },
+    {
+      "file": "act4-04-preview.ogg",
+      "frames": 960000,
+      "peak_dbfs": -1.835896,
+      "nan": 0,
+      "infinite": 0,
+      "sha256": "8e655e26d89c7b9c4b560a181e707d8245bf7ab7d0d7bce52108582cd7998a3d"
+    }
+  ],
+  "track_count": 16,
+  "seconds": 3120,
+  "decoded_file_count": 64,
+  "limits": "File and decoded-sample checks. No listening approval, physical-device, or true-peak guarantee for lossy encodings."
+}

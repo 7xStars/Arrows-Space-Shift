@@ -1,0 +1,814 @@
+[
+  {
+    "id": "tempo-act3-01",
+    "act": 3,
+    "slot": 1,
+    "title": "Ratchet Memory",
+    "seconds": 120,
+    "bpm": 200,
+    "seed": 330201,
+    "root_midi": 28,
+    "bass_motif": [
+      0,
+      null,
+      null,
+      null,
+      0,
+      3,
+      null,
+      10,
+      0,
+      null,
+      5,
+      null,
+      7,
+      null,
+      null,
+      2
+    ],
+    "kick_steps": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "snare_steps": [
+      4,
+      12
+    ],
+    "hat_steps": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "metal_steps": [
+      7,
+      15
+    ],
+    "chords": [
+      [
+        52,
+        55,
+        59,
+        62
+      ],
+      [
+        50,
+        55,
+        59,
+        64
+      ],
+      [
+        52,
+        55,
+        57,
+        60
+      ],
+      [
+        52,
+        55,
+        59,
+        66
+      ]
+    ],
+    "harmony_roots": [
+      0,
+      0,
+      5,
+      0
+    ],
+    "bass_gain": 0.245,
+    "pad_gain": 0.042,
+    "metal_gain": 0.083,
+    "drive": 2.7,
+    "cutoff_low": 280,
+    "cutoff_high": 1900,
+    "pan_depth": 0.64,
+    "atmosphere_gap": [
+      6.2,
+      9.1
+    ],
+    "kick_decay": 0.22,
+    "kick_gain": 0.54,
+    "snare_gain": 0.225,
+    "snare_decay": 0.13,
+    "hat_gain": 0.043,
+    "room_mix": 0.055,
+    "bass_gate": 0.82,
+    "pan_cycle_beats": 32,
+    "purpose": "Keep a hard E-centered pulse while the bass cell changes order and returns.",
+    "hypothesis": "A sparse cell and short drum bodies can retain rhythmic clarity at 200 BPM.",
+    "invariant": "Phrase permutations retain the relative pitch collection and rest count. The source returns at the end.",
+    "operations": [
+      "repeat",
+      "rotate",
+      "reverse",
+      "withhold",
+      "revoice",
+      "restore",
+      "stutter"
+    ],
+    "form": [
+      {
+        "at": 0,
+        "label": "Start the E pulse",
+        "energy": 0.68,
+        "bass": 1,
+        "drums": 0.82,
+        "pads": 0.12,
+        "texture": 0.1,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.08,
+        "label": "Lock the drum accents",
+        "energy": 0.86,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.18,
+        "texture": 0.4,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.24,
+        "label": "Shift the bass order",
+        "energy": 0.91,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.25,
+        "texture": 0.58,
+        "mutation": "rotate"
+      },
+      {
+        "at": 0.4,
+        "label": "Restore the first cell",
+        "energy": 0.77,
+        "bass": 1,
+        "drums": 0.88,
+        "pads": 0.52,
+        "texture": 0.2,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.52,
+        "label": "Expose the empty beats",
+        "energy": 0.28,
+        "bass": 0.4,
+        "drums": 0.2,
+        "pads": 0.85,
+        "texture": 0.12,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.6,
+        "label": "Reverse the cell",
+        "energy": 0.9,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.35,
+        "texture": 0.65,
+        "mutation": "reverse"
+      },
+      {
+        "at": 0.76,
+        "label": "Keep the pulse under harmony",
+        "energy": 0.86,
+        "bass": 1,
+        "drums": 0.95,
+        "pads": 0.85,
+        "texture": 0.32,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.92,
+        "label": "Return to E",
+        "energy": 0.7,
+        "bass": 0.9,
+        "drums": 0.75,
+        "pads": 0.55,
+        "texture": 0.18,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.96,
+        "label": "End the machine phrase",
+        "energy": 0.24,
+        "bass": 0.35,
+        "drums": 0.16,
+        "pads": 0.55,
+        "texture": 0.05,
+        "mutation": "identity"
+      }
+    ]
+  },
+  {
+    "id": "tempo-act3-02",
+    "act": 3,
+    "slot": 2,
+    "title": "Pressure Has an Order",
+    "seconds": 120,
+    "bpm": 240,
+    "seed": 330202,
+    "root_midi": 25,
+    "bass_motif": [
+      0,
+      null,
+      null,
+      7,
+      null,
+      null,
+      3,
+      null,
+      0,
+      null,
+      null,
+      10,
+      null,
+      null,
+      7,
+      null
+    ],
+    "kick_steps": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "snare_steps": [
+      8
+    ],
+    "hat_steps": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "metal_steps": [
+      5,
+      13
+    ],
+    "chords": [
+      [
+        49,
+        52,
+        56,
+        59
+      ],
+      [
+        47,
+        49,
+        52,
+        56
+      ],
+      [
+        49,
+        52,
+        56,
+        63
+      ],
+      [
+        47,
+        52,
+        56,
+        61
+      ]
+    ],
+    "harmony_roots": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bass_gain": 0.235,
+    "pad_gain": 0.036,
+    "metal_gain": 0.077,
+    "drive": 2.95,
+    "cutoff_low": 240,
+    "cutoff_high": 1750,
+    "pan_depth": 0.94,
+    "atmosphere_gap": [
+      6.7,
+      9.8
+    ],
+    "kick_decay": 0.2,
+    "kick_gain": 0.55,
+    "snare_gain": 0.24,
+    "snare_decay": 0.105,
+    "hat_gain": 0.04,
+    "room_mix": 0.045,
+    "bass_gate": 0.8,
+    "pan_cycle_beats": 16,
+    "purpose": "Compare two bass-operation orders over a fast kick and a half-time snare.",
+    "hypothesis": "A fixed drum grid can make two phrase orders easier to compare without a dense bass line.",
+    "invariant": "Both ordered bass variants keep six onsets, ten rests, and the source pitch collection in each bar.",
+    "operations": [
+      "repeat",
+      "reverse then rotate",
+      "rotate then reverse",
+      "compare",
+      "withhold",
+      "restore"
+    ],
+    "form": [
+      {
+        "at": 0,
+        "label": "State the six-note cell",
+        "energy": 0.67,
+        "bass": 1,
+        "drums": 0.8,
+        "pads": 0.1,
+        "texture": 0.08,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.1,
+        "label": "Apply reverse then rotate",
+        "energy": 0.88,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.18,
+        "texture": 0.48,
+        "mutation": "reverse-rotate"
+      },
+      {
+        "at": 0.25,
+        "label": "Restore the source order",
+        "energy": 0.75,
+        "bass": 1,
+        "drums": 0.86,
+        "pads": 0.35,
+        "texture": 0.15,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.4,
+        "label": "Apply rotate then reverse",
+        "energy": 0.94,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.2,
+        "texture": 0.65,
+        "mutation": "rotate-reverse"
+      },
+      {
+        "at": 0.5,
+        "label": "Keep only the trace",
+        "energy": 0.25,
+        "bass": 0.35,
+        "drums": 0.18,
+        "pads": 0.88,
+        "texture": 0.1,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.625,
+        "label": "Return the first order",
+        "energy": 0.91,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.3,
+        "texture": 0.55,
+        "mutation": "reverse-rotate"
+      },
+      {
+        "at": 0.75,
+        "label": "Return the second order",
+        "energy": 0.96,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.42,
+        "texture": 0.7,
+        "mutation": "rotate-reverse"
+      },
+      {
+        "at": 0.875,
+        "label": "Restore the source",
+        "energy": 0.76,
+        "bass": 0.95,
+        "drums": 0.84,
+        "pads": 0.7,
+        "texture": 0.22,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.95,
+        "label": "Close the pressure cycle",
+        "energy": 0.23,
+        "bass": 0.35,
+        "drums": 0.14,
+        "pads": 0.65,
+        "texture": 0.04,
+        "mutation": "identity"
+      }
+    ],
+    "mix_revision": 2,
+    "swell_gain": 0.018,
+    "swell_duration": 10,
+    "swell_every_beats": 64,
+    "swell_pan_depth": 0.9,
+    "swell_pan_cycle_beats": 32,
+    "atmos_pan_depth": 0.65,
+    "atmos_pan_cycle_beats": 24
+  },
+  {
+    "id": "tempo-act4-01",
+    "act": 4,
+    "slot": 1,
+    "title": "A Measure of Elsewhere",
+    "seconds": 120,
+    "bpm": 184,
+    "seed": 440201,
+    "root_midi": 26,
+    "bass_motif": [
+      0,
+      null,
+      7,
+      null,
+      null,
+      12,
+      0,
+      null,
+      2,
+      null,
+      null,
+      7,
+      null,
+      3,
+      null,
+      null
+    ],
+    "kick_steps": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "snare_steps": [
+      12
+    ],
+    "hat_steps": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "metal_steps": [
+      7
+    ],
+    "chords": [
+      [
+        50,
+        53,
+        57,
+        64
+      ],
+      [
+        52,
+        53,
+        57,
+        62
+      ],
+      [
+        45,
+        50,
+        52,
+        53
+      ],
+      [
+        53,
+        57,
+        62,
+        64
+      ]
+    ],
+    "harmony_roots": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bass_gain": 0.242,
+    "pad_gain": 0.068,
+    "metal_gain": 0.052,
+    "drive": 1.95,
+    "cutoff_low": 230,
+    "cutoff_high": 2050,
+    "pan_depth": 0.78,
+    "atmosphere_gap": [
+      5.4,
+      8.9
+    ],
+    "kick_decay": 0.23,
+    "kick_gain": 0.52,
+    "snare_gain": 0.185,
+    "snare_decay": 0.15,
+    "hat_gain": 0.041,
+    "room_mix": 0.075,
+    "bass_gate": 0.88,
+    "pan_cycle_beats": 64,
+    "purpose": "Keep the D, F, A and E harmony while the bass order and upper stereo position change.",
+    "hypothesis": "Harmonic persistence can support a stable identity while the upper bass and atmosphere move.",
+    "invariant": "Every chord voicing contains pitch classes D, F, A and E. The low bass and kick stay centered.",
+    "operations": [
+      "repeat",
+      "rotate",
+      "revoice",
+      "withhold",
+      "restore"
+    ],
+    "form": [
+      {
+        "at": 0,
+        "label": "Find the D anchor",
+        "energy": 0.58,
+        "bass": 0.9,
+        "drums": 0.68,
+        "pads": 0.25,
+        "texture": 0.1,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.08695652173913043,
+        "label": "Open the upper line",
+        "energy": 0.76,
+        "bass": 1,
+        "drums": 0.88,
+        "pads": 0.6,
+        "texture": 0.32,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.2608695652173913,
+        "label": "Change the chord register",
+        "energy": 0.82,
+        "bass": 1,
+        "drums": 0.92,
+        "pads": 0.92,
+        "texture": 0.38,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.43478260869565216,
+        "label": "Rotate the bass cell",
+        "energy": 0.88,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.62,
+        "texture": 0.58,
+        "mutation": "rotate"
+      },
+      {
+        "at": 0.5217391304347826,
+        "label": "Hold the harmonic field",
+        "energy": 0.27,
+        "bass": 0.38,
+        "drums": 0.18,
+        "pads": 1,
+        "texture": 0.22,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.6521739130434783,
+        "label": "Restore the route",
+        "energy": 0.83,
+        "bass": 1,
+        "drums": 0.94,
+        "pads": 0.72,
+        "texture": 0.4,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.8260869565217391,
+        "label": "Change the visible register",
+        "energy": 0.87,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.95,
+        "texture": 0.46,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.9130434782608695,
+        "label": "Return to the D anchor",
+        "energy": 0.65,
+        "bass": 0.85,
+        "drums": 0.72,
+        "pads": 0.82,
+        "texture": 0.18,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.9565217391304348,
+        "label": "Leave the final chord",
+        "energy": 0.22,
+        "bass": 0.3,
+        "drums": 0.12,
+        "pads": 0.85,
+        "texture": 0.04,
+        "mutation": "identity"
+      }
+    ]
+  },
+  {
+    "id": "tempo-act4-02",
+    "act": 4,
+    "slot": 2,
+    "title": "The Same Light Returns",
+    "seconds": 120,
+    "bpm": 220,
+    "seed": 440202,
+    "root_midi": 27,
+    "bass_motif": [
+      0,
+      null,
+      null,
+      7,
+      null,
+      2,
+      null,
+      null,
+      0,
+      null,
+      12,
+      null,
+      null,
+      3,
+      null,
+      null
+    ],
+    "kick_steps": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "snare_steps": [
+      8
+    ],
+    "hat_steps": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "metal_steps": [
+      3,
+      11
+    ],
+    "chords": [
+      [
+        51,
+        54,
+        58,
+        65
+      ],
+      [
+        53,
+        54,
+        58,
+        63
+      ],
+      [
+        46,
+        51,
+        53,
+        54
+      ],
+      [
+        54,
+        58,
+        63,
+        65
+      ]
+    ],
+    "harmony_roots": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bass_gain": 0.233,
+    "pad_gain": 0.065,
+    "metal_gain": 0.059,
+    "drive": 2.1,
+    "cutoff_low": 250,
+    "cutoff_high": 2250,
+    "pan_depth": 0.82,
+    "atmosphere_gap": [
+      5.9,
+      9.2
+    ],
+    "kick_decay": 0.21,
+    "kick_gain": 0.54,
+    "snare_gain": 0.195,
+    "snare_decay": 0.12,
+    "hat_gain": 0.039,
+    "room_mix": 0.085,
+    "bass_gate": 0.86,
+    "pan_cycle_beats": 64,
+    "purpose": "Make two ordered bass transformations return above one E-flat harmonic field.",
+    "hypothesis": "A sparse fast pulse and retained chord identity can make operation order audible without losing space.",
+    "invariant": "The chord pitch classes E-flat, G-flat, B-flat and F remain fixed. Both bass variants retain six onsets and ten rests.",
+    "operations": [
+      "repeat",
+      "reverse then rotate",
+      "rotate then reverse",
+      "revoice",
+      "compare",
+      "restore"
+    ],
+    "form": [
+      {
+        "at": 0,
+        "label": "State the E-flat field",
+        "energy": 0.61,
+        "bass": 0.92,
+        "drums": 0.72,
+        "pads": 0.35,
+        "texture": 0.1,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.07272727272727272,
+        "label": "Carry the first identity",
+        "energy": 0.8,
+        "bass": 1,
+        "drums": 0.92,
+        "pads": 0.75,
+        "texture": 0.3,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.21818181818181817,
+        "label": "Apply the first order",
+        "energy": 0.89,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.58,
+        "texture": 0.56,
+        "mutation": "reverse-rotate"
+      },
+      {
+        "at": 0.36363636363636365,
+        "label": "Keep the chord identity",
+        "energy": 0.7,
+        "bass": 0.9,
+        "drums": 0.72,
+        "pads": 0.95,
+        "texture": 0.2,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.509090909090909,
+        "label": "Apply the second order",
+        "energy": 0.92,
+        "bass": 1,
+        "drums": 1,
+        "pads": 0.62,
+        "texture": 0.64,
+        "mutation": "rotate-reverse"
+      },
+      {
+        "at": 0.5818181818181818,
+        "label": "Leave room for the field",
+        "energy": 0.26,
+        "bass": 0.35,
+        "drums": 0.16,
+        "pads": 1,
+        "texture": 0.18,
+        "mutation": "voicing"
+      },
+      {
+        "at": 0.7272727272727273,
+        "label": "Restore the first order",
+        "energy": 0.88,
+        "bass": 1,
+        "drums": 0.96,
+        "pads": 0.8,
+        "texture": 0.48,
+        "mutation": "reverse-rotate"
+      },
+      {
+        "at": 0.8727272727272727,
+        "label": "Return to the source light",
+        "energy": 0.76,
+        "bass": 0.95,
+        "drums": 0.86,
+        "pads": 0.92,
+        "texture": 0.26,
+        "mutation": "identity"
+      },
+      {
+        "at": 0.9454545454545454,
+        "label": "Resolve the field",
+        "energy": 0.23,
+        "bass": 0.3,
+        "drums": 0.12,
+        "pads": 0.8,
+        "texture": 0.05,
+        "mutation": "identity"
+      }
+    ]
+  }
+]

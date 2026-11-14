@@ -1,0 +1,298 @@
+{
+  "version": "0.25.0-dev.1",
+  "revision": "music-r2",
+  "method": "OfflineAudioContext in headless Microsoft Edge. 32-second music-only and separate illustrative action mixes for Acts I/IV. Separate eight-second SFX stress fixtures for all arrangements. Master volume 1; default bus gains. Final fade only; no loudness normalization.",
+  "limits": "Synthetic review and stress fixtures, not recorded gameplay. PCM peak and finite-sample checks do not establish listening quality, comprehension, device playback, or all possible dense mixes. The original mix-fixture WAVs and results.json remain unchanged.",
+  "results": [
+    {
+      "theme": "traditional",
+      "mode": "music-review-r2",
+      "duration": 32,
+      "peak": 0.04308445751667023,
+      "peakDbfs": -27.313587419112206,
+      "rms": 0.0074811607078606015,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 4,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 188,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 7,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "bolza",
+      "mode": "music-review-r2",
+      "duration": 32,
+      "peak": 0.024276703596115112,
+      "peakDbfs": -32.29620568242017,
+      "rms": 0.005627947622077264,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 105,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 6,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "traditional",
+      "mode": "mix-review-r2",
+      "duration": 32,
+      "peak": 0.21633167564868927,
+      "peakDbfs": -13.2975977154939,
+      "rms": 0.008001877117769732,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 4,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 205,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 9,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "bolza",
+      "mode": "mix-review-r2",
+      "duration": 32,
+      "peak": 0.21845728158950806,
+      "peakDbfs": -13.212669497326877,
+      "rms": 0.0064887432740716915,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 125,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 8,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "traditional",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.21568752825260162,
+      "peakDbfs": -13.323499329536393,
+      "rms": 0.016676915268492288,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 3,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 166,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 18,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "klein",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.21748660504817963,
+      "peakDbfs": -13.251349719731891,
+      "rms": 0.016522238721522833,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 169,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 19,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "projective",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.21239890158176422,
+      "peakDbfs": -13.456954670663738,
+      "rms": 0.0163417462174002,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 171,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 19,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "bolza",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.2070406973361969,
+      "peakDbfs": -13.678885565132015,
+      "rms": 0.01588591439172449,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 3,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 135,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 17,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "recovery",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.21484050154685974,
+      "peakDbfs": -13.357676848628639,
+      "rms": 0.015952463014760998,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 120,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 16,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "ending",
+      "mode": "mix-stress-r2",
+      "duration": 8,
+      "peak": 0.20592422783374786,
+      "peakDbfs": -13.725851076818419,
+      "rms": 0.016024129664338277,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 120,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 16,
+        "resumes": 0
+      }
+    }
+  ]
+}

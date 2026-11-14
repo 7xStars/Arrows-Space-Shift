@@ -1,0 +1,31 @@
+{
+  "frames": 5760000,
+  "sampleRate": 48000,
+  "channels": 2,
+  "seconds": 120,
+  "nonFinite": 0,
+  "fullScale": 0,
+  "commonGain": 1.7213807422896228,
+  "peaks": [
+    0.82,
+    0.8148479255207491,
+    0.09800916159443876
+  ],
+  "rms": [
+    0.12531317575472087,
+    0.12481674670536544,
+    0.011196436108188008
+  ],
+  "regionRms": [
+    0.11134084974971294,
+    0.1327353975831974,
+    0.1452861955352576,
+    0.163138061237827,
+    0.08128799859437602,
+    0.1122234118271435,
+    0.14095547307422898,
+    0.0939110304627729
+  ],
+  "mix": "One common linear gain for full, core, and atmosphere. No independent normalization or shared nonlinear processor.",
+  "tail": "Exact track duration includes the final three-second fade. No seamless-loop claim."
+}

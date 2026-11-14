@@ -1,0 +1,142 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "results": [
+    "Startup is muted and creates no automatic audio playback",
+    "The laboratory retains ten explicitly scoped grammar families",
+    "Response, Sound, and Reduced motion have native accessible names",
+    "Elastic response exposes its distinct measured overshoot",
+    "Settled response retains zero overshoot and a shorter measured settling interval",
+    "Keyboard input starts the response",
+    "The visible pause control retains the response time",
+    "Reduced motion shows the static result and retains the response samples",
+    "The coupled response states its measured transient peak and eventual decay",
+    "The operator-step axis label remains inside its chart",
+    "Matrix outputs stay hidden before the first prediction",
+    "A repeated matrix answer cannot replace the first answer",
+    "The unfamiliar matrix input restores the prediction prompt",
+    "The matrix transfer uses a new input and retains its answer",
+    "Equal zero-input outputs do not imply that the operators commute",
+    "Section navigation moves focus to the selected heading",
+    "A muted Play request leaves the media stopped",
+    "The Sound control updates both native mute and visible status",
+    "The gate case hides its order labels before prediction",
+    "Native result gate A starts the catalog file",
+    "Native result gate B starts the catalog file",
+    "Listening to gate does not disclose its order labels",
+    "The gate audio comparison retains the first prediction",
+    "The gate disclosure shows only its applicable chart",
+    "The transfer case hides its order labels before prediction",
+    "Native result transfer A starts the catalog file",
+    "Native result transfer B starts the catalog file",
+    "Listening to transfer does not disclose its order labels",
+    "The transfer audio comparison retains the first prediction",
+    "The transfer disclosure shows only its applicable chart",
+    "The constant case hides its order labels before prediction",
+    "The constant-gain answer is not printed before the prediction",
+    "Native result constant A starts the catalog file",
+    "Native result constant B starts the catalog file",
+    "Listening to constant does not disclose its order labels",
+    "The constant audio comparison retains the first prediction",
+    "The constant disclosure shows only its applicable chart",
+    "The drive case hides its order labels before prediction",
+    "Native result drive A starts the catalog file",
+    "Native result drive B starts the catalog file",
+    "Listening to drive does not disclose its order labels",
+    "The drive audio comparison retains the first prediction"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "input": "Ordinary native controls and keyboard input, with read-only model records.",
+  "limits": "Local headless Microsoft Edge. No human recognition, listening approval, screen-reader, physical-device, physical audio latency, or performance result.",
+  "sourceIdentity": {
+    "operator-lab.html": "347571e513b0c680091ee4ab0933d772f3c0988af56ec859eb1ce38501d260d2",
+    "src/operator-lab-app.js": "056df4dc58b9f066aa3d23f94a3b06e4c47e2c75bc65efb1d7cd8e6e74c6d4f8",
+    "src/operator-models.js": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2",
+    "src/operator-registry.js": "7d4a66a3e1660defaad43a00c882d17693e258cf70373beb213d0dd95c3287ed"
+  },
+  "browserVersion": "157.0.4341.46",
+  "matrixRecords": [
+    {
+      "key": "matrix:a",
+      "choice": "same",
+      "expected": "different",
+      "correct": false,
+      "context": {
+        "input": [
+          1,
+          0.5
+        ],
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0.5,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:b",
+      "choice": "different",
+      "expected": "different",
+      "correct": true,
+      "context": {
+        "input": [
+          -0.25,
+          0.9
+        ],
+        "first": [
+          0,
+          -0.25
+        ],
+        "second": [
+          0.9,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:c",
+      "choice": "same",
+      "expected": "same",
+      "correct": true,
+      "context": {
+        "input": [
+          0,
+          0
+        ],
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    }
+  ],
+  "currentAudioProbe": {
+    "case": "drive",
+    "id": "drive-filter",
+    "src": "http://127.0.0.1:43311/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+    "duration": 12,
+    "currentTime": 0.050874,
+    "paused": false,
+    "muted": false,
+    "readyState": 4,
+    "networkState": 1,
+    "error": null
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The drive disclosure shows only its applicable chart\n    at check (file:///D:/Projects/games/game-off-2026/tools/operator-lab-browser.mjs:24:35)\n    at file:///D:/Projects/games/game-off-2026/tools/operator-lab-browser.mjs:130:5",
+  "url": "http://127.0.0.1:43311/",
+  "checks": 42
+}

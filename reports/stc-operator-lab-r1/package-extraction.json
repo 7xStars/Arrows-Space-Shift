@@ -1,0 +1,29 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "archives": {
+    "play": {
+      "file": "D:\\Projects\\games\\game-off-2026\\releases\\stc-operator-lab-r1\\Arrow-Space-Shift-Operator-Lab-r1-PLAY.zip",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-stc-operator-lab-r1\\play-2833d20f08cd",
+      "sha256": "2833d20f08cd03735370fcec194b842439933fb010bf755fe8697d3fde7767b7",
+      "bytes": 5268563,
+      "entries": 26,
+      "integrity": "passed",
+      "retained_file_hashes": "passed",
+      "runtime_audio_hashes": 9,
+      "entry": "index.html",
+      "reference_pdf_count": 0
+    },
+    "source": {
+      "file": "D:\\Projects\\games\\game-off-2026\\releases\\stc-operator-lab-r1\\Arrow-Space-Shift-Operator-Lab-r1-SOURCE.zip",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-stc-operator-lab-r1\\source-e122eaa0ed2e",
+      "sha256": "e122eaa0ed2e3e9eba5b40523f1f4e02458f43897945e2dfe5160730c3d4a3c3",
+      "bytes": 10583341,
+      "entries": 68,
+      "integrity": "passed",
+      "retained_file_hashes": "passed",
+      "runtime_audio_hashes": 9,
+      "entry": "index.html",
+      "reference_pdf_count": 0
+    }
+  }
+}

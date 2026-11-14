@@ -1,0 +1,45 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "candidate": "0.25.1-dev.5",
+  "method": "Isolated headless Edge. A supplied old-profile fixture checks hidden entries and storage retention. A separate local post-defeat fixture exposes the Curvature Seed; ordinary keyboard input must collect it and complete extraction. No claim about defeating the boss or a fresh campaign is made.",
+  "checks": [
+    "hyperbolic-act.html shows the edition boundary",
+    "hyperbolic-act.html retains all supplied old records",
+    "hyperbolic-act.html performs no storage write",
+    "hyperbolic-act.html starts no later runtime or audio context",
+    "hyperbolic-act.html notice fits a narrow viewport",
+    "repair-dock.html shows the edition boundary",
+    "repair-dock.html retains all supplied old records",
+    "repair-dock.html performs no storage write",
+    "repair-dock.html starts no later runtime or audio context",
+    "repair-dock.html notice fits a narrow viewport",
+    "The old-profile fixture retains its fabricated ship",
+    "A profile with later progress still has no Act IV start"
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "cases": {
+    "hyperbolic-act.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    },
+    "repair-dock.html": {
+      "writes": [],
+      "contexts": 0,
+      "act": false,
+      "repair": false
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The title recognizes the completed three Acts\n    at check (file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:38:35)\n    at file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:88:3",
+  "sourceHashes": {
+    "src/build.js": "ec4f051fbe50cda6606369e0634257915def2773420d6ac8d5125054ffb5d4ec",
+    "src/app.js": "0c4ff4154aaffdd9f09bf7b5f4af613b969855b727df87c01dd64066be241534",
+    "src/interface.js": "0fb92728e7e866f86d143544f174748a1f9180b1c7704b90d73367e9e2d3e324",
+    "src/later-content-entry.js": "833248788b454bc1a855b5aafbdee51bb721d59fe0f4bf6eb3bc82e3496e35db"
+  },
+  "url": "http://127.0.0.1:19933/",
+  "browser": "157.0.4341.46",
+  "limits": "Old-profile injection is a compatibility fixture. The final-boss fixture starts after defeat and does not verify boss combat, fairness, a fresh-game completion, human play, or physical devices. The real pickup and extraction use ordinary keyboard input. The user browser and storage are not changed."
+}

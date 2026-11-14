@@ -1,0 +1,31 @@
+{
+  "capturedAt": "2026-11-13T12:33:45.9266287-05:00",
+  "frozen": "G:\\Music Projects\\Arrow Space Shift\\scratch\\campaign-candidate-20261113",
+  "changes": [
+    {
+      "path": "src/app.js",
+      "frozen": "c72d02a4f3635fda47e9909482a1e77e57107757122bfc7344513e8fec1dc15e",
+      "working": "4a61f51dcab4190ad721ccaebcb62c512bbd6d5bed9d9e3ca2a393d6098a4868"
+    },
+    {
+      "path": "src/audio.js",
+      "frozen": "92f17910cf06620a014c2147adf95f132737095998c07528b9c5c1d7c708b890",
+      "working": "0c76531004831e6d1437d8d555f16038b0bd41ad7cf65d00379c4ff070684e5e"
+    },
+    {
+      "path": "src/av-events.js",
+      "frozen": "af4a697d6ff7328b2a5d638fa7a39a2f4d0dde33be4c810c3b2c653f8541388c",
+      "working": "71ec172ffdc1d3bfcf32fc4893ece7a3a04f04df4cf3a3263eb3724d3e7e3e26"
+    },
+    {
+      "path": "src/build.js",
+      "frozen": "0cf9bd789e87ff8aabc903ccb1ccb4ccd28e7e9e5c2fc7b80ebc83236c7cf664",
+      "working": "11750bac89e4d21565609667fb83d63239cdaea0ef33e8ed0668f2d2f8212ceb"
+    },
+    {
+      "path": "src/interface.js",
+      "frozen": "fc350f3426ee2db8e6f6255631e8ab3ffe4ff3e288547d887e8ceb20a82ebadb",
+      "working": "6f995fe4721810aed2cd07b15ef46375f321f768a0d691cb9e7811a99292de37"
+    }
+  ]
+}

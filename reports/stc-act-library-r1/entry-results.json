@@ -1,0 +1,10 @@
+{
+  "checks": 4,
+  "results": [
+    "Root opens sixteen-track library",
+    "Open game reaches campaign",
+    "Open title study reaches r7",
+    "Title study Game link reaches campaign"
+  ],
+  "errors": []
+}

@@ -1,0 +1,234 @@
+{
+  "candidate": "0.25.1-dev.1",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "d02e7cd82e9d0ed4bf0929dd00888272da894d97acb0ba5fa1f050b3df6dbb9d"
+    },
+    {
+      "file": ".gitattributes",
+      "sha256": "cfb6bbced112814ea9c5604e02bba347b7989b65e706f468ec33769f8648f156"
+    },
+    {
+      "file": "index.html",
+      "sha256": "2e5d43a1a2b0de6da9824966407fbc4c17dd760483475e8f7714af78c333f78c"
+    },
+    {
+      "file": "hyperbolic-act.html",
+      "sha256": "fff027fdef9a0dac5198d2d3e9715072bd439f75772092255a6898f512cca6f2"
+    },
+    {
+      "file": "repair-dock.html",
+      "sha256": "2a4b8f2495bfd5fbbe8a9798a322376cda30b7732f5cb41394dff9e876dad228"
+    },
+    {
+      "file": "style.css",
+      "sha256": "73f4b1d53089bb83903bfd50596a9cd4804f34835fcb510b6ab0f34b956d19d1"
+    },
+    {
+      "file": "src/act3-waves.js",
+      "sha256": "9936b2ffbee45597d233e1b404d485cca27873ad31f8a765bad255102ff55d69"
+    },
+    {
+      "file": "src/app.js",
+      "sha256": "2c0ee5ff9ba7b95dffc90bd35841ede1bf59f9f3e244c04690da633d0cd028b7"
+    },
+    {
+      "file": "src/asteroids.js",
+      "sha256": "9b964e1d29b94ce1d6c7a7915c0fb2bc3be5fecc6e553e903d01c36d8dceed22"
+    },
+    {
+      "file": "src/audio-interface.js",
+      "sha256": "493c570cc9b620ddce473516b9e7f6b255d04b912d01d3a4f873cf8771612bbd"
+    },
+    {
+      "file": "src/audio.js",
+      "sha256": "0c76531004831e6d1437d8d555f16038b0bd41ad7cf65d00379c4ff070684e5e"
+    },
+    {
+      "file": "src/av-events.js",
+      "sha256": "71ec172ffdc1d3bfcf32fc4893ece7a3a04f04df4cf3a3263eb3724d3e7e3e26"
+    },
+    {
+      "file": "src/boss.js",
+      "sha256": "7327dae3fbd22d046e803ffbf61e239f8fc4a91b522b567a44d6a1d8b7c8cbf6"
+    },
+    {
+      "file": "src/build.js",
+      "sha256": "11750bac89e4d21565609667fb83d63239cdaea0ef33e8ed0668f2d2f8212ceb"
+    },
+    {
+      "file": "src/campaign-recorded-audio.js",
+      "sha256": "91c552befd69bd0bc14d2757c5029b180b99c67b77aab000ed58a325ff7bb350"
+    },
+    {
+      "file": "src/campaign.js",
+      "sha256": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd"
+    },
+    {
+      "file": "src/combat-view.js",
+      "sha256": "2cf4573b48b4bd9e2a269f53697a92b4dd57d94ec53618591f95931d7ce8872f"
+    },
+    {
+      "file": "src/divergent-pulse-app.js",
+      "sha256": "68b0c6ef37bf64ad640a784e1dd5c8b5d073a9d7e201508af9945f89d2d4bfc1"
+    },
+    {
+      "file": "src/divergent-pulse.js",
+      "sha256": "c9b28418afa5e6c284c0872e2863229a45e4c2153cabedbb8772ed1e9a418262"
+    },
+    {
+      "file": "src/ecology.js",
+      "sha256": "1fb6f25b758ce8c98fc10e127cf55bea14da16c84cd21626d1f9377cc52759f3"
+    },
+    {
+      "file": "src/fleet.js",
+      "sha256": "dcdb192d1cfd9db5413dc99753a478da556b23c9e264144c77bbd5da9027cf02"
+    },
+    {
+      "file": "src/fold-wake.js",
+      "sha256": "f33a2efc2764665bb8da1fca34a10a434db85e5e75931f0b34f4f5d02271cbc5"
+    },
+    {
+      "file": "src/geometry-cues.js",
+      "sha256": "552edbbae912a8a225e834ca73330f86534f1ed7067580fbf72744e3441db071"
+    },
+    {
+      "file": "src/hyperbolic-act.js",
+      "sha256": "af1ce0ee12ac447be72f6c5c56181aa4fc1347c2f45aa936718044a323f0fcaf"
+    },
+    {
+      "file": "src/hyperbolic-campaign.js",
+      "sha256": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432"
+    },
+    {
+      "file": "src/hyperbolic-lab.js",
+      "sha256": "b3ce1ee0a6c7ce7d23bfd5ba3c06759d6662fbd5dac329e05b11c1a0c8629b4f"
+    },
+    {
+      "file": "src/hyperbolic-visuals.js",
+      "sha256": "203014b395d6f8a71ecb96ab5370e2b763626a529970098cac0940b87f35ec6c"
+    },
+    {
+      "file": "src/hyperbolic.js",
+      "sha256": "cf15e8e05f6211e193c3155684150d0eddd2485f32f16faa60bbff538bd33fec"
+    },
+    {
+      "file": "src/interface.js",
+      "sha256": "6f995fe4721810aed2cd07b15ef46375f321f768a0d691cb9e7811a99292de37"
+    },
+    {
+      "file": "src/journey.js",
+      "sha256": "894ecd0eb3ce38c12c50e4f847c534927ab354a8c09f3abb6c81ab7ce04a5d31"
+    },
+    {
+      "file": "src/klein.js",
+      "sha256": "43f51da4bd51755de981a59d79d3b641da50796e28fa26200ddc87d7d5bcfab8"
+    },
+    {
+      "file": "src/manifold-visuals.js",
+      "sha256": "fc7bbf95f45bd910cb741667704627820acc95406e4fc01b337bcbd6615220a5"
+    },
+    {
+      "file": "src/music-library-app.js",
+      "sha256": "0c2590e253ff0ea7ee6cee02327fff7c41a5295cc304936e139d9c13c24e24c9"
+    },
+    {
+      "file": "src/music.js",
+      "sha256": "149cdd05fe68c1cd93ac614816ce23e278383f23b9c5b142d71388cc057fcba9"
+    },
+    {
+      "file": "src/operator-lab-app.js",
+      "sha256": "ab54b2856e706041bc3d6ae51a27de6968ed9d4d313ecd2fb81982a64109d703"
+    },
+    {
+      "file": "src/operator-models.js",
+      "sha256": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2"
+    },
+    {
+      "file": "src/operator-registry.js",
+      "sha256": "7d4a66a3e1660defaad43a00c882d17693e258cf70373beb213d0dd95c3287ed"
+    },
+    {
+      "file": "src/pixel-art.js",
+      "sha256": "1bc92e9307be773d1956d46e6097ed54ad57cd1c8e90cd70055eac884b65d73b"
+    },
+    {
+      "file": "src/playtest-protocol.js",
+      "sha256": "580a39419b4d8a54be6248284bf49783975a087cd4367c977e2973214cb56657"
+    },
+    {
+      "file": "src/progress-transfer.js",
+      "sha256": "6f80f24a96d3f7e23e2d7bc2cecd767ab003557c5c247165610fe7a4feb9de81"
+    },
+    {
+      "file": "src/projectile-id.js",
+      "sha256": "6a722f82cac18b98a4c7d31830c0d63671b1df710e32fe0ea720831cc209c481"
+    },
+    {
+      "file": "src/random.js",
+      "sha256": "9e58688ee9944d46c86b1b07ff3c9f905bf6d2dce4f3674fd99b5323ce3f1123"
+    },
+    {
+      "file": "src/renderer.js",
+      "sha256": "93ea451c5b47dc359407b57d9edb51938d4934605e7f0ddb1ed391019bc0d571"
+    },
+    {
+      "file": "src/repair-app.js",
+      "sha256": "9d1e74fc6fc700ce741374de36c20b335b54156d402fba497cc8a164a50d1bfb"
+    },
+    {
+      "file": "src/repair.js",
+      "sha256": "8f25a2bf20468b4975e718031a99cbe59308beaff8715ed6ebda37353b4cc03f"
+    },
+    {
+      "file": "src/simulation.js",
+      "sha256": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63"
+    },
+    {
+      "file": "src/space.js",
+      "sha256": "289c212b36b1c6a3329895cf126b73bcc6e478c049d9d3339b2179ade4b3e3c5"
+    },
+    {
+      "file": "src/stage-flow.js",
+      "sha256": "0a12dc5376ca71a360ebf4a1e46796c820a7a45b34e127020a51df503760cfc5"
+    },
+    {
+      "file": "src/stc-audio.js",
+      "sha256": "cbcdfe037a2b7576b48c0067f07e1a0dbaa4acd0bc393064764054c58a992ad2"
+    },
+    {
+      "file": "src/stc-score.js",
+      "sha256": "8d98239181139a9166f7a72cfff29c8013833d41978450debc11add2372e84ea"
+    },
+    {
+      "file": "src/stc-track-player.js",
+      "sha256": "903238dc9d0242e97d235521263386e1b3280c155958ac2b995878c33122c0d3"
+    },
+    {
+      "file": "src/storage.js",
+      "sha256": "638b2e0ce209cbd56f9e6ee024b90623b8e2e2d95de484ee7c27d6afcd36b66a"
+    },
+    {
+      "file": "src/structural-feedback.js",
+      "sha256": "ada0f4d71518bf86e1a43dc437356551146c242111d00e2d3dbd8b41030b9e9f"
+    },
+    {
+      "file": "src/track-review-r8.js",
+      "sha256": "0cb3b7e469066758444e05668736648470cb7f519667176b435ccf8b0da9c990"
+    },
+    {
+      "file": "src/track-review-r9.js",
+      "sha256": "09a5c66058a48a6cf825ded2291ba5685ddbcd0ee47848eabaed380ff3351f0b"
+    },
+    {
+      "file": "src/upgrades.js",
+      "sha256": "86b2d3c2b0150c329944dbacfce687944366e2cec71ffaf4d443438749dfa239"
+    },
+    {
+      "file": "src/waves.js",
+      "sha256": "52d08fb10d9c4e9170b302d56ccdaf0a6036f7b69706c7a5166a69a106d23730"
+    }
+  ]
+}

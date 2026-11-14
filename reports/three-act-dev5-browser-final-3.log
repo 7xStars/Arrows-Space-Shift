@@ -1,0 +1,34 @@
+PASS hyperbolic-act.html shows the edition boundary
+PASS hyperbolic-act.html retains all supplied old records
+PASS hyperbolic-act.html performs no storage write
+PASS hyperbolic-act.html starts no later runtime or audio context
+PASS hyperbolic-act.html notice fits a narrow viewport
+PASS repair-dock.html shows the edition boundary
+PASS repair-dock.html retains all supplied old records
+PASS repair-dock.html performs no storage write
+PASS repair-dock.html starts no later runtime or audio context
+PASS repair-dock.html notice fits a narrow viewport
+PASS The old-profile fixture retains its fabricated ship
+PASS A profile with later progress still has no Act IV start
+PASS The title recognizes the completed three Acts
+PASS Later completion does not expose the repaired-drive banner
+PASS The main view has no visible later-page link
+PASS The retained hidden control cannot launch a later Act
+PASS Guide has no visible post-jam prompt
+PASS Equipment has no visible post-jam prompt
+PASS Options has no visible post-jam prompt
+PASS Main menus retain old later-Act checkpoint and repair records
+PASS Reload retains the later-Act records without exposing their start
+PASS A completed profile can explicitly replay Act III
+PASS Replay does not erase the stored later progress
+PASS An existing section checkpoint takes priority over the completion entry
+PASS Checkpoint entry does not erase later content records
+PASS New campaign requires an explicit start instead of an automatic Level 0 reset
+PASS The explicit new-campaign entry keeps older later-Act records
+PASS The post-defeat fixture exposes the real Curvature Seed
+PASS Physical collection precedes permanent unlocking
+PASS Ordinary steering and route extraction reach the three-Act ending
+{
+  "checks": 30,
+  "failure": "AssertionError [ERR_ASSERTION]: The ending identifies Act III and offers replay\n    at check (file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:38:35)\n    at file:///D:/Projects/games/game-off-2026/tools/three-act-browser-check.mjs:146:3"
+}

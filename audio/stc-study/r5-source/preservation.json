@@ -1,0 +1,77 @@
+[
+  {
+    "path": "src/stc-audio.js",
+    "snapshot": true,
+    "sha256": "cbcdfe037a2b7576b48c0067f07e1a0dbaa4acd0bc393064764054c58a992ad2"
+  },
+  {
+    "path": "src/stc-score.js",
+    "snapshot": true,
+    "sha256": "8d98239181139a9166f7a72cfff29c8013833d41978450debc11add2372e84ea"
+  },
+  {
+    "path": "src/divergent-pulse-app.js",
+    "snapshot": true,
+    "sha256": "76bc0c4524c73bbc8800f4944707b1909d190ba610f5197b0d56a4d446ebba9f"
+  },
+  {
+    "path": "src/divergent-pulse.js",
+    "snapshot": true,
+    "sha256": "7f8fb846ff880f59685b34d8d4c5de88e036cde072e37d561eaafba53b737188"
+  },
+  {
+    "path": "divergent-pulse.html",
+    "snapshot": true,
+    "sha256": "2a37470fc5e82f471e9b44978610f3f2dcd699d101935834f042e72cd8391a88"
+  },
+  {
+    "path": "tools/render-stc-study.mjs",
+    "snapshot": true,
+    "sha256": "3e37d4b55bf14feefa0c38fc8cea18365a73f19e17469fa96220bc18d316d222"
+  },
+  {
+    "path": "tools/stc-study-browser.mjs",
+    "snapshot": true,
+    "sha256": "461280062c9cd373607c5ad9218e440de0b19d66b2c4c2e79d8b5a132cca6730"
+  },
+  {
+    "path": "tests/stc-audio.test.mjs",
+    "snapshot": true,
+    "sha256": "8fad078c581fe16098a074bec4b0accd22e1ad7f43d40c6c0df4ba25fcaf77e9"
+  },
+  {
+    "path": "tools/package-stc-study.py",
+    "snapshot": true,
+    "sha256": "5de3087b8066fccc03303b52f048a1d27c7978993ebd2608803701afd8017592"
+  },
+  {
+    "path": "tools/verify-hrtf-render.mjs",
+    "snapshot": true,
+    "sha256": "e0eb193233e84d5f6c7205b72eb18011d736a40d9d5ef4c0be7234c0a99a1549"
+  },
+  {
+    "path": "reports/stc-study-r5/ass-identified-return-r5-binaural-break.wav",
+    "snapshot": false,
+    "sha256": "77c7c3322352c7bb7a5d529dc935fbf2e6e15d5a79c6ff713730a44c0b02bb1e"
+  },
+  {
+    "path": "reports/stc-study-r5/ass-identified-return-r5-binaural-crossing-mix.wav",
+    "snapshot": false,
+    "sha256": "6c7607becad07fa43a9b7d29d43b35e7687d17cb2b7ad97407208afe3ef5c528"
+  },
+  {
+    "path": "reports/stc-study-r5/ass-identified-return-r5-binaural-music.wav",
+    "snapshot": false,
+    "sha256": "e14aa9edab9017704e9987dd7b3d00693d77141f554c68f6112de54e488c85d2"
+  },
+  {
+    "path": "reports/stc-study-r5/ass-identified-return-r5-stereo-music.wav",
+    "snapshot": false,
+    "sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841"
+  },
+  {
+    "path": "audio/stc-study/score-r5.json",
+    "snapshot": false,
+    "sha256": "2ea239ab74ea1cbb8c80f340685f893facacbe438bea2a97f3b7416deccd9720"
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "study": "stc-study-r5",
+  "musicRevision": "identified-return-r5-binaural",
+  "audioScoreId": "identified-return-r5-binaural",
+  "condition": "mismatched",
+  "probe": true,
+  "records": [],
+  "spatialMode": "headphones",
+  "audioOptions": {
+    "sound": false,
+    "volume": 0.5,
+    "musicVolume": 0.2,
+    "effectsVolume": 0.7,
+    "ambienceVolume": 0.1,
+    "spatialMode": "headphones",
+    "reducedMotion": true
+  },
+  "playbackHistory": [
+    {
+      "spatialMode": "headphones",
+      "time": 0,
+      "phase": 0
+    },
+    {
+      "spatialMode": "stereo",
+      "time": 1.428499999999998,
+      "phase": 0
+    },
+    {
+      "spatialMode": "headphones",
+      "time": 1.6451999999999976,
+      "phase": 0
+    }
+  ],
+  "previousRuns": [
+    {
+      "condition": "combined",
+      "probe": false,
+      "spatialMode": "headphones",
+      "records": [
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 0,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.5731000000000002,
+          "assisted": false,
+          "retry": 0,
+          "correct": true,
+          "actualSide": 0,
+          "priorGuideCount": 3,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        },
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 1,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.05,
+          "assisted": true,
+          "retry": 1,
+          "correct": true,
+          "actualSide": 1,
+          "priorGuideCount": 3,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 0.8450999999999996
+        },
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.428499999999998
+        },
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.6451999999999976
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    },
+    {
+      "condition": "audio",
+      "probe": true,
+      "spatialMode": "headphones",
+      "records": [
+        {
+          "taskKind": "listen-only",
+          "condition": "audio",
+          "probe": true,
+          "notScored": true,
+          "firstChoice": null,
+          "correct": null
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 0
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "combined",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "audio",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    }
+  ],
+  "guideHistory": [
+    {
+      "phase": "establishment",
+      "condition": "audio",
+      "time": 0
+    },
+    {
+      "phase": "establishment",
+      "condition": "mismatched",
+      "time": 0.3399000000000015
+    }
+  ],
+  "conditionHistory": [
+    {
+      "condition": "audio",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    },
+    {
+      "condition": "mismatched",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    }
+  ],
+  "contacts": 0,
+  "targetsHit": 0,
+  "limits": "Local study records. No human understanding or causal music effect is established."
+}

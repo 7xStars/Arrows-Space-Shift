@@ -3,10 +3,112 @@ Arrow Space Shift
 AI assistance was used for game design, programming, interface text, documentation, and tests.
 The game uses AI-assisted pixel art, procedural fallback graphics, and browser-generated tones.
 Pixel sources were authored for this project from a user-supplied visual brief.
-The user reference sheet and generated concept sheet are not included in the browser package.
+The user reference sheet and generated concept studies are not included in the browser package.
 No third-party fonts, samples, music recordings, or runtime libraries are included.
 System fonts are supplied by the player's device.
 No Lamirys source or assets are included.
 
+The title illustration in assets/realm-title.png was generated with OpenAI image generation.
+It follows the visual direction of the team's user-supplied concept sheet.
+The supplied reference bitmap was not copied into this asset or the browser package.
+Gameplay pixel masters are separate, editable project-authored JavaScript assets.
+OpenAI image generation supplied Skater and Needle design studies for the starter-fleet art update.
+Their gameplay sprites were authored separately on the existing native pixel grid and palette.
+
 No source-code license has been selected for this candidate.
 This notice does not grant a source-code license.
+
+Version 0.25.0-dev.1 adds original procedural music arrangements and sound synthesis.
+The editable sources are src/music.js and src/audio.js.
+The music, repair sequence, and ending were developed with coding-agent assistance.
+No external sound recording or commercial sample was added.
+
+The separate Structural Techno-Cosmism study uses new original synthesis and patterns.
+Its editable sources are src/stc-score.js and src/stc-audio.js.
+HATE, 999999999, and KAMELIIA are listening references supplied by the user.
+No recording, sample, artwork, or video from those references is included.
+The study uses coding-agent assistance. Musical acceptance remains open.
+The preserved study r5 uses the browser's native HRTF processor for selected musical layers.
+No external impulse-response file or reference recording was added.
+
+Study r6 uses the stereo take selected by the user after the r5 comparison.
+The original take was composed and synthesized with Web Audio.
+Installed FoxDot Patterns sequence that existing recording for the r6 render.
+SuperCollider renders an original filtered room return with stock synthesis units.
+The browser plays two exported Vorbis files. It generates separate action cues.
+No FoxDot or SuperCollider runtime is included in the playable archive.
+The source archive includes the authoring files and production records.
+The REAPER project is an editing handoff. It was not opened or rendered in REAPER.
+No reference track, external recording, sample pack, or impulse response was added.
+
+Study r7 separates the original acid direct voice from the accompaniment at the source graph.
+The source capture uses the retained project-authored Web Audio instruments.
+FoxDot Patterns author the new pan sequence. SuperCollider renders the bass fade and room return.
+The upper acid signal moves between channels. Its low part stays centered.
+The kick, offbeat sub, drone, and existing shared delay retain their fixed source routing.
+The new mix uses shared safety processing after the source signals combine.
+It is not an exact reconstruction of the earlier compressed stereo take.
+No external audio asset or new source license was added.
+
+The separate Act music collection r1 contains sixteen original compositions.
+FoxDot Patterns author their note, rhythm, and transformation data.
+Custom SuperCollider SynthDefs generate all instrument and noise sources.
+The sources are in audio/stc-act-library-r1/.
+The user supplied Intellijel and Larry Heard studies as structural references.
+No reference recording, melody, sample pack, hardware impulse response, or video asset was used.
+The REAPER files are editing handoffs. REAPER was not used for the renders.
+Coding agents assisted with composition, synthesis, production, interface work, documentation, and verification.
+The earlier source-license status still applies. No publication occurred.
+
+The separate operator laboratory r1 adds original FoxDot note patterns and SuperCollider synthesis.
+Its sound operations use stock filters, delays, gain, and nonlinear saturation.
+No external sound recording, commercial sample, or impulse-response file was added.
+The supplied operator-theory book is an analytical reference. It is not an asset license.
+The book and ASD-STE100 PDFs are not included in the release archives.
+The laboratory uses the existing project geometry kernels without changing campaign behavior.
+Coding agents assisted with research, models, sound, interface, documentation, and verification.
+Human recognition and listening acceptance remain open.
+No source-code license has been selected. No publication occurred.
+
+Identified Return r8 retains the user's selected r7 stereo mix as its foundation.
+Installed FoxDot Patterns author the added harmony, percussion, gate schedule, and stereo positions.
+Custom SuperCollider SynthDefs render the new voices and ordered room processors.
+The original foundation notes and instruments predate this new FoxDot score.
+The REAPER project is an editing handoff. It was not used for the native render.
+No external recording, sample pack, reference melody, video asset, or impulse response was added.
+Coding agents assisted with composition, production, player code, documentation, and verification.
+Human listening acceptance remains open. No new source license or publication is part of this revision.
+
+Identified Return r9 responds to the user's request for more distinct percussion.
+The native renderer raises only the added percussion amplitude by 10 dB.
+The retained FoxDot score, voices, harmony, and ordered room paths remain unchanged.
+The earlier WAVs and r8 release archives remain intact.
+The source archive includes both music revisions for comparison and reproduction.
+
+Version 0.25.1-dev.1 uses original produced recordings in the live campaign.
+The title uses Identified Return r9. Each Act uses its existing four-minute composition.
+FoxDot Patterns supplied the Act note and rhythm data. SuperCollider rendered the Act instruments.
+The title retains its project-authored foundation and the later FoxDot and SuperCollider additions.
+The browser plays exported Vorbis stems. FoxDot and SuperCollider are not required for play.
+The retained authoring sources are in audio/stc-act-library-r1/ and audio/stc-study/.
+The runtime export tool is tools/export-campaign-music.py.
+No reference recording, commercial sample, or external impulse response was added.
+Coding agents assisted with integration, animation models, rule repairs, tests, and documentation.
+No source-code license was selected. No publication occurred.
+
+The active pixel master was absent from the imported v0.24.1 source archive.
+Version 0.25.1-dev.1 reconstructs editable pixel rows from the retained PNG exports.
+The new art/source/crossing.mjs states this origin and the unavailable original source hash.
+All 108 sprite exports and the atlas retain identical pixels and file hashes.
+This source reconstruction does not recover the earlier procedural authoring history.
+
+Version 0.25.1-dev.2 adds nine original two-minute tempo compositions.
+The tempo range is 120–240 BPM and includes the user's requested 144 BPM piece.
+FoxDot Patterns author the scores. Custom SuperCollider instruments render the audio.
+The 240 BPM revision adds electronic swells and stronger upper-range stereo motion.
+The first recordings and their source archives remain preserved.
+The new editable sources are in audio/stc-tempo-r2/.
+REAPER sessions are editing handoffs. REAPER did not render these recordings.
+No reference recording, commercial sample, or external impulse response was added.
+Coding agents assisted with composition, synthesis, production, player code, and checks.
+No source-code license was selected. No publication occurred.

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "id": "crossing-v1",
+  "version": 2,
+  "id": "crossing-v3",
   "palette": {
     "O": "#1B1626",
     "L": "#D8C9A8",
@@ -16,129 +16,204 @@
     "d": "#7BC043",
     "e": "#2FA4A0",
     "f": "#7E5BC2",
-    "g": "#C45AA8"
+    "g": "#C45AA8",
+    "h": "#383E40",
+    "i": "#F0E4BD",
+    "j": "#B4A170",
+    "k": "#60C0BE",
+    "l": "#C2EEDB",
+    "m": "#96907C"
   },
   "atlas": "atlas.png",
-  "width": 320,
-  "height": 240,
+  "width": 512,
+  "height": 344,
   "filter": "nearest",
   "alpha": "binary",
+  "packing": {
+    "kind": "shelf",
+    "padding": 4
+  },
   "source": "art/source/crossing.mjs",
-  "sourceSha256": "26512fb4a4753ac5bfe386cf32dd5b1387bdc809f87a8e845b90df29e7d5d79d",
-  "atlasSha256": "55cb565be418011efee0e0f4d6d08c4c130f247603a2ff750f3695d2784280af",
+  "atlasSha256": "e58bc945c988b12cfdd0e935a296718cdd392a33da74e2cc3b6702a0ec3b2824",
   "frames": {
     "player.arrow": {
       "x": 4,
       "y": 4,
-      "width": 16,
-      "height": 16,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
+        16,
+        16
       ],
       "file": "player.arrow.png"
     },
-    "enemy.scout": {
+    "player.arrow-down": {
       "x": 44,
       "y": 4,
-      "width": 16,
-      "height": 16,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
-      ],
-      "file": "enemy.scout.png"
-    },
-    "enemy.gunner": {
-      "x": 84,
-      "y": 4,
-      "width": 16,
-      "height": 16,
-      "pivot": [
-        8,
-        8
-      ],
-      "file": "enemy.gunner.png"
-    },
-    "enemy.heavy": {
-      "x": 124,
-      "y": 4,
-      "width": 16,
-      "height": 16,
-      "pivot": [
-        8,
-        8
-      ],
-      "file": "enemy.heavy.png"
-    },
-    "enemy.klein": {
-      "x": 164,
-      "y": 4,
-      "width": 16,
-      "height": 16,
-      "pivot": [
-        8,
-        8
-      ],
-      "file": "enemy.klein.png"
-    },
-    "player.arrow-down": {
-      "x": 204,
-      "y": 4,
-      "width": 16,
-      "height": 16,
-      "pivot": [
-        8,
-        8
+        16,
+        16
       ],
       "file": "player.arrow-down.png"
     },
-    "enemy.scout-up": {
+    "player.skater": {
+      "x": 84,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.skater.png"
+    },
+    "player.skater-down": {
+      "x": 124,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.skater-down.png"
+    },
+    "player.needle": {
+      "x": 164,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.needle.png"
+    },
+    "player.needle-down": {
+      "x": 204,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.needle-down.png"
+    },
+    "enemy.scout": {
       "x": 244,
       "y": 4,
-      "width": 16,
-      "height": 16,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
+        16,
+        16
+      ],
+      "file": "enemy.scout.png"
+    },
+    "enemy.scout-up": {
+      "x": 284,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
       ],
       "file": "enemy.scout-up.png"
     },
-    "enemy.gunner-up": {
-      "x": 284,
+    "enemy.gunner": {
+      "x": 324,
       "y": 4,
-      "width": 16,
-      "height": 16,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
+        16,
+        16
+      ],
+      "file": "enemy.gunner.png"
+    },
+    "enemy.gunner-up": {
+      "x": 364,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
       ],
       "file": "enemy.gunner-up.png"
     },
-    "enemy.heavy-up": {
-      "x": 4,
-      "y": 44,
-      "width": 16,
-      "height": 16,
+    "enemy.heavy": {
+      "x": 404,
+      "y": 4,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
+        16,
+        16
+      ],
+      "file": "enemy.heavy.png"
+    },
+    "enemy.heavy-up": {
+      "x": 444,
+      "y": 4,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
       ],
       "file": "enemy.heavy-up.png"
+    },
+    "enemy.klein": {
+      "x": 4,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.klein.png"
     },
     "enemy.klein-up": {
       "x": 44,
       "y": 44,
-      "width": 16,
-      "height": 16,
+      "width": 32,
+      "height": 32,
       "pivot": [
-        8,
-        8
+        16,
+        16
       ],
       "file": "enemy.klein-up.png"
     },
-    "icon.klein": {
+    "enemy.heavy-damaged": {
       "x": 84,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy-damaged.png"
+    },
+    "enemy.heavy-damaged-up": {
+      "x": 124,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "enemy.heavy-damaged-up.png"
+    },
+    "icon.klein": {
+      "x": 164,
       "y": 44,
       "width": 32,
       "height": 32,
@@ -148,30 +223,52 @@
       ],
       "file": "icon.klein.png"
     },
-    "enemy.heavy-damaged": {
-      "x": 124,
+    "boss.core": {
+      "x": 204,
       "y": 44,
-      "width": 16,
-      "height": 16,
+      "width": 64,
+      "height": 64,
       "pivot": [
-        8,
-        8
+        32,
+        32
       ],
-      "file": "enemy.heavy-damaged.png"
+      "file": "boss.core.png"
     },
-    "enemy.heavy-damaged-up": {
-      "x": 164,
+    "boss.core-up": {
+      "x": 276,
       "y": 44,
-      "width": 16,
-      "height": 16,
+      "width": 64,
+      "height": 64,
       "pivot": [
-        8,
-        8
+        32,
+        32
       ],
-      "file": "enemy.heavy-damaged-up.png"
+      "file": "boss.core-up.png"
+    },
+    "boss.escort": {
+      "x": 348,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "boss.escort.png"
+    },
+    "boss.escort-up": {
+      "x": 388,
+      "y": 44,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "boss.escort-up.png"
     },
     "health.1": {
-      "x": 204,
+      "x": 428,
       "y": 44,
       "width": 16,
       "height": 16,
@@ -182,7 +279,7 @@
       "file": "health.1.png"
     },
     "health.2": {
-      "x": 244,
+      "x": 452,
       "y": 44,
       "width": 16,
       "height": 16,
@@ -193,7 +290,7 @@
       "file": "health.2.png"
     },
     "health.3": {
-      "x": 284,
+      "x": 476,
       "y": 44,
       "width": 16,
       "height": 16,
@@ -205,7 +302,7 @@
     },
     "health.4": {
       "x": 4,
-      "y": 84,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -215,8 +312,8 @@
       "file": "health.4.png"
     },
     "return.exit": {
-      "x": 44,
-      "y": 84,
+      "x": 28,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -226,8 +323,8 @@
       "file": "return.exit.png"
     },
     "return.entry": {
-      "x": 84,
-      "y": 84,
+      "x": 52,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -236,9 +333,20 @@
       ],
       "file": "return.entry.png"
     },
+    "asteroid.small": {
+      "x": 76,
+      "y": 116,
+      "width": 8,
+      "height": 8,
+      "pivot": [
+        4,
+        4
+      ],
+      "file": "asteroid.small.png"
+    },
     "asteroid.medium": {
-      "x": 124,
-      "y": 84,
+      "x": 92,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -248,8 +356,8 @@
       "file": "asteroid.medium.png"
     },
     "asteroid.large": {
-      "x": 164,
-      "y": 84,
+      "x": 116,
+      "y": 116,
       "width": 32,
       "height": 32,
       "pivot": [
@@ -258,20 +366,9 @@
       ],
       "file": "asteroid.large.png"
     },
-    "asteroid.small": {
-      "x": 204,
-      "y": 84,
-      "width": 8,
-      "height": 8,
-      "pivot": [
-        4,
-        4
-      ],
-      "file": "asteroid.small.png"
-    },
     "asteroid.break-0": {
-      "x": 244,
-      "y": 84,
+      "x": 156,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -281,8 +378,8 @@
       "file": "asteroid.break-0.png"
     },
     "asteroid.break-1": {
-      "x": 284,
-      "y": 84,
+      "x": 180,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -292,8 +389,8 @@
       "file": "asteroid.break-1.png"
     },
     "asteroid.break-2": {
-      "x": 4,
-      "y": 124,
+      "x": 204,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -303,8 +400,8 @@
       "file": "asteroid.break-2.png"
     },
     "effect.glint": {
-      "x": 44,
-      "y": 124,
+      "x": 228,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -314,19 +411,19 @@
       "file": "effect.glint.png"
     },
     "effect.absorb": {
-      "x": 84,
-      "y": 124,
-      "width": 16,
-      "height": 16,
+      "x": 252,
+      "y": 116,
+      "width": 24,
+      "height": 24,
       "pivot": [
-        8,
-        8
+        12,
+        12
       ],
       "file": "effect.absorb.png"
     },
     "edge.left": {
-      "x": 124,
-      "y": 124,
+      "x": 284,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -336,8 +433,8 @@
       "file": "edge.left.png"
     },
     "edge.right": {
-      "x": 164,
-      "y": 124,
+      "x": 308,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -347,8 +444,8 @@
       "file": "edge.right.png"
     },
     "edge.top": {
-      "x": 204,
-      "y": 124,
+      "x": 332,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -358,8 +455,8 @@
       "file": "edge.top.png"
     },
     "edge.bottom": {
-      "x": 244,
-      "y": 124,
+      "x": 356,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -369,8 +466,8 @@
       "file": "edge.bottom.png"
     },
     "edge.twist": {
-      "x": 284,
-      "y": 124,
+      "x": 380,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -380,8 +477,8 @@
       "file": "edge.twist.png"
     },
     "stage.0": {
-      "x": 4,
-      "y": 164,
+      "x": 404,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -391,8 +488,8 @@
       "file": "stage.0.png"
     },
     "stage.1": {
-      "x": 44,
-      "y": 164,
+      "x": 428,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -402,8 +499,8 @@
       "file": "stage.1.png"
     },
     "stage.2": {
-      "x": 84,
-      "y": 164,
+      "x": 452,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -413,8 +510,8 @@
       "file": "stage.2.png"
     },
     "stage.3": {
-      "x": 124,
-      "y": 164,
+      "x": 476,
+      "y": 116,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -424,8 +521,8 @@
       "file": "stage.3.png"
     },
     "stage.4": {
-      "x": 164,
-      "y": 164,
+      "x": 4,
+      "y": 156,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -435,8 +532,8 @@
       "file": "stage.4.png"
     },
     "stage.5": {
-      "x": 204,
-      "y": 164,
+      "x": 28,
+      "y": 156,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -446,8 +543,8 @@
       "file": "stage.5.png"
     },
     "stage.6": {
-      "x": 244,
-      "y": 164,
+      "x": 52,
+      "y": 156,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -457,8 +554,8 @@
       "file": "stage.6.png"
     },
     "stage.7": {
-      "x": 284,
-      "y": 164,
+      "x": 76,
+      "y": 156,
       "width": 16,
       "height": 16,
       "pivot": [
@@ -468,8 +565,8 @@
       "file": "stage.7.png"
     },
     "shot.player": {
-      "x": 4,
-      "y": 204,
+      "x": 100,
+      "y": 156,
       "width": 4,
       "height": 8,
       "pivot": [
@@ -479,8 +576,8 @@
       "file": "shot.player.png"
     },
     "shot.enemy": {
-      "x": 44,
-      "y": 204,
+      "x": 112,
+      "y": 156,
       "width": 4,
       "height": 8,
       "pivot": [
@@ -488,9 +585,850 @@
         4
       ],
       "file": "shot.enemy.png"
+    },
+    "engine.player-down-0": {
+      "x": 124,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-0.png"
+    },
+    "engine.player-down-1": {
+      "x": 148,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-1.png"
+    },
+    "engine.player-down-2": {
+      "x": 172,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-2.png"
+    },
+    "engine.player-down-3": {
+      "x": 196,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-down-3.png"
+    },
+    "engine.player-up-0": {
+      "x": 220,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-0.png"
+    },
+    "engine.player-up-1": {
+      "x": 244,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-1.png"
+    },
+    "engine.player-up-2": {
+      "x": 268,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-2.png"
+    },
+    "engine.player-up-3": {
+      "x": 292,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.player-up-3.png"
+    },
+    "engine.enemy-down-0": {
+      "x": 316,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-0.png"
+    },
+    "engine.enemy-down-1": {
+      "x": 340,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-1.png"
+    },
+    "engine.enemy-down-2": {
+      "x": 364,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-2.png"
+    },
+    "engine.enemy-down-3": {
+      "x": 388,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-down-3.png"
+    },
+    "engine.enemy-up-0": {
+      "x": 412,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-0.png"
+    },
+    "engine.enemy-up-1": {
+      "x": 436,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-1.png"
+    },
+    "engine.enemy-up-2": {
+      "x": 460,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-2.png"
+    },
+    "engine.enemy-up-3": {
+      "x": 484,
+      "y": 156,
+      "width": 16,
+      "height": 24,
+      "pivot": [
+        8,
+        12
+      ],
+      "file": "engine.enemy-up-3.png"
+    },
+    "effect.muzzle-0": {
+      "x": 4,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-0.png"
+    },
+    "effect.muzzle-1": {
+      "x": 28,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-1.png"
+    },
+    "effect.muzzle-2": {
+      "x": 52,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.muzzle-2.png"
+    },
+    "effect.glint-0": {
+      "x": 76,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-0.png"
+    },
+    "effect.glint-1": {
+      "x": 100,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-1.png"
+    },
+    "effect.glint-2": {
+      "x": 124,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-2.png"
+    },
+    "effect.glint-3": {
+      "x": 148,
+      "y": 188,
+      "width": 16,
+      "height": 16,
+      "pivot": [
+        8,
+        8
+      ],
+      "file": "effect.glint-3.png"
+    },
+    "effect.hit-0": {
+      "x": 172,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-0.png"
+    },
+    "effect.hit-1": {
+      "x": 204,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-1.png"
+    },
+    "effect.hit-2": {
+      "x": 236,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-2.png"
+    },
+    "effect.hit-3": {
+      "x": 268,
+      "y": 188,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.hit-3.png"
+    },
+    "effect.explosion-0": {
+      "x": 300,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-0.png"
+    },
+    "effect.explosion-1": {
+      "x": 340,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-1.png"
+    },
+    "effect.explosion-2": {
+      "x": 380,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-2.png"
+    },
+    "effect.explosion-3": {
+      "x": 420,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-3.png"
+    },
+    "effect.explosion-4": {
+      "x": 460,
+      "y": 188,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-4.png"
+    },
+    "effect.explosion-5": {
+      "x": 4,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.explosion-5.png"
+    },
+    "effect.absorb-0": {
+      "x": 44,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-0.png"
+    },
+    "effect.absorb-1": {
+      "x": 76,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-1.png"
+    },
+    "effect.absorb-2": {
+      "x": 108,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-2.png"
+    },
+    "effect.absorb-3": {
+      "x": 140,
+      "y": 228,
+      "width": 24,
+      "height": 24,
+      "pivot": [
+        12,
+        12
+      ],
+      "file": "effect.absorb-3.png"
+    },
+    "effect.fold-0": {
+      "x": 172,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-0.png"
+    },
+    "effect.fold-1": {
+      "x": 212,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-1.png"
+    },
+    "effect.fold-2": {
+      "x": 252,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-2.png"
+    },
+    "effect.fold-3": {
+      "x": 292,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-3.png"
+    },
+    "effect.fold-4": {
+      "x": 332,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.fold-4.png"
+    },
+    "effect.unfold-0": {
+      "x": 372,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-0.png"
+    },
+    "effect.unfold-1": {
+      "x": 412,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-1.png"
+    },
+    "effect.unfold-2": {
+      "x": 452,
+      "y": 228,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-2.png"
+    },
+    "effect.unfold-3": {
+      "x": 4,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-3.png"
+    },
+    "effect.unfold-4": {
+      "x": 44,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.unfold-4.png"
+    },
+    "effect.warp-0": {
+      "x": 84,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-0.png"
+    },
+    "effect.warp-1": {
+      "x": 124,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-1.png"
+    },
+    "effect.warp-2": {
+      "x": 164,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-2.png"
+    },
+    "effect.warp-3": {
+      "x": 204,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-3.png"
+    },
+    "effect.warp-4": {
+      "x": 244,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.warp-4.png"
+    },
+    "effect.shield-0": {
+      "x": 284,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-0.png"
+    },
+    "effect.shield-1": {
+      "x": 324,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-1.png"
+    },
+    "effect.shield-2": {
+      "x": 364,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-2.png"
+    },
+    "effect.shield-3": {
+      "x": 404,
+      "y": 268,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "effect.shield-3.png"
+    },
+    "player.aftwing": {
+      "x": 4,
+      "y": 308,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.aftwing.png"
+    },
+    "player.aftwing-down": {
+      "x": 44,
+      "y": 308,
+      "width": 32,
+      "height": 32,
+      "pivot": [
+        16,
+        16
+      ],
+      "file": "player.aftwing-down.png"
     }
   },
   "animations": {
+    "engine.player-down": {
+      "frames": [
+        "engine.player-down-0",
+        "engine.player-down-1",
+        "engine.player-down-2",
+        "engine.player-down-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.player-up": {
+      "frames": [
+        "engine.player-up-0",
+        "engine.player-up-1",
+        "engine.player-up-2",
+        "engine.player-up-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.enemy-down": {
+      "frames": [
+        "engine.enemy-down-0",
+        "engine.enemy-down-1",
+        "engine.enemy-down-2",
+        "engine.enemy-down-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "engine.enemy-up": {
+      "frames": [
+        "engine.enemy-up-0",
+        "engine.enemy-up-1",
+        "engine.enemy-up-2",
+        "engine.enemy-up-3"
+      ],
+      "durationsMs": [
+        70,
+        85,
+        65,
+        95
+      ],
+      "loop": true
+    },
+    "effect.muzzle": {
+      "frames": [
+        "effect.muzzle-0",
+        "effect.muzzle-1",
+        "effect.muzzle-2"
+      ],
+      "durationsMs": [
+        25,
+        35,
+        45
+      ],
+      "loop": false
+    },
+    "effect.glint": {
+      "frames": [
+        "effect.glint-0",
+        "effect.glint-1",
+        "effect.glint-2",
+        "effect.glint-3"
+      ],
+      "durationsMs": [
+        50,
+        70,
+        80,
+        100
+      ],
+      "loop": false
+    },
+    "effect.hit": {
+      "frames": [
+        "effect.hit-0",
+        "effect.hit-1",
+        "effect.hit-2",
+        "effect.hit-3"
+      ],
+      "durationsMs": [
+        35,
+        50,
+        65,
+        90
+      ],
+      "loop": false
+    },
+    "effect.explosion": {
+      "frames": [
+        "effect.explosion-0",
+        "effect.explosion-1",
+        "effect.explosion-2",
+        "effect.explosion-3",
+        "effect.explosion-4",
+        "effect.explosion-5"
+      ],
+      "durationsMs": [
+        35,
+        50,
+        65,
+        80,
+        95,
+        115
+      ],
+      "loop": false
+    },
+    "effect.absorb": {
+      "frames": [
+        "effect.absorb-0",
+        "effect.absorb-1",
+        "effect.absorb-2",
+        "effect.absorb-3"
+      ],
+      "durationsMs": [
+        40,
+        55,
+        75,
+        110
+      ],
+      "loop": false
+    },
+    "effect.fold": {
+      "frames": [
+        "effect.fold-0",
+        "effect.fold-1",
+        "effect.fold-2",
+        "effect.fold-3",
+        "effect.fold-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.unfold": {
+      "frames": [
+        "effect.unfold-0",
+        "effect.unfold-1",
+        "effect.unfold-2",
+        "effect.unfold-3",
+        "effect.unfold-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.warp": {
+      "frames": [
+        "effect.warp-0",
+        "effect.warp-1",
+        "effect.warp-2",
+        "effect.warp-3",
+        "effect.warp-4"
+      ],
+      "durationsMs": [
+        45,
+        60,
+        75,
+        95,
+        125
+      ],
+      "loop": false
+    },
+    "effect.shield": {
+      "frames": [
+        "effect.shield-0",
+        "effect.shield-1",
+        "effect.shield-2",
+        "effect.shield-3"
+      ],
+      "durationsMs": [
+        90,
+        100,
+        110,
+        100
+      ],
+      "loop": true
+    },
     "asteroid.break": {
       "frames": [
         "asteroid.break-0",
@@ -504,5 +1442,20 @@
       ],
       "loop": false
     }
-  }
+  },
+  "sourceProvenance": {
+    "method": "Reconstructed from retained PNG exports. The original active master was not found.",
+    "date": "2026-11-13",
+    "originalManifestSha256": "b223b1183b8161dec9e988c5ad13a339ff2bd0af6de481ac21af44860176d12e",
+    "unavailableOriginalSourceSha256": "44669d3690efe2bb403467e8b15981f1888159ba11d1f8a5c43716b1222802b7",
+    "addedPaletteTokensForExistingColors": {
+      "h": "#383E40",
+      "i": "#F0E4BD",
+      "j": "#B4A170",
+      "k": "#60C0BE",
+      "l": "#C2EEDB",
+      "m": "#96907C"
+    }
+  },
+  "sourceSha256": "2e646f0e886ef3e8b7ba17650b747cac83cbd9241a7bde80f06e300adcb17ee1"
 }

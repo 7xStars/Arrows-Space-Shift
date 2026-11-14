@@ -1,0 +1,81 @@
+{
+  "candidate": "0.25.1-dev.2",
+  "date": "2026-11-13",
+  "archives": [
+    {
+      "file": "Arrow-Space-Shift-v0.25.1-dev.2-PLAY.zip",
+      "bytes": 47276775,
+      "sha256": "e072d82548436d65da484e56a3c05f4f779ac7671c3e4a6fde442c306fc64f22",
+      "files": 241,
+      "uncompressedBytes": 47945140,
+      "crc": "passed",
+      "relativeReferences": "passed",
+      "path": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.2\\Arrow-Space-Shift-v0.25.1-dev.2-PLAY.zip",
+      "exists": true,
+      "sha256Rechecked": true
+    },
+    {
+      "file": "Arrow-Space-Shift-v0.25.1-dev.2-SOURCE.zip",
+      "bytes": 1667621535,
+      "sha256": "cdf296ae48326ea987e8d8f90ac138c45591e62cb04257d81cf8f74e9d1203e4",
+      "files": 4269,
+      "uncompressedBytes": 2308235494,
+      "crc": "passed",
+      "relativeReferences": "passed",
+      "path": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.2\\Arrow-Space-Shift-v0.25.1-dev.2-SOURCE.zip",
+      "exists": true,
+      "sha256Rechecked": true
+    }
+  ],
+  "sourceContents": {
+    "files": 4269,
+    "wavFiles": 132,
+    "wavBytes": 1855843794,
+    "externalProductionFiles": 45,
+    "tempoOggAssets": 40,
+    "preservedEarlier240OggVariants": true,
+    "revised240Mix": "r2b",
+    "productionGroups": {
+      "masters": 9,
+      "stems": 18,
+      "previews": 9,
+      "sessions": 9
+    },
+    "relativeReaperSessionReferences": 18,
+    "editableArtSource": true
+  },
+  "extractions": {
+    "PLAY": {
+      "archive": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.2\\Arrow-Space-Shift-v0.25.1-dev.2-PLAY.zip",
+      "extractedTo": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-0.25.1-dev.2-play",
+      "files": 241
+    },
+    "SOURCE": {
+      "archive": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.2\\Arrow-Space-Shift-v0.25.1-dev.2-SOURCE.zip",
+      "extractedTo": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-0.25.1-dev.2-source",
+      "files": 4269
+    }
+  },
+  "checks": {
+    "archiveCrcAndRelativeReferences": "passed",
+    "productionZipAndExtractedSha256Files": 45,
+    "extractedPlayBrowserChecks": 32,
+    "extractedPlayTitleChecks": 19,
+    "extractedSourceJavaScriptTests": 303,
+    "extractedSourcePythonTests": 76,
+    "extractedSourceArtFiles": 109,
+    "sourcePlayerSha256": "64abbea6d233deffc121800c8403bf0208089bb456a9ac0fc2f1686d4330dcf5",
+    "noLargeCopiesOnD": true
+  },
+  "existingMediaEvidence": {
+    "path": "D:\\Projects\\games\\game-off-2026\\reports\\stc-tempo-r2\\browser\\results.json",
+    "checks": 41,
+    "note": "The media browser owner ran this before packaging. The archived player hash matches the frozen result."
+  },
+  "limits": [
+    "This report was produced after packaging and is external to SOURCE.",
+    "The new nine-piece collection is included in editable SOURCE and separate listening delivery. PLAY retains the existing four campaign recordings and r9 title.",
+    "Browser checks use isolated headless Edge. Title autoplay is tested under default and explicitly permitted policies. No user-browser flag was changed.",
+    "No listening approval, physical device performance, new full campaign playthrough, GitHub publication, or itch.io publication is claimed by this packaging pass."
+  ]
+}

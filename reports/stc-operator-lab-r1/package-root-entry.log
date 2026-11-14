@@ -1,0 +1,103 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "limits": "Local headless Edge. No human, listening, physical-device, screen-reader, or frame-rate acceptance.",
+  "archives": {
+    "play": {
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-operator-lab-r1\\Arrow-Space-Shift-Operator-Lab-r1-PLAY.zip",
+      "archiveSha256": "2833d20f08cd03735370fcec194b842439933fb010bf755fe8697d3fde7767b7",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-stc-operator-lab-r1\\play-2833d20f08cd",
+      "url": "http://127.0.0.1:62370/",
+      "entry": "/",
+      "entryStatus": 200,
+      "indexSha256": "9e61a128471177f9773eaa5ba86d14e2159eb00976432329a62defa0f8bd0326",
+      "title": "Operator laboratory · Arrow Space Shift",
+      "revision": "stc-operator-lab-r1",
+      "muted": true,
+      "paused": true,
+      "keyboardSectionChange": "passed",
+      "errors": [],
+      "missing": [],
+      "failedRequests": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:62370/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/src/operator-lab-app.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/src/operator-models.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/src/operator-registry.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/src/klein.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/assets/audio/stc-operator-lab-r1/catalog.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62370/assets/audio/stc-operator-lab-r1/analysis.json",
+          "status": 200
+        }
+      ],
+      "result": "passed"
+    },
+    "source": {
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-operator-lab-r1\\Arrow-Space-Shift-Operator-Lab-r1-SOURCE.zip",
+      "archiveSha256": "e122eaa0ed2e3e9eba5b40523f1f4e02458f43897945e2dfe5160730c3d4a3c3",
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-stc-operator-lab-r1\\source-e122eaa0ed2e",
+      "url": "http://127.0.0.1:14632/",
+      "entry": "/",
+      "entryStatus": 200,
+      "indexSha256": "9e61a128471177f9773eaa5ba86d14e2159eb00976432329a62defa0f8bd0326",
+      "title": "Operator laboratory · Arrow Space Shift",
+      "revision": "stc-operator-lab-r1",
+      "muted": true,
+      "paused": true,
+      "keyboardSectionChange": "passed",
+      "errors": [],
+      "missing": [],
+      "failedRequests": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:14632/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/src/operator-lab-app.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/src/operator-models.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/src/operator-registry.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/src/klein.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/assets/audio/stc-operator-lab-r1/catalog.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:14632/assets/audio/stc-operator-lab-r1/analysis.json",
+          "status": 200
+        }
+      ],
+      "result": "passed"
+    }
+  },
+  "browserVersion": "157.0.4341.46"
+}

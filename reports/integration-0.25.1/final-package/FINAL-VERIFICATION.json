@@ -1,0 +1,76 @@
+{
+  "candidate": "0.25.1-dev.1",
+  "date": "2026-11-13",
+  "gitCommit": "97c52a599e3653f1dcc97b60bc97d267dd9aa325",
+  "archives": [
+    {
+      "file": "Arrow-Space-Shift-v0.25.1-dev.1-PLAY.zip",
+      "bytes": 47276925,
+      "sha256": "58be82e390de14977673e3c36a20f4e43740f6e31875b88322db99ecd3c741e8",
+      "files": 241,
+      "uncompressedBytes": 47944612,
+      "crc": "passed",
+      "relativeReferences": "passed",
+      "path": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.1\\Arrow-Space-Shift-v0.25.1-dev.1-PLAY.zip",
+      "exists": true,
+      "hashRechecked": true
+    },
+    {
+      "file": "Arrow-Space-Shift-v0.25.1-dev.1-SOURCE.zip",
+      "bytes": 1170946859,
+      "sha256": "cdd1c2d239983c95774cd4c87ccd2642fd4a7cfed411310c083e13c416adf06f",
+      "files": 3833,
+      "uncompressedBytes": 1552426451,
+      "crc": "passed",
+      "relativeReferences": "passed",
+      "path": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.1\\Arrow-Space-Shift-v0.25.1-dev.1-SOURCE.zip",
+      "exists": true,
+      "hashRechecked": true
+    }
+  ],
+  "extractions": [
+    {
+      "label": "PLAY",
+      "archive": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.1\\Arrow-Space-Shift-v0.25.1-dev.1-PLAY.zip",
+      "extractedTo": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-0.25.1-dev.1-play",
+      "files": 241
+    },
+    {
+      "label": "SOURCE",
+      "archive": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.1\\Arrow-Space-Shift-v0.25.1-dev.1-SOURCE.zip",
+      "extractedTo": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-0.25.1-dev.1-source",
+      "files": 3833
+    }
+  ],
+  "checks": {
+    "archiveCrcAndRelativeReferences": "passed",
+    "extractedPlayBrowserChecks": 32,
+    "extractedPlayPageErrors": 0,
+    "extractedPlayFailedRequests": 0,
+    "extractedSourceJavaScriptTests": 299,
+    "extractedSourcePythonTests": 64,
+    "extractedSourceArtFiles": 109,
+    "stagedAudioChecks": 18,
+    "stagedAudioReusedBecause": "All 241 packaged PLAY files match the final audio-tested stage byte for byte."
+  },
+  "sourceContents": {
+    "wavFiles": 96,
+    "wavBytes": 1199201904,
+    "actMasterWavs": 16,
+    "foxdotComposer": true,
+    "superColliderInstruments": true,
+    "editableArtSource": true
+  },
+  "bundle": {
+    "path": "G:\\Music Projects\\Arrow Space Shift\\releases\\0.25.1-dev.1\\Arrow-Space-Shift-v0.25.1-dev.1-GIT.bundle",
+    "bytes": 280898982,
+    "sha256": "3c3be8b76b6ed9d5c4413a657a8e4b85bb9849ede0c3c4333f86a645c6c86648",
+    "unchanged": true
+  },
+  "limits": [
+    "The final report is external to SOURCE because it was produced after packaging.",
+    "The extracted PLAY browser check covers ordinary training and a local QA unlock for Act IV. It is not the separate full fresh-profile browser run.",
+    "Audio scheduling and source identity are checked. Human listening, physical touch and device performance are not established by these checks.",
+    "No GitHub or itch.io publication was performed by this packaging task."
+  ]
+}

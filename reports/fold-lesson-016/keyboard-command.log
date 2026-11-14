@@ -1,0 +1,20 @@
+{
+  "results": [
+    "Normal entry has no scenario controls",
+    "Enemy is present before the first shot",
+    "One living enemy remains during compressed fire",
+    "Held Space produces shots during the unfold step",
+    "A player shot crosses the actual fold",
+    "Unfold preserves target identity and health",
+    "Unfold preserves active player shots",
+    "Normal combat reaches Level 1",
+    "Automatic campaign folds remain active",
+    "Route HUD exposes saved time",
+    "Route fixture earns one actual speed bonus",
+    "Clear result displays speed grade and points",
+    "The in-memory record includes the bonus and clear time",
+    "No page errors or missing resources"
+  ],
+  "errors": [],
+  "missing": []
+}

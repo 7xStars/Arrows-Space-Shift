@@ -1,0 +1,907 @@
+{
+  "browser": "Microsoft Edge headless",
+  "checks": 9,
+  "passed": [
+    "The actual browser decodes and plays the aligned produced Act I stems",
+    "The next actual stem pair starts on the shared scheduled boundary",
+    "Pause retains the audio position and stops the actual sources",
+    "Resume uses one existing AudioContext",
+    "Recovery removes the core and retains the produced atmosphere",
+    "All 81 produced files decode to their exact stereo frame counts in Edge",
+    "The explicit title API plays the existing produced r9 recording",
+    "The title stop API stops its actual source",
+    "The isolated native browser check has no page exception"
+  ],
+  "errors": [],
+  "decoded": [
+    {
+      "theme": "traditional",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "traditional",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "traditional",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "klein",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "klein",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "klein",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "projective",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "projective",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "projective",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "bolza",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 1,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 2,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 3,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 4,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 5,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 6,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 7,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 8,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1155840,
+      "expected": 1155840
+    },
+    {
+      "theme": "bolza",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "bolza",
+      "index": 9,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 1152000,
+      "expected": 1152000
+    },
+    {
+      "theme": "title",
+      "index": 0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 3678806,
+      "expected": 3678806
+    }
+  ],
+  "states": {
+    "initial": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "act1-03",
+        "title": "Off Axis",
+        "mode": "traditional",
+        "state": "playing",
+        "error": "",
+        "offset": 0.05366666666666667,
+        "duration": 240,
+        "loadedSegments": 2,
+        "pendingSegments": 0,
+        "decodedBytes": 36986880,
+        "activeSources": 2,
+        "layers": {
+          "core": 0.78,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 4,
+        "decodes": 4,
+        "peakDecodedSegments": 2,
+        "starts": 2,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "act1-03",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.10633333333333334,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 0
+    },
+    "crossing": {
+      "engine": "recorded-segments",
+      "trackId": "act1-03",
+      "title": "Off Axis",
+      "mode": "traditional",
+      "state": "playing",
+      "error": "",
+      "offset": 23.75,
+      "duration": 240,
+      "loadedSegments": 2,
+      "pendingSegments": 0,
+      "decodedBytes": 36986880,
+      "activeSources": 4,
+      "layers": {
+        "core": 0.78,
+        "atmosphere": 0.85
+      },
+      "repeatPolicy": "Repeat the finite composition after its ending.",
+      "fetches": 4,
+      "decodes": 4,
+      "peakDecodedSegments": 2,
+      "starts": 6,
+      "underruns": 0,
+      "repeats": 0,
+      "history": [
+        {
+          "trackId": "act1-03",
+          "segment": 0,
+          "absolute": 0,
+          "start": 0.10633333333333334,
+          "offset": 0
+        },
+        {
+          "trackId": "act1-03",
+          "segment": 0,
+          "absolute": 0,
+          "start": 0.20500000000000002,
+          "offset": 23.75
+        },
+        {
+          "trackId": "act1-03",
+          "segment": 1,
+          "absolute": 1,
+          "start": 0.4549999999999983,
+          "offset": 0
+        }
+      ]
+    },
+    "paused": {
+      "engine": "recorded-segments",
+      "trackId": "act1-03",
+      "title": "Off Axis",
+      "mode": "traditional",
+      "state": "paused",
+      "error": "",
+      "offset": 24.177,
+      "duration": 240,
+      "loadedSegments": 2,
+      "pendingSegments": 0,
+      "decodedBytes": 36986880,
+      "activeSources": 0,
+      "layers": {
+        "core": 0.78,
+        "atmosphere": 0.85
+      },
+      "repeatPolicy": "Repeat the finite composition after its ending.",
+      "fetches": 6,
+      "decodes": 6,
+      "peakDecodedSegments": 2,
+      "starts": 6,
+      "underruns": 0,
+      "repeats": 0,
+      "history": [
+        {
+          "trackId": "act1-03",
+          "segment": 0,
+          "absolute": 0,
+          "start": 0.10633333333333334,
+          "offset": 0
+        },
+        {
+          "trackId": "act1-03",
+          "segment": 0,
+          "absolute": 0,
+          "start": 0.20500000000000002,
+          "offset": 23.75
+        },
+        {
+          "trackId": "act1-03",
+          "segment": 1,
+          "absolute": 1,
+          "start": 0.4549999999999983,
+          "offset": 0
+        }
+      ]
+    },
+    "title": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "identified-return-r9",
+        "title": "Identified Return r9",
+        "mode": "title",
+        "state": "playing",
+        "error": "",
+        "offset": 0,
+        "duration": 76.64179166666666,
+        "loadedSegments": 1,
+        "pendingSegments": 0,
+        "decodedBytes": 29430448,
+        "activeSources": 1,
+        "layers": {
+          "core": 0.89,
+          "atmosphere": 0.85
+        },
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 7,
+        "decodes": 7,
+        "peakDecodedSegments": 2,
+        "starts": 9,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "act1-03",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.10633333333333334,
+            "offset": 0
+          },
+          {
+            "trackId": "act1-03",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.20500000000000002,
+            "offset": 23.75
+          },
+          {
+            "trackId": "act1-03",
+            "segment": 1,
+            "absolute": 1,
+            "start": 0.4549999999999983,
+            "offset": 0
+          },
+          {
+            "trackId": "act1-03",
+            "segment": 1,
+            "absolute": 1,
+            "start": 0.7863333333333333,
+            "offset": 0.17700000000000138
+          },
+          {
+            "trackId": "identified-return-r9",
+            "segment": 0,
+            "absolute": 0,
+            "start": 4.466333333333333,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 0
+    }
+  },
+  "limits": "Native browser audio decode, scheduling, and lifecycle. This is an isolated engine check. It is not an audible listening review, a full game playthrough, or a physical-device result."
+}

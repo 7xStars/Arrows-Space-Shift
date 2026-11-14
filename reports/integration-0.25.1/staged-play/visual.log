@@ -1,0 +1,11 @@
+{
+  "checks": 5,
+  "results": [
+    "Manual keyboard fire produces bounded recoil in the actual renderer",
+    "Actual combat damage produces the coupled response",
+    "Presentation retains a fixed collision core",
+    "Reduced motion removes recoil during actual fire",
+    "No presentation page exception occurred"
+  ],
+  "errors": []
+}

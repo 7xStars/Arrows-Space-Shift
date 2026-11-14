@@ -1,0 +1,228 @@
+{"wall":"2026-11-13T17:21:06.001Z","chapter":-1,"name":"Flight controls","attempt":1,"result":"automatic tutorial clear","hull":5,"seconds":2.12,"wallSeconds":0.37,"score":100,"kills":1,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:21:06.002Z","transition":{"from":-1,"to":0,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:21:07.403Z","progress":{"scope":"main","index":0,"attempt":1,"phase":"running","time":10.1083333333334,"hull":5}}
+{"wall":"2026-11-13T17:21:09.752Z","progress":{"scope":"main","index":0,"attempt":1,"phase":"running","time":20.108333333332833,"hull":5}}
+{"wall":"2026-11-13T17:21:13.042Z","progress":{"scope":"main","index":0,"attempt":1,"phase":"running","time":30.108333333332265,"hull":5}}
+{"wall":"2026-11-13T17:21:16.741Z","progress":{"scope":"main","index":0,"attempt":1,"phase":"running","time":40.1083333333317,"hull":5}}
+{"wall":"2026-11-13T17:21:17.598Z","chapter":0,"name":"Two Sides","attempt":1,"result":"cleared","hull":5,"seconds":39.95,"wallSeconds":11.6,"score":1300,"kills":13,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:21:18.645Z","transition":{"from":0,"to":1,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:21:20.688Z","progress":{"scope":"main","index":1,"attempt":1,"phase":"running","time":47.316666666664624,"hull":5}}
+{"wall":"2026-11-13T17:21:25.269Z","progress":{"scope":"main","index":1,"attempt":1,"phase":"running","time":57.316666666664055,"hull":5}}
+{"wall":"2026-11-13T17:21:30.232Z","progress":{"scope":"main","index":1,"attempt":1,"phase":"running","time":67.43333333333307,"hull":5}}
+{"wall":"2026-11-13T17:21:31.081Z","chapter":1,"name":"Quiet Belt","attempt":1,"result":"cleared","hull":5,"seconds":26.3,"wallSeconds":12.43,"score":1650,"kills":16,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:21:32.163Z","transition":{"from":1,"to":2,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:21:35.887Z","progress":{"scope":"main","index":2,"attempt":1,"phase":"running","time":74.55833333333874,"hull":5}}
+{"wall":"2026-11-13T17:21:42.339Z","progress":{"scope":"main","index":2,"attempt":1,"phase":"running","time":84.65833333334677,"hull":5}}
+{"wall":"2026-11-13T17:21:49.168Z","progress":{"scope":"main","index":2,"attempt":1,"phase":"running","time":94.76666666668815,"hull":5}}
+{"wall":"2026-11-13T17:21:56.392Z","progress":{"scope":"main","index":2,"attempt":1,"phase":"running","time":104.86666666669619,"hull":5}}
+{"wall":"2026-11-13T17:22:04.325Z","progress":{"scope":"main","index":2,"attempt":1,"phase":"running","time":114.95833333337089,"hull":5}}
+{"wall":"2026-11-13T17:22:04.897Z","chapter":2,"name":"Counter Cycle","attempt":1,"result":"cleared","hull":5,"seconds":46.27,"wallSeconds":32.73,"score":3150,"kills":31,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:22:06.034Z","transition":{"from":2,"to":3,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:22:11.065Z","progress":{"scope":"main","index":3,"attempt":1,"phase":"running","time":122.26666666671004,"hull":5}}
+{"wall":"2026-11-13T17:22:19.217Z","progress":{"scope":"main","index":3,"attempt":1,"phase":"running","time":132.38333333337727,"hull":5}}
+{"wall":"2026-11-13T17:22:27.763Z","progress":{"scope":"main","index":3,"attempt":1,"phase":"running","time":142.47500000003475,"hull":5}}
+{"wall":"2026-11-13T17:22:31.582Z","chapter":3,"name":"Loose Stones","attempt":1,"result":"cleared","hull":5,"seconds":30.73,"wallSeconds":25.55,"score":3590,"kills":34,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:22:32.714Z","transition":{"from":3,"to":4,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:22:35.147Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"running","time":149.62500000002825,"hull":5}}
+{"wall":"2026-11-13T17:22:45.544Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"running","time":159.71666666668574,"hull":5}}
+{"wall":"2026-11-13T17:22:57.071Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"running","time":169.81666666667655,"hull":5}}
+{"wall":"2026-11-13T17:23:10.648Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"running","time":179.90833333333404,"hull":5}}
+{"wall":"2026-11-13T17:23:25.250Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"running","time":190.0249999999915,"hull":5}}
+{"wall":"2026-11-13T17:23:42.923Z","progress":{"scope":"main","index":4,"attempt":1,"phase":"cleared","time":200.0499999999824,"hull":5}}
+{"wall":"2026-11-13T17:23:42.927Z","chapter":4,"name":"Seven Operations","attempt":1,"result":"cleared","hull":5,"seconds":52.97,"wallSeconds":70.21,"score":5390,"kills":52,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:23:44.401Z","transition":{"from":4,"to":5,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:23:56.008Z","progress":{"scope":"main","index":5,"attempt":1,"phase":"running","time":207.42499999997568,"hull":5}}
+{"wall":"2026-11-13T17:24:11.001Z","progress":{"scope":"main","index":5,"attempt":1,"phase":"running","time":217.51666666663317,"hull":5}}
+{"wall":"2026-11-13T17:24:28.897Z","progress":{"scope":"main","index":5,"attempt":1,"phase":"running","time":227.63333333329064,"hull":5}}
+{"wall":"2026-11-13T17:24:41.469Z","chapter":5,"name":"Drift Field","attempt":1,"result":"cleared","hull":5,"seconds":35.17,"wallSeconds":57.07,"score":5910,"kills":56,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:24:42.745Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":235.92499999994976,"hull":5}}
+{"wall":"2026-11-13T17:24:42.746Z","transition":{"from":5,"to":6,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:24:59.714Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":245.92499999994067,"hull":5}}
+{"wall":"2026-11-13T17:25:16.822Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":255.92499999993157,"hull":5}}
+{"wall":"2026-11-13T17:25:34.728Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":265.9249999999225,"hull":5}}
+{"wall":"2026-11-13T17:25:51.394Z","damage":{"scope":"main","index":6,"attempt":1,"time":274.7249999999145,"from":5,"to":4,"events":[{"time":274.6999999999145,"type":"damage","reason":"Ship contact. One hull point lost.","hull":4,"amount":1,"retained":false,"x":320,"z":3518.25,"source":"ship","target":70}]}}
+{"wall":"2026-11-13T17:25:53.708Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":275.9249999999134,"hull":4}}
+{"wall":"2026-11-13T17:26:13.993Z","progress":{"scope":"main","index":6,"attempt":1,"phase":"running","time":285.9249999999043,"hull":4}}
+{"wall":"2026-11-13T17:26:34.542Z","chapter":6,"name":"Front and Back","attempt":1,"result":"cleared","hull":4,"seconds":59.68,"wallSeconds":111.8,"score":8010,"kills":77,"boss":null,"part":null,"damage":[{"time":274.6999999999145,"type":"damage","reason":"Ship contact. One hull point lost.","hull":4,"amount":1,"retained":false,"x":320,"z":3518.25,"source":"ship","target":70}],"deathRecap":null}
+{"wall":"2026-11-13T17:26:35.838Z","progress":{"scope":"main","index":7,"attempt":1,"phase":"running","time":295.94166666656184,"hull":5}}
+{"wall":"2026-11-13T17:26:35.840Z","transition":{"from":6,"to":7,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:26:56.986Z","progress":{"scope":"main","index":7,"attempt":1,"phase":"running","time":305.94166666655275,"hull":5}}
+{"wall":"2026-11-13T17:27:18.844Z","progress":{"scope":"main","index":7,"attempt":1,"phase":"running","time":315.94166666654365,"hull":5}}
+{"wall":"2026-11-13T17:27:42.303Z","progress":{"scope":"main","index":7,"attempt":1,"phase":"running","time":325.94166666653456,"hull":5}}
+{"wall":"2026-11-13T17:28:05.219Z","chapter":7,"name":"Last Approach","attempt":1,"result":"cleared","hull":5,"seconds":39.67,"wallSeconds":89.38,"score":8440,"kills":80,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:28:06.528Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":335.60833333319243,"hull":5}}
+{"wall":"2026-11-13T17:28:06.530Z","transition":{"from":7,"to":8,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:28:30.756Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":341.94999999985333,"hull":5}}
+{"wall":"2026-11-13T17:29:00.788Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":351.94999999984424,"hull":5}}
+{"wall":"2026-11-13T17:29:34.116Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":361.94999999983514,"hull":5}}
+{"wall":"2026-11-13T17:30:10.539Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":371.94999999982605,"hull":5}}
+{"wall":"2026-11-13T17:30:43.053Z","progress":{"scope":"main","index":8,"attempt":1,"phase":"running","time":381.94999999981695,"hull":5}}
+{"wall":"2026-11-13T17:31:02.059Z","chapter":8,"name":"The Klein Fleet","attempt":1,"result":"extracted","hull":5,"seconds":52.09,"wallSeconds":175.53,"score":8740,"kills":83,"boss":"exit","part":{"id":"klein-relay","x":-219.125,"z":765.4999999999999,"collected":true,"readyAt":375.81666666648954},"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:31:02.486Z","transition":{"from":8,"to":9,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:31:09.864Z","progress":{"scope":"main","index":9,"attempt":1,"phase":"running","time":389.6333333331433,"hull":5}}
+{"wall":"2026-11-13T17:31:12.411Z","progress":{"scope":"main","index":9,"attempt":1,"phase":"running","time":399.6333333331342,"hull":5}}
+{"wall":"2026-11-13T17:31:15.893Z","progress":{"scope":"main","index":9,"attempt":1,"phase":"running","time":409.6333333331251,"hull":5}}
+{"wall":"2026-11-13T17:31:20.371Z","progress":{"scope":"main","index":9,"attempt":1,"phase":"running","time":419.633333333116,"hull":5}}
+{"wall":"2026-11-13T17:31:25.639Z","progress":{"scope":"main","index":9,"attempt":1,"phase":"running","time":429.6333333331069,"hull":5}}
+{"wall":"2026-11-13T17:31:26.397Z","chapter":9,"name":"Return Flight","attempt":1,"result":"cleared","hull":5,"seconds":43.24,"wallSeconds":23.91,"score":9580,"kills":90,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:31:27.492Z","transition":{"from":9,"to":10,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:31:30.695Z","progress":{"scope":"main","index":10,"attempt":1,"phase":"running","time":436.83333333310037,"hull":5}}
+{"wall":"2026-11-13T17:31:33.867Z","progress":{"scope":"main","index":10,"attempt":1,"phase":"running","time":446.8333333330913,"hull":5}}
+{"wall":"2026-11-13T17:31:37.091Z","progress":{"scope":"main","index":10,"attempt":1,"phase":"running","time":456.8333333330822,"hull":5}}
+{"wall":"2026-11-13T17:31:40.446Z","progress":{"scope":"main","index":10,"attempt":1,"phase":"running","time":466.8333333330731,"hull":5}}
+{"wall":"2026-11-13T17:31:44.135Z","progress":{"scope":"main","index":10,"attempt":1,"phase":"running","time":476.833333333064,"hull":5}}
+{"wall":"2026-11-13T17:31:44.469Z","chapter":10,"name":"Intentional Crossing","attempt":1,"result":"cleared","hull":5,"seconds":46.35,"wallSeconds":16.98,"score":10655,"kills":99,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:31:45.555Z","transition":{"from":10,"to":11,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:31:47.478Z","progress":{"scope":"main","index":11,"attempt":1,"phase":"running","time":484.0499999997241,"hull":5}}
+{"wall":"2026-11-13T17:31:50.866Z","progress":{"scope":"main","index":11,"attempt":1,"phase":"running","time":494.049999999715,"hull":5}}
+{"wall":"2026-11-13T17:31:54.605Z","progress":{"scope":"main","index":11,"attempt":1,"phase":"running","time":504.0499999997059,"hull":5}}
+{"wall":"2026-11-13T17:31:58.712Z","progress":{"scope":"main","index":11,"attempt":1,"phase":"running","time":514.0499999996969,"hull":5}}
+{"wall":"2026-11-13T17:32:00.278Z","damage":{"scope":"main","index":11,"attempt":1,"time":517.5499999996937,"from":5,"to":4,"events":[{"time":517.533333333027,"type":"damage","reason":"Shot impact. Hull damage received.","hull":4,"amount":1,"retained":false,"x":227,"z":3850.5,"source":"projectile","sourceId":25,"sourceName":"Carrier 25","pattern":"gap","patternName":"GAP","geometryRule":"klein","surfaceCrossings":5,"lastEdge":"top","damageMultiplier":1}]}}
+{"wall":"2026-11-13T17:32:03.183Z","progress":{"scope":"main","index":11,"attempt":1,"phase":"running","time":524.0499999996878,"hull":5}}
+{"wall":"2026-11-13T17:32:04.370Z","chapter":11,"name":"Returning Fire","attempt":1,"result":"cleared","hull":5,"seconds":48.54,"wallSeconds":18.81,"score":11970,"kills":110,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:32:05.514Z","transition":{"from":11,"to":12,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:32:07.141Z","progress":{"scope":"main","index":12,"attempt":1,"phase":"running","time":531.2583333330145,"hull":5}}
+{"wall":"2026-11-13T17:32:11.304Z","progress":{"scope":"main","index":12,"attempt":1,"phase":"running","time":541.2583333330055,"hull":5}}
+{"wall":"2026-11-13T17:32:15.212Z","progress":{"scope":"main","index":12,"attempt":1,"phase":"running","time":551.2583333329964,"hull":5}}
+{"wall":"2026-11-13T17:32:19.359Z","progress":{"scope":"main","index":12,"attempt":1,"phase":"running","time":561.2583333329873,"hull":5}}
+{"wall":"2026-11-13T17:32:23.979Z","progress":{"scope":"main","index":12,"attempt":1,"phase":"running","time":571.2583333329782,"hull":5}}
+{"wall":"2026-11-13T17:32:26.628Z","chapter":12,"name":"Seam Gap","attempt":1,"result":"cleared","hull":5,"seconds":49.54,"wallSeconds":21.11,"score":13575,"kills":125,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:32:27.802Z","transition":{"from":12,"to":13,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:32:28.518Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":578.466666666305,"hull":5}}
+{"wall":"2026-11-13T17:32:32.788Z","damage":{"scope":"main","index":13,"attempt":1,"time":587.3749999996302,"from":5,"to":4,"events":[{"time":587.2833333329636,"type":"damage","reason":"Shot impact. Hull damage received.","hull":4,"amount":1,"retained":false,"x":-396,"z":994,"source":"projectile","sourceId":43,"sourceName":"Scout 1","pattern":"aimed","patternName":"AIMED","geometryRule":"klein","surfaceCrossings":2,"lastEdge":"left","damageMultiplier":1}]}}
+{"wall":"2026-11-13T17:32:33.328Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":588.4666666662959,"hull":4}}
+{"wall":"2026-11-13T17:32:37.997Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":598.4666666662868,"hull":5}}
+{"wall":"2026-11-13T17:32:42.411Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":608.4666666662777,"hull":5}}
+{"wall":"2026-11-13T17:32:46.904Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":618.4666666662686,"hull":5}}
+{"wall":"2026-11-13T17:32:51.386Z","progress":{"scope":"main","index":13,"attempt":1,"phase":"running","time":628.4666666662595,"hull":5}}
+{"wall":"2026-11-13T17:32:51.970Z","chapter":13,"name":"Cross Current","attempt":1,"result":"cleared","hull":5,"seconds":52.89,"wallSeconds":24.17,"score":15740,"kills":143,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:32:53.091Z","transition":{"from":13,"to":14,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:32:55.438Z","progress":{"scope":"main","index":14,"attempt":1,"phase":"running","time":635.6749999995862,"hull":5}}
+{"wall":"2026-11-13T17:32:59.825Z","progress":{"scope":"main","index":14,"attempt":1,"phase":"running","time":645.6749999995772,"hull":5}}
+{"wall":"2026-11-13T17:33:03.986Z","progress":{"scope":"main","index":14,"attempt":1,"phase":"running","time":655.6749999995681,"hull":5}}
+{"wall":"2026-11-13T17:33:08.140Z","progress":{"scope":"main","index":14,"attempt":1,"phase":"running","time":665.674999999559,"hull":5}}
+{"wall":"2026-11-13T17:33:12.541Z","progress":{"scope":"main","index":14,"attempt":1,"phase":"running","time":675.6749999995499,"hull":5}}
+{"wall":"2026-11-13T17:33:15.297Z","chapter":14,"name":"Fold Timing","attempt":1,"result":"cleared","hull":5,"seconds":51.91,"wallSeconds":22.2,"score":16475,"kills":150,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:33:16.436Z","transition":{"from":14,"to":15,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:33:16.647Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":682.8749999995433,"hull":5}}
+{"wall":"2026-11-13T17:33:21.743Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":692.8749999995342,"hull":5}}
+{"wall":"2026-11-13T17:33:26.364Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":702.8749999995251,"hull":5}}
+{"wall":"2026-11-13T17:33:31.910Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":712.874999999516,"hull":5}}
+{"wall":"2026-11-13T17:33:37.602Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":722.8749999995069,"hull":5}}
+{"wall":"2026-11-13T17:33:43.735Z","progress":{"scope":"main","index":15,"attempt":1,"phase":"running","time":732.8749999994978,"hull":5}}
+{"wall":"2026-11-13T17:33:47.919Z","damage":{"scope":"main","index":15,"attempt":1,"time":739.274999999492,"from":5,"to":4,"events":[{"time":739.2333333328254,"type":"damage","reason":"Shot impact. Hull damage received.","hull":4,"amount":1,"retained":false,"x":-362,"z":1448.75,"source":"projectile","sourceId":90,"sourceName":"Field Overseer","pattern":"fan","patternName":"FAN","geometryRule":"klein","surfaceCrossings":4,"lastEdge":"bottom","damageMultiplier":1}]}}
+{"wall":"2026-11-13T17:33:48.247Z","chapter":15,"name":"Pressure Field","attempt":1,"result":"cleared","hull":4,"seconds":57.38,"wallSeconds":31.81,"score":19240,"kills":173,"boss":null,"part":null,"damage":[{"time":739.2333333328254,"type":"damage","reason":"Shot impact. Hull damage received.","hull":4,"amount":1,"retained":false,"x":-362,"z":1448.75,"source":"projectile","sourceId":90,"sourceName":"Field Overseer","pattern":"fan","patternName":"FAN","geometryRule":"klein","surfaceCrossings":4,"lastEdge":"bottom","damageMultiplier":1}],"deathRecap":null}
+{"wall":"2026-11-13T17:33:49.526Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":740.0833333328246,"hull":5}}
+{"wall":"2026-11-13T17:33:49.527Z","transition":{"from":15,"to":16,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:33:55.321Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":750.0833333328155,"hull":5}}
+{"wall":"2026-11-13T17:33:58.213Z","damage":{"scope":"main","index":16,"attempt":1,"time":754.3833333328116,"from":5,"to":4,"events":[{"time":754.341666666145,"type":"damage","reason":"Shot impact. Hull damage received.","hull":4,"amount":1,"retained":false,"x":-380,"z":1638.75,"source":"projectile","sourceId":95,"sourceName":"Carrier 5","pattern":"wall","patternName":"WALL","geometryRule":"klein","surfaceCrossings":5,"lastEdge":"top","damageMultiplier":1}]}}
+{"wall":"2026-11-13T17:34:01.521Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":760.0833333328064,"hull":5}}
+{"wall":"2026-11-13T17:34:06.729Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":770.0833333327973,"hull":5}}
+{"wall":"2026-11-13T17:34:12.076Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":780.0833333327882,"hull":5}}
+{"wall":"2026-11-13T17:34:17.108Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":790.0833333327791,"hull":5}}
+{"wall":"2026-11-13T17:34:22.118Z","progress":{"scope":"main","index":16,"attempt":1,"phase":"running","time":800.08333333277,"hull":5}}
+{"wall":"2026-11-13T17:34:23.089Z","chapter":16,"name":"Klein Mastery","attempt":1,"result":"cleared","hull":5,"seconds":61.87,"wallSeconds":33.56,"score":21640,"kills":192,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:34:24.283Z","transition":{"from":16,"to":17,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:34:26.538Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":803.2916666661005,"hull":5}}
+{"wall":"2026-11-13T17:34:31.914Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":813.2916666660914,"hull":5}}
+{"wall":"2026-11-13T17:34:37.899Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":823.2916666660823,"hull":5}}
+{"wall":"2026-11-13T17:34:43.664Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":833.2916666660732,"hull":5}}
+{"wall":"2026-11-13T17:34:49.643Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":843.2916666660641,"hull":5}}
+{"wall":"2026-11-13T17:34:56.091Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":853.291666666055,"hull":5}}
+{"wall":"2026-11-13T17:35:02.660Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":863.2916666660459,"hull":5}}
+{"wall":"2026-11-13T17:35:07.767Z","progress":{"scope":"main","index":17,"attempt":1,"phase":"running","time":873.2916666660368,"hull":5}}
+{"wall":"2026-11-13T17:35:09.963Z","chapter":17,"name":"The Projective Intrusion","attempt":1,"result":"extracted","hull":5,"seconds":75.99,"wallSeconds":45.68,"score":22150,"kills":195,"boss":"exit","part":{"id":"projective-module","x":182.74999999996848,"z":6.333333333175759,"collected":true,"readyAt":864.258333332712},"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:35:10.099Z","transition":{"from":17,"to":18,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:35:12.748Z","progress":{"scope":"main","index":18,"attempt":1,"phase":"running","time":883.2249999993611,"hull":5}}
+{"wall":"2026-11-13T17:35:18.186Z","progress":{"scope":"main","index":18,"attempt":1,"phase":"running","time":893.224999999352,"hull":5}}
+{"wall":"2026-11-13T17:35:24.020Z","progress":{"scope":"main","index":18,"attempt":1,"phase":"running","time":903.1666666660096,"hull":5}}
+{"wall":"2026-11-13T17:35:29.516Z","progress":{"scope":"main","index":18,"attempt":1,"phase":"running","time":913.1666666660005,"hull":5}}
+{"wall":"2026-11-13T17:35:33.705Z","chapter":18,"name":"Projective Chart","attempt":1,"result":"cleared","hull":5,"seconds":43.12,"wallSeconds":23.61,"score":23220,"kills":205,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:35:35.016Z","progress":{"scope":"main","index":19,"attempt":1,"phase":"running","time":921.491666665993,"hull":5}}
+{"wall":"2026-11-13T17:35:35.017Z","transition":{"from":18,"to":19,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:35:40.477Z","progress":{"scope":"main","index":19,"attempt":1,"phase":"choosing","time":931.4083333326506,"hull":5}}
+{"wall":"2026-11-13T17:35:46.096Z","progress":{"scope":"main","index":19,"attempt":1,"phase":"running","time":941.4333333326415,"hull":5}}
+{"wall":"2026-11-13T17:35:53.209Z","progress":{"scope":"main","index":19,"attempt":1,"phase":"running","time":951.4249999992991,"hull":5}}
+{"wall":"2026-11-13T17:36:04.288Z","progress":{"scope":"main","index":19,"attempt":1,"phase":"running","time":961.42499999929,"hull":5}}
+{"wall":"2026-11-13T17:36:11.179Z","chapter":19,"name":"Echo Capture","attempt":1,"result":"cleared","hull":5,"seconds":46.32,"wallSeconds":36.16,"score":24270,"kills":214,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:36:12.920Z","transition":{"from":19,"to":20,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:36:13.473Z","progress":{"scope":"main","index":20,"attempt":1,"phase":"running","time":968.7499999992833,"hull":5}}
+{"wall":"2026-11-13T17:36:23.080Z","progress":{"scope":"main","index":20,"attempt":1,"phase":"running","time":978.7083333326076,"hull":5}}
+{"wall":"2026-11-13T17:36:33.721Z","progress":{"scope":"main","index":20,"attempt":1,"phase":"running","time":988.7999999992651,"hull":5}}
+{"wall":"2026-11-13T17:36:46.260Z","progress":{"scope":"main","index":20,"attempt":1,"phase":"running","time":998.7833333325893,"hull":5}}
+{"wall":"2026-11-13T17:36:55.603Z","progress":{"scope":"main","index":20,"attempt":1,"phase":"running","time":1008.8999999992468,"hull":5}}
+{"wall":"2026-11-13T17:37:01.794Z","chapter":20,"name":"Echo Release","attempt":1,"result":"cleared","hull":5,"seconds":48.56,"wallSeconds":48.87,"score":25485,"kills":224,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:37:03.336Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1017.0999999992393,"hull":5}}
+{"wall":"2026-11-13T17:37:03.337Z","transition":{"from":20,"to":21,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:37:10.365Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1027.1916666659404,"hull":5}}
+{"wall":"2026-11-13T17:37:16.978Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1037.1916666660677,"hull":5}}
+{"wall":"2026-11-13T17:37:23.800Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1047.1833333328616,"hull":5}}
+{"wall":"2026-11-13T17:37:31.562Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1057.2833333329902,"hull":5}}
+{"wall":"2026-11-13T17:37:39.000Z","progress":{"scope":"main","index":21,"attempt":1,"phase":"running","time":1067.3749999997854,"hull":5}}
+{"wall":"2026-11-13T17:37:39.357Z","chapter":21,"name":"Ordered Synthesis","attempt":1,"result":"cleared","hull":5,"seconds":50.72,"wallSeconds":36.02,"score":26735,"kills":234,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:37:40.713Z","transition":{"from":21,"to":22,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:37:45.434Z","progress":{"scope":"main","index":22,"attempt":1,"phase":"running","time":1074.6916666665452,"hull":5}}
+{"wall":"2026-11-13T17:37:53.370Z","progress":{"scope":"main","index":22,"attempt":1,"phase":"running","time":1084.7916666666738,"hull":5}}
+{"wall":"2026-11-13T17:38:00.732Z","progress":{"scope":"main","index":22,"attempt":1,"phase":"running","time":1094.883333333469,"hull":5}}
+{"wall":"2026-11-13T17:38:07.992Z","progress":{"scope":"main","index":22,"attempt":1,"phase":"running","time":1104.9833333335976,"hull":5}}
+{"wall":"2026-11-13T17:38:15.376Z","progress":{"scope":"main","index":22,"attempt":1,"phase":"running","time":1115.0916666670596,"hull":5}}
+{"wall":"2026-11-13T17:38:21.211Z","chapter":22,"name":"Stellar Harvest","attempt":1,"result":"cleared","hull":5,"seconds":55.19,"wallSeconds":40.5,"score":28930,"kills":252,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:38:22.608Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1123.691666667169,"hull":5}}
+{"wall":"2026-11-13T17:38:22.610Z","transition":{"from":22,"to":23,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:38:30.028Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1133.7833333339643,"hull":5}}
+{"wall":"2026-11-13T17:38:37.547Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1143.9000000007597,"hull":5}}
+{"wall":"2026-11-13T17:38:45.615Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1153.991666667555,"hull":5}}
+{"wall":"2026-11-13T17:38:54.303Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1164.0916666676835,"hull":5}}
+{"wall":"2026-11-13T17:39:02.634Z","progress":{"scope":"main","index":23,"attempt":1,"phase":"running","time":1174.1833333344787,"hull":5}}
+{"wall":"2026-11-13T17:39:07.909Z","chapter":23,"name":"Antipodal Storm","attempt":1,"result":"cleared","hull":5,"seconds":56.35,"wallSeconds":45.3,"score":30465,"kills":263,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:39:09.503Z","transition":{"from":23,"to":24,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:39:10.357Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1181.508333334572,"hull":5}}
+{"wall":"2026-11-13T17:39:17.913Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1191.6083333347005,"hull":5}}
+{"wall":"2026-11-13T17:39:25.488Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1201.7000000014957,"hull":5}}
+{"wall":"2026-11-13T17:39:33.701Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1211.8000000016243,"hull":5}}
+{"wall":"2026-11-13T17:39:42.161Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1221.9083333350864,"hull":5}}
+{"wall":"2026-11-13T17:39:50.738Z","progress":{"scope":"main","index":24,"attempt":1,"phase":"running","time":1232.008333335215,"hull":5}}
+{"wall":"2026-11-13T17:39:56.845Z","chapter":24,"name":"Power Without Passivity","attempt":1,"result":"cleared","hull":5,"seconds":58.53,"wallSeconds":47.34,"score":31755,"kills":274,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:39:58.392Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1239.3166666686413,"hull":5}}
+{"wall":"2026-11-13T17:39:58.393Z","transition":{"from":24,"to":25,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:40:06.493Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1249.4083333354365,"hull":5}}
+{"wall":"2026-11-13T17:40:10.466Z","damage":{"scope":"main","index":25,"attempt":1,"time":1254.0166666688285,"from":5,"to":4,"events":[{"time":1253.950000002161,"type":"damage","reason":"Ship contact. One hull point lost.","hull":4,"amount":1,"retained":false,"x":317,"z":-253.75,"source":"ship","target":198}]}}
+{"wall":"2026-11-13T17:40:15.001Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1259.525000002232,"hull":4}}
+{"wall":"2026-11-13T17:40:23.734Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1269.6166666690272,"hull":4}}
+{"wall":"2026-11-13T17:40:32.918Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1279.7166666691558,"hull":4}}
+{"wall":"2026-11-13T17:40:42.541Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1289.808333335951,"hull":4}}
+{"wall":"2026-11-13T17:40:51.932Z","progress":{"scope":"main","index":25,"attempt":1,"phase":"running","time":1299.9250000027464,"hull":4}}
+{"wall":"2026-11-13T17:40:53.153Z","chapter":25,"name":"Projective Mastery","attempt":1,"result":"cleared","hull":4,"seconds":61.84,"wallSeconds":54.76,"score":33715,"kills":287,"boss":null,"part":null,"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:40:54.758Z","transition":{"from":25,"to":26,"phase":"running","seed":4181845467,"hull":5}}
+{"wall":"2026-11-13T17:40:59.392Z","progress":{"scope":"main","index":26,"attempt":1,"phase":"running","time":1303.2083333361215,"hull":5}}
+{"wall":"2026-11-13T17:41:08.906Z","progress":{"scope":"main","index":26,"attempt":1,"phase":"running","time":1313.3083333362501,"hull":5}}
+{"wall":"2026-11-13T17:41:18.833Z","progress":{"scope":"main","index":26,"attempt":1,"phase":"running","time":1323.4000000030453,"hull":5}}
+{"wall":"2026-11-13T17:41:27.632Z","progress":{"scope":"main","index":26,"attempt":1,"phase":"running","time":1333.5166666698408,"hull":5}}
+{"wall":"2026-11-13T17:41:36.105Z","progress":{"scope":"main","index":26,"attempt":1,"phase":"running","time":1343.608333336636,"hull":5}}
+{"wall":"2026-11-13T17:41:38.555Z","chapter":26,"name":"The Curvature Gate","attempt":1,"result":"extracted","hull":5,"seconds":45.4,"wallSeconds":43.8,"score":34805,"kills":290,"boss":"exit","part":{"id":"curvature-seed","x":-107.1249999999854,"z":153.7500000000001,"collected":true,"readyAt":1329.833333336456},"damage":[],"deathRecap":null}
+{"wall":"2026-11-13T17:41:38.886Z","actFourStage":1,"phase":"running","hull":5,"score":34805}
+{"wall":"2026-11-13T17:41:40.009Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":6.880000000000005,"hull":5}}
+{"wall":"2026-11-13T17:41:41.585Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":16.928000000000115,"hull":5}}
+{"wall":"2026-11-13T17:41:43.234Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":26.97600000000124,"hull":5}}
+{"wall":"2026-11-13T17:41:45.065Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":37.04000000000124,"hull":5}}
+{"wall":"2026-11-13T17:41:46.911Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":47.088000000000136,"hull":5}}
+{"wall":"2026-11-13T17:41:48.868Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":57.13599999999903,"hull":5}}
+{"wall":"2026-11-13T17:41:50.921Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":67.18399999999652,"hull":5}}
+{"wall":"2026-11-13T17:41:53.137Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":77.23199999999095,"hull":5}}
+{"wall":"2026-11-13T17:41:55.337Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":87.27999999998538,"hull":5}}
+{"wall":"2026-11-13T17:41:57.533Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":97.32799999997981,"hull":5}}
+{"wall":"2026-11-13T17:41:59.828Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":107.37599999997424,"hull":5}}
+{"wall":"2026-11-13T17:42:02.092Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":117.43999999996866,"hull":5}}
+{"wall":"2026-11-13T17:42:03.813Z","damage":{"scope":"act-four","index":0,"attempt":1,"time":125.03999999996445,"from":5,"to":4,"events":[{"t":124.987,"type":"hit","hull":4,"shotId":37}]}}
+{"wall":"2026-11-13T17:42:04.365Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":127.4879999999631,"hull":4}}
+{"wall":"2026-11-13T17:42:06.661Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":137.53599999997445,"hull":4}}
+{"wall":"2026-11-13T17:42:09.027Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":147.58399999998673,"hull":4}}
+{"wall":"2026-11-13T17:42:11.286Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":157.631999999999,"hull":4}}
+{"wall":"2026-11-13T17:42:13.513Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":167.6800000000113,"hull":4}}
+{"wall":"2026-11-13T17:42:15.778Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":177.72800000002357,"hull":4}}
+{"wall":"2026-11-13T17:42:18.030Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":187.77600000003585,"hull":4}}
+{"wall":"2026-11-13T17:42:20.255Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":197.84000000004815,"hull":4}}
+{"wall":"2026-11-13T17:42:22.482Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":207.88800000006043,"hull":4}}
+{"wall":"2026-11-13T17:42:24.767Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":217.9360000000727,"hull":4}}
+{"wall":"2026-11-13T17:42:27.044Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":227.984000000085,"hull":4}}
+{"wall":"2026-11-13T17:42:29.310Z","progress":{"scope":"act-four","index":0,"attempt":1,"phase":"running","time":238.03200000009727,"hull":4}}

@@ -1,0 +1,2157 @@
+{
+  "revision": "identified-return-r8",
+  "bpm": 134,
+  "bars": 40,
+  "origin_seconds": 0.04,
+  "step_seconds": 0.11194029850746269,
+  "bar_seconds": 1.791044776119403,
+  "form_end_seconds": 71.68179104477613,
+  "events": [
+    {
+      "id": "mechanism-answer-00",
+      "instrument": "mechanism",
+      "bar": 4,
+      "step": 6.5,
+      "time": 7.931791044776119,
+      "duration": 0.12,
+      "amp": 0.036,
+      "pan": -0.2,
+      "midi": 53,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "mechanism-answer-01",
+      "instrument": "mechanism",
+      "bar": 8,
+      "step": 10.5,
+      "time": 15.543731343283582,
+      "duration": 0.12,
+      "amp": 0.032,
+      "pan": 0.2,
+      "midi": 60,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "mechanism-response-00-0",
+      "instrument": "mechanism",
+      "bar": 11,
+      "step": 5.5,
+      "time": 20.357164179104476,
+      "duration": 0.14,
+      "amp": 0.025547522449097686,
+      "pan": -0.16,
+      "midi": 60,
+      "response_step": 0,
+      "normalized_gain": 0.412056813695124,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-00-1",
+      "instrument": "mechanism",
+      "bar": 11,
+      "step": 9.5,
+      "time": 20.804925373134328,
+      "duration": 0.14,
+      "amp": 0.062,
+      "pan": 0.08,
+      "midi": 56,
+      "response_step": 2,
+      "normalized_gain": 1.0,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-00-2",
+      "instrument": "mechanism",
+      "bar": 11,
+      "step": 13.5,
+      "time": 21.25268656716418,
+      "duration": 0.14,
+      "amp": 0.02386868417698666,
+      "pan": 0.16,
+      "midi": 53,
+      "response_step": 6,
+      "normalized_gain": 0.3849787770481719,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "harmony-00",
+      "instrument": "harmony",
+      "bar": 12,
+      "step": 0.0,
+      "time": 21.532537313432837,
+      "duration": 4.477611940298508,
+      "amp": 0.045,
+      "pan": -0.13,
+      "cutoff": 1150.0,
+      "notes": [
+        53,
+        56,
+        60,
+        63
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-02",
+      "instrument": "mechanism",
+      "bar": 12,
+      "step": 6.5,
+      "time": 22.260149253731342,
+      "duration": 0.12,
+      "amp": 0.035,
+      "pan": -0.15,
+      "midi": 56,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "harmony-01",
+      "instrument": "harmony",
+      "bar": 16,
+      "step": 0.0,
+      "time": 28.696716417910448,
+      "duration": 4.477611940298508,
+      "amp": 0.048,
+      "pan": 0.13,
+      "cutoff": 1300.0,
+      "notes": [
+        53,
+        56,
+        60,
+        63
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-03",
+      "instrument": "mechanism",
+      "bar": 16,
+      "step": 10.5,
+      "time": 29.872089552238805,
+      "duration": 0.12,
+      "amp": 0.032,
+      "pan": 0.15,
+      "midi": 53,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "mechanism-response-01-0",
+      "instrument": "mechanism",
+      "bar": 19,
+      "step": 5.5,
+      "time": 34.6855223880597,
+      "duration": 0.14,
+      "amp": 0.025547522449097686,
+      "pan": -0.16,
+      "midi": 60,
+      "response_step": 0,
+      "normalized_gain": 0.412056813695124,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-01-1",
+      "instrument": "mechanism",
+      "bar": 19,
+      "step": 9.5,
+      "time": 35.133283582089554,
+      "duration": 0.14,
+      "amp": 0.062,
+      "pan": 0.08,
+      "midi": 56,
+      "response_step": 2,
+      "normalized_gain": 1.0,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-01-2",
+      "instrument": "mechanism",
+      "bar": 19,
+      "step": 13.5,
+      "time": 35.581044776119406,
+      "duration": 0.14,
+      "amp": 0.02386868417698666,
+      "pan": 0.16,
+      "midi": 53,
+      "response_step": 6,
+      "normalized_gain": 0.3849787770481719,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "harmony-02",
+      "instrument": "harmony",
+      "bar": 20,
+      "step": 0.0,
+      "time": 35.86089552238806,
+      "duration": 4.477611940298508,
+      "amp": 0.05,
+      "pan": -0.13,
+      "cutoff": 1450.0,
+      "notes": [
+        56,
+        60,
+        63,
+        65
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-04",
+      "instrument": "mechanism",
+      "bar": 20,
+      "step": 6.5,
+      "time": 36.588507462686565,
+      "duration": 0.12,
+      "amp": 0.036,
+      "pan": -0.2,
+      "midi": 60,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "harmony-03",
+      "instrument": "harmony",
+      "bar": 24,
+      "step": 0.0,
+      "time": 43.025074626865674,
+      "duration": 4.477611940298508,
+      "amp": 0.048,
+      "pan": 0.13,
+      "cutoff": 1600.0,
+      "notes": [
+        56,
+        60,
+        63,
+        65
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-05",
+      "instrument": "mechanism",
+      "bar": 24,
+      "step": 10.5,
+      "time": 44.20044776119403,
+      "duration": 0.12,
+      "amp": 0.032,
+      "pan": 0.2,
+      "midi": 56,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "mechanism-response-02-0",
+      "instrument": "mechanism",
+      "bar": 27,
+      "step": 5.5,
+      "time": 49.013880597014925,
+      "duration": 0.14,
+      "amp": 0.025547522449097686,
+      "pan": -0.16,
+      "midi": 60,
+      "response_step": 0,
+      "normalized_gain": 0.412056813695124,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-02-1",
+      "instrument": "mechanism",
+      "bar": 27,
+      "step": 9.5,
+      "time": 49.46164179104478,
+      "duration": 0.14,
+      "amp": 0.062,
+      "pan": 0.08,
+      "midi": 56,
+      "response_step": 2,
+      "normalized_gain": 1.0,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-02-2",
+      "instrument": "mechanism",
+      "bar": 27,
+      "step": 13.5,
+      "time": 49.90940298507463,
+      "duration": 0.14,
+      "amp": 0.02386868417698666,
+      "pan": 0.16,
+      "midi": 53,
+      "response_step": 6,
+      "normalized_gain": 0.3849787770481719,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "harmony-04",
+      "instrument": "harmony",
+      "bar": 28,
+      "step": 0.0,
+      "time": 50.189253731343285,
+      "duration": 4.477611940298508,
+      "amp": 0.035,
+      "pan": 0.0,
+      "cutoff": 1050.0,
+      "notes": [
+        56,
+        60,
+        63,
+        65
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "harmony-05",
+      "instrument": "harmony",
+      "bar": 32,
+      "step": 0.0,
+      "time": 57.3534328358209,
+      "duration": 4.477611940298508,
+      "amp": 0.05,
+      "pan": -0.13,
+      "cutoff": 1450.0,
+      "notes": [
+        56,
+        60,
+        63,
+        65
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-06",
+      "instrument": "mechanism",
+      "bar": 32,
+      "step": 10.5,
+      "time": 58.52880597014926,
+      "duration": 0.12,
+      "amp": 0.035,
+      "pan": -0.15,
+      "midi": 53,
+      "operation": "sparse interlocking answer"
+    },
+    {
+      "id": "mechanism-response-03-0",
+      "instrument": "mechanism",
+      "bar": 35,
+      "step": 5.5,
+      "time": 63.34223880597015,
+      "duration": 0.14,
+      "amp": 0.025547522449097686,
+      "pan": -0.16,
+      "midi": 60,
+      "response_step": 0,
+      "normalized_gain": 0.412056813695124,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-03-1",
+      "instrument": "mechanism",
+      "bar": 35,
+      "step": 9.5,
+      "time": 63.79,
+      "duration": 0.14,
+      "amp": 0.062,
+      "pan": 0.08,
+      "midi": 56,
+      "response_step": 2,
+      "normalized_gain": 1.0,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "mechanism-response-03-2",
+      "instrument": "mechanism",
+      "bar": 35,
+      "step": 13.5,
+      "time": 64.23776119402986,
+      "duration": 0.14,
+      "amp": 0.02386868417698666,
+      "pan": 0.16,
+      "midi": 53,
+      "response_step": 6,
+      "normalized_gain": 0.3849787770481719,
+      "operation": "bounded transient rise and recovery"
+    },
+    {
+      "id": "harmony-06",
+      "instrument": "harmony",
+      "bar": 36,
+      "step": 0.0,
+      "time": 64.51761194029852,
+      "duration": 4.477611940298508,
+      "amp": 0.047,
+      "pan": 0.13,
+      "cutoff": 1300.0,
+      "notes": [
+        56,
+        60,
+        63,
+        65
+      ],
+      "operation": "pitch-class persistence through a change of voicing"
+    },
+    {
+      "id": "mechanism-answer-07",
+      "instrument": "mechanism",
+      "bar": 36,
+      "step": 6.5,
+      "time": 65.24522388059702,
+      "duration": 0.12,
+      "amp": 0.032,
+      "pan": 0.15,
+      "midi": 60,
+      "operation": "sparse interlocking answer"
+    }
+  ],
+  "gate_events": [
+    {
+      "time": 0.0,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 0.04,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 0.2638805970149254,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 0.48776119402985074,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 0.7116417910447762,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 0.9355223880597016,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 1.159402985074627,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 1.3832835820895524,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 1.6071641791044777,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 1.831044776119403,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 2.0549253731343287,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 2.278805970149254,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 2.5026865671641794,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 2.7265671641791047,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 2.95044776119403,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 3.1743283582089554,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 3.398208955223881,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 3.622089552238806,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 3.8459701492537315,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 4.069850746268657,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 4.293731343283582,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 4.517611940298508,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 4.741492537313433,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 4.965373134328359,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 5.189253731343284,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 5.413134328358209,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 5.637014925373134,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 5.86089552238806,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 6.084776119402985,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 6.308656716417911,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 6.532537313432836,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 6.7564179104477615,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 6.980298507462686,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 7.204179104477612,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 7.428059701492538,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 7.651940298507463,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 7.875820895522389,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 8.099701492537314,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 8.323582089552238,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 8.547462686567163,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 8.77134328358209,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 8.995223880597015,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 9.219104477611939,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 9.442985074626865,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 9.66686567164179,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 9.890746268656716,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 10.11462686567164,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 10.338507462686566,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 10.562388059701492,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 10.786268656716418,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 11.010149253731344,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 11.234029850746268,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 11.457910447761193,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 11.68179104477612,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 11.905671641791045,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 12.129552238805969,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 12.353432835820895,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 12.57731343283582,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 12.801194029850747,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 13.02507462686567,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 13.248955223880596,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 13.472835820895522,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 13.696716417910448,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 13.920597014925372,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 14.144477611940298,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 14.368358208955224,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 14.59223880597015,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 14.816119402985075,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 15.04,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 15.263880597014925,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 15.48776119402985,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 15.711641791044777,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 15.9355223880597,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 16.159402985074628,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 16.38328358208955,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 16.607164179104476,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 16.831044776119402,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 17.054925373134328,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 17.278805970149254,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 17.50268656716418,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 17.726567164179105,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 17.95044776119403,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 18.174328358208957,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 18.39820895522388,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 18.622089552238805,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 18.84597014925373,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 19.069850746268656,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 19.293731343283582,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 19.517611940298508,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 19.741492537313434,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 19.96537313432836,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 20.189253731343282,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 20.413134328358208,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 20.637014925373133,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 20.86089552238806,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 21.084776119402985,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 21.30865671641791,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 21.532537313432837,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 21.756417910447762,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 21.980298507462688,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 22.20417910447761,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 22.428059701492536,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 22.651940298507462,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 22.875820895522388,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 23.099701492537314,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 23.32358208955224,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 23.547462686567165,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 23.77134328358209,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 23.995223880597013,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 24.21910447761194,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 24.442985074626865,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 24.66686567164179,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 24.890746268656716,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 25.114626865671642,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 25.338507462686568,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 25.562388059701494,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 25.78626865671642,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 26.010149253731342,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 26.234029850746268,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 26.457910447761193,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 26.68179104477612,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 26.905671641791045,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 27.12955223880597,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 27.353432835820897,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 27.577313432835822,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 27.801194029850745,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 28.02507462686567,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 28.248955223880596,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 28.472835820895522,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 28.696716417910448,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 28.920597014925374,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 29.1444776119403,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 29.368358208955225,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 29.59223880597015,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 29.816119402985073,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 30.04,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 30.263880597014925,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 30.48776119402985,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 30.711641791044777,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 30.935522388059702,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 31.159402985074628,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 31.383283582089554,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 31.607164179104476,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 31.831044776119402,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 32.05492537313433,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 32.27880597014926,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 32.50268656716418,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 32.7265671641791,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 32.95044776119403,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 33.17432835820895,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 33.39820895522388,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 33.622089552238805,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 33.84597014925373,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 34.069850746268656,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 34.29373134328358,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 34.51761194029851,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 34.741492537313434,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 34.96537313432836,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 35.189253731343285,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 35.41313432835821,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 35.63701492537314,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 35.86089552238806,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 36.08477611940299,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 36.308656716417914,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 36.53253731343283,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 36.75641791044776,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 36.980298507462685,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 37.20417910447761,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 37.428059701492536,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 37.65194029850746,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 37.87582089552239,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 38.099701492537314,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 38.32358208955224,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 38.547462686567165,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 38.77134328358209,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 38.99522388059702,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 39.21910447761194,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 39.44298507462687,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 39.666865671641794,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 39.89074626865672,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 40.114626865671646,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 40.338507462686565,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 40.56238805970149,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 40.786268656716416,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 41.01014925373134,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 41.23402985074627,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 41.45791044776119,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 41.68179104477612,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 41.905671641791045,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 42.12955223880597,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 42.3534328358209,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 42.57731343283582,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 42.80119402985075,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 43.025074626865674,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 43.2489552238806,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 43.472835820895526,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 43.69671641791045,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 43.92059701492538,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 44.144477611940296,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 44.36835820895522,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 44.59223880597015,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 44.81611940298507,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 45.04,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 45.263880597014925,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 45.48776119402985,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 45.71164179104478,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 45.9355223880597,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 46.15940298507463,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 46.383283582089554,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 46.60716417910448,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 46.831044776119406,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 47.05492537313433,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 47.27880597014926,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 47.50268656716418,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 47.72656716417911,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 47.95044776119403,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 48.17432835820895,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 48.39820895522388,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 48.622089552238805,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 48.84597014925373,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 49.069850746268656,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 49.29373134328358,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 49.51761194029851,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 49.741492537313434,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 49.96537313432836,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 50.189253731343285,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 50.41313432835821,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 50.63701492537314,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 50.86089552238806,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 51.08477611940299,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 51.308656716417914,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 51.53253731343284,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 51.75641791044776,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 51.980298507462685,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 52.20417910447761,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 52.428059701492536,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 52.65194029850746,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 52.87582089552239,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 53.099701492537314,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 53.32358208955224,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 53.547462686567165,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 53.77134328358209,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 53.99522388059702,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 54.21910447761194,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 54.44298507462687,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 54.666865671641794,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 54.89074626865672,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 55.114626865671646,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 55.33850746268657,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 55.56238805970149,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 55.786268656716416,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 56.01014925373134,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 56.23402985074627,
+      "level": 1.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 56.45791044776119,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 56.68179104477612,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 56.905671641791045,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 57.12955223880597,
+      "level": 0.0,
+      "order": "gate-room"
+    },
+    {
+      "time": 57.3534328358209,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 57.57731343283582,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 57.80119402985075,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 58.025074626865674,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 58.2489552238806,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 58.472835820895526,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 58.69671641791045,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 58.92059701492538,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 59.1444776119403,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 59.36835820895522,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 59.59223880597015,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 59.81611940298507,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 60.04,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 60.263880597014925,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 60.48776119402985,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 60.71164179104478,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 60.9355223880597,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 61.15940298507463,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 61.383283582089554,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 61.60716417910448,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 61.831044776119406,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 62.05492537313433,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 62.27880597014926,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 62.50268656716418,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 62.72656716417911,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 62.950447761194035,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 63.17432835820895,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 63.39820895522388,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 63.622089552238805,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 63.84597014925373,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 64.06985074626867,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 64.2937313432836,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 64.51761194029852,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 64.74149253731345,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 64.96537313432837,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 65.18925373134329,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 65.41313432835821,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 65.63701492537314,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 65.86089552238806,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 66.08477611940299,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 66.30865671641791,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 66.53253731343284,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 66.75641791044777,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 66.98029850746269,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 67.20417910447762,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 67.42805970149254,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 67.65194029850747,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 67.8758208955224,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 68.09970149253732,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 68.32358208955225,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 68.54746268656717,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 68.7713432835821,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 68.99522388059702,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 69.21910447761195,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 69.44298507462688,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 69.6668656716418,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 69.89074626865673,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 70.11462686567165,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 70.33850746268658,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 70.5623880597015,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 70.78626865671643,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 71.01014925373136,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 71.23402985074628,
+      "level": 1.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 71.45791044776121,
+      "level": 0.0,
+      "order": "room-gate"
+    },
+    {
+      "time": 71.68179104477613,
+      "level": 0.0,
+      "order": "room-gate"
+    }
+  ],
+  "gate_smoothing_seconds": 0.02,
+  "silence_intervals": [
+    {
+      "from_bar": 31.5,
+      "to_bar": 32.0,
+      "from_seconds": 56.45791044776119,
+      "to_seconds": 57.3534328358209
+    }
+  ],
+  "sections": [
+    {
+      "from_bar": 0,
+      "to_bar": 32,
+      "order": "gate-room",
+      "notation": "R(G(x))",
+      "meaning": "The allowed signal leaves a room tail."
+    },
+    {
+      "from_bar": 32,
+      "to_bar": 40,
+      "order": "room-gate",
+      "notation": "G(R(x))",
+      "meaning": "The gate interrupts the room response."
+    }
+  ],
+  "harmony_pitch_classes": [
+    0,
+    3,
+    5,
+    8
+  ],
+  "transient_model": {
+    "matrix": [
+      [
+        0.6,
+        2
+      ],
+      [
+        0,
+        0.6
+      ]
+    ],
+    "initial_state": [
+      0,
+      1
+    ],
+    "trajectory": [
+      {
+        "step": 0,
+        "state": [
+          0.0,
+          1.0
+        ],
+        "norm": 1.0
+      },
+      {
+        "step": 1,
+        "state": [
+          2.0,
+          0.6
+        ],
+        "norm": 2.08806130178211
+      },
+      {
+        "step": 2,
+        "state": [
+          2.4,
+          0.36
+        ],
+        "norm": 2.426849809938802
+      },
+      {
+        "step": 3,
+        "state": [
+          2.16,
+          0.216
+        ],
+        "norm": 2.1707731341621126
+      },
+      {
+        "step": 4,
+        "state": [
+          1.728,
+          0.1296
+        ],
+        "norm": 1.7328531847793684
+      },
+      {
+        "step": 5,
+        "state": [
+          1.2959999999999998,
+          0.07776
+        ],
+        "norm": 1.2983307042506542
+      },
+      {
+        "step": 6,
+        "state": [
+          0.9331199999999998,
+          0.046655999999999996
+        ],
+        "norm": 0.9342856719098285
+      },
+      {
+        "step": 7,
+        "state": [
+          0.6531839999999999,
+          0.027993599999999997
+        ],
+        "norm": 0.6537835876625842
+      },
+      {
+        "step": 8,
+        "state": [
+          0.44789759999999995,
+          0.016796159999999997
+        ],
+        "norm": 0.4482124173609044
+      }
+    ],
+    "selected_steps": [
+      0,
+      2,
+      6
+    ],
+    "normalized_gains": [
+      0.412056813695124,
+      1.0,
+      0.3849787770481719
+    ],
+    "gain_bound": 1.0,
+    "mapping": "Divide selected state norms by the maximum norm in the finite trajectory.",
+    "limit": "This is a bounded musical gain mapping. It is not a model of physical percussion or ship movement."
+  },
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Author the new harmony, percussion, gate, and pan event Patterns. The retained foundation predates this score."
+  },
+  "limits": "Finite offline events. No live FoxDot Clock, gameplay event authority, physical response claim, or listening approval. The native processor must mask all added components during the declared gap."
+}

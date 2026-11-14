@@ -1,0 +1,11 @@
+test_dependency_closure_finds_imports_and_excludes_unreachable_labs (test_release_package.ReleasePackageTests.test_dependency_closure_finds_imports_and_excludes_unreachable_labs) ... ok
+test_hashing_uses_a_stream_and_matches_the_content (test_release_package.ReleasePackageTests.test_hashing_uses_a_stream_and_matches_the_content) ... ok
+test_source_keeps_editable_audio_and_excludes_private_or_recursive_files (test_release_package.ReleasePackageTests.test_source_keeps_editable_audio_and_excludes_private_or_recursive_files) ... ok
+test_verification_rejects_a_corrupt_member (test_release_package.ReleasePackageTests.test_verification_rejects_a_corrupt_member) ... ok
+test_verification_rejects_a_missing_audio_segment_and_wrong_segment_identity (test_release_package.ReleasePackageTests.test_verification_rejects_a_missing_audio_segment_and_wrong_segment_identity) ... ok
+test_verification_rejects_relative_omissions_and_missing_root_entry (test_release_package.ReleasePackageTests.test_verification_rejects_relative_omissions_and_missing_root_entry) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.599s
+
+OK

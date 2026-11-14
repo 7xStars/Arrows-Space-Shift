@@ -1,0 +1,1131 @@
+{
+  "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\campaign-candidate-20261113",
+  "capturedAt": "2026-11-13T12:23:05.9999611-05:00",
+  "files": [
+    {
+      "path": "src\\act3-waves.js",
+      "bytes": 6882,
+      "sha256": "9936b2ffbee45597d233e1b404d485cca27873ad31f8a765bad255102ff55d69"
+    },
+    {
+      "path": "src\\app.js",
+      "bytes": 80635,
+      "sha256": "c72d02a4f3635fda47e9909482a1e77e57107757122bfc7344513e8fec1dc15e"
+    },
+    {
+      "path": "src\\asteroids.js",
+      "bytes": 2315,
+      "sha256": "9b964e1d29b94ce1d6c7a7915c0fb2bc3be5fecc6e553e903d01c36d8dceed22"
+    },
+    {
+      "path": "src\\audio-interface.js",
+      "bytes": 1126,
+      "sha256": "493c570cc9b620ddce473516b9e7f6b255d04b912d01d3a4f873cf8771612bbd"
+    },
+    {
+      "path": "src\\audio.js",
+      "bytes": 21635,
+      "sha256": "92f17910cf06620a014c2147adf95f132737095998c07528b9c5c1d7c708b890"
+    },
+    {
+      "path": "src\\av-events.js",
+      "bytes": 7901,
+      "sha256": "af4a697d6ff7328b2a5d638fa7a39a2f4d0dde33be4c810c3b2c653f8541388c"
+    },
+    {
+      "path": "src\\boss.js",
+      "bytes": 21254,
+      "sha256": "7327dae3fbd22d046e803ffbf61e239f8fc4a91b522b567a44d6a1d8b7c8cbf6"
+    },
+    {
+      "path": "src\\build.js",
+      "bytes": 287,
+      "sha256": "0cf9bd789e87ff8aabc903ccb1ccb4ccd28e7e9e5c2fc7b80ebc83236c7cf664"
+    },
+    {
+      "path": "src\\campaign-recorded-audio.js",
+      "bytes": 13446,
+      "sha256": "91c552befd69bd0bc14d2757c5029b180b99c67b77aab000ed58a325ff7bb350"
+    },
+    {
+      "path": "src\\campaign.js",
+      "bytes": 41317,
+      "sha256": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd"
+    },
+    {
+      "path": "src\\combat-view.js",
+      "bytes": 5910,
+      "sha256": "2cf4573b48b4bd9e2a269f53697a92b4dd57d94ec53618591f95931d7ce8872f"
+    },
+    {
+      "path": "src\\divergent-pulse-app.js",
+      "bytes": 14623,
+      "sha256": "68b0c6ef37bf64ad640a784e1dd5c8b5d073a9d7e201508af9945f89d2d4bfc1"
+    },
+    {
+      "path": "src\\divergent-pulse.js",
+      "bytes": 10082,
+      "sha256": "c9b28418afa5e6c284c0872e2863229a45e4c2153cabedbb8772ed1e9a418262"
+    },
+    {
+      "path": "src\\ecology.js",
+      "bytes": 7287,
+      "sha256": "1fb6f25b758ce8c98fc10e127cf55bea14da16c84cd21626d1f9377cc52759f3"
+    },
+    {
+      "path": "src\\fleet.js",
+      "bytes": 12568,
+      "sha256": "dcdb192d1cfd9db5413dc99753a478da556b23c9e264144c77bbd5da9027cf02"
+    },
+    {
+      "path": "src\\fold-wake.js",
+      "bytes": 3547,
+      "sha256": "f33a2efc2764665bb8da1fca34a10a434db85e5e75931f0b34f4f5d02271cbc5"
+    },
+    {
+      "path": "src\\geometry-cues.js",
+      "bytes": 3469,
+      "sha256": "552edbbae912a8a225e834ca73330f86534f1ed7067580fbf72744e3441db071"
+    },
+    {
+      "path": "src\\hyperbolic-act.js",
+      "bytes": 21048,
+      "sha256": "af1ce0ee12ac447be72f6c5c56181aa4fc1347c2f45aa936718044a323f0fcaf"
+    },
+    {
+      "path": "src\\hyperbolic-campaign.js",
+      "bytes": 24415,
+      "sha256": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432"
+    },
+    {
+      "path": "src\\hyperbolic-lab.js",
+      "bytes": 8341,
+      "sha256": "b3ce1ee0a6c7ce7d23bfd5ba3c06759d6662fbd5dac329e05b11c1a0c8629b4f"
+    },
+    {
+      "path": "src\\hyperbolic-visuals.js",
+      "bytes": 1935,
+      "sha256": "203014b395d6f8a71ecb96ab5370e2b763626a529970098cac0940b87f35ec6c"
+    },
+    {
+      "path": "src\\hyperbolic.js",
+      "bytes": 5993,
+      "sha256": "cf15e8e05f6211e193c3155684150d0eddd2485f32f16faa60bbff538bd33fec"
+    },
+    {
+      "path": "src\\interface.js",
+      "bytes": 19356,
+      "sha256": "fc350f3426ee2db8e6f6255631e8ab3ffe4ff3e288547d887e8ceb20a82ebadb"
+    },
+    {
+      "path": "src\\journey.js",
+      "bytes": 5537,
+      "sha256": "894ecd0eb3ce38c12c50e4f847c534927ab354a8c09f3abb6c81ab7ce04a5d31"
+    },
+    {
+      "path": "src\\klein.js",
+      "bytes": 5364,
+      "sha256": "43f51da4bd51755de981a59d79d3b641da50796e28fa26200ddc87d7d5bcfab8"
+    },
+    {
+      "path": "src\\manifold-visuals.js",
+      "bytes": 4872,
+      "sha256": "fc7bbf95f45bd910cb741667704627820acc95406e4fc01b337bcbd6615220a5"
+    },
+    {
+      "path": "src\\music-library-app.js",
+      "bytes": 14434,
+      "sha256": "0c2590e253ff0ea7ee6cee02327fff7c41a5295cc304936e139d9c13c24e24c9"
+    },
+    {
+      "path": "src\\music.js",
+      "bytes": 6670,
+      "sha256": "149cdd05fe68c1cd93ac614816ce23e278383f23b9c5b142d71388cc057fcba9"
+    },
+    {
+      "path": "src\\operator-lab-app.js",
+      "bytes": 20271,
+      "sha256": "ab54b2856e706041bc3d6ae51a27de6968ed9d4d313ecd2fb81982a64109d703"
+    },
+    {
+      "path": "src\\operator-models.js",
+      "bytes": 10633,
+      "sha256": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2"
+    },
+    {
+      "path": "src\\operator-registry.js",
+      "bytes": 4165,
+      "sha256": "7d4a66a3e1660defaad43a00c882d17693e258cf70373beb213d0dd95c3287ed"
+    },
+    {
+      "path": "src\\pixel-art.js",
+      "bytes": 2173,
+      "sha256": "1bc92e9307be773d1956d46e6097ed54ad57cd1c8e90cd70055eac884b65d73b"
+    },
+    {
+      "path": "src\\playtest-protocol.js",
+      "bytes": 1348,
+      "sha256": "580a39419b4d8a54be6248284bf49783975a087cd4367c977e2973214cb56657"
+    },
+    {
+      "path": "src\\progress-transfer.js",
+      "bytes": 3977,
+      "sha256": "6f80f24a96d3f7e23e2d7bc2cecd767ab003557c5c247165610fe7a4feb9de81"
+    },
+    {
+      "path": "src\\projectile-id.js",
+      "bytes": 293,
+      "sha256": "6a722f82cac18b98a4c7d31830c0d63671b1df710e32fe0ea720831cc209c481"
+    },
+    {
+      "path": "src\\random.js",
+      "bytes": 523,
+      "sha256": "9e58688ee9944d46c86b1b07ff3c9f905bf6d2dce4f3674fd99b5323ce3f1123"
+    },
+    {
+      "path": "src\\renderer.js",
+      "bytes": 59817,
+      "sha256": "93ea451c5b47dc359407b57d9edb51938d4934605e7f0ddb1ed391019bc0d571"
+    },
+    {
+      "path": "src\\repair-app.js",
+      "bytes": 12441,
+      "sha256": "9d1e74fc6fc700ce741374de36c20b335b54156d402fba497cc8a164a50d1bfb"
+    },
+    {
+      "path": "src\\repair.js",
+      "bytes": 6626,
+      "sha256": "8f25a2bf20468b4975e718031a99cbe59308beaff8715ed6ebda37353b4cc03f"
+    },
+    {
+      "path": "src\\simulation.js",
+      "bytes": 40845,
+      "sha256": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63"
+    },
+    {
+      "path": "src\\space.js",
+      "bytes": 3515,
+      "sha256": "289c212b36b1c6a3329895cf126b73bcc6e478c049d9d3339b2179ade4b3e3c5"
+    },
+    {
+      "path": "src\\stage-flow.js",
+      "bytes": 1720,
+      "sha256": "0a12dc5376ca71a360ebf4a1e46796c820a7a45b34e127020a51df503760cfc5"
+    },
+    {
+      "path": "src\\stc-audio.js",
+      "bytes": 24287,
+      "sha256": "cbcdfe037a2b7576b48c0067f07e1a0dbaa4acd0bc393064764054c58a992ad2"
+    },
+    {
+      "path": "src\\stc-score.js",
+      "bytes": 4115,
+      "sha256": "8d98239181139a9166f7a72cfff29c8013833d41978450debc11add2372e84ea"
+    },
+    {
+      "path": "src\\stc-track-player.js",
+      "bytes": 11071,
+      "sha256": "903238dc9d0242e97d235521263386e1b3280c155958ac2b995878c33122c0d3"
+    },
+    {
+      "path": "src\\storage.js",
+      "bytes": 7592,
+      "sha256": "638b2e0ce209cbd56f9e6ee024b90623b8e2e2d95de484ee7c27d6afcd36b66a"
+    },
+    {
+      "path": "src\\structural-feedback.js",
+      "bytes": 2453,
+      "sha256": "ada0f4d71518bf86e1a43dc437356551146c242111d00e2d3dbd8b41030b9e9f"
+    },
+    {
+      "path": "src\\track-review-r8.js",
+      "bytes": 2398,
+      "sha256": "0cb3b7e469066758444e05668736648470cb7f519667176b435ccf8b0da9c990"
+    },
+    {
+      "path": "src\\track-review-r9.js",
+      "bytes": 2441,
+      "sha256": "09a5c66058a48a6cf825ded2291ba5685ddbcd0ee47848eabaed380ff3351f0b"
+    },
+    {
+      "path": "src\\upgrades.js",
+      "bytes": 9958,
+      "sha256": "86b2d3c2b0150c329944dbacfce687944366e2cec71ffaf4d443438749dfa239"
+    },
+    {
+      "path": "src\\waves.js",
+      "bytes": 15349,
+      "sha256": "52d08fb10d9c4e9170b302d56ccdaf0a6036f7b69706c7a5166a69a106d23730"
+    },
+    {
+      "path": "assets\\audio\\stc-title-r6-dry.ogg",
+      "bytes": 1994896,
+      "sha256": "b2b2eb52f4f475c0179f68867992efd77b17b6c147093c1edbac1e84d16e0fb3"
+    },
+    {
+      "path": "assets\\audio\\stc-title-r6-room.ogg",
+      "bytes": 1735456,
+      "sha256": "5c91b34e896d3b50a305c6b9398f5eef868c40918249e7beb321e893c54bf788"
+    },
+    {
+      "path": "assets\\audio\\stc-title-r7-dry.ogg",
+      "bytes": 2044786,
+      "sha256": "c1267bac30a9ddf2b25dd13707bdb71c56dad0fd77acbacb5510ae2cbd0c9194"
+    },
+    {
+      "path": "assets\\audio\\stc-title-r7-room.ogg",
+      "bytes": 1756760,
+      "sha256": "bd216d2de67772e99e4235320028dd2f8050271645c5ab3cee0ce5f12b5d0531"
+    },
+    {
+      "path": "assets\\audio\\stc-title-r9.ogg",
+      "bytes": 1187120,
+      "sha256": "2f2c03664a8c623ef5d6217612725ff62ebde6e67c33a1340174e5b5412db30a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "63b418b319a7e78ab90c749a4723422fd59e85c78480e448df6bddd38b6c9494"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-00-core.ogg",
+      "bytes": 739215,
+      "sha256": "d15c073e3b8b3314088365fe045aa1b9f3eaf9dd4d562694553b6d1cf968911b"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-01-atmosphere.ogg",
+      "bytes": 331026,
+      "sha256": "af180369c01272c5261c6505a01c31f36486d3c61010371fcde7dd5133dff5da"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-01-core.ogg",
+      "bytes": 739303,
+      "sha256": "1e6411995924fe06016eab5321ca8b66ed8974ae81a936aebc90607980c38447"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-02-atmosphere.ogg",
+      "bytes": 414148,
+      "sha256": "31e02c246080fed7fc3ce50f4db24672632aa317caffa3281c37e57008369630"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-02-core.ogg",
+      "bytes": 732816,
+      "sha256": "d295f550378d5a3de9af5ba6a60b9307c827aa36d09bf4f653ccf1a547f29e9e"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-03-atmosphere.ogg",
+      "bytes": 416214,
+      "sha256": "8cd50c55e42c82bcab49ccd725be6b6f0aee27443c90c67f5faf094ce9c0e818"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-03-core.ogg",
+      "bytes": 697244,
+      "sha256": "14facbb8bc106c451c926163ac24194d88d11cefad53da394c604e219856bc52"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-04-atmosphere.ogg",
+      "bytes": 433335,
+      "sha256": "2a647899605b5ed7b2c5af3d8f78a08ebed8c2df56580b2ca41aad65a4f207a7"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-04-core.ogg",
+      "bytes": 705387,
+      "sha256": "a150a801e265786be79126413573b85b3f2df83a43e8012dddea4ee59b4e7a78"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-05-atmosphere.ogg",
+      "bytes": 423999,
+      "sha256": "2b699f945eae6c595b56707d0477ef14c5788bd7c2c72900b3be7274c064a618"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-05-core.ogg",
+      "bytes": 749140,
+      "sha256": "0ed3ce81ad1534743a43706b7e4a157994dc07d42a37ef1cc2fb3cc0e1ddc96d"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-06-atmosphere.ogg",
+      "bytes": 429287,
+      "sha256": "d4ad6cf5709f2f0683627800e816aeb84d45f15b4ccdf97c3a25a62eb9dd0f0a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-06-core.ogg",
+      "bytes": 728633,
+      "sha256": "661a1885bdc61db4853d60ca80113292200c885c88e6868ff7bbc8ce8ed14fa8"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-07-atmosphere.ogg",
+      "bytes": 423966,
+      "sha256": "9810535aa48ebd1881464b4d8e943feac2cc1d7a68c16f59c3bf3eaac6225059"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-07-core.ogg",
+      "bytes": 732752,
+      "sha256": "ab5d179e11b4ab092d14d75bff994cb24ad7ec326ae940d6225dde06d2a402b3"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-08-atmosphere.ogg",
+      "bytes": 427841,
+      "sha256": "879706220833b22dfd65baff8066736e33cdbda465a39a5772e0f4612e939d64"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-08-core.ogg",
+      "bytes": 716514,
+      "sha256": "323638350d482050edd31a076388abbe054e0310a1d11fd085898c60d9dca325"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-09-atmosphere.ogg",
+      "bytes": 343366,
+      "sha256": "4bacc6cf442234721c2758ed69bbe34a10514e47411ef8923dac445123890bda"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act1-03-09-core.ogg",
+      "bytes": 640566,
+      "sha256": "1abadfa1efd9ed39192b777cb1fca43dd736955800e4388b0ff8eba6fc799263"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-00-atmosphere.ogg",
+      "bytes": 6962,
+      "sha256": "74c437549872db71dc40c269a2184d531d66483892dc47f95a95a923bf8cea3a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-00-core.ogg",
+      "bytes": 773651,
+      "sha256": "e9524b6b198c324e1117dc67fcab856aa849251b1a32e53ab6678400f7aa1a7e"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-01-atmosphere.ogg",
+      "bytes": 331257,
+      "sha256": "7693ff12456d487d5360eec391212e07ffd31ff3258b8d16f0fcde654b915afe"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-01-core.ogg",
+      "bytes": 788556,
+      "sha256": "eeb17e857f1479410c1cf2df35cf14b3e81a0db8d520f032105ac9f6f30f3e0a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-02-atmosphere.ogg",
+      "bytes": 450260,
+      "sha256": "3388d75bc6cc6e27cbfb737cf5f52de5526b262238460936334af364a50f2f9d"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-02-core.ogg",
+      "bytes": 785626,
+      "sha256": "ff7e9529ed71f9f0bfc134ca5bba1151b461c6bedf4f24a4ad553860acfb0001"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-03-atmosphere.ogg",
+      "bytes": 469356,
+      "sha256": "9df077a6d588a11e4b0b40dac04c7e2adf56136fc6b0886b401ece7baf2a7c5f"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-03-core.ogg",
+      "bytes": 751602,
+      "sha256": "baa526c00bac21f33dd303d267521006817716586282ba2afc62d96ba57c3141"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-04-atmosphere.ogg",
+      "bytes": 459167,
+      "sha256": "6156180a0e851131a1c47284343d66eb572b8b42d33812e1a2c63e852cbbbc17"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-04-core.ogg",
+      "bytes": 766282,
+      "sha256": "00b1bfb1fc7052bc4f92658493d6c84e87b4fae11e8d086f09cc3c6b4c83c70c"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-05-atmosphere.ogg",
+      "bytes": 446598,
+      "sha256": "df87a695588b9da7d2cd6e811d974905c5c430c5318544f7ff57c58fe3e8773a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-05-core.ogg",
+      "bytes": 728273,
+      "sha256": "1c184c4bc49b0b43987832b54071a036c3c2003f31c1d3c47a78dfa38b90d1d2"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-06-atmosphere.ogg",
+      "bytes": 477431,
+      "sha256": "41506e762b73bcc0dc961d9eda9a43caf2e1f82b40f6ff5e45d673b136f4bbf5"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-06-core.ogg",
+      "bytes": 760131,
+      "sha256": "e0edb7117c98dd44df3d62e7e7f596aceea895380bc7e08fd1a10eaabf8b2cd0"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-07-atmosphere.ogg",
+      "bytes": 425637,
+      "sha256": "08cf49f850aedbbc9e27b4261118856611d70250d01b4029079548c60890793f"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-07-core.ogg",
+      "bytes": 797879,
+      "sha256": "7d559a42a9a6ee4c7f75d841f7140b19d486579f4c1d3abf55cf7c8a35c5b827"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-08-atmosphere.ogg",
+      "bytes": 457638,
+      "sha256": "6f6439fc4a450b471ecea2a77bcb6b27692d163f8fce1c63b0d5baa153114695"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-08-core.ogg",
+      "bytes": 770398,
+      "sha256": "1b06273996e036117ca78344d598b91ae8dd3baf12c2d474175ec6f59fb637c0"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-09-atmosphere.ogg",
+      "bytes": 380908,
+      "sha256": "a8582e70ffb27220f29ef99d781e4499ad1b2f4a4a1ce5cd0bd84d9f6c71d500"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act2-03-09-core.ogg",
+      "bytes": 663390,
+      "sha256": "bbe5097902b649c7877a7619c71bd1bd313d935aa0b3613d474018c348b63f01"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-00-atmosphere.ogg",
+      "bytes": 422129,
+      "sha256": "6f6cb5c5c0b871ede801a29bca41e5620b8e28e7aa373343c24dfa6d6de3c084"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-00-core.ogg",
+      "bytes": 791432,
+      "sha256": "94e1f81fe12ddcbfa8349f9d30b0f6ead98023c2c5b1c82de498d78396715b9f"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-01-atmosphere.ogg",
+      "bytes": 481599,
+      "sha256": "9c3e6155b070689ab12acfcb423a9de575ad0a742a60d8506aee14223ad35cfc"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-01-core.ogg",
+      "bytes": 776056,
+      "sha256": "fe1e1ec82d4666c27139f4c944c5d348c5b434d0e0b83c8e10704c450808f8f2"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-02-atmosphere.ogg",
+      "bytes": 462272,
+      "sha256": "2af8c86f641d469213379d6ac8d1d19bf74ff4684d2358f2e11b636f4c28bc33"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-02-core.ogg",
+      "bytes": 756901,
+      "sha256": "3f02a9fd592e289adc5bcdd62120cf7bc7ffcd2c9df4270cdd4a590a492b46b8"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-03-atmosphere.ogg",
+      "bytes": 476781,
+      "sha256": "8a3b31fdb5357088733d0f9219ea6cfe6fa0d991246cc05abb312e3727cca131"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-03-core.ogg",
+      "bytes": 758319,
+      "sha256": "00e2d5ebcd09a389f3b623c091e867ff76d627dcd7b18913bde7bf963e63d6af"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-04-atmosphere.ogg",
+      "bytes": 472198,
+      "sha256": "fca860e92ab711d8ac1f280ba279602b02bc75fddd2fce1ad6e2404bfc0b35bb"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-04-core.ogg",
+      "bytes": 744898,
+      "sha256": "befc304acd0027dc6667d4e770d8fc597aabb238be0f80a547107c3dfb4249e9"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-05-atmosphere.ogg",
+      "bytes": 480340,
+      "sha256": "35b7df5ba638163c90fb286a5fa7f25b5c5e7d1b8b822625f86363788718a27c"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-05-core.ogg",
+      "bytes": 769867,
+      "sha256": "49b260dc1c9ead8369477c1d48e814756d83739441216a9e8c60e4df715ca5cf"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-06-atmosphere.ogg",
+      "bytes": 472842,
+      "sha256": "c48e5a9ec59ecd7a3c41e9270cee0a7b7c789f405277a7cc4885b131f208771c"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-06-core.ogg",
+      "bytes": 779379,
+      "sha256": "877d327bcce291db7be426620c7781999c38da707c42eda17988fdf533099df6"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-07-atmosphere.ogg",
+      "bytes": 460401,
+      "sha256": "21876b5ff351c233d9f3030abc8beaab8fdd591a8f310aa1e600c8c0b2ad71ec"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-07-core.ogg",
+      "bytes": 777292,
+      "sha256": "872016bcb18a204d0eb2c064e69441bb647d1a89b9bc5a87e63823ec0b1f5221"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-08-atmosphere.ogg",
+      "bytes": 466050,
+      "sha256": "4c222c352c50e3ce4749567a765c3023a44cf386f9e7668374f1061636150fa2"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-08-core.ogg",
+      "bytes": 748997,
+      "sha256": "a458132982b706ed98149441cf3e917b3d81c1047d53540f021ccde31168707e"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-09-atmosphere.ogg",
+      "bytes": 347710,
+      "sha256": "5f34eb602bc82532f21f23785af3a6329bfa7b90e3344a607356e219ed058da7"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act3-03-09-core.ogg",
+      "bytes": 674292,
+      "sha256": "8512a9c5206d2881e800df9bead7d9caecfc7be262cf4146cafa7640c4e653ac"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-00-atmosphere.ogg",
+      "bytes": 444872,
+      "sha256": "0b9100face00f87318baf9fb01ec2714c325ddcae0698211952986ef91adb45a"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-00-core.ogg",
+      "bytes": 725787,
+      "sha256": "e1abb7534c6e8b84f4b7b02df725a637874379a1016fdffa3921299045d2782f"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-01-atmosphere.ogg",
+      "bytes": 474393,
+      "sha256": "b9302e15b985f22b27f8f67ae7a42d05de3e4945f1d202fecb01d2f6cd0ecf13"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-01-core.ogg",
+      "bytes": 733870,
+      "sha256": "001cead98fa2e9a7eed46d8b1662a173dfb6fd4a795d87ad5da1ba0b26e517da"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-02-atmosphere.ogg",
+      "bytes": 466772,
+      "sha256": "d67679aac2a001dcbe25b572e11952acf092bc6df0b9a2fec7f7a4b4d8ac51fb"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-02-core.ogg",
+      "bytes": 700036,
+      "sha256": "7fc084cfbac43d0299b896220aef265e1ad9a0d6edf1bae255715d06b12b7c1c"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-03-atmosphere.ogg",
+      "bytes": 467593,
+      "sha256": "b8fedcc0630b1e30766571fdc4fbfff69806bd378bc812d09dca2328cd6991bc"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-03-core.ogg",
+      "bytes": 687752,
+      "sha256": "ba7f7f3f058df60b6b1f4e095bd8126881eb06bf45b294022b0e1d2cb24a75ad"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-04-atmosphere.ogg",
+      "bytes": 459528,
+      "sha256": "fdcbb53acb7e1b888947c7fe346fb4a35977ee4b01f78ba0b262f79dff202090"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-04-core.ogg",
+      "bytes": 693213,
+      "sha256": "0f0aa4de388b7a424a78ac4cb11e9ad47cba96ab297e57d1ea3d5100341c8b19"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-05-atmosphere.ogg",
+      "bytes": 465441,
+      "sha256": "f157702a5081cf5160bbed6cfcde3069258a8fd10ce42f5de1cd7fdc3fbe254f"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-05-core.ogg",
+      "bytes": 747805,
+      "sha256": "add617a5793366e44f87ecb394a7b7eaa0aadbb1903e05dbadb7169358b91162"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-06-atmosphere.ogg",
+      "bytes": 470781,
+      "sha256": "23823f6742af111d65038d889e2e3bafb550e147d0d78b20ff52567656c44c13"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-06-core.ogg",
+      "bytes": 764884,
+      "sha256": "ac944232e740563e5d5f658e4344411ba374bfa8e9f2efa19c1e4221900fb024"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-07-atmosphere.ogg",
+      "bytes": 463095,
+      "sha256": "334b549efa28d94ce9811c2970379809dba1e6ce94a6a61653614fcff5850333"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-07-core.ogg",
+      "bytes": 715118,
+      "sha256": "adc6c00aea0e196800e4cb69bb0de046473010e55ccac8bd9c5389410d6f185c"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-08-atmosphere.ogg",
+      "bytes": 470233,
+      "sha256": "c503828f3d4e6ff0d39f69ff412a85467a931fc30e129f605413d748cc0f6e3d"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-08-core.ogg",
+      "bytes": 708370,
+      "sha256": "297deee86f2a554d2970f19c6e57452375e47082ba5296d794441263b34087e2"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-09-atmosphere.ogg",
+      "bytes": 362667,
+      "sha256": "294d15026913ec1e8f9672a1a0393dfd48a870d55d61a999975e5096aacbb471"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\act4-03-09-core.ogg",
+      "bytes": 641619,
+      "sha256": "ecd13df99fe6fb8d6c1a4f6017a8ea37642e095a7edf042b8a8f3081a6c0d34e"
+    },
+    {
+      "path": "assets\\audio\\campaign-music-v1\\catalog.json",
+      "bytes": 26941,
+      "sha256": "4818ca94f85205d4068e0b180b1a2d1ea5c79c820e1f23c67b59639ffeda33d6"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-01-atmosphere.ogg",
+      "bytes": 259696,
+      "sha256": "a3eeff1baff0f468509bfa6674ccf03edf08258dec188170f53fb7cd3464895b"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-01-core.ogg",
+      "bytes": 1244647,
+      "sha256": "fc084941f401cd25d340d755c893e222bd12980744123b148a33255199374a2b"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-01-preview.ogg",
+      "bytes": 414964,
+      "sha256": "bb621461d08c59347d6e19c66238f0ce40979cc59e3395b775ed7b830f5305f6"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-01.ogg",
+      "bytes": 1243301,
+      "sha256": "ddc3ec99fe8b48ec8e9ddb23bcd20856e486ab38af194f6ced088c4c6a073c47"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-02-atmosphere.ogg",
+      "bytes": 1466073,
+      "sha256": "b27100dbaa9cef20833645dda05b1ee5ce20a8bf541bbd7c6a390db8a0a6aae6"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-02-core.ogg",
+      "bytes": 2444783,
+      "sha256": "b47fc0ea8070662fa43cb3e700370617bbe8ea375e2186cc45ef56f60e3efdf8"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-02-preview.ogg",
+      "bytes": 422749,
+      "sha256": "8355a66b2d392a90452796071f41843a1311249f8e595bd7b7178caab2b036e2"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-02.ogg",
+      "bytes": 2440907,
+      "sha256": "df69b0d4c931581161c45ec1babe09564dbbb4845ab5ddc4d2c15cf8d5344be0"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-03-atmosphere.ogg",
+      "bytes": 3116093,
+      "sha256": "bf61e47f4fb1d18c7a016948280e610cbffe23434b5b2599b4b5c304bf5d4a3e"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-03-core.ogg",
+      "bytes": 5388789,
+      "sha256": "34409161d4eb85dc268b77447036d3ca06241b6fec9a9e7e99855be0ae45ef4b"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-03-preview.ogg",
+      "bytes": 428195,
+      "sha256": "057177846f6e06433582f21eb3b23df01705f13c6e8890718a10679d01099403"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-03.ogg",
+      "bytes": 5381548,
+      "sha256": "0879b65c80f913b5f258ce6c08de732cc2792897a81cde27a68681ca9efb485f"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-04-atmosphere.ogg",
+      "bytes": 4677770,
+      "sha256": "2ad0eb01dea9e5c8ed8dca32c9253bf3bd93aeae33fafebbee0748a243aa0ec3"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-04-core.ogg",
+      "bytes": 7936283,
+      "sha256": "e3b07d35d850873345872027200f304425b6565cdfc8159e5b2516b577932e70"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-04-preview.ogg",
+      "bytes": 408130,
+      "sha256": "6e716407d267b7a2ba68e06a1c468df645cef04c231d0150cbbaf6c74a0e3326"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act1-04.ogg",
+      "bytes": 7927267,
+      "sha256": "f6c61293b8313b6af6389b11127c0effbef3b14b07ab453ba23a3d615adeb957"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-01-atmosphere.ogg",
+      "bytes": 319035,
+      "sha256": "2f4906202cbacb5c25e98b3a641bab423ba1257c81fad9f12b8cfe4964c53e29"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-01-core.ogg",
+      "bytes": 1307025,
+      "sha256": "255532a096a3ad4754ade2a89c52834e23e9d21e744d535dd326344cfa0d9877"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-01-preview.ogg",
+      "bytes": 438572,
+      "sha256": "e1c3b70cb5118952fa0675825355ad941b5c022c1db9c847a08070ba9c619f4d"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-01.ogg",
+      "bytes": 1306897,
+      "sha256": "f90db835f5739ee8764461115ccfe88be3747c312347828bf1c8c46b15908392"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-02-atmosphere.ogg",
+      "bytes": 1624286,
+      "sha256": "bbc27f779c1c9ce9ac83ff95b88ba20f5b5af5b384d3f52b8290ee6472843a46"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-02-core.ogg",
+      "bytes": 2550538,
+      "sha256": "6faf7f3c85b3a3a8fd1b0bf065655644d27fd2d654f552a24cb8b3a1f6599a88"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-02-preview.ogg",
+      "bytes": 425491,
+      "sha256": "97302354bda8e12a63e36747d2752c0d903c236bda384c44a272572e095d87c0"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-02.ogg",
+      "bytes": 2539980,
+      "sha256": "eb7a067fba756765abf035532c18da36c6b92f05d735abc891e577914b1ae0a0"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-03-atmosphere.ogg",
+      "bytes": 3350105,
+      "sha256": "b11490285584ce5ce16ab004051892b36d5c2e96d15907ce8e92d674ef2dd8a4"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-03-core.ogg",
+      "bytes": 5540266,
+      "sha256": "c378c16f5133886ba9385f0a9ba3a0676102fdc95b52158f40df42298f9b2040"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-03-preview.ogg",
+      "bytes": 453409,
+      "sha256": "75eff8ce4ab0812379a37348cceeb34322d5790d85956a90368ced20f83b116f"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-03.ogg",
+      "bytes": 5538731,
+      "sha256": "5a2dc4a58056e15b916662bec6388245bff30afbd3f20d640ad2081db2b1b260"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-04-atmosphere.ogg",
+      "bytes": 6031927,
+      "sha256": "81c6b790e5f40d0a45302e67577e7ad3a10ab42aff0dd1a2d0b6dd3fbec913e1"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-04-core.ogg",
+      "bytes": 8154352,
+      "sha256": "c0b56ca77a82e31b1196479bfd4110ef4a1cb65f8a74f0bc4a47e86ee61eecba"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-04-preview.ogg",
+      "bytes": 435203,
+      "sha256": "e653e47e3b450fd50f0b67d114f571c7dcb2146274104b3c9042ee265377cac4"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act2-04.ogg",
+      "bytes": 8131486,
+      "sha256": "644807b232387e58323a074a505a76ba7f7a6b262c8cf3b643ead16a00871300"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-01-atmosphere.ogg",
+      "bytes": 393453,
+      "sha256": "b28041f8a3f0bc5472ca0402c9da46a1351b267f4d09a9790b7c79abe4ec5d93"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-01-core.ogg",
+      "bytes": 1286776,
+      "sha256": "c8b14df2a134a44979a2214957a8bd49636e3d3e56c60271c66ebd24a51f8e33"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-01-preview.ogg",
+      "bytes": 426982,
+      "sha256": "88cc4c0e62cabc2e9119403ad70d99342a045db2426525171be081e62bf1bad6"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-01.ogg",
+      "bytes": 1286138,
+      "sha256": "a06de510d6ea7f1c2a743bf55eab010a345d3e5e9afa4f8f12d451e1e9f32daf"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-02-atmosphere.ogg",
+      "bytes": 1654220,
+      "sha256": "18f2609105b18824b8b70627254a284be507809fd439ebdbbf22bf78db1d101c"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-02-core.ogg",
+      "bytes": 2498557,
+      "sha256": "080987464108c759ed0ac73cf4fed1dc60466cbc36cb5587863bf99fef64a8b8"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-02-preview.ogg",
+      "bytes": 440109,
+      "sha256": "04d3756fdc7fff1971733d74b658277313adb261f71c4ea7896d9cb2ee548fe4"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-02.ogg",
+      "bytes": 2481212,
+      "sha256": "23452eb0a930995d809deceb4cf03f7d9f5f13f92df6438473b4f41abc8e97c6"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-03-atmosphere.ogg",
+      "bytes": 3898643,
+      "sha256": "5d06bfc7ad00695eccc21102a2a8347c41769553bfb3f290bf7657a195bf2185"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-03-core.ogg",
+      "bytes": 5603907,
+      "sha256": "618b12af163650da60e1541a3fb97d915024ae05cf37c3a26b2aba028aa85470"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-03-preview.ogg",
+      "bytes": 470819,
+      "sha256": "5d6c2f39ef093ce5e0a183479916d840664fc44e78eb5d6672c9750cc72d6342"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-03.ogg",
+      "bytes": 5610528,
+      "sha256": "f63ee6d4c6c56d0c6322b3b3f9213104839987304f1f9bd977b1b2439043c8cc"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-04-atmosphere.ogg",
+      "bytes": 5987138,
+      "sha256": "19f483790909833cf4eddf1c14e25a4c0a0827e9acc64aec3b94dce36ea5e17f"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-04-core.ogg",
+      "bytes": 8049848,
+      "sha256": "6acc57f637e3da0c3b72097a59ddb9b95f3f08991272c8cd827e6b63e839af1a"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-04-preview.ogg",
+      "bytes": 432303,
+      "sha256": "5dfd9279d98fa100acede4f9218758ede53f0d3f62374fa0235756dbd5115602"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act3-04.ogg",
+      "bytes": 8031923,
+      "sha256": "0d7e19ad48e3a8906c174c4d6187ce6290233e8e26ae191336d42eb691c1d932"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-01-atmosphere.ogg",
+      "bytes": 825296,
+      "sha256": "f441decff907bf944806f0bb6a5316d4acbc35221bdd8440237164d1a69ac7fe"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-01-core.ogg",
+      "bytes": 1243844,
+      "sha256": "349188348ccb80174b4f8e032340d2ca250a2e2530487fe50d0e9234254a16d9"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-01-preview.ogg",
+      "bytes": 416945,
+      "sha256": "e461e4b3a884bf9e70e7ab6faddb6bf16ccac224e11f82bc0df877ebb837d30d"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-01.ogg",
+      "bytes": 1245741,
+      "sha256": "76e7bbc963515497a7c7689defea02185b59ac44f046ab80eaafa3dc1623ad97"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-02-atmosphere.ogg",
+      "bytes": 1805664,
+      "sha256": "93868122e875c782dcb578410e3c4cdd2dbf13452428ce534c64f79628f3a7c8"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-02-core.ogg",
+      "bytes": 2383630,
+      "sha256": "b7666db994969b83170fd55d205eb42c228bdae42435db46beb944b217664338"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-02-preview.ogg",
+      "bytes": 407751,
+      "sha256": "4b8ddfabf4bb4150f20c521828feae1ac244a4ff36c39a789306a073754fb63a"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-02.ogg",
+      "bytes": 2350427,
+      "sha256": "f6ccd9a2d457994364da1451bad4b3216c42e80bb79a60c544f1568f85dde76e"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-03-atmosphere.ogg",
+      "bytes": 3939544,
+      "sha256": "c723d8e2980a45ad952eb549a25522b5317197ee6c5ab4f15d70de0fe427be59"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-03-core.ogg",
+      "bytes": 5291225,
+      "sha256": "05bb9d55ca1a0ce7d867e4eb91d927fe84bb3da21652de6fa6c7aa7d8f455539"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-03-preview.ogg",
+      "bytes": 435639,
+      "sha256": "908a2de95776d98ecfdc903bbb3605dc13a07994c89c58a304fd71d547533fdf"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-03.ogg",
+      "bytes": 5241468,
+      "sha256": "0a273f479c528fb55f483d52c322476270750eade89b7babdc2a347a879dcb1d"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-04-atmosphere.ogg",
+      "bytes": 5888969,
+      "sha256": "b3748c139a0b58101b5fb6dbe7bca9a76a0d192680e7ac54998494b7cb6c7e61"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-04-core.ogg",
+      "bytes": 7753414,
+      "sha256": "30cf8e49bb844ab48654234c0ee5b0a25ba492afe12a97ad9c26fa5c3dd06f2b"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-04-preview.ogg",
+      "bytes": 417775,
+      "sha256": "8e655e26d89c7b9c4b560a181e707d8245bf7ab7d0d7bce52108582cd7998a3d"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\act4-04.ogg",
+      "bytes": 7687599,
+      "sha256": "0171da0bdd49a0ae9e1e962319b1b4f32ace6bc726b02b4b9dfe79f57e93ceec"
+    },
+    {
+      "path": "assets\\audio\\stc-act-library-r1\\catalog.json",
+      "bytes": 61376,
+      "sha256": "49f021e1a14c57fbbd8ee9aba35ed829e65c60539208a5b9825ed87096fbf76b"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\analysis.json",
+      "bytes": 2194,
+      "sha256": "ddcdd3948da515827e23b32c9b3e08cfac66e06b277905e96bb2f85baeef8e21"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\catalog.json",
+      "bytes": 2520,
+      "sha256": "2721ccc7c113d693fef286ee91f0557416c986e1926a847ce25a9bb65f4d2b69"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\constant-gate-room.wav",
+      "bytes": 2304044,
+      "sha256": "3ce68108b34979e26a44f522c4bad29596e2cc8cbafc4f4b80726eaa517bedee"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\drive-filter.wav",
+      "bytes": 2304044,
+      "sha256": "4abdb31d8b7e50841623fc2f2aa103bcc84fca7a18b37be41a3e25f42beb2359"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\dry.wav",
+      "bytes": 2304044,
+      "sha256": "83d133e889411d05432186f627ffa49d55aaecdf1230d0c27a4327bfa84dd269"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\filter-drive.wav",
+      "bytes": 2304044,
+      "sha256": "40dbb30b9676940ddef53b5af4036f1492474ed7ced6e0284d6adbdbfeb8f9ca"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\gate-room.wav",
+      "bytes": 2304044,
+      "sha256": "7c48e0d08d850094b7c064ebac589de9fdcb903f47c780f3cf7cda2e8618fa2e"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\room-constant-gate.wav",
+      "bytes": 2304044,
+      "sha256": "3ce68108b34979e26a44f522c4bad29596e2cc8cbafc4f4b80726eaa517bedee"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\room-gate.wav",
+      "bytes": 2304044,
+      "sha256": "b955031865e027e2ba735c64624898a9471958192b071c122c75bf5dc63b3726"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\transfer-gate-room.wav",
+      "bytes": 2304044,
+      "sha256": "bb6043c33000a312405cbfc71d782db4960a4b1b7bd318d51e6d20a839ef31f3"
+    },
+    {
+      "path": "assets\\audio\\stc-operator-lab-r1\\transfer-room-gate.wav",
+      "bytes": 2304044,
+      "sha256": "173c48b085bfe56ebebedf035f2bcf788b6a956fbab876d2c2287cdf8962e549"
+    },
+    {
+      "path": "divergent-pulse.html",
+      "bytes": 6381,
+      "sha256": "e8d0ad96e53c517c958003c60f0eec992e84651dc45e99e7340d66fcdbce08dd"
+    },
+    {
+      "path": "hyperbolic-act.html",
+      "bytes": 10180,
+      "sha256": "c7e8513f5e35b8a5269fabdbc2486efd9ac48247a96c96706d3c56c8f2bb7c24"
+    },
+    {
+      "path": "hyperbolic-lab.html",
+      "bytes": 3867,
+      "sha256": "3806f6d2ca54aa4990aa3e10aafcb8384927e60fa94da92e27b2df9e4a245dbf"
+    },
+    {
+      "path": "index.html",
+      "bytes": 15189,
+      "sha256": "a31465e508a6faee34f34117865d3318008fa11ac9f00818d01224cfd67b52a8"
+    },
+    {
+      "path": "music-library.html",
+      "bytes": 7892,
+      "sha256": "f710cea364e0f020d28b19fb7d78aa6466e81d6a628615e87ec5fa2d61761e52"
+    },
+    {
+      "path": "operator-lab.html",
+      "bytes": 10072,
+      "sha256": "347571e513b0c680091ee4ab0933d772f3c0988af56ec859eb1ce38501d260d2"
+    },
+    {
+      "path": "package.json",
+      "bytes": 524,
+      "sha256": "4d39d125653b09660e7be252617cfd2509e7811e3416080cfb3c5c9aa4a0fe95"
+    },
+    {
+      "path": "playtest.html",
+      "bytes": 7019,
+      "sha256": "74a15f1dbc34e1448747c65a6c9ef6cc9b95284349ee232341ee827f65e6da42"
+    },
+    {
+      "path": "repair-dock.html",
+      "bytes": 6835,
+      "sha256": "2a4b8f2495bfd5fbbe8a9798a322376cda30b7732f5cb41394dff9e876dad228"
+    },
+    {
+      "path": "style.css",
+      "bytes": 26441,
+      "sha256": "51d9563604e4471c264bf21b338b132b18e0efc61957d6ce5d4690c9d563380c"
+    },
+    {
+      "path": "track-review-r8.html",
+      "bytes": 6366,
+      "sha256": "aa6f15c9c9b9142766be15bcc040bd42e5157864cc1745d211b32d5760d64144"
+    },
+    {
+      "path": "track-review-r9.html",
+      "bytes": 5632,
+      "sha256": "ed8d18a9f4a1633eee516ce7a21f4559cbe8a48efd98737ca3f2c1ff3cbae5ca"
+    }
+  ]
+}

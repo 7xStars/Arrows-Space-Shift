@@ -1,0 +1,31 @@
+<REAPER_PROJECT 0.1 7.0 1
+  SAMPLERATE 48000 1 0
+  <TRACK
+    NAME "Selected stereo take"
+    VOLPAN 1 0 1 -1
+    <ITEM
+      POSITION 0
+      LENGTH 76.641791666667
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      <SOURCE WAVE
+        FILE "dry_take.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "Original room return"
+    VOLPAN 0.3 0 1 -1
+    <ITEM
+      POSITION 0
+      LENGTH 76.641791666667
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      <SOURCE WAVE
+        FILE "room_return.wav"
+      >
+    >
+  >
+>

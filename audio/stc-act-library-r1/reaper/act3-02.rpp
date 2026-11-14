@@ -1,0 +1,30 @@
+<REAPER_PROJECT 0.1 7.0 1
+  SAMPLERATE 48000
+  TEMPO 128
+  <TRACK
+    NAME "core"
+    VOLPAN 1 0 1 -1
+    <ITEM
+      POSITION 0
+      LENGTH 120
+      SOFFS 0
+      VOLPAN 1 0 1 -1
+      <SOURCE VORBIS
+        FILE "../../../assets/audio/stc-act-library-r1/act3-02-core.ogg"
+      >
+    >
+  >
+  <TRACK
+    NAME "atmosphere"
+    VOLPAN 1 0 1 -1
+    <ITEM
+      POSITION 0
+      LENGTH 120
+      SOFFS 0
+      VOLPAN 1 0 1 -1
+      <SOURCE VORBIS
+        FILE "../../../assets/audio/stc-act-library-r1/act3-02-atmosphere.ogg"
+      >
+    >
+  >
+>

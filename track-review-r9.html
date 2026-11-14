@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Identified Return r9 Â· Arrow Space Shift</title>
+<style>
+:root{color-scheme:dark;background:#030709;color:#eee5ce;font:17px/1.55 system-ui,sans-serif}*{box-sizing:border-box}body{max-width:940px;margin:auto;padding:clamp(16px,4vw,40px)}h1{font-size:clamp(30px,6vw,50px);line-height:1.1;margin:12px 0 18px}h2{font-size:23px;margin:0 0 12px}p{max-width:72ch;margin:0 0 16px}a{color:#efce87;text-underline-offset:4px}a,button,select{overflow-wrap:anywhere}button,select{font:inherit;min-height:44px;padding:10px 14px;color:inherit;background:#14242a;border:1px solid #8da89b;border-radius:3px}select{max-width:100%;width:100%}button{cursor:pointer}button:disabled{opacity:.55;cursor:default}:focus-visible{outline:2px solid #efce87;outline-offset:4px}.skip{position:absolute;top:-80px;padding:10px;background:#14242a}.skip:focus{top:8px}.player{margin:28px 0;padding:clamp(16px,4vw,28px);background:#0b1418;border:1px solid #49625c}label{display:block;margin-bottom:10px}audio{display:block;width:100%;margin:18px 0}.controls{display:flex;flex-wrap:wrap;gap:10px}#status{min-height:3.1em;color:#c1cdc4;margin-top:16px}.downloads{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 32px}.downloads a{display:inline-flex;align-items:center;min-height:44px}.table{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:12px 0 24px}th,td{text-align:start;vertical-align:top;padding:12px;border-bottom:1px solid #49625c}th{font-weight:600}.time{font:15px ui-monospace,monospace;white-space:nowrap}.small,footer{font-size:15px;color:#c1cdc4}details{margin:26px 0}summary{cursor:pointer;padding:8px 0}footer{border-top:1px solid #49625c;padding-top:18px}@media(max-width:560px){th,td{padding:9px}.controls button{flex:1 1 100px}h1{font-size:34px}}@media(forced-colors:active){:focus-visible{outline-color:Highlight}}
+@media(max-width:560px){table,tbody,tr,td{display:block}.table{overflow:visible}thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}tr{padding:12px 0;border-bottom:1px solid #49625c}td{border:0;padding:5px 0}.time{color:#c1cdc4}}
+</style>
+<script defer src="src/track-review-r9.js"></script>
+</head>
+<body>
+<a href="#listening" class="skip">Skip to player</a>
+<header><p>Arrow Space Shift / music review r9</p><h1>Identified Return</h1><p>Compare the stronger percussion with the r8 mix. Use the same listening volume for both.</p></header>
+<main id="listening" tabindex="-1">
+<section class="player" aria-labelledby="player-heading">
+<h2 id="player-heading">Listen and compare</h2>
+<label for="track">Track</label>
+<select id="track">
+<optgroup label="Full tracks"><option value="ass-identified-return-r9-music.wav" data-full="true">r9 / stronger percussion</option><option value="r8-control.wav" data-full="true">r8 / previous percussion level</option></optgroup>
+<optgroup label="Short comparisons"><option value="percussion-r9.wav">Percussion response / r9</option><option value="percussion-r8.wav">Percussion response / r8</option><option value="break-return-r9.wav">Break and return / r9</option><option value="break-return-r8.wav">Break and return / r8</option></optgroup>
+<optgroup label="Percussion alone"><option value="mechanical-response.wav" data-full="true" data-start="20">Added percussion / r9</option><option value="r8-percussion-control.wav" data-full="true" data-start="20">Added percussion / r8</option></optgroup>
+</select>
+<audio id="player" controls preload="metadata" aria-label="Selected music track"></audio>
+<div class="controls" aria-label="Full-track positions"><button type="button" data-time="20.3534328358">Response</button><button type="button" data-time="50.1892537313">Break</button><button type="button" data-time="57.3534328358">Return</button></div>
+<p id="status" role="status">Select Play in the audio controls.</p>
+<p class="small">Selecting a track stops playback. The position buttons keep the selected track paused.</p>
+</section>
+<nav class="downloads" aria-label="WAV downloads"><a href="audio/stc-study/foxdot-percussion-r9/ass-identified-return-r9-music.wav" download>Download r9 WAV</a><a href="audio/stc-study/foxdot-percussion-r9/r8-control.wav" download>Download r8 comparison WAV</a><a href="audio/stc-study/foxdot-percussion-r9/percussion-r9.wav" download>Download short r9 comparison</a></nav>
+<section aria-labelledby="changes-heading"><h2 id="changes-heading">One controlled change</h2><p>The added mechanical percussion is 10 dB higher. The harmony, bass movement, original drum timing, and room processing retain their r8 settings.</p><p>Use Response to hear the three-hit pattern before the harmony entry. Use Return to hear the stronger percussion with the full pulse.</p></section>
+<details><summary>Comparison limits</summary><p>The r8 control is an unchanged copy of the track from the previous review. Both versions use a final output gain of 1.</p><p>The short clips use equal source-frame intervals and edge fades. They receive no separate gain adjustment.</p><p>The isolated percussion retains its mix level. These files start near the response so you can compare the gain change.</p><p>The full track includes its ending. It is not a seamless loop. Human listening must determine whether the percussion is distinct enough.</p></details>
+</main>
+<footer><p>No automatic playback. No animation. No campaign save writes.</p><p id="file-note">Keep the complete folder when you extract the review archive.</p></footer>
+</body>
+</html>

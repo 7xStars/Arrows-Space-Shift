@@ -1,0 +1,175 @@
+{
+  "version": "0.25.0-dev.1",
+  "method": "OfflineAudioContext in headless Microsoft Edge. Eight seconds per arrangement with repeated action cues. Master volume 1; default bus gains.",
+  "limits": "PCM peak and finite-sample checks only. Not listening, human comprehension, device playback, or all possible dense mixes.",
+  "results": [
+    {
+      "theme": "traditional",
+      "duration": 8,
+      "peak": 0.20270903408527374,
+      "peakDbfs": -13.862537915537525,
+      "rms": 0.014938473958739875,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 187,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 16,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "klein",
+      "duration": 8,
+      "peak": 0.2027893364429474,
+      "peakDbfs": -13.85909771712371,
+      "rms": 0.015119997484003193,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 213,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 17,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "projective",
+      "duration": 8,
+      "peak": 0.20328660309314728,
+      "peakDbfs": -13.83782482216602,
+      "rms": 0.015069112035422477,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 2,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 214,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 17,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "bolza",
+      "duration": 8,
+      "peak": 0.2031210958957672,
+      "peakDbfs": -13.844899379728774,
+      "rms": 0.014963496781670008,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 1,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 174,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 17,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "recovery",
+      "duration": 8,
+      "peak": 0.2061505764722824,
+      "peakDbfs": -13.716308928299636,
+      "rms": 0.014964545301767163,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 123,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 15,
+        "resumes": 0
+      }
+    },
+    {
+      "theme": "ending",
+      "duration": 8,
+      "peak": 0.20627449452877045,
+      "peakDbfs": -13.711089368816525,
+      "rms": 0.014961004662384522,
+      "nonFinite": 0,
+      "clipped": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "voices": 2,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "admitted": 126,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 15,
+        "resumes": 0
+      }
+    }
+  ]
+}

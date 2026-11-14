@@ -1,0 +1,94 @@
+{
+  "revision": "stc-tempo-r2",
+  "mix_revision": "r2b",
+  "archives": [
+    {
+      "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\Arrow-Space-Shift-STC-Tempo-r2b-WAV.zip",
+      "bytes": 160444870,
+      "sha256": "269c929d99077d8693274c890b27e5e342bb9717032a33f09cdbeda395d5a210",
+      "files": 9,
+      "crc": "passed"
+    },
+    {
+      "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\Arrow-Space-Shift-STC-Tempo-r2b-SOURCE.zip",
+      "bytes": 493312806,
+      "sha256": "45ddede6dffbd5fccc42023054f5c5b90344b97d1d590b89bb1d9427134b3dc5",
+      "files": 214,
+      "crc": "passed"
+    }
+  ],
+  "masters": [
+    {
+      "id": "tempo-act1-01",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act1-01.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act1-01.wav",
+      "bytes": 23040044,
+      "sha256": "6d2ffce7da8fdcdc151d0b67d37d1805b5f3168ee45aca704c157af0ac85f4be"
+    },
+    {
+      "id": "tempo-act1-02",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act1-02.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act1-02.wav",
+      "bytes": 23040044,
+      "sha256": "ec04cc1795debe752146d7c1697a6a59d10b1f04ca837d9a067ea1764f39fa8c"
+    },
+    {
+      "id": "tempo-act1-03",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act1-03.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act1-03.wav",
+      "bytes": 23040044,
+      "sha256": "e1e1a2c99ab7d00bd41e6950c94720bb38105dc8ff92c698eb4b17e9e1562a5a"
+    },
+    {
+      "id": "tempo-act2-01",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act2-01.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act2-01.wav",
+      "bytes": 23040044,
+      "sha256": "d6975a57f1b1d1f59939ccf7d925b102cf8dfe787dabd314368a8bb2ded8f4ff"
+    },
+    {
+      "id": "tempo-act2-02",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act2-02.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act2-02.wav",
+      "bytes": 23040044,
+      "sha256": "d9886f50b0e56c03968ef04ea0aea42cbbd641c8d114a40f8f725c57a17b170d"
+    },
+    {
+      "id": "tempo-act3-01",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act3-01.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act3-01.wav",
+      "bytes": 23040044,
+      "sha256": "23fc013ead470dab02bff86f59f837b7d8974738431b8db746a5d30f36a5596b"
+    },
+    {
+      "id": "tempo-act3-02",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act3-02.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act3-02.wav",
+      "bytes": 23040044,
+      "sha256": "bc9f1fe2e5b1d46755298dd33bb5b63bd252124cb0d35949ba142384c5c7c7b6"
+    },
+    {
+      "id": "tempo-act4-01",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act4-01.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act4-01.wav",
+      "bytes": 23040044,
+      "sha256": "51bf4781a5c477430f207c6256b857b17fba2d77c46354435666f7a77713e90f"
+    },
+    {
+      "id": "tempo-act4-02",
+      "group": "masters",
+      "source": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\masters\\tempo-act4-02.wav",
+      "archive_file": "audio/stc-tempo-r2/masters/tempo-act4-02.wav",
+      "bytes": 23040044,
+      "sha256": "d609838c46683f2e07edfd490a5c09addfdaffde877b6a064876e9cd2aea6de8"
+    }
+  ]
+}

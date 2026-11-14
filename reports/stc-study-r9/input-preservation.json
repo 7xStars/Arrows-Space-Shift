@@ -1,0 +1,65 @@
+{
+  "revision": "identified-return-r9-input-preservation",
+  "status": "passed",
+  "source_wavs": [
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "sha256": "f9dec019ac909847619e18fd51f57e1dda99f4703b3ae60f5d75a12ba4c0d818",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "sha256": "d3d59599012a956c5c0a62c1f3a286e3589ae75577f4732777469bd50bfbf561",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/harmony-direct.wav",
+      "sha256": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/mechanical-response.wav",
+      "sha256": "f1f05841aa439e57480d6d34e99d3cfa72ea470a7e41338433bb6d1b50884599",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/gate-room-proof.wav",
+      "sha256": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29",
+      "bytes": 14715268
+    },
+    {
+      "file": "audio/stc-study/foxdot-operator-r8/room-gate-proof.wav",
+      "sha256": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f",
+      "bytes": 14715268
+    },
+    {
+      "file": "reports/stc-study-r5/ass-identified-return-r5-stereo-music.wav",
+      "sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841",
+      "bytes": 14139268
+    },
+    {
+      "file": "audio/stc-study/foxdot-bass-r7/room_mix.wav",
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "bytes": 14715268
+    }
+  ],
+  "r8_archives": [
+    {
+      "file": "releases/stc-study-r8/Arrow-Space-Shift-Identified-Return-r8-REVIEW.zip",
+      "sha256": "a4dabd527a57979dc76d1e2d92b7f1335e79d6f6a84e48e5ddffbade7aa192a3",
+      "bytes": 52928183
+    },
+    {
+      "file": "releases/stc-study-r8/Arrow-Space-Shift-Identified-Return-r8-SOURCE.zip",
+      "sha256": "5b61c6e045bafeb9cc28764ace29b194b6503a5381d2426daa7ff4510e2c5daa",
+      "bytes": 109021830
+    }
+  ],
+  "limits": "File identity only. No new musical approval.",
+  "post_render_check": "Passed after the final r9 native render and 58-test production suite."
+}

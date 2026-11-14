@@ -1,0 +1,1052 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-stc-operator-lab-r1\\play-2833d20f08cd",
+  "results": [
+    "Startup is muted and creates no automatic audio playback",
+    "The laboratory retains ten explicitly scoped grammar families",
+    "Response, Sound, and Reduced motion have native accessible names",
+    "Elastic response exposes its distinct measured overshoot",
+    "Settled response retains zero overshoot and a shorter measured settling interval",
+    "Keyboard input starts the response",
+    "The visible pause control retains the response time",
+    "Reduced motion shows the static result and retains the response samples",
+    "The coupled response states its measured transient peak and eventual decay",
+    "The operator-step axis label remains inside its chart",
+    "Matrix outputs stay hidden before the first prediction",
+    "A repeated matrix answer cannot replace the first answer",
+    "The unfamiliar matrix input restores the prediction prompt",
+    "The matrix transfer uses a new input and retains its answer",
+    "Equal zero-input outputs do not imply that the operators commute",
+    "Section navigation moves focus to the selected heading",
+    "A muted Play request leaves the media stopped",
+    "The Sound control updates both native mute and visible status",
+    "The gate case hides its order labels before prediction",
+    "Native result gate A starts the catalog file",
+    "Native result gate B starts the catalog file",
+    "Listening to gate does not disclose its order labels",
+    "The gate audio comparison retains the first prediction",
+    "The gate disclosure shows only its applicable chart",
+    "The transfer case hides its order labels before prediction",
+    "Native result transfer A starts the catalog file",
+    "Native result transfer B starts the catalog file",
+    "Listening to transfer does not disclose its order labels",
+    "The transfer audio comparison retains the first prediction",
+    "The transfer disclosure shows only its applicable chart",
+    "The constant case hides its order labels before prediction",
+    "The constant-gain answer is not printed before the prediction",
+    "Native result constant A starts the catalog file",
+    "Native result constant B starts the catalog file",
+    "Listening to constant does not disclose its order labels",
+    "The constant audio comparison retains the first prediction",
+    "The constant disclosure shows only its applicable chart",
+    "The drive case hides its order labels before prediction",
+    "Native result drive A starts the catalog file",
+    "Native result drive B starts the catalog file",
+    "Listening to drive does not disclose its order labels",
+    "The drive audio comparison retains the first prediction",
+    "The drive disclosure shows only its applicable chart",
+    "Muting stops playback and updates the native media state",
+    "Section replacement pauses and rewinds the one media element",
+    "The audio status remains correct after returning to the Sound section",
+    "Space forecasts stay hidden until a prediction",
+    "The first space prediction remains retained after a second choice",
+    "The forecast uses a hollow mark after prediction",
+    "The actual Klein crossing retains P-01 and reverses the vertical heading",
+    "Actual segments remain split at the identified edge",
+    "The changed start hides the earlier forecast",
+    "Klein transfer Start B produces the opposite returned heading",
+    "The Projective Module chart retains its explicit prototype limit",
+    "The prototype top crossing retains the object and reverses its horizontal heading",
+    "Prototype transfer Start B returns the opposite horizontal heading",
+    "The laboratory keeps one object representation and adds no campaign runtime",
+    "Actual crossing records remain available after motion is reduced",
+    "The motion section retains content at 320 pixels",
+    "The sound section retains content at 320 pixels",
+    "The space section retains content at 320 pixels",
+    "RTL layout retains content without horizontal overflow",
+    "Text at 200 percent retains section controls and reflow",
+    "Native export retains all eleven first answers and ordered laboratory events",
+    "The laboratory does not write campaign or preference storage",
+    "The normal browser flow has no runtime exception or missing asset",
+    "The browser motion preference selects the static response on startup",
+    "The grammar keeps the constant-gain answer hidden before a prediction",
+    "A first answer records prior access to the operator grammar",
+    "Rapid Play A, Play B, and section changes retain the stopped audio status",
+    "A controlled audio-file failure preserves the visual laboratory",
+    "A normal Play request recovers after the controlled file failure"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "input": "Ordinary native controls and keyboard input, with read-only model records.",
+  "limits": "Local headless Microsoft Edge. No human recognition, listening approval, screen-reader, physical-device, physical audio latency, or performance result.",
+  "sourceIdentity": {
+    "operator-lab.html": "9e61a128471177f9773eaa5ba86d14e2159eb00976432329a62defa0f8bd0326",
+    "src/operator-lab-app.js": "ab54b2856e706041bc3d6ae51a27de6968ed9d4d313ecd2fb81982a64109d703",
+    "src/operator-models.js": "e1c4c6c3d637fc66da8edd695bfbaed9f1abb5cd4f6097ee59d3bc26f1f5e6e2",
+    "src/operator-registry.js": "7d4a66a3e1660defaad43a00c882d17693e258cf70373beb213d0dd95c3287ed"
+  },
+  "browserVersion": "157.0.4341.46",
+  "matrixRecords": [
+    {
+      "key": "matrix:a",
+      "choice": "same",
+      "expected": "different",
+      "correct": false,
+      "context": {
+        "input": [
+          1,
+          0.5
+        ],
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0.5,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:b",
+      "choice": "different",
+      "expected": "different",
+      "correct": true,
+      "context": {
+        "input": [
+          -0.25,
+          0.9
+        ],
+        "first": [
+          0,
+          -0.25
+        ],
+        "second": [
+          0.9,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    },
+    {
+      "key": "matrix:c",
+      "choice": "same",
+      "expected": "same",
+      "correct": true,
+      "context": {
+        "input": [
+          0,
+          0
+        ],
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "grammarOpened": false
+      },
+      "first": true
+    }
+  ],
+  "currentAudioProbe": {
+    "case": "drive",
+    "id": "drive-filter",
+    "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+    "duration": 12,
+    "currentTime": 0.053392,
+    "paused": false,
+    "muted": false,
+    "readyState": 4,
+    "networkState": 1,
+    "error": null
+  },
+  "soundRecords": [
+    {
+      "case": "gate",
+      "id": "gate-room",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/gate-room.wav",
+      "duration": 12,
+      "currentTime": 0.060896,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "gate",
+      "id": "room-gate",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-gate.wav",
+      "duration": 12,
+      "currentTime": 0.050124,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "transfer",
+      "id": "transfer-room-gate",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-room-gate.wav",
+      "duration": 12,
+      "currentTime": 0.053072,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "transfer",
+      "id": "transfer-gate-room",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-gate-room.wav",
+      "duration": 12,
+      "currentTime": 0.053475,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "constant",
+      "id": "constant-gate-room",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/constant-gate-room.wav",
+      "duration": 12,
+      "currentTime": 0.052904,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "constant",
+      "id": "room-constant-gate",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-constant-gate.wav",
+      "duration": 12,
+      "currentTime": 0.054862,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "drive",
+      "id": "filter-drive",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "duration": 12,
+      "currentTime": 0.05292,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    },
+    {
+      "case": "drive",
+      "id": "drive-filter",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+      "duration": 12,
+      "currentTime": 0.053392,
+      "paused": false,
+      "muted": false,
+      "readyState": 4,
+      "networkState": 1,
+      "error": null
+    }
+  ],
+  "export": {
+    "revision": "stc-operator-lab-r1",
+    "records": [
+      {
+        "key": "matrix:a",
+        "choice": "same",
+        "expected": "different",
+        "correct": false,
+        "context": {
+          "input": [
+            1,
+            0.5
+          ],
+          "first": [
+            0,
+            1
+          ],
+          "second": [
+            0.5,
+            0
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "matrix:b",
+        "choice": "different",
+        "expected": "different",
+        "correct": true,
+        "context": {
+          "input": [
+            -0.25,
+            0.9
+          ],
+          "first": [
+            0,
+            -0.25
+          ],
+          "second": [
+            0.9,
+            0
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "matrix:c",
+        "choice": "same",
+        "expected": "same",
+        "correct": true,
+        "context": {
+          "input": [
+            0,
+            0
+          ],
+          "first": [
+            0,
+            0
+          ],
+          "second": [
+            0,
+            0
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "sound:gate",
+        "choice": "b",
+        "expected": "a",
+        "correct": false,
+        "context": {
+          "ids": [
+            "gate-room",
+            "room-gate"
+          ],
+          "question": "Which result keeps a room tail during a closed-gate interval?",
+          "labels": [
+            "Result A",
+            "Result B"
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "sound:transfer",
+        "choice": "b",
+        "expected": "b",
+        "correct": true,
+        "context": {
+          "ids": [
+            "transfer-room-gate",
+            "transfer-gate-room"
+          ],
+          "question": "The gate phase changed. Which result keeps a room tail during a closed interval?",
+          "labels": [
+            "Result A",
+            "Result B"
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "sound:constant",
+        "choice": "a",
+        "expected": "a",
+        "correct": true,
+        "context": {
+          "ids": [
+            "constant-gate-room",
+            "room-constant-gate"
+          ],
+          "question": "Will these two orders give equal outputs?",
+          "labels": [
+            "Equal outputs",
+            "Different outputs"
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "sound:drive",
+        "choice": "b",
+        "expected": "b",
+        "correct": true,
+        "context": {
+          "ids": [
+            "filter-drive",
+            "drive-filter"
+          ],
+          "question": "Will these filter and saturation paths give equal outputs?",
+          "labels": [
+            "Equal outputs",
+            "Different outputs"
+          ],
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "space:klein:a",
+        "choice": "second",
+        "expected": "first",
+        "correct": false,
+        "context": {
+          "source": {
+            "id": "P-01",
+            "x": 0.76,
+            "y": 0.28,
+            "vx": 0.55,
+            "vy": 0.2
+          },
+          "destination": {
+            "id": "P-01",
+            "x": -0.6349999999999999,
+            "y": -0.5000000000000001,
+            "vx": 0.55,
+            "vy": -0.2,
+            "heading": {
+              "x": 0.939793423488437,
+              "y": -0.3417430630867043
+            }
+          },
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "space:klein:b",
+        "choice": "second",
+        "expected": "second",
+        "correct": true,
+        "context": {
+          "source": {
+            "id": "P-01",
+            "x": 0.76,
+            "y": -0.35,
+            "vx": 0.55,
+            "vy": -0.2
+          },
+          "destination": {
+            "id": "P-01",
+            "x": -0.6349999999999999,
+            "y": 0.5700000000000001,
+            "vx": 0.55,
+            "vy": 0.2,
+            "heading": {
+              "x": 0.939793423488437,
+              "y": 0.3417430630867043
+            }
+          },
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "space:projective:a",
+        "choice": "first",
+        "expected": "first",
+        "correct": true,
+        "context": {
+          "source": {
+            "id": "P-01",
+            "x": 0.3,
+            "y": 0.79,
+            "vx": 0.18,
+            "vy": 0.55
+          },
+          "destination": {
+            "id": "P-01",
+            "x": -0.498,
+            "y": -0.605,
+            "vx": -0.18,
+            "vy": 0.55,
+            "heading": {
+              "x": -0.3110390604146254,
+              "y": 0.9503971290446889
+            }
+          },
+          "grammarOpened": false
+        },
+        "first": true
+      },
+      {
+        "key": "space:projective:b",
+        "choice": "second",
+        "expected": "second",
+        "correct": true,
+        "context": {
+          "source": {
+            "id": "P-01",
+            "x": -0.3,
+            "y": 0.79,
+            "vx": -0.18,
+            "vy": 0.55
+          },
+          "destination": {
+            "id": "P-01",
+            "x": 0.498,
+            "y": -0.605,
+            "vx": 0.18,
+            "vy": 0.55,
+            "heading": {
+              "x": 0.3110390604146254,
+              "y": 0.9503971290446889
+            }
+          },
+          "grammarOpened": false
+        },
+        "first": true
+      }
+    ],
+    "events": [
+      {
+        "profile": "settled",
+        "id": 1,
+        "type": "motion-step",
+        "scope": "operator-lab"
+      },
+      {
+        "profile": "settled",
+        "id": 2,
+        "type": "motion-step",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "matrix:a",
+        "choice": "same",
+        "id": 3,
+        "type": "matrix-result",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "matrix:a",
+        "choice": "same",
+        "id": 4,
+        "type": "matrix-result",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "matrix:b",
+        "choice": "different",
+        "id": 5,
+        "type": "matrix-result",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "matrix:c",
+        "choice": "same",
+        "id": 6,
+        "type": "matrix-result",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "sound",
+        "id": 7,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "gate-room",
+        "id": 8,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "room-gate",
+        "id": 9,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "sound:gate",
+        "choice": "b",
+        "id": 10,
+        "type": "sound-result",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "sound:gate",
+        "choice": "b",
+        "id": 11,
+        "type": "sound-result",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "transfer-room-gate",
+        "id": 12,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "transfer-gate-room",
+        "id": 13,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "sound:transfer",
+        "choice": "b",
+        "id": 14,
+        "type": "sound-result",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "constant-gate-room",
+        "id": 15,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "room-constant-gate",
+        "id": 16,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "sound:constant",
+        "choice": "a",
+        "id": 17,
+        "type": "sound-result",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "filter-drive",
+        "id": 18,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "clip": "drive-filter",
+        "id": 19,
+        "type": "audio-play",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "sound:drive",
+        "choice": "b",
+        "id": 20,
+        "type": "sound-result",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "space",
+        "id": 21,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "sound",
+        "id": 22,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "space",
+        "id": 23,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "space:klein:a",
+        "choice": "second",
+        "kernel": "traceKlein",
+        "id": 24,
+        "type": "space-prediction",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "space:klein:a",
+        "choice": "second",
+        "kernel": "traceKlein",
+        "id": 25,
+        "type": "space-prediction",
+        "scope": "operator-lab"
+      },
+      {
+        "edge": "right",
+        "x": -1,
+        "y": -0.3672727272727273,
+        "time": 0.17746325530755389,
+        "rule": "klein",
+        "objectId": "P-01",
+        "predicted": false,
+        "from": {
+          "x": 1,
+          "y": 0.3672727272727273
+        },
+        "to": {
+          "x": -1,
+          "y": -0.3672727272727273
+        },
+        "source": {
+          "x": 1,
+          "y": 0.3672727272727273
+        },
+        "destination": {
+          "x": -1,
+          "y": -0.3672727272727273
+        },
+        "id": 26,
+        "type": "actual-crossing",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "space:klein:b",
+        "choice": "second",
+        "kernel": "traceKlein",
+        "id": 27,
+        "type": "space-prediction",
+        "scope": "operator-lab"
+      },
+      {
+        "edge": "right",
+        "x": -1,
+        "y": 0.43727272727272726,
+        "time": 0.39669421487603296,
+        "rule": "klein",
+        "objectId": "P-01",
+        "predicted": false,
+        "from": {
+          "x": 1,
+          "y": -0.43727272727272726
+        },
+        "to": {
+          "x": -1,
+          "y": 0.43727272727272726
+        },
+        "source": {
+          "x": 1,
+          "y": -0.43727272727272726
+        },
+        "destination": {
+          "x": -1,
+          "y": 0.43727272727272726
+        },
+        "id": 28,
+        "type": "actual-crossing",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "space:projective:a",
+        "choice": "first",
+        "kernel": "traceProjectiveSurface",
+        "id": 29,
+        "type": "space-prediction",
+        "scope": "operator-lab"
+      },
+      {
+        "edge": "top",
+        "rule": "projective",
+        "x": -0.3687272727272727,
+        "y": -1,
+        "time": 0.3471074380165288,
+        "objectId": "P-01",
+        "predicted": false,
+        "from": {
+          "x": 0.3687272727272727,
+          "y": 1
+        },
+        "to": {
+          "x": -0.3687272727272727,
+          "y": -1
+        },
+        "source": {
+          "x": 0.3687272727272727,
+          "y": 1
+        },
+        "destination": {
+          "x": -0.3687272727272727,
+          "y": -1
+        },
+        "id": 30,
+        "type": "actual-crossing",
+        "scope": "operator-lab"
+      },
+      {
+        "key": "space:projective:b",
+        "choice": "second",
+        "kernel": "traceProjectiveSurface",
+        "id": 31,
+        "type": "space-prediction",
+        "scope": "operator-lab"
+      },
+      {
+        "edge": "top",
+        "rule": "projective",
+        "x": 0.3687272727272727,
+        "y": -1,
+        "time": 0.3471074380165288,
+        "objectId": "P-01",
+        "predicted": false,
+        "from": {
+          "x": -0.3687272727272727,
+          "y": 1
+        },
+        "to": {
+          "x": 0.3687272727272727,
+          "y": -1
+        },
+        "source": {
+          "x": -0.3687272727272727,
+          "y": 1
+        },
+        "destination": {
+          "x": 0.3687272727272727,
+          "y": -1
+        },
+        "id": 32,
+        "type": "actual-crossing",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "motion",
+        "id": 33,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "sound",
+        "id": 34,
+        "type": "panel",
+        "scope": "operator-lab"
+      },
+      {
+        "panelId": "space",
+        "id": 35,
+        "type": "panel",
+        "scope": "operator-lab"
+      }
+    ],
+    "reducedMotion": true,
+    "scope": "Laboratory observations. No human recognition claim."
+  },
+  "storage": {
+    "unchanged": true,
+    "writes": []
+  },
+  "assistance": [
+    {
+      "key": "sound:constant",
+      "choice": "a",
+      "expected": "a",
+      "correct": true,
+      "context": {
+        "ids": [
+          "constant-gate-room",
+          "room-constant-gate"
+        ],
+        "question": "Will these two orders give equal outputs?",
+        "labels": [
+          "Equal outputs",
+          "Different outputs"
+        ],
+        "grammarOpened": true
+      },
+      "first": true
+    }
+  ],
+  "rapidAudio": {
+    "state": {
+      "ready": true,
+      "analysisReady": true,
+      "paused": true,
+      "muted": false,
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-gate.wav",
+      "currentTime": 0,
+      "duration": 12,
+      "clipIds": [
+        "gate-room",
+        "room-gate"
+      ]
+    },
+    "status": "Sound stopped.",
+    "errors": []
+  },
+  "controlledFailure": {
+    "status": 503,
+    "errors": []
+  },
+  "mediaCalls": [
+    {
+      "method": "pause",
+      "src": "",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "",
+      "time": 0
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/gate-room.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/gate-room.wav",
+      "time": 0.092636
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/gate-room.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-gate.wav",
+      "time": 0.123804
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-gate.wav",
+      "time": 0
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-gate.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-room-gate.wav",
+      "time": 0.08552
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-room-gate.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-gate-room.wav",
+      "time": 0.095082
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-gate-room.wav",
+      "time": 0
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/transfer-gate-room.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/constant-gate-room.wav",
+      "time": 0.085201
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/constant-gate-room.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-constant-gate.wav",
+      "time": 0.095309
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-constant-gate.wav",
+      "time": 0
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/room-constant-gate.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0.08562
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+      "time": 0.119102
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+      "time": 0
+    },
+    {
+      "method": "play",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/drive-filter.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    },
+    {
+      "method": "pause",
+      "src": "http://127.0.0.1:3955/assets/audio/stc-operator-lab-r1/filter-drive.wav",
+      "time": 0
+    }
+  ],
+  "url": "http://127.0.0.1:3955/",
+  "checks": 72
+}

@@ -1,0 +1,4911 @@
+{
+  "method": "Headless Edge, fresh browser storage, real keyboard input for tutorial and Level 1. A separate existing asteroid fixture uses the QA simulation advance control to check the clear result. It is not a full campaign playthrough.",
+  "results": [
+    "Normal entry has no scenario controls",
+    "Enemy is present before the first shot",
+    "One living enemy remains during compressed fire",
+    "Held Space produces shots during the unfold step",
+    "A player shot crosses the actual fold",
+    "Unfold preserves target identity and health",
+    "Unfold preserves active player shots",
+    "Normal combat reaches Level 1",
+    "Automatic campaign folds remain active",
+    "Route HUD exposes saved time",
+    "Route fixture earns one actual speed bonus",
+    "Clear result displays speed grade and points"
+  ],
+  "states": {
+    "beforeFire": {
+      "phase": "running",
+      "mode": "campaign",
+      "runSeed": 3841412654,
+      "x": 72,
+      "z": 0,
+      "time": 0.6333333333333335,
+      "hull": 5,
+      "score": 0,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 0,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [],
+        "completedChapters": [],
+        "stageRecords": {},
+        "runHistory": []
+      },
+      "lateralVelocity": 360,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 11.49951050663367,
+        "faults": 0,
+        "attempts": 0
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": -1,
+        "defeated": 0,
+        "asteroidsBroken": 0,
+        "enemySerial": 1,
+        "startedAt": 0,
+        "wraps": 0,
+        "routeReached": false,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 0,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 0,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "movement": {
+          "left": 78,
+          "right": 24
+        },
+        "lesson": "shoot",
+        "training": {
+          "shot": false,
+          "folded": false,
+          "unfolded": false,
+          "enemySpawned": true,
+          "completeAt": null
+        },
+        "checkpoint": {
+          "inventory": [],
+          "equipped": [
+            null,
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 0,
+          "projective": null
+        },
+        "chapter": {
+          "kind": "tutorial",
+          "number": 0,
+          "name": "Flight controls",
+          "stage": 0,
+          "goal": "Destroy the training enemy. Fold distance to attack faster.",
+          "hint": "Left / Right steer. Hold Space. Left Shift folds; Right Shift unfolds. Both sides’ shots accelerate in folded space."
+        },
+        "elapsed": 0.6333333333333335
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-movement-complete"
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-enemy-spawned",
+          "target": 1
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "enemy-presented",
+          "target": 1,
+          "x": 0,
+          "z": 620
+        }
+      ],
+      "fields": [],
+      "localFactor": 1,
+      "thrust": 0,
+      "shotCount": 0,
+      "enemyShotCount": 0,
+      "foldsUsed": 0,
+      "lastEvent": "Hold Space. Left Shift folds distance.",
+      "upgrade": null,
+      "warpSide": null,
+      "warpCount": 0,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [],
+      "equipped": [
+        null,
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 1,
+          "name": "Training enemy",
+          "training": true,
+          "x": 0,
+          "z": 620,
+          "hp": 10,
+          "maxHp": 10,
+          "clock": 0.25,
+          "firePeriod": 1.4,
+          "shotSpeed": 145,
+          "stage": 0,
+          "equipped": [],
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "dropsUpgrade": false,
+          "telegraph": null,
+          "contacting": false,
+          "presented": true,
+          "visibleFor": 0.35000000000000026,
+          "visible": true,
+          "ready": false
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [],
+        "enemy": []
+      }
+    },
+    "folded": {
+      "phase": "running",
+      "mode": "campaign",
+      "runSeed": 3841412654,
+      "x": 0,
+      "z": 0,
+      "time": 1.5333333333333303,
+      "hull": 5,
+      "score": 0,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 0,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [],
+        "completedChapters": [],
+        "stageRecords": {},
+        "runHistory": []
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 11.49951050663367,
+        "faults": 0,
+        "attempts": 0
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": -1,
+        "defeated": 0,
+        "asteroidsBroken": 0,
+        "enemySerial": 1,
+        "startedAt": 0,
+        "wraps": 0,
+        "routeReached": false,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 1,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 0,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "movement": {
+          "left": 78,
+          "right": 24
+        },
+        "lesson": "unfold",
+        "training": {
+          "shot": true,
+          "folded": true,
+          "unfolded": false,
+          "enemySpawned": true,
+          "completeAt": null
+        },
+        "checkpoint": {
+          "inventory": [],
+          "equipped": [
+            null,
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 0,
+          "projective": null
+        },
+        "chapter": {
+          "kind": "tutorial",
+          "number": 0,
+          "name": "Flight controls",
+          "stage": 0,
+          "goal": "Destroy the training enemy. Fold distance to attack faster.",
+          "hint": "Left / Right steer. Hold Space. Left Shift folds; Right Shift unfolds. Both sides’ shots accelerate in folded space."
+        },
+        "elapsed": 1.5333333333333303
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-movement-complete"
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-enemy-spawned",
+          "target": 1
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "enemy-presented",
+          "target": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:1"
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "tutorial-shot-complete"
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "fold",
+          "fields": 1,
+          "countdown": 0
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "tutorial-fold-complete"
+        },
+        {
+          "time": 0.9916666666666656,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.0249999999999988,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:2"
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.1833333333333316,
+          "type": "enemy-windup",
+          "actor": "enemy-1",
+          "target": 1,
+          "x": 0,
+          "z": 620,
+          "aimX": 0,
+          "aimZ": 0,
+          "vx": 0,
+          "vz": -145,
+          "duration": 0.65
+        },
+        {
+          "time": 1.1916666666666649,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:3"
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.358333333333331,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:4"
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.524999999999997,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:5"
+        }
+      ],
+      "fields": [
+        {
+          "id": 1,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        }
+      ],
+      "localFactor": 1,
+      "thrust": 0,
+      "shotCount": 2,
+      "enemyShotCount": 0,
+      "foldsUsed": 1,
+      "lastEvent": "Keep firing. Right Shift unfolds.",
+      "upgrade": null,
+      "warpSide": null,
+      "warpCount": 0,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [],
+      "equipped": [
+        null,
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [
+        {
+          "type": "hit",
+          "x": 0,
+          "z": 620,
+          "start": 1.4916666666666638,
+          "until": 1.6916666666666638
+        }
+      ],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 1,
+          "name": "Training enemy",
+          "training": true,
+          "x": 0,
+          "z": 620,
+          "hp": 7,
+          "maxHp": 10,
+          "clock": -0.008333333333333281,
+          "firePeriod": 1.4,
+          "shotSpeed": 145,
+          "stage": 0,
+          "equipped": [],
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "dropsUpgrade": false,
+          "telegraph": {
+            "aimX": 0,
+            "aimZ": 0,
+            "vx": 0,
+            "vz": -145,
+            "phase": "tell",
+            "beatIndex": 0,
+            "x": 0,
+            "z": 0,
+            "duration": 0.65,
+            "remaining": 0.3000000000000014,
+            "startedAt": 1.1833333333333316,
+            "due": 1.8333333333333317
+          },
+          "contacting": false,
+          "presented": true,
+          "visibleFor": 1.249999999999998,
+          "hitUntil": 1.6416666666666637,
+          "visible": true,
+          "ready": true
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [
+          {
+            "x": 0,
+            "z": 238.66666666666677,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "objectId": "shot:3841412654:4",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 1,
+            "foldTransitions": 1,
+            "foldChangedAt": 1.4916666666666638,
+            "distance": 179.33333333333337,
+            "speedFactor": 2
+          },
+          {
+            "x": 0,
+            "z": 36.333333333333336,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "objectId": "shot:3841412654:5",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 36.333333333333336,
+            "speedFactor": 1
+          }
+        ],
+        "enemy": []
+      }
+    },
+    "unfolded": {
+      "phase": "running",
+      "mode": "campaign",
+      "runSeed": 3841412654,
+      "x": 0,
+      "z": 0,
+      "time": 1.5999999999999968,
+      "hull": 5,
+      "score": 0,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 0,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [],
+        "completedChapters": [],
+        "stageRecords": {},
+        "runHistory": []
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 11.49951050663367,
+        "faults": 0,
+        "attempts": 0
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": -1,
+        "defeated": 0,
+        "asteroidsBroken": 0,
+        "enemySerial": 1,
+        "startedAt": 0,
+        "wraps": 0,
+        "routeReached": false,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 1,
+          "unfolds": 1,
+          "foldEvidence": 0,
+          "damage": 0,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "movement": {
+          "left": 78,
+          "right": 24
+        },
+        "lesson": "engage",
+        "training": {
+          "shot": true,
+          "folded": true,
+          "unfolded": true,
+          "enemySpawned": true,
+          "completeAt": null
+        },
+        "checkpoint": {
+          "inventory": [],
+          "equipped": [
+            null,
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 0,
+          "projective": null
+        },
+        "chapter": {
+          "kind": "tutorial",
+          "number": 0,
+          "name": "Flight controls",
+          "stage": 0,
+          "goal": "Destroy the training enemy. Fold distance to attack faster.",
+          "hint": "Left / Right steer. Hold Space. Left Shift folds; Right Shift unfolds. Both sides’ shots accelerate in folded space."
+        },
+        "elapsed": 1.5999999999999968
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-movement-complete"
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-enemy-spawned",
+          "target": 1
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "enemy-presented",
+          "target": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:1"
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "tutorial-shot-complete"
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "fold",
+          "fields": 1,
+          "countdown": 0
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "tutorial-fold-complete"
+        },
+        {
+          "time": 0.9916666666666656,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.0249999999999988,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:2"
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.1833333333333316,
+          "type": "enemy-windup",
+          "actor": "enemy-1",
+          "target": 1,
+          "x": 0,
+          "z": 620,
+          "aimX": 0,
+          "aimZ": 0,
+          "vx": 0,
+          "vz": -145,
+          "duration": 0.65
+        },
+        {
+          "time": 1.1916666666666649,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:3"
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.358333333333331,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:4"
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.524999999999997,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:5"
+        },
+        {
+          "time": 1.5999999999999968,
+          "type": "unfold",
+          "fields": 0,
+          "countdown": 0
+        },
+        {
+          "time": 1.5999999999999968,
+          "type": "tutorial-unfold-complete"
+        }
+      ],
+      "fields": [],
+      "localFactor": 1,
+      "thrust": 0,
+      "shotCount": 2,
+      "enemyShotCount": 0,
+      "foldsUsed": 1,
+      "lastEvent": "Space unfolded. Destroy the training enemy with Space.",
+      "upgrade": null,
+      "warpSide": null,
+      "warpCount": 0,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [],
+      "equipped": [
+        null,
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [
+        {
+          "type": "hit",
+          "x": 0,
+          "z": 620,
+          "start": 1.4916666666666638,
+          "until": 1.6916666666666638
+        }
+      ],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 1,
+          "name": "Training enemy",
+          "training": true,
+          "x": 0,
+          "z": 620,
+          "hp": 7,
+          "maxHp": 10,
+          "clock": -0.008333333333333281,
+          "firePeriod": 1.4,
+          "shotSpeed": 145,
+          "stage": 0,
+          "equipped": [],
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "dropsUpgrade": false,
+          "telegraph": {
+            "aimX": 0,
+            "aimZ": 0,
+            "vx": 0,
+            "vz": -145,
+            "phase": "tell",
+            "beatIndex": 0,
+            "x": 0,
+            "z": 0,
+            "duration": 0.65,
+            "remaining": 0.23333333333333495,
+            "startedAt": 1.1833333333333316,
+            "due": 1.8333333333333317
+          },
+          "contacting": false,
+          "presented": true,
+          "visibleFor": 1.3166666666666644,
+          "hitUntil": 1.6416666666666637,
+          "visible": true,
+          "ready": true
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [
+          {
+            "x": 0,
+            "z": 420.0000000000002,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "objectId": "shot:3841412654:4",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 1,
+            "foldTransitions": 1,
+            "foldChangedAt": 1.4916666666666638,
+            "distance": 420.0000000000002,
+            "speedFactor": 1
+          },
+          {
+            "x": 0,
+            "z": 81.66666666666667,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "objectId": "shot:3841412654:5",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 81.66666666666667,
+            "speedFactor": 1
+          }
+        ],
+        "enemy": []
+      }
+    },
+    "route": {
+      "phase": "running",
+      "mode": "campaign",
+      "runSeed": 3841412654,
+      "x": 0,
+      "z": 1056,
+      "time": 14.908333333333127,
+      "hull": 5,
+      "score": 100,
+      "kills": 1,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 1056,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [
+          0
+        ],
+        "completedChapters": [],
+        "stageRecords": {},
+        "runHistory": []
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 32.7420754585414,
+        "faults": 1,
+        "attempts": 1
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": 0,
+        "defeated": 0,
+        "asteroidsBroken": 0,
+        "enemySerial": 14,
+        "startedAt": 4.241666666666667,
+        "wraps": 0,
+        "routeReached": false,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 2,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 0,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "lesson": "engage",
+        "spaceLesson": {
+          "folded": true,
+          "unfolded": false,
+          "lastDepth": 2
+        },
+        "lessonNotices": null,
+        "pressureBudget": {
+          "density": 1.2,
+          "speed": 1,
+          "overlap": 1,
+          "targeting": 1,
+          "geometry": 1,
+          "total": 1.2
+        },
+        "routeLength": 3600,
+        "lessonNoticeIndex": -1,
+        "hint": "Fold for speed. Unfold for reaction time. Steer out of the locked lane.",
+        "checkpoint": {
+          "inventory": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            {
+              "key": "0:-1",
+              "type": 0,
+              "polarity": -1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 2
+            }
+          ],
+          "equipped": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            null
+          ],
+          "score": 100,
+          "kills": 1,
+          "foldBonus": 0,
+          "foldsUsed": 1,
+          "time": 4.241666666666667,
+          "upgradeSerial": 2,
+          "projective": null
+        },
+        "announcement": {
+          "text": "LEVEL 1 · TWO SIDES",
+          "until": 6.441666666666667
+        },
+        "foldWakes": {
+          "keys": [
+            "0:2"
+          ],
+          "total": 1,
+          "enemies": 1,
+          "asteroids": 1
+        },
+        "chapter": {
+          "kind": "level",
+          "number": 1,
+          "name": "Two Sides",
+          "stage": 0,
+          "routeLength": 3600,
+          "carriers": 12,
+          "goal": "Fight through the carriers and reach the end of the route.",
+          "hint": "Left Shift folds the route. Right Shift unfolds it. Watch the grid and the accepted side, then meet the carriers.",
+          "waves": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "elapsed": 10.66666666666646
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-movement-complete"
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "tutorial-enemy-spawned",
+          "target": 1
+        },
+        {
+          "time": 0.2833333333333334,
+          "type": "enemy-presented",
+          "target": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:1"
+        },
+        {
+          "time": 0.8583333333333327,
+          "type": "tutorial-shot-complete"
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "fold",
+          "fields": 1,
+          "countdown": 0
+        },
+        {
+          "time": 0.866666666666666,
+          "type": "tutorial-fold-complete"
+        },
+        {
+          "time": 0.9916666666666656,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.0249999999999988,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:2"
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.1583333333333317,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.1833333333333316,
+          "type": "enemy-windup",
+          "actor": "enemy-1",
+          "target": 1,
+          "x": 0,
+          "z": 620,
+          "aimX": 0,
+          "aimZ": 0,
+          "vx": 0,
+          "vz": -145,
+          "duration": 0.65
+        },
+        {
+          "time": 1.1916666666666649,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:3"
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.3249999999999977,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.358333333333331,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:4"
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 1.4916666666666638,
+          "type": "fold-entry",
+          "actor": "shot",
+          "owner": "player",
+          "x": 0,
+          "z": 125.33333333333347,
+          "depth": 1
+        },
+        {
+          "time": 1.524999999999997,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:5"
+        },
+        {
+          "time": 1.5999999999999968,
+          "type": "unfold",
+          "fields": 0,
+          "countdown": 0
+        },
+        {
+          "time": 1.5999999999999968,
+          "type": "tutorial-unfold-complete"
+        },
+        {
+          "time": 1.691666666666663,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:6"
+        },
+        {
+          "time": 1.8333333333333293,
+          "type": "enemy-fire",
+          "x": 0,
+          "z": 600,
+          "vx": 0,
+          "vz": -145,
+          "payload": [],
+          "bornAt": 1.8333333333333293,
+          "owner": "enemy",
+          "sourceId": 1,
+          "sourceName": "Training enemy",
+          "geometryRule": "klein",
+          "projective": false,
+          "actor": "enemy-1",
+          "target": 1,
+          "aimX": 0,
+          "aimZ": 0,
+          "beat": 0,
+          "objectId": "shot:3841412654:7"
+        },
+        {
+          "time": 1.8583333333333292,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:8"
+        },
+        {
+          "time": 1.8583333333333292,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 2.0249999999999955,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:9"
+        },
+        {
+          "time": 2.1916666666666615,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:10"
+        },
+        {
+          "time": 2.3583333333333276,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:11"
+        },
+        {
+          "time": 2.3583333333333276,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 2.5249999999999937,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:12"
+        },
+        {
+          "time": 2.5249999999999937,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 2.6916666666666598,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:13"
+        },
+        {
+          "time": 2.6916666666666598,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 2.858333333333326,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:14"
+        },
+        {
+          "time": 2.858333333333326,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 3.024999999999992,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:15"
+        },
+        {
+          "time": 3.024999999999992,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 3.191666666666658,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25,
+          "vx": 0,
+          "vz": 680,
+          "payload": [],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:16"
+        },
+        {
+          "time": 3.191666666666658,
+          "type": "enemy-hit",
+          "target": 1,
+          "amount": 1,
+          "x": 0,
+          "z": 620
+        },
+        {
+          "time": 3.191666666666658,
+          "type": "target-hit",
+          "target": 1,
+          "bonus": 0,
+          "x": 0,
+          "z": 620,
+          "visible": true,
+          "presented": true
+        },
+        {
+          "time": 3.191666666666658,
+          "type": "tutorial-complete"
+        },
+        {
+          "time": 4.241666666666667,
+          "type": "route-start",
+          "chapter": 0,
+          "length": 3600,
+          "carriers": 12,
+          "pressure": {
+            "density": 1.2,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 1.2
+          }
+        },
+        {
+          "time": 4.241666666666667,
+          "type": "chapter-start",
+          "chapter": 0,
+          "kind": "level",
+          "name": "Two Sides"
+        },
+        {
+          "time": 4.250000000000001,
+          "type": "player-fire",
+          "x": 0,
+          "z": 25.75,
+          "vx": 0,
+          "vz": 680,
+          "payload": [
+            0
+          ],
+          "owner": "player",
+          "geometryRule": "route",
+          "actor": "player",
+          "objectId": "shot:3841412654:17"
+        },
+        {
+          "time": 7.8000000000001775,
+          "type": "space-lesson",
+          "lesson": "unfold",
+          "x": 0,
+          "z": 320.25
+        },
+        {
+          "time": 10.1083333333334,
+          "type": "enemy-presented",
+          "target": 2,
+          "x": 0,
+          "z": 1450
+        },
+        {
+          "time": 11.816666666666636,
+          "type": "drive-warning",
+          "due": 13.216666666666637
+        },
+        {
+          "time": 12.341666666666606,
+          "type": "enemy-presented",
+          "target": 3,
+          "x": -316.46074200887233,
+          "z": 1650.2753576549533
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "fold",
+          "fields": 1,
+          "automatic": true
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "drive-fault",
+          "fields": 1
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "enemy-presented",
+          "target": 4,
+          "x": 325.27969759423286,
+          "z": 1825.5141132384201
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "enemy-presented",
+          "target": 5,
+          "x": -147.57690435741097,
+          "z": 2021.498968749815
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "enemy-presented",
+          "target": 6,
+          "x": 140.25107875466347,
+          "z": 2190.2358679894614
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "fold",
+          "fields": 2,
+          "countdown": 0
+        },
+        {
+          "time": 13.22499999999989,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 2,
+          "enemies": 1,
+          "asteroids": 1,
+          "x": -220,
+          "z": 2538.6875
+        },
+        {
+          "time": 13.249999999999888,
+          "type": "enemy-presented",
+          "target": 7,
+          "x": -97.00845849234611,
+          "z": 2390.7231358656745
+        },
+        {
+          "time": 13.249999999999888,
+          "type": "enemy-presented",
+          "target": 8,
+          "x": 80.09982100687921,
+          "z": 2572.554165994833
+        },
+        {
+          "time": 13.249999999999888,
+          "type": "enemy-presented",
+          "target": 14,
+          "x": -220,
+          "z": 2538.6875
+        },
+        {
+          "time": 14.241666666666498,
+          "type": "space-lesson",
+          "lesson": "engage",
+          "x": 0,
+          "z": 900
+        },
+        {
+          "time": 14.699999999999806,
+          "type": "enemy-presented",
+          "target": 9,
+          "x": 13.913643672131002,
+          "z": 2762.8479318272066
+        }
+      ],
+      "fields": [
+        {
+          "id": 2,
+          "start": 927.75,
+          "end": 2127.75,
+          "factor": 0.5,
+          "source": "drive-fault"
+        },
+        {
+          "id": 3,
+          "start": 928.5,
+          "end": 2128.5,
+          "factor": 0.5
+        }
+      ],
+      "localFactor": 4,
+      "thrust": 90,
+      "shotCount": 0,
+      "enemyShotCount": 0,
+      "foldsUsed": 3,
+      "lastEvent": "Fold for speed. Unfold for reaction time. Steer out of the locked lane.",
+      "upgrade": {
+        "key": "0:1",
+        "type": 0,
+        "polarity": 1,
+        "id": "position-warp",
+        "source": "training-kit",
+        "instance": 1
+      },
+      "warpSide": 1,
+      "warpCount": 0,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 2
+        }
+      ],
+      "equipped": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [],
+      "asteroids": [
+        {
+          "id": "fold-rock-0-0-2-0",
+          "x": 284,
+          "z": 2582.6875,
+          "radius": 20.02157684415579,
+          "hp": 2,
+          "maxHp": 2,
+          "shape": 1452,
+          "rotation": 2.2198798376942,
+          "foldWake": true,
+          "wakeUntil": 14.424999999999889,
+          "presented": true
+        }
+      ],
+      "enemies": [
+        {
+          "id": 2,
+          "x": 0,
+          "z": 1450,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 0.8583333333333352,
+          "firePeriod": 2.3,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 4.800000000000028,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 3,
+          "x": -316.46074200887233,
+          "z": 1650.2753576549533,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.0250000000000024,
+          "firePeriod": 2.5,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 2.56666666666666,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 4,
+          "x": 325.27969759423286,
+          "z": 1825.5141132384201,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.3250000000000024,
+          "firePeriod": 2.6999999999999997,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 1.6833333333333298,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 5,
+          "x": -147.57690435741097,
+          "z": 2021.498968749815,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 0.7250000000000023,
+          "firePeriod": 2.3,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 1.6833333333333298,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 6,
+          "x": 140.25107875466347,
+          "z": 2190.2358679894614,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.0250000000000024,
+          "firePeriod": 2.5,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 1.6833333333333298,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 7,
+          "x": -97.00845849234611,
+          "z": 2390.7231358656745,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.3250000000000024,
+          "firePeriod": 2.6999999999999997,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 1.6583333333333299,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 8,
+          "x": 80.09982100687921,
+          "z": 2572.554165994833,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 0.7250000000000023,
+          "firePeriod": 2.3,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 1.6583333333333299,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 9,
+          "x": 13.913643672131002,
+          "z": 2762.8479318272066,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.7,
+          "firePeriod": 2.5,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 0.20833333333333331,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": false
+        },
+        {
+          "id": 10,
+          "x": -319.1195433186367,
+          "z": 2943.0832089581104,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 2,
+          "firePeriod": 2.6999999999999997,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": false,
+          "visibleFor": 0,
+          "telegraph": null,
+          "contacting": false,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 11,
+          "x": 324.2175176227465,
+          "z": 3141.219102843792,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.4,
+          "firePeriod": 2.3,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": false,
+          "visibleFor": 0,
+          "telegraph": null,
+          "contacting": false,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 12,
+          "x": -180.7183126406744,
+          "z": 3338.849974385759,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 1.7,
+          "firePeriod": 2.5,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": false,
+          "visibleFor": 0,
+          "telegraph": null,
+          "contacting": false,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 13,
+          "x": 168.84061239194125,
+          "z": 3509.2317480198108,
+          "hp": 2,
+          "maxHp": 2,
+          "role": "carrier",
+          "clock": 2,
+          "firePeriod": 2.6999999999999997,
+          "shotSpeed": 145,
+          "stage": 0,
+          "introduction": 0,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": -1,
+              "key": "0:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "presented": false,
+          "visibleFor": 0,
+          "telegraph": null,
+          "contacting": false,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 14,
+          "name": "Fold Echo",
+          "role": "popcorn",
+          "foldWake": true,
+          "wakeUntil": 14.424999999999889,
+          "x": -220,
+          "z": 2538.6875,
+          "hp": 1,
+          "maxHp": 1,
+          "stage": 0,
+          "clock": 2.1166666666666685,
+          "firePeriod": 3.1,
+          "shotSpeed": 120,
+          "patternRole": "fan",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 2,
+            "beats": 1,
+            "recovery": 2.5
+          },
+          "equipped": [],
+          "dropsUpgrade": false,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "routeActive": false,
+          "presented": true,
+          "visibleFor": 1.6583333333333299,
+          "telegraph": null,
+          "contacting": false,
+          "visible": true,
+          "ready": true
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [],
+        "enemy": []
+      }
+    },
+    "fixtureClear": {
+      "phase": "cleared",
+      "mode": "campaign",
+      "runSeed": 3311032076,
+      "x": 0,
+      "z": 2400,
+      "time": 14.999999999999789,
+      "hull": 4,
+      "score": 630,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 2400,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [
+          1,
+          2
+        ],
+        "completedChapters": [
+          1
+        ],
+        "stageRecords": {
+          "1": {
+            "bestGrade": "C",
+            "bestGradeScore": 57,
+            "bestScore": 630,
+            "bestClearTime": 15,
+            "bestGrazes": 0,
+            "completions": 1,
+            "attempts": 1,
+            "lastShip": 0,
+            "lastResult": "cleared"
+          }
+        },
+        "runHistory": [
+          {
+            "chapter": 1,
+            "name": "Quiet Belt",
+            "result": "cleared",
+            "score": 630,
+            "grazes": 0,
+            "shipId": 0,
+            "grade": "C",
+            "gradeScore": 57,
+            "time": 15,
+            "cause": "",
+            "receipt": "3311032076:1:cleared:15000"
+          }
+        ]
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 27.76861777777463,
+        "faults": 0,
+        "attempts": 1
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": 1,
+        "defeated": 0,
+        "asteroidsBroken": 1,
+        "enemySerial": 5,
+        "startedAt": 0,
+        "wraps": 2,
+        "routeReached": true,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 3,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 1,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "lessonNotices": null,
+        "pressureBudget": {
+          "density": 0.5,
+          "speed": 1,
+          "overlap": 1,
+          "targeting": 1,
+          "geometry": 1,
+          "total": 0.5
+        },
+        "routeLength": 2400,
+        "lessonNoticeIndex": -1,
+        "checkpoint": {
+          "inventory": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            {
+              "key": "0:-1",
+              "type": 0,
+              "polarity": -1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 2
+            }
+          ],
+          "equipped": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 2,
+          "projective": null
+        },
+        "foldWakes": {
+          "keys": [
+            "0:1",
+            "0:2",
+            "0:3"
+          ],
+          "total": 3,
+          "enemies": 2,
+          "asteroids": 5
+        },
+        "grade": {
+          "letter": "C",
+          "score": 57,
+          "survival": 32,
+          "execution": 0,
+          "precision": 0,
+          "topology": 15,
+          "control": 10,
+          "speed": {
+            "letter": "C",
+            "score": 63,
+            "bonus": 630,
+            "elapsed": 14.999999999999789,
+            "reference": 26.666666666666668
+          },
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 3,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 1,
+            "kills": 0,
+            "wavesCleared": 0
+          }
+        },
+        "chapter": {
+          "kind": "level",
+          "number": 2,
+          "name": "Quiet Belt",
+          "stage": 0,
+          "calm": true,
+          "routeLength": 2400,
+          "carriers": 3,
+          "asteroids": 14,
+          "goal": "Reach the exit through a quiet asteroid belt.",
+          "hint": "Break or avoid asteroids. Enemy shots can break them too. Watch for an occasional carrier.",
+          "waves": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "elapsed": 14.999999999999789
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0,
+          "type": "route-start",
+          "chapter": 1,
+          "length": 2400,
+          "carriers": 3,
+          "pressure": {
+            "density": 0.5,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 0.5
+          }
+        },
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": 1,
+          "kind": "level",
+          "name": "Quiet Belt"
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 1,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 1,
+          "enemies": 0,
+          "asteroids": 1,
+          "x": 220,
+          "z": 1430
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 2,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 2,
+          "enemies": 1,
+          "asteroids": 2,
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 3,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 3,
+          "enemies": 1,
+          "asteroids": 2,
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 0.008333333333333333,
+          "type": "enemy-presented",
+          "target": 4,
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 0.008333333333333333,
+          "type": "enemy-presented",
+          "target": 5,
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 1.0999999999999985,
+          "type": "damage",
+          "reason": "Asteroid impact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 0,
+          "z": 99,
+          "source": "asteroid",
+          "target": "fixture-rock"
+        },
+        {
+          "time": 1.0999999999999985,
+          "type": "asteroid-broken",
+          "target": "fixture-rock",
+          "owner": "ship",
+          "x": 0,
+          "z": 300,
+          "points": 0
+        },
+        {
+          "time": 3.8083333333333225,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 1730,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "vx": -178.55072460996644,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 3.8083333333333225,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 4.458333333333345,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1710,
+          "vx": -188.61350806032937,
+          "vz": -103.46644787524193,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 4.458333333333345,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "beat": 0,
+          "objectId": "shot:3311032076:1"
+        },
+        {
+          "time": 4.458333333333345,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1710,
+          "vx": -167.0426562528067,
+          "vz": -135.5622080476367,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 4.458333333333345,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "beat": 0,
+          "objectId": "shot:3311032076:2"
+        },
+        {
+          "time": 4.908333333333367,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 1880,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "vx": -149.15254235169184,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 4.908333333333367,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 4.983333333333371,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -131.50291711102855,
+          "z": 1638.180859719763,
+          "from": {
+            "x": 131.50291711102855,
+            "z": 1638.180859719763
+          },
+          "to": {
+            "x": -131.50291711102855,
+            "z": 1638.180859719763
+          }
+        },
+        {
+          "time": 5.075000000000042,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -103.49755494687508,
+          "z": 1646.09103461152,
+          "from": {
+            "x": 103.49755494687508,
+            "z": 1646.09103461152
+          },
+          "to": {
+            "x": -103.49755494687508,
+            "z": 1646.09103461152
+          }
+        },
+        {
+          "time": 5.558333333333399,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1860,
+          "vx": -159.33430809461603,
+          "vz": -106.10871384567434,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 5.558333333333399,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "beat": 0,
+          "objectId": "shot:3311032076:3"
+        },
+        {
+          "time": 5.558333333333399,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1860,
+          "vx": -137.76345628709336,
+          "vz": -132.91994207720427,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 5.558333333333399,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "beat": 0,
+          "objectId": "shot:3311032076:4"
+        },
+        {
+          "time": 6.31666666666677,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -114.63181679450099,
+          "z": 1758.3363717351265,
+          "from": {
+            "x": 114.63181679450099,
+            "z": 1758.3363717351265
+          },
+          "to": {
+            "x": -114.63181679450099,
+            "z": 1758.3363717351265
+          }
+        },
+        {
+          "time": 6.425000000000109,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -81.47224670745747,
+          "z": 1767.7474154212034,
+          "from": {
+            "x": 81.47224670745747,
+            "z": 1767.7474154212034
+          },
+          "to": {
+            "x": -81.47224670745747,
+            "z": 1767.7474154212034
+          }
+        },
+        {
+          "time": 8.891666666666802,
+          "type": "enemy-return",
+          "actor": "enemy-4",
+          "target": 4,
+          "edge": "bottom",
+          "x": 220,
+          "z": 2800,
+          "hp": 1
+        },
+        {
+          "time": 9.208333333333451,
+          "type": "enemy-presented",
+          "target": 4,
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 10.491666666666712,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 2800,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "vx": -63.526985215308514,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 10.491666666666712,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 10.558333333333374,
+          "type": "enemy-return",
+          "actor": "enemy-5",
+          "target": 5,
+          "edge": "bottom",
+          "x": 220,
+          "z": 2950,
+          "hp": 1
+        },
+        {
+          "time": 10.875000000000023,
+          "type": "enemy-presented",
+          "target": 5,
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 11.141666666666675,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -74.0553004489604,
+          "vz": -113.80461469536388,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 11.141666666666675,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "beat": 0,
+          "objectId": "shot:3311032076:5"
+        },
+        {
+          "time": 11.141666666666675,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -52.48444864143774,
+          "vz": -125.22404122751473,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 11.141666666666675,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "beat": 0,
+          "objectId": "shot:3311032076:6"
+        },
+        {
+          "time": 11.599999999999982,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 2950,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "vx": -59.42122186143739,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 11.599999999999982,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 11.633333333333313,
+          "type": "drive-warning",
+          "due": 13.033333333333314
+        },
+        {
+          "time": 12.249999999999945,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2930,
+          "vx": -69.96615421557195,
+          "vz": -114.17363474896018,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 12.249999999999945,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "beat": 0,
+          "objectId": "shot:3311032076:7"
+        },
+        {
+          "time": 12.249999999999945,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2930,
+          "vx": -48.395302408049304,
+          "vz": -124.85502117391843,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 12.249999999999945,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "beat": 0,
+          "objectId": "shot:3311032076:8"
+        },
+        {
+          "time": 13.041666666666567,
+          "type": "drive-fault-blocked",
+          "fields": 3
+        },
+        {
+          "time": 13.649999999999865,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 2800,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "vx": -104.28893904660198,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 13.649999999999865,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 13.86666666666652,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -76.61055509805544,
+          "z": 2437.883311632721,
+          "from": {
+            "x": 76.61055509805544,
+            "z": 2437.883311632721
+          },
+          "to": {
+            "x": -76.61055509805544,
+            "z": 2437.883311632721
+          }
+        },
+        {
+          "time": 14.299999999999828,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -114.65227977014585,
+          "vz": -110.14098942253092,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 14.299999999999828,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "beat": 0,
+          "objectId": "shot:3311032076:9"
+        },
+        {
+          "time": 14.299999999999828,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -93.08142796262321,
+          "vz": -128.8876665003477,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 14.299999999999828,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "beat": 0,
+          "objectId": "shot:3311032076:10"
+        },
+        {
+          "time": 14.758333333333136,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 2950,
+          "aimX": 0,
+          "aimZ": 2648.1428571576253,
+          "vx": -93.66447034317774,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 14.758333333333136,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "route-end",
+          "chapter": 1,
+          "distance": 2400
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "speed-bonus",
+          "chapter": 1,
+          "letter": "C",
+          "score": 63,
+          "bonus": 630,
+          "elapsed": 14.999999999999789,
+          "reference": 26.666666666666668
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "chapter-cleared",
+          "chapter": 1,
+          "grade": {
+            "letter": "C",
+            "score": 57,
+            "survival": 32,
+            "execution": 0,
+            "precision": 0,
+            "topology": 15,
+            "control": 10,
+            "speed": {
+              "letter": "C",
+              "score": 63,
+              "bonus": 630,
+              "elapsed": 14.999999999999789,
+              "reference": 26.666666666666668
+            },
+            "metrics": {
+              "grazes": 0,
+              "seamCrossings": 0,
+              "seamEvidence": 0,
+              "folds": 3,
+              "unfolds": 0,
+              "foldEvidence": 0,
+              "damage": 1,
+              "kills": 0,
+              "wavesCleared": 0
+            }
+          }
+        }
+      ],
+      "fields": [
+        {
+          "id": 1,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        },
+        {
+          "id": 2,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        },
+        {
+          "id": 3,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        }
+      ],
+      "localFactor": 1,
+      "thrust": 90,
+      "shotCount": 0,
+      "enemyShotCount": 6,
+      "foldsUsed": 3,
+      "lastEvent": "Quiet Belt route complete · Speed C · +630.",
+      "upgrade": {
+        "key": "0:1",
+        "type": 0,
+        "polarity": 1,
+        "id": "position-warp",
+        "source": "training-kit",
+        "instance": 1
+      },
+      "warpSide": -1,
+      "warpCount": 5,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 2
+        }
+      ],
+      "equipped": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 4,
+          "name": "Fold Echo",
+          "role": "popcorn",
+          "foldWake": true,
+          "wakeUntil": 1.2,
+          "x": 220,
+          "z": 2800,
+          "hp": 1,
+          "maxHp": 1,
+          "stage": 0,
+          "clock": 1.8000000000000025,
+          "firePeriod": 3.1,
+          "shotSpeed": 120,
+          "patternRole": "fan",
+          "patternCycle": 3,
+          "patternConfig": {
+            "count": 2,
+            "beats": 1,
+            "recovery": 2.5
+          },
+          "equipped": [],
+          "dropsUpgrade": false,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "routeActive": false,
+          "presented": true,
+          "visibleFor": 5.791666666666744,
+          "telegraph": null,
+          "contacting": false,
+          "escaped": false,
+          "loopCount": 1,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 5,
+          "name": "Fold Echo",
+          "role": "popcorn",
+          "foldWake": true,
+          "wakeUntil": 1.2,
+          "x": 220,
+          "z": 2950,
+          "hp": 1,
+          "maxHp": 1,
+          "stage": 0,
+          "clock": -0.008333333333326953,
+          "firePeriod": 3.1,
+          "shotSpeed": 120,
+          "patternRole": "fan",
+          "patternCycle": 2,
+          "patternConfig": {
+            "count": 2,
+            "beats": 1,
+            "recovery": 2.5
+          },
+          "equipped": [],
+          "dropsUpgrade": false,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "routeActive": false,
+          "presented": true,
+          "visibleFor": 4.124999999999995,
+          "telegraph": {
+            "aimX": 0,
+            "aimZ": 2648.1428571576253,
+            "vx": -93.66447034317774,
+            "vz": -120,
+            "patternKey": "fan",
+            "patternName": "FAN",
+            "beatCount": 1,
+            "beatInterval": 0.22,
+            "geometryRule": "klein",
+            "patternRecovery": 2.5,
+            "previewShots": [
+              {
+                "vx": -104.07081112817008,
+                "vz": -111.09590125559436,
+                "geometryRule": "klein",
+                "rayIndex": 0,
+                "beatIndex": 0
+              },
+              {
+                "vx": -82.49995932064743,
+                "vz": -127.93275466728426,
+                "geometryRule": "klein",
+                "rayIndex": 1,
+                "beatIndex": 0
+              }
+            ],
+            "patternVolleys": [
+              [
+                {
+                  "vx": -104.07081112817008,
+                  "vz": -111.09590125559436,
+                  "geometryRule": "klein",
+                  "rayIndex": 0,
+                  "beatIndex": 0
+                },
+                {
+                  "vx": -82.49995932064743,
+                  "vz": -127.93275466728426,
+                  "geometryRule": "klein",
+                  "rayIndex": 1,
+                  "beatIndex": 0
+                }
+              ]
+            ],
+            "phase": "tell",
+            "beatIndex": 0,
+            "x": 0,
+            "z": 2648.1428571576253,
+            "duration": 0.65,
+            "remaining": 0.4083333333333474,
+            "startedAt": 14.758333333333136,
+            "due": 15.408333333333136
+          },
+          "contacting": false,
+          "escaped": false,
+          "loopCount": 1,
+          "visible": true,
+          "ready": true
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [],
+        "enemy": [
+          {
+            "x": -66.3471617359783,
+            "z": 2339.955489844593,
+            "vx": -74.0553004489604,
+            "vz": -113.80461469536388,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 11.141666666666675,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:5",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "gates": {
+              "player": true
+            },
+            "distance": -60.0445101554069,
+            "speedFactor": 1
+          },
+          {
+            "x": -136.16097827634903,
+            "z": 2295.800373920254,
+            "vx": -52.48444864143774,
+            "vz": -125.22404122751473,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 11.141666666666675,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:6",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "gates": {
+              "player": true
+            },
+            "warped": true,
+            "warpSide": -1,
+            "operated": true,
+            "distance": -104.19962607974594,
+            "speedFactor": 1
+          },
+          {
+            "x": 27.01002462203411,
+            "z": 2615.0710574840973,
+            "vx": -69.96615421557195,
+            "vz": -114.17363474896018,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 12.249999999999945,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 5,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:7",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 215.0710574840973,
+            "speedFactor": 1
+          },
+          {
+            "x": 86.50962419113166,
+            "z": 2585.6082332619467,
+            "vx": -48.395302408049304,
+            "vz": -124.85502117391843,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 12.249999999999945,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 5,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:8",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 185.60823326194668,
+            "speedFactor": 1
+          },
+          {
+            "x": 138.78796849616435,
+            "z": 2701.983465825724,
+            "vx": -114.65227977014585,
+            "vz": -110.14098942253092,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 14.299999999999828,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:9",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 301.9834658257241,
+            "speedFactor": 1
+          },
+          {
+            "x": 154.06732185982037,
+            "z": 2688.7045695622714,
+            "vx": -93.08142796262321,
+            "vz": -128.8876665003477,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 14.299999999999828,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:10",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 288.70456956227144,
+            "speedFactor": 1
+          }
+        ]
+      }
+    },
+    "failure": {
+      "phase": "cleared",
+      "mode": "campaign",
+      "runSeed": 3311032076,
+      "x": 0,
+      "z": 2400,
+      "time": 14.999999999999789,
+      "hull": 4,
+      "score": 630,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 2400,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [],
+        "projectiveModule": false,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [
+          1,
+          2
+        ],
+        "completedChapters": [
+          1
+        ],
+        "stageRecords": {
+          "1": {
+            "bestGrade": "C",
+            "bestGradeScore": 57,
+            "bestScore": 630,
+            "bestClearTime": 15,
+            "bestGrazes": 0,
+            "completions": 1,
+            "attempts": 1,
+            "lastShip": 0,
+            "lastResult": "cleared"
+          }
+        },
+        "runHistory": [
+          {
+            "chapter": 1,
+            "name": "Quiet Belt",
+            "result": "cleared",
+            "score": 630,
+            "grazes": 0,
+            "shipId": 0,
+            "grade": "C",
+            "gradeScore": 57,
+            "time": 15,
+            "cause": "",
+            "receipt": "3311032076:1:cleared:15000"
+          }
+        ]
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 27.76861777777463,
+        "faults": 0,
+        "attempts": 1
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": 1,
+        "defeated": 0,
+        "asteroidsBroken": 1,
+        "enemySerial": 5,
+        "startedAt": 0,
+        "wraps": 2,
+        "routeReached": true,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 3,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 1,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "lessonNotices": null,
+        "pressureBudget": {
+          "density": 0.5,
+          "speed": 1,
+          "overlap": 1,
+          "targeting": 1,
+          "geometry": 1,
+          "total": 0.5
+        },
+        "routeLength": 2400,
+        "lessonNoticeIndex": -1,
+        "checkpoint": {
+          "inventory": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            {
+              "key": "0:-1",
+              "type": 0,
+              "polarity": -1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 2
+            }
+          ],
+          "equipped": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 2,
+          "projective": null
+        },
+        "foldWakes": {
+          "keys": [
+            "0:1",
+            "0:2",
+            "0:3"
+          ],
+          "total": 3,
+          "enemies": 2,
+          "asteroids": 5
+        },
+        "grade": {
+          "letter": "C",
+          "score": 57,
+          "survival": 32,
+          "execution": 0,
+          "precision": 0,
+          "topology": 15,
+          "control": 10,
+          "speed": {
+            "letter": "C",
+            "score": 63,
+            "bonus": 630,
+            "elapsed": 14.999999999999789,
+            "reference": 26.666666666666668
+          },
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 3,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 1,
+            "kills": 0,
+            "wavesCleared": 0
+          }
+        },
+        "chapter": {
+          "kind": "level",
+          "number": 2,
+          "name": "Quiet Belt",
+          "stage": 0,
+          "calm": true,
+          "routeLength": 2400,
+          "carriers": 3,
+          "asteroids": 14,
+          "goal": "Reach the exit through a quiet asteroid belt.",
+          "hint": "Break or avoid asteroids. Enemy shots can break them too. Watch for an occasional carrier.",
+          "waves": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "elapsed": 14.999999999999789
+      },
+      "deathRecap": null,
+      "projective": null,
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0,
+          "type": "route-start",
+          "chapter": 1,
+          "length": 2400,
+          "carriers": 3,
+          "pressure": {
+            "density": 0.5,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 0.5
+          }
+        },
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": 1,
+          "kind": "level",
+          "name": "Quiet Belt"
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 1,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 1,
+          "enemies": 0,
+          "asteroids": 1,
+          "x": 220,
+          "z": 1430
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 2,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 2,
+          "enemies": 1,
+          "asteroids": 2,
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 0,
+          "type": "fold",
+          "fields": 3,
+          "countdown": 0
+        },
+        {
+          "time": 0,
+          "type": "fold-wake",
+          "zone": 0,
+          "depth": 3,
+          "enemies": 1,
+          "asteroids": 2,
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 0.008333333333333333,
+          "type": "enemy-presented",
+          "target": 4,
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 0.008333333333333333,
+          "type": "enemy-presented",
+          "target": 5,
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 1.0999999999999985,
+          "type": "damage",
+          "reason": "Asteroid impact. One hull point lost.",
+          "hull": 4,
+          "amount": 1,
+          "retained": false,
+          "x": 0,
+          "z": 99,
+          "source": "asteroid",
+          "target": "fixture-rock"
+        },
+        {
+          "time": 1.0999999999999985,
+          "type": "asteroid-broken",
+          "target": "fixture-rock",
+          "owner": "ship",
+          "x": 0,
+          "z": 300,
+          "points": 0
+        },
+        {
+          "time": 3.8083333333333225,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 1730,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "vx": -178.55072460996644,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 3.8083333333333225,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 1730
+        },
+        {
+          "time": 4.458333333333345,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1710,
+          "vx": -188.61350806032937,
+          "vz": -103.46644787524193,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 4.458333333333345,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "beat": 0,
+          "objectId": "shot:3311032076:1"
+        },
+        {
+          "time": 4.458333333333345,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1710,
+          "vx": -167.0426562528067,
+          "vz": -135.5622080476367,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 4.458333333333345,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 1562.14285716007,
+          "beat": 0,
+          "objectId": "shot:3311032076:2"
+        },
+        {
+          "time": 4.908333333333367,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 1880,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "vx": -149.15254235169184,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 4.908333333333367,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 1880
+        },
+        {
+          "time": 4.983333333333371,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -131.50291711102855,
+          "z": 1638.180859719763,
+          "from": {
+            "x": 131.50291711102855,
+            "z": 1638.180859719763
+          },
+          "to": {
+            "x": -131.50291711102855,
+            "z": 1638.180859719763
+          }
+        },
+        {
+          "time": 5.075000000000042,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -103.49755494687508,
+          "z": 1646.09103461152,
+          "from": {
+            "x": 103.49755494687508,
+            "z": 1646.09103461152
+          },
+          "to": {
+            "x": -103.49755494687508,
+            "z": 1646.09103461152
+          }
+        },
+        {
+          "time": 5.558333333333399,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1860,
+          "vx": -159.33430809461603,
+          "vz": -106.10871384567434,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 5.558333333333399,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "beat": 0,
+          "objectId": "shot:3311032076:3"
+        },
+        {
+          "time": 5.558333333333399,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 1860,
+          "vx": -137.76345628709336,
+          "vz": -132.91994207720427,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 5.558333333333399,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 1683.0000000188593,
+          "beat": 0,
+          "objectId": "shot:3311032076:4"
+        },
+        {
+          "time": 6.31666666666677,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -114.63181679450099,
+          "z": 1758.3363717351265,
+          "from": {
+            "x": 114.63181679450099,
+            "z": 1758.3363717351265
+          },
+          "to": {
+            "x": -114.63181679450099,
+            "z": 1758.3363717351265
+          }
+        },
+        {
+          "time": 6.425000000000109,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -81.47224670745747,
+          "z": 1767.7474154212034,
+          "from": {
+            "x": 81.47224670745747,
+            "z": 1767.7474154212034
+          },
+          "to": {
+            "x": -81.47224670745747,
+            "z": 1767.7474154212034
+          }
+        },
+        {
+          "time": 8.891666666666802,
+          "type": "enemy-return",
+          "actor": "enemy-4",
+          "target": 4,
+          "edge": "bottom",
+          "x": 220,
+          "z": 2800,
+          "hp": 1
+        },
+        {
+          "time": 9.208333333333451,
+          "type": "enemy-presented",
+          "target": 4,
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 10.491666666666712,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 2800,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "vx": -63.526985215308514,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 10.491666666666712,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 10.558333333333374,
+          "type": "enemy-return",
+          "actor": "enemy-5",
+          "target": 5,
+          "edge": "bottom",
+          "x": 220,
+          "z": 2950,
+          "hp": 1
+        },
+        {
+          "time": 10.875000000000023,
+          "type": "enemy-presented",
+          "target": 5,
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 11.141666666666675,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -74.0553004489604,
+          "vz": -113.80461469536388,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 11.141666666666675,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "beat": 0,
+          "objectId": "shot:3311032076:5"
+        },
+        {
+          "time": 11.141666666666675,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -52.48444864143774,
+          "vz": -125.22404122751473,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 11.141666666666675,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2364.42857144319,
+          "beat": 0,
+          "objectId": "shot:3311032076:6"
+        },
+        {
+          "time": 11.599999999999982,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 2950,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "vx": -59.42122186143739,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 11.599999999999982,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 11.633333333333313,
+          "type": "drive-warning",
+          "due": 13.033333333333314
+        },
+        {
+          "time": 12.249999999999945,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2930,
+          "vx": -69.96615421557195,
+          "vz": -114.17363474896018,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 12.249999999999945,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "beat": 0,
+          "objectId": "shot:3311032076:7"
+        },
+        {
+          "time": 12.249999999999945,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2930,
+          "vx": -48.395302408049304,
+          "vz": -124.85502117391843,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 12.249999999999945,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 5,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-5",
+          "target": 5,
+          "aimX": 0,
+          "aimZ": 2485.714285733993,
+          "beat": 0,
+          "objectId": "shot:3311032076:8"
+        },
+        {
+          "time": 13.041666666666567,
+          "type": "drive-fault-blocked",
+          "fields": 3
+        },
+        {
+          "time": 13.649999999999865,
+          "type": "enemy-windup",
+          "actor": "enemy-4",
+          "target": 4,
+          "x": 220,
+          "z": 2800,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "vx": -104.28893904660198,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 13.649999999999865,
+          "type": "pattern-warning",
+          "actor": "enemy-4",
+          "target": 4,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2800
+        },
+        {
+          "time": 13.86666666666652,
+          "type": "operation",
+          "actor": "player",
+          "typeId": 0,
+          "source": 1,
+          "x": -76.61055509805544,
+          "z": 2437.883311632721,
+          "from": {
+            "x": 76.61055509805544,
+            "z": 2437.883311632721
+          },
+          "to": {
+            "x": -76.61055509805544,
+            "z": 2437.883311632721
+          }
+        },
+        {
+          "time": 14.299999999999828,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -114.65227977014585,
+          "vz": -110.14098942253092,
+          "geometryRule": "klein",
+          "rayIndex": 0,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 14.299999999999828,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "beat": 0,
+          "objectId": "shot:3311032076:9"
+        },
+        {
+          "time": 14.299999999999828,
+          "type": "enemy-fire",
+          "x": 220,
+          "z": 2780,
+          "vx": -93.08142796262321,
+          "vz": -128.8876665003477,
+          "geometryRule": "klein",
+          "rayIndex": 1,
+          "beatIndex": 0,
+          "payload": [],
+          "bornAt": 14.299999999999828,
+          "pattern": "fan",
+          "patternName": "FAN",
+          "owner": "enemy",
+          "sourceId": 4,
+          "sourceName": "Fold Echo",
+          "projective": false,
+          "actor": "enemy-4",
+          "target": 4,
+          "aimX": 0,
+          "aimZ": 2526.857142866822,
+          "beat": 0,
+          "objectId": "shot:3311032076:10"
+        },
+        {
+          "time": 14.758333333333136,
+          "type": "enemy-windup",
+          "actor": "enemy-5",
+          "target": 5,
+          "x": 220,
+          "z": 2950,
+          "aimX": 0,
+          "aimZ": 2648.1428571576253,
+          "vx": -93.66447034317774,
+          "vz": -120,
+          "duration": 0.65,
+          "patternKey": "fan"
+        },
+        {
+          "time": 14.758333333333136,
+          "type": "pattern-warning",
+          "actor": "enemy-5",
+          "target": 5,
+          "patternKey": "fan",
+          "patternName": "FAN",
+          "x": 220,
+          "z": 2950
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "route-end",
+          "chapter": 1,
+          "distance": 2400
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "speed-bonus",
+          "chapter": 1,
+          "letter": "C",
+          "score": 63,
+          "bonus": 630,
+          "elapsed": 14.999999999999789,
+          "reference": 26.666666666666668
+        },
+        {
+          "time": 14.999999999999789,
+          "type": "chapter-cleared",
+          "chapter": 1,
+          "grade": {
+            "letter": "C",
+            "score": 57,
+            "survival": 32,
+            "execution": 0,
+            "precision": 0,
+            "topology": 15,
+            "control": 10,
+            "speed": {
+              "letter": "C",
+              "score": 63,
+              "bonus": 630,
+              "elapsed": 14.999999999999789,
+              "reference": 26.666666666666668
+            },
+            "metrics": {
+              "grazes": 0,
+              "seamCrossings": 0,
+              "seamEvidence": 0,
+              "folds": 3,
+              "unfolds": 0,
+              "foldEvidence": 0,
+              "damage": 1,
+              "kills": 0,
+              "wavesCleared": 0
+            }
+          }
+        }
+      ],
+      "fields": [
+        {
+          "id": 1,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        },
+        {
+          "id": 2,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        },
+        {
+          "id": 3,
+          "start": 120,
+          "end": 1320,
+          "factor": 0.5
+        }
+      ],
+      "localFactor": 1,
+      "thrust": 90,
+      "shotCount": 0,
+      "enemyShotCount": 6,
+      "foldsUsed": 3,
+      "lastEvent": "Quiet Belt route complete · Speed C · +630.",
+      "upgrade": {
+        "key": "0:1",
+        "type": 0,
+        "polarity": 1,
+        "id": "position-warp",
+        "source": "training-kit",
+        "instance": 1
+      },
+      "warpSide": -1,
+      "warpCount": 5,
+      "stage": 0,
+      "slotCount": 1,
+      "selectedSlot": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 2
+        }
+      ],
+      "equipped": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 1280,
+        "height": 900,
+        "topInset": 127.78125,
+        "bottomInset": 106
+      },
+      "effects": [],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 4,
+          "name": "Fold Echo",
+          "role": "popcorn",
+          "foldWake": true,
+          "wakeUntil": 1.2,
+          "x": 220,
+          "z": 2800,
+          "hp": 1,
+          "maxHp": 1,
+          "stage": 0,
+          "clock": 1.8000000000000025,
+          "firePeriod": 3.1,
+          "shotSpeed": 120,
+          "patternRole": "fan",
+          "patternCycle": 3,
+          "patternConfig": {
+            "count": 2,
+            "beats": 1,
+            "recovery": 2.5
+          },
+          "equipped": [],
+          "dropsUpgrade": false,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "routeActive": false,
+          "presented": true,
+          "visibleFor": 5.791666666666744,
+          "telegraph": null,
+          "contacting": false,
+          "escaped": false,
+          "loopCount": 1,
+          "visible": true,
+          "ready": true
+        },
+        {
+          "id": 5,
+          "name": "Fold Echo",
+          "role": "popcorn",
+          "foldWake": true,
+          "wakeUntil": 1.2,
+          "x": 220,
+          "z": 2950,
+          "hp": 1,
+          "maxHp": 1,
+          "stage": 0,
+          "clock": -0.008333333333326953,
+          "firePeriod": 3.1,
+          "shotSpeed": 120,
+          "patternRole": "fan",
+          "patternCycle": 2,
+          "patternConfig": {
+            "count": 2,
+            "beats": 1,
+            "recovery": 2.5
+          },
+          "equipped": [],
+          "dropsUpgrade": false,
+          "driftX": 0,
+          "driftY": 0,
+          "facing": -1,
+          "routeActive": false,
+          "presented": true,
+          "visibleFor": 4.124999999999995,
+          "telegraph": {
+            "aimX": 0,
+            "aimZ": 2648.1428571576253,
+            "vx": -93.66447034317774,
+            "vz": -120,
+            "patternKey": "fan",
+            "patternName": "FAN",
+            "beatCount": 1,
+            "beatInterval": 0.22,
+            "geometryRule": "klein",
+            "patternRecovery": 2.5,
+            "previewShots": [
+              {
+                "vx": -104.07081112817008,
+                "vz": -111.09590125559436,
+                "geometryRule": "klein",
+                "rayIndex": 0,
+                "beatIndex": 0
+              },
+              {
+                "vx": -82.49995932064743,
+                "vz": -127.93275466728426,
+                "geometryRule": "klein",
+                "rayIndex": 1,
+                "beatIndex": 0
+              }
+            ],
+            "patternVolleys": [
+              [
+                {
+                  "vx": -104.07081112817008,
+                  "vz": -111.09590125559436,
+                  "geometryRule": "klein",
+                  "rayIndex": 0,
+                  "beatIndex": 0
+                },
+                {
+                  "vx": -82.49995932064743,
+                  "vz": -127.93275466728426,
+                  "geometryRule": "klein",
+                  "rayIndex": 1,
+                  "beatIndex": 0
+                }
+              ]
+            ],
+            "phase": "tell",
+            "beatIndex": 0,
+            "x": 0,
+            "z": 2648.1428571576253,
+            "duration": 0.65,
+            "remaining": 0.4083333333333474,
+            "startedAt": 14.758333333333136,
+            "due": 15.408333333333136
+          },
+          "contacting": false,
+          "escaped": false,
+          "loopCount": 1,
+          "visible": true,
+          "ready": true
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [],
+        "enemy": [
+          {
+            "x": -66.3471617359783,
+            "z": 2339.955489844593,
+            "vx": -74.0553004489604,
+            "vz": -113.80461469536388,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 11.141666666666675,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:5",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "gates": {
+              "player": true
+            },
+            "distance": -60.0445101554069,
+            "speedFactor": 1
+          },
+          {
+            "x": -136.16097827634903,
+            "z": 2295.800373920254,
+            "vx": -52.48444864143774,
+            "vz": -125.22404122751473,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 11.141666666666675,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:6",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "gates": {
+              "player": true
+            },
+            "warped": true,
+            "warpSide": -1,
+            "operated": true,
+            "distance": -104.19962607974594,
+            "speedFactor": 1
+          },
+          {
+            "x": 27.01002462203411,
+            "z": 2615.0710574840973,
+            "vx": -69.96615421557195,
+            "vz": -114.17363474896018,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 12.249999999999945,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 5,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:7",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 215.0710574840973,
+            "speedFactor": 1
+          },
+          {
+            "x": 86.50962419113166,
+            "z": 2585.6082332619467,
+            "vx": -48.395302408049304,
+            "vz": -124.85502117391843,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 12.249999999999945,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 5,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:8",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 185.60823326194668,
+            "speedFactor": 1
+          },
+          {
+            "x": 138.78796849616435,
+            "z": 2701.983465825724,
+            "vx": -114.65227977014585,
+            "vz": -110.14098942253092,
+            "geometryRule": "klein",
+            "rayIndex": 0,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 14.299999999999828,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:9",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 301.9834658257241,
+            "speedFactor": 1
+          },
+          {
+            "x": 154.06732185982037,
+            "z": 2688.7045695622714,
+            "vx": -93.08142796262321,
+            "vz": -128.8876665003477,
+            "geometryRule": "klein",
+            "rayIndex": 1,
+            "beatIndex": 0,
+            "payload": [],
+            "bornAt": 14.299999999999828,
+            "pattern": "fan",
+            "patternName": "FAN",
+            "owner": "enemy",
+            "sourceId": 4,
+            "sourceName": "Fold Echo",
+            "projective": false,
+            "objectId": "shot:3311032076:10",
+            "hold": 0,
+            "curveTime": 0,
+            "ax": 0,
+            "foldDepth": 0,
+            "distance": 288.70456956227144,
+            "speedFactor": 1
+          }
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "failure": "AssertionError [ERR_ASSERTION]: The clear score and time are retained\n    at check (file:///D:/Projects/games/game-off-2026/tools/fold-lesson-browser.mjs:29:37)\n    at file:///D:/Projects/games/game-off-2026/tools/fold-lesson-browser.mjs:76:3"
+}

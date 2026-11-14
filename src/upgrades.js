@@ -35,7 +35,7 @@ export function makeDrop(s,x,z,source='fixture',type=0,polarity=1){
   s.drops.push(drop);event(s,'upgrade-drop',{drop:drop.id,typeId:type,polarity,x,z,source});return drop;
 }
 export function equipSeed(s,key,slot=s.selectedSlot||0){
-  const seed=s.inventory.find(item=>item.key===key);if(!seed || slot>=s.slotCount)return false;
+  const seed=s.inventory.find(item=>item.key===key);if(!seed || slot<0 || slot>=s.slotCount)return false;
   const other=s.equipped.findIndex(item=>item?.type===seed.type);if(other>=0 && other!==slot)s.equipped[other]=null;
   s.equipped[slot]=seed;s.upgrade=s.equipped[0]||s.equipped[1]||null;
   event(s,'equip',{key,slot,typeId:seed.type});return true;
@@ -44,11 +44,32 @@ export function collectDrop(s,drop){
   if(drop.collected)return false;drop.collected=true;
   const key=`${drop.type}:${drop.polarity}`;
   let seed=s.inventory.find(item=>item.key===key);
+  const duplicate=Boolean(seed);
   if(!seed){seed={key,id:OPERATIONS[drop.type].key,type:drop.type,polarity:drop.polarity,source:drop.source,instance:++s.upgradeSerial};s.inventory.push(seed);}
   const empty=s.equipped.slice(0,s.slotCount).findIndex(item=>!item);
   const existing=s.equipped.findIndex(item=>item?.type===seed.type);
-  equipSeed(s,key,existing>=0?existing:empty>=0?empty:s.selectedSlot);event(s,'upgrade-collected',{drop:drop.id,typeId:seed.type,polarity:seed.polarity});
-  s.lastEvent=`${seedLabel(seed)} collected. ${s.drops.filter(d=>!d.collected).length} seeds remain ahead.`;return true;
+  const autoEquipped=existing<0 && empty>=0 && equipSeed(s,key,empty);
+  // Preserve Act I's original seed economy. Later Acts let a duplicate
+  // retain modest value without rewriting the Paley-7 equipment identities.
+  let recycled='';
+  if(duplicate&&s.mode==='campaign'&&(s.campaign?.index??-1)>=9){
+    s.score+=35;recycled=' · +35 score';
+    if(s.campaign.index<18){
+      // Two collected duplicate seeds can patch one lost hull point per Act II
+      // stage. No passive heal at full hull and no repeat farming beyond one.
+      const count=s.campaign.duplicateRepairSeeds=(s.campaign.duplicateRepairSeeds||0)+1;
+      if(!s.campaign.duplicateRepairUsed&&count>=2&&s.hull<5){
+        s.hull++;s.campaign.duplicateRepairUsed=true;recycled+=' · FIELD PATCH +1 hull';
+        event(s,'duplicate-repair',{hull:s.hull,count});
+      }else if(!s.campaign.duplicateRepairUsed){recycled+=' · field patch '+Math.min(2,count)+'/2';}
+    }
+    if((s.campaign?.index??-1)>=18&&s.projective){
+      const p=s.projective,credits=s.campaign.duplicateEchoCredits||0;
+      if(credits<2&&p.echoes<p.capacity){p.echoes++;s.campaign.duplicateEchoCredits=credits+1;recycled+=' · +1 stored echo';}
+    }
+  }
+  event(s,'upgrade-collected',{drop:drop.id,typeId:seed.type,polarity:seed.polarity,x:drop.x,z:drop.z,autoEquipped:Boolean(autoEquipped),duplicate,recycled});
+  s.lastEvent=duplicate?`${seedLabel(seed)} duplicate recovered${recycled}.`:`${seedLabel(seed)} collected${autoEquipped?' and equipped in the empty slot':' for Equipment'}.`;return true;
 }
 
 export function moveShot(shot,dt,fields){
@@ -84,7 +105,7 @@ export function applyOperations(s,actor,shot,from,oldActor,dt,facing=1){
     const currentSource=Math.abs(currentRelative)<8?0:Math.sign(currentRelative);
     if(currentSource!==activeSourceSide(s,seed))continue;
     const resistance=(shot.payload||[]).find(type=>counters(type,seed.type));
-    if(resistance!==undefined){event(s,'counter-bypass',{actor:actorKey,attack:resistance,defense:seed.type});continue;}
+    if(resistance!==undefined){event(s,'counter-bypass',{actor:actorKey,attack:resistance,defense:seed.type,x:shot.x,z:shot.z});continue;}
     const before={x:shot.x,z:shot.z};
     switch(seed.type){
       case 0:shot.x=center.x-(shot.x-center.x);shot.warped=true;shot.warpSide=-currentSource;s.warpCount++;break;
@@ -97,7 +118,7 @@ export function applyOperations(s,actor,shot,from,oldActor,dt,facing=1){
         if(actor===s)s.fireClock=Math.max(0,s.fireClock-.12);else actor.clock=Math.max(0,actor.clock-.12);break;
     }
     applied=true;
-    event(s,'operation',{actor:actorKey,typeId:seed.type,source:currentSource,from:before,to:{x:shot.x,z:shot.z}});
+    event(s,'operation',{actor:actorKey,typeId:seed.type,source:currentSource,x:shot.x,z:shot.z,from:before,to:{x:shot.x,z:shot.z}});
   }
   const landing={x:shot.x,z:shot.z};moveShot(shot,dt*(1-t),s.fields);
   parts.push({from:landing,to:{x:shot.x,z:shot.z},shipFrom:center,shipTo:{x:actor.x,z:actor.z},t0:t,t1:1});

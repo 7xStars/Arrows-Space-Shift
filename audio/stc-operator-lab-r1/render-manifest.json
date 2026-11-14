@@ -1,0 +1,392 @@
+{
+  "revision": "stc-operator-lab-r1",
+  "seconds": 12,
+  "frames": 576000,
+  "sample_rate": 48000,
+  "common_gain": 6.975415158483572,
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Author the original four-note input motif and finite onset sequence."
+  },
+  "compile": {
+    "command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\sclang.exe",
+      "-a",
+      "--include-path",
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\SCClassLibrary",
+      "-D",
+      "-u",
+      "57141",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-operator-lab-r1\\operators.scd",
+      "D:/Projects/games/game-off-2026/audio/stc-operator-lab-r1"
+    ],
+    "exit_code": 0
+  },
+  "native": {
+    "command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\scsynth.exe",
+      "-N",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-operator-lab-r1\\operator-score.osc",
+      "_",
+      "G:\\Music Projects\\Arrow Space Shift\\scratch\\operator-lab-r1\\audio\\operator-comparisons-18ch-float.wav",
+      "48000",
+      "WAV",
+      "float",
+      "-o",
+      "18",
+      "-i",
+      "0",
+      "-z",
+      "64",
+      "-m",
+      "65536"
+    ],
+    "exit_code": 0
+  },
+  "family_trims": {
+    "dry": 1.0,
+    "gate-room": 1.0,
+    "room-gate": 1.0,
+    "transfer-gate-room": 1.0,
+    "transfer-room-gate": 1.0,
+    "filter-drive": 0.08,
+    "drive-filter": 0.08,
+    "constant-gate-room": 1.0,
+    "room-constant-gate": 1.0
+  },
+  "gain_order": "Apply the same fixed 0.08 family trim to both nonlinear paths. Then apply one common gain to all nine outputs. No independent A/B normalization.",
+  "native_raw_peak": 0.5001425743103027,
+  "peak_after_family_trim_before_common_gain": 0.11182130128145218,
+  "native_seconds": 10.032,
+  "supercollider": "scsynth 3.14.1 (Built from tag 'Version-3.14.1' [426edf6])",
+  "source_sha256": "cd0736b18fa44e13aa142174a398fc8cdb7ae4d16099d4ce866a22b81b94b697",
+  "clips": [
+    {
+      "id": "dry",
+      "title": "Original input",
+      "file": "dry.wav",
+      "pair": "reference",
+      "order": [],
+      "transfer": false,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "dry.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.78,
+        "peak_dbfs": -2.1581079461903916,
+        "rms": 0.06791347630227998,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "83d133e889411d05432186f627ffa49d55aaecdf1230d0c27a4327bfa84dd269"
+      }
+    },
+    {
+      "id": "gate-room",
+      "title": "Gate then room",
+      "file": "gate-room.wav",
+      "pair": "gate-room",
+      "order": [
+        "gate",
+        "room"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "gate-room.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.41736833990509714,
+        "peak_dbfs": -7.589609961472895,
+        "rms": 0.04738608160068936,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "7c48e0d08d850094b7c064ebac589de9fdcb903f47c780f3cf7cda2e8618fa2e"
+      }
+    },
+    {
+      "id": "room-gate",
+      "title": "Room then gate",
+      "file": "room-gate.wav",
+      "pair": "gate-room",
+      "order": [
+        "room",
+        "gate"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "room-gate.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.5559785309574284,
+        "peak_dbfs": -5.098839566442974,
+        "rms": 0.047721668524645953,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "b955031865e027e2ba735c64624898a9471958192b071c122c75bf5dc63b3726"
+      }
+    },
+    {
+      "id": "transfer-gate-room",
+      "title": "Shifted gate then room",
+      "file": "transfer-gate-room.wav",
+      "pair": "transfer-gate-room",
+      "order": [
+        "gate",
+        "room"
+      ],
+      "transfer": true,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "transfer-gate-room.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.39,
+        "peak_dbfs": -8.178707859470016,
+        "rms": 0.048879224101923364,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "bb6043c33000a312405cbfc71d782db4960a4b1b7bd318d51e6d20a839ef31f3"
+      }
+    },
+    {
+      "id": "transfer-room-gate",
+      "title": "Room then shifted gate",
+      "file": "transfer-room-gate.wav",
+      "pair": "transfer-gate-room",
+      "order": [
+        "room",
+        "gate"
+      ],
+      "transfer": true,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "transfer-room-gate.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.39,
+        "peak_dbfs": -8.178707859470016,
+        "rms": 0.044104910861659005,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "173c48b085bfe56ebebedf035f2bcf788b6a956fbab876d2c2287cdf8962e549"
+      }
+    },
+    {
+      "id": "filter-drive",
+      "title": "Filter then saturation",
+      "file": "filter-drive.wav",
+      "pair": "filter-drive",
+      "order": [
+        "filter",
+        "saturation"
+      ],
+      "transfer": false,
+      "familyTrim": 0.08,
+      "metrics": {
+        "file": "filter-drive.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.27909616753976657,
+        "peak_dbfs": -11.084922541295745,
+        "rms": 0.047508518269079536,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "40dbb30b9676940ddef53b5af4036f1492474ed7ced6e0284d6adbdbfeb8f9ca"
+      }
+    },
+    {
+      "id": "drive-filter",
+      "title": "Saturation then filter",
+      "file": "drive-filter.wav",
+      "pair": "filter-drive",
+      "order": [
+        "saturation",
+        "filter"
+      ],
+      "transfer": false,
+      "familyTrim": 0.08,
+      "metrics": {
+        "file": "drive-filter.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.27022511032321167,
+        "peak_dbfs": -11.365485943576983,
+        "rms": 0.04722783553578122,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "4abdb31d8b7e50841623fc2f2aa103bcc84fca7a18b37be41a3e25f42beb2359"
+      }
+    },
+    {
+      "id": "constant-gate-room",
+      "title": "Constant gain then room",
+      "file": "constant-gate-room.wav",
+      "pair": "constant-gate-room",
+      "order": [
+        "constant-gain",
+        "room"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "constant-gate-room.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.2779892654787142,
+        "peak_dbfs": -11.119439479722597,
+        "rms": 0.034227958804574916,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "3ce68108b34979e26a44f522c4bad29596e2cc8cbafc4f4b80726eaa517bedee"
+      }
+    },
+    {
+      "id": "room-constant-gate",
+      "title": "Room then constant gain",
+      "file": "room-constant-gate.wav",
+      "pair": "constant-gate-room",
+      "order": [
+        "room",
+        "constant-gain"
+      ],
+      "transfer": false,
+      "familyTrim": 1.0,
+      "metrics": {
+        "file": "room-constant-gate.wav",
+        "frames": 576000,
+        "channels": 2,
+        "sample_rate": 48000,
+        "duration": 12.0,
+        "peak": 0.2779892654787142,
+        "peak_dbfs": -11.119439479722597,
+        "rms": 0.034227958804574916,
+        "non_finite": 0,
+        "full_scale": 0,
+        "sha256": "3ce68108b34979e26a44f522c4bad29596e2cc8cbafc4f4b80726eaa517bedee"
+      }
+    }
+  ],
+  "comparisons": {
+    "gate-room": {
+      "difference_rms_before_common_gain": 0.005654084985819176,
+      "closed_gate_windows_seconds": [
+        [
+          1.15,
+          1.8
+        ],
+        [
+          3.15,
+          3.8
+        ],
+        [
+          5.15,
+          5.8
+        ],
+        [
+          7.15,
+          7.8
+        ]
+      ],
+      "gate_then_room_energy": 9.935842628009748,
+      "room_then_gate_energy": 0.0,
+      "tail_energy_ratio": null,
+      "zero_denominator": true
+    },
+    "transfer-gate-room": {
+      "difference_rms_before_common_gain": 0.006029749894994579,
+      "closed_gate_windows_seconds": [
+        [
+          0.45,
+          1.3
+        ],
+        [
+          2.45,
+          3.3
+        ],
+        [
+          4.45,
+          5.3
+        ],
+        [
+          6.45,
+          7.3
+        ]
+      ],
+      "gate_then_room_energy": 15.562682005484767,
+      "room_then_gate_energy": 0.0,
+      "tail_energy_ratio": null,
+      "zero_denominator": true
+    },
+    "filter-drive": {
+      "difference_rms_before_common_gain": 0.0021024558902686696,
+      "linear_operator_claim": false
+    },
+    "constant-gate-room": {
+      "difference_rms_before_common_gain": 0.0,
+      "expected_commutation": true,
+      "constant_gain": 0.5
+    }
+  },
+  "sources": {
+    "compose.py": "9ae7675e6bac3ca546a7f24c628f260ce23f27d55b895c74441b8aefe1f7d06d",
+    "operators.scd": "a1cce86ff887bb81263c64e0b80ad5c0eb003c5b1d090ca8009ad67c69300abb",
+    "foxdot-input.json": "cd0736b18fa44e13aa142174a398fc8cdb7ae4d16099d4ce866a22b81b94b697",
+    "operator-score.osc": "4b1a61ad053501c9912e1b7a120a98f13fa5e739176f9883fdb68ac705ce0fc2"
+  },
+  "renderer_sha256": "34eeb1bed0dd4848ad2b24fd1ce7a76b7d640a7f9cd64fd7c6d3c79fa4f348b9",
+  "rt_memory_kib": 65536,
+  "diagnostic_low_memory": {
+    "native_exit_code": 0,
+    "rt_memory_kib": 8192,
+    "allocation_failures": 21,
+    "constant_control_difference_rms": 0.002275029137797335,
+    "accepted_render_rt_memory_kib": 65536,
+    "accepted_control_difference_rms": 0.0,
+    "operator_source_sha256": "a1cce86ff887bb81263c64e0b80ad5c0eb003c5b1d090ca8009ad67c69300abb",
+    "interpretation": "Exit zero alone does not establish a valid render. Missing delay allocations caused a false scalar-control difference. This degraded control is not delivered as an accepted audio clip."
+  },
+  "diagnostic_run_in_this_invocation": false,
+  "composition_notation": "Gate then room is R after G, or R\u2218G. Room then gate is G after R, or G\u2218R. The reported RMS is the norm of their output difference; it does not assign a commutator sign.",
+  "operators": {
+    "gate": {
+      "rate_hz": 0.5,
+      "phase": 0,
+      "duty": 0.45,
+      "smooth_seconds": 0.005
+    },
+    "transfer_gate": {
+      "rate_hz": 0.5,
+      "phase": 0.25,
+      "duty": 0.35,
+      "smooth_seconds": 0.005
+    },
+    "room": "Fixed linear 80 Hz HPF/4600 Hz LPF, six delay taps, stable 0.113-second comb with 1.3-second decay, and direct signal.",
+    "filter": "Linear 260 Hz low-pass filter.",
+    "saturation": "Pointwise tanh of 10 times the input.",
+    "constant_gate": "Scalar multiplication by 0.5; it commutes with the fixed linear room."
+  },
+  "limits": "Finite original offline input. Linear gate/room composition is distinct from the nonlinear filter/saturation example. No global operator theorem, topology equivalence, gameplay authority, live FoxDot Clock, REAPER use, HRTF, listening, or physical-device claim."
+}

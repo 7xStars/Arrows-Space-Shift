@@ -1,0 +1,57 @@
+[
+  {
+    "file": "src/simulation.js",
+    "unchanged": true,
+    "sha256": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63"
+  },
+  {
+    "file": "src/campaign.js",
+    "unchanged": true,
+    "sha256": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd"
+  },
+  {
+    "file": "src/boss.js",
+    "unchanged": true,
+    "sha256": "7327dae3fbd22d046e803ffbf61e239f8fc4a91b522b567a44d6a1d8b7c8cbf6"
+  },
+  {
+    "file": "src/space.js",
+    "unchanged": true,
+    "sha256": "289c212b36b1c6a3329895cf126b73bcc6e478c049d9d3339b2179ade4b3e3c5"
+  },
+  {
+    "file": "src/klein.js",
+    "unchanged": true,
+    "sha256": "43f51da4bd51755de981a59d79d3b641da50796e28fa26200ddc87d7d5bcfab8"
+  },
+  {
+    "file": "src/upgrades.js",
+    "unchanged": true,
+    "sha256": "86b2d3c2b0150c329944dbacfce687944366e2cec71ffaf4d443438749dfa239"
+  },
+  {
+    "file": "src/hyperbolic.js",
+    "unchanged": true,
+    "sha256": "cf15e8e05f6211e193c3155684150d0eddd2485f32f16faa60bbff538bd33fec"
+  },
+  {
+    "file": "src/hyperbolic-campaign.js",
+    "unchanged": true,
+    "sha256": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432"
+  },
+  {
+    "file": "src/journey.js",
+    "unchanged": true,
+    "sha256": "894ecd0eb3ce38c12c50e4f847c534927ab354a8c09f3abb6c81ab7ce04a5d31"
+  },
+  {
+    "file": "src/repair.js",
+    "unchanged": true,
+    "sha256": "8f25a2bf20468b4975e718031a99cbe59308beaff8715ed6ebda37353b4cc03f"
+  },
+  {
+    "file": "src/storage.js",
+    "unchanged": true,
+    "sha256": "638b2e0ce209cbd56f9e6ee024b90623b8e2e2d95de484ee7c27d6afcd36b66a"
+  }
+]

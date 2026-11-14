@@ -1,0 +1,4622 @@
+{
+  "revision": "identified-return-r8-seek-debug",
+  "input": "Native select, audio keyboard controls, and position buttons. Read-only media snapshots.",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=589824-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=262144-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=327680-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=458752-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=458752-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=458752-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4128768-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4227072-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4325376-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4456448-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4587520-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=4653056-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=9633792-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=9797632-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=9928704-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=10059776-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=11010048-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=11272192-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=11468800-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=0-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=9633792-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=9830400-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://127.0.0.1:17126/track-review-r8.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"",
+        "range": "bytes=10027008-",
+        "sec-ch-ua-mobile": "?0"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14715268",
+        "content-range": "bytes 0-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14125444",
+        "content-range": "bytes 589824-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14715268",
+        "content-range": "bytes 0-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14453124",
+        "content-range": "bytes 262144-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4126612",
+        "content-range": "bytes 0-4126611/4126612",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3798932",
+        "content-range": "bytes 327680-4126611/4126612",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4126612",
+        "content-range": "bytes 0-4126611/4126612",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3667860",
+        "content-range": "bytes 458752-4126611/4126612",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3438848",
+        "content-range": "bytes 0-3438847/3438848",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "2980096",
+        "content-range": "bytes 458752-3438847/3438848",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3438848",
+        "content-range": "bytes 0-3438847/3438848",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "2980096",
+        "content-range": "bytes 458752-3438847/3438848",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:00 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14715268",
+        "content-range": "bytes 0-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10586500",
+        "content-range": "bytes 4128768-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10488196",
+        "content-range": "bytes 4227072-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10389892",
+        "content-range": "bytes 4325376-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10258820",
+        "content-range": "bytes 4456448-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10127748",
+        "content-range": "bytes 4587520-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:01 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "10062212",
+        "content-range": "bytes 4653056-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:02 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "5081476",
+        "content-range": "bytes 9633792-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:03 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4917636",
+        "content-range": "bytes 9797632-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:03 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4786564",
+        "content-range": "bytes 9928704-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:03 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4655492",
+        "content-range": "bytes 10059776-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:03 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3705220",
+        "content-range": "bytes 11010048-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:04 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3443076",
+        "content-range": "bytes 11272192-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:04 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "3246468",
+        "content-range": "bytes 11468800-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:04 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "14715268",
+        "content-range": "bytes 0-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:05 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "5081476",
+        "content-range": "bytes 9633792-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:05 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4884868",
+        "content-range": "bytes 9830400-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:05 GMT",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "status": 206,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "4688260",
+        "content-range": "bytes 10027008-14715267/14715268",
+        "content-type": "audio/wav",
+        "date": "Fri, 13 Nov 2026 16:35:05 GMT",
+        "keep-alive": "timeout=5"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "label": "prior ass-identified-return-r8-music.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0.010154,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.059
+        ]
+      ],
+      "error": null,
+      "status": "Playing: r8 new mix."
+    },
+    {
+      "label": "prior foundation-control.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0.084132,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.431
+        ]
+      ],
+      "error": null,
+      "status": "Playing: r7 foundation with the same output gain."
+    },
+    {
+      "label": "prior harmony-r8.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0.083263,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.772
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Harmony / r8."
+    },
+    {
+      "label": "prior harmony-control.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0.073709,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.748
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Harmony / foundation."
+    },
+    {
+      "label": "prior break-return-r8.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0.073128,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Break and return / r8."
+    },
+    {
+      "label": "prior break-return-control.wav",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0.081112,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Break and return / foundation."
+    },
+    {
+      "label": "new-layer metadata",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          23.21
+        ]
+      ],
+      "error": null,
+      "status": "Position selected: Harmony entry. Playback is paused."
+    },
+    {
+      "label": "new-layer after1200ms",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          24.234
+        ]
+      ],
+      "error": null,
+      "status": "Position selected: Harmony entry. Playback is paused."
+    },
+    {
+      "label": "new-layer play800ms",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 22.292751,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Added layers alone."
+    },
+    {
+      "label": "new-layer paused",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 22.293957,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null,
+      "status": "Playing: Added layers alone."
+    },
+    {
+      "label": "Break immediate",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null,
+      "status": "Moving to the selected position. Playback is paused."
+    },
+    {
+      "label": "Break after1200ms",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ]
+      ],
+      "error": null,
+      "status": "Position selected: Break. Playback is paused."
+    },
+    {
+      "label": "Return immediate",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ]
+      ],
+      "error": null,
+      "status": "Moving to the selected position. Playback is paused."
+    },
+    {
+      "label": "Return after1200ms",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          60.756
+        ]
+      ],
+      "error": null,
+      "status": "Position selected: Return. Playback is paused."
+    },
+    {
+      "label": "candidate Break immediate",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null,
+      "status": "Moving to the selected position. Playback is paused."
+    },
+    {
+      "label": "candidate Break after1200ms",
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "paused": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          52.905
+        ]
+      ],
+      "error": null,
+      "status": "Position selected: Break. Playback is paused."
+    }
+  ],
+  "limits": "Headless Edge. No human listening or device result.",
+  "browserVersion": "157.0.4341.46",
+  "events": [
+    {
+      "type": "emptied",
+      "at": 34,
+      "src": "",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 35.10000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 39.80000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 39.80000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 42,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 42.40000003576279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 42.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 42.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 79.10000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 79.40000003576279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 79.80000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 79.80000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 81.40000003576279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 81.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 81.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 81.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 112.40000003576279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.071
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 202.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          4.095
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 215.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.059
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 216,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.059
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 266.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 267.10000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 270.19999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 270.19999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 270.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 272.10000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.365
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 272.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.365
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 272.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.365
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 272.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.365
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 292.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.365
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 296.19999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.73
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 307.19999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.431
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 307.19999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.431
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 454,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/foundation-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 454.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 456.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 456.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 457.69999998807907,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 459.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 459.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 459.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 459.60000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 492.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 495.30000001192093,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.73
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 506,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.772
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 506.10000002384186,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          18.772
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 651.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 652.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 653.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 653.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 655.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 656.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 656.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 656.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 656.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 675.8000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 678.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 688.6999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.748
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 688.6999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": 21.492542,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          21.492542
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.748
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 820.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/harmony-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 821.8000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 823.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 823.1999999880791,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 824.3000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 825.3000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 825.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 825.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 825.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 842.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 845.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.754
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 856.8000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 856.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 990.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-r8.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 990.8000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 993,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 993.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 994.3000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 995.3000000119209,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 995.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 995.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 995.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 1025.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          2.389
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 1029.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.754
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1038.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1038.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": 17.910438,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          17.910438
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 1178.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/break-return-control.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 1179.6000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1181.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1181.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1182.199999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 1182.6000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 1182.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 1182.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 1182.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeking",
+      "at": 1182.9000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1189.6000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.103
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1189.6000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.103
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeked",
+      "at": 1190,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 3,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.103
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 1190.199999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 3,
+      "network": 2,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.103
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1191.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.615
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1191.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.615
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 1191.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          22.615
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1194.300000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          23.21
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1194.4000000357628,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          23.21
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1198.1000000238419,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          23.893
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1198.199999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          23.893
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 1204.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          24.234
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 1204.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.532537,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          24.234
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "play",
+      "at": 2425.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.536615,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          24.234
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 2515.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.573997,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 2515.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 21.574051,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "pause",
+      "at": 3242.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 22.293957,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeking",
+      "at": 3275.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 3278.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.177
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 3278.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.177
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeked",
+      "at": 3279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.177
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 3279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.177
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 3279,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.177
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 3281.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.711
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 3281.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          51.711
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 3283.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          52.393
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 3283.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          52.393
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 3286.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 3286.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeking",
+      "at": 4509,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 4512.300000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          58.708
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 4512.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          58.708
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeked",
+      "at": 4512.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          58.708
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 4512.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          58.708
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 4512.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          58.708
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 4516.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          59.732
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 4516.199999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          59.732
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 4538.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          60.756
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 4538.5,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 57.353432,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          1.706
+        ],
+        [
+          21.503,
+          40.959
+        ],
+        [
+          50.175,
+          53.417
+        ],
+        [
+          57.343,
+          60.756
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "emptied",
+      "at": 5720.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/new-layer.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 3,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadstart",
+      "at": 5720.900000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 2,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 5724.300000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 5724.300000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 5726.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": null,
+      "ready": 0,
+      "network": 1,
+      "seeking": false,
+      "seekable": [],
+      "buffered": [],
+      "error": null
+    },
+    {
+      "type": "loadedmetadata",
+      "at": 5727.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "loadeddata",
+      "at": 5727.300000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 5727.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 5727.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 0,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeking",
+      "at": 5792.400000035763,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 5795.600000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          51.199
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 5795.699999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 1,
+      "network": 1,
+      "seeking": true,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          51.199
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "seeked",
+      "at": 5795.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          51.199
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplay",
+      "at": 5795.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          51.199
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "canplaythrough",
+      "at": 5795.800000011921,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          51.199
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 5798.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          52.223
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 5798.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          52.223
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "progress",
+      "at": 5800.100000023842,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          52.905
+        ]
+      ],
+      "error": null
+    },
+    {
+      "type": "suspend",
+      "at": 5800.199999988079,
+      "src": "http://127.0.0.1:17126/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+      "time": 50.189253,
+      "duration": 76.641792,
+      "ready": 4,
+      "network": 1,
+      "seeking": false,
+      "seekable": [
+        [
+          0,
+          76.641792
+        ]
+      ],
+      "buffered": [
+        [
+          0,
+          3.413
+        ],
+        [
+          50.175,
+          52.905
+        ]
+      ],
+      "error": null
+    }
+  ],
+  "status": "passed",
+  "checks": {
+    "new_layer_auto_offset": "passed",
+    "new_layer_break_seek": "passed",
+    "new_layer_return_seek": "passed",
+    "candidate_break_seek": "passed",
+    "full_media_seekable_range": "passed",
+    "actual_partial_http_responses": "passed"
+  },
+  "sourceIdentity": {
+    "tools/local-server.mjs": "ffc1251ccc83c53c0fcc51aa20b4a8775e8cb4ee1a12ba2e02054f489d0f05a1",
+    "src/track-review-r8.js": "0cb3b7e469066758444e05668736648470cb7f519667176b435ccf8b0da9c990",
+    "track-review-r8.html": "e8f8a461de68f78107eaa7387d83659f5610d7afa06a7bb17fb2e954fa35a406"
+  },
+  "diagnosis": {
+    "classification": "Repaired local HTTP byte-range capability and actual-seek status confirmation.",
+    "observed": "The server now returns 206 with Accept-Ranges bytes and Content-Range. Edge exposes the full interval as seekable. All four requested positions persist after 1200 ms, with playback paused and no media errors.",
+    "before_evidence": "reports/stc-study-r8/player-seek-before-range.json",
+    "native_file_control": "The earlier native file comparison already reached all three positions through the same page. This supports the HTTP capability diagnosis.",
+    "limit": "Headless native media and HTTP behavior. No listening or physical-device result."
+  }
+}

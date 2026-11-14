@@ -1,0 +1,796 @@
+{
+  "decoded_files": 80,
+  "all_frame_counts_exact": true,
+  "sample_rate": 48000,
+  "channels": 2,
+  "maximum_peak": 0.8313882946968079,
+  "maximum_codec_residual_rms": 0.0020722905173897743,
+  "maximum_overlap_residual_rms": 0.002645812610184931,
+  "limits": "Native FFmpeg decode and sample comparison. This is not a listening result. The finite composition repeats after its authored ending.",
+  "files": [
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.6352205276489258,
+      "codec_residual_rms": 0.0015215351013466716
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.7728884816169739,
+      "codec_residual_rms": 0.0019229791359975934,
+      "overlap_residual_rms": 0.0015313420033288003,
+      "overlap_same_signal_rms_difference": 0.0010563773103058338
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.8118571639060974,
+      "codec_residual_rms": 0.0018542858306318521,
+      "overlap_residual_rms": 0.0024172319880398667,
+      "overlap_same_signal_rms_difference": 0.0035822424106299877
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.7684412598609924,
+      "codec_residual_rms": 0.001837591058574617,
+      "overlap_residual_rms": 0.0006387316184367851,
+      "overlap_same_signal_rms_difference": 5.113110091770068e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.7096149325370789,
+      "codec_residual_rms": 0.0016602022806182504,
+      "overlap_residual_rms": 0.0005941920447013009,
+      "overlap_same_signal_rms_difference": 0.00032864094828255475
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.7705687880516052,
+      "codec_residual_rms": 0.0009413717780262232,
+      "overlap_residual_rms": 0.0008211351100199277,
+      "overlap_same_signal_rms_difference": 0.00022614389308728278
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.8015509247779846,
+      "codec_residual_rms": 0.002006306778639555,
+      "overlap_residual_rms": 0.0007499945578925135,
+      "overlap_same_signal_rms_difference": 0.00037210865411907434
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.7993331551551819,
+      "codec_residual_rms": 0.0019813671242445707,
+      "overlap_residual_rms": 0.0025741776093765856,
+      "overlap_same_signal_rms_difference": 0.003531529102474451
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.8313882946968079,
+      "codec_residual_rms": 0.0019485773518681526,
+      "overlap_residual_rms": 0.0012264209073396663,
+      "overlap_same_signal_rms_difference": 0.0005150926881469786
+    },
+    {
+      "track": "act1-03",
+      "stem": "core",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.5858102440834045,
+      "codec_residual_rms": 0.0013623606646433473,
+      "overlap_residual_rms": 0.000480161502039595,
+      "overlap_same_signal_rms_difference": 0.0006977223674766719
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.0,
+      "codec_residual_rms": 0.0
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.007996940985321999,
+      "codec_residual_rms": 3.4032767871394753e-05,
+      "overlap_residual_rms": 0.0,
+      "overlap_same_signal_rms_difference": 0.0
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.00892922654747963,
+      "codec_residual_rms": 4.494969834922813e-05,
+      "overlap_residual_rms": 3.881518102158545e-05,
+      "overlap_same_signal_rms_difference": 3.592989014578052e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.009006401523947716,
+      "codec_residual_rms": 5.527033135876991e-05,
+      "overlap_residual_rms": 7.596900985294405e-05,
+      "overlap_same_signal_rms_difference": 7.333031680900604e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.01537751592695713,
+      "codec_residual_rms": 6.908363138791174e-05,
+      "overlap_residual_rms": 1.4711539095622466e-05,
+      "overlap_same_signal_rms_difference": 9.896059054881334e-06
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.012673326767981052,
+      "codec_residual_rms": 7.380836177617311e-05,
+      "overlap_residual_rms": 2.0739366621983226e-05,
+      "overlap_same_signal_rms_difference": 1.5472027371288277e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.011287545785307884,
+      "codec_residual_rms": 6.190121348481625e-05,
+      "overlap_residual_rms": 2.9004728789453938e-05,
+      "overlap_same_signal_rms_difference": 2.281248634972144e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.012962477281689644,
+      "codec_residual_rms": 7.674459629924968e-05,
+      "overlap_residual_rms": 9.166748994297652e-07,
+      "overlap_same_signal_rms_difference": 8.165360441125813e-07
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.014492661692202091,
+      "codec_residual_rms": 8.013486512936652e-05,
+      "overlap_residual_rms": 3.204170984167769e-05,
+      "overlap_same_signal_rms_difference": 3.077823930652812e-05
+    },
+    {
+      "track": "act1-03",
+      "stem": "atmosphere",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.008849156089127064,
+      "codec_residual_rms": 3.323758573969826e-05,
+      "overlap_residual_rms": 0.00010825941928138044,
+      "overlap_same_signal_rms_difference": 7.553013711003587e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.6394833326339722,
+      "codec_residual_rms": 0.001532576628960669
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.7515236139297485,
+      "codec_residual_rms": 0.0017884225817397237,
+      "overlap_residual_rms": 0.0005464253195310277,
+      "overlap_same_signal_rms_difference": 0.0007767288479954004
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.7778102159500122,
+      "codec_residual_rms": 0.0018155305879190564,
+      "overlap_residual_rms": 0.0021937534455684945,
+      "overlap_same_signal_rms_difference": 0.0024088171776384115
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.7480099201202393,
+      "codec_residual_rms": 0.0016089712735265493,
+      "overlap_residual_rms": 0.0008401183495623458,
+      "overlap_same_signal_rms_difference": 4.7999736125348136e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.8061798214912415,
+      "codec_residual_rms": 0.0013784506591036916,
+      "overlap_residual_rms": 0.00029965208806281477,
+      "overlap_same_signal_rms_difference": 0.0004831852565985173
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.8121885657310486,
+      "codec_residual_rms": 0.001967711141332984,
+      "overlap_residual_rms": 0.002645812610184931,
+      "overlap_same_signal_rms_difference": 0.001538646873086691
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.8019973635673523,
+      "codec_residual_rms": 0.001983160385861993,
+      "overlap_residual_rms": 0.0005917271270373957,
+      "overlap_same_signal_rms_difference": 0.0008745139930397272
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.7558894157409668,
+      "codec_residual_rms": 0.001798611250706017,
+      "overlap_residual_rms": 0.0022910423167357306,
+      "overlap_same_signal_rms_difference": 0.002354940166696906
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.6541905403137207,
+      "codec_residual_rms": 0.0015677246265113354,
+      "overlap_residual_rms": 0.001112771182951776,
+      "overlap_same_signal_rms_difference": 0.00026109348982572556
+    },
+    {
+      "track": "act2-03",
+      "stem": "core",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.6324111223220825,
+      "codec_residual_rms": 0.0014483676059171557,
+      "overlap_residual_rms": 0.0009642607668191803,
+      "overlap_same_signal_rms_difference": 0.0012951049720868468
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.0,
+      "codec_residual_rms": 0.0
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.014554012566804886,
+      "codec_residual_rms": 5.057818998466246e-05,
+      "overlap_residual_rms": 0.0,
+      "overlap_same_signal_rms_difference": 0.0
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.017384903505444527,
+      "codec_residual_rms": 7.10046078893356e-05,
+      "overlap_residual_rms": 7.068880458269295e-05,
+      "overlap_same_signal_rms_difference": 5.468257950269617e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.019064167514443398,
+      "codec_residual_rms": 8.555471140425652e-05,
+      "overlap_residual_rms": 0.0001293060359825328,
+      "overlap_same_signal_rms_difference": 8.411386806983501e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.01756972074508667,
+      "codec_residual_rms": 7.680677663302049e-05,
+      "overlap_residual_rms": 7.74330722874098e-05,
+      "overlap_same_signal_rms_difference": 8.291671838378534e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.025518406182527542,
+      "codec_residual_rms": 0.0001087202545022592,
+      "overlap_residual_rms": 0.00012794638739863133,
+      "overlap_same_signal_rms_difference": 9.857232362264767e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.02520015835762024,
+      "codec_residual_rms": 0.00011291944974800572,
+      "overlap_residual_rms": 0.00010924213489391914,
+      "overlap_same_signal_rms_difference": 9.991061961045489e-05
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.028190646320581436,
+      "codec_residual_rms": 0.00011068524327129126,
+      "overlap_residual_rms": 0.0001331857308222059,
+      "overlap_same_signal_rms_difference": 0.0001160546307801269
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.03373949974775314,
+      "codec_residual_rms": 0.00015846674796193838,
+      "overlap_residual_rms": 0.00018667434061068712,
+      "overlap_same_signal_rms_difference": 0.00010972436575684696
+    },
+    {
+      "track": "act2-03",
+      "stem": "atmosphere",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.03097711317241192,
+      "codec_residual_rms": 7.018195901764557e-05,
+      "overlap_residual_rms": 0.000267079590417834,
+      "overlap_same_signal_rms_difference": 0.00015088936197571456
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.6662590503692627,
+      "codec_residual_rms": 0.0015977945877239108
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.7871301770210266,
+      "codec_residual_rms": 0.0018428097246214747,
+      "overlap_residual_rms": 0.0011471394682205688,
+      "overlap_same_signal_rms_difference": 0.0006999766919761896
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.786274790763855,
+      "codec_residual_rms": 0.0018935089465230703,
+      "overlap_residual_rms": 0.00120228602294121,
+      "overlap_same_signal_rms_difference": 0.0008419359801337123
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.6665757298469543,
+      "codec_residual_rms": 0.0016734902746975422,
+      "overlap_residual_rms": 0.0005711995645194818,
+      "overlap_same_signal_rms_difference": 0.0003545688814483583
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.7856004238128662,
+      "codec_residual_rms": 0.0019861035980284214,
+      "overlap_residual_rms": 0.0016741715622665893,
+      "overlap_same_signal_rms_difference": 0.0022967925760895014
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.792130708694458,
+      "codec_residual_rms": 0.001354185864329338,
+      "overlap_residual_rms": 0.0026338331493949044,
+      "overlap_same_signal_rms_difference": 0.0001741325540933758
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.8195834159851074,
+      "codec_residual_rms": 0.0016489553963765502,
+      "overlap_residual_rms": 0.00043578302352016186,
+      "overlap_same_signal_rms_difference": 0.00010247976024402305
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.8264524340629578,
+      "codec_residual_rms": 0.002008377341553569,
+      "overlap_residual_rms": 0.0016539519223735658,
+      "overlap_same_signal_rms_difference": 0.0007503391825594008
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.8190386295318604,
+      "codec_residual_rms": 0.0020722905173897743,
+      "overlap_residual_rms": 0.0007952435763834701,
+      "overlap_same_signal_rms_difference": 0.0004787679936271161
+    },
+    {
+      "track": "act3-03",
+      "stem": "core",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.773262619972229,
+      "codec_residual_rms": 0.0013023805804550648,
+      "overlap_residual_rms": 0.0023444313395317557,
+      "overlap_same_signal_rms_difference": 0.0018578771268948913
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.008072320371866226,
+      "codec_residual_rms": 4.848062599194236e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.011921142227947712,
+      "codec_residual_rms": 7.336702401516959e-05,
+      "overlap_residual_rms": 4.010382957386545e-05,
+      "overlap_same_signal_rms_difference": 3.0307155611808412e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.013654882088303566,
+      "codec_residual_rms": 7.477001054212451e-05,
+      "overlap_residual_rms": 0.00010098007520425352,
+      "overlap_same_signal_rms_difference": 9.552131814416498e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.00816765334457159,
+      "codec_residual_rms": 4.893997174804099e-05,
+      "overlap_residual_rms": 3.2537027652133435e-05,
+      "overlap_same_signal_rms_difference": 2.2959051420912147e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.017317181453108788,
+      "codec_residual_rms": 9.074014087673277e-05,
+      "overlap_residual_rms": 4.538236740934844e-05,
+      "overlap_same_signal_rms_difference": 4.756482667289674e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.0341944582760334,
+      "codec_residual_rms": 0.00016702519496902823,
+      "overlap_residual_rms": 9.787340896274608e-05,
+      "overlap_same_signal_rms_difference": 0.00010101326188305393
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.03834054246544838,
+      "codec_residual_rms": 0.00017459815717302263,
+      "overlap_residual_rms": 0.0002688628047728026,
+      "overlap_same_signal_rms_difference": 0.00024083731113933027
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.0221551563590765,
+      "codec_residual_rms": 0.00012092014367226511,
+      "overlap_residual_rms": 7.860842735147507e-05,
+      "overlap_same_signal_rms_difference": 6.89974840497598e-05
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.02794780023396015,
+      "codec_residual_rms": 0.00014693205594085157,
+      "overlap_residual_rms": 0.00010369698281849331,
+      "overlap_same_signal_rms_difference": 0.00010061791545012966
+    },
+    {
+      "track": "act3-03",
+      "stem": "atmosphere",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.028081342577934265,
+      "codec_residual_rms": 0.00011905076098628342,
+      "overlap_residual_rms": 0.00021869516644511876,
+      "overlap_same_signal_rms_difference": 0.0001680221757851541
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.5914084911346436,
+      "codec_residual_rms": 0.0013712815707549453
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.6529166102409363,
+      "codec_residual_rms": 0.001490290160290897,
+      "overlap_residual_rms": 0.0021607700143574547,
+      "overlap_same_signal_rms_difference": 0.0034697530791163445
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.7567684054374695,
+      "codec_residual_rms": 0.0017812271835282445,
+      "overlap_residual_rms": 0.0006761408544632454,
+      "overlap_same_signal_rms_difference": 0.0003173984005115926
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.8297674059867859,
+      "codec_residual_rms": 0.0019197514047846198,
+      "overlap_residual_rms": 0.0004902496614836547,
+      "overlap_same_signal_rms_difference": 0.0007652869680896401
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.6337060928344727,
+      "codec_residual_rms": 0.001487497822381556,
+      "overlap_residual_rms": 9.766038672382666e-05,
+      "overlap_same_signal_rms_difference": 8.976427488960326e-05
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.7608585953712463,
+      "codec_residual_rms": 0.0019460114417597651,
+      "overlap_residual_rms": 0.0018840838710826378,
+      "overlap_same_signal_rms_difference": 0.0001579885429237038
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.7459100484848022,
+      "codec_residual_rms": 0.0013439765898510814,
+      "overlap_residual_rms": 0.002434771541578098,
+      "overlap_same_signal_rms_difference": 0.003528354223817587
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.7822398543357849,
+      "codec_residual_rms": 0.0013933622976765037,
+      "overlap_residual_rms": 0.00022507281871747846,
+      "overlap_same_signal_rms_difference": 0.00010874114377656952
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.8224827647209167,
+      "codec_residual_rms": 0.001990335760638118,
+      "overlap_residual_rms": 0.0005772562884859429,
+      "overlap_same_signal_rms_difference": 0.0009085236233659089
+    },
+    {
+      "track": "act4-03",
+      "stem": "core",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.7558906674385071,
+      "codec_residual_rms": 0.0014268388040363789,
+      "overlap_residual_rms": 0.0005369359449000943,
+      "overlap_same_signal_rms_difference": 2.2830367015558295e-05
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 0,
+      "frames": 1155840,
+      "peak": 0.04062281921505928,
+      "codec_residual_rms": 0.00017969611508306116
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 1,
+      "frames": 1155840,
+      "peak": 0.08619283139705658,
+      "codec_residual_rms": 0.00037346757017076015,
+      "overlap_residual_rms": 0.00023464591712070066,
+      "overlap_same_signal_rms_difference": 0.00021954116527922451
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 2,
+      "frames": 1155840,
+      "peak": 0.08838953822851181,
+      "codec_residual_rms": 0.0003670753794722259,
+      "overlap_residual_rms": 0.0005395667529101688,
+      "overlap_same_signal_rms_difference": 0.0004171917389612645
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 3,
+      "frames": 1155840,
+      "peak": 0.06461307406425476,
+      "codec_residual_rms": 0.0002884968416765332,
+      "overlap_residual_rms": 0.0003028215247126092,
+      "overlap_same_signal_rms_difference": 0.00022320359130389988
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 4,
+      "frames": 1155840,
+      "peak": 0.08220361918210983,
+      "codec_residual_rms": 0.0004081161168869585,
+      "overlap_residual_rms": 0.0005668810216463169,
+      "overlap_same_signal_rms_difference": 0.0005550315836444497
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 5,
+      "frames": 1155840,
+      "peak": 0.07536359131336212,
+      "codec_residual_rms": 0.0003568736428860575,
+      "overlap_residual_rms": 0.0004875942903049304,
+      "overlap_same_signal_rms_difference": 0.0003696263302117586
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 6,
+      "frames": 1155840,
+      "peak": 0.09111776947975159,
+      "codec_residual_rms": 0.0003813448711298406,
+      "overlap_residual_rms": 0.0001885627525831031,
+      "overlap_same_signal_rms_difference": 0.00017513323109596968
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 7,
+      "frames": 1155840,
+      "peak": 0.09636364877223969,
+      "codec_residual_rms": 0.00042410584865137935,
+      "overlap_residual_rms": 0.0006538501463240249,
+      "overlap_same_signal_rms_difference": 0.0005689244135282934
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 8,
+      "frames": 1155840,
+      "peak": 0.07868096232414246,
+      "codec_residual_rms": 0.0003391495265532285,
+      "overlap_residual_rms": 0.0003007876117937821,
+      "overlap_same_signal_rms_difference": 0.00023767164384480566
+    },
+    {
+      "track": "act4-03",
+      "stem": "atmosphere",
+      "part": 9,
+      "frames": 1152000,
+      "peak": 0.07372825592756271,
+      "codec_residual_rms": 0.00032713732798583806,
+      "overlap_residual_rms": 0.0003500650065042972,
+      "overlap_same_signal_rms_difference": 0.0003333186905365437
+    }
+  ]
+}

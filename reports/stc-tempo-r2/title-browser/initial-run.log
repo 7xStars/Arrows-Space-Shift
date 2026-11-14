@@ -1,0 +1,22 @@
+{
+  "checks": 2,
+  "results": [
+    "Default policy makes an automatic title request before a click",
+    "Default policy starts the title with at most one Enable click"
+  ],
+  "defaultEnableClicks": 0,
+  "errors": [],
+  "failure": "page.waitForFunction: Timeout 12000ms exceeded.\n    at waitTitle (D:\\Projects\\games\\game-off-2026\\tools\\title-entry-browser.mjs:26:28)\n    at D:\\Projects\\games\\game-off-2026\\tools\\title-entry-browser.mjs:83:101"
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 12000ms exceeded.
+    at waitTitle (D:\Projects\games\game-off-2026\tools\title-entry-browser.mjs:26:28)
+    at D:\Projects\games\game-off-2026\tools\title-entry-browser.mjs:83:101 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.15.0

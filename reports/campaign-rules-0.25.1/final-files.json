@@ -1,0 +1,46 @@
+[
+  {
+    "path": "src/simulation.js",
+    "sha256": "7a96e6d166f420dd10fb3319b8b29ca8dd76839efa4ed32c228e4b0fe7ac3a63"
+  },
+  {
+    "path": "src/campaign.js",
+    "sha256": "0c0e2adfce23fc58007d05968882fb432d790788a537fd9263f4db95cb685cdd"
+  },
+  {
+    "path": "src/hyperbolic-campaign.js",
+    "sha256": "4f2df8a14ec6711c73574eb4a3a76859d3a87f82618690130e6af6bab7017432"
+  },
+  {
+    "path": "src/boss.js",
+    "sha256": "7327dae3fbd22d046e803ffbf61e239f8fc4a91b522b567a44d6a1d8b7c8cbf6"
+  },
+  {
+    "path": "tests/campaign-controls.test.mjs",
+    "sha256": "4b8a4797919a70dec86e272f5b2226f962923c3484fcce34220f91331700124c"
+  },
+  {
+    "path": "tests/hybrid-join-continuity.test.mjs",
+    "sha256": "32d1501c639b3ab1bc8d4161eb3fc9eab50408a574a0984ce64c8ca51c2eb2dd"
+  },
+  {
+    "path": "tests/act4-segment-collision.test.mjs",
+    "sha256": "9017c91edbaca9a73b8893eace44325eb961d3e6a2ee7fb4f685193cea1b7ee8"
+  },
+  {
+    "path": "tests/klein-relay-traversal.test.mjs",
+    "sha256": "8768340ac7bafccbc6f0de2fe221552447497c8fd507f5ed32047e952257b73a"
+  },
+  {
+    "path": "tests/act3-ecology.test.mjs",
+    "sha256": "0ccb6320b18fadee60284832ac8d218d5d059b8b94b18abcbdaf36d69370c255"
+  },
+  {
+    "path": "tests/foundry.test.mjs",
+    "sha256": "39a72cb386f4e9587329810ef9bcff6beb7a015aed7896fcac1f1c7e7b7fbb42"
+  },
+  {
+    "path": "tools/pilot-main-campaign.mjs",
+    "sha256": "7d9f93cf969446604ff3e9905ae320b94fd0541fc07ca33773baa949cb518c3b"
+  }
+]

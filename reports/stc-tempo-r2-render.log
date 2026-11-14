@@ -1,0 +1,23 @@
+tempo-act1-01 rendering 120 BPM
+tempo-act1-01 complete
+tempo-act1-02 rendering 136 BPM
+tempo-act1-02 complete
+tempo-act1-03 rendering 144 BPM
+tempo-act1-03 complete
+tempo-act2-01 rendering 152 BPM
+tempo-act2-01 complete
+tempo-act2-02 rendering 168 BPM
+tempo-act2-02 complete
+tempo-act3-01 rendering 200 BPM
+tempo-act3-01 complete
+tempo-act3-02 rendering 240 BPM
+tempo-act3-02 complete
+tempo-act4-01 rendering 184 BPM
+tempo-act4-01 complete
+tempo-act4-02 rendering 220 BPM
+tempo-act4-02 complete
+{
+  "completed": 9,
+  "target": 9,
+  "seconds": 1080
+}

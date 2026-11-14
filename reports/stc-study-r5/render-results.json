@@ -1,0 +1,553 @@
+{
+  "revision": "stc-study-r5",
+  "score": {
+    "id": "identified-return-r5-binaural",
+    "title": "Identified Return",
+    "bpm": 134,
+    "bars": 40,
+    "stepsPerBar": 16,
+    "root": 29,
+    "description": "Hypnotic pulse, interlocking electro percussion, acid transformation, and sparse recovery."
+  },
+  "method": "Original synthesis in headless Edge OfflineAudioContext. Headphones use native HRTF routes; the separate speaker comparison uses stereo routes. No external recordings, normalization, playback-device observation, or listening acceptance.",
+  "mix": "Master1; music0.55, effects0.8, ambience0.25. Native safety compressor. Same synthesis as live study. Final fade only.",
+  "limits": "The crossing mix uses geometry traces from moveBolza with synthetic presentation times and actual entry/return identity cues. It is not a gameplay recording. The full study is not a seamless loop. Audio-only listening and physical output remain unverified.",
+  "results": [
+    {
+      "file": "ass-identified-return-r5-binaural-music.wav",
+      "id": "binaural-music",
+      "spatialMode": "headphones",
+      "duration": 73.64179166666666,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.704535722732544,
+      "peakDbfs": -3.0419396311549347,
+      "rms": 0.18721647728973234,
+      "differenceRms": 0.038611413084926154,
+      "monoRms": 0.18621841762741975,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "spatialMode": "headphones",
+        "hrtfNodes": 6,
+        "spatialBypassed": false,
+        "routes": [
+          {
+            "name": "kick-upper-left",
+            "model": "HRTF",
+            "position": {
+              "x": -0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": -0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-upper-right",
+            "model": "HRTF",
+            "position": {
+              "x": 0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": 0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-reflection",
+            "model": "HRTF",
+            "position": {
+              "x": 0.75,
+              "y": 0.05000000074505806,
+              "z": 0.6499999761581421
+            },
+            "targetPosition": {
+              "x": 0.75,
+              "y": 0.05,
+              "z": 0.65
+            }
+          },
+          {
+            "name": "acid",
+            "model": "HRTF",
+            "position": {
+              "x": 0.4821549952030182,
+              "y": 0.10000000149011612,
+              "z": -1.153267741203308
+            },
+            "targetPosition": {
+              "x": 0.482155006668663,
+              "y": 0.1,
+              "z": -1.1532677700969283
+            }
+          },
+          {
+            "name": "drone-left",
+            "model": "HRTF",
+            "position": {
+              "x": -1.3296635150909424,
+              "y": 0.05999999865889549,
+              "z": 0.4381723999977112
+            },
+            "targetPosition": {
+              "x": -1.3296634687390523,
+              "y": 0.06,
+              "z": 0.4381724088767242
+            }
+          },
+          {
+            "name": "drone-right",
+            "model": "HRTF",
+            "position": {
+              "x": 0.559175431728363,
+              "y": -0.03999999910593033,
+              "z": -1.2834807634353638
+            },
+            "targetPosition": {
+              "x": 0.5591754364611843,
+              "y": -0.04,
+              "z": -1.2834807483006685
+            }
+          }
+        ],
+        "voices": 0,
+        "sources": 4,
+        "identities": 0,
+        "seenEvents": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 11,
+        "peakSources": 25,
+        "dropped": 0,
+        "crossings": 0,
+        "announcements": 0,
+        "steps": 640,
+        "cueHistory": [],
+        "sourceHistory": [],
+        "crossingHistory": []
+      }
+    },
+    {
+      "file": "ass-identified-return-r5-stereo-music.wav",
+      "id": "stereo-music",
+      "spatialMode": "stereo",
+      "duration": 73.64179166666666,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.700463056564331,
+      "peakDbfs": -3.0922953018781003,
+      "rms": 0.1843991019854336,
+      "differenceRms": 0.03597018823880509,
+      "monoRms": 0.1835199313495385,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "spatialMode": "stereo",
+        "hrtfNodes": 0,
+        "spatialBypassed": true,
+        "routes": [
+          {
+            "name": "kick-upper-left",
+            "model": "equalpower",
+            "position": {
+              "x": -0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": -0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-upper-right",
+            "model": "equalpower",
+            "position": {
+              "x": 0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": 0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-reflection",
+            "model": "equalpower",
+            "position": {
+              "x": 0.75,
+              "y": 0.05000000074505806,
+              "z": 0.6499999761581421
+            },
+            "targetPosition": {
+              "x": 0.75,
+              "y": 0.05,
+              "z": 0.65
+            }
+          },
+          {
+            "name": "acid",
+            "model": "equalpower",
+            "position": {
+              "x": 0.4821549952030182,
+              "y": 0.10000000149011612,
+              "z": -1.153267741203308
+            },
+            "targetPosition": {
+              "x": 0.482155006668663,
+              "y": 0.1,
+              "z": -1.1532677700969283
+            }
+          },
+          {
+            "name": "drone-left",
+            "model": "equalpower",
+            "position": {
+              "x": -1.3296635150909424,
+              "y": 0.05999999865889549,
+              "z": 0.4381723999977112
+            },
+            "targetPosition": {
+              "x": -1.3296634687390523,
+              "y": 0.06,
+              "z": 0.4381724088767242
+            }
+          },
+          {
+            "name": "drone-right",
+            "model": "equalpower",
+            "position": {
+              "x": 0.559175431728363,
+              "y": -0.03999999910593033,
+              "z": -1.2834807634353638
+            },
+            "targetPosition": {
+              "x": 0.5591754364611843,
+              "y": -0.04,
+              "z": -1.2834807483006685
+            }
+          }
+        ],
+        "voices": 0,
+        "sources": 4,
+        "identities": 0,
+        "seenEvents": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 11,
+        "peakSources": 25,
+        "dropped": 0,
+        "crossings": 0,
+        "announcements": 0,
+        "steps": 640,
+        "cueHistory": [],
+        "sourceHistory": [],
+        "crossingHistory": []
+      }
+    },
+    {
+      "file": "ass-identified-return-r5-binaural-crossing-mix.wav",
+      "id": "binaural-crossing-mix",
+      "spatialMode": "headphones",
+      "duration": 26,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.6941683292388916,
+      "peakDbfs": -3.1707040895971996,
+      "rms": 0.1788634821835128,
+      "differenceRms": 0.03786034200135931,
+      "monoRms": 0.17785891567387999,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "spatialMode": "headphones",
+        "hrtfNodes": 6,
+        "spatialBypassed": false,
+        "routes": [
+          {
+            "name": "kick-upper-left",
+            "model": "HRTF",
+            "position": {
+              "x": -0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": -0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-upper-right",
+            "model": "HRTF",
+            "position": {
+              "x": 0.550000011920929,
+              "y": 0.15000000596046448,
+              "z": -1.2000000476837158
+            },
+            "targetPosition": {
+              "x": 0.55,
+              "y": 0.15,
+              "z": -1.2
+            }
+          },
+          {
+            "name": "kick-reflection",
+            "model": "HRTF",
+            "position": {
+              "x": 0.75,
+              "y": 0.05000000074505806,
+              "z": 0.6499999761581421
+            },
+            "targetPosition": {
+              "x": 0.75,
+              "y": 0.05,
+              "z": 0.65
+            }
+          },
+          {
+            "name": "acid",
+            "model": "HRTF",
+            "position": {
+              "x": -0.6955540180206299,
+              "y": 0.10000000149011612,
+              "z": -1.0386070013046265
+            },
+            "targetPosition": {
+              "x": -0.6955540146357069,
+              "y": 0.1,
+              "z": -1.0386070540508334
+            }
+          },
+          {
+            "name": "drone-left",
+            "model": "HRTF",
+            "position": {
+              "x": 0.31853702664375305,
+              "y": 0.05999999865889549,
+              "z": -1.3632806539535522
+            },
+            "targetPosition": {
+              "x": 0.3185370387434146,
+              "y": 0.06,
+              "z": -1.363280658906513
+            }
+          },
+          {
+            "name": "drone-right",
+            "model": "HRTF",
+            "position": {
+              "x": 0.8043718934059143,
+              "y": -0.03999999910593033,
+              "z": 1.1458559036254883
+            },
+            "targetPosition": {
+              "x": 0.8043719022020819,
+              "y": -0.04,
+              "z": 1.1458559433662698
+            }
+          }
+        ],
+        "voices": 0,
+        "sources": 4,
+        "identities": 2,
+        "seenEvents": 7,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 11,
+        "peakSources": 25,
+        "dropped": 0,
+        "crossings": 5,
+        "announcements": 2,
+        "steps": 223,
+        "cueHistory": [
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-0",
+            "objectId": "probe-0",
+            "motif": 3,
+            "pan": 0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-1",
+            "objectId": "probe-1",
+            "motif": 0,
+            "pan": -0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-0",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.64279587611721,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-1",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.6427958761172098,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-2",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6434238735424044,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-3",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.643423873542404,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-4",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6425856540093904,
+            "mode": "combined"
+          }
+        ],
+        "sourceHistory": [
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-0",
+            "objectId": "probe-0",
+            "motif": 3,
+            "pan": 0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-1",
+            "objectId": "probe-1",
+            "motif": 0,
+            "pan": -0.6,
+            "mode": "combined"
+          }
+        ],
+        "crossingHistory": [
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-0",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.64279587611721,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-1",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.6427958761172098,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-2",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6434238735424044,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-3",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.643423873542404,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-4",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6425856540093904,
+            "mode": "combined"
+          }
+        ]
+      }
+    }
+  ]
+}

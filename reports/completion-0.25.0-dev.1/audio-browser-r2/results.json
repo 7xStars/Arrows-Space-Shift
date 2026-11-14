@@ -1,0 +1,15 @@
+{
+  "checks": 8,
+  "results": [
+    "Act IV music schedules real oscillator sources after a launch gesture",
+    "Manual fire recovers an interrupted context without restarting play",
+    "All independent volume levels survive page reload",
+    "Muted Act IV still runs with visible status",
+    "index.html preserves storage when import recovery is unresolved",
+    "hyperbolic-act.html preserves storage when import recovery is unresolved",
+    "repair-dock.html preserves storage when import recovery is unresolved",
+    "No audio integration page exception occurred"
+  ],
+  "errors": [],
+  "limits": "Actual browser oscillator scheduling, context recovery and settings checks. No audible playback or physical latency observation."
+}

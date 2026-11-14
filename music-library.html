@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Act music library · Arrow Space Shift</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;color:#e8e2d1;background:#030607;font-synthesis:none}
+    *{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;padding:clamp(14px,3vw,32px);max-width:1220px;margin-inline:auto;line-height:1.5}
+    h1,h2,h3,p{margin:0}h1{font-size:clamp(24px,4vw,38px);line-height:1.15;letter-spacing:-.03em}h2{font-size:20px}h3{font-size:18px}
+    button,a,select,input{font:inherit}button,select,.link{color:inherit;background:#17262b;border:1px solid #59726e;border-radius:3px;padding:9px 12px;min-height:44px}button{cursor:pointer}button:disabled{opacity:.5;cursor:default}
+    a{color:#e2c785;text-underline-offset:3px}a.link{display:inline-flex;align-items:center;text-decoration:none}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #e2c785;outline-offset:3px}
+    .skip{position:absolute;inset-inline-start:12px;top:-100px;background:#17262b;padding:12px;z-index:2}.skip:focus{top:12px}
+    header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-block-end:28px}header nav{display:flex;gap:12px;flex-wrap:wrap}
+    .eyebrow,.muted,.meta{color:#b6c5c0}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-block-end:8px}.intro{max-width:68ch;margin-block-start:16px}.notice{color:#dfc68c;font-size:14px;margin-block-start:12px;max-width:75ch}
+    .player{border:1px solid #59726e;background:#0a1216;padding:clamp(16px,2.5vw,24px);display:grid;gap:16px;margin-block-end:28px}.player-top{display:flex;justify-content:space-between;gap:16px;align-items:start;flex-wrap:wrap}.now{min-width:0;flex:1;flex-basis:240px}#now-title{font-size:clamp(21px,3vw,28px);overflow-wrap:anywhere}#now-meta{font-size:14px;margin-block-start:4px}.transport{display:flex;gap:12px;flex-wrap:wrap}.transport button{min-width:86px}#play{background:#31413e;border-color:#dfc68c}
+    .timeline{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center}.timeline label{grid-column:1/-1}.timeline input{width:100%;min-width:0;min-height:24px}.time{font-variant-numeric:tabular-nums;font-size:14px;white-space:nowrap}
+    .mix{display:flex;align-items:center;gap:24px;flex-wrap:wrap;min-width:0}.volume{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 12px;flex:1;min-width:min(100%,260px);max-width:100%}.volume span{grid-column:1/-1}.volume input{width:100%;min-width:0;min-height:24px}.volume output{min-width:4.5ch;text-align:end;font-variant-numeric:tabular-nums}.check{display:flex;gap:10px;align-items:center;min-height:44px}.check input{width:20px;height:20px}
+    #status{font-size:14px;min-height:1.5em}#status[data-error="true"]{color:#ffd6a1}.compare-note{font-size:13px;color:#b6c5c0;max-width:80ch}
+    .library-head{display:flex;gap:18px;justify-content:space-between;align-items:end;flex-wrap:wrap;margin-block-end:16px}.act-control{display:flex;gap:12px;align-items:center}.act-control select{min-width:160px;max-width:100%}#act-description{max-width:70ch;color:#b6c5c0;margin-block-start:8px}.tracks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.track{min-width:0;padding:20px;background:#0a1216;border:1px solid #324b48;display:flex;flex-direction:column;gap:12px}.track[data-selected="true"]{border-color:#e2c785}.track-top{display:flex;align-items:start;justify-content:space-between;gap:16px}.track h3{overflow-wrap:anywhere}.track .duration{font-variant-numeric:tabular-nums;color:#dfc68c;white-space:nowrap}.track .purpose{color:#b6c5c0}.track details{font-size:14px;overflow-wrap:anywhere}.track summary{cursor:pointer;min-height:32px}.track details p{margin-block-start:8px}.track button{margin-block-start:auto;align-self:flex-start}.selected-mark{color:#e2c785;font-size:13px;min-height:1.5em}.meta{font-size:13px}.track-number{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#b6c5c0}
+    footer{margin-block-start:28px;padding-block-start:20px;border-block-start:1px solid #324b48;color:#b6c5c0;font-size:13px;display:grid;gap:8px}.empty{padding:20px;border:1px solid #59726e}
+    @media(max-width:700px){.tracks{grid-template-columns:minmax(0,1fr)}header{gap:16px;margin-block-end:20px}.player{gap:14px}.mix{gap:8px}.act-control{flex-wrap:wrap}.track{padding:16px}.timeline{gap:8px}.transport button{min-width:74px}.player-top .link{font-size:14px}.library-head{align-items:start}}
+    @media(forced-colors:active){.track[data-selected="true"]{border-width:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid Highlight}}
+    .act-control{min-width:0;max-width:100%;flex-wrap:wrap}.act-control select{min-width:0;width:min(100%,280px);max-width:100%}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#library">Skip to tracks</a>
+  <header>
+    <div>
+      <p class="eyebrow" id="collection-name">Arrow Space Shift · music collection</p>
+      <h1>Act music library</h1>
+      <p class="intro" id="collection-intro">Four original studies for each Act. Compare a steady rhythmic core with its evolving atmosphere.</p>
+      <p class="notice">These are experimental tracks. Music does not control combat timing or announce an unseen hazard. Listening approval remains open.</p>
+    </div>
+    <nav aria-label="Project pages"><a class="link" href="index.html">Open game</a><a class="link" href="divergent-pulse.html">Open title study</a><label class="act-control" for="collection">Collection <select id="collection"><option value="original">Original Act collection</option><option value="tempo">120–240 BPM</option></select></label></nav>
+  </header>
+  <main>
+    <section class="player" aria-labelledby="player-heading">
+      <div class="player-top">
+        <div class="now"><p class="eyebrow" id="player-heading">Selected track</p><h2 id="now-title">Loading the track list</h2><p id="now-meta" class="muted"></p></div>
+        <a class="link" id="full-mix" hidden download>Download full mix</a>
+      </div>
+      <div class="transport" aria-label="Playback controls"><button id="play" disabled>Play</button><button id="pause" disabled>Pause</button><button id="stop" disabled>Stop</button></div>
+      <div class="timeline"><label for="seek">Track position</label><input id="seek" type="range" min="0" max="1" step="0.01" value="0" disabled><output id="time" class="time" for="seek">0:00 / 0:00</output></div>
+      <div class="mix"><label class="volume" for="volume"><span id="volume-label">Volume</span><input id="volume" type="range" min="0" max="100" value="60" aria-labelledby="volume-label"><output id="volume-value" for="volume">60%</output></label><label class="check"><input id="atmosphere" type="checkbox" checked> Include atmosphere</label></div>
+      <p class="compare-note">Turn off Include atmosphere to hear the same rhythmic core. Both layers use one timeline. Selecting another track stops the current track.</p>
+      <p id="status" role="status">Loading the track list.</p>
+    </section>
+    <section id="library" tabindex="-1" aria-labelledby="library-heading">
+      <div class="library-head"><div><h2 id="library-heading">Tracks by Act</h2><p id="act-description"></p></div><label class="act-control" for="act">Act <select id="act"><option value="1">I · Traditional</option><option value="2">II · Klein</option><option value="3">III · Projective</option><option value="4">IV · Hyperbolic</option></select></label></div>
+      <div id="tracks" class="tracks"><p class="empty">The track list is loading.</p></div>
+    </section>
+  </main>
+  <footer><p>FoxDot authors the musical patterns. SuperCollider renders the instruments and effects. The browser plays the exported layers.</p><p>The player loads one track at a time. It does not write campaign progress. A hidden page pauses playback. Select Play to continue.</p><p>These full tracks have an ending. They are not seamless loops.</p></footer>
+  <script type="module" src="src/music-library-app.js"></script>
+</body>
+</html>

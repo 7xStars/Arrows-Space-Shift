@@ -1,0 +1,25 @@
+{
+  "bpm": 134,
+  "events": [
+    {
+      "index": 0,
+      "synth": "assStereoRoomR6",
+      "beat": 0.0,
+      "seconds": 0.0,
+      "gain": 1.0,
+      "rate": 1.0,
+      "source_start_frame": 0,
+      "source_frames": 3534806,
+      "duration_beats": 164.46666805555554
+    }
+  ],
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": false,
+    "role": "Author and evaluate a finite sample-entry sequence for the selected existing take."
+  }
+}

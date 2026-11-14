@@ -1,0 +1,42 @@
+PASS The title starts r9 automatically or from one Enable title music click
+PASS The title stop action stops its recorded source
+PASS The title can restart after Stop without another context
+PASS Campaign launch replaces the title and does not restore its pending request
+PASS An actual recording load failure leaves music silent without a procedural score
+PASS Manual fire still schedules effects while the recording has failed
+PASS Options report the real recording error and show Retry music
+PASS Retry loads the recording while Options keep play paused
+PASS Act IV starts the actual aligned recorded core and atmosphere after Retry
+PASS The live soundtrack schedules no procedural music oscillator
+PASS Manual fire recovers an interrupted context without restarting play
+PASS All independent volume levels survive page reload
+PASS Music mute stops its sources while manual effects remain active
+PASS Sound mute stops audio scheduling while Act IV runs with visible status
+PASS index.html preserves unresolved recovery storage and the saved title mute
+PASS hyperbolic-act.html preserves unresolved recovery storage
+PASS repair-dock.html preserves unresolved recovery storage
+PASS No audio page exception, missing asset, or visible research link occurred
+{
+  "checks": 18,
+  "results": [
+    "The title starts r9 automatically or from one Enable title music click",
+    "The title stop action stops its recorded source",
+    "The title can restart after Stop without another context",
+    "Campaign launch replaces the title and does not restore its pending request",
+    "An actual recording load failure leaves music silent without a procedural score",
+    "Manual fire still schedules effects while the recording has failed",
+    "Options report the real recording error and show Retry music",
+    "Retry loads the recording while Options keep play paused",
+    "Act IV starts the actual aligned recorded core and atmosphere after Retry",
+    "The live soundtrack schedules no procedural music oscillator",
+    "Manual fire recovers an interrupted context without restarting play",
+    "All independent volume levels survive page reload",
+    "Music mute stops its sources while manual effects remain active",
+    "Sound mute stops audio scheduling while Act IV runs with visible status",
+    "index.html preserves unresolved recovery storage and the saved title mute",
+    "hyperbolic-act.html preserves unresolved recovery storage",
+    "repair-dock.html preserves unresolved recovery storage",
+    "No audio page exception, missing asset, or visible research link occurred"
+  ],
+  "errors": []
+}

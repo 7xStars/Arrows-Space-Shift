@@ -1,0 +1,27 @@
+{
+  "checks": 19,
+  "results": [
+    "Default policy makes an automatic title request before a click",
+    "Default blocked audio exposes Enable title music",
+    "Default policy starts the title with at most one Enable click",
+    "Permitted-policy clean entry starts title without a click",
+    "Normal entry has no QA controls",
+    "Real training controls earn the Level 1 checkpoint",
+    "Training launch replaces the title with the campaign recording",
+    "Permitted-policy saved entry starts title without another click",
+    "Saved entry retains the earned checkpoint",
+    "Title playback does not advance the saved section",
+    "Saved entry launch and music controls fit 320 by 568",
+    "Stop leaves the saved entry quiet without changing its checkpoint",
+    "Saved-entry title restart reuses one audio context",
+    "Resume replaces the title without resetting Level 1",
+    "Manual pause remains quiet and hides title controls",
+    "Sound mute is saved through the real Options control",
+    "Saved mute prevents automatic title playback",
+    "Saved mute does not erase or advance the earned checkpoint",
+    "No title-entry page exception or resource failure occurred"
+  ],
+  "defaultEnableClicks": 1,
+  "errors": [],
+  "failure": null
+}

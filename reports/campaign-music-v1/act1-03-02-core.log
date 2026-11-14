@@ -1,0 +1,16 @@
+[in#0/f32le @ 00000266e9605640] Estimating duration from bitrate, this may be inaccurate
+[aist#0:0/pcm_f32le @ 00000266e966bf00] Guessed Channel Layout: stereo
+Input #0, f32le, from 'G:\Music Projects\Arrow Space Shift\scratch\campaign-music-v1\act1-03-core.f32':
+  Duration: 00:04:00.00, bitrate: 3072 kb/s
+  Stream #0:0: Audio: pcm_f32le, 48000 Hz, stereo, flt, 3072 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_f32le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'D:\Projects\games\game-off-2026\assets\audio\campaign-music-v1\act1-03-02-core.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+[out#0/ogg @ 00000266e9668140] video:0KiB audio:706KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 1.323762%
+size=     716KiB time=00:00:24.08 bitrate= 243.5kbits/s speed=83.2x elapsed=0:00:00.28    

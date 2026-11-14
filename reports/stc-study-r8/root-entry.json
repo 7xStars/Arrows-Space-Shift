@@ -1,0 +1,117 @@
+{
+  "revision": "identified-return-r8",
+  "browser": "Microsoft Edge",
+  "archives": {
+    "review": {
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-identified-return-r8\\review-a4dabd527a57",
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-study-r8\\Arrow-Space-Shift-Identified-Return-r8-REVIEW.zip",
+      "archiveSha256": "a4dabd527a57979dc76d1e2d92b7f1335e79d6f6a84e48e5ddffbade7aa192a3",
+      "indexSha256": "aa6f15c9c9b9142766be15bcc040bd42e5157864cc1745d211b32d5760d64144",
+      "checks": [
+        "HTTP root returns 200",
+        "Root index loads Identified Return",
+        "Root startup is paused with expected duration",
+        "Keyboard position control seeks the HTTP root track",
+        "Keyboard input advances native HTTP root playback",
+        "Keyboard input pauses root playback",
+        "Root entry has no page exception or missing resource",
+        "Native root file startup is paused",
+        "Native root file starts added layers at their entry",
+        "Native root file supports Break seeking",
+        "Native root file supports Return seeking",
+        "Native root file playback advances after keyboard input",
+        "Native root file pauses without a page exception"
+      ],
+      "errors": [],
+      "missing": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:56118/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:56118/src/track-review-r8.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:56118/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:56118/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:56118/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:56118/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:56118/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        }
+      ],
+      "status": "passed",
+      "count": 13
+    },
+    "source": {
+      "root": "G:\\Music Projects\\Arrow Space Shift\\scratch\\verified-identified-return-r8\\source-5b61c6e045ba",
+      "archive": "D:\\Projects\\games\\game-off-2026\\releases\\stc-study-r8\\Arrow-Space-Shift-Identified-Return-r8-SOURCE.zip",
+      "archiveSha256": "5b61c6e045bafeb9cc28764ace29b194b6503a5381d2426daa7ff4510e2c5daa",
+      "indexSha256": "aa6f15c9c9b9142766be15bcc040bd42e5157864cc1745d211b32d5760d64144",
+      "checks": [
+        "HTTP root returns 200",
+        "Root index loads Identified Return",
+        "Root startup is paused with expected duration",
+        "Keyboard position control seeks the HTTP root track",
+        "Keyboard input advances native HTTP root playback",
+        "Keyboard input pauses root playback",
+        "Root entry has no page exception or missing resource"
+      ],
+      "errors": [],
+      "missing": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:10989/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:10989/src/track-review-r8.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:10989/audio/stc-study/foxdot-operator-r8/ass-identified-return-r8-music.wav",
+          "status": 206
+        }
+      ],
+      "status": "passed",
+      "count": 7
+    }
+  },
+  "limits": "Headless native media. No human listening, screen-reader, physical-device, latency, or hidden-page result.",
+  "browserVersion": "157.0.4341.46",
+  "status": "passed"
+}

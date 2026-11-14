@@ -1,0 +1,41 @@
+
+> arrow-space-shift-operator-lab@0.25.0-dev.1 check
+> npm run syntax && npm test
+
+
+> arrow-space-shift-operator-lab@0.25.0-dev.1 syntax
+> node tools/check-syntax.mjs
+
+Syntax passed for 8 source and tool files.
+
+> arrow-space-shift-operator-lab@0.25.0-dev.1 test
+> node --test tests/*.test.mjs
+
+✔ the projection and swap satisfy their stated finite matrix identities (1.2285ms)
+✔ matrix products apply the rightmost operator first without changing the inputs (0.1438ms)
+✔ spectral radius and induced Euclidean norm remain distinct for the coupled example (0.2307ms)
+✔ the stated stable matrix has transient growth and eventual decay for the stated vector (0.445ms)
+✔ the critical response agrees with its closed form (0.2003ms)
+✔ constant-target mechanical results agree at 30, 60, and 144 Hz and with irregular frame times (1.7091ms)
+✔ passive free response does not create mechanical energy (0.8701ms)
+✔ an over-damped update agrees under subdivision and a long interval stays finite (0.2128ms)
+✔ near-critical profiles retain the continuous response and interval composition (0.1225ms)
+✔ response samples retain measurable overshoot and finite-window settling distinctions (1.8282ms)
+✔ invalid model inputs fail before a non-finite presentation state can escape (0.4438ms)
+✔ Klein advancement uses the existing kernel and transports the retained velocity (0.4413ms)
+✔ the Projective Module prototype uses its actual vertical identification and heading reversal (0.1906ms)
+✔ seam jumps stay separate from physical motion segments (0.2788ms)
+✔ forecasts retain one identity and mark predictions without changing the input (0.2333ms)
+✔ topology transport agrees for one interval and its subdivision across both seam types (0.3751ms)
+✔ topology input limits preserve the existing kernel assumptions (0.1655ms)
+✔ the first prediction remains intact after feedback and later attempts (0.5587ms)
+✔ a changed transfer case receives its own first prediction (0.4816ms)
+✔ the local media response supplies a real WAV length and a body-free HEAD response (183.0456ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 261.5975

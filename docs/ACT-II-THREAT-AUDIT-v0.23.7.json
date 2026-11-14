@@ -1,0 +1,126 @@
+{
+  "scope": "Act II only; up to 16-second fixed-seed, stationary-player sampling (Arrow across eight stages; Needle and Aftwing in two stages)",
+  "limitations": "Instantaneous lane proxy; ignores vertical options, reachable path planning, player perception, and normal-health survival. Do not claim fairness based on this report.",
+  "rows": [
+    {
+      "index": 9,
+      "stage": "Return Flight",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 43,
+      "lastWave": ""
+    },
+    {
+      "index": 10,
+      "stage": "Intentional Crossing",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 68,
+      "lastWave": ""
+    },
+    {
+      "index": 11,
+      "stage": "Returning Fire",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 62,
+      "lastWave": ""
+    },
+    {
+      "index": 12,
+      "stage": "Seam Gap",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 38,
+      "lastWave": "sg-return-border"
+    },
+    {
+      "index": 13,
+      "stage": "Cross Current",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 62,
+      "lastWave": "cc-line"
+    },
+    {
+      "index": 14,
+      "stage": "Fold Timing",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 23,
+      "lastWave": "ft-break-2"
+    },
+    {
+      "index": 15,
+      "stage": "Pressure Field",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 48,
+      "lastWave": "pf-break-1"
+    },
+    {
+      "index": 16,
+      "stage": "Klein Mastery",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 1,
+      "maxEnemyShots": 116,
+      "lastWave": "km-seam-escape"
+    },
+    {
+      "index": 12,
+      "stage": "Seam Gap",
+      "ship": "Needle",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 41,
+      "lastWave": "sg-return-border"
+    },
+    {
+      "index": 12,
+      "stage": "Seam Gap",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 38,
+      "lastWave": "sg-return-border"
+    },
+    {
+      "index": 15,
+      "stage": "Pressure Field",
+      "ship": "Needle",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 49,
+      "lastWave": "pf-break-1"
+    },
+    {
+      "index": 15,
+      "stage": "Pressure Field",
+      "ship": "Arrow",
+      "observedSeconds": 16,
+      "samples": 80,
+      "zeroLocalSafeLaneSamples": 0,
+      "maxEnemyShots": 48,
+      "lastWave": "pf-break-1"
+    }
+  ]
+}

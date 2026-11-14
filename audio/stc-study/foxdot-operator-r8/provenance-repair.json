@@ -1,0 +1,23 @@
+{
+  "revision": "identified-return-r8",
+  "reason": "The layer-gain parser default changed after the earlier render manifest hash was written. The previous command supplied the same selected value explicitly.",
+  "exact_source_difference": "Only the layer-gain parser default changed from1 to1.25.",
+  "previous_recorded_renderer_sha256": "169a011d381eebdb83cc07478ed6b5ebde15082f47a71e43185fb28a22a35bb1",
+  "accepted_renderer_sha256": "97ba228a5c245287c726e6b2e916a9be2ae1a3d8531f97aae6bb3ef9677c3df5",
+  "method": "Freeze current source. Execute the default command. Compare every full WAV hash with the retained accepted set.",
+  "command": "G:/Music Tools/FoxDot/venv/Scripts/python.exe tools/render-foxdot-operator-track.py",
+  "default_layer_gain": 1.25,
+  "common_gain": 1,
+  "wav_hashes_unchanged": {
+    "ass-identified-return-r8-music.wav": "f9dec019ac909847619e18fd51f57e1dda99f4703b3ae60f5d75a12ba4c0d818",
+    "foundation-control.wav": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+    "new-layer.wav": "d3d59599012a956c5c0a62c1f3a286e3589ae75577f4732777469bd50bfbf561",
+    "harmony-direct.wav": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078",
+    "mechanical-response.wav": "f1f05841aa439e57480d6d34e99d3cfa72ea470a7e41338433bb6d1b50884599",
+    "gate-room-proof.wav": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29",
+    "room-gate-proof.wav": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f"
+  },
+  "wav_count": 7,
+  "renderer_identity_matches": true,
+  "result": "passed"
+}

@@ -1,0 +1,87 @@
+E......s.....E.E...........s.E.......E
+======================================================================
+ERROR: setUpClass (test_act_library.ActLibraryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_act_library.py", line 22, in setUpClass
+    cls.Pattern, _, _, cls.provenance = COMPOSER.pattern_api()
+                                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-act-library-r1\compose.py", line 16, in pattern_api
+    Pattern, provenance = module.load_pattern_api()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-room-r6\foxdot_take.py", line 14, in load_pattern_api
+    raise RuntimeError('Run this script with the installed FoxDot environment Python.')
+RuntimeError: Run this script with the installed FoxDot environment Python.
+
+======================================================================
+ERROR: test_ordered_room_paths_are_real_distinct_outputs (test_foxdot_operator_track.NativeTests.test_ordered_room_paths_are_real_distinct_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_foxdot_operator_track.py", line 185, in test_ordered_room_paths_are_real_distinct_outputs
+    score = load_score()
+            ^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\tests\test_foxdot_operator_track.py", line 32, in load_score
+    return composer.author_score()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-operator-r8\compose.py", line 40, in author_score
+    Pattern, provenance = _patterns()
+                          ^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-operator-r8\compose.py", line 20, in _patterns
+    return loader.load_pattern_api()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-room-r6\foxdot_take.py", line 14, in load_pattern_api
+    raise RuntimeError('Run this script with the installed FoxDot environment Python.')
+RuntimeError: Run this script with the installed FoxDot environment Python.
+
+======================================================================
+ERROR: setUpClass (test_foxdot_operator_track.ScoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_foxdot_operator_track.py", line 49, in setUpClass
+    cls.score = load_score()
+                ^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\tests\test_foxdot_operator_track.py", line 32, in load_score
+    return composer.author_score()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-operator-r8\compose.py", line 40, in author_score
+    Pattern, provenance = _patterns()
+                          ^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-operator-r8\compose.py", line 20, in _patterns
+    return loader.load_pattern_api()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-room-r6\foxdot_take.py", line 14, in load_pattern_api
+    raise RuntimeError('Run this script with the installed FoxDot environment Python.')
+RuntimeError: Run this script with the installed FoxDot environment Python.
+
+======================================================================
+ERROR: test_installed_foxdot_authors_the_same_finite_input_twice (test_operator_audio.OperatorAudioTests.test_installed_foxdot_authors_the_same_finite_input_twice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_operator_audio.py", line 32, in test_installed_foxdot_authors_the_same_finite_input_twice
+    first = RENDER.composer.author_input()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-operator-lab-r1\compose.py", line 12, in author_input
+    Pattern, provenance = loader.load_pattern_api()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-room-r6\foxdot_take.py", line 14, in load_pattern_api
+    raise RuntimeError('Run this script with the installed FoxDot environment Python.')
+RuntimeError: Run this script with the installed FoxDot environment Python.
+
+======================================================================
+ERROR: test_transfer_changes_the_gate_without_changing_the_source_motif (test_operator_audio.OperatorAudioTests.test_transfer_changes_the_gate_without_changing_the_source_motif)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\games\game-off-2026\tests\test_operator_audio.py", line 87, in test_transfer_changes_the_gate_without_changing_the_source_motif
+    self.assertEqual(source, RENDER.composer.author_input())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-operator-lab-r1\compose.py", line 12, in author_input
+    Pattern, provenance = loader.load_pattern_api()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\games\game-off-2026\audio\stc-study\foxdot-room-r6\foxdot_take.py", line 14, in load_pattern_api
+    raise RuntimeError('Run this script with the installed FoxDot environment Python.')
+RuntimeError: Run this script with the installed FoxDot environment Python.
+
+----------------------------------------------------------------------
+Ran 36 tests in 12.504s
+
+FAILED (errors=5, skipped=2)

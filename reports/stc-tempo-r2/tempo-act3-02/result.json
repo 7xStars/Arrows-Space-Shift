@@ -1,0 +1,107 @@
+{
+  "id": "tempo-act3-02",
+  "source_fingerprint": "539c7b58997131076dca61b73c5f675d7d55fe6289b46114375cabae4bd24fd3",
+  "native": {
+    "exit_code": 0,
+    "seconds": 1.657
+  },
+  "events": 2546,
+  "metrics": {
+    "frames": 5760000,
+    "sampleRate": 48000,
+    "channels": 2,
+    "seconds": 120,
+    "nonFinite": 0,
+    "fullScale": 0,
+    "commonGain": 1.3823383215401366,
+    "peaks": [
+      0.8192007311265386,
+      0.8199999999999998,
+      0.035142996108802796
+    ],
+    "rms": [
+      0.11241226808786205,
+      0.11237166275423108,
+      0.0030362582221229967
+    ],
+    "regionRms": [
+      0.10748819255550823,
+      0.13181116300580448,
+      0.11021462428412956,
+      0.12907741461573716,
+      0.0226118524392804,
+      0.13317381764654482,
+      0.13435294258104719,
+      0.08401626493757344
+    ],
+    "mix": "One common linear gain for full, core, and atmosphere. No independent normalization or shared nonlinear processor.",
+    "tail": "Exact track duration includes the final three-second fade. No seamless-loop claim."
+  },
+  "master": {
+    "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\masters\\tempo-act3-02.wav",
+    "sha256": "7677f5df4d78f9bb1068da9e75cf39e699fbe97c2287c4a93d8b8cee2d74dfd9",
+    "bytes": 23040044
+  },
+  "stems": [
+    {
+      "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\stems\\tempo-act3-02-core.wav",
+      "sha256": "07121b9eabc1b8674a49d86ba37d4c6e20dd3bd5ee25cead502beead9202fbc0",
+      "bytes": 23040044
+    },
+    {
+      "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\stems\\tempo-act3-02-atmosphere.wav",
+      "sha256": "9639e0f9e9b53e36ef93d83a14e0780cdc83725b4ddfbe00d6acab93b632e084",
+      "bytes": 23040044
+    }
+  ],
+  "outputs": [
+    {
+      "kind": "full",
+      "file": "tempo-act3-02.ogg",
+      "bytes": 2567686,
+      "sha256": "100c371506a42d9ddcd6f1640ee0ca640a3c00916cd14b7dce69be6a266d2803"
+    },
+    {
+      "kind": "core",
+      "file": "tempo-act3-02-core.ogg",
+      "bytes": 2569613,
+      "sha256": "a475567f09bb6bab1d787167c15efc9fdc5b7e384612bd1c705292ba1f75d053"
+    },
+    {
+      "kind": "atmosphere",
+      "file": "tempo-act3-02-atmosphere.ogg",
+      "bytes": 1566534,
+      "sha256": "82d7b9ad546257d162a28bcaceebff0c35177aa6f938de4830dada41d1de6d95"
+    }
+  ],
+  "preview": {
+    "file": "tempo-act3-02-preview.ogg",
+    "start": 32.4,
+    "seconds": 20,
+    "sha256": "f25b6adb3e52fe8fb7230a73a174c86498e2e8e218f1f6c6f627e5b52d2a9ade",
+    "wav": {
+      "file": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2\\previews\\tempo-act3-02-preview.wav",
+      "sha256": "b4a60c58f2190dd0a19a452eed7a88c3263a951224ba7c6df5d76a5e4af53c22",
+      "bytes": 3840078
+    }
+  },
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Compose new finite note, rhythm, and phrase transformations for the original tempo studies."
+  },
+  "production_parameters": {
+    "kick_decay": 0.2,
+    "kick_gain": 0.55,
+    "snare_gain": 0.24,
+    "hat_gain": 0.04,
+    "room_mix": 0.045,
+    "snare_decay": 0.105,
+    "bass_gate": 0.8,
+    "pan_cycle_beats": 32
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "study": "stc-study-r7",
+  "musicRevision": "identified-return-r7-bass-fade",
+  "audioScoreId": "identified-return-r7-bass-fade",
+  "condition": "mismatched",
+  "probe": true,
+  "records": [],
+  "spatialMode": "stereo",
+  "roomVolume": 0.55,
+  "audioOptions": {
+    "sound": false,
+    "volume": 0.5,
+    "musicVolume": 0.2,
+    "effectsVolume": 0.7,
+    "spatialMode": "stereo",
+    "roomVolume": 0.55,
+    "reducedMotion": true
+  },
+  "roomHistory": [
+    {
+      "roomVolume": 0.12,
+      "time": 0,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0,
+      "time": 1.083299999999999,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.1,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.2,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.3,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.4,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.5,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.51,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.52,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.53,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.54,
+      "time": 1.3832999999999984,
+      "phase": 0
+    },
+    {
+      "roomVolume": 0.55,
+      "time": 1.3832999999999984,
+      "phase": 0
+    }
+  ],
+  "previousRuns": [
+    {
+      "condition": "combined",
+      "probe": false,
+      "spatialMode": "stereo",
+      "roomVolume": 0.55,
+      "records": [
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 0,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.5500000000000003,
+          "assisted": false,
+          "retry": 0,
+          "correct": true,
+          "actualSide": 0,
+          "priorGuideCount": 4,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        },
+        {
+          "taskKind": "destination-prediction",
+          "firstChoice": 1,
+          "condition": "combined",
+          "probe": false,
+          "responseSeconds": 0.03339999999999964,
+          "assisted": true,
+          "retry": 1,
+          "correct": true,
+          "actualSide": 1,
+          "priorGuideCount": 4,
+          "conditionOrder": [
+            {
+              "condition": "combined",
+              "probe": false,
+              "time": 0,
+              "phase": "establishment"
+            }
+          ]
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.083299999999999
+        },
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.3832999999999984
+        },
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.5999999999999976
+        },
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 1.8165999999999973
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    },
+    {
+      "condition": "audio",
+      "probe": true,
+      "spatialMode": "stereo",
+      "roomVolume": 0.55,
+      "records": [
+        {
+          "taskKind": "listen-only",
+          "condition": "audio",
+          "probe": true,
+          "notScored": true,
+          "firstChoice": null,
+          "correct": null
+        }
+      ],
+      "guideHistory": [
+        {
+          "phase": "establishment",
+          "condition": "combined",
+          "time": 0
+        }
+      ],
+      "conditionHistory": [
+        {
+          "condition": "combined",
+          "probe": false,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "combined",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        },
+        {
+          "condition": "audio",
+          "probe": true,
+          "time": 0,
+          "phase": "establishment"
+        }
+      ]
+    }
+  ],
+  "guideHistory": [
+    {
+      "phase": "establishment",
+      "condition": "audio",
+      "time": 0
+    },
+    {
+      "phase": "establishment",
+      "condition": "mismatched",
+      "time": 0.3002000000000007
+    }
+  ],
+  "conditionHistory": [
+    {
+      "condition": "audio",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    },
+    {
+      "condition": "mismatched",
+      "probe": true,
+      "time": 0,
+      "phase": "establishment"
+    }
+  ],
+  "contacts": 0,
+  "targetsHit": 0,
+  "limits": "Local study records. No human understanding or causal music effect is established."
+}

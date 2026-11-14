@@ -1,0 +1,18 @@
+{
+  "candidate": "0.24.2-dev.1",
+  "browser": "157.0.4341.46",
+  "method": "Local headless Edge. The probe calls AudioContext.suspend() to simulate an interruption. It uses real Space and P keys after that call. No audible-output review.",
+  "before": {
+    "contexts": 1,
+    "state": "running"
+  },
+  "afterFire": {
+    "state": "suspended",
+    "status": "Pause (P)"
+  },
+  "afterResume": {
+    "contexts": 1,
+    "state": "running"
+  },
+  "errors": []
+}

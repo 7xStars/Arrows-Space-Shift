@@ -1,0 +1,223 @@
+{
+  "revision": "bass-fade-r7",
+  "source_frames": 3534806,
+  "common_frames": 3678806,
+  "sample_rate": 48000,
+  "tail_seconds": 3,
+  "final_room_fade_seconds": 0.25,
+  "room_gain": 0.12,
+  "shared_output_gain": 1.5171233390444847,
+  "level_calibration": {
+    "initial_dry_rms": 0.1191390126464849,
+    "reference_r6_dry_rms": 0.18074857667669825,
+    "matching_gain": 1.5171233390444847,
+    "maximum_gain_for_0_94_peak": 1.8116888861031037,
+    "selected_common_gain": 1.5171233390444847,
+    "method": "One linear common gain after the reconstructed shared safety path. Apply it equally to both runtime stems and both complete review variants. No independent normalization.",
+    "room_mix_peaks_before_gain": {
+      "0": 0.47604212164878845,
+      "0.12": 0.4726032972335815,
+      "1": 0.5188528820872307
+    },
+    "room_mix_peaks_after_gain": {
+      "0": 0.7222146131216307,
+      "0.12": 0.7169974923424443,
+      "1": 0.7871638169450337
+    }
+  },
+  "room": {
+    "same_timing_as": "stereo-room-r6",
+    "predelay_seconds": 0.03,
+    "comb_decay_seconds": 2.2,
+    "highpass_hz": 220,
+    "lowpass_hz": 4800
+  },
+  "pan": {
+    "bpm": 134,
+    "bars_per_cycle": 4,
+    "beats_per_leg": 8,
+    "pan_depth": 0.85,
+    "smoothing_seconds": 0.025
+  },
+  "split": "Only isolated acid direct: low = LPF(source, 120 Hz); upper = source - low. Center low. Pan upper with Pan2. Gradual filter response.",
+  "mix": "Fixed accompaniment + centered acid low + panned acid upper -> one shared stereo-linked Compander -> dry output. The room is a linear return from this dry output. The centered control has its own complete shared path. No separate instrument compression or stem normalization.",
+  "safety": {
+    "threshold_db": -8,
+    "slope_above": 0.125,
+    "clamp_seconds": 0.003,
+    "relax_seconds": 0.09
+  },
+  "sources": [
+    {
+      "file": "source-accompaniment.wav",
+      "sha256": "d80156f02e04b7cdfbdfa39a924c8b0819cef4184dc8fd0c1cd9d60a81a2814a"
+    },
+    {
+      "file": "source-acid-direct.wav",
+      "sha256": "85fafa4380aebe74aec8010eff333ed0421eefa61ecc2ad1a9fa3600bf8580d3"
+    }
+  ],
+  "source_capture": {
+    "accompaniment": {
+      "frames": 3534806,
+      "channels": 2,
+      "rate": 48000,
+      "peak": 0.4500495195388794,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "file": "source-accompaniment.wav",
+      "sha256": "d80156f02e04b7cdfbdfa39a924c8b0819cef4184dc8fd0c1cd9d60a81a2814a"
+    },
+    "acid": {
+      "frames": 3534806,
+      "channels": 1,
+      "rate": 48000,
+      "peak": 0.16939345002174377,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "file": "source-acid-direct.wav",
+      "sha256": "85fafa4380aebe74aec8010eff333ed0421eefa61ecc2ad1a9fa3600bf8580d3"
+    },
+    "steps": 640,
+    "duration": 73.64179166666666,
+    "stepSeconds": 0.11194029850746269,
+    "method": "Preserved r5 synthesis source. The direct acid signal is captured before its original panner. Its source gain and kick-duck envelope are retained. Music and ambience buses feed the fixed accompaniment without the shared safety compressor. Shared acid/percussion delays stay in the accompaniment.",
+    "limits": "Source extraction uses the historical Web Audio instruments. This is not new browser composition. Separate pre-safety stems do not reproduce the old nonlinear master exactly.",
+    "sources": {
+      "audio/stc-study/r5-source/src/stc-audio.js": "cbcdfe037a2b7576b48c0067f07e1a0dbaa4acd0bc393064764054c58a992ad2",
+      "audio/stc-study/r5-source/src/stc-score.js": "8d98239181139a9166f7a72cfff29c8013833d41978450debc11add2372e84ea"
+    },
+    "browserVersion": "157.0.4341.46",
+    "authoring": "Historical source extraction only. FoxDot and SuperCollider author and render the r7 motion and mix."
+  },
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": false,
+    "role": "Author and evaluate the finite r7 pan trajectory with FoxDot Pattern arithmetic.",
+    "pan_pattern_authored_with_foxdot": true
+  },
+  "pan_proof": {
+    "low_max_channel_difference": 0.0,
+    "upper_energy_windows": {
+      "left_leg": [
+        113.06247859242572,
+        1.7394070255837057
+      ],
+      "right_leg": [
+        1.9662157893736696,
+        127.15994993365771
+      ]
+    },
+    "left_window_left_to_right_energy": 65.00058751601541,
+    "right_window_right_to_left_energy": 64.6724284388765,
+    "method": "SC output before the shared safety stage. Compare equal phase windows around the left and right endpoints in bars 8 through 27. The centered low channels must match."
+  },
+  "supercollider": {
+    "compile_exit_code": 0,
+    "render_exit_code": 0,
+    "version": "scsynth 3.14.1 (Built from tag 'Version-3.14.1' [426edf6])",
+    "mode": "NRT",
+    "render_command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\scsynth.exe",
+      "-N",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-bass-r7\\bass-score.osc",
+      "_",
+      "D:\\Projects\\games\\game-off-2026\\.local\\foxdot-bass-r7\\bass-render-12ch-float.wav",
+      "48000",
+      "WAV",
+      "float",
+      "-o",
+      "12",
+      "-i",
+      "0",
+      "-z",
+      "64"
+    ],
+    "elapsed_seconds": 35.04699999996228
+  },
+  "outputs": [
+    {
+      "file": "dry_take.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.7222146131216307,
+      "peak_dbfs": -2.8266745681455885,
+      "rms": 0.18074857667662939,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "9386c8481f9da33807bd240876ed8c315bec5b756a2798af63c0b79c802171e3"
+    },
+    {
+      "file": "room_return.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.2422359566746516,
+      "peak_dbfs": -12.315227824490659,
+      "rms": 0.0406909176796875,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "d4ac977775ac6d1a54525298e8ce15a4800fb9a31bda0e48f1afd0c4455d0ca8"
+    },
+    {
+      "file": "room_mix.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.7169974923424443,
+      "peak_dbfs": -2.889647264991095,
+      "rms": 0.18070212764724905,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5"
+    },
+    {
+      "file": "centered_control.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.717204629527884,
+      "peak_dbfs": -2.887138314937622,
+      "rms": 0.18055261144976165,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "cb633dfff553dd8e1b53b1177090d57e5e0f6abea848befef7953ef7e0d88528"
+    },
+    {
+      "file": "bass_upper_pan.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.199234277009964,
+      "peak_dbfs": -14.012718836754303,
+      "rms": 0.0191988189861696,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "b2a717fa4fe4f2d50e24e2e1219cbc4c8aebac1ef17dfedee1525a726035bcde"
+    },
+    {
+      "file": "bass_low_center.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.0567159503698349,
+      "peak_dbfs": -24.92589572392625,
+      "rms": 0.012829048247865777,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "94325e303f4929e03d0be86662af932d10a4f66ee9e27cf7980dc390ddeae417"
+    }
+  ],
+  "limits": "New mix from pre-safety source captures. No exact match to the old nonlinear master. No note or rhythm changes. No HRTF, detuning, inter-ear delay, polarity change, binaural-beat, live FoxDot, REAPER capture, listening approval, or physical-device claim. Full take with tail; not a seamless beat loop."
+}

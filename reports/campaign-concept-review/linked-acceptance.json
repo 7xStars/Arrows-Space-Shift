@@ -1,0 +1,209 @@
+{
+  "result": "Linked fresh-profile campaign path completed",
+  "method": "A fresh-profile ordinary-input main campaign followed by a disclosed controller timeout and normal import of its exact earned saved records. The corrected controller completed Act IV, repair, and ending. This is not one uninterrupted run.",
+  "checks": [
+    "The original run began with an empty earned journey",
+    "Training, all 24 scrolling levels, and three main bosses completed in order",
+    "All three main boss records include physical pickup",
+    "The original stop was the recorded Act IV controller timeout",
+    "The continuation used the normal progress import control",
+    "The imported recovery file matches its retained identity",
+    "All three earned receipts survived import without a value change",
+    "All nine Act IV encounters completed through keyboard input",
+    "Core exposure and pickup did not bank the reward",
+    "Physical extraction receipt retained: klein-relay",
+    "Physical extraction receipt retained: projective-module",
+    "Physical extraction receipt retained: curvature-seed",
+    "Physical extraction receipt retained: hyperbolic-core",
+    "Assembly alone did not complete the campaign",
+    "All three playable repair deliveries were observed",
+    "The ending completed and persisted after reload",
+    "The main title recognized saved completion",
+    "Neither browser run reported a page exception",
+    "Neither browser run reported a failed HTTP request"
+  ],
+  "encounters": 37,
+  "mainEncounters": 28,
+  "actFourEncounters": 9,
+  "seed": 4181845467,
+  "shipId": 0,
+  "wallSeconds": 1312.06,
+  "browserSeconds": 1815.405,
+  "sourceReportHashes": {
+    "first": "f64acdf338bb82e9f3d432a98d315eb76a798a104041744939b8aa4d04b30bf7",
+    "continuation": "164b6a656e12c43eb4539fc8e03e0b3057852511865af0417ac0ab8a2873326a"
+  },
+  "recoveryFileSha256": "9dd4f0d2148eca7ebcd6e3781015a88bde0300c60d5fdb42345057fd945689f7",
+  "journey": {
+    "version": 1,
+    "parts": {
+      "klein-relay": {
+        "id": "klein-relay",
+        "source": "campaign-extraction",
+        "chapter": 8,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 8740
+      },
+      "projective-module": {
+        "id": "projective-module",
+        "source": "campaign-extraction",
+        "chapter": 17,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 22150
+      },
+      "curvature-seed": {
+        "id": "curvature-seed",
+        "source": "campaign-extraction",
+        "chapter": 26,
+        "stage": null,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 34805
+      },
+      "hyperbolic-core": {
+        "id": "hyperbolic-core",
+        "source": "double-torus",
+        "chapter": null,
+        "stage": 8,
+        "exposed": true,
+        "collected": true,
+        "extracted": true,
+        "legacy": false,
+        "seed": 4181845467,
+        "shipId": 0,
+        "score": 39690
+      }
+    },
+    "actFourBridge": {
+      "shipId": 0,
+      "seed": 4181845467,
+      "score": 34805,
+      "echoes": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 2
+        },
+        {
+          "key": "1:1",
+          "type": 1,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 3
+        },
+        {
+          "key": "1:-1",
+          "type": 1,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 4
+        },
+        {
+          "key": "3:1",
+          "type": 3,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 5
+        },
+        {
+          "key": "3:-1",
+          "type": 3,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 6
+        },
+        {
+          "key": "2:1",
+          "type": 2,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 7
+        },
+        {
+          "key": "2:-1",
+          "type": 2,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 8
+        },
+        {
+          "key": "4:1",
+          "type": 4,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 9
+        },
+        {
+          "key": "4:-1",
+          "type": 4,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 10
+        },
+        {
+          "key": "5:1",
+          "type": 5,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 11
+        },
+        {
+          "key": "5:-1",
+          "type": 5,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 12
+        },
+        {
+          "key": "6:1",
+          "type": 6,
+          "polarity": 1,
+          "source": "checkpoint",
+          "instance": 13
+        },
+        {
+          "key": "6:-1",
+          "type": 6,
+          "polarity": -1,
+          "source": "checkpoint",
+          "instance": 14
+        }
+      ],
+      "equipped": [
+        "1:1",
+        "5:-1"
+      ]
+    },
+    "assembled": true,
+    "activated": true,
+    "completed": true,
+    "endingSeen": true
+  },
+  "limits": "Headless Edge, browser virtual time, and state-informed input. No human comprehension, listening, physical-device performance, broad seed fairness, or uninterrupted-run claim. The frozen runtime predates later title, UI, label, audio lifecycle, and event-reader changes that have separate checks."
+}

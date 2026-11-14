@@ -1,472 +1,230 @@
-# Arrow Space Shift: game contract
-
-Version: 0.14.0. Date: November 4, 2026.
-
-## Intent
-
-The player changes space to control travel time.
-The ship keeps its thrust when the route contracts.
-Nearby threats become closer too.
-The player can unfold space to get more room before a threat arrives.
-
-This is a separate Game Off 2026 prototype.
-The game is named Arrow Space Shift.
-The jam theme is SHIFT.
-The current thatgamejam entry remains in `D:\Projects\game_jam`.
-Lamirys remains in its existing project folder.
-
-## First experiment
-
-Constituents: ship, route, fold fields, enemy ships, shots, upgrade seeds, gates, and an exit.
-Operations: steer, change thrust, fire, fold, unfold, pause, and restart.
-Standards: a fold must change distance and travel time at constant thrust.
-Preservation: unfolding restores the distance rule. It does not reverse time or restore destroyed enemies.
-Continuation: the ship retains its position, damage, and shots when a field is removed.
-
-The distance field varies along the route axis.
-There is no lane swap at an ordinary fold seam.
-The final boss arena has the explicit edge identifications defined below.
-It does not simulate paper, origami layers, or general relativity.
-General rotated folds remain outside scope.
-Free inverse operations do not, by themselves, make operations commute.
-
-## Distance rule
-
-Route coordinate `z` identifies a point in the unfolded route.
-Each field starts 120 route units ahead of the ship.
-Each field covers 1,200 route units.
-Within that interval, the field multiplies distance by 0.5.
-Overlapping fields multiply their effects.
-All modes except the timing course permit three active fields.
-The timing course retains its one-field limit.
-Fields remain fixed in route coordinates.
-Left Shift adds a field. Right Shift removes the latest field.
-Each press makes one change. Holding a Shift key does not repeat it.
-
-The local distance factor is `m(z)`.
-Display distance between two points is the integral of `m(z)` between those points.
-The ship advances by its thrust distance through this distance function.
-The ship's base thrust is 90 distance units per second.
-Shots also gain speed inside a fold.
-Their movement uses the squared distance factor, `m(z)^2`.
-Their display still uses `m(z)`.
-Thus one fold doubles their visible speed inside the field.
-Two overlapping folds give four times the speed. Three give eight times the speed.
-This rule applies equally to player shots and enemy shots.
-It is an authored game rule, not a physical model.
-Unfolding immediately restores the corresponding shot speed.
-Shot trails show the local speed increase.
-Fold boundaries are crossed exactly within each simulation step.
-The game clock, firing intervals, and enemy firing clocks do not speed up.
-
-Folding can bring a gate or a shot closer immediately.
-The ship speeds up in route coordinates when it reaches a compressed field.
-Unfolding a field behind the ship has no effect on its local speed.
-The speed display reports the factor at the ship, not the number of fields.
-
-## Campaign
-
-The campaign is the default mode.
-Level 0 teaches movement and firing before the eight routes.
-Its camera does not scroll.
-The player must move at least 24 distance units to the left and to the right.
-It then supplies one training target.
-That target does not fire or cause contact damage.
-It follows the normal visible-entry rule before it can take a shot.
-Hitting the target completes Level 0.
-Left Shift gives an explanation during Level 0. Folding starts in Level 1.
-This lesson has no deadline.
-It contains eight numbered levels followed by a separate final boss battle.
-All eight levels are scrolling combat routes.
-They end when the ship reaches the route exit.
-Defeating an opening group does not finish a route.
-Living carriers that pass the bottom return at the top.
-They retain their identity, hull, equipment, and firing clock.
-Returning does not count as a defeat or create a seed drop.
-They cannot block a route exit.
-Even-numbered levels have mostly asteroids and occasional enemies.
-All levels use ordinary hull damage.
-There are no campaign deadlines or target quotas.
-The player chooses when to continue after a clear.
-
-| Section | Purpose |
-|---|---|
-| Level 1: Two Sides | Move, align shots, and use directional Position Warp. |
-| Level 2: Quiet Belt | Reach the exit among asteroids and occasional enemies. |
-| Level 3: Counter Cycle | Follow a scrolling route with the three-operation counter cycle. |
-| Level 4: Loose Stones | Use the three-operation set with less incoming fire. |
-| Level 5: Seven Operations | Follow a scrolling route with all seven operations and two slots. |
-| Level 6: Drift Field | Try equipment orders among asteroids and occasional enemies. |
-| Level 7: Front and Back | Fight faster carriers that use Klein bottle edge paths along the scrolling route. |
-| Level 8: Last Approach | Reach the exit through the final asteroid belt. |
-| Final battle: The Klein Fleet | Destroy a persistent core and two escorts on a Klein bottle map. |
-
-All eight routes scroll automatically at 90 distance units per second.
-The camera moves through the same fold metric as the ship.
-Folding can therefore increase route progress at equal elapsed time.
-The ship keeps its forward position relative to the camera.
-Left and Right steer sideways.
-Up and Down do not change position, thrust, or facing.
-The route controls forward travel.
-Folding and unfolding change distance without a manual speed control.
-Space fires straight in the current facing direction.
-Left Shift adds a fold ahead of that facing.
-Right Shift removes the latest fold.
-The existing distance and projectile-speed rules remain.
-The final boss retains its bounded arena camera.
-The reference modes retain their original automatic forward flight.
-
-Odd-numbered route lengths are 3,600, 4,200, 4,800, and 5,400 route units.
-They contain 12, 15, 18, and 21 carriers respectively.
-Even-numbered route lengths are 2,400, 2,800, 3,200, and 3,600 route units.
-They contain 3, 3, 4, and 4 carriers and 14, 16, 18, and 20 asteroids respectively.
-Even-numbered carriers have one hull point and fire less often.
-New runs change asteroid and enemy positions.
-The first carrier on each odd-numbered route stays centered for the introduction.
-Section retries retain the run seed and restore the same layout.
-Carriers are placed through to 80 units before the exit.
-The route meter shows distance to the current exit.
-
-Stage 7 enemies use the final map's side and vertical edge identifications.
-The Stage 7 route still scrolls.
-Future carriers wait until the route reaches their entry region before joining this map.
-Their lateral drift is 150 units per second in either direction.
-Their vertical drift is 140 distance units per second before route scrolling is applied.
-Their firing interval is 0.9 to 1.1 seconds.
-Their shot speed is 210, compared with 145 on ordinary routes.
-These are proposed tuning values, not verified balance results.
-Stage 7 changes enemy paths only. The final battle applies its map to ships and shots.
-Ordinary routes return carriers below -120 displayed distance units to the top at 950.
-The overshoot is retained.
-Stage 7 uses the Klein chart from -70 to 950.
-All returning enemies lose combat eligibility until drawn and visible for 0.65 seconds.
-No collision path crosses a return jump.
-
-Each teaching stage supplies a kit of its unlocked seed types and handed variants.
-Enemies still use and drop their actual equipment.
-Collected equipment and earned score carry between sections.
-Each section starts with full hull and no active fields or shots.
-Player shots and enemy shots can break asteroids.
-Each asteroid has two hull points.
-A player shot that breaks an asteroid gives 10 points.
-Asteroids block shots when contact occurs before contact with a ship.
-Collision checks remain split at Position Warp jumps.
-Ship contact breaks an asteroid and applies one point of normal hull damage.
-An asteroid must be drawn in view before it can take damage.
-After reaching the Level 8 exit, the player can enter the boss battle.
-
-Retry section restores that section's equipment and score checkpoint.
-It does not restart earlier levels.
-New run returns to campaign setup and clears campaign progress.
-Campaign progress remains in page memory only.
-Reloading does not resume a saved campaign.
-
-The visibility acknowledgment and entry period apply to the campaign.
-An unseen enemy cannot attack, defend, or receive damage.
-Pending player damage must settle before a level clears.
-The entry period restarts when an enemy returns from an edge.
-
-## Final boss map
-
-The chart uses lateral coordinates from -400 to 400.
-Its vertical distance coordinate runs from -70 to 950.
-The coordinate is measured through the current fold metric from the fixed camera origin.
-Left and right edges are identified with reversed vertical position.
-Top and bottom edges are identified without a horizontal reversal.
-
-For a right-edge crossing, the actor returns at the left edge.
-Its vertical coordinate becomes `bottom + top - y`.
-Its vertical velocity and facing reverse.
-Its horizontal velocity remains unchanged.
-The left-edge crossing has the same identification in reverse.
-At a top or bottom crossing, horizontal position and velocity remain unchanged.
-An exact corner crossing uses the horizontal identification first.
-
-The ship, enemies, and projectiles use this map.
-The player can steer sideways but cannot move manually along the vertical axis.
-Crossing a side edge still changes vertical position and facing through the map rule.
-Movement is split at every edge crossing.
-There is no collision segment through the intervening screen area.
-Collision checks also consider neighboring identified images.
-Drops can be collected through those edge identifications.
-
-The fleet has one 24-hull core and two 8-hull escorts.
-They move continuously and never escape or respawn at full health.
-They retain health, equipment, and actor identity across crossings.
-The fleet must be destroyed before the campaign can end.
-A wrap alone cannot clear the battle.
-Player shots expire after five seconds.
-Enemy shots expire after seven seconds.
-Leaving the frame does not by itself remove a boss projectile.
-Return markers show the expected arrival edge for nearby departing enemies.
-
-See [the current campaign record](docs/ASTEROID-ROUTES-v0.10.md) for evidence and remaining questions.
-
-## Prototype flight rules
-
-The ship advances along an 8,400-unit route.
-Left/Right steer across the route.
-Up/Down increase or reduce thrust while held.
-Space fires. The Fire button can hold fire on.
-A gate damages the ship if it crosses outside the opening.
-Enemy shots and ship contact can damage the ship.
-The ship starts with five hull points.
-After a hit, it has 1.4 seconds of protection.
-Zero hull points ends the flight.
-Reaching the exit completes the flight.
-The space-only mode has no enemies or gates.
-
-Only the arrow keys control ship movement and thrust.
-Only Left Shift folds space. Only Right Shift unfolds space.
-WASD and F/V have no gameplay action.
-Pointer dragging does not steer the ship.
-The Fold and Unfold displays are key reminders, not buttons.
-Each Shift press makes one change. Holding it does not repeat the change.
-The app does not change Windows Sticky Keys settings.
-Focus loss and a hidden tab pause the flight.
-Resume requires a deliberate action.
-Restart clears fields, shots, damage, score, and elapsed time.
-
-## Combat tradeoff
-
-Folding makes outgoing shots faster and brings targets closer.
-It also makes incoming fire faster and brings hazards closer.
-Unfolding gives more reaction time but slows outgoing shots.
-No shot damage or past movement is reversed.
-
-A normal kill gives 100 points.
-The fold score bonus can be disabled before a run.
-This option changes points only.
-It remains fixed until Restart returns the game to setup.
-Each active fold at the target adds 50 points to that kill.
-The bonus is 50, 100, or 150 points for one, two, or three overlapping folds.
-The target must still be inside the fold when it is destroyed.
-Unfolding before the hit removes that field's pending bonus.
-Already earned points remain.
-The interface shows the cumulative fold bonus.
-
-This creates a timing choice: keep the field for shot speed and points, or remove it to get more reaction time.
-The quality of that choice still needs player observation.
-
-## Upgrade flight and Position Warp
-
-The older upgrade flight remains available as a prototype mode.
-It progresses from one operation to three, then seven.
-The stages begin at route positions 0, 1,300, and 3,800.
-Only the current stage's enemies can attack or receive damage.
-Modes also permit a direct start at the three-operation or seven-operation stage.
-
-The introduction uses Position Warp.
-The three-operation stage adds Vector Lens and Impact Buffer.
-The seven-operation stage adds Path Bend, Arrival Delay, Distance Anchor, and Utility Exchange.
-All seven operations have runtime behavior.
-The seven-operation stage opens a second equipment slot.
-Slot 1 acts before Slot 2.
-An earlier operation can change the side accepted by the next one.
-
-Every carrier uses its equipped operations on incoming player shots.
-Its outgoing shots carry the identities of those operations.
-Defeating a carrier drops its actual equipped seeds.
-Seven-stage carriers have two different operations and drop both seeds.
-The ship collects seeds within 28 distance units.
-Collection needs no separate button.
-Collected seeds remain in inventory until Restart.
-Equipment buttons select a slot and a collected seed.
-Only one copy of an operation can be equipped, regardless of handedness.
-Empty slots fill first. A new handed variant replaces the equipped variant of that operation.
-Other pickups replace the selected slot when all slots are occupied.
-
-Each seed has fixed left or right handedness.
-Collection does not store the current fold state.
-With zero or two active folds, a seed accepts shots from the opposite side to its name.
-With one or three active folds, it accepts shots from its named side.
-Each successful fold or unfold therefore reverses the accepted side.
-The count includes fields behind the ship until they are removed.
-The local speed factor still depends on the field's position.
-Fold and unfold cycles have no lifetime limit.
-Only three fields can be active at once.
-
-Position Warp acts at an entry plane 140 displayed distance units ahead of the actor.
-The actor must accept the shot's lateral side at that entry.
-Shots within eight lateral units of the center pass without an operation.
-Shots from the other side also pass normally.
-A matching Position Warp changes relative lateral position from `x` to `-x`.
-It preserves forward position, radial distance, base velocity, ownership, and contact damage.
-It does not rotate the shot behind the ship.
-Collision checks cover the approach and the departure separately.
-There is no collision path across the instantaneous jump.
-Each shot crosses an actor's operation entry once.
-Changing space after that entry does not recapture the shot.
-
-The lab supplies alternating incoming shots and a new seed every six seconds.
-It includes both handed variants.
-It has no enemies or gates.
-The combat route retains gates and equipped enemies.
-Space fires straight ahead in every mode.
-The player uses the arrow keys to align with an enemy.
-In progression, 3-Paley, and 7-Paley modes, an enemy must be visible before combat.
-The renderer first records that its sprite has been drawn.
-It then needs 0.65 seconds in view before it can attack, defend, or receive damage.
-An entering enemy has a faded sprite and an entry indicator.
-An active enemy has a health bar.
-An enemy outside the view cannot receive damage, including stored damage.
-Stored enemy damage waits until its target is active in view again.
-An escaped enemy cannot produce a delayed offscreen kill.
-Player damage debt retains its existing timing and route-completion rule.
-
-Drawing and combat use the same projection and current canvas dimensions.
-Enemy visibility excludes the HUD band and clipped side edges.
-Player shots expire outside the visible firing area.
-Existing enemy shots retain their path until the usual cleanup conditions apply.
-A fold cannot reveal and destroy an undrawn enemy in one simulation step.
-Unfolding an enemy out of view removes its combat eligibility immediately.
-Re-entry requires another visible entry period.
-Visible hits have a short effect.
-Defeats have a longer effect and a points label at the enemy position.
-These rules do not apply to the unchanged timing course and reference route.
-See [the visibility repair](docs/VISIBLE-COMBAT-v0.7.md) for evidence and limits.
-
-The three-operation counter cycle is Position Warp → Vector Lens → Impact Buffer → Position Warp.
-The seven-operation graph uses `a counters b` when `(b - a) mod 7` is in `{1, 2, 4}`.
-An incoming shot that carries a counter identity passes the corresponding opposing operation.
-This does not increase its damage or remove the shot.
-Both player and enemy operations use this rule.
-A pair's common counter can pass both operations.
-Other shots still follow side eligibility and equipment order.
-The interface shows each counter result during combat.
-These are authored rules, not claims of general combat balance.
-
-Impact Buffer delays a contact consequence by 0.8 seconds.
-It retains the complete damage as a visible debt.
-Temporary hit protection does not erase stored damage.
-Pending debt is settled before route completion.
-Arrival Delay instead holds the shot for 0.65 seconds.
-A held shot can still cause contact damage.
-Utility Exchange halves shot velocity and doubles its damage.
-It advances the receiving actor's next firing opportunity by 0.12 seconds.
-It creates time at the cost of a heavier retained threat.
-
-Read [the current upgrade contract](docs/UPGRADE-OPERATIONS-v0.6.md) for all effects, tests, and limits.
-
-## Timing course
-
-The course has three short encounters.
-Each starts from its own defined state.
-Progression requires a successful result.
-A failed encounter can be retried without repeating earlier encounters.
-Restart returns to encounter 1 and unlocks the setup controls.
-
-Each encounter starts with a two-second launch countdown.
-Simulation time and movement remain at zero during it.
-Fold input is available during the countdown.
-Pause and focus loss stop the countdown too.
-The countdown is excluded from the reported encounter time.
-
-### Hit the opening
-
-The ship starts at route position 0.
-A target at position 1,000 has a shield.
-The target opens at simulation time 0.55 seconds.
-It closes at 1.20 seconds.
-Shots that hit a closed shield are removed.
-A successful hit clears the encounter.
-The target's ring, label, and timer communicate its state.
-At normal shot speed, an immediate shot arrives too late.
-A folded shot can reach the opening.
-Holding fire without folding does not clear this fixture.
-
-### Make room to escape
-
-The ship starts inside a fold from position 0 to 1,200.
-A wide salvo starts at position 500.
-It covers 220 lateral units on either side of its center.
-The ship must clear the band before contact.
-Losing one hull point fails the encounter.
-Passing the salvo without damage clears it.
-The starting fold and the salvo are visible during the countdown.
-
-### Hit, then escape
-
-The target and opening use the first encounter's values.
-A target hit triggers one guard salvo 360 route units ahead of the ship.
-The salvo is centered on the ship's lane at that instant.
-It does not follow the ship afterward.
-A dashed preview shows the guard's aim before the hit.
-The player must hit the target and avoid the salvo.
-The brief states these goals without giving the operation sequence.
-Keeping the field open misses the target in the checked cases.
-Keeping it folded causes a hit in the checked escape cases.
-Folding for the outgoing hit, then unfolding and steering, clears the fixture.
-
-These are results for the checked fixtures and input policies.
-They do not establish an optimal policy for all possible player behavior.
-
-### Comparison and records
-
-Run the same course with the score bonus on and off.
-Movement, fields, clocks, targets, and hazards remain equal.
-Record familiarity and assistance when interpreting a comparison.
-The app keeps attempt records in page memory.
-The local JSON export includes actions, times, score settings, outcomes, and separate notes.
-The prediction is captured when the attempt starts.
-The explanation is entered after the attempt.
-No player observation is inferred from an automated record.
-
-The unchanged v0.2 source is preserved in `reference/v0.2/`.
-The unchanged v0.3 source is preserved in `reference/v0.3/`.
-The earlier upgrade experiment is preserved in `reference/v0.5/`.
-The visible-combat prototype is preserved in `reference/v0.7/`.
-The current reference route also remains available as a mode.
-
-## Screen plan
-
-Version 0.14 uses the Crossing pixel asset set.
-Its source and delivery rules are in [the asset contract](art/ASSET-CONTRACT.md).
-The pixel palette follows the user's supplied hull, space, fold, unfold, and stage colors.
-The viewport background is Space Dark `#2E2740`.
-The interface retains its existing text and status colors.
-The new enemy forms describe existing behavior. They do not add new attacks or change hit areas.
-The native source uses exact 16-pixel cells and larger inspection/rock variants.
-The art includes separate up/down views with top-left shading.
-The renderer disables smoothing and uses integer sprite scales.
-Human recognition and visual contact alignment remain review questions.
-
-The public game page contains only the flight viewport.
-The status area and menu controls appear inside it.
-The top area shows the section, facing, accepted side, fold count, stored damage, hull, time, and score.
-The last event remains at the bottom of the viewport.
-The viewport has no outside columns or action bars.
-The itch.io description gives the controls.
-Guide retains an in-game copy.
-Combat excludes the area behind the status display.
-Equipment, Guide, and Options open native modal dialogs.
-Opening a panel pauses play. Closing it leaves play paused.
-The player selects Resume to continue.
-Detailed fold readings, counter graphs, and explanations remain available in these panels.
-Retry and New run require confirmation after a run starts.
-Cancel retains the current progress.
-The viewport fills the iframe without page scrolling.
-Modal panels can scroll internally.
-Prototype selection and research records are available only through local development access.
-
-Palette: space `#101c35`, panel `#172944`, text `#eaf2ff`, fold `#b8a6ed`, ship `#7ae8e0`, threat `#ffb8a0`.
-Type: Bahnschrift for headings, Segoe UI for controls and body text.
-Use system fonts. Do not download fonts.
-The grid is part of the mechanic. Its spacing shows route compression.
-Keep the other interface elements quiet.
-
-Review: a generic speed slider would hide the spatial rule.
-The prototype instead draws every gate, shot, star, and grid line through the same distance map.
-
-## Evidence and next decision
-
-Check distance integration, boundary crossing, inverse fields, hit detection, reset, and pause.
-Use real left/right Shift key events in a browser check.
-Check desktop and compact screens.
-These checks do not establish player understanding or physical-device behavior.
-
-The next player question is: does the planned route change the preferred seed, fold timing, or equipment order?
-Compare routes that need left and right movement.
-Do not retain a side choice if both sides have the same useful continuation.
-Test each proposed counter in a defined encounter before implementing the full graph.
-
+# Arrow Space Shift: current design record
+
+Source baseline: v0.24.1.
+Local development version: 0.25.1-dev.6.
+Date: November 13, 2026.
+
+This record describes the imported game and the authorized completion slice below.
+The [previous design contract](archive/workspace-v0.15.0-20261112/DESIGN.md) remains available with the previous source.
+The imported source and release notes remain in `imports/downloads-2026-11-12/`.
+
+## Purpose
+
+The player changes spatial relationships to survive and progress.
+The SHIFT theme acts through movement, distance, boundary identification, and attack control.
+The geometry must affect gameplay.
+The visual and sound systems must communicate the actual operations.
+
+## Jam edition scope
+
+The fold lesson uses one armed training enemy during firing, folding, and unfolding.
+Space stays active through those actions. Unfold does not reset the enemy or clear shots.
+An early kill completes training without a mandatory input checklist.
+The game uses normal simulation speed. The player learns through immediate consequences under attack.
+Shift primarily offers faster route completion at the cost of faster hostile shots.
+Automatic drive faults remain part of campaign pressure.
+Scrolling routes now have a separate speed grade and a clear bonus of up to 1,000 points.
+The curve compares elapsed section time with route length divided by SCROLL_SPEED.
+Saving 70 percent of that reference time earns the maximum speed score.
+Combat grades remain separate. See [the fold lesson contract](docs/tasks/FOLD-LESSON-016.md).
+
+The user limits the jam build to Acts I–III.
+Act III ends after the Curvature Seed is physically collected and extracted.
+The finish screen offers replay. It does not award a completed Warp Drive.
+Act IV and the later repair sequence remain in the source for post-jam work.
+Their existing saved records remain intact.
+Player menus, transitions, and the playable package must respect the edition gate.
+
+## Full source campaign
+
+| Act | Structure | Source and design record |
+|---|---|---|
+| I | Scrolling combat, manual fire, fold fields, Klein Fleet | `src/simulation.js`, `src/campaign.js`, `src/boss.js` |
+| II | Eight Klein lessons and the hybrid boss | [Act II design](ACT-II-DESIGN.md), [release index](docs/ACT-II-RELEASE-INDEX.md) |
+| III | Capture, release, finite echoes, build choices, Curvature Gate | [Projective Ecology](docs/PROJECTIVE-ECOLOGY-0.22.0.md) |
+| IV | Eight Bolza lessons and the Double Torus encounter | `src/hyperbolic-campaign.js`, [v0.24.1 notes](RELEASE-NOTES-v0.24.1.md) |
+
+Acts I–III share the main simulation, campaign, and renderer.
+Act IV retains a separate simulation and renderer.
+The Curvature Seed unlock links the pages on one browser origin.
+Act IV has its own saved checkpoint.
+The bridge retains ship identity, movement and core differences, score, echoes, and equipment records.
+The seven equipment operation effects remain inactive in the Bolza chart.
+Each stage retains its full-hull entry rule.
+
+## Preserved rules
+
+- Keep Space as manual fire.
+- Keep the original scrolling campaign and its movement limits.
+- Keep separate Left Shift and Right Shift fold controls in the scrolling campaign.
+- Keep the documented Act IV fold phase and its effect on both projectile classes.
+- Keep capture and release as deliberate actions with finite resources.
+- Keep boss defeat, physical pickup, and extraction as separate states.
+- Bank permanent parts only after successful extraction.
+- Keep save changes additive where earlier saves are supported.
+- Keep Position Warp collision paths split at the jump.
+- Keep live projectile identity through real boundary crossings.
+- Keep future images as rendering data without independent collision objects.
+- Keep sound and animation independent of damage and physics.
+
+This import preserves the v0.24.1 control behavior.
+The imported Acts use different movement frames where their geometry requires them.
+The local audiovisual work must not change those movement rules.
+
+The later campaign integration instruction supersedes the imported main-route axial control.
+Acts I–III now use Left and Right steering. Up and Down have no campaign motion authority.
+Forward scrolling and identified-edge transport remain active.
+Act IV keeps local turn and drive controls. The repair dock keeps its circuit controls.
+The Aftwing reverse-drive benefit applies in Act IV. Its main-route description must state that limit.
+See [the integration contract](docs/tasks/JAM-INTEGRATION-011.md).
+
+## Geometry and code boundaries
+
+Flight rules belong in `src/simulation.js`.
+Upgrade operations belong in `src/upgrades.js`.
+Fold distance calculations belong in `src/space.js`.
+Klein edge motion belongs in `src/klein.js`.
+Boss combat belongs in `src/boss.js`.
+Campaign sections belong in `src/campaign.js`.
+The Bolza kernel belongs in `src/hyperbolic.js`.
+Act IV encounters belong in `src/hyperbolic-campaign.js`.
+
+The hybrid Klein/projective mechanic is experimental.
+It is not a verified connected-sum model.
+Act IV uses finite geometry steps and a depth-one collision neighborhood.
+It is not a complete global shortest-path or continuous-collision solver.
+Audiovisual changes do not resolve these mathematical limits.
+
+## Audiovisual design input
+
+The November 12 design PDF and event registry propose Structural Techno-Cosmism.
+The proposal links repetition, identity, transformation, rhythm, and sparse space.
+Its implementation consumes actual game events.
+The current audio slice adds original arrangements and independent mix gains.
+It retains the visual projectile conventions.
+The implementation ledger separates completed code from proposed extensions.
+
+The 3D prototype remains a separate reference.
+It does not replace the browser renderer or the Bolza kernel.
+The current candidate includes the Act IV bridge, final component, extraction, repair, and ending.
+Their verification limits remain in the completion report.
+
+## Authorized completion slice: 0.25.0-dev.1
+
+The user authorized implementation toward a 4.5/5 review target in every Game Off category.
+The target is not a measured score or an acceptance result.
+Keep the four Acts and existing browser engine.
+
+The Act III extraction stores a copied Act IV bridge with ship identity, seed, score, echoes, inventory, and equipment.
+Existing earned Act IV checkpoints take precedence on resume.
+Act IV retains unsupported equipment as identified metadata; it must state which effects apply in the local geometry.
+Ship movement and collision-core tradeoffs continue through the bridge.
+Each stage retains its full-hull entry rule.
+
+The final boss exposes a physical Hyperbolic Core.
+The player must collect it and reach the extraction beacon before banking it.
+Defeat, exposure, collection, extraction, assembly, activation, and campaign completion remain separate states.
+Reload before extraction restores the stage entry and does not bank the core.
+The repair dock requires saved provenance for all four parts.
+Old banked parts retain explicitly identified legacy provenance.
+
+The safe repair challenge uses actual charge deliveries through fold distance, a Klein edge, and capture/release.
+Key presses alone do not complete those deliveries.
+Failure in the dock costs no campaign hull or stored equipment.
+The ending follows successful activation and saves completion after its visible sequence.
+
+The audio slice extends the existing Web Audio engine.
+Original small arrangements give each Act an identity through rhythm, filtering, and sparse layers.
+Actual combat state changes musical density; it never changes combat timing.
+Master, music, effects, and ambience controls persist independently.
+Critical sound priorities, bounded resources, pause, and interruption recovery are required.
+Silent and reduced-motion play retain all critical visual information.
+No new engine, additional campaign branch, extra ship roster, or 3D conversion is authorized by this slice.
+
+## Current musical direction: STC study r3
+
+The user rejected the r2 chord and melody direction after listening.
+Do not treat that score as an accepted soundtrack.
+The next design unit is an isolated musical and playable study.
+Use a stable pulse, repeated acid sequence, interlocking percussion, and gradual timbre changes.
+Use a familiar pattern, a real paired-edge crossing, and an unfamiliar prediction case.
+Keep the existing campaign rules and verified release archives intact.
+The study cannot award campaign progress.
+Do not use music playback to schedule gameplay.
+Do not present an analogy as a mathematical equivalence.
+See [the task contract](docs/tasks/STC-STUDY-003.md).
+
+## Authorized binaural revision: r5
+
+The user selected binaural positioning for the kick, sustained hum, and repeated acid notes.
+Keep deep kick energy centered. Apply HRTF processing to selected upper layers and reflections.
+The drone and acid voice can move slowly around a fixed listener.
+Provide a session-only speaker stereo option.
+Preserve the note pattern, rhythm, instrument settings, and event-cue positions.
+The piece remains a title-screen candidate in the separate study.
+Other campaign textures remain a later composition task.
+See [the binaural task](docs/tasks/STC-BINAURAL-004.md).
+
+## Selected stereo and room revision: r6
+
+The user selected the stereo take after the binaural comparison.
+Keep that exact dry recording. Add a separate room return.
+FoxDot must sequence the take. SuperCollider must render the room effect.
+Browser playback must use the exported dry and room files with one start time.
+Keep the kick low frequencies clear. Filter the room return before and after reverb.
+The Room control must change only the return level.
+Keep actual attack cues separate from the recorded music.
+The original composition was made with Web Audio. Do not change that source record.
+This revision uses installed FoxDot Patterns for a finite sample-entry pattern.
+It does not use the full live FoxDot scheduler.
+The room suggests a large interior. It does not implement an in-world sound source.
+No campaign rule, collision path, or music-driven attack timing changes.
+See [the room task](docs/tasks/STC-ROOM-005.md).
+
+## Bass fade and lower room: r7
+
+The user requested a smooth ear-to-ear bass fade and less reverb.
+Keep the repeated acid phrase and the existing rhythm.
+Move only the upper part of the separate acid direct signal.
+Keep its low part, the kick body, and the offbeat sub centered.
+Retain the original stereo routing of other drum layers.
+Use a four-bar left-to-right-to-left cycle at 134 BPM.
+Use FoxDot for the pan sequence and SuperCollider for the render.
+Reduce the default room return from 0.30 to 0.12.
+Keep the previous room timing for comparison.
+The required source separation bypasses the old shared compressor.
+Label this as a new mix. Keep the r6 take and archives intact.
+The stereo fade adds no HRTF, pitch offset, or gameplay timing change.
+See [the bass task](docs/tasks/STC-BASS-006.md).
+
+## Four-Act music collection
+
+The user accepted the title-theme direction and requested four tracks for each Act.
+Use 1-, 2-, 4-, and 6-minute tracks to test the expanded musical vocabulary.
+Compose new notes and structures with FoxDot. Render original instruments with SuperCollider.
+Keep the driving pulse, independent atmosphere, and restrained room as shared standards.
+Test motif order, harmonic persistence, and recovery through distinct pieces.
+Keep the music collection in a separate listening page until its campaign use is selected.
+The listening page must not change combat, progression, or campaign audio settings.
+Keep the r7 title study and previous release archives intact.
+See [the music collection task](docs/tasks/STC-ACT-LIBRARY-007.md).
+
+## Operator laboratory
+
+Keep the operator study separate from campaign simulation and saved progression.
+Compare mechanical response, transient growth, and operation order through controlled models.
+Use the actual Klein and Projective Module kernels for the boundary examples.
+Keep channel projection, topology forecasts, and combat collision identities separate.
+Use one source and matched gain for each sound pair.
+Include a constant-gain control that commutes with the fixed linear room response.
+Record the first prediction before feedback. Record assistance with that prediction.
+Keep human recognition claims separate from technical outputs.
+See [the operator task](docs/tasks/STC-OPERATOR-008.md) and [the grammar](docs/OPERATOR-AV-GRAMMAR-v2.md).
+
+## Identified Return r8
+
+Use the retained r7 stereo mix as the foundation for the new title-track review.
+Keep its pulse, acid phrase, stereo movement, and reduced room relationship.
+Add Fm7 voicing persistence, sparse bounded percussion responses, and ordered room processing on the new harmony.
+Keep this as a separate music review candidate until listening selects its campaign use.
+See [the track contract](docs/tasks/STC-TRACK-009.md).

@@ -1,0 +1,601 @@
+{
+  "revision": "stc-act-library-r1",
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "results": [
+    "The catalog contains four durations for all four Acts",
+    "Startup selects a track without audio autoplay",
+    "The Act control has a native accessible name",
+    "Act selection exposes four track cards",
+    "Browsing the catalog does not fetch music",
+    "Track selection retains keyboard focus on its control",
+    "Playback creates one context and one decoded pair",
+    "Both native sources start at one time and offset",
+    "Pause retains position and removes both active sources",
+    "Resume reuses both buffers at the retained position",
+    "Atmosphere mute keeps the core and shared timeline active",
+    "The native Volume control can mute the full mix",
+    "Stop returns the selected track to its start",
+    "Natural track end clears the current source pair",
+    "All sixteen real encoded stem pairs decode and start",
+    "Every native decoded core, atmosphere, and combined mix has finite samples below full scale",
+    "All track changes reuse one context and retain only the current pair",
+    "Playback history remains bounded",
+    "The library reflows at 320 pixels without horizontal overflow",
+    "All controls have usable compact target bounds",
+    "RTL layout retains its content without horizontal overflow",
+    "Text at 200 percent retains control access and reflow",
+    "The library contains no automatic visual animation",
+    "Controls use native buttons, ranges, and a checkbox",
+    "The library does not write campaign or preference storage",
+    "The normal browser flow has no page exception or missing asset",
+    "A missing layer stops the pair and gives a retry instruction",
+    "Retry recovers the pair without a second context"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "trackChecks": [
+    {
+      "id": "act1-01",
+      "seconds": 60,
+      "frames": 2880000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8311792612075806,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.0008196670678444207,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8311792612075806,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act1-02",
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8240073323249817,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.04545214772224426,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8216247363016009,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act1-03",
+      "seconds": 240,
+      "frames": 11520000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8227434754371643,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.015501396730542183,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8227434754371643,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act1-04",
+      "seconds": 360,
+      "frames": 17280000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8489143252372742,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.04438750445842743,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8499656968051568,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act2-01",
+      "seconds": 60,
+      "frames": 2880000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8240743279457092,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.002653279807418585,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8240743279457092,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act2-02",
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.79534912109375,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.06287204474210739,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8150137532502413,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act2-03",
+      "seconds": 240,
+      "frames": 11520000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8070430755615234,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.0334562286734581,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8082625307142735,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act2-04",
+      "seconds": 360,
+      "frames": 17280000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8162833452224731,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.07660681754350662,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.827080987393856,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act3-01",
+      "seconds": 60,
+      "frames": 2880000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.819607675075531,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.004596097394824028,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.819607675075531,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act3-02",
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8235645890235901,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.09791736304759979,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8350582020357251,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act3-03",
+      "seconds": 240,
+      "frames": 11520000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8205722570419312,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.03810200095176697,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8230637575034052,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act3-04",
+      "seconds": 360,
+      "frames": 17280000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8315110206604004,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.09160599112510681,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8335501849651337,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act4-01",
+      "seconds": 60,
+      "frames": 2880000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8380707502365112,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.02683771587908268,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8328841389156878,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act4-02",
+      "seconds": 120,
+      "frames": 5760000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8197223544120789,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.1370057314634323,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8278550188988447,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act4-03",
+      "seconds": 240,
+      "frames": 11520000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8241328001022339,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.09504576027393341,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8299628379754722,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    },
+    {
+      "id": "act4-04",
+      "seconds": 360,
+      "frames": 17280000,
+      "rate": 48000,
+      "channels": 2,
+      "contextCreations": 1,
+      "decoded": {
+        "core": {
+          "peak": 0.8154048919677734,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "atmosphere": {
+          "peak": 0.11698973178863525,
+          "nonFinite": 0,
+          "fullScale": 0
+        },
+        "combined": {
+          "peak": 0.8285646485164762,
+          "nonFinite": 0,
+          "fullScale": 0
+        }
+      }
+    }
+  ],
+  "input": "Ordinary keyboard and native controls, with read-only runtime inspection.",
+  "limits": "Local headless Microsoft Edge. No listening approval, screen-reader, physical-device, physical audio latency, automatic page-visibility, or heap-retention result.",
+  "sourceIdentity": {
+    "music-library.html": "f710cea364e0f020d28b19fb7d78aa6466e81d6a628615e87ec5fa2d61761e52",
+    "src/music-library-app.js": "0c2590e253ff0ea7ee6cee02327fff7c41a5295cc304936e139d9c13c24e24c9"
+  },
+  "browserVersion": "157.0.4341.46",
+  "firstPlayback": {
+    "revision": "stc-act-library-r1",
+    "state": "playing",
+    "trackId": "act1-01",
+    "position": 0,
+    "duration": 60,
+    "volume": 0.6,
+    "atmosphere": true,
+    "contextCreations": 1,
+    "contextState": "running",
+    "buffers": 2,
+    "activeSources": 2,
+    "fetches": 2,
+    "decodes": 2,
+    "error": "",
+    "history": [
+      {
+        "trackId": "act1-01",
+        "index": 0,
+        "at": 0.192,
+        "offset": 0
+      },
+      {
+        "trackId": "act1-01",
+        "index": 1,
+        "at": 0.192,
+        "offset": 0
+      }
+    ],
+    "selectedAct": 1,
+    "trackCount": 16,
+    "tracks": [
+      {
+        "id": "act1-01",
+        "act": 1,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Vector Engine"
+      },
+      {
+        "id": "act1-02",
+        "act": 1,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Vacuum Bearings"
+      },
+      {
+        "id": "act1-03",
+        "act": 1,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Off Axis"
+      },
+      {
+        "id": "act1-04",
+        "act": 1,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Transfer Engine"
+      },
+      {
+        "id": "act2-01",
+        "act": 2,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Identified Pulse"
+      },
+      {
+        "id": "act2-02",
+        "act": 2,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Second Horizon"
+      },
+      {
+        "id": "act2-03",
+        "act": 2,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order of Returns"
+      },
+      {
+        "id": "act2-04",
+        "act": 2,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Seam Memory"
+      },
+      {
+        "id": "act3-01",
+        "act": 3,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Iron Intake"
+      },
+      {
+        "id": "act3-02",
+        "act": 3,
+        "slot": 2,
+        "seconds": 120,
+        "title": "After the Release"
+      },
+      {
+        "id": "act3-03",
+        "act": 3,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order of Force"
+      },
+      {
+        "id": "act3-04",
+        "act": 3,
+        "slot": 4,
+        "seconds": 360,
+        "title": "Machinery of Return"
+      },
+      {
+        "id": "act4-01",
+        "act": 4,
+        "slot": 1,
+        "seconds": 60,
+        "title": "Paired Horizon"
+      },
+      {
+        "id": "act4-02",
+        "act": 4,
+        "slot": 2,
+        "seconds": 120,
+        "title": "Quiet Curvature"
+      },
+      {
+        "id": "act4-03",
+        "act": 4,
+        "slot": 3,
+        "seconds": 240,
+        "title": "Order Leaves a Trace"
+      },
+      {
+        "id": "act4-04",
+        "act": 4,
+        "slot": 4,
+        "seconds": 360,
+        "title": "The Surface Remembers"
+      }
+    ]
+  },
+  "storage": {
+    "unchanged": true,
+    "writes": []
+  },
+  "controlledFailure": {
+    "status": 503,
+    "errors": []
+  },
+  "url": "http://127.0.0.1:1378/",
+  "checks": 28
+}

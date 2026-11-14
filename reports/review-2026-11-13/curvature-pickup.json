@@ -1,0 +1,8 @@
+{
+  "candidate": "0.24.2-dev.1",
+  "method": "State fixture copied from the existing Act III boss regression. This isolates reward text; it is not a combat clear.",
+  "part": "curvature-seed",
+  "collected": true,
+  "phase": "exit",
+  "message": "Klein relay aboard. Cross the exit to bank the part and unlock the starter fleet."
+}

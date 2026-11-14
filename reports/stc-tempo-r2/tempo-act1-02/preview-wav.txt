@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 000001acc29b4e40] Guessed Channel Layout: stereo
+Input #0, wav, from 'G:\Music Projects\Arrow Space Shift\stc-tempo-r2\masters\tempo-act1-02.wav':
+  Duration: 00:02:00.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'G:\Music Projects\Arrow Space Shift\stc-tempo-r2\previews\tempo-act1-02-preview.wav':
+  Metadata:
+    ISFT            : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[out#0/wav @ 000001acc0daf5c0] video:0KiB audio:3750KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.002031%
+size=    3750KiB time=00:00:20.00 bitrate=1536.0kbits/s speed=4.37e+03x elapsed=0:00:00.00    

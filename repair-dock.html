@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Arrow Space Shift — Repair dock</title>
+  <style>
+    :root{color-scheme:dark;font:15px 'Segoe UI',sans-serif;background:#030607;color:#eee7d0}
+    *{box-sizing:border-box}body{margin:0;height:100dvh;overflow:hidden}button,a,input{font:inherit}
+    button,.link{color:#eee7d0;background:#172329;border:1px solid #62716e;border-radius:4px;padding:.45rem .65rem;min-height:36px;touch-action:manipulation}
+    button:hover,.link:hover{background:#293b40}button:disabled{opacity:.5}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e8c17b;outline-offset:2px}
+    .link{text-decoration:none;display:inline-flex;align-items:center}main{height:100%;max-width:1120px;margin:auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;padding:.4rem;gap:.35rem}
+    header{display:flex;align-items:center;justify-content:space-between;gap:.5rem}h1{font:600 1rem Bahnschrift,'Segoe UI',sans-serif;margin:0}.tools{display:flex;gap:.3rem;flex-wrap:wrap}
+    .field{position:relative;min-height:0;overflow:hidden;border:1px solid #304244;background:#020405;display:grid;place-items:center}canvas{width:100%;height:100%;object-fit:contain;display:block}
+    .panel{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);background:#0b1219f5;border:1px solid #9ba89a;width:min(92%,520px);max-height:94%;overflow:auto;padding:1rem;box-shadow:0 12px 36px #000a}
+    .panel[hidden]{display:none}.panel h2{margin:.1rem 0 .65rem;font-size:1.25rem}.panel p{margin:.5rem 0;line-height:1.45}.panel ul{padding-left:1.1rem;margin:.5rem 0}.panel li{margin:.25rem 0}.actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem}
+    .status{min-height:2.5rem;font-size:.9rem;line-height:1.3}.status p{margin:0}.status small{color:#b4c6c0}.touch{display:flex;gap:.35rem;justify-content:center;flex-wrap:wrap}.touch button{flex:1;max-width:150px;min-width:38px;user-select:none;touch-action:none}.touch .action{font-size:.85rem}
+    dialog{width:min(94vw,650px);max-height:88dvh;overflow:auto;background:#101b23;color:#eee7d0;border:1px solid #8fa69e;border-radius:4px;padding:1rem}dialog::backdrop{background:#000b}dialog h2{margin:0 0 .65rem}dialog p{line-height:1.4}.setting{display:flex;gap:1rem;align-items:center;justify-content:space-between;margin:.8rem 0}.setting input[type=range]{width:45%}.fine{font-size:.85rem;color:#afc0ba}.saved{color:#a8d6bd}
+    @media(max-width:500px){:root{font-size:13px}header{align-items:flex-start}header .tools{justify-content:flex-end}header button,.link{padding:.3rem .4rem;min-height:32px}h1{max-width:90px}.panel{padding:.7rem}.status{min-height:3.5rem}.touch{gap:.2rem}.touch button{padding:.4rem .2rem;min-height:40px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<main>
+  <header><h1>Warp Drive · Repair dock</h1><nav class="tools" aria-label="Dock menu"><button id="pause" type="button">Pause (P)</button><button id="guide" type="button">Guide / Options</button><button id="retry" type="button">Retry repair</button><a class="link" href="index.html">Fleet</a></nav></header>
+  <section class="field" aria-label="Repair field">
+    <canvas id="field" width="1000" height="740" tabindex="0" aria-label="Safe repair field. Left and Right steer. Space fires. Left Shift folds. Right Shift unfolds. C captures. E releases."></canvas>
+    <section id="dock-panel" class="panel" aria-labelledby="panel-title">
+      <h2 id="panel-title">Repair dock</h2><p id="panel-detail"></p><ul id="parts"></ul><p id="save-status" class="fine" role="status"></p>
+      <div class="actions"><button id="assemble" type="button">Assemble Warp Drive</button><button id="dock-launch" type="button">Start repair</button><button id="save-again" type="button" hidden>Save again</button><a id="replay" class="link" href="index.html" hidden>Return to fleet</a></div>
+    </section>
+  </section>
+  <section class="status" aria-label="Repair status"><p id="instruction">Collect and extract all four drive parts.</p><small id="cause"></small></section>
+  <div class="touch" aria-label="Touch controls"><button data-hold="ArrowLeft" type="button" aria-label="Steer left">←</button><button data-hold="ArrowRight" type="button" aria-label="Steer right">→</button><button data-hold="Space" type="button">Fire</button><button class="action" data-action="fold" type="button">Fold</button><button class="action" data-action="unfold" type="button">Unfold</button><button class="action" data-action="capture" type="button">Capture</button><button class="action" data-action="release" type="button">Release</button></div>
+</main>
+<dialog id="guide-dialog" aria-labelledby="guide-title">
+  <h2 id="guide-title">Repair guide and options</h2>
+  <p>This dock is safe. Repair attempts do not use campaign hull, score, parts, or equipment.</p>
+  <p><strong>Left / Right:</strong> steer. <strong>Space:</strong> fire manually. <strong>Left Shift:</strong> fold. <strong>Right Shift:</strong> unfold. <strong>C:</strong> capture. <strong>E:</strong> release. <strong>P:</strong> pause or resume.</p>
+  <p>Distance circuit: charge fades after 1.2 seconds. Compress the route to the left receiver.</p>
+  <p>Return circuit: the dock launcher points up and right. Fire from the right mark. Its signal crosses the real Klein side join.</p>
+  <p>Echo circuit: catch a filled charge near the right mark. Move to the left receiver. Release the stored echo.</p>
+  <p>The receiver ring and the text report each successful delivery. The earlier cause remains below the field.</p>
+  <div class="setting"><label for="reduced-motion">Reduced motion</label><input id="reduced-motion" type="checkbox"></div>
+  <div class="setting"><label for="sound">Sound</label><input id="sound" type="checkbox"></div>
+  <div class="setting"><label for="music">Music</label><input id="music" type="checkbox"></div>
+  <div class="setting"><label for="volume">Master volume</label><input id="volume" type="range" min="0" max="100" step="1"></div>
+  <div class="setting"><label for="music-volume">Music volume</label><input id="music-volume" type="range" min="0" max="100" step="1"></div>
+  <div class="setting"><label for="effects-volume">Effects volume</label><input id="effects-volume" type="range" min="0" max="100" step="1"></div>
+  <div class="setting"><label for="ambience-volume">Ambience volume</label><input id="ambience-volume" type="range" min="0" max="100" step="1"></div>
+  <p class="fine">Closing this panel keeps the repair paused. Press P to continue.</p>
+  <form method="dialog"><button type="submit">Close guide</button></form>
+</dialog>
+<script type="module" src="src/later-content-entry.js" data-later-content="repair"></script>
+</body>
+</html>

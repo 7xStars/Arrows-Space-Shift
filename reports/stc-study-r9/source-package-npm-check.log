@@ -1,0 +1,22 @@
+
+> arrow-space-shift-r9-music-review@0.25.0-dev.1 check
+> npm run syntax && npm test
+
+
+> arrow-space-shift-r9-music-review@0.25.0-dev.1 syntax
+> node tools/check-syntax.mjs
+
+Syntax passed for 7 source and tool files.
+
+> arrow-space-shift-r9-music-review@0.25.0-dev.1 test
+> node --test tests/*.test.mjs
+
+✔ local media supplies accurate full, HEAD, and byte-range responses for native seeking (226.693ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 300.5811

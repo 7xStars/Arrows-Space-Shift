@@ -1,0 +1,4737 @@
+{
+  "root": "D:\\Projects\\games\\game-off-2026",
+  "candidate": "0.25.1-dev.4",
+  "method": "Isolated headless Edge. Real keyboard and pointer input. Native Web Audio is observed. A Level 1 checkpoint is earned through normal training. Browser policies are tested in separate processes.",
+  "policyReference": "https://developer.chrome.com/blog/autoplay",
+  "results": [
+    "Default policy receives one automatic title request before input",
+    "Blocked default policy shows an enabled speaker action",
+    "Default policy plays after at most one speaker click",
+    "Strict policy leaves native audio suspended before input",
+    "Blocked speaker has an accessible Enable sound action",
+    "First blocked speaker click enables sound instead of muting it",
+    "Blocked startup recovers with the same native context",
+    "First ordinary key starts blocked title audio without launching the game",
+    "Title playback does not wait for the sprite atlas",
+    "Mute cancels a title start while its recording loads",
+    "Permitted-policy entry starts the title before a click",
+    "Normal entry has no QA controls",
+    "Tab navigation does not change sound preference",
+    "Desktop title: speaker target is at least 44 pixels",
+    "Desktop title: speaker fits the lower-left corner without covering launch",
+    "Desktop title: native icon control replaces the old title text button",
+    "Enter mutes sound and saves the preference",
+    "Space restores title playback with one context",
+    "Keyboard focus has a visible indicator",
+    "Real training controls earn the Level 1 checkpoint",
+    "Launch replaces the title with one campaign pair",
+    "Permitted-policy saved entry starts title automatically",
+    "Saved entry retains the earned checkpoint",
+    "Title playback does not advance the saved section",
+    "320 by 568 saved entry: speaker target is at least 44 pixels",
+    "320 by 568 saved entry: speaker fits the lower-left corner without covering launch",
+    "320 by 568 saved entry: native icon control replaces the old title text button",
+    "The lower-left speaker does not cover saved-entry instructions",
+    "Saved-entry instructions stay inside the narrow viewport",
+    "Speaker mute keeps the saved entry quiet and preserves its checkpoint",
+    "Resume keeps Level 1 and reuses the context",
+    "320 by 568 Act I flight: visible flight controls stay clear of the speaker",
+    "320 by 568 Act I flight: control labels fit usable targets",
+    "Manual pause stays silent while the sound control remains available",
+    "Options mute synchronizes the speaker state",
+    "Saved mute prevents automatic audio context creation",
+    "Saved mute keeps the speaker available",
+    "Saved mute preserves the earned checkpoint",
+    "The saved-mute speaker can enable sound directly",
+    "320 by 568 Act III flight: visible flight controls stay clear of the speaker"
+  ],
+  "errors": [],
+  "missingAssets": [],
+  "states": {
+    "defaultAttempt": {
+      "flight": {
+        "phase": "ready",
+        "mode": "campaign",
+        "runSeed": 1743836771,
+        "x": 0,
+        "z": 0,
+        "time": 0,
+        "hull": 5,
+        "score": 0,
+        "kills": 0,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 11.183299849042669,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": -1,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 0,
+          "startedAt": 0,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "movement": {
+            "left": 0,
+            "right": 0
+          },
+          "lesson": "move",
+          "training": {
+            "shot": false,
+            "folded": false,
+            "unfolded": false,
+            "enemySpawned": false,
+            "completeAt": null
+          },
+          "checkpoint": {
+            "inventory": [],
+            "equipped": [
+              null,
+              null
+            ],
+            "score": 0,
+            "kills": 0,
+            "foldBonus": 0,
+            "foldsUsed": 0,
+            "time": 0,
+            "upgradeSerial": 0,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "tutorial",
+            "number": 0,
+            "name": "Flight controls",
+            "stage": 0,
+            "goal": "Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+            "hint": "Arrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire."
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 0,
+        "lastEvent": "Flight controls. Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "upgrade": null,
+        "warpSide": null,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [],
+        "equipped": [
+          null,
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "suspended",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "title",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": true,
+          "state": "waiting-for-gesture"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "identified-return-r9",
+          "title": "Identified Return r9",
+          "mode": "title",
+          "state": "suspended",
+          "error": "",
+          "offset": 0,
+          "duration": 76.64179166666666,
+          "loadedSegments": 1,
+          "pendingSegments": 0,
+          "decodedBytes": 29430448,
+          "activeSources": 0,
+          "layers": {
+            "core": 0,
+            "atmosphere": 0
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 1,
+          "decodes": 1,
+          "peakDecodedSegments": 1,
+          "starts": 0,
+          "underruns": 0,
+          "repeats": 0,
+          "history": []
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 1,
+      "speaker": {
+        "exists": true,
+        "label": "Enable sound",
+        "pressed": "false",
+        "state": "blocked"
+      },
+      "checkpoint": null,
+      "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "strictAttempt": {
+      "flight": {
+        "phase": "ready",
+        "mode": "campaign",
+        "runSeed": 3046099432,
+        "x": 0,
+        "z": 0,
+        "time": 0,
+        "hull": 5,
+        "score": 0,
+        "kills": 0,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 11.986447752919048,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": -1,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 0,
+          "startedAt": 0,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "movement": {
+            "left": 0,
+            "right": 0
+          },
+          "lesson": "move",
+          "training": {
+            "shot": false,
+            "folded": false,
+            "unfolded": false,
+            "enemySpawned": false,
+            "completeAt": null
+          },
+          "checkpoint": {
+            "inventory": [],
+            "equipped": [
+              null,
+              null
+            ],
+            "score": 0,
+            "kills": 0,
+            "foldBonus": 0,
+            "foldsUsed": 0,
+            "time": 0,
+            "upgradeSerial": 0,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "tutorial",
+            "number": 0,
+            "name": "Flight controls",
+            "stage": 0,
+            "goal": "Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+            "hint": "Arrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire."
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 0,
+        "lastEvent": "Flight controls. Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "upgrade": null,
+        "warpSide": null,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [],
+        "equipped": [
+          null,
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "suspended",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "title",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": true,
+          "state": "waiting-for-gesture"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "identified-return-r9",
+          "title": "Identified Return r9",
+          "mode": "title",
+          "state": "suspended",
+          "error": "",
+          "offset": 0,
+          "duration": 76.64179166666666,
+          "loadedSegments": 1,
+          "pendingSegments": 0,
+          "decodedBytes": 29430448,
+          "activeSources": 0,
+          "layers": {
+            "core": 0,
+            "atmosphere": 0
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 1,
+          "decodes": 1,
+          "peakDecodedSegments": 1,
+          "starts": 0,
+          "underruns": 0,
+          "repeats": 0,
+          "history": []
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 1,
+      "speaker": {
+        "exists": true,
+        "label": "Enable sound",
+        "pressed": "false",
+        "state": "blocked"
+      },
+      "checkpoint": null,
+      "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "muteDuringLoad": {
+      "flight": {
+        "phase": "ready",
+        "mode": "campaign",
+        "runSeed": 120650109,
+        "x": 0,
+        "z": 0,
+        "time": 0,
+        "hull": 5,
+        "score": 0,
+        "kills": 0,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 10.278762430651113,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": -1,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 0,
+          "startedAt": 0,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "movement": {
+            "left": 0,
+            "right": 0
+          },
+          "lesson": "move",
+          "training": {
+            "shot": false,
+            "folded": false,
+            "unfolded": false,
+            "enemySpawned": false,
+            "completeAt": null
+          },
+          "checkpoint": {
+            "inventory": [],
+            "equipped": [
+              null,
+              null
+            ],
+            "score": 0,
+            "kills": 0,
+            "foldBonus": 0,
+            "foldsUsed": 0,
+            "time": 0,
+            "upgradeSerial": 0,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "tutorial",
+            "number": 0,
+            "name": "Flight controls",
+            "stage": 0,
+            "goal": "Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+            "hint": "Arrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire."
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 0,
+        "lastEvent": "Flight controls. Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "upgrade": null,
+        "warpSide": null,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [],
+        "equipped": [
+          null,
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "running",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": false,
+          "state": "muted"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "identified-return-r9",
+          "title": "Identified Return r9",
+          "mode": "title",
+          "state": "paused",
+          "error": "",
+          "offset": 0,
+          "duration": 76.64179166666666,
+          "loadedSegments": 1,
+          "pendingSegments": 0,
+          "decodedBytes": 29430448,
+          "activeSources": 0,
+          "layers": {
+            "core": 0.89,
+            "atmosphere": 0.85
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 1,
+          "decodes": 1,
+          "peakDecodedSegments": 1,
+          "starts": 0,
+          "underruns": 0,
+          "repeats": 0,
+          "history": []
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 0,
+      "speaker": {
+        "exists": true,
+        "label": "Enable sound",
+        "pressed": "false",
+        "state": "muted"
+      },
+      "checkpoint": null,
+      "preferences": "{\"version\":1,\"sound\":false,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "permittedEntry": {
+      "flight": {
+        "phase": "ready",
+        "mode": "campaign",
+        "runSeed": 3088187699,
+        "x": 0,
+        "z": 0,
+        "time": 0,
+        "hull": 5,
+        "score": 0,
+        "kills": 0,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 11.182479894254357,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": -1,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 0,
+          "startedAt": 0,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "movement": {
+            "left": 0,
+            "right": 0
+          },
+          "lesson": "move",
+          "training": {
+            "shot": false,
+            "folded": false,
+            "unfolded": false,
+            "enemySpawned": false,
+            "completeAt": null
+          },
+          "checkpoint": {
+            "inventory": [],
+            "equipped": [
+              null,
+              null
+            ],
+            "score": 0,
+            "kills": 0,
+            "foldBonus": 0,
+            "foldsUsed": 0,
+            "time": 0,
+            "upgradeSerial": 0,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "tutorial",
+            "number": 0,
+            "name": "Flight controls",
+            "stage": 0,
+            "goal": "Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+            "hint": "Arrow Keys (Left / Right) steer. Space fires. Left Shift folds and Right Shift unfolds. The enemy does not fire."
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 0,
+        "lastEvent": "Flight controls. Move → Shoot → Fold and Unfold → Destroy the training enemy.",
+        "upgrade": null,
+        "warpSide": null,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [],
+        "equipped": [
+          null,
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "running",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "title",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": true,
+          "state": "playing"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "identified-return-r9",
+          "title": "Identified Return r9",
+          "mode": "title",
+          "state": "playing",
+          "error": "",
+          "offset": 0.01633333333333331,
+          "duration": 76.64179166666666,
+          "loadedSegments": 1,
+          "pendingSegments": 0,
+          "decodedBytes": 29430448,
+          "activeSources": 1,
+          "layers": {
+            "core": 0.89,
+            "atmosphere": 0.85
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 1,
+          "decodes": 1,
+          "peakDecodedSegments": 1,
+          "starts": 1,
+          "underruns": 0,
+          "repeats": 0,
+          "history": [
+            {
+              "trackId": "identified-return-r9",
+              "segment": 0,
+              "absolute": 0,
+              "start": 0.20500000000000002,
+              "offset": 0
+            }
+          ]
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 0,
+      "speaker": {
+        "exists": true,
+        "label": "Mute sound",
+        "pressed": "true",
+        "state": "loading"
+      },
+      "checkpoint": null,
+      "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "earnedCheckpoint": {
+      "flight": {
+        "phase": "running",
+        "mode": "campaign",
+        "runSeed": 4124365729,
+        "x": 0,
+        "z": 0.75,
+        "time": 2.5166666666666604,
+        "hull": 5,
+        "score": 100,
+        "kills": 1,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0.75,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [
+            0
+          ],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 10.094372245048477,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": 0,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 13,
+          "startedAt": 2.508333333333327,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "lesson": "fold",
+          "spaceLesson": {
+            "folded": false,
+            "unfolded": false,
+            "lastDepth": 0
+          },
+          "lessonNotices": null,
+          "pressureBudget": {
+            "density": 1.2,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 1.2
+          },
+          "routeLength": 3600,
+          "lessonNoticeIndex": -1,
+          "hint": "Try Left Shift. The grid contracts, and shots cross folded space faster.",
+          "checkpoint": {
+            "inventory": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "training-kit",
+                "instance": 1
+              },
+              {
+                "key": "0:-1",
+                "type": 0,
+                "polarity": -1,
+                "id": "position-warp",
+                "source": "training-kit",
+                "instance": 2
+              }
+            ],
+            "equipped": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "training-kit",
+                "instance": 1
+              },
+              null
+            ],
+            "score": 100,
+            "kills": 1,
+            "foldBonus": 0,
+            "foldsUsed": 1,
+            "time": 2.508333333333327,
+            "upgradeSerial": 2,
+            "projective": null
+          },
+          "announcement": {
+            "text": "LEVEL 1 · TWO SIDES",
+            "until": 4.708333333333327
+          },
+          "chapter": {
+            "kind": "level",
+            "number": 1,
+            "name": "Two Sides",
+            "stage": 0,
+            "routeLength": 3600,
+            "carriers": 12,
+            "goal": "Fight through the carriers and reach the end of the route.",
+            "hint": "Left Shift folds the route. Right Shift unfolds it. Watch the grid and the accepted side, then meet the carriers.",
+            "waves": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "elapsed": 0.008333333333333304
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          },
+          {
+            "time": 0,
+            "type": "start",
+            "mode": "campaign",
+            "bonusEnabled": true
+          },
+          {
+            "time": 0.2833333333333334,
+            "type": "tutorial-movement-complete"
+          },
+          {
+            "time": 0.6250000000000002,
+            "type": "player-fire",
+            "x": 66,
+            "z": 25,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "actor": "player",
+            "objectId": "shot:4124365729:1"
+          },
+          {
+            "time": 0.6250000000000002,
+            "type": "tutorial-shot-complete"
+          },
+          {
+            "time": 0.7749999999999997,
+            "type": "fold",
+            "fields": 1,
+            "countdown": 0
+          },
+          {
+            "time": 0.7749999999999997,
+            "type": "tutorial-fold-complete"
+          },
+          {
+            "time": 0.7749999999999997,
+            "type": "unfold",
+            "fields": 0,
+            "countdown": 0
+          },
+          {
+            "time": 0.7749999999999997,
+            "type": "tutorial-unfold-complete"
+          },
+          {
+            "time": 0.7749999999999997,
+            "type": "tutorial-enemy-spawned",
+            "target": 1
+          },
+          {
+            "time": 0.7999999999999996,
+            "type": "enemy-presented",
+            "target": 1,
+            "x": 0,
+            "z": 220
+          },
+          {
+            "time": 0.9833333333333323,
+            "type": "player-fire",
+            "x": -6,
+            "z": 25,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "actor": "player",
+            "objectId": "shot:4124365729:2"
+          },
+          {
+            "time": 1.1499999999999984,
+            "type": "player-fire",
+            "x": -6,
+            "z": 25,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "actor": "player",
+            "objectId": "shot:4124365729:3"
+          },
+          {
+            "time": 1.3166666666666644,
+            "type": "player-fire",
+            "x": -6,
+            "z": 25,
+            "vx": 0,
+            "vz": 680,
+            "payload": [],
+            "owner": "player",
+            "geometryRule": "route",
+            "actor": "player",
+            "objectId": "shot:4124365729:4"
+          },
+          {
+            "time": 1.4499999999999973,
+            "type": "enemy-hit",
+            "target": 1,
+            "amount": 1,
+            "x": 0,
+            "z": 220
+          },
+          {
+            "time": 1.4499999999999973,
+            "type": "target-hit",
+            "target": 1,
+            "bonus": 0,
+            "x": 0,
+            "z": 220,
+            "visible": true,
+            "presented": true
+          },
+          {
+            "time": 1.4499999999999973,
+            "type": "tutorial-complete"
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "route-start",
+            "chapter": 0,
+            "length": 3600,
+            "carriers": 12,
+            "pressure": {
+              "density": 1.2,
+              "speed": 1,
+              "overlap": 1,
+              "targeting": 1,
+              "geometry": 1,
+              "total": 1.2
+            }
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "chapter-start",
+            "chapter": 0,
+            "kind": "level",
+            "name": "Two Sides"
+          },
+          {
+            "time": 2.5166666666666604,
+            "type": "player-fire",
+            "x": 0,
+            "z": 25.75,
+            "vx": 0,
+            "vz": 680,
+            "payload": [
+              0
+            ],
+            "owner": "player",
+            "geometryRule": "route",
+            "actor": "player",
+            "objectId": "shot:4124365729:5"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 90,
+        "shotCount": 1,
+        "enemyShotCount": 0,
+        "foldsUsed": 1,
+        "lastEvent": "Two Sides. Fight through the carriers and reach the end of the route.",
+        "upgrade": {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        "warpSide": 1,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "training-kit",
+            "instance": 1
+          },
+          {
+            "key": "0:-1",
+            "type": 0,
+            "polarity": -1,
+            "id": "position-warp",
+            "source": "training-kit",
+            "instance": 2
+          }
+        ],
+        "equipped": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "training-kit",
+            "instance": 1
+          },
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [
+          {
+            "id": 2,
+            "x": 0,
+            "z": 1450,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 3,
+            "x": -323.73774665780365,
+            "z": 1636.4663654735143,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 4,
+            "x": 321.30159155651927,
+            "z": 1822.016169555824,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 5,
+            "x": -174.58137210458517,
+            "z": 2020.117888487452,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 6,
+            "x": 130.44086444191635,
+            "z": 2201.787028275642,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 7,
+            "x": -99.02670478448272,
+            "z": 2400.1941086779434,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 8,
+            "x": 85.58765458408743,
+            "z": 2588.4177029357206,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 9,
+            "x": -3.665010267868638,
+            "z": 2777.711819903713,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 10,
+            "x": -318.8546405332163,
+            "z": 2960.42204777054,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 11,
+            "x": 324.8624393492937,
+            "z": 3134.955565325112,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 12,
+            "x": -157.68755712080747,
+            "z": 3320.7296464562587,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 13,
+            "x": 167.62961769476533,
+            "z": 3529.116299096495,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "presented": false,
+            "visibleFor": 0,
+            "telegraph": null,
+            "contacting": false,
+            "visible": false,
+            "ready": false
+          }
+        ],
+        "drops": [],
+        "projectiles": {
+          "player": [
+            {
+              "x": 0,
+              "z": 31.416666666666668,
+              "vx": 0,
+              "vz": 680,
+              "payload": [
+                0
+              ],
+              "owner": "player",
+              "geometryRule": "route",
+              "objectId": "shot:4124365729:5",
+              "hold": 0,
+              "curveTime": 0,
+              "ax": 0,
+              "foldDepth": 0,
+              "distance": 30.666666666666668,
+              "speedFactor": 1
+            }
+          ],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "running",
+        "voices": 1,
+        "retiringVoices": 0,
+        "noiseBuffers": 1,
+        "distortionCurves": 0,
+        "theme": "traditional",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": false,
+          "state": "off"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "act1-03",
+          "title": "Off Axis",
+          "mode": "traditional",
+          "state": "playing",
+          "error": "",
+          "offset": 2.384333333333333,
+          "duration": 240,
+          "loadedSegments": 2,
+          "pendingSegments": 0,
+          "decodedBytes": 36986880,
+          "activeSources": 2,
+          "layers": {
+            "core": 0.9300512820512821,
+            "atmosphere": 0.85
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 5,
+          "decodes": 5,
+          "peakDecodedSegments": 2,
+          "starts": 4,
+          "underruns": 0,
+          "repeats": 0,
+          "history": [
+            {
+              "trackId": "identified-return-r9",
+              "segment": 0,
+              "absolute": 0,
+              "start": 0.20500000000000002,
+              "offset": 0
+            },
+            {
+              "trackId": "identified-return-r9",
+              "segment": 0,
+              "absolute": 0,
+              "start": 0.5863333333333334,
+              "offset": 0.3256666666666666
+            },
+            {
+              "trackId": "act1-03",
+              "segment": 0,
+              "absolute": 0,
+              "start": 0.7170000000000001,
+              "offset": 0
+            }
+          ]
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 16,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 8,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 0,
+      "speaker": {
+        "exists": true,
+        "label": "Mute sound",
+        "pressed": "true",
+        "state": "playing"
+      },
+      "checkpoint": "{\"version\":1,\"build\":\"0.25.1-dev.4\",\"savedAt\":\"2026-11-13T19:12:45.968Z\",\"seed\":4124365729,\"bonusEnabled\":true,\"chapterIndex\":0,\"shipId\":0,\"transitionFrom\":null,\"entry\":{\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":2}],\"equipped\":[\"0:1\",null],\"score\":100,\"kills\":1,\"time\":2.508333333333327,\"upgradeSerial\":2,\"foldBonus\":0,\"foldsUsed\":1,\"projective\":null}}",
+      "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "restoredEntry": {
+      "flight": {
+        "phase": "paused",
+        "mode": "campaign",
+        "runSeed": 4124365729,
+        "x": 0,
+        "z": 0,
+        "time": 2.508333333333327,
+        "hull": 5,
+        "score": 100,
+        "kills": 1,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [
+            0
+          ],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 10.094372245048477,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": 0,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 12,
+          "startedAt": 2.508333333333327,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "lesson": "fold",
+          "spaceLesson": {
+            "folded": false,
+            "unfolded": false,
+            "lastDepth": 0
+          },
+          "lessonNotices": null,
+          "pressureBudget": {
+            "density": 1.2,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 1.2
+          },
+          "routeLength": 3600,
+          "lessonNoticeIndex": -1,
+          "hint": "Try Left Shift. The grid contracts, and shots cross folded space faster.",
+          "checkpoint": {
+            "inventory": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 1
+              },
+              {
+                "key": "0:-1",
+                "type": 0,
+                "polarity": -1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 2
+              }
+            ],
+            "equipped": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 1
+              },
+              null
+            ],
+            "score": 100,
+            "kills": 1,
+            "foldBonus": 0,
+            "foldsUsed": 1,
+            "time": 2.508333333333327,
+            "upgradeSerial": 2,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "level",
+            "number": 1,
+            "name": "Two Sides",
+            "stage": 0,
+            "routeLength": 3600,
+            "carriers": 12,
+            "goal": "Fight through the carriers and reach the end of the route.",
+            "hint": "Left Shift folds the route. Right Shift unfolds it. Watch the grid and the accepted side, then meet the carriers.",
+            "waves": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "route-start",
+            "chapter": 0,
+            "length": 3600,
+            "carriers": 12,
+            "pressure": {
+              "density": 1.2,
+              "speed": 1,
+              "overlap": 1,
+              "targeting": 1,
+              "geometry": 1,
+              "total": 1.2
+            }
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "chapter-start",
+            "chapter": 0,
+            "kind": "level",
+            "name": "Two Sides"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 1,
+        "lastEvent": "Section checkpoint restored. Your route layout, equipment, and score are ready.",
+        "upgrade": {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "checkpoint",
+          "instance": 1
+        },
+        "warpSide": 1,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 1
+          },
+          {
+            "key": "0:-1",
+            "type": 0,
+            "polarity": -1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 2
+          }
+        ],
+        "equipped": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 1
+          },
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [
+          {
+            "id": 1,
+            "x": 0,
+            "z": 1450,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 2,
+            "x": -323.73774665780365,
+            "z": 1636.4663654735143,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 3,
+            "x": 321.30159155651927,
+            "z": 1822.016169555824,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 4,
+            "x": -174.58137210458517,
+            "z": 2020.117888487452,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 5,
+            "x": 130.44086444191635,
+            "z": 2201.787028275642,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 6,
+            "x": -99.02670478448272,
+            "z": 2400.1941086779434,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 7,
+            "x": 85.58765458408743,
+            "z": 2588.4177029357206,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 8,
+            "x": -3.665010267868638,
+            "z": 2777.711819903713,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 9,
+            "x": -318.8546405332163,
+            "z": 2960.42204777054,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 10,
+            "x": 324.8624393492937,
+            "z": 3134.955565325112,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 11,
+            "x": -157.68755712080747,
+            "z": 3320.7296464562587,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 12,
+            "x": 167.62961769476533,
+            "z": 3529.116299096495,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          }
+        ],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "running",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "title",
+        "scoreStep": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "titleStartup": {
+          "requested": true,
+          "state": "playing"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "trackId": "identified-return-r9",
+          "title": "Identified Return r9",
+          "mode": "title",
+          "state": "playing",
+          "error": "",
+          "offset": 0,
+          "duration": 76.64179166666666,
+          "loadedSegments": 1,
+          "pendingSegments": 0,
+          "decodedBytes": 29430448,
+          "activeSources": 1,
+          "layers": {
+            "core": 0.89,
+            "atmosphere": 0.85
+          },
+          "quiet": false,
+          "mixMode": "full",
+          "ducked": false,
+          "repeatPolicy": "Repeat the finite composition after its ending.",
+          "fetches": 1,
+          "decodes": 1,
+          "peakDecodedSegments": 1,
+          "starts": 1,
+          "underruns": 0,
+          "repeats": 0,
+          "history": [
+            {
+              "trackId": "identified-return-r9",
+              "segment": 0,
+              "absolute": 0,
+              "start": 0.17566666666666664,
+              "offset": 0
+            }
+          ]
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 1,
+      "resumeCalls": 0,
+      "speaker": {
+        "exists": true,
+        "label": "Mute sound",
+        "pressed": "true",
+        "state": "loading"
+      },
+      "checkpoint": "{\"version\":1,\"build\":\"0.25.1-dev.4\",\"savedAt\":\"2026-11-13T19:12:45.968Z\",\"seed\":4124365729,\"bonusEnabled\":true,\"chapterIndex\":0,\"shipId\":0,\"transitionFrom\":null,\"entry\":{\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":2}],\"equipped\":[\"0:1\",null],\"score\":100,\"kills\":1,\"time\":2.508333333333327,\"upgradeSerial\":2,\"foldBonus\":0,\"foldsUsed\":1,\"projective\":null}}",
+      "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    },
+    "savedMute": {
+      "flight": {
+        "phase": "paused",
+        "mode": "campaign",
+        "runSeed": 4124365729,
+        "x": 0,
+        "z": 0,
+        "time": 2.508333333333327,
+        "hull": 5,
+        "score": 100,
+        "kills": 1,
+        "foldBonus": 0,
+        "countdown": 0,
+        "bonusEnabled": true,
+        "maxFolds": 3,
+        "facing": 1,
+        "cameraZ": 0,
+        "shipId": 0,
+        "ship": {
+          "id": 0,
+          "name": "Arrow",
+          "sprite": "player.arrow",
+          "exhaust": {
+            "nativeSize": 32,
+            "width": 14,
+            "length": 24,
+            "nozzles": [
+              {
+                "x": 0,
+                "y": 13
+              }
+            ]
+          },
+          "role": "Responsive steering",
+          "strength": "Changes direction immediately.",
+          "weakness": "Needs more room than Needle in narrow gaps.",
+          "handles": "Covers Skater: sharp reversals",
+          "weakTo": "Needle: narrow gaps",
+          "speed": 360,
+          "acceleration": 0,
+          "braking": 0,
+          "coreRadius": 18
+        },
+        "fleetProfile": {
+          "version": 5,
+          "fleetUnlocked": false,
+          "driveParts": [],
+          "projectiveModule": false,
+          "curvatureSeed": false,
+          "unlockedShips": [
+            0
+          ],
+          "craftedShipIds": [],
+          "fabricationSpent": 0,
+          "selectedShip": 0,
+          "reachedChapters": [
+            0
+          ],
+          "completedChapters": [],
+          "stageRecords": {},
+          "runHistory": []
+        },
+        "lateralVelocity": 0,
+        "drive": {
+          "status": "damaged",
+          "warningUntil": null,
+          "nextFaultAt": 10.094372245048477,
+          "faults": 0,
+          "attempts": 0
+        },
+        "surfaceViewZ": 0,
+        "campaign": {
+          "index": 0,
+          "defeated": 0,
+          "asteroidsBroken": 0,
+          "enemySerial": 12,
+          "startedAt": 2.508333333333327,
+          "wraps": 0,
+          "routeReached": false,
+          "scrollDistance": 0,
+          "metrics": {
+            "grazes": 0,
+            "seamCrossings": 0,
+            "seamEvidence": 0,
+            "folds": 0,
+            "unfolds": 0,
+            "foldEvidence": 0,
+            "damage": 0,
+            "kills": 0,
+            "wavesCleared": 0
+          },
+          "lesson": "fold",
+          "spaceLesson": {
+            "folded": false,
+            "unfolded": false,
+            "lastDepth": 0
+          },
+          "lessonNotices": null,
+          "pressureBudget": {
+            "density": 1.2,
+            "speed": 1,
+            "overlap": 1,
+            "targeting": 1,
+            "geometry": 1,
+            "total": 1.2
+          },
+          "routeLength": 3600,
+          "lessonNoticeIndex": -1,
+          "hint": "Try Left Shift. The grid contracts, and shots cross folded space faster.",
+          "checkpoint": {
+            "inventory": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 1
+              },
+              {
+                "key": "0:-1",
+                "type": 0,
+                "polarity": -1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 2
+              }
+            ],
+            "equipped": [
+              {
+                "key": "0:1",
+                "type": 0,
+                "polarity": 1,
+                "id": "position-warp",
+                "source": "checkpoint",
+                "instance": 1
+              },
+              null
+            ],
+            "score": 100,
+            "kills": 1,
+            "foldBonus": 0,
+            "foldsUsed": 1,
+            "time": 2.508333333333327,
+            "upgradeSerial": 2,
+            "projective": null
+          },
+          "chapter": {
+            "kind": "level",
+            "number": 1,
+            "name": "Two Sides",
+            "stage": 0,
+            "routeLength": 3600,
+            "carriers": 12,
+            "goal": "Fight through the carriers and reach the end of the route.",
+            "hint": "Left Shift folds the route. Right Shift unfolds it. Watch the grid and the accepted side, then meet the carriers.",
+            "waves": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "elapsed": 0
+        },
+        "deathRecap": null,
+        "projective": null,
+        "encounterIndex": null,
+        "encounter": null,
+        "events": [
+          {
+            "time": 0,
+            "type": "chapter-start",
+            "chapter": -1,
+            "kind": "tutorial",
+            "name": "Flight controls"
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "route-start",
+            "chapter": 0,
+            "length": 3600,
+            "carriers": 12,
+            "pressure": {
+              "density": 1.2,
+              "speed": 1,
+              "overlap": 1,
+              "targeting": 1,
+              "geometry": 1,
+              "total": 1.2
+            }
+          },
+          {
+            "time": 2.508333333333327,
+            "type": "chapter-start",
+            "chapter": 0,
+            "kind": "level",
+            "name": "Two Sides"
+          }
+        ],
+        "fields": [],
+        "localFactor": 1,
+        "thrust": 0,
+        "shotCount": 0,
+        "enemyShotCount": 0,
+        "foldsUsed": 1,
+        "lastEvent": "Section checkpoint restored. Your route layout, equipment, and score are ready.",
+        "upgrade": {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "checkpoint",
+          "instance": 1
+        },
+        "warpSide": 1,
+        "warpCount": 0,
+        "stage": 0,
+        "slotCount": 1,
+        "selectedSlot": 0,
+        "inventory": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 1
+          },
+          {
+            "key": "0:-1",
+            "type": 0,
+            "polarity": -1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 2
+          }
+        ],
+        "equipped": [
+          {
+            "key": "0:1",
+            "type": 0,
+            "polarity": 1,
+            "id": "position-warp",
+            "source": "checkpoint",
+            "instance": 1
+          },
+          null
+        ],
+        "debts": [],
+        "view": {
+          "width": 1280,
+          "height": 900,
+          "topInset": 127.78125,
+          "bottomInset": 106
+        },
+        "effects": [],
+        "asteroids": [],
+        "enemies": [
+          {
+            "id": 1,
+            "x": 0,
+            "z": 1450,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 2,
+            "x": -323.73774665780365,
+            "z": 1636.4663654735143,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 3,
+            "x": 321.30159155651927,
+            "z": 1822.016169555824,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 4,
+            "x": -174.58137210458517,
+            "z": 2020.117888487452,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 5,
+            "x": 130.44086444191635,
+            "z": 2201.787028275642,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 6,
+            "x": -99.02670478448272,
+            "z": 2400.1941086779434,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 7,
+            "x": 85.58765458408743,
+            "z": 2588.4177029357206,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 8,
+            "x": -3.665010267868638,
+            "z": 2777.711819903713,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 9,
+            "x": -318.8546405332163,
+            "z": 2960.42204777054,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 10,
+            "x": 324.8624393492937,
+            "z": 3134.955565325112,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.4,
+            "firePeriod": 2.3,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 11,
+            "x": -157.68755712080747,
+            "z": 3320.7296464562587,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 1.7,
+            "firePeriod": 2.5,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": 1,
+                "key": "0:1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          },
+          {
+            "id": 12,
+            "x": 167.62961769476533,
+            "z": 3529.116299096495,
+            "hp": 2,
+            "maxHp": 2,
+            "role": "carrier",
+            "clock": 2,
+            "firePeriod": 2.6999999999999997,
+            "shotSpeed": 145,
+            "stage": 0,
+            "introduction": 0,
+            "equipped": [
+              {
+                "type": 0,
+                "polarity": -1,
+                "key": "0:-1"
+              }
+            ],
+            "dropsUpgrade": true,
+            "driftX": 0,
+            "driftY": 0,
+            "facing": -1,
+            "visible": false,
+            "ready": false
+          }
+        ],
+        "drops": [],
+        "projectiles": {
+          "player": [],
+          "enemy": []
+        }
+      },
+      "audio": {
+        "contextState": "uninitialized",
+        "voices": 0,
+        "retiringVoices": 0,
+        "noiseBuffers": 0,
+        "distortionCurves": 0,
+        "theme": "",
+        "scoreStep": 0,
+        "buses": {},
+        "titleStartup": {
+          "requested": false,
+          "state": "muted"
+        },
+        "recorded": {
+          "engine": "recorded-segments",
+          "state": "locked",
+          "trackId": null,
+          "title": "",
+          "error": ""
+        },
+        "motifs": {
+          "tracked": 0,
+          "history": []
+        },
+        "admitted": 0,
+        "dropped": 0,
+        "stolen": 0,
+        "peakVoices": 0,
+        "resumes": 0
+      },
+      "contextCount": 0,
+      "resumeCalls": 0,
+      "speaker": {
+        "exists": true,
+        "label": "Enable sound",
+        "pressed": "false",
+        "state": "muted"
+      },
+      "checkpoint": "{\"version\":1,\"build\":\"0.25.1-dev.4\",\"savedAt\":\"2026-11-13T19:12:45.968Z\",\"seed\":4124365729,\"bonusEnabled\":true,\"chapterIndex\":0,\"shipId\":0,\"transitionFrom\":null,\"entry\":{\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":2}],\"equipped\":[\"0:1\",null],\"score\":100,\"kills\":1,\"time\":2.508333333333327,\"upgradeSerial\":2,\"foldBonus\":0,\"foldsUsed\":1,\"projective\":null}}",
+      "preferences": "{\"version\":1,\"sound\":false,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: 320 by 568 Act III flight: control labels fit usable targets\n    at check (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:22:35)\n    at flightControlLayout (file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:88:3)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async file:///D:/Projects/games/game-off-2026/tools/title-entry-browser.mjs:232:3",
+  "sourceHashes": {
+    "src/app.js": "32db19027fcb7fb9475be678d4ae5d189976f8245704faf50b99f7313171fe4f",
+    "src/interface.js": "f310971c9345fe09f80f4291d93f5e4cf3b024c34cf5270607a9c96330ea2b84",
+    "src/audio.js": "b964668c17af6e63023a206d212acb6c2259be33c55b37305ffa99d66652d446",
+    "style.css": "86900835d9f87036b49c19bff94512aea456511bcbba724f02ff68e5b9cd1c6d"
+  },
+  "url": "http://127.0.0.1:55944/",
+  "browserPolicies": [
+    {
+      "policy": "default",
+      "requestedArgs": [],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    },
+    {
+      "policy": "document-user-activation-required",
+      "requestedArgs": [
+        "--autoplay-policy=document-user-activation-required",
+        "--disable-features=PreloadMediaEngagementData,MediaEngagementBypassAutoplayPolicies"
+      ],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    },
+    {
+      "policy": "document-user-activation-required",
+      "requestedArgs": [
+        "--autoplay-policy=document-user-activation-required",
+        "--disable-features=PreloadMediaEngagementData,MediaEngagementBypassAutoplayPolicies"
+      ],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    },
+    {
+      "policy": "no-user-gesture-required",
+      "requestedArgs": [
+        "--autoplay-policy=no-user-gesture-required"
+      ],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    },
+    {
+      "policy": "no-user-gesture-required",
+      "requestedArgs": [
+        "--autoplay-policy=no-user-gesture-required"
+      ],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    },
+    {
+      "policy": "no-user-gesture-required",
+      "requestedArgs": [
+        "--autoplay-policy=no-user-gesture-required"
+      ],
+      "inspectionLimit": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    }
+  ],
+  "defaultBrowserVersion": "157.0.4341.46",
+  "defaultEnableClicks": 1,
+  "permittedBrowserVersion": "157.0.4341.46",
+  "layouts": {
+    "Desktop title": {
+      "button": {
+        "x": 12,
+        "y": 844,
+        "width": 44,
+        "height": 44,
+        "right": 56,
+        "bottom": 888
+      },
+      "inside": true,
+      "uncovered": true,
+      "bottomLeft": true,
+      "noLaunchOverlap": true,
+      "semantic": true,
+      "noOldText": true,
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "320 by 568 saved entry": {
+      "button": {
+        "x": 12,
+        "y": 512,
+        "width": 44,
+        "height": 44,
+        "right": 56,
+        "bottom": 556
+      },
+      "inside": true,
+      "uncovered": true,
+      "bottomLeft": true,
+      "noLaunchOverlap": true,
+      "semantic": true,
+      "noOldText": true,
+      "scrollWidth": 320,
+      "viewport": 320
+    }
+  },
+  "savedEntryHintLayout": [
+    {
+      "x": 81.140625,
+      "y": 522.84375,
+      "width": 205.71875,
+      "height": 14,
+      "inside": true,
+      "separate": true
+    },
+    {
+      "x": 89.859375,
+      "y": 537.84375,
+      "width": 188.28125,
+      "height": 14,
+      "inside": true,
+      "separate": true
+    },
+    {
+      "x": 167.671875,
+      "y": 552.84375,
+      "width": 32.65625,
+      "height": 14,
+      "inside": true,
+      "separate": true
+    }
+  ],
+  "flightLayouts": {
+    "320 by 568 Act I flight": [
+      {
+        "id": "fold",
+        "label": "FoldLeft Shift",
+        "width": 60.1875,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": true,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      },
+      {
+        "id": "unfold",
+        "label": "UnfoldRight Shift",
+        "width": 60.1875,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": true,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      }
+    ],
+    "320 by 568 Act III flight": [
+      {
+        "id": "fold",
+        "label": "FoldLeft Shift",
+        "width": 52.796875,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": true,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      },
+      {
+        "id": "unfold",
+        "label": "UnfoldRight Shift",
+        "width": 52.8125,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": false,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      },
+      {
+        "id": "capture-echo",
+        "label": "CaptureC",
+        "width": 52.8125,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": true,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      },
+      {
+        "id": "release-echo",
+        "label": "ReleaseE",
+        "width": 52.8125,
+        "height": 46,
+        "contentFits": true,
+        "scrollFits": true,
+        "inside": true,
+        "separate": true,
+        "uncovered": true
+      }
+    ]
+  },
+  "layoutFixture": "The local QA entry selects Act III only for control geometry. It is not progression evidence.",
+  "failureState": {
+    "flight": {
+      "phase": "running",
+      "mode": "campaign",
+      "runSeed": 3759154029,
+      "x": 0,
+      "z": 0,
+      "time": 0,
+      "hull": 5,
+      "score": 0,
+      "kills": 0,
+      "foldBonus": 0,
+      "countdown": 0,
+      "bonusEnabled": true,
+      "maxFolds": 3,
+      "facing": 1,
+      "cameraZ": 0,
+      "shipId": 0,
+      "ship": {
+        "id": 0,
+        "name": "Arrow",
+        "sprite": "player.arrow",
+        "exhaust": {
+          "nativeSize": 32,
+          "width": 14,
+          "length": 24,
+          "nozzles": [
+            {
+              "x": 0,
+              "y": 13
+            }
+          ]
+        },
+        "role": "Responsive steering",
+        "strength": "Changes direction immediately.",
+        "weakness": "Needs more room than Needle in narrow gaps.",
+        "handles": "Covers Skater: sharp reversals",
+        "weakTo": "Needle: narrow gaps",
+        "speed": 360,
+        "acceleration": 0,
+        "braking": 0,
+        "coreRadius": 18
+      },
+      "fleetProfile": {
+        "version": 5,
+        "fleetUnlocked": false,
+        "driveParts": [
+          "klein-relay",
+          "projective-module"
+        ],
+        "projectiveModule": true,
+        "curvatureSeed": false,
+        "unlockedShips": [
+          0
+        ],
+        "craftedShipIds": [],
+        "fabricationSpent": 0,
+        "selectedShip": 0,
+        "reachedChapters": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "completedChapters": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "stageRecords": {},
+        "runHistory": []
+      },
+      "lateralVelocity": 0,
+      "drive": {
+        "status": "damaged",
+        "warningUntil": null,
+        "nextFaultAt": 12.385667718946934,
+        "faults": 0,
+        "attempts": 0
+      },
+      "surfaceViewZ": 0,
+      "campaign": {
+        "index": 25,
+        "defeated": 0,
+        "asteroidsBroken": 0,
+        "enemySerial": 13,
+        "startedAt": 0,
+        "wraps": 0,
+        "routeReached": false,
+        "scrollDistance": 0,
+        "metrics": {
+          "grazes": 0,
+          "seamCrossings": 0,
+          "seamEvidence": 0,
+          "folds": 0,
+          "unfolds": 0,
+          "foldEvidence": 0,
+          "damage": 0,
+          "kills": 0,
+          "wavesCleared": 0
+        },
+        "wavePlan": [
+          {
+            "id": "projective-mastery-opening",
+            "at": 0.045,
+            "label": "Opening formation",
+            "kind": "combat",
+            "clearHostile": false,
+            "enemyIds": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "projective-mastery-lesson",
+            "at": 0.125,
+            "label": "First lesson",
+            "kind": "combat",
+            "clearHostile": false,
+            "enemyIds": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "projective-mastery-rest-a",
+            "at": 0.22,
+            "label": "Recovery · Echo Forge",
+            "kind": "break",
+            "clearHostile": true,
+            "enemyIds": []
+          },
+          {
+            "id": "projective-mastery-second",
+            "at": 0.34,
+            "label": "Compare and apply",
+            "kind": "combat",
+            "clearHostile": false,
+            "enemyIds": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "id": "projective-mastery-rest-b",
+            "at": 0.49,
+            "label": "Recovery · Echo Forge",
+            "kind": "break",
+            "clearHostile": true,
+            "enemyIds": []
+          },
+          {
+            "id": "projective-mastery-third",
+            "at": 0.61,
+            "label": "Layer the known grammar",
+            "kind": "combat",
+            "clearHostile": false,
+            "enemyIds": [
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "id": "projective-mastery-rest-c",
+            "at": 0.74,
+            "label": "Recovery · Echo Forge",
+            "kind": "break",
+            "clearHostile": true,
+            "enemyIds": []
+          },
+          {
+            "id": "projective-mastery-final",
+            "at": 0.83,
+            "label": "Stage examination",
+            "kind": "miniboss",
+            "clearHostile": false,
+            "enemyIds": [
+              12
+            ]
+          }
+        ],
+        "waveIndex": -1,
+        "scriptedFolds": [],
+        "scriptedFoldIndex": 0,
+        "lessonNotices": [
+          {
+            "at": 0,
+            "text": "PROJECTIVE MASTERY: read, capture, construct, release. The geometry remains coherent."
+          },
+          {
+            "at": 0.22,
+            "text": "Recovery: examine the surface and choose one Echo Forge evolution."
+          },
+          {
+            "at": 0.34,
+            "text": "Recombine ordinary shooting, projective returns and stored echoes."
+          },
+          {
+            "at": 0.49,
+            "text": "Recovery: capture echoes, inspect your build, then choose again."
+          },
+          {
+            "at": 0.61,
+            "text": "Hold some captured power for the next danger field."
+          },
+          {
+            "at": 0.74,
+            "text": "Recovery: old hostile fire clears, reposition for the final lesson."
+          },
+          {
+            "at": 0.83,
+            "text": "Projective Warden: show the strength and cost of your build."
+          }
+        ],
+        "pressureBudget": {
+          "density": 2.1,
+          "speed": 1.25,
+          "overlap": 1.35,
+          "targeting": 1.25,
+          "geometry": 1.5,
+          "total": 6.64
+        },
+        "routeLength": 5600,
+        "lessonNoticeIndex": -1,
+        "checkpoint": {
+          "inventory": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            {
+              "key": "0:-1",
+              "type": 0,
+              "polarity": -1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 2
+            },
+            {
+              "key": "1:1",
+              "type": 1,
+              "polarity": 1,
+              "id": "vector-lens",
+              "source": "training-kit",
+              "instance": 3
+            },
+            {
+              "key": "1:-1",
+              "type": 1,
+              "polarity": -1,
+              "id": "vector-lens",
+              "source": "training-kit",
+              "instance": 4
+            },
+            {
+              "key": "2:1",
+              "type": 2,
+              "polarity": 1,
+              "id": "path-bend",
+              "source": "training-kit",
+              "instance": 5
+            },
+            {
+              "key": "2:-1",
+              "type": 2,
+              "polarity": -1,
+              "id": "path-bend",
+              "source": "training-kit",
+              "instance": 6
+            },
+            {
+              "key": "3:1",
+              "type": 3,
+              "polarity": 1,
+              "id": "impact-buffer",
+              "source": "training-kit",
+              "instance": 7
+            },
+            {
+              "key": "3:-1",
+              "type": 3,
+              "polarity": -1,
+              "id": "impact-buffer",
+              "source": "training-kit",
+              "instance": 8
+            },
+            {
+              "key": "4:1",
+              "type": 4,
+              "polarity": 1,
+              "id": "arrival-delay",
+              "source": "training-kit",
+              "instance": 9
+            },
+            {
+              "key": "4:-1",
+              "type": 4,
+              "polarity": -1,
+              "id": "arrival-delay",
+              "source": "training-kit",
+              "instance": 10
+            },
+            {
+              "key": "5:1",
+              "type": 5,
+              "polarity": 1,
+              "id": "distance-anchor",
+              "source": "training-kit",
+              "instance": 11
+            },
+            {
+              "key": "5:-1",
+              "type": 5,
+              "polarity": -1,
+              "id": "distance-anchor",
+              "source": "training-kit",
+              "instance": 12
+            },
+            {
+              "key": "6:1",
+              "type": 6,
+              "polarity": 1,
+              "id": "utility-exchange",
+              "source": "training-kit",
+              "instance": 13
+            },
+            {
+              "key": "6:-1",
+              "type": 6,
+              "polarity": -1,
+              "id": "utility-exchange",
+              "source": "training-kit",
+              "instance": 14
+            }
+          ],
+          "equipped": [
+            {
+              "key": "0:1",
+              "type": 0,
+              "polarity": 1,
+              "id": "position-warp",
+              "source": "training-kit",
+              "instance": 1
+            },
+            null
+          ],
+          "score": 0,
+          "kills": 0,
+          "foldBonus": 0,
+          "foldsUsed": 0,
+          "time": 0,
+          "upgradeSerial": 14,
+          "projective": {
+            "echoes": 0,
+            "capacity": 6,
+            "upgrades": [],
+            "captured": 0,
+            "released": 0,
+            "convertedDamage": 0,
+            "captureCooldown": 0,
+            "releaseCooldown": 0,
+            "orbitClock": 2,
+            "wardCooldown": 0,
+            "offers": [],
+            "choiceCount": 0,
+            "stageChoices": 0,
+            "pendingBreak": null
+          }
+        },
+        "chapter": {
+          "kind": "level",
+          "act": 3,
+          "actStage": 8,
+          "number": 24,
+          "name": "Projective Mastery",
+          "stage": 2,
+          "routeLength": 5600,
+          "carriers": 21,
+          "waveScript": "projective-mastery",
+          "tailQuiet": 0.12,
+          "goal": "Complete the full learn → capture → build → release loop.",
+          "hint": "Nothing new: shoot, dodge, use identifications, transform threats, build power, and choose when to spend it.",
+          "waves": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2,
+              4,
+              6
+            ]
+          ],
+          "moving": true,
+          "kleinSurface": true,
+          "projectiveSurface": true,
+          "lesson": "mastery",
+          "pressure": true,
+          "breaks": [
+            0.22,
+            0.49,
+            0.74
+          ]
+        },
+        "elapsed": 0
+      },
+      "deathRecap": null,
+      "projective": {
+        "echoes": 0,
+        "capacity": 6,
+        "upgrades": [],
+        "captured": 0,
+        "released": 0,
+        "convertedDamage": 0,
+        "captureCooldown": 0,
+        "releaseCooldown": 0,
+        "orbitClock": 2,
+        "wardCooldown": 0,
+        "offers": [],
+        "choiceCount": 0,
+        "stageChoices": 0,
+        "pendingBreak": null
+      },
+      "encounterIndex": null,
+      "encounter": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": -1,
+          "kind": "tutorial",
+          "name": "Flight controls"
+        },
+        {
+          "time": 0,
+          "type": "start",
+          "mode": "campaign",
+          "bonusEnabled": true
+        },
+        {
+          "time": 0,
+          "type": "route-start",
+          "chapter": 25,
+          "length": 5600,
+          "carriers": 13,
+          "pressure": {
+            "density": 2.1,
+            "speed": 1.25,
+            "overlap": 1.35,
+            "targeting": 1.25,
+            "geometry": 1.5,
+            "total": 6.64
+          }
+        },
+        {
+          "time": 0,
+          "type": "chapter-start",
+          "chapter": 25,
+          "kind": "level",
+          "name": "Projective Mastery"
+        },
+        {
+          "time": 0,
+          "type": "enemy-presented",
+          "target": 1,
+          "x": -238.6814017239958,
+          "z": 621.168
+        },
+        {
+          "time": 0,
+          "type": "enemy-presented",
+          "target": 2,
+          "x": 6.337818599771708,
+          "z": 639.0496
+        },
+        {
+          "time": 0,
+          "type": "enemy-presented",
+          "target": 3,
+          "x": 233.2102669919841,
+          "z": 656.9312
+        }
+      ],
+      "fields": [],
+      "localFactor": 1,
+      "thrust": 0,
+      "shotCount": 0,
+      "enemyShotCount": 0,
+      "foldsUsed": 0,
+      "lastEvent": "Projective Mastery. Complete the full learn → capture → build → release loop.",
+      "upgrade": {
+        "key": "0:1",
+        "type": 0,
+        "polarity": 1,
+        "id": "position-warp",
+        "source": "training-kit",
+        "instance": 1
+      },
+      "warpSide": 1,
+      "warpCount": 0,
+      "stage": 2,
+      "slotCount": 2,
+      "selectedSlot": 0,
+      "inventory": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        {
+          "key": "0:-1",
+          "type": 0,
+          "polarity": -1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 2
+        },
+        {
+          "key": "1:1",
+          "type": 1,
+          "polarity": 1,
+          "id": "vector-lens",
+          "source": "training-kit",
+          "instance": 3
+        },
+        {
+          "key": "1:-1",
+          "type": 1,
+          "polarity": -1,
+          "id": "vector-lens",
+          "source": "training-kit",
+          "instance": 4
+        },
+        {
+          "key": "2:1",
+          "type": 2,
+          "polarity": 1,
+          "id": "path-bend",
+          "source": "training-kit",
+          "instance": 5
+        },
+        {
+          "key": "2:-1",
+          "type": 2,
+          "polarity": -1,
+          "id": "path-bend",
+          "source": "training-kit",
+          "instance": 6
+        },
+        {
+          "key": "3:1",
+          "type": 3,
+          "polarity": 1,
+          "id": "impact-buffer",
+          "source": "training-kit",
+          "instance": 7
+        },
+        {
+          "key": "3:-1",
+          "type": 3,
+          "polarity": -1,
+          "id": "impact-buffer",
+          "source": "training-kit",
+          "instance": 8
+        },
+        {
+          "key": "4:1",
+          "type": 4,
+          "polarity": 1,
+          "id": "arrival-delay",
+          "source": "training-kit",
+          "instance": 9
+        },
+        {
+          "key": "4:-1",
+          "type": 4,
+          "polarity": -1,
+          "id": "arrival-delay",
+          "source": "training-kit",
+          "instance": 10
+        },
+        {
+          "key": "5:1",
+          "type": 5,
+          "polarity": 1,
+          "id": "distance-anchor",
+          "source": "training-kit",
+          "instance": 11
+        },
+        {
+          "key": "5:-1",
+          "type": 5,
+          "polarity": -1,
+          "id": "distance-anchor",
+          "source": "training-kit",
+          "instance": 12
+        },
+        {
+          "key": "6:1",
+          "type": 6,
+          "polarity": 1,
+          "id": "utility-exchange",
+          "source": "training-kit",
+          "instance": 13
+        },
+        {
+          "key": "6:-1",
+          "type": 6,
+          "polarity": -1,
+          "id": "utility-exchange",
+          "source": "training-kit",
+          "instance": 14
+        }
+      ],
+      "equipped": [
+        {
+          "key": "0:1",
+          "type": 0,
+          "polarity": 1,
+          "id": "position-warp",
+          "source": "training-kit",
+          "instance": 1
+        },
+        null
+      ],
+      "debts": [],
+      "view": {
+        "width": 320,
+        "height": 568,
+        "topInset": 233.59375,
+        "bottomInset": 106
+      },
+      "effects": [],
+      "asteroids": [],
+      "enemies": [
+        {
+          "id": 1,
+          "name": "Scout 1",
+          "x": -238.6814017239958,
+          "z": 621.168,
+          "routeDepth": 621.168,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "popcorn",
+          "waveId": "projective-mastery-opening",
+          "waveLabel": "Opening formation",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0,
+          "attackDelay": 0.1,
+          "clock": 0.1,
+          "firePeriod": 2.8,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.4,
+          "patternRole": "aimed",
+          "patternCycle": 0,
+          "patternConfig": null,
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            },
+            {
+              "type": 3,
+              "polarity": 1,
+              "key": "3:1"
+            }
+          ],
+          "dropsUpgrade": false,
+          "driftX": -70,
+          "driftY": -42,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 0,
+          "visible": true,
+          "ready": false
+        },
+        {
+          "id": 2,
+          "name": "Scout 2",
+          "x": 6.337818599771708,
+          "z": 639.0496,
+          "routeDepth": 639.0496,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "popcorn",
+          "waveId": "projective-mastery-opening",
+          "waveLabel": "Opening formation",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0,
+          "attackDelay": 0.22,
+          "clock": 0.22,
+          "firePeriod": 2.88,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.5111111111111111,
+          "patternRole": "aimed",
+          "patternCycle": 0,
+          "patternConfig": null,
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 1,
+              "polarity": -1,
+              "key": "1:-1"
+            },
+            {
+              "type": 4,
+              "polarity": -1,
+              "key": "4:-1"
+            }
+          ],
+          "dropsUpgrade": false,
+          "driftX": 70,
+          "driftY": 42,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 0,
+          "visible": true,
+          "ready": false
+        },
+        {
+          "id": 3,
+          "name": "Scout 3",
+          "x": 233.2102669919841,
+          "z": 656.9312,
+          "routeDepth": 656.9312,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "popcorn",
+          "waveId": "projective-mastery-opening",
+          "waveLabel": "Opening formation",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0,
+          "attackDelay": 0.33999999999999997,
+          "clock": 0.33999999999999997,
+          "firePeriod": 2.96,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.6222222222222222,
+          "patternRole": "aimed",
+          "patternCycle": 0,
+          "patternConfig": null,
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 3,
+              "polarity": 1,
+              "key": "3:1"
+            },
+            {
+              "type": 6,
+              "polarity": 1,
+              "key": "6:1"
+            }
+          ],
+          "dropsUpgrade": false,
+          "driftX": -70,
+          "driftY": -42,
+          "facing": -1,
+          "presented": true,
+          "visibleFor": 0,
+          "visible": true,
+          "ready": false
+        },
+        {
+          "id": 4,
+          "name": "Carrier 4",
+          "x": -194.3892992711626,
+          "z": 978.8,
+          "routeDepth": 978.8,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "pattern-carrier",
+          "waveId": "projective-mastery-lesson",
+          "waveLabel": "First lesson",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0,
+          "attackDelay": 0,
+          "clock": 0,
+          "firePeriod": 1.35,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.7333333333333334,
+          "patternRole": "sweep",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 4,
+            "beats": 2,
+            "recovery": 2
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 2,
+              "polarity": -1,
+              "key": "2:-1"
+            },
+            {
+              "type": 5,
+              "polarity": -1,
+              "key": "5:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 45,
+          "driftY": 30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 5,
+          "name": "Carrier 5",
+          "x": 206.89240794815123,
+          "z": 996.6816,
+          "routeDepth": 996.6816,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "pattern-carrier",
+          "waveId": "projective-mastery-lesson",
+          "waveLabel": "First lesson",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0,
+          "attackDelay": 0.18,
+          "clock": 0.18,
+          "firePeriod": 1.4300000000000002,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.8444444444444444,
+          "patternRole": "fan",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 4,
+            "beats": 2,
+            "recovery": 2
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 4,
+              "polarity": 1,
+              "key": "4:1"
+            },
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": -45,
+          "driftY": -30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 6,
+          "name": "Anchor 6",
+          "x": 7.740722493734211,
+          "z": 1939.9360000000001,
+          "routeDepth": 1939.9360000000001,
+          "hp": 4,
+          "maxHp": 4,
+          "role": "anchor",
+          "waveId": "projective-mastery-second",
+          "waveLabel": "Compare and apply",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.15000000000000002,
+          "attackDelay": 0,
+          "clock": 0,
+          "firePeriod": 1.71,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 0.9555555555555556,
+          "patternRole": "wall",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 5,
+            "beats": 2,
+            "recovery": 1.9
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 6,
+              "polarity": -1,
+              "key": "6:-1"
+            },
+            {
+              "type": 2,
+              "polarity": -1,
+              "key": "2:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 45,
+          "driftY": 30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 7,
+          "name": "Carrier 7",
+          "x": -298.87819307344034,
+          "z": 1957.8176,
+          "routeDepth": 1957.8176,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "pattern-carrier",
+          "waveId": "projective-mastery-second",
+          "waveLabel": "Compare and apply",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.15000000000000002,
+          "attackDelay": 0.18,
+          "clock": 0.18,
+          "firePeriod": 1.35,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "return",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 3,
+            "beats": 2,
+            "recovery": 2
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            },
+            {
+              "type": 3,
+              "polarity": 1,
+              "key": "3:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": -45,
+          "driftY": -30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 8,
+          "name": "Carrier 8",
+          "x": 300.6731007043272,
+          "z": 1975.6992000000002,
+          "routeDepth": 1975.6992000000002,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "pattern-carrier",
+          "waveId": "projective-mastery-second",
+          "waveLabel": "Compare and apply",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.15000000000000002,
+          "attackDelay": 0.36,
+          "clock": 0.36,
+          "firePeriod": 1.4300000000000002,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "return",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 3,
+            "beats": 2,
+            "recovery": 2
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 1,
+              "polarity": -1,
+              "key": "1:-1"
+            },
+            {
+              "type": 4,
+              "polarity": -1,
+              "key": "4:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 45,
+          "driftY": 30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 9,
+          "name": "Anchor 9",
+          "x": -238.20293197967112,
+          "z": 3146.944,
+          "routeDepth": 3146.944,
+          "hp": 4,
+          "maxHp": 4,
+          "role": "anchor",
+          "waveId": "projective-mastery-third",
+          "waveLabel": "Layer the known grammar",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.42,
+          "attackDelay": 0,
+          "clock": 0,
+          "firePeriod": 1.71,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "crossfire",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 5,
+            "beats": 2,
+            "recovery": 1.9
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 3,
+              "polarity": 1,
+              "key": "3:1"
+            },
+            {
+              "type": 6,
+              "polarity": 1,
+              "key": "6:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": -45,
+          "driftY": -30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 10,
+          "name": "Anchor 10",
+          "x": 238.80266739008948,
+          "z": 3164.8256,
+          "routeDepth": 3164.8256,
+          "hp": 4,
+          "maxHp": 4,
+          "role": "anchor",
+          "waveId": "projective-mastery-third",
+          "waveLabel": "Layer the known grammar",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.42,
+          "attackDelay": 0.18,
+          "clock": 0.18,
+          "firePeriod": 1.55,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "spiral",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 3,
+            "beats": 4,
+            "recovery": 1.9
+          },
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 2,
+              "polarity": -1,
+              "key": "2:-1"
+            },
+            {
+              "type": 5,
+              "polarity": -1,
+              "key": "5:-1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": 45,
+          "driftY": 30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 11,
+          "name": "Scout 11",
+          "x": -84.78473244700581,
+          "z": 3182.7072000000003,
+          "routeDepth": 3182.7072000000003,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "popcorn",
+          "waveId": "projective-mastery-third",
+          "waveLabel": "Layer the known grammar",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.42,
+          "attackDelay": 0.1,
+          "clock": 0.1,
+          "firePeriod": 2.88,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "aimed",
+          "patternCycle": 0,
+          "patternConfig": null,
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 4,
+              "polarity": 1,
+              "key": "4:1"
+            },
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            }
+          ],
+          "dropsUpgrade": false,
+          "driftX": -70,
+          "driftY": -42,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 12,
+          "name": "Scout 12",
+          "x": 95.85634768987074,
+          "z": 3200.5888,
+          "routeDepth": 3200.5888,
+          "hp": 1,
+          "maxHp": 1,
+          "role": "popcorn",
+          "waveId": "projective-mastery-third",
+          "waveLabel": "Layer the known grammar",
+          "waveKind": "combat",
+          "waveActive": false,
+          "activationAt": 0.42,
+          "attackDelay": 0.22,
+          "clock": 0.22,
+          "firePeriod": 2.96,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "aimed",
+          "patternCycle": 0,
+          "patternConfig": null,
+          "patternSequence": null,
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 6,
+              "polarity": -1,
+              "key": "6:-1"
+            },
+            {
+              "type": 2,
+              "polarity": -1,
+              "key": "2:-1"
+            }
+          ],
+          "dropsUpgrade": false,
+          "driftX": 70,
+          "driftY": 42,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        },
+        {
+          "id": 13,
+          "name": "Projective Warden",
+          "x": 0.7181160422042012,
+          "z": 4130.432,
+          "routeDepth": 4130.432,
+          "hp": 14,
+          "maxHp": 14,
+          "role": "miniboss",
+          "waveId": "projective-mastery-final",
+          "waveLabel": "Stage examination",
+          "waveKind": "miniboss",
+          "waveActive": false,
+          "activationAt": 0.6399999999999999,
+          "attackDelay": 0,
+          "clock": 0,
+          "firePeriod": 1.2,
+          "shotSpeed": 175,
+          "stage": 2,
+          "introduction": 1,
+          "patternRole": "cycle",
+          "patternCycle": 0,
+          "patternConfig": {
+            "count": 4,
+            "beats": 2,
+            "recovery": 1.5
+          },
+          "patternSequence": [
+            "fan",
+            "return",
+            "gap",
+            "spiral",
+            "crossfire"
+          ],
+          "geometryRule": "projective",
+          "linkGroup": null,
+          "equipped": [
+            {
+              "type": 0,
+              "polarity": 1,
+              "key": "0:1"
+            },
+            {
+              "type": 3,
+              "polarity": 1,
+              "key": "3:1"
+            }
+          ],
+          "dropsUpgrade": true,
+          "driftX": -45,
+          "driftY": -30,
+          "facing": -1,
+          "visible": false,
+          "ready": false
+        }
+      ],
+      "drops": [],
+      "projectiles": {
+        "player": [],
+        "enemy": []
+      }
+    },
+    "audio": {
+      "contextState": "running",
+      "voices": 0,
+      "retiringVoices": 0,
+      "noiseBuffers": 0,
+      "distortionCurves": 0,
+      "theme": "projective",
+      "scoreStep": 0,
+      "buses": {
+        "music": 0.550000011920929,
+        "effects": 0.800000011920929,
+        "ambience": 0.25
+      },
+      "titleStartup": {
+        "requested": false,
+        "state": "off"
+      },
+      "recorded": {
+        "engine": "recorded-segments",
+        "trackId": "act3-03",
+        "title": "Order of Force",
+        "mode": "projective",
+        "state": "playing",
+        "error": "",
+        "offset": 0,
+        "duration": 240,
+        "loadedSegments": 1,
+        "pendingSegments": 1,
+        "decodedBytes": 18493440,
+        "activeSources": 2,
+        "layers": {
+          "core": 0.9388888888888889,
+          "atmosphere": 0.85
+        },
+        "quiet": false,
+        "mixMode": "full",
+        "ducked": false,
+        "repeatPolicy": "Repeat the finite composition after its ending.",
+        "fetches": 4,
+        "decodes": 3,
+        "peakDecodedSegments": 1,
+        "starts": 2,
+        "underruns": 0,
+        "repeats": 0,
+        "history": [
+          {
+            "trackId": "act3-03",
+            "segment": 0,
+            "absolute": 0,
+            "start": 0.285,
+            "offset": 0
+          }
+        ]
+      },
+      "motifs": {
+        "tracked": 0,
+        "history": []
+      },
+      "admitted": 0,
+      "dropped": 0,
+      "stolen": 0,
+      "peakVoices": 0,
+      "resumes": 0
+    },
+    "contextCount": 1,
+    "resumeCalls": 0,
+    "speaker": {
+      "exists": true,
+      "label": "Mute sound",
+      "pressed": "true",
+      "state": "loading"
+    },
+    "checkpoint": "{\"version\":1,\"build\":\"0.25.1-dev.4\",\"savedAt\":\"2026-11-13T19:12:45.968Z\",\"seed\":4124365729,\"bonusEnabled\":true,\"chapterIndex\":0,\"shipId\":0,\"transitionFrom\":null,\"entry\":{\"inventory\":[{\"key\":\"0:1\",\"type\":0,\"polarity\":1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":1},{\"key\":\"0:-1\",\"type\":0,\"polarity\":-1,\"id\":\"position-warp\",\"source\":\"training-kit\",\"instance\":2}],\"equipped\":[\"0:1\",null],\"score\":100,\"kills\":1,\"time\":2.508333333333327,\"upgradeSerial\":2,\"foldBonus\":0,\"foldsUsed\":1,\"projective\":null}}",
+    "preferences": "{\"version\":1,\"sound\":true,\"music\":true,\"juice\":true,\"reducedMotion\":false,\"showCore\":true,\"patternLabels\":true,\"manifoldCues\":true,\"volume\":0.5,\"musicVolume\":0.55,\"effectsVolume\":0.8,\"ambienceVolume\":0.25}"
+  },
+  "checks": 40,
+  "limits": "Native Web Audio state and sources are observed. Permitted and strict policies run only in isolated test processes. Default policy is reported separately. These checks do not establish physical sound output, latency, screen-reader use, all-browser autoplay permission, or human understanding. The user browser and storage remain unchanged."
+}

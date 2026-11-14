@@ -1,0 +1,33 @@
+{
+  "accompaniment": {
+    "frames": 3534806,
+    "channels": 2,
+    "rate": 48000,
+    "peak": 0.4500495195388794,
+    "nonFinite": 0,
+    "fullScale": 0,
+    "file": "source-accompaniment.wav",
+    "sha256": "d80156f02e04b7cdfbdfa39a924c8b0819cef4184dc8fd0c1cd9d60a81a2814a"
+  },
+  "acid": {
+    "frames": 3534806,
+    "channels": 1,
+    "rate": 48000,
+    "peak": 0.16939345002174377,
+    "nonFinite": 0,
+    "fullScale": 0,
+    "file": "source-acid-direct.wav",
+    "sha256": "85fafa4380aebe74aec8010eff333ed0421eefa61ecc2ad1a9fa3600bf8580d3"
+  },
+  "steps": 640,
+  "duration": 73.64179166666666,
+  "stepSeconds": 0.11194029850746269,
+  "method": "Preserved r5 synthesis source. The direct acid signal is captured before its original panner. Its source gain and kick-duck envelope are retained. Music and ambience buses feed the fixed accompaniment without the shared safety compressor. Shared acid/percussion delays stay in the accompaniment.",
+  "limits": "Source extraction uses the historical Web Audio instruments. This is not new browser composition. Separate pre-safety stems do not reproduce the old nonlinear master exactly.",
+  "sources": {
+    "audio/stc-study/r5-source/src/stc-audio.js": "cbcdfe037a2b7576b48c0067f07e1a0dbaa4acd0bc393064764054c58a992ad2",
+    "audio/stc-study/r5-source/src/stc-score.js": "8d98239181139a9166f7a72cfff29c8013833d41978450debc11add2372e84ea"
+  },
+  "browserVersion": "157.0.4341.46",
+  "authoring": "Historical source extraction only. FoxDot and SuperCollider author and render the r7 motion and mix."
+}

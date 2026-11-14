@@ -1,0 +1,235 @@
+{
+  "revision": "identified-return-r8",
+  "bpm": 134,
+  "bars": 40,
+  "origin_seconds": 0.04,
+  "frames": 3678806,
+  "sample_rate": 48000,
+  "duration": 76.64179166666666,
+  "common_gain": 1,
+  "base_source": {
+    "file": "audio/stc-study/foxdot-bass-r7/room_mix.wav",
+    "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5"
+  },
+  "preserved_sources": [
+    {
+      "file": "audio/stc-study/foxdot-bass-r7/room_mix.wav",
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5",
+      "unchanged": true
+    },
+    {
+      "file": "reports/stc-study-r5/ass-identified-return-r5-stereo-music.wav",
+      "sha256": "473d928d8d1228fe25744dc57f7fd1ee1d9ac2be6026e3c0e5ec0c15a6d8a841",
+      "unchanged": true
+    },
+    {
+      "file": "audio/stc-study/foxdot-bass-r7/dry_take.wav",
+      "sha256": "9386c8481f9da33807bd240876ed8c315bec5b756a2798af63c0b79c802171e3",
+      "unchanged": true
+    },
+    {
+      "file": "audio/stc-study/foxdot-bass-r7/room_return.wav",
+      "sha256": "d4ac977775ac6d1a54525298e8ce15a4800fb9a31bda0e48f1afd0c4455d0ca8",
+      "unchanged": true
+    }
+  ],
+  "compile": {
+    "command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\sclang.exe",
+      "-a",
+      "--include-path",
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\SCClassLibrary",
+      "-D",
+      "-u",
+      "57143",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\operator_track.scd",
+      "D:/Projects/games/game-off-2026/audio/stc-study/foxdot-operator-r8"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.766
+  },
+  "native": {
+    "command": [
+      "G:\\Music Tools\\SuperCollider\\App\\SuperCollider\\scsynth.exe",
+      "-N",
+      "D:\\Projects\\games\\game-off-2026\\audio\\stc-study\\foxdot-operator-r8\\operator-track-score.osc",
+      "_",
+      "G:\\Music Projects\\Arrow Space Shift\\scratch\\identified-return-r8\\r8-layers-8ch-float.wav",
+      "48000",
+      "WAV",
+      "float",
+      "-o",
+      "8",
+      "-i",
+      "0",
+      "-z",
+      "64",
+      "-m",
+      "65536"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.516
+  },
+  "rt_memory_kib": 65536,
+  "native_failures": [],
+  "foxdot": {
+    "distribution": "FoxDot",
+    "version": "0.9.0",
+    "pattern_source": "G:\\Music Tools\\FoxDot\\venv\\Lib\\site-packages\\FoxDot\\lib\\Patterns\\__init__.py",
+    "import_method": "Installed Patterns and TimeVar definitions in isolated package namespaces. Package realtime startup was not executed.",
+    "realtime_scheduler_used": false,
+    "original_composition_authored_with_foxdot": true,
+    "role": "Author the new harmony, percussion, gate, and pan event Patterns. The retained foundation predates this score."
+  },
+  "sources": {
+    "compose.py": "9c349368d493ad1d161da26b7a32cb4524ad43429c3487c05fa9da88f0f3255d",
+    "operator_track.scd": "de4732c335dc7f0909cf8900776ee0cfb888b6b8ef62a4c6e47a4add9f58b9f7",
+    "foxdot-score.json": "031fbf61e6f7097ade347cd5c82190d1b387a8c1cfd3a97cd5a30ef1a3bd4a52",
+    "operator-track-score.osc": "f455c6085a2b3763c7e8d0630290f9fcf749d09709156400a7d1f16a6e8bf797"
+  },
+  "renderer_sha256": "97ba228a5c245287c726e6b2e916a9be2ae1a3d8531f97aae6bb3ef9677c3df5",
+  "outputs": [
+    {
+      "file": "ass-identified-return-r8-music.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.7364827394485474,
+      "peak_dbfs": -2.656748540584278,
+      "rms": 0.18192672980818925,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "f9dec019ac909847619e18fd51f57e1dda99f4703b3ae60f5d75a12ba4c0d818"
+    },
+    {
+      "file": "foundation-control.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.717010498046875,
+      "peak_dbfs": -2.8894897120149454,
+      "rms": 0.18070213357008116,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "51d7229c03b3b2c2a1373c51360dc8451760146b4bcb6bb7a4dfeda5410bd7a5"
+    },
+    {
+      "file": "new-layer.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.14042897522449493,
+      "peak_dbfs": -17.050865467800616,
+      "rms": 0.020804413450570644,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "d3d59599012a956c5c0a62c1f3a286e3589ae75577f4732777469bd50bfbf561"
+    },
+    {
+      "file": "harmony-direct.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.1404869258403778,
+      "peak_dbfs": -17.047281814050518,
+      "rms": 0.020652409132419416,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "b6c9cb45f3ce1de5677f783f4a3919d83042656ff09b27c19be6576bdce0c078"
+    },
+    {
+      "file": "mechanical-response.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.03921330347657204,
+      "peak_dbfs": -28.13133139107154,
+      "rms": 0.000753789360512706,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "f1f05841aa439e57480d6d34e99d3cfa72ea470a7e41338433bb6d1b50884599"
+    },
+    {
+      "file": "gate-room-proof.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.007840506732463837,
+      "peak_dbfs": -42.11311735855336,
+      "rms": 0.001293686423490996,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "64e6994fb0490e136d916f5b72f054ac3635c181dc389ccb02bec7aadaf7bd29"
+    },
+    {
+      "file": "room-gate-proof.wav",
+      "frames": 3678806,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration": 76.64179166666666,
+      "peak": 0.008158117532730103,
+      "peak_dbfs": -41.76820084321635,
+      "rms": 0.0013448990058372203,
+      "non_finite": 0,
+      "full_scale": 0,
+      "sha256": "8c5980a2fa101d197f1d33afe229deb3c736b0404e2747ae5038aafbfe6bc70f"
+    }
+  ],
+  "layer_mix": {
+    "layer_gain": 1.25,
+    "harmony_room_gain": 0.11,
+    "gate_smoothing_seconds": 0.02,
+    "order_before_bar32": "gate then room (R after G)",
+    "order_after_bar32": "room then gate (G after R)",
+    "order_crossfade_seconds": 0.02,
+    "foundation_room_gain_retained": 0.12,
+    "common_gain_policy": "Apply one linear final gain to the foundation, new layer, candidate, and all proof stems. No independent normalization."
+  },
+  "gap_windows_seconds": [
+    [
+      0,
+      7.204179104477612
+    ],
+    [
+      56.45791044776119,
+      57.3534328358209
+    ]
+  ],
+  "mask": {
+    "fade_seconds": 0.02,
+    "final_fade_seconds": 0.25,
+    "applies_to": "All new direct and room components only."
+  },
+  "measurements": {
+    "base_active_rms": 0.1967872077208279,
+    "new_layer_active_rms": 0.02656958744200294,
+    "layer_to_base_active_db": -17.39224104889092,
+    "ordered_room_difference_rms": 0.0009889177466414303,
+    "loudness": {
+      "ass-identified-return-r8-music.wav": {
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -2.7,
+        "log": "ass-identified-return-r8-music-loudness.txt"
+      },
+      "foundation-control.wav": {
+        "integrated_lufs": -14.6,
+        "true_peak_dbfs": -2.9,
+        "log": "foundation-control-loudness.txt"
+      },
+      "new-layer.wav": {
+        "integrated_lufs": -28.1,
+        "true_peak_dbfs": -17.0,
+        "log": "new-layer-loudness.txt"
+      }
+    },
+    "pre_pcm_additive_identity": "candidate = foundation + new-layer",
+    "new_layer_reconstruction": "harmony-direct + mechanical-response + selected ordered-room proof; 20 ms crossfade at bar 32."
+  },
+  "limits": "Music review candidate. No live FoxDot Clock, REAPER render, HRTF, gameplay cue, simulation change, physical-device, human listening, or seamless-loop claim."
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 62228,
+  "scope": "Node automation only. Keep all actors and projectiles. Trim only the copied event records returned through Playwright.",
+  "started": "2026-11-13T17:30:57.733Z",
+  "changed": false,
+  "target": {
+    "id": "26cb66e0-2894-41d6-82ea-093b9d6fe0f8",
+    "url": "file://D:_Projects_games_game-off-2026_tools_campaign-full-browser.mjs"
+  },
+  "error": "Error: No Debugger.paused event.\n    at Timeout._onTimeout (file:///D:/Projects/games/game-off-2026/tools/campaign-pilot-readback.mjs:10:100)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+}

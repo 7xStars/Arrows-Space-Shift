@@ -1,0 +1,15 @@
+[aist#0:0/pcm_s16le @ 0000018f402166c0] Guessed Channel Layout: stereo
+Input #0, wav, from 'G:\Music Projects\Arrow Space Shift\scratch\stc-act-library-r1\act2-04-atmosphere.wav':
+  Duration: 00:06:00.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'D:\Projects\games\game-off-2026\assets\audio\stc-act-library-r1\act2-04-atmosphere.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+size=     768KiB time=00:00:55.92 bitrate= 112.5kbits/s speed= 108x elapsed=0:00:00.51    size=    1792KiB time=00:01:52.97 bitrate= 129.9kbits/s speed= 108x elapsed=0:00:01.04    size=    2560KiB time=00:02:48.88 bitrate= 124.2kbits/s speed= 108x elapsed=0:00:01.56    size=    3584KiB time=00:03:44.75 bitrate= 130.6kbits/s speed= 109x elapsed=0:00:02.06    size=    4608KiB time=00:04:42.18 bitrate= 133.8kbits/s speed= 109x elapsed=0:00:02.59    size=    5376KiB time=00:05:36.60 bitrate= 130.8kbits/s speed= 108x elapsed=0:00:03.10    [out#0/ogg @ 0000018f40213340] video:0KiB audio:5845KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 0.783235%
+size=    5891KiB time=00:06:00.00 bitrate= 134.0kbits/s speed= 109x elapsed=0:00:03.30    

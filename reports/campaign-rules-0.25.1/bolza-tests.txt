@@ -1,0 +1,31 @@
+✔ Act IV has eight authored lessons, recovery waves, and a distinct ninth boss (0.5707ms)
+✔ real crossing preserves quotient distance without creating a ghost hitbox (2.4583ms)
+✔ combat enters normal phase with telegraphed enemies and finite live shots (0.6132ms)
+✔ capture only consumes an actual hostile projectile within the quotient radius (0.2887ms)
+✔ two-sided fold changes both projectile speeds without removing collisions (0.8917ms)
+✔ completed waves transition to safe recovery and next chapter; mandatory objectives cannot be skipped (1.0697ms)
+✔ stage 9 boss victory is not confused with repairing the Warp Drive (0.497ms)
+✔ save schema supports resume, replay and migration without mutating legacy checkpoint key (0.9272ms)
+✔ geodesic flow transports heading: direct and side-crossing shots reach targets to numerical tolerance (1.1967ms)
+✔ a deterministic manual-fire pilot can clear lesson one without bypasses (11.2765ms)
+✔ ship previews use stable signed thrust and cannot predict forward motion while stopped or reversing (2.4237ms)
+✔ projectile previews stop at expiry and apply only the remaining fold speed interval (0.3108ms)
+✔ Act IV bridge, stage continuation and retry keep ship and ordered equipment metadata (0.47ms)
+✔ ship differences affect actual speed, turn, reverse thrust and collision core (2.8005ms)
+✔ boss phase changes announce scheduled attacks and supply a safe recovery interval (3.0882ms)
+✔ local collision sweeps find a crossing path and never bridge a paired-edge jump (0.1111ms)
+✔ release cannot consume an echo or emit a cue when its three shots cannot fit (0.2395ms)
+✔ a normal-health manual-fire pilot can defeat, collect and extract the final component (40.7005ms)
+✔ reload before extraction restores the boss entry and cannot turn exposure into a receipt (0.2515ms)
+✔ all eight lessons can clear through movement, manual shots and deliberate module actions at normal hull (193.2906ms)
+✔ real collision segments remain eligible before and after an identified-edge jump (0.7817ms)
+✔ local segment checks compare only positions at the same tick time (0.1568ms)
+✔ native Bolza movement retains bounded time intervals for its local segments (1.7708ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 312.626

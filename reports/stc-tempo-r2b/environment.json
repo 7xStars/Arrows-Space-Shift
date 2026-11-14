@@ -1,0 +1,9 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "G:\\Music Tools\\FoxDot\\venv\\Scripts\\python.exe",
+  "scsynth": "scsynth 3.14.1 (Built from tag 'Version-3.14.1' [426edf6])",
+  "output": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b",
+  "scratch": "G:\\Music Projects\\Arrow Space Shift\\stc-tempo-r2b\\scratch",
+  "route": "Installed FoxDot Patterns -> finite OSC score -> native SC synthesis -> shared linear gain -> WAV and Vorbis.",
+  "limits": "No live FoxDot Clock, external audio device, reference recording, REAPER render, or listening approval."
+}

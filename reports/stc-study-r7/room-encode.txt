@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0000019c1a2e4e40] Guessed Channel Layout: stereo
+Input #0, wav, from 'audio/stc-study/foxdot-bass-r7/room_return.wav':
+  Duration: 00:01:16.64, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Press [q] to stop, [?] for help
+Output #0, ogg, to 'assets/audio/stc-title-r7-room.ogg':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc63.1.102 libvorbis
+size=      28KiB time=00:00:02.15 bitrate= 106.9kbits/s speed=4.21x elapsed=0:00:00.51    
+size=    1024KiB time=00:00:48.95 bitrate= 171.4kbits/s speed=47.6x elapsed=0:00:01.02    
+[out#0/ogg @ 0000019c18592e80] video:0KiB audio:1701KiB subtitle:0KiB other streams:0KiB global headers:4KiB muxing overhead: 0.862414%
+size=    1716KiB time=00:01:16.64 bitrate= 183.4kbits/s speed=58.6x elapsed=0:00:01.30    

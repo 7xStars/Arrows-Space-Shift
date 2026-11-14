@@ -1,0 +1,240 @@
+{
+  "revision": "stc-study-r4",
+  "score": {
+    "id": "identified-return-r4",
+    "title": "Identified Return",
+    "bpm": 134,
+    "bars": 40,
+    "stepsPerBar": 16,
+    "root": 29,
+    "description": "Hypnotic pulse, interlocking electro percussion, acid transformation, and sparse recovery."
+  },
+  "method": "Original synthesis in headless Edge OfflineAudioContext. No external recordings, normalization, playback-device observation, or listening acceptance.",
+  "mix": "Master1; music0.55, effects0.8, ambience0.25. Native safety compressor. Same synthesis as live study. Final fade only.",
+  "limits": "The crossing mix uses geometry traces from moveBolza with synthetic presentation times and actual entry/return identity cues. It is not a gameplay recording. The full study is not a seamless loop. Audio-only listening and physical output remain unverified.",
+  "results": [
+    {
+      "file": "ass-identified-return-r4-music.wav",
+      "id": "music",
+      "duration": 73.64179166666666,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.7171217203140259,
+      "peakDbfs": -2.8881424661650352,
+      "rms": 0.19037328348603236,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "voices": 0,
+        "sources": 4,
+        "identities": 0,
+        "seenEvents": 0,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 11,
+        "peakSources": 25,
+        "dropped": 0,
+        "crossings": 0,
+        "announcements": 0,
+        "steps": 640,
+        "cueHistory": [],
+        "sourceHistory": [],
+        "crossingHistory": []
+      }
+    },
+    {
+      "file": "ass-identified-return-r4-crossing-mix.wav",
+      "id": "crossing-mix",
+      "duration": 26,
+      "sampleRate": 48000,
+      "channels": 2,
+      "peak": 0.7014488577842712,
+      "peakDbfs": -3.0800797526340515,
+      "rms": 0.1849449970751678,
+      "nonFinite": 0,
+      "fullScale": 0,
+      "diagnostic": {
+        "contextState": "closed",
+        "contextCreations": 0,
+        "playing": true,
+        "mode": "combined",
+        "step": 0,
+        "voices": 0,
+        "sources": 4,
+        "identities": 2,
+        "seenEvents": 7,
+        "buses": {
+          "music": 0.550000011920929,
+          "effects": 0.800000011920929,
+          "ambience": 0.25
+        },
+        "peakVoices": 11,
+        "peakSources": 25,
+        "dropped": 0,
+        "crossings": 5,
+        "announcements": 2,
+        "steps": 223,
+        "cueHistory": [
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-0",
+            "objectId": "probe-0",
+            "motif": 3,
+            "pan": 0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-1",
+            "objectId": "probe-1",
+            "motif": 0,
+            "pan": -0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-0",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.64279587611721,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-1",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.6427958761172098,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-2",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6434238735424044,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-3",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.643423873542404,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-4",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6425856540093904,
+            "mode": "combined"
+          }
+        ],
+        "sourceHistory": [
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-0",
+            "objectId": "probe-0",
+            "motif": 3,
+            "pan": 0.6,
+            "mode": "combined"
+          },
+          {
+            "kind": "entry",
+            "type": "attack-entered",
+            "eventId": "entry-1",
+            "objectId": "probe-1",
+            "motif": 0,
+            "pan": -0.6,
+            "mode": "combined"
+          }
+        ],
+        "crossingHistory": [
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-0",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.64279587611721,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-1",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.6427958761172098,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-2",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6434238735424044,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-3",
+            "objectId": "probe-1",
+            "from": 3,
+            "to": 7,
+            "motif": 0,
+            "pan": 0.643423873542404,
+            "mode": "combined"
+          },
+          {
+            "kind": "crossing",
+            "type": "crossing",
+            "eventId": "crossing-4",
+            "objectId": "probe-0",
+            "from": 7,
+            "to": 3,
+            "motif": 3,
+            "pan": -0.6425856540093904,
+            "mode": "combined"
+          }
+        ]
+      }
+    }
+  ]
+}
