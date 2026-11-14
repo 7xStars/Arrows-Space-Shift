@@ -2,9 +2,12 @@
 
 This folder is the main local project for Arrow Space Shift.
 The active source comes from `Arrow-Space-Shift-v0.24.1-SOURCE.zip`.
-The local update is `0.25.1-dev.7`.
+The local update is `0.25.1-dev.8`.
 It adds produced FoxDot techno, bounded mechanical feedback, and campaign rule repairs.
 It is a development build. The complete campaign release gate remains open.
+
+Flight time continues across level transitions.
+Speed grades and bonuses still use the time for each section.
 
 The plain game URL enables sound and music on each launch.
 Earlier saved mute flags and zero music levels do not silence a new launch.

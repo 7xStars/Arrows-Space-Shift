@@ -1,7 +1,7 @@
 # Arrow Space Shift: current design record
 
 Source baseline: v0.24.1.
-Local development version: 0.25.1-dev.7.
+Local development version: 0.25.1-dev.8.
 Date: November 13, 2026.
 
 This record describes the imported game and the authorized completion slice below.
@@ -16,6 +16,10 @@ The geometry must affect gameplay.
 The visual and sound systems must communicate the actual operations.
 
 ## Jam edition scope
+
+The main Flight time display uses the continuous simulation time across levels.
+Section time remains separate for speed grades, bonuses, and clear records.
+Do not replace the main flight timer with elapsed section time.
 
 Each main-game launch enables sound and music, as requested by the user.
 Restore default master or music level only when its saved level is zero.

@@ -490,8 +490,8 @@ function updateUI(force = false) {
   $('progress-label').textContent=s.encounter?`Encounter ${s.encounterIndex+1} / 3`:pace?`${Math.floor(pace.progress).toLocaleString('en-US')} / ${pace.routeLength.toLocaleString('en-US')} · +${pace.leadSeconds.toFixed(1)}s`:`${Math.floor(s.z).toLocaleString('en-US')} / 8,400`;
   $('route').max=pace?.routeLength||ROUTE_LENGTH;
   $('route').value=s.encounter?(s.encounterIndex+(s.phase==='won'?1:0))/3*ROUTE_LENGTH:pace?.progress??s.z; $('hull').textContent = `${s.hull} / 5`;
-  $('time-label').textContent=pace?`+${pace.leadSeconds.toFixed(1)}s saved`:'Flight time';
-  $('time').textContent = s.countdown>0 && s.phase!=='ready'?`In ${Math.ceil(s.countdown)} s`:`${(pace?.elapsed??s.time).toFixed(2)} s`; $('score').textContent = s.score;$('graze-count').textContent=s.campaign?.metrics?.grazes||0;
+  $('time-label').textContent='Flight time';
+  $('time').textContent = s.countdown>0 && s.phase!=='ready'?`In ${Math.ceil(s.countdown)} s`:`${s.time.toFixed(2)} s`; $('score').textContent = s.score;$('graze-count').textContent=s.campaign?.metrics?.grazes||0;
   $('bonus').textContent = s.bonusEnabled?`Fold bonus earned: ${s.foldBonus}`:'Fold score bonus is off';
   $('bonus-rule').textContent=s.bonusEnabled?'Each fold at the target adds 50 points to a kill.':'A kill gives 100 points in folded or open space.';
   $('unfold-rule').textContent=s.bonusEnabled?'Unfold: more reaction time, slower outgoing shots, lower kill reward.':'Unfold: more reaction time and slower outgoing shots. Kill points stay the same.';
