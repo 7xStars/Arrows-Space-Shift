@@ -17,13 +17,14 @@ import {createStageClearClock,autoAdvanceEligible} from './stage-flow.js';
 import {playerJoinForecast} from './geometry-cues.js';
 import {revealFoldWake,foldRoutePace} from './fold-wake.js';
 import {loadJourney,saveJourney,syncLegacyParts,setActFourBridge,recordBankedPart} from './journey.js';
+import {launchAudioPreferences} from './audio-interface.js';
 import {exportProgress,importProgress,recoverProgressTransfer} from './progress-transfer.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('space'), ctx = canvas.getContext('2d');
 const testing = /^(127\.0\.0\.1|localhost)$/.test(location.hostname)&&new URLSearchParams(location.search).has('qa');
 const progressStorageReady=testing||recoverProgressTransfer();
-const preferences=loadPreferences(undefined,matchMedia('(prefers-reduced-motion: reduce)').matches);
+const preferences=launchAudioPreferences(loadPreferences(undefined,matchMedia('(prefers-reduced-motion: reduce)').matches));
 let campaignJourney=loadJourney();
 const audioBus=new FlightAudio(preferences);
 const keys = new Set();
@@ -53,10 +54,12 @@ function requestTitleMusic(gesture=false){
 }
 const soundToggle=mountSoundToggle({container:document.querySelector('.viewport'),onToggle:setSoundEnabled});
 function updateSoundToggle(){
-  const enabled=preferences.sound&&audioBus.context?.state==='running',recorded=audioBus.recorded?.read();
+  const enabled=preferences.sound,recorded=audioBus.recorded?.read();
   const state=!preferences.sound?'muted':!audioBus.context||audioBus.context.state!=='running'?'blocked':recorded?.error?'unavailable':
     recorded?.state==='loading'?'loading':recorded?.state==='playing'?'playing':flight.phase==='paused'?'paused':'ready';
-  const description=state==='muted'?'Sound is off.':state==='blocked'?'Select to start sound.':state==='loading'?'Sound is on. Music is loading.':
+  const description=state==='muted'?'Sound is off.':state==='blocked'?'Sound is enabled. Begin play to start audio.':state==='loading'?'Sound is on. Music is loading.':
+    !preferences.music?'Effects are on. Music is off. Enable music in Options.':
+    preferences.musicVolume===0?'Effects are on. Music volume is zero.':
     state==='paused'?'Sound is on. Play is paused.':state==='unavailable'?'Music could not load. Action sounds remain on.':'Sound is on.';
   soundToggle.update({enabled:Boolean(enabled),state,description});
 }
@@ -71,9 +74,12 @@ async function setSoundEnabled(enabled){
   updateSoundToggle();shell.audioStatus?.update();
 }
 $('primary').addEventListener('click',()=>audioBus.stopTitle(),{capture:true});
-for(const eventName of ['pointerdown','keydown'])document.addEventListener(eventName,event=>{
+for(const eventName of ['pointerdown','keydown','click'])document.addEventListener(eventName,event=>{
   if(!event.isTrusted||event.target.closest?.('#sound-toggle')||event.ctrlKey||event.altKey||event.metaKey||event.repeat||eventName==='keydown'&&['Tab','Escape'].includes(event.key))return;
   requestTitleMusic(true);
+  if(preferences.sound&&audioBus.context?.state!=='running')void audioBus.unlock().then(ready=>{
+    if(ready){audioBus.process(flight);updateSoundToggle();}
+  });
 },{capture:true});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestTitleMusic(true);});
 const pixelArt=new PixelArt();

@@ -1,3 +1,9 @@
+/** Enable sound and music for each launch. Keep other saved preferences. */
+export function launchAudioPreferences(saved){
+  return {...saved,sound:true,music:true,
+    volume:saved.volume>0?saved.volume:.5,musicVolume:saved.musicVolume>0?saved.musicVolume:.55};
+}
+
 /** Report actual music loading and playback. Do not change game state. */
 export function mountAudioStatus(audio,container){
   const group=document.createElement('section'),message=document.createElement('p'),retry=document.createElement('button');

@@ -123,7 +123,7 @@ try{
   report.states.defaultAttempt=await state(normal.page);
   check('Default policy receives one automatic title request before input',report.states.defaultAttempt.contextCount===1);
   if(report.states.defaultAttempt.audio.contextState!=='running'){
-    check('Blocked default policy shows an enabled speaker action',report.states.defaultAttempt.speaker.label==='Enable sound'&&report.states.defaultAttempt.speaker.pressed==='false');
+    check('Blocked default policy keeps sound enabled with a start action',report.states.defaultAttempt.speaker.label==='Start sound'&&report.states.defaultAttempt.speaker.pressed==='true');
     await normal.page.locator('#sound-toggle').click();report.defaultEnableClicks=1;
   }else report.defaultEnableClicks=0;
   await waitTitle(normal.page);
@@ -135,7 +135,7 @@ try{
   const strict=await openBrowser('document-user-activation-required');await entry(strict.page,url);
   const blocked=await state(strict.page);report.states.strictAttempt=blocked;
   check('Strict policy leaves native audio suspended before input',blocked.audio.contextState==='suspended'&&blocked.contextCount===1&&(blocked.audio.recorded.activeSources||0)===0);
-  check('Blocked speaker has an accessible Enable sound action',blocked.speaker.label==='Enable sound'&&blocked.speaker.pressed==='false');
+  check('Blocked speaker remains enabled with an accessible start action',blocked.speaker.label==='Start sound'&&blocked.speaker.pressed==='true');
   await strict.page.locator('#sound-toggle').click();await waitTitle(strict.page);
   const enabled=await state(strict.page);
   check('First blocked speaker click enables sound instead of muting it',enabled.speaker.pressed==='true'&&enabled.speaker.label==='Mute sound'&&JSON.parse(enabled.preferences).sound===true);
@@ -219,11 +219,11 @@ try{
   check('Options mute synchronizes the speaker state',(await state(page)).speaker.pressed==='false'&&JSON.parse((await state(page)).preferences).sound===false);
   await page.reload();await page.waitForFunction(()=>window.arrowSpaceShift?.assets().ready);await page.waitForTimeout(250);
   const muted=await state(page);report.states.savedMute=muted;
-  check('Saved mute prevents automatic audio context creation',muted.contextCount===0&&(muted.audio.recorded.activeSources||0)===0&&muted.speaker.pressed==='false'&&muted.speaker.label==='Enable sound');
+  check('A new launch enables sound despite the earlier mute',muted.contextCount===1&&muted.speaker.pressed==='true'&&JSON.parse(muted.preferences).sound===true);
   check('Saved mute keeps the speaker available',await page.locator('#sound-toggle').isEnabled());
   check('Saved mute preserves the earned checkpoint',muted.checkpoint===earned.checkpoint&&muted.flight.campaign.index===0&&muted.flight.phase==='paused');
-  await page.locator('#sound-toggle').click();await waitTitle(page);
-  check('The saved-mute speaker can enable sound directly',(await state(page)).contextCount===1&&(await state(page)).speaker.pressed==='true');
+  await waitTitle(page);
+  check('The new launch starts music without a speaker click',(await state(page)).contextCount===1&&(await state(page)).speaker.pressed==='true');
   const layoutPage=await allowed.context.newPage();pages.push(layoutPage);
   await layoutPage.setViewportSize({width:320,height:568});await layoutPage.goto(url+'?qa=1');
   await layoutPage.waitForFunction(()=>window.arrowSpaceShiftTest&&window.arrowSpaceShift.assets().ready);

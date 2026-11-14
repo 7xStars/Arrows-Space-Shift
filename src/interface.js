@@ -12,16 +12,17 @@ export function mountSoundToggle({container,onToggle}){
   description.id='sound-toggle-status';description.className='sound-toggle-description';
   description.textContent='Select to start sound.';
   let requested=null;
-  const retainAction=()=>{requested=button.getAttribute('aria-pressed')!=='true';};
+  const enableAction=()=>button.dataset.audioState==='blocked'||button.getAttribute('aria-pressed')!=='true';
+  const retainAction=()=>{requested=enableAction();};
   button.addEventListener('pointerdown',retainAction);
   button.addEventListener('keydown',event=>{if(!event.repeat&&['Enter',' '].includes(event.key))retainAction();});
   button.addEventListener('pointercancel',()=>{requested=null;});
   button.addEventListener('blur',()=>{requested=null;});
-  button.addEventListener('click',()=>{const enable=requested??button.getAttribute('aria-pressed')!=='true';requested=null;onToggle(enable);});
+  button.addEventListener('click',()=>{const enable=requested??enableAction();requested=null;onToggle(enable);});
   container.append(button,description);
   return {button,update({enabled,state,description:message}){
     button.setAttribute('aria-pressed',String(enabled));
-    const action=enabled?'Mute sound':'Enable sound';
+    const action=state==='blocked'?'Start sound':enabled?'Mute sound':'Enable sound';
     button.setAttribute('aria-label',action);button.title=`${action}. ${message}`;
     button.dataset.audioState=state;
     if(description.textContent!==message)description.textContent=message;
@@ -128,7 +129,7 @@ export function mountInterface({pause,phase,development=false,patternDefinitions
   progression.innerHTML='<h3>Campaign records</h3><div id="stage-records" class="record-list"><p class="small">Complete an Act II stage to create a record.</p></div><h4>Recent attempts</h4><ol id="run-history" class="run-history"></ol><div class="progress-transfer"><button type="button" id="export-progress">Export progress</button><button type="button" id="import-progress-button">Import progress</button><input id="import-progress" type="file" accept="application/json,.json" hidden></div><p id="progress-transfer-status" class="small" role="status">Progress stays in this browser unless exported.</p>';
   move(progression,'options');
   const preferences=document.createElement('section');preferences.className='preferences';
-  preferences.innerHTML='<h3>Sound & feel</h3><div class="sound-setting"></div><label class="volume-setting" for="volume">Sound volume <output id="volume-value">50%</output><input id="volume" type="range" min="0" max="100" step="5" value="50"></label><label class="check"><input id="music" type="checkbox">Original adaptive score (changes by Act)</label><label class="check"><input id="juice" type="checkbox" checked>Combat particles & engine trails</label><label class="check"><input id="reduced-motion" type="checkbox">Reduced motion</label><label class="check"><input id="collision-core" type="checkbox" checked>Always show the true collision core</label><label class="check"><input id="pattern-labels" type="checkbox" checked>Show pattern names during warnings</label><label class="check"><input id="manifold-cues" type="checkbox" checked>Show manifold projectile images & crossing cues</label><p class="small">Reduced motion removes decorative movement. Aiming warnings, hits, returns, and damage deadlines stay visible.</p><p class="small">Hold Space to fire. Release it to stop. Sound and feel settings are saved in this browser.</p><p class="small" id="best-score">Best score: 0</p>';
+  preferences.innerHTML='<h3>Sound & feel</h3><div class="sound-setting"></div><label class="volume-setting" for="volume">Sound volume <output id="volume-value">50%</output><input id="volume" type="range" min="0" max="100" step="5" value="50"></label><label class="check"><input id="music" type="checkbox">Original adaptive score (changes by Act)</label><label class="check"><input id="juice" type="checkbox" checked>Combat particles & engine trails</label><label class="check"><input id="reduced-motion" type="checkbox">Reduced motion</label><label class="check"><input id="collision-core" type="checkbox" checked>Always show the true collision core</label><label class="check"><input id="pattern-labels" type="checkbox" checked>Show pattern names during warnings</label><label class="check"><input id="manifold-cues" type="checkbox" checked>Show manifold projectile images & crossing cues</label><p class="small">Reduced motion removes decorative movement. Aiming warnings, hits, returns, and damage deadlines stay visible.</p><p class="small">Hold Space to fire. Release it to stop. Sound and music start on each launch.</p><p class="small" id="best-score">Best score: 0</p>';
   preferences.querySelector('.sound-setting').append($('sound'));dialogs.options.querySelector('.dialog-content').prepend(preferences);
   preferences.querySelector('label.check').lastChild.textContent='Recorded techno music';
   const audioStatus=audio?mountAudioStatus(audio,preferences):null;

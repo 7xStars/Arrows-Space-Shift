@@ -1,7 +1,7 @@
 # Arrow Space Shift: current design record
 
 Source baseline: v0.24.1.
-Local development version: 0.25.1-dev.6.
+Local development version: 0.25.1-dev.7.
 Date: November 13, 2026.
 
 This record describes the imported game and the authorized completion slice below.
@@ -16,6 +16,15 @@ The geometry must affect gameplay.
 The visual and sound systems must communicate the actual operations.
 
 ## Jam edition scope
+
+Each main-game launch enables sound and music, as requested by the user.
+Restore default master or music level only when its saved level is zero.
+Keep nonzero mix levels, other preferences, and saved progress.
+Mute remains available during play. A new launch enables audio again.
+Request automatic playback under the browser's normal policy.
+If that policy requires input, the normal Begin or Resume action starts audio.
+The speaker represents the enabled preference separately from browser activation.
+No URL music option is required or interpreted.
 
 The fold lesson uses one armed training enemy during firing, folding, and unfolding.
 Space stays active through those actions. Unfold does not reset the enemy or clear shots.

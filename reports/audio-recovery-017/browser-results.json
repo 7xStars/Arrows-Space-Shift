@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Plain URL enables sound and music",
+    "Launch restores nonzero music levels and preserves reduced motion",
+    "Speaker starts enabled",
+    "Normal game start produces music without a speaker click",
+    "The player can still mute during play",
+    "The next launch enables audio again",
+    "Plain reload produces music",
+    "No page exception occurred"
+  ],
+  "errors": [],
+  "method": "Isolated Edge with saved sound and music disabled. Normal game-start input, normal audio policy, and native post-master PCM observation. No speaker click or URL option.",
+  "usedNormalStartAction": true,
+  "plainUrlPeak": 0.12172552198171616,
+  "reloadPeak": 0.12172552198171616
+}

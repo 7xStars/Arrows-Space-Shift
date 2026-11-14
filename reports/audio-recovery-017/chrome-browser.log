@@ -1,0 +1,65 @@
+{
+  "channel": "chrome",
+  "checks": [
+    "Title line is centered at 1280 by 900 ltr",
+    "Title line is centered at 390 by 844 ltr",
+    "Title line is centered at 320 by 568 ltr",
+    "Title line is centered at 640 by 450 ltr",
+    "Title line is centered at 320 by 568 rtl",
+    "Plain URL enables sound and music",
+    "Launch restores nonzero music levels and preserves reduced motion",
+    "Speaker starts enabled",
+    "Normal game start produces music without a speaker click",
+    "The player can still mute during play",
+    "The next launch enables audio again",
+    "Plain reload produces music",
+    "No page exception occurred"
+  ],
+  "errors": [],
+  "method": "Isolated browser with saved sound and music disabled. Normal game-start input, normal audio policy, and native post-master PCM observation. No speaker click or URL option.",
+  "titleLayout": [
+    {
+      "width": 1280,
+      "height": 900,
+      "dir": "ltr",
+      "offset": 0,
+      "textOffset": 0,
+      "fits": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dir": "ltr",
+      "offset": 0,
+      "textOffset": 0.0078125,
+      "fits": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "dir": "ltr",
+      "offset": 0,
+      "textOffset": 0.0078125,
+      "fits": true
+    },
+    {
+      "width": 640,
+      "height": 450,
+      "dir": "ltr",
+      "offset": 0,
+      "textOffset": 0,
+      "fits": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "dir": "rtl",
+      "offset": 0,
+      "textOffset": 0.0078125,
+      "fits": true
+    }
+  ],
+  "usedNormalStartAction": true,
+  "plainUrlPeak": 0.12172552198171616,
+  "reloadPeak": 0.11553113162517548
+}

@@ -73,7 +73,7 @@ try{
   await page.reload();await page.waitForFunction(()=>window.arrowSpaceShift);
   check('Level 1 checkpoint survives reload',await page.evaluate(()=>window.arrowSpaceShift.read().campaign.index===0));
   const prefs=await page.evaluate(()=>JSON.parse(localStorage.getItem('arrow-space-shift:preferences:v1')));
-  check('Silent reduced-motion settings persist',prefs.sound===false&&prefs.music===false&&prefs.reducedMotion===true);
+  check('Reload enables audio and preserves reduced motion',prefs.sound===true&&prefs.music===true&&prefs.reducedMotion===true);
   if(isActAvailable(4)){
   await page.goto(new URL('hyperbolic-act.html',url).href);
   check('Clean profile cannot bypass the Curvature Seed',await page.locator('#modal-title').textContent()==='Curvature Seed required');

@@ -1,6 +1,6 @@
 /** Release gates. Keep 0.20.3 history and the Act I seed namespace stable. */
 export const BUILD=Object.freeze({
-  version:'0.25.1-dev.6',label:'Three-Act jam edition',maxChapterIndex:26,maxAct:3,postJamContent:false,
+  version:'0.25.1-dev.7',label:'Three-Act jam edition',maxChapterIndex:26,maxAct:3,postJamContent:false,
   practice:true,history:true,persistentGrades:true,collisionCoreOption:true,
 });
 
