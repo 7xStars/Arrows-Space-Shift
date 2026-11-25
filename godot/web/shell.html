@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05090b">
+<title>$GODOT_PROJECT_NAME</title>
+$GODOT_HEAD_INCLUDE
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none;background:#05090b;color:#f0e4bd;font:16px/1.5 system-ui,sans-serif}canvas{display:block;width:100%;height:100%;outline:none}#loading{position:fixed;inset:0;display:grid;place-content:center;justify-items:center;background:#05090b;padding:24px;z-index:2}#loading[hidden]{display:none}#loading img{width:min(88vw,800px);height:auto;max-height:65vh;object-fit:contain}#load-status{max-width:44rem;text-align:center;color:#b4c3c7}progress{width:min(65vw,400px);height:4px;accent-color:#60c0be}#error{white-space:pre-wrap;max-width:48rem;color:#f0a080}button{font:inherit;color:#05090b;background:#f0e4bd;padding:10px 24px;border:0;cursor:pointer}button:focus-visible{outline:3px solid #60c0be;outline-offset:4px}
+#tutorial-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+canvas:focus-visible{outline:2px solid #96c7ca;outline-offset:-2px}
+</style>
+</head>
+<body>
+<canvas id="canvas" tabindex="0" aria-label="Arrow Space Shift. Use Left Arrow, Home, or number pad 4 to move left. Use Right Arrow, End, or number pad 6 to move right. Space fires. Left Shift folds. Right Shift unfolds.">Your browser needs WebGL 2 to play this game.</canvas>
+<div id="tutorial-status" role="status" aria-atomic="true"></div>
+<div id="loading" role="status">
+  <img src="$GODOT_SPLASH" alt="Arrow Space Shift">
+  <p id="load-status">Loading game</p>
+  <progress id="progress" max="100"></progress>
+  <p id="error" hidden></p>
+  <button id="retry" hidden>Reload</button>
+</div>
+<script src="$GODOT_URL"></script>
+<script>
+'use strict';
+window.godotPortErrors=[];
+const tutorialStatus=document.getElementById('tutorial-status');
+window.arrowGodotAnnouncePrompt=text=>{tutorialStatus.textContent=text;};
+const overlay=document.getElementById('loading'),status=document.getElementById('load-status'),progress=document.getElementById('progress');
+const fail=error=>{const message=String(error?.message||error);window.godotPortErrors.push(message);overlay.hidden=false;status.textContent='The game could not start.';document.getElementById('error').textContent=message;document.getElementById('error').hidden=false;document.getElementById('retry').hidden=false;};
+document.getElementById('retry').addEventListener('click',()=>location.reload());
+window.addEventListener('error',event=>window.godotPortErrors.push(event.message));
+const engine=new Engine($GODOT_CONFIG);
+const args=/^(localhost|127\.0\.0\.1)$/.test(location.hostname)&&new URLSearchParams(location.search).get('qa')==='1'?['--qa']:[];
+engine.startGame({args,onProgress:(current,total)=>{if(total>0){progress.value=current/total*100;status.textContent=`Loading game · ${Math.round(current/total*100)}%`;}},onPrintError:message=>{window.godotPortErrors.push(String(message));console.error(message);}}).then(()=>{overlay.hidden=true;window.godotPortLoaded=true;document.getElementById('canvas').focus({preventScroll:true});}).catch(fail);
+</script>
+</body>
+</html>

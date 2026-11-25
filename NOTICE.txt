@@ -1,11 +1,17 @@
 Arrow Space Shift
 
+The current native candidate uses Godot 4.7.2 for Windows and Web.
+Native distributions must include GODOT-LICENSE.txt and THIRD_PARTY_NOTICES.txt.
+Those texts apply to the engine and its listed components, not to the game's own source or assets.
+The current source changes use coding-agent assistance for projectile journeys, consequence feedback, opening continuity, tests, and release preparation.
+The sections below retain the production history of earlier candidates.
+
 AI assistance was used for game design, programming, interface text, documentation, and tests.
 The game uses AI-assisted pixel art, procedural fallback graphics, and browser-generated tones.
 Pixel sources were authored for this project from a user-supplied visual brief.
 The user reference sheet and generated concept studies are not included in the browser package.
-No third-party fonts, samples, music recordings, or runtime libraries are included.
-System fonts are supplied by the player's device.
+The original browser runtime uses no third-party fonts, samples, music recordings, or runtime libraries.
+Its system fonts are supplied by the player's device.
 No Lamirys source or assets are included.
 
 The title illustration in assets/realm-title.png was generated with OpenAI image generation.
@@ -112,3 +118,32 @@ REAPER sessions are editing handoffs. REAPER did not render these recordings.
 No reference recording, commercial sample, or external impulse response was added.
 Coding agents assisted with composition, synthesis, production, player code, and checks.
 No source-code license was selected. No publication occurred.
+
+Version 0.25.1-dev.9 adds the VISUAL-MOTION-019 sprite and movement pilot.
+Coding agents authored eighteen revised ship frames with geometric masks and explicit pixel rows.
+The frames retain the project's palette, canvas sizes, pivots, and stable identities.
+No external image or image-generation service supplied the new pixels.
+The editable production source is art/source/crossing.mjs.
+The task report retains the earlier source, comparison sheets, and construction scripts.
+Coding agents assisted with art review, animation, export checks, and the human review protocol.
+No source-code license was selected. No publication occurred.
+
+The separate 0.26.0-godot-dev.1 candidate ports the Acts I–III campaign to Godot 4.7.2 and GDScript.
+It retains the existing sprite palette, authored chapter definitions, and selected produced music.
+The native splash and application mark use original editable vector sources.
+The action cue WAV files were rendered from the existing FlightAudio.cue source with OfflineAudioContext.
+Godot provides the native rendering, controls, audio streams, import system, and export runtime.
+The Godot runtime is distributed under its own license. See GODOT-LICENSE.txt in the exported builds.
+Coding agents assisted with native code, branding, scene construction, comparison fixtures, and verification.
+The browser reference and deferred later campaign source remain in the repository.
+No new external artwork, recording, sample pack, or image-generation service supplied this port's assets.
+No source-code license was selected. No publication occurred.
+
+Version 0.26.0-godot-dev.3 integrates SHIP-FAMILY-025.
+The user approved the Arrow sprite from ARROW-SPRITE-024.
+OpenAI image generation supplied nine matching neutral hull sources from that appearance reference.
+The final game sprites use explicit 64-pixel masters, limited class palettes, and binary alpha.
+The damaged Heavy derives from the new Heavy. Opposite facings use separate material lighting.
+The editable production master is art/source/crossing.mjs.
+Source PNGs, prompts, and conversion records remain in art/direction/ship-family-025.
+No external asset pack was used. No source-code license was selected. No publication occurred.

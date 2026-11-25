@@ -1,0 +1,25 @@
+{
+  "version": "0.26.1-godot-route-pressure.1-60-leaderboard.2",
+  "godotVersion": "4.7.2",
+  "physicsTicksPerSecond": 60,
+  "archives": {
+    "web": {
+      "file": "Arrow-Space-Shift-Godot-Web-Leaderboard.zip",
+      "bytes": 39101377,
+      "sha256": "7700627bc1eb62fe66971cb5ad582e017446b39d861c9101c902dbb3c39397b6"
+    },
+    "windows": {
+      "file": "Arrow-Space-Shift-Godot-Windows-Leaderboard.zip",
+      "bytes": 66956951,
+      "sha256": "0c75884fd0eb287e8acfd016741d441bed911aa60fd82bfa3b636e67d20d1182"
+    }
+  },
+  "webPackSha256": "c6a6f758a5f5286ea18059d74b51286387b7edbb2259a20d6348e470578e6c03",
+  "automatedChecksOnCandidate": {
+    "webLeaderboard": 8,
+    "nativeLeaderboard": 18,
+    "nativeOpening": 55,
+    "nativeCampaign": 83,
+    "nativeProjectileJourneys": 88
+  }
+}

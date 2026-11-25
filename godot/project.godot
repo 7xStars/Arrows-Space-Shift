@@ -1,0 +1,40 @@
+config_version=5
+
+[application]
+config/name="Arrow Space Shift"
+config/description="Recover the repair parts through folded space."
+config/version="0.26.1-godot-route-pressure.1-60-leaderboard.2"
+config/icon="res://assets/branding/mark.svg"
+run/main_scene="res://scenes/main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Arrow Space Shift Godot"
+boot_splash/bg_color=Color(0.02, 0.035, 0.045, 1)
+boot_splash/show_image=true
+boot_splash/image="res://assets/branding/splash.png"
+boot_splash/minimum_display_time=250
+boot_splash/use_filter=true
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=900
+window/size/window_width_override=1280
+window/size/window_height_override=900
+window/size/min_width=640
+window/size/min_height=450
+window/stretch/mode="disabled"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+
+[physics]
+common/physics_ticks_per_second=60
+
+[audio]
+driver/enable_input=false
+
+[debug]
+gdscript/warnings/treat_warnings_as_errors=false

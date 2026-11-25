@@ -1,10 +1,15 @@
 # Arrow Space Shift
 
-This folder is the main local project for Arrow Space Shift.
-The active source comes from `Arrow-Space-Shift-v0.24.1-SOURCE.zip`.
-The local update is `0.25.1-dev.8`.
-It adds produced FoxDot techno, bounded mechanical feedback, and campaign rule repairs.
-It is a development build. The complete campaign release gate remains open.
+## Godot edition
+
+The Godot project contains the current 60 Hz leaderboard candidate, 0.26.1-godot-route-pressure.1-60-leaderboard.2.
+Open [the Godot project](godot/project.godot) with Godot 4.7.2.
+See the [Godot guide](godot/README.md) for controls, scores, and tests.
+
+## Earlier JavaScript edition
+
+The JavaScript build below is version 0.25.1-dev.8.
+It adds FoxDot techno, combat feedback, and campaign rule changes.
 
 Flight time continues across level transitions.
 Speed grades and bonuses still use the time for each section.
